@@ -1,0 +1,70 @@
+- title: Introduction
+  icon: fal fa-home
+  url: "index.html"
+
+- title: Getting Started
+  icon: fal fa-info
+  pages:
+    # - title: Principles
+    - title: Overview     
+    - title: Developers
+    - title: Designers    
+    # - title: Component Status   
+    - title: FAQ       
+
+- title: Style
+  icon: fal fa-paint-brush
+  pages:
+    - title: Primary Colors
+    - title: Extended Colors    
+    # - title: Animation   
+    # - title: Depth 
+    - title: Typography               
+
+- title: Layout
+  icon: fal fa-desktop-alt
+  pages:
+    - title: App Layout     
+    - title: Overview    
+    - title: Grid
+    - title: Header        
+    - title: Footer    
+
+- title: Elements
+  icon: fal fa-object-ungroup
+  pages:
+    - title: Alert
+    - title: Avatar 
+    - title: Badges
+    - title: Buttons
+    - title: Button Group
+    - title: Card
+    - title: Checkboxes & Radios
+    - title: Dropdown
+    - title: Forms
+    - title: Loaders
+    - title: Media object
+    - title: Modals            
+    - title: Pagination
+    - title: Progress
+    - title: Switches
+    - title: Table       
+    - title: Tabs
+    - title: Tooltips & Popovers                      
+
+- title: Utilities
+  icon: fal fa-wrench
+  pages:
+    - title: Borders
+    - title: Display     
+    - title: Flex   
+    - title: Float
+    - title: Spacing
+
+- title: Resources
+  icon: fal fa-file-archive
+  pages:
+    - title: Release Notes
+    - title: Examples     
+    - title: Extensions
+

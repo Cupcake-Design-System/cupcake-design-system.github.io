@@ -1,0 +1,7 @@
+# Please see first _config.yml
+# The config here is dedicated to your website, once in wild, real production environment
+# Properties here will overrides those in _config.yml
+
+
+#baseurl: "" # the subpath of your site, e.g. /blog
+url:            "https://cupcake-design-system.github.io"

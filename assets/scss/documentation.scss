@@ -1,0 +1,73 @@
+---
+---
+
+@import "mixins";
+
+// Load docs components  
+@import "variables";
+@import "landing";
+@import "article";
+@import "content";
+@import "flavor-switch";
+@import "sidebar";
+@import "simplebar";
+@import "component-examples";
+@import "callouts";
+@import "clipboard-js";
+@import "changelog";
+
+// Load docs dependencies
+@import "syntax";
+@import "anchor";
+@import "algolia";
+
+
+
+.c-btn-primary:hover {
+  color: white;
+}
+
+.c-btn-secondary:hover {
+  color: black;
+}
+
+.c-modal-confirmation-icon {
+  font-size: 17px !important;
+}
+
+
+
+
+@media (max-width:767px) {
+  .c-sidenav {
+    width: 100%;
+    position: relative;
+  }
+  .c-sidenav-body {
+    display: none;
+  }
+  .main-container {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .docs-bg-img {
+    padding: 1rem !important;
+  }
+}
+
+.c-sidenav-menu-item.c-sidenav-menu-item-active .c-sidenav-menu-link .c-sidenav-menu-arrow {
+  transform: rotate(90deg);
+}
+
+.c-dropdown-grid .c-dropdown-item {
+  align-items: center;
+}
+
+
+[data-tooltip]::after {
+  padding: 4px 10px;
+  border-radius: 3px;
+  line-height: 12px;
+  max-width: 300px;
+  font-size: 12px;
+}

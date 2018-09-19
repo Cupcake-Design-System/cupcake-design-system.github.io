@@ -1,0 +1,105 @@
+// stylelint-disable no-duplicate-selectors, selector-no-qualifying-type
+
+//
+// Grid examples
+//
+
+.docs-example-row {
+  .c-row {
+    > .c-col,
+    > [class^="c-col-"] {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      color: $color-gray-0;
+      font-weight: bold;
+      background-color: $color-primary-6;
+      border: 1px solid $color-primary-9;
+    }
+  }
+
+  .c-row + .c-row {
+    margin-top: 1rem;
+  }
+}
+
+.docs-example-row-flex .c-row {
+  min-height: 10rem;
+  background-color: $color-primary-3;
+}
+
+.docs-highlight {
+  background-color: rgba($primary, .15);
+  border: 1px solid rgba($primary, .15);
+}
+
+
+
+//
+// Docs examples
+//
+
+.docs-example {
+  position: relative;
+  padding: 1rem;
+  margin: 0;
+  border: 1px solid #e9ecef;
+  border-bottom: 0;
+
+  @media (min-width: 576px) {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-width: 1px;
+  }
+
+  + .highlight,
+  + .clipboard + .highlight {
+    margin-top: 0;
+  }
+
+  + p {
+    margin-top: 2rem;
+  }
+}
+
+.docs-example {
+  .c-btn-group,
+  .c-card {
+    margin: .5rem;
+  }
+  .c-tabs {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+.docs-example-border-utils {
+  [class^="c-bd"] {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin: .25rem;
+    background-color: $color-primary-3;
+    border-color: black;
+    border-width: 3px;
+  }
+}
+.docs-example-border-color-utils {
+  [class^="c-bd"] {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin: .25rem;
+    background-color: $color-primary-3;
+    border-width: 3px;
+  }  
+}
+
+
+.c-btn#highlight-toggle {
+    border-radius: 0;
+    box-shadow: none;
+}
+

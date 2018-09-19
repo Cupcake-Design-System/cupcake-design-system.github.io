@@ -1,0 +1,44 @@
+---
+title: Extensions
+layout: docs-fullwidth
+group: resources
+toc-flavors: false
+description: Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.
+---
+
+
+<div class="c-row">
+  {% for extension in site.data.extensions %}
+  <div class="c-col-12 c-col-lg-4 c-m-vertical-lg">
+      <div class="c-card">
+        <div class="c-card-content">
+          <div class="c-card-content-title">{{ extension.name }}</div>
+          <div class="c-card-content-body c-p-vertical-md">
+            <img src="{{site.url}}{{site.baseurl}}/assets/img/extensions/{{ extension.img }}.png" width="490px" height="278px">
+          </div>
+          <a class="c-btn c-btn-block c-btn-primary" href="{{ extension.url }}" target="_blank"> View Extension</a>
+        </div>
+      </div>
+  </div>
+  {% endfor %}
+</div>
+   
+
+    <!-- <div class="docs-message">
+      <div class="docs-message-body">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <p>Have an extension to share with the Ipreo community?</p>
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-item">
+              <button class="c-btn c-btn-primary" href="{{ site.slack }}">
+                 Let Us Know!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->

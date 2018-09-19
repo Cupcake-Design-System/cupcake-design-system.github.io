@@ -1,0 +1,8 @@
+- name: X-Small
+  value: xs
+- name: Small
+  value: sm
+- name: Large
+  value: lg
+- name: X-Large
+  value: xl    

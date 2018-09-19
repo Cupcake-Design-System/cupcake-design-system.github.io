@@ -1,0 +1,145 @@
+// Grays
+$color-gray-0: #f8f9fa !default;
+$color-gray-1: #f1f3f5 !default;
+$color-gray-2: #e9ecef !default;
+$color-gray-3: #dee2e6 !default;
+$color-gray-4: #ced4da !default;
+$color-gray-5: #adb5bd !default;
+$color-gray-6: #868e96 !default;
+$color-gray-7: #495057 !default;
+$color-gray-8: #343a40 !default;
+$color-gray-9: #212529 !default;
+
+// Primary
+$color-primary-0: #e8f7ff !default;
+$color-primary-1: #ccedff !default;
+$color-primary-2: #a3daff !default;
+$color-primary-3: #72c3fc !default;
+$color-primary-4: #4dadf7 !default;
+$color-primary-5: #329af0 !default;
+$color-primary-7: #1c7cd6 !default;
+$color-primary-6: #228ae6 !default;
+$color-primary-8: #1b6ec2 !default;
+$color-primary-9: #1862ab !default;
+
+// Success
+$color-success-0: #ebfbee !default;
+$color-success-1: #d3f9d8 !default;
+$color-success-2: #b2f2bb !default;
+$color-success-3: #8ce99a !default;
+$color-success-4: #69db7c !default;
+$color-success-5: #51cf66 !default;
+$color-success-6: #40c057 !default;
+$color-success-7: #37b24d !default;
+$color-success-8: #2f9e44 !default;
+$color-success-9: #2b8a3e !default;
+
+// Warning
+$color-warning-0: #fff9db !default;
+$color-warning-1: #fff3bf !default;
+$color-warning-2: #ffec99 !default;
+$color-warning-3: #ffe066 !default;
+$color-warning-4: #ffd43b !default;
+$color-warning-5: #fcc419 !default;
+$color-warning-6: #fab005 !default;
+$color-warning-7: #f59f00 !default;
+$color-warning-9: #e67700 !default;
+$color-warning-8: #f08c00 !default;
+
+// Danger
+$color-danger-0: #fff5f5 !default;
+$color-danger-1: #ffe3e3 !default;
+$color-danger-2: #ffc9c9 !default;
+$color-danger-3: #ffa8a8 !default;
+$color-danger-4: #ff8787 !default;
+$color-danger-5: #ff6b6b !default;
+$color-danger-6: #fa5252 !default;
+$color-danger-7: #f03e3e !default;
+$color-danger-8: #e03131 !default;
+$color-danger-9: #c92a2a !default;
+$color-info-0: #e3fafc !default;
+$color-info-1: #c5f6fa !default;
+$color-info-2: #99e9f2 !default;
+$color-info-3: #66d9e8 !default;
+$color-info-4: #3bc9db !default;
+$color-info-5: #22b8cf !default;
+$color-info-6: #15aabf !default;
+$color-info-7: #1098ad !default;
+$color-info-9: #0b7285 !default;
+$color-info-8: #0c8599 !default;
+
+.color-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-block {
+  background-color: white;
+  box-shadow: 0 1px 0 $color-gray-2;
+  overflow: hidden;
+  margin: 1rem 0;
+  position: relative;
+  min-width: 150px;
+
+  .colors {
+    height: 6rem;
+    width: 100%;
+    display: flex;
+
+    span {
+      flex: 1;
+      display: block;
+
+      &:hover {
+        cursor: pointer;
+        z-index: 1000;
+      }
+    }
+  }
+
+  h3 {
+    color: #777;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 0 !important;
+    padding: 6px 8px;
+    letter-spacing: 2px;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 8px;
+    padding: 0;
+    color: #777777;
+    display: flex;
+    min-height: 58px;
+
+    li {
+      flex: 1;
+      display: block;
+      text-align: center;
+      font-size: 12px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#clipboardItem:hover::after {
+  content: attr(tooltip);
+  padding: 6px;
+  top: 0px;
+  color: #fefefe;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  background: #212529;
+}

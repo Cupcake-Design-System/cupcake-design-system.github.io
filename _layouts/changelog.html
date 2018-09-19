@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% include header.html %}
+</head>
+
+<body>
+
+
+  {% include sidebar.html %}
+
+
+  <main class="main-container" role="main">
+
+     <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
+          <h1 class="docs-title" id="content">{{ page.title }}</h1>
+          <p class="docs-lead">{{ page.description }}</p>
+        </div>
+
+        <div class="main-content">            
+
+
+          <div class="changelog-wrapper js-changelog">
+            
+            <div class="c-bg-gray-1 c-bd c-bd-gray-3 c-p-md c-bd-bottom-0">
+              <input type="text" class="changelog-input js-changelog-input">
+      
+              <label class="c-checkbox c-m-right-md">
+                <input type="checkbox" name="radio" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="feature">
+                <i class="c-bg-primary"></i>
+                 Commits
+              </label>
+      
+              <label class="c-checkbox c-m-right-md">
+                <input type="checkbox" name="radio" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="merged">
+                <i class="c-bg-primary"></i>
+                Merged
+              </label>
+      
+              <label class="c-checkbox c-m-right-md">
+                <input type="checkbox" name="radio" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="bug-fix">
+                <i class="c-bg-primary"></i>
+                Bug Fixes
+              </label>
+            </div>
+      
+              {{ content }}
+      
+          </div>
+
+        </div>
+
+        {% include footer.html %} 
+      </main>
+
+
+
+
+  {% include footer.html %} 
+  {% include scripts.html %}
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/vendor/instafilta.js"></script>
+<script>
+  (function($){
+	"use strict";
+
+	// Module name: Changelog
+	// Dependencies: jquery.instafilta.js
+	// Docs: https://github.com/chromawoods/instaFilta/
+	(function(){
+		var changelogs = $('.js-changelog');
+
+		changelogs.each(function() {
+			var changelog = $(this);
+			var changelogItems = changelog.find('.js-changelog-item');
+
+			var changelogFilter = changelog.find('.js-changelog-input').instaFilta({
+				scope: '.js-changelog',
+				targets: '.js-changelog-update-description'
+			});
+			
+			var changelogCheckBox = changelog.find('.js-changelog-checkbox');
+
+
+			changelogCheckBox.on('change', function () {
+				var checkedCategories = [];
+
+			    changelogCheckBox.each(function() {
+			        if ($(this).prop('checked')) {
+			            checkedCategories.push($(this).val());
+			        }
+			    });
+
+			    changelogFilter.filterCategory(checkedCategories);
+			});
+
+			
+
+			
+		});
+	})();
+
+})(jQuery);
+</script>
+</body>
+
+</html>

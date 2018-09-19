@@ -1,0 +1,30 @@
+{
+  "name": "cupcake-docs",
+  "description": "css-framework",
+  "private": true,
+  "version": "0.0.7",
+  "scripts": {
+    "git-deploy": "git-directory-deploy --directory docs --branch master",
+    "deploy": "npm run compile && npm run git-deploy",
+    "deploy-surge": "surge --project ./docs --domain cupcake-docs.surge.sh",
+    "compile": "bundle exec jekyll build --config _config.yml,_config.prod.yml",
+    "compile-demo": "bundle exec jekyll build --config _config.yml,_config.demo.yml",
+    "start": "bundle exec jekyll serve --config _config.yml",
+    "dev": "gulp"
+  },
+  "devDependencies": {
+    "browser-sync": "2.24.7",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "6.0.0",
+    "git-directory-deploy": "1.5.1",
+    "gulp-clean-css": "3.10.0",
+    "gulp-concat": "2.6.1",
+    "gulp-gh-pages": "0.5.4",
+
+    "gulp-notify": "3.2.0",
+    "gulp-sass": "4.0.1",
+    "gulp-uglify": "3.0.1",
+    "source-sans-pro": "^2.20.2",
+    "surge": "0.20.1"
+  }
+}

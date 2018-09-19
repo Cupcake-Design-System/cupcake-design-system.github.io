@@ -1,0 +1,11 @@
+- name: cupcake-components
+  url: https://code.ipreo.com/Ipreo/cupcake-components/
+  img: cupcake-components
+
+- name: cupcake-suggester-ng2
+  url: https://code.ipreo.com/Ipreo/cupcake-suggester/
+  img: cupcake-suggester
+
+- name: cupcake-kendo-styles
+  url: https://code.ipreo.com/Ipreo/cupcake-kendo-styles
+  img: cupcake-kendo-styles

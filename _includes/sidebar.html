@@ -1,0 +1,103 @@
+<aside class="c-sidenav">
+  <div class="docs-logo">
+    <a href="{{ site.url }}{{ site.baseurl }}/index.html">
+      Cupcake 
+    <span>Design System</span>
+    </a>
+    <button class="c-md-d-none" type="button" id="docs-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    
+    <div class="c-d-none c-lg-d-block c-text-center c-text-sm c-text-bold c-p-bottom-lg">
+      Current Version       
+      <a href="https://code.ipreo.com/Ipreo/cupcake/releases/tag/{{ site.current_version }}" class="c-a" data-tooltip="View Changelog" data-tooltip-conf="right">{{ site.current_version }}</a>
+    </div>
+  </div>
+
+
+
+  <nav class="c-sidenav-body" data-simplebar="">
+
+    <ul class="c-sidenav-menu" id="js-nav">
+      {%- assign page_slug = page.url | split: '/' | last -%}
+      {%- for group in site.data.nav -%}
+      {%- assign link = group.pages | first -%}
+      {%- assign link_slug = link.title | slugify -%}
+      {%- assign group_slug = group.title | slugify -%}
+      {%- assign active = nil -%}
+    
+      {%- if page.group == group_slug -%}
+        {%- assign active = 'c-sidenav-menu-item-active' -%}
+      {%- endif -%}
+
+      {% if group.url %}
+      <li class="c-sidenav-menu-item {% if page.home == "true" %}c-sidenav-menu-item-active{% endif %}">
+        <a class="c-sidenav-menu-link" href="{{ site.url }}{{ site.baseurl }}/{{ group.url }}">
+          <span class="c-sidenav-menu-icon {{ group.icon }}" aria-hidden="true"></span>
+          <span class="c-sidenav-menu-title">
+            {{ group.title }}
+          </span>
+        </a>
+    </li>
+
+    {% else %}
+    
+
+      <li class="c-sidenav-menu-item {% unless active == nil %} {{ active }}{% endunless %}">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon {{ group.icon }}" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              {{ group.title }}
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu">
+            {%- for doc in group.pages -%}
+              {%- assign doc_slug = doc.title | slugify -%}
+              {%- assign active = nil -%}
+    
+              {%- if page.group == group_slug and page_slug == doc_slug -%}
+                {%- assign active = 'c-sidenav-menu-item-active' -%}
+              {%- endif -%}
+    
+              
+              <li{% unless active == nil %} class="c-sidenav-menu-item {{ active }}"{% endunless %}>
+                <a class="c-sidenav-menu-link" href="{% if group.title == "Resources" %}{{ site.url }}{{ site.baseurl }}/{{ doc_slug }}/{% else %}{{ site.url }}{{ site.baseurl }}/content/{{ group_slug }}/{{ doc_slug }}/{% endif %}">
+                  {{ doc.title }} 
+                </a>
+    
+                {%- comment -%}
+                {% unless doc.sections == nil %}
+                  <ul class="c-sidenav-menu-submenu">
+                    {% for section in doc.sections %}
+                      <li class="c-sidenav-menu-item">
+                        <a class="c-sidenav-menu-link" href="#{{ section.title | downcase | replace: ' ', '-' }}">
+                          {{ section.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endunless %}
+                {%- endcomment -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+      </li>
+   
+    {% endif %}
+    {%- endfor -%}
+
+    </ul>
+
+  </nav>
+
+
+
+</aside>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% include header.html %}
+</head>
+
+<body>
+
+
+  {% include sidebar.html %}
+
+
+  <main class="main-container" role="main">
+
+        {% if page.banner %} 
+            {% include intro-banner.html %} 
+        {% else %}
+
+        {% unless page.layout == "post" %}
+        <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
+          <h1 class="docs-title" id="content">{{ page.title }}</h1>
+          <p class="docs-lead">{{ page.description }}</p>
+        </div>
+        {% endunless %}
+
+        {% endif %}
+
+        {% if page.home == "true" %}
+        <div class="c-container">
+            {% else %}
+        <div class="main-content">            
+            {% endif %}
+
+          {{ content }}
+
+        </div>
+
+        {% include footer.html %} 
+      </main>
+
+
+  {% include scripts.html %}
+
+</body>
+
+</html>

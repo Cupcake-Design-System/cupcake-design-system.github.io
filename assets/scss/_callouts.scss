@@ -1,0 +1,56 @@
+//
+// Callouts
+//
+
+.docs-callout {
+  padding: .5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #eee;
+  border-left-width: .25rem;
+  border-radius: 0;
+}
+
+.docs-callout h4 {
+  font-size: 16px;
+}
+
+.docs-callout p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.docs-callout code {
+  border-radius: .25rem;
+}
+
+.docs-callout + .docs-callout {
+  margin-top: -.25rem;
+}
+
+// Variations
+@mixin docs-callout-variant($color) {
+  border-left-color: $color;
+
+  h2, h3, h4, h5 { 
+    color: $color; 
+    margin: 0;
+  }
+}
+
+.docs-callout {
+  &-info { 
+    @include docs-callout-variant($info);
+    background: $color-info-0;
+  }
+  
+  &-warning { 
+    @include docs-callout-variant($warning); 
+    background: $color-warning-0;
+  }
+  
+  &-danger { 
+    @include docs-callout-variant($danger); 
+    background: $color-danger-0;
+  }
+}

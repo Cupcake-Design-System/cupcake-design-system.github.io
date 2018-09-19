@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  
+  <title>
+    {%- if page.title -%}
+       {{ site.title }} · {{ page.title }}
+    {%- else -%}
+      {{ site.title }} · {{ site.description }}
+    {%- endif -%}
+  </title>
+  
+  
+<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/cupcake/default.css">
+  
+  <!-- Documentation extras -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+  <script defer src="{{ site.url }}{{ site.baseurl }}/assets/js/fontawesome-all.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/scss/documentation.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  {% include sidebar.html %}
+
+
+  <main class="main-container" role="main">
+        <div class="main-content">            
+            <div class="docs-article-image is-single" style="background-color:{{ page.color }}">
+              <span class="docs-article-overlay"></span>
+              
+              <span class="docs-article-icon">
+                <span class="icon">
+                  <i class="fa fa-{{ page.icon }}"></i>
+                </span>
+              </span>
+
+              <strong class="docs-article-title">
+                  {{ page.title }}
+                </strong>
+            </div>
+            
+            
+              {{ content }}
+            
+              <a class="c-btn c-btn-primary" href="{{ site.url }}{{ site.baseurl }}/release-notes/">
+                <i class="fa fa-arrow-left"></i> Back to all release notes
+              </a>
+
+        </div>
+
+        {% include footer.html %} 
+      </main>
+
+
+  {% include scripts.html %}
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

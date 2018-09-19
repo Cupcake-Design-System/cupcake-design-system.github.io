@@ -1,0 +1,10 @@
+.anchorjs-link {
+  font-weight: 400;
+  color: rgba($primary, .5);
+  transition: color .16s linear;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}

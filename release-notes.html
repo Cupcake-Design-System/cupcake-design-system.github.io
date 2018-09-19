@@ -1,0 +1,41 @@
+---
+layout: docs-fullwidth
+title: Updates & Release Notes
+description: Latest News and Updates
+group: resources
+toc-flavors: false
+---
+
+<div class="c-row c-row-wrap c-m-vertical-lg">
+  {% for post in site.posts %}
+  <div class="c-col-12 c-col-lg-4 c-m-bottom-lg">
+    <div class="c-card">
+      <header class="c-card-header">
+        <a class="docs-article-image" href="{{site.url}}{{site.baseurl}}{{ post.url }}" style="background-color: {{ post.color }}">
+          <span class="docs-article-overlay"></span>
+          <span class="docs-article-icon">
+            <span class="icon">
+              <i class="fal fa-{{ post.icon }}"></i>
+            </span>
+          </span>
+          <strong class="docs-article-title">
+            {{ post.name }}
+          </strong>
+        </a>
+      </header>
+      <div class="c-card-content">
+        <div class="c-card-content-title">
+          <a class="c-a" href="{{site.url}}{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="c-card-content-body">
+          {{ post.introduction | markdownify }}
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+
+
