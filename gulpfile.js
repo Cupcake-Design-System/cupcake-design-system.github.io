@@ -39,7 +39,7 @@ gulp.task("jekyll-rebuild", ["build-html"], function() {
 gulp.task("browser-sync", ["build-html"], function() {
   browserSync({
     server: {
-      baseDir: "docs"
+      baseDir: "dist"
     }
   });
 });
@@ -55,7 +55,7 @@ gulp.task("compile-css", ["jekyll-build"], function() {
         cascade: true
       })
     )
-    .pipe(gulp.dest("docs/assets/scss/"))
+    .pipe(gulp.dest("dist/assets/scss/"))
     .pipe(
       browserSync.reload({
         stream: true
@@ -148,7 +148,7 @@ gulp.task("jekyll-build-prod", function(done) {
 
 
 gulp.task("push-to-gh-pages", function() {
-  return gulp.src("./docs/**/*").pipe(ghPages());
+  return gulp.src("./dist/**/*").pipe(ghPages());
 });
 
 gulp.task("deploy", ["jekyll-build-prod", "push-to-gh-pages"]);

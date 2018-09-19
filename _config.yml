@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically.
 
 # Site settings
-destination:    ./docs
+destination:    ./dist
 port:           5000
 baseurl:        ""
 # url:            "https://pages.code.ipreo.com/Ipreo/cupcake-docs"
@@ -25,7 +25,7 @@ plugins:
   - jekyll-toc
 
 toc:
-  max_level: 3   
+  max_level: 3
 
 sass:
     sass_dir: ./assets/scss
@@ -37,11 +37,11 @@ exclude:
   - gulpfile.js
   - .git/
   - .github/
-  - .sass-cache/  
+  - .sass-cache/
   - js/
   - vendor/
-  - node_modules  
-  - README.md  
+  - node_modules
+  - README.md
   - Gemfile
   - Gemfile.lock
   - package.json
