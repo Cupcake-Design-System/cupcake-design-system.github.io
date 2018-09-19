@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Documentation and examples for Cupcake typography, including global settings, headings, body text, lists, and more.">
+
+<title>Cupcake · Typography</title><!-- Theme Switch -->
+<script>
+  var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
+    {};
+  var themeName = themeSettings.themeName || '';
+  if (themeName) {
+    document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/assets/cupcake' + themeName + '.css">');
+  } else {
+    document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">');
+  }
+</script><!-- Documentation extras -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <aside class="c-sidenav">
+  <div class="docs-logo">
+    <a href="https://cupcake-design-system.github.io/index.html">
+      Cupcake 
+    <span>Design System</span>
+    </a>
+    <button class="c-md-d-none" type="button" id="docs-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    
+    <div class="c-d-none c-lg-d-block c-text-center c-text-sm c-text-bold c-p-bottom-lg">
+      Current Version       
+      <a href="https://code.ipreo.com/Ipreo/cupcake/releases/tag/1.4.6" class="c-a" data-tooltip="View Changelog" data-tooltip-conf="right">1.4.6</a>
+    </div>
+  </div>
+
+
+
+  <nav class="c-sidenav-body" data-simplebar="">
+
+    <ul class="c-sidenav-menu" id="js-nav">
+      <li class="c-sidenav-menu-item ">
+        <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/index.html">
+          <span class="c-sidenav-menu-icon fal fa-home" aria-hidden="true"></span>
+          <span class="c-sidenav-menu-title">
+            Introduction
+          </span>
+        </a>
+    </li>
+
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-info" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Getting Started
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/overview/">
+                  Overview 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/developers/">
+                  Developers 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/designers/">
+                  Designers 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/faq/">
+                  FAQ 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item  c-sidenav-menu-item-active">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-paint-brush" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Style
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/primary-colors/">
+                  Primary Colors 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/extended-colors/">
+                  Extended Colors 
+                </a></li><li class="c-sidenav-menu-item c-sidenav-menu-item-active">
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/typography/">
+                  Typography 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-desktop-alt" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Layout
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/app-layout/">
+                  App Layout 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/overview/">
+                  Overview 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/grid/">
+                  Grid 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/header/">
+                  Header 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/footer/">
+                  Footer 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-object-ungroup" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Elements
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/alert/">
+                  Alert 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/avatar/">
+                  Avatar 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/badges/">
+                  Badges 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/buttons/">
+                  Buttons 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/button-group/">
+                  Button Group 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/card/">
+                  Card 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/checkboxes-radios/">
+                  Checkboxes & Radios 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/dropdown/">
+                  Dropdown 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/forms/">
+                  Forms 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/loaders/">
+                  Loaders 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/media-object/">
+                  Media object 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/modals/">
+                  Modals 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/pagination/">
+                  Pagination 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/progress/">
+                  Progress 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/switches/">
+                  Switches 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/table/">
+                  Table 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/tabs/">
+                  Tabs 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/tooltips-popovers/">
+                  Tooltips & Popovers 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-wrench" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Utilities
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/borders/">
+                  Borders 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/display/">
+                  Display 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/flex/">
+                  Flex 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/float/">
+                  Float 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/spacing/">
+                  Spacing 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-file-archive" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Resources
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/release-notes/">
+                  Release Notes 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/examples/">
+                  Examples 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/extensions/">
+                  Extensions 
+                </a></li></ul>
+      </li>
+   
+    </ul>
+
+  </nav>
+
+
+
+</aside>
+
+    <main class="main-container" role="main">
+        <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
+            <h1 class="docs-title" id="content">Typography</h1>
+            <p class="docs-lead">Documentation and examples for Cupcake typography, including global settings, headings, body text, lists, and more.</p>
+          </div>
+
+      <div class="main-demo-content">
+
+        <div class="c-row">
+          <div class="c-col-12 c-col-lg-12 c-col-md-12 c-col-xl-10 c-p-bottom-md docs-content">
+
+            <h2 id="typeface-arial">Typeface: Arial</h2>
+
+<p>Arial, is arguably the best universal multi-purpose font. Arial is 98% web safe - meaning almost every platform has it installed out of the box. This is the default font. This should be used unless otherwise directed by a UX Designer.</p>
+
+<p>It renders consistently across various operating systems and browsers. And users behind a firewall do not need info-sec or IT to download and install an additional font.</p>
+
+<h4 id="default-sans-serif-font-stacks">Default sans-serif font stacks</h4>
+
+<p><code class="highlighter-rouge">font-family:  Arial, Helvetica, sans-serif;</code></p>
+
+<hr />
+
+<h2 id="typeface-source-sans">Typeface: Source Sans</h2>
+
+<p>Source® Sans Pro, Adobe’s first open source typeface family, was designed by Paul D. Hunt. It is a sans serif typeface intended to work well in user interfaces.</p>
+
+<p>This is the default for the BD Flavor.</p>
+
+<h4 id="bd-flavor-sans-serif-font-stacks">BD Flavor sans-serif font stacks</h4>
+
+<p><code class="highlighter-rouge">font-family:  'Source Sans Pro', Arial, Helvetica, sans-serif;</code></p>
+
+<h2 id="typescale">Typescale</h2>
+
+<p>Too many type sizes and styles at once can wreck any layout. Cupcake provides a constrained, purposeful set of typographic styles. These styles map as much as possible to functional roles so you know when each can be used.</p>
+
+<p>The basic set of styles are based on a typographic scale of 10, 12, 14, 18, 20, and 34.</p>
+
+<p>By consistently tying typographic styles to appropriate functions in the interface, we create a clear visual pattern.</p>
+
+<h3 id="body">Body</h3>
+
+<div class="docs-example">
+<div class="c-text-xs">This is xs text</div>
+<div class="c-text-sm">This is sm text</div>
+<div class="c-text-md">This is md text</div>
+<div class="c-text-lg">This is lg text</div>
+<div class="c-text-xl">This is xl text</div>
+<div class="c-text-xxl">This is xxl text</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-xs"</span><span class="nt">&gt;</span>This is xs text<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm"</span><span class="nt">&gt;</span>This is sm text<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md"</span><span class="nt">&gt;</span>This is md text<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-lg"</span><span class="nt">&gt;</span>This is lg text<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-xl"</span><span class="nt">&gt;</span>This is xl text<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-xxl"</span><span class="nt">&gt;</span>This is xxl text<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h3 id="header">Header</h3>
+
+<p>Heading should be used for titles of top-level sections of a screen or section.</p>
+
+<div class="docs-example">
+<div class="c-header-xs">This is the xs header</div>
+<div class="c-header-sm">This is the sm header</div>
+<div class="c-header-md">This is the md header</div>
+<div class="c-header-lg">This is the lg header</div>
+<div class="c-header-xl">This is the xl header</div>
+<div class="c-header-xxl">This is the xxl header</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-xs"</span><span class="nt">&gt;</span>This is the xs header<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-sm"</span><span class="nt">&gt;</span>This is the sm header<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-md"</span><span class="nt">&gt;</span>This is the md header<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-lg"</span><span class="nt">&gt;</span>This is the lg header<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-xl"</span><span class="nt">&gt;</span>This is the xl header<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-xxl"</span><span class="nt">&gt;</span>This is the xxl header<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="emphasis">Emphasis</h2>
+
+<p>To communicate content hierarchy, use the core typographic scale first. Once the main hierarchy is established, if two pieces of text of the same style have different positions in the content hierarchy, additional styles may be used to emphasize or de-emphasize one of them.</p>
+
+<h3 id="muted">Muted</h3>
+<p>Muted content isn’t unimportant or superfluous, but rather makes room for the eye to orient itself and focus on core content.</p>
+
+<div class="docs-example">
+<div class="c-header-lg">I'm a Header <span class="c-text-muted"> I am muted</span></div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-lg"</span><span class="nt">&gt;</span>I'm a Header <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-muted"</span><span class="nt">&gt;</span> I am muted<span class="nt">&lt;/span&gt;&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p>In general, avoid using muted on its own, when not contrasting with other text from the same part of the type scale. There are exceptions: muted may be used for standalone content when it represents a non-actionable or otherwise unimportant state of something, i.e. when the normal content is absent.</p>
+
+<h3 id="bold">Bold</h3>
+
+<p>Default text styles have a normal font weight. You can add emphasis in context by adding a bold style.</p>
+
+<div class="docs-example">
+<div class="c-text-lg">This is normal text<span class="c-text-bold"> This text is bold.</span></div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-lg"</span><span class="nt">&gt;</span>This is normal text<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-bold"</span><span class="nt">&gt;</span> This text is bold.<span class="nt">&lt;/span&gt;&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h3 id="additional-styles">Additional Styles</h3>
+
+<p>Additional text helpers also available.</p>
+
+<div class="docs-example">
+<div class="c-text-lg c-a">This is a link</div>
+<div class="c-text-lg c-text-capitalize">this is capitalized</div>
+<div class="c-text-lg c-text-italic">This is italic</div>
+<div class="c-header-xs">This header is bold <span class="c-text-light">yet this has.c-text-light applied</span>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-lg c-a"</span><span class="nt">&gt;</span>This is a link<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-lg c-text-capitalize"</span><span class="nt">&gt;</span>this is capitalized<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-lg c-text-italic"</span><span class="nt">&gt;</span>This is italic<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-xs"</span><span class="nt">&gt;</span>This header is bold <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-light"</span><span class="nt">&gt;</span>yet this has.c-text-light applied<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h3 id="text-styles">Text Styles</h3>
+
+<p>Additional text colors can also be used (sparingly). <strong>Please use care when adding a text color and ensure it creates suitable contrast.</strong></p>
+
+<section>
+  
+  <div class="c-d-inline-block">
+    <span class="c-d-block c-m-md">
+       
+      <span class="c-d-block c-text-gray-0">.c-text-gray-0</span>
+      
+      <span class="c-d-block c-text-gray-1">.c-text-gray-1</span>
+      
+      <span class="c-d-block c-text-gray-2">.c-text-gray-2</span>
+      
+      <span class="c-d-block c-text-gray-3">.c-text-gray-3</span>
+      
+      <span class="c-d-block c-text-gray-4">.c-text-gray-4</span>
+      
+      <span class="c-d-block c-text-gray-5">.c-text-gray-5</span>
+      
+      <span class="c-d-block c-text-gray-6">.c-text-gray-6</span>
+      
+      <span class="c-d-block c-text-gray-7">.c-text-gray-7</span>
+      
+      <span class="c-d-block c-text-gray-8">.c-text-gray-8</span>
+      
+      <span class="c-d-block c-text-gray-9">.c-text-gray-9</span>
+      
+    </span>
+  </div>
+  
+  <div class="c-d-inline-block">
+    <span class="c-d-block c-m-md">
+       
+      <span class="c-d-block c-text-primary-0">.c-text-primary-0</span>
+      
+      <span class="c-d-block c-text-primary-1">.c-text-primary-1</span>
+      
+      <span class="c-d-block c-text-primary-2">.c-text-primary-2</span>
+      
+      <span class="c-d-block c-text-primary-3">.c-text-primary-3</span>
+      
+      <span class="c-d-block c-text-primary-4">.c-text-primary-4</span>
+      
+      <span class="c-d-block c-text-primary-5">.c-text-primary-5</span>
+      
+      <span class="c-d-block c-text-primary-6">.c-text-primary-6</span>
+      
+      <span class="c-d-block c-text-primary-7">.c-text-primary-7</span>
+      
+      <span class="c-d-block c-text-primary-8">.c-text-primary-8</span>
+      
+      <span class="c-d-block c-text-primary-9">.c-text-primary-9</span>
+      
+    </span>
+  </div>
+  
+  <div class="c-d-inline-block">
+    <span class="c-d-block c-m-md">
+       
+      <span class="c-d-block c-text-success-0">.c-text-success-0</span>
+      
+      <span class="c-d-block c-text-success-1">.c-text-success-1</span>
+      
+      <span class="c-d-block c-text-success-2">.c-text-success-2</span>
+      
+      <span class="c-d-block c-text-success-3">.c-text-success-3</span>
+      
+      <span class="c-d-block c-text-success-4">.c-text-success-4</span>
+      
+      <span class="c-d-block c-text-success-5">.c-text-success-5</span>
+      
+      <span class="c-d-block c-text-success-6">.c-text-success-6</span>
+      
+      <span class="c-d-block c-text-success-7">.c-text-success-7</span>
+      
+      <span class="c-d-block c-text-success-8">.c-text-success-8</span>
+      
+      <span class="c-d-block c-text-success-9">.c-text-success-9</span>
+      
+    </span>
+  </div>
+  
+  <div class="c-d-inline-block">
+    <span class="c-d-block c-m-md">
+       
+      <span class="c-d-block c-text-warning-0">.c-text-warning-0</span>
+      
+      <span class="c-d-block c-text-warning-1">.c-text-warning-1</span>
+      
+      <span class="c-d-block c-text-warning-2">.c-text-warning-2</span>
+      
+      <span class="c-d-block c-text-warning-3">.c-text-warning-3</span>
+      
+      <span class="c-d-block c-text-warning-4">.c-text-warning-4</span>
+      
+      <span class="c-d-block c-text-warning-5">.c-text-warning-5</span>
+      
+      <span class="c-d-block c-text-warning-6">.c-text-warning-6</span>
+      
+      <span class="c-d-block c-text-warning-7">.c-text-warning-7</span>
+      
+      <span class="c-d-block c-text-warning-8">.c-text-warning-8</span>
+      
+      <span class="c-d-block c-text-warning-9">.c-text-warning-9</span>
+      
+    </span>
+  </div>
+  
+  <div class="c-d-inline-block">
+    <span class="c-d-block c-m-md">
+       
+      <span class="c-d-block c-text-danger-0">.c-text-danger-0</span>
+      
+      <span class="c-d-block c-text-danger-1">.c-text-danger-1</span>
+      
+      <span class="c-d-block c-text-danger-2">.c-text-danger-2</span>
+      
+      <span class="c-d-block c-text-danger-3">.c-text-danger-3</span>
+      
+      <span class="c-d-block c-text-danger-4">.c-text-danger-4</span>
+      
+      <span class="c-d-block c-text-danger-5">.c-text-danger-5</span>
+      
+      <span class="c-d-block c-text-danger-6">.c-text-danger-6</span>
+      
+      <span class="c-d-block c-text-danger-7">.c-text-danger-7</span>
+      
+      <span class="c-d-block c-text-danger-8">.c-text-danger-8</span>
+      
+      <span class="c-d-block c-text-danger-9">.c-text-danger-9</span>
+      
+    </span>
+  </div>
+  
+</section>
+ 
+
+          </div>
+
+          
+          <div class="c-d-none c-xl-d-block c-col-xl-2 docs-toc">
+
+              
+              <div id="customize-menu" class="docs-flavor-switch c-d-none c-sm-d-block">
+                  <input type="hidden" name="Framework" id="Framework" class="docs-flavor-switch-input">
+                  <span class="docs-flavor-button docs-flavor-switch-current">Select A Flavor</span>
+                  <ul id="styleOptions" title="switch styling" class="docs-flavor-list">
+                    <li class="docs-flavor-list-item" data-dropdown-value="default">
+                      <a href="#" class="flavor" data-theme="default">Default</a>
+                    </li>
+                    <li class="docs-flavor-list-item" data-dropdown-value="bd">
+                      <a href="#" class="flavor" data-theme="bd">BD</a>
+                    </li>
+                    <li class="docs-flavor-list-item" data-dropdown-value="condensed">
+                      <a href="#" class="flavor" data-theme="condensed">Condensed</a>
+                    </li>
+                  </ul>
+                </div>
+                
+
+
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#typeface-arial">Typeface: Arial</a></li>
+<li class="toc-entry toc-h2"><a href="#typeface-source-sans">Typeface: Source Sans</a></li>
+<li class="toc-entry toc-h2"><a href="#typescale">Typescale</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#body">Body</a></li>
+<li class="toc-entry toc-h3"><a href="#header">Header</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#emphasis">Emphasis</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#muted">Muted</a></li>
+<li class="toc-entry toc-h3"><a href="#bold">Bold</a></li>
+<li class="toc-entry toc-h3"><a href="#additional-styles">Additional Styles</a></li>
+<li class="toc-entry toc-h3"><a href="#text-styles">Text Styles</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+          
+
+        </div>
+      </div>
+
+     
+    <div class="c-footer">
+    <div class="c-footer-left">
+      © 2018 Ipreo. All Rights Reserved.
+    </div>
+    <div class="c-footer-right">
+      <div class="c-footer-link">
+        <a href="https://ipreo.slack.com/messages/C0T3KNMK7/" class="c-a" target="_blank">
+            <span class="fab fa-slack-hash" aria-hidden="true"></span>
+            Slack
+        </a>
+      </div>
+      <div class="c-footer-link">
+        <a href="https://code.ipreo.com/Ipreo/cupcake" class="c-a" target="_blank">
+            <span class="fab fa-github" aria-hidden="true"></span>
+            Github
+        </a>
+      </div>
+      <div class="c-footer-link">
+          <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
+            <span class="fas fa-info-circle" aria-hidden="true"></span>
+              Release Notes
+          </a>
+      </div>
+    </div>
+  </div>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
+  </body>
+</html>

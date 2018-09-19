@@ -1,0 +1,1533 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Here are some of the highlights of the latest release">
+
+<title>Cupcake · Changelog</title><!-- Theme Switch -->
+<script>
+  var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
+    {};
+  var themeName = themeSettings.themeName || '';
+  if (themeName) {
+    document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/assets/cupcake' + themeName + '.css">');
+  } else {
+    document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">');
+  }
+</script><!-- Documentation extras -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <aside class="c-sidenav">
+  <div class="docs-logo">
+    <a href="https://cupcake-design-system.github.io/index.html">
+      Cupcake 
+    <span>Design System</span>
+    </a>
+    <button class="c-md-d-none" type="button" id="docs-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    
+    <div class="c-d-none c-lg-d-block c-text-center c-text-sm c-text-bold c-p-bottom-lg">
+      Current Version       
+      <a href="https://code.ipreo.com/Ipreo/cupcake/releases/tag/1.4.6" class="c-a" data-tooltip="View Changelog" data-tooltip-conf="right">1.4.6</a>
+    </div>
+  </div>
+
+
+
+  <nav class="c-sidenav-body" data-simplebar="">
+
+    <ul class="c-sidenav-menu" id="js-nav">
+      <li class="c-sidenav-menu-item ">
+        <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/index.html">
+          <span class="c-sidenav-menu-icon fal fa-home" aria-hidden="true"></span>
+          <span class="c-sidenav-menu-title">
+            Introduction
+          </span>
+        </a>
+    </li>
+
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-info" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Getting Started
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/overview/">
+                  Overview 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/developers/">
+                  Developers 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/designers/">
+                  Designers 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/faq/">
+                  FAQ 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-paint-brush" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Style
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/primary-colors/">
+                  Primary Colors 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/extended-colors/">
+                  Extended Colors 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/typography/">
+                  Typography 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-desktop-alt" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Layout
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/app-layout/">
+                  App Layout 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/overview/">
+                  Overview 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/grid/">
+                  Grid 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/header/">
+                  Header 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/footer/">
+                  Footer 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-object-ungroup" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Elements
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/alert/">
+                  Alert 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/avatar/">
+                  Avatar 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/badges/">
+                  Badges 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/buttons/">
+                  Buttons 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/button-group/">
+                  Button Group 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/card/">
+                  Card 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/checkboxes-radios/">
+                  Checkboxes & Radios 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/dropdown/">
+                  Dropdown 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/forms/">
+                  Forms 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/loaders/">
+                  Loaders 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/media-object/">
+                  Media object 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/modals/">
+                  Modals 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/pagination/">
+                  Pagination 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/progress/">
+                  Progress 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/switches/">
+                  Switches 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/table/">
+                  Table 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/tabs/">
+                  Tabs 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/tooltips-popovers/">
+                  Tooltips & Popovers 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-wrench" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Utilities
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/borders/">
+                  Borders 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/display/">
+                  Display 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/flex/">
+                  Flex 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/float/">
+                  Float 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/spacing/">
+                  Spacing 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-file-archive" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Resources
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/release-notes/">
+                  Release Notes 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/examples/">
+                  Examples 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/extensions/">
+                  Extensions 
+                </a></li></ul>
+      </li>
+   
+    </ul>
+
+  </nav>
+
+
+
+</aside>
+
+
+  <main class="main-container" role="main">
+
+     <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
+          <h1 class="docs-title" id="content">Changelog</h1>
+          <p class="docs-lead">Here are some of the highlights of the latest release</p>
+        </div>
+
+        <div class="main-content">            
+
+
+          <div class="changelog-wrapper js-changelog">
+            
+            <div class="c-bg-gray-1 c-bd c-bd-gray-3 c-p-md c-bd-bottom-0">
+              <input type="text" class="changelog-input js-changelog-input">
+      
+              <label class="c-checkbox c-m-right-md">
+                <input type="checkbox" name="radio" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="feature">
+                <i class="c-bg-primary"></i>
+                 Commits
+              </label>
+      
+              <label class="c-checkbox c-m-right-md">
+                <input type="checkbox" name="radio" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="merged">
+                <i class="c-bg-primary"></i>
+                Merged
+              </label>
+      
+              <label class="c-checkbox c-m-right-md">
+                <input type="checkbox" name="radio" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="bug-fix">
+                <i class="c-bg-primary"></i>
+                Bug Fixes
+              </label>
+            </div>
+      
+              <div class="changelog-items">
+
+<div id="Unreleased" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release Unreleased
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-11-29</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.1.7...HEAD" target="_blank" class="c-m-top-sm c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Fixes #154 button focus state <a href="https://code.ipreo.com/Ipreo/cupcake/pull/173">#173</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> add single skeleton bar <a href="https://code.ipreo.com/Ipreo/cupcake/pull/174">#174</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> #160 add meta info to dist files <a href="https://code.ipreo.com/Ipreo/cupcake/pull/176">#176</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> deleted wrong fonts from src, added right fonts via npm package <a href="https://code.ipreo.com/Ipreo/cupcake/pull/175">#175</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Gulp/build updates <a href="https://code.ipreo.com/Ipreo/cupcake/pull/172">#172</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> updated styles and added css popovers <a href="https://code.ipreo.com/Ipreo/cupcake/pull/167">#167</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> deleted yarn.lock  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c3efebaf105c5c586713a1bb5b043bdf148bf91b">c3efeba</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add global boolean for white-label (#168)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/019efaa670bbcfbdbbd15d9493068fa5e75ee235">019efaa</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> set fixed heights for inputs (#164)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/7bdf8a6e589824bf8c11284ae3a500a63b3b6f37">7bdf8a6</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> tooltip syntax fix to match other &quot;data-&quot; attributes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4bb2b301e2b7183843dae67ee9c4136c1ddd2639">4bb2b30</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> adds button disabled states (#166)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b09b9a02fdfc2ad58c0a697424a4d2b37942af2b">b09b9a0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> overide pills in a cupcake-suggester  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/0ef5d540bd4dfa5e79a58283a14925245e6628e7">0ef5d54</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> overide pills in a cupcake-suggester (#165)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c4c915ccf3ecd5d944a6dc45ef7f96f67030c524">c4c915c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> tabs - bd adjustments  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e6146c0098b3945cb9b452d1fa07f5be71c2e6e9">e6146c0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix for #131 width:auto for inline input.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f39fc05b43911d20cb0c38d77f23414b281e2103">f39fc05</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/18307206c8fb8362a6040e5c59838888775b7e16">1830720</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge remote-tracking branch &#x27;upstream/master&#x27;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c4b4d3506a48f6f7bf1a9d5c77330b3fb3ba6de7">c4b4d35</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> tooltip hotfix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/54e2427c86712af2f6ced7e50e1e59fc293e4c23">54e2427</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8f11998976d9be7ed44fa0efd0e58f6680280391">8f11998</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added yarn.lock to gitignore  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/2495487c0c9415992e177586b52f9025bb27f852">2495487</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix lint  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d87af14e9383219afa52f478d89e6a1059687a43">d87af14</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="1.1.7" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 1.1.7
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-11-04</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.1.6...1.1.7" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Layout updates <a href="https://code.ipreo.com/Ipreo/cupcake/pull/163">#163</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> hot-fix flex syntax regression  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bd71cdd5959abd62fd6794f378b33c84bc29ff59">bd71cdd</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.6 changelog  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/046aaaeb458384071a6c2b8d5753a780ac71ac2b">046aaae</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.7  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1a92ed3e9b2d08bc5a33800e5d0b52b5d79ea401">1a92ed3</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/a77aa3d20c99179b4ab5118ecd152335a772721d">a77aa3d</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="1.1.6" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 1.1.6
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-11-03</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.1.5...1.1.6" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> made modals flex enabled to fix alignment, added footer <a href="https://code.ipreo.com/Ipreo/cupcake/pull/157">#157</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Responsive classes <a href="https://code.ipreo.com/Ipreo/cupcake/pull/161">#161</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Dropdown updates <a href="https://code.ipreo.com/Ipreo/cupcake/pull/155">#155</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> update demo  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/6852c62e22ae652d9dbc605cc6fdde2dad32b379">6852c62</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> legacy header colors update  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/61c2c43a4cbb8bfa50ed168c0a0269e1a5eeba13">61c2c43</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> modals - bd styles, close btn absolute option.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/a647498fffe7f38c5b2b6a781cdf70c6476d6c94">a647498</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/80f272697cd9b070121164259fc0426398fab43f">80f2726</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.6  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/3dd9e004716e4b605eb053c3899a094d9f15f81c">3dd9e00</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> restore display property on c-dropdown (#162)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f1ee8152118ed4c74b21d66156d48aee5236ff75">f1ee815</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add break-word to toast-alerts.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5b3ddd78a0b728ebfd0ebd46b13787fcd6ab90ae">5b3ddd7</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="1.1.5" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 1.1.5
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-10-31</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.1.4...1.1.5" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> toast alerts - simplify html, rewrite icons. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/156">#156</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> modal sub-type - confirmation <a href="https://code.ipreo.com/Ipreo/cupcake/pull/148">#148</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Toast alerts <a href="https://code.ipreo.com/Ipreo/cupcake/pull/138">#138</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> force setting height on &lt;select&gt; <a href="https://code.ipreo.com/Ipreo/cupcake/pull/142">#142</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> list-group replacement path  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b2616316feac5210dfd226f93e89a70a25a2fe77">b261631</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Revert &quot;Media Group Upgrades&quot;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c904a02c56cbdbf27824c167faebe13afc9042a6">c904a02</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Media Group Upgrades  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/86ba31e3f832b94f6a1b15381d6f1b15e1242f08">86ba31e</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> final fix (#151)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ac3d9871ccf21acbebc0a8959b29d8f0a6a09785">ac3d987</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> updated header styles, decoupled notifications, removed unused classes (#152)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e9336e9a25fedc3b9b44985e8e17bb29ef1b7a1a">e9336e9</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Media group updates (#149)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/90b889fe27a05586c12ca9b12652dc7a4864df93">90b889f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Revert &quot;Media group updates (#149)&quot; (#150)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/165621b8e7eeb0717e90528151348d4831e0eafe">165621b</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> toast alerts initial commit  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/03732286c0649e202164e5f053db5c7860275587">0373228</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add media to sidebar  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1c2dcc13e2e8891e19a63cf6dbc8644a5970026d">1c2dcc1</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> modal subtype - confirmation  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/9a8e993ddf82be3c99d12165050b3a9c923873a6">9a8e993</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Cleanup Rebase error  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/eca76da94f2fb50b4a6c0b21ea6fb3ae81765650">eca76da</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of code.ipreo.com:Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/db92f85ecad504f158ea443773660114953be4c2">db92f85</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/6cf442b114c1df3ffcf26b9e9bf28bec674202b1">6cf442b</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into toast-alerts  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/6f323f693fdce747ac07be4e119026b9e310866b">6f323f6</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> closer match lists  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/951fc0203ea2b46825c74890ad888756dcf4fb38">951fc02</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into confimation-modals  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/291b867974abcd2930694de3a27824fb80bf2348">291b867</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of code.ipreo.com:Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c85e759e2aae43db99bd71697472f90b4953eb35">c85e759</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into toast-alerts:wq  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/341c4c2db9810409ac20c6aded3c8bc77104b6cf">341c4c2</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> removed old media file  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/18b11eae928e8bd1903ed74ecc1d7330da5ccbbb">18b11ea</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b605c3dd53904a098183d86ece7af81a08abedbe">b605c3d</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> force setting height on &lt;select&gt;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/527706afcafe9df1f5a0b4acf69c6a30a7b60f73">527706a</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> force setting height on &lt;select&gt;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/0c0c913a1abc93a28df4d85e8948416cf37b7bdb">0c0c913</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> #139 input icon color and padding  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/0b885e0192910a499e952ef92980ac378322d74e">0b885e0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> #139 input icon color and padding  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/fe1a79fc72494d4c938100148bc0a9da64cc4294">fe1a79f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> default was missing in btn variables.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5f65d93518238089352e92d8d1ed077d1b70b541">5f65d93</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added c-media-action-visible for parent to show all  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/dc21aff1e11f70e87c05148ca04ab8a51bafef18">dc21aff</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> gulpfile fix for html watcher  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/25da64331739cfd9687421c82420d890bedbc6b3">25da643</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.5  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/7ca1da1c34a518805d4c472a1a95e1dcd7bde15c">7ca1da1</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Revert &quot;Release 1.1.5&quot;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/3313fa0f9cee2baf7314d04e9963750f9075407b">3313fa0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> toast alerts - use global vars  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/7df73e678e27e6a4e1c690a43f27fd9b380067fb">7df73e6</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Revert &quot;Release 1.1.5&quot;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/71cbb1665478aabe67f9b8fa43c19f6ce211ebb7">71cbb16</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> toast alerts - use global vars  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/46bb962e1b32d770da23ad257ac590bfce03aa23">46bb962</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.5  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e603416dec746320b59c1b42f43605599a7e664a">e603416</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.5  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/dddd2b805cfa1bd31d8541f0b6226df562273d90">dddd2b8</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Revert &quot;Release 1.1.5&quot;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/9c18166d38e9f9aa702019cd32c226a8686a9b6f">9c18166</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> #125 [BD Flavor] Hover item in dropdown update  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5bdbe87219f07c4334312ec014fb0466f0fbe6b4">5bdbe87</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Revert &quot;Release 1.1.6&quot;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/59beb8892e4d4534b9c355aa4cf5f88aec6994b1">59beb88</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.6  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bee8276eca2f1c39845136308601a8ae786f06dc">bee8276</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> hotfix: tab padding  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b9df018c74cbcb8d86bda3472a9752a6c17df5df">b9df018</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> #125 [BD Flavor] Hover item in dropdown update  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/58ea7ace5c3bd98ccb799394b2d9c56250f0c48f">58ea7ac</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> #125 [BD Flavor] Hover item in dropdown update  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/eb9db74d194564f3ab21cb0d9e8d2d85350724d6">eb9db74</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.5  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1b287092ed555a26322754f9e6ddc8e8472b9136">1b28709</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> remove cursor-pointer from input label  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/a7a90034ff50ff04a148e4386dd2804700e8f92d">a7a9003</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> remove cursor-pointer from input label  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/95153da04aab81c6ac980fe88b11b3264731253f">95153da</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> remove cursor-pointer from input label  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/997fa6e0a856a4ff5d8c28be803d1173385cdfe7">997fa6e</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="1.1.4" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 1.1.4
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-10-11</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.1.3...1.1.4" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> alert fixes #132  <a href="https://code.ipreo.com/Ipreo/cupcake/pull/136">#136</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Badge alignment fix <a href="https://code.ipreo.com/Ipreo/cupcake/pull/135">#135</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> adjust xs btn size, change btn size in table. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/129">#129</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> fix for default btn color <a href="https://code.ipreo.com/Ipreo/cupcake/pull/128">#128</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> added .c-p-horizontal-{size}, .c-p-vertical-{size}, .c-m-horizontal-{size}, .c-m-vertical-{size} <a href="https://code.ipreo.com/Ipreo/cupcake/pull/121">#121</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> button box - fixed width approach. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/119">#119</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Forms select <a href="https://code.ipreo.com/Ipreo/cupcake/pull/118">#118</a> </p>
+
+<p class="changelog-update-description changelog-bug-fix js-changelog-update-description" data-instafilta-category="bug-fix">
+<span class="changelog-type">Bug Fix</span> fix full page loader in IE11 (#124) <a href="https://code.ipreo.com/Ipreo/cupcake/issues/114">#114</a></p>
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> moved all out to modules  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c580bad51b172c462689784a497c6c264f9fc7d0">c580bad</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> updated base media item  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d002b817c5bd36fd3c275533d3d0c1f268ac3ef7">d002b81</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> toast alerts initial commit  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ed724712a15cfa0d6ea2ba4fcc5b4583711c06ac">ed72471</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> form select - invisionapp design  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e35accd1b4e294e99a730f0edc276a9bb1f2d8bb">e35accd</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> avatar fixes (#134)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4205d349c5f4c4e79d163aadb2f1a26286af20f8">4205d34</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> select disabled state  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4735e3150eebe3bc74553bee299be83c26742b94">4735e31</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> make btn-box width fixed  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/40ea080f422692cf51142cc078c49706b605d90b">40ea080</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> vertically align table head; extract drag handle to separate classes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ae5f3e42f23eeecbcbeae966a7f43b416c55e556">ae5f3e4</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix c-col-shrink (#123)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/75ef103d87fddac8f8c0fb7b5553dfdd8be1a91e">75ef103</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> modals font-weight; card content title font weight and margin functionality.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/7c27d4461adfbca794050b486d14132475ab398e">7c27d44</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> refactor c-btn-circle; adjust c-btn-box sizes.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c99e79ed6b49d197958d54320456c2ded26db09b">c99e79e</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add more cursor classes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/39001089bd747b4e02848156ed4114dd15a28d45">3900108</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> remove dev comments  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/07239ffa7bc657e3fb2d2c4c20238c7cc99bd290">07239ff</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d3416e15309571325626e54d6ac0c7e52480d1e6">d3416e1</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> new row mixin adds negative margin - not needed for footer (#120)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/fa3cb58b6011f2be1f57eb269898a9c184cf6db5">fa3cb58</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into forms-select  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bb055fabe84a290eacd614974f4250b2ee2a11b1">bb055fa</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> release-prep  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ad5d426cfd7e127ccca067ecbb8f7a5b1ebcd1eb">ad5d426</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix large text color in BD  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8c642597d324146556444e05c9857a73ef197f76">8c64259</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> BD - popover border and shadow.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1c8a26ce743e5934d4d3159665c3ace0e3ede3ba">1c8a26c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.4  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/37475e0d92432e38699b2a8d24185e435d878a4e">37475e0</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="1.1.3" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 1.1.3
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-09-19</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.1.1...1.1.3" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> restore loaders, but without logo loader.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/3d5aeaf66e117fef726f1ca4c8325a1863945790">3d5aeaf</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fixed gray borders to use border-color property (#112)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c0d6a11e1cfbebe533914d6f7ebd8d358b94efb3">c0d6a11</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Changelog  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/fb779b45f9714b4ed9bfaf5d6e371263d27acf70">fb779b4</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.3  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1341aed1267aa59f4a9baeb318d8f837487b7298">1341aed</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="1.1.1" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 1.1.1
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-09-16</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.1.0...1.1.1" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> removed loaders  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/92f403f776a93b3113c9dccba7fdcff3d1b9c6dd">92f403f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add text align classes to export  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/922c7278756a1dccf2dcc83604f921c0a8b95e6b">922c727</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.1  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/50cfea2e447c08e577ab4af70f74289a4f3d52a6">50cfea2</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="1.1.0" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 1.1.0
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-09-15</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.0.0...1.1.0" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Updated display props <a href="https://code.ipreo.com/Ipreo/cupcake/pull/104">#104</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> List groups style update <a href="https://code.ipreo.com/Ipreo/cupcake/pull/111">#111</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Button updates <a href="https://code.ipreo.com/Ipreo/cupcake/pull/110">#110</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Utility updates <a href="https://code.ipreo.com/Ipreo/cupcake/pull/109">#109</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> remove color property from background helper. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/103">#103</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Border color changes only color <a href="https://code.ipreo.com/Ipreo/cupcake/pull/97">#97</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> add more form snippets <a href="https://code.ipreo.com/Ipreo/cupcake/pull/100">#100</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> progress size fixes (#107)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/0f9941da798a27e419ac9711ac43c7b6a0b1bbfd">0f9941d</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added popover examples  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/9993495f2a6fce7bc8ecfb28b84a70371404d201">9993495</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> text alignment fixes for #102 (#108)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c69c85fee78875765d3d07769760a1d940d67d71">c69c85f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> various additional helper classes (#106)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5c6c53bdeade5a1af662f09e12f409286600a537">5c6c53b</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> adjust forms to meet invisioanapp design.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f17ebf5c3625d333990ae022038c5e627643cb5e">f17ebf5</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.1.0  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ccbc9b3ff55681cc936855e588a16c9f70507f73">ccbc9b3</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> tabs alignment bug fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/17b74489951c0e2882dfc8ecf651c5c623eeb028">17b7448</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix for issue-96  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/df2c330c1be451f8c78ab04aae2d62fb2db6b6e7">df2c330</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="1.0.0" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 1.0.0
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-08-18</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/0.1.8...1.0.0" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Updated cleaner grid <a href="https://code.ipreo.com/Ipreo/cupcake/pull/91">#91</a> </p>
+
+<p class="changelog-update-description changelog-bug-fix js-changelog-update-description" data-instafilta-category="bug-fix">
+<span class="changelog-type">Bug Fix</span> .c-bg-gray text colors - fixes #67 <a href="https://code.ipreo.com/Ipreo/cupcake/issues/67">#67</a></p>
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> tab updates and input group fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/265da9f9657238a427a93b62cab7c9313db957a0">265da9f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update footer and badges to match latest design (#93)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/dbeedb2cac3b8076218233a81914fb53b494fe97">dbeedb2</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> 1.0 Release prep  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5942bab787f33c7fe9ca760a2e12a05c79ac2f78">5942bab</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Changed references from northstar to default (#94)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/51e40ecabf546cc9edaf436ae7cd4bd3406a7986">51e40ec</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> package name change  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c34a5ecfe32cdded20fb134be6472e98aa4f23c8">c34a5ec</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 1.0.0  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/35433ce1e13ba05f67bef47fd99be5d13ef94ae1">35433ce</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b3e67be293dc6b1dd00c8746dc772d826f06fc15">b3e67be</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> changelog 1.8  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/784448b86b1a94cf8c99890b987c3ea6d4c4bbc2">784448b</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> popover alternate positioning &quot;shifted&quot;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/28e6c2f6636505b061faa5826a3aa82baee565e9">28e6c2f</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="0.1.8" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 0.1.8
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-08-10</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/0.1.7...0.1.8" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> fixes for Events team. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/87">#87</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Checkbox updates <a href="https://code.ipreo.com/Ipreo/cupcake/pull/90">#90</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Cupcake tables <a href="https://code.ipreo.com/Ipreo/cupcake/pull/83">#83</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> add classes to popovers for popper.js compatibility <a href="https://code.ipreo.com/Ipreo/cupcake/pull/84">#84</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Cupcake tables <a href="https://code.ipreo.com/Ipreo/cupcake/pull/78">#78</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> issue-76 add background for default alerts <a href="https://code.ipreo.com/Ipreo/cupcake/pull/77">#77</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> support using column classes without have to use c-col. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/70">#70</a> </p>
+
+<p class="changelog-update-description changelog-bug-fix js-changelog-update-description" data-instafilta-category="bug-fix">
+<span class="changelog-type">Bug Fix</span> added support for header notification alert icon (#80) <a href="https://code.ipreo.com/Ipreo/cupcake/issues/74">#74</a></p>
+<p class="changelog-update-description changelog-bug-fix js-changelog-update-description" data-instafilta-category="bug-fix">
+<span class="changelog-type">Bug Fix</span> remove bottom margin from .c-alert-top: closes #64 <a href="https://code.ipreo.com/Ipreo/cupcake/issues/64">#64</a></p>
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> base styles for new tables design  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/27576d7960381f286e508f0178970b1adbf146a8">27576d7</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Revert &quot;checkbox &amp; radio syntax fixes&quot; (#86)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/39f56092b6cb9f8862204765908e2fd1f859c970">39f5609</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> checkbox &amp; radio syntax fixes (#85)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5a1778a47be95b8435af3f5e451741dfd76bea99">5a1778a</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> update table designs  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4d2469cb42770048022ed3bfc9f2b55aae8f4e57">4d2469c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> made pagination non-specific to li adding .c-pagination-link : BREAKING syntax change (#82)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/124a89a377011ae5eadc0ad14886439036130a4a">124a89a</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add table line-height; (#79)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/7c435eaf9c00daec7e69bcc8e16736c04660a040">7c435ea</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add table line-height;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/a94e68525027490036b81f8263b121fd810d3950">a94e685</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> used existing select form inputs  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4ae82c0321a91b02326dde08172d5fd32a31a20c">4ae82c0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added starred state. removed old sass map - $table-colors.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/706af4bee37f2de29f56d801aff7060450e34519">706af4b</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> c-btn-secondary active fix:  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c494b7704943fa3716e032d8ad0b811df1b7f6bc">c494b77</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into cupcake-tables  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bdef9bc01a09f454fd7319d0513d9b98a6ff0c39">bdef9bc</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5d7f552e00ed2528fecf2cf0788c0582d6cbfa40">5d7f552</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.8  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/502854621635199e2cd421ea4dcc72a470e6b6d9">5028546</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="0.1.7" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 0.1.7
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-07-15</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/0.1.6...0.1.7" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Pcs flavor updates <a href="https://code.ipreo.com/Ipreo/cupcake/pull/69">#69</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> PCS Flavor update  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/beb2aa0f2258926f2f2f464a448b849af613fd93">beb2aa0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added select  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/98239c20200694bb2e2726eb09fe456b1f57038a">98239c2</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Fix for checkbox and radio labels  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d000a9395302390dece10509222cc0f841e5324f">d000a93</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> pcs-demo page  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/256274c27d7576f284bb3273396edeccd85079ab">256274c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.7  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bfc8d44c14763e577066ed1c0142efa9d348d302">bfc8d44</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> changelog  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/01fc1b54561c50598247a8bf10e8d75fd3223dc1">01fc1b5</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/35d18db1e3bd1414c6b36fde71b0c15ed1eca2d4">35d18db</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update CHANGELOG.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/6bd86183e4895da236c84157f04acc1bcbb5535a">6bd8618</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="0.1.6" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 0.1.6
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-07-06</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/0.1.4...0.1.6" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Added Card deck <a href="https://code.ipreo.com/Ipreo/cupcake/pull/66">#66</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> page loader <a href="https://code.ipreo.com/Ipreo/cupcake/pull/62">#62</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> changed circle loader&lt; added page for loaders  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f98ef30de74fd0fcea433ac535f05fece4d269e5">f98ef30</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> CPCK-11 added a couple loaders  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/2bf5eb5c843311c461b0f04a0cf3683bf2ef619f">2bf5eb5</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix pill btn in group - updated deps.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/02d7bb7622e43f7d113f77e4704b58b4837d213a">02d7bb7</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> small change for c-text-strong/bold  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/68468755e91acba79d3398d14b937d05bcd46a1b">6846875</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> reverted to previous version  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/71d0d462481065fa2ce4666fb16e60b180d6d04e">71d0d46</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added HTML file for Modal windows  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/a7670351f46af9516f2cf65a5ccd783c98ac12ff">a767035</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fixed couple bugs related to modal windows and loading indicators  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/165d2f5d62e7ce6539694665cfe349f8ea3bf97f">165d2f5</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b5bb079c7fa1448a1fecd930f8dff1d9cc468a6e">b5bb079</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.6  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/a6ae4311b9ac05448b2473a7b29c62c61a9b40bf">a6ae431</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> minor fix modal windows  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/dfb090d655f3d0b39f939a9b0bee2fa1e8392a0a">dfb090d</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> c-text-black/white - use variables (#63)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e9e0d6f14ed4045280be35f0aaa493b08e18d353">e9e0d6f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/6ec8350f7735babe4a2ec10c3fef1703e324ec48">6ec8350</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="0.1.4" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 0.1.4
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-06-26</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/0.1.3...0.1.4" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c11f6d9626761121017d69e8adc5ad3a132337e6">c11f6d9</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/eab1aecf3855b8777aedfd48034f6ec208497437">eab1aec</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/243f8b3d8f97806cd87a415a9ffd18ee2cd934ce">243f8b3</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> 0.1.4 Release Changelog  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/eb623e4045b2d98f6c44ffe422ab559f589a7dcc">eb623e4</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> hotfix: text-white and text-black fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b6cc06cf1e237de3b161c9ee0f6190b5838d3b3c">b6cc06c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.5  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/415b48fc5c368a72d0c837df47ce3bdfde326200">415b48f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.4  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d60fc30b7a4c8407df1b0e234db02a8e69294ee6">d60fc30</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="0.1.3" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 0.1.3
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-06-26</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/0.1.2-rc.0...0.1.3" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> border helper classes <a href="https://code.ipreo.com/Ipreo/cupcake/pull/59">#59</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> #57 remove link selector from alerts. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/58">#58</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Linting <a href="https://code.ipreo.com/Ipreo/cupcake/pull/52">#52</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> BD: inputs, cards <a href="https://code.ipreo.com/Ipreo/cupcake/pull/51">#51</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> buttons and dropdown <a href="https://code.ipreo.com/Ipreo/cupcake/pull/49">#49</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Card menu item fix <a href="https://code.ipreo.com/Ipreo/cupcake/pull/48">#48</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Notifications navigation <a href="https://code.ipreo.com/Ipreo/cupcake/pull/47">#47</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> bd-fixes typography <a href="https://code.ipreo.com/Ipreo/cupcake/pull/46">#46</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> flavors tokens task <a href="https://code.ipreo.com/Ipreo/cupcake/pull/44">#44</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Grid updates <a href="https://code.ipreo.com/Ipreo/cupcake/pull/43">#43</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Variable parsing <a href="https://code.ipreo.com/Ipreo/cupcake/pull/38">#38</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Bd fixes 3 <a href="https://code.ipreo.com/Ipreo/cupcake/pull/28">#28</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> bd tabs fix, variable names refactor. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/24">#24</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Cleanups to match updated comps <a href="https://code.ipreo.com/Ipreo/cupcake/pull/26">#26</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> variables in strong, small tags. remove h1 from reset. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/23">#23</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> create invisionapp page.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bc0213f83caf2b3c3939f21f30df3e0d91837b0d">bc0213f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Added elements to invision page.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/dc84a27c3186d8bc161ecadfa72a1cfe579e8133">dc84a27</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> init stylelinting  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c79a2eef07502729bd0179c35ef7cb2003cbb1de">c79a2ee</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add loaders  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/a908124606b8de85e4f8e4d201a5d0e7227f7493">a908124</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> switches, checksboxes, list groups  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/cd57a46bb327b8868680e29fa0b4dfca9ca55dc6">cd57a46</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Visual regressions working (#42)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d8b51a14440faf8ba1b907b46f771e0a46f6846e">d8b51a1</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added tables to invision page  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b79386ae756a6f0249e00e1345f555d979b836e1">b79386a</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add initial tokens file to BD  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4f315c08df1c3ba3942f176c7000b215da38476d">4f315c0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Change and add new styles for modal view  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/7607bcf31af333dc7a2086c6656c76ce8303dcdc">7607bcf</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Change and add new styles for modal view (#50)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d3d7649561a21f052e3e06a705d983197e2e72e0">d3d7649</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> pull in card changes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/66053a7281818df3893b680b057ad3940d6d9125">66053a7</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added form groups  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4196783e0e80446617c69b420a51023b902f4238">4196783</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> northstar flavor fixes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f160775fe1a53741d78ff145c71cd7c6e11c4612">f160775</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> switch and checkbox disabled colors  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/03fa3611ffe0aee7bbc8776eed2e17fb2ed540d2">03fa361</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> stopped generating misc color classes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/795051771a78817e84f39e2401fcd643598a3028">7950517</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added c-btn-link, fixes to pcs styles  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/710fb600c716c0a3c36de435b745096928039d37">710fb60</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge remote-tracking branch &#x27;origin/master&#x27;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/12dd4a9c15cf00ecf8fea307e2c51edde906cc41">12dd4a9</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/3694692d718730e89bce0a98a8af01f3af6b3b94">3694692</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Added c-btn-link (#54)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e5ebedb6d9c443500fb04ed37e516ff89cdb07c8">e5ebedb</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/3c1b8006cc44f02d1b74bc23716eaec5c9161b94">3c1b800</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8b9fda05f783db923becef49f08ac59f6c57f02b">8b9fda0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e1d7cd3dcf182e23fc802a8a25735f8403e9d432">e1d7cd3</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c882ed90b3c6a51b362aeea0f12eaecc4f1d3895">c882ed9</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge remote-tracking branch &#x27;origin/master&#x27;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d5953fc66d0288f4703e06998b9f146331a7900d">d5953fc</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> northstar is now the base  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/35d2d0cbb7b9006feb1e954ebcf9c0cfe4306f34">35d2d0c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> precommit hooks  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/08d46237a6235f2059364628888fde3d69494a2b">08d4623</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> button group fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f49600b4e4ab34ffddf90e7f0a7d82df31bbe369">f49600b</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Fix grid gutters, position class import order  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c1af7c89b6619b67ba35635c98256a0b54f04c30">c1af7c8</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> BD tables (#53)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/32781a0f7f2b3671a23f7a4919cfe2bc126e848f">32781a0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Buyside flavor fix (#60)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/20149cf97c9b75471bc3e7c58d8c09b3dce845f9">20149cf</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> gulpfile small cleanup  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/2fe48ab85467812a00359631a82ed3a23ba231ff">2fe48ab</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> bd-inputs fine adjustments.  add vars in dropdowns, buttons.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5e0d7d5f5e7fd4de0cbdcc2ce422d5013e8963e4">5e0d7d5</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fixed dropdown flex and shadowson input-groups, badges line-height  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c157889f2b8f59e1cf302f0e0c88170432e4a784">c157889</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add XS size for buttons  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c7c885696556829a1fb79728f97850d5c1152e07">c7c8856</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> file upload styling  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/dc8665beac68ac6e2e1b0260264e877c3e859753">dc8665b</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> bd flavor - c-box, shadows  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4d506aa968795acc5b6c63cacfb4e5d649c8f03f">4d506aa</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> BD tabs  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/93d2b10535ca6cdeb38fba5442c4ca8fa759e424">93d2b10</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> bd flavor - forms colors  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d06e6f33287dfef5cb40c39e188a73a817bb777a">d06e6f3</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> grid demo fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c5ecf67f638afa07bfc22cf7f9bc72cfd359aaa7">c5ecf67</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix for paragraph and padding class names conflict (#55)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/28b065463db86ad428fdefa6bda6d199d0f40187">28b0654</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> updating release files  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/33f62eda75f959936e8577c406aa5b57b8ac8fe5">33f62ed</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix &#x27;scrape-variables&#x27; task overwriting tokens files  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8cd249ecf0ff676f22673599d4f863dc6e5c8d8f">8cd249e</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> notification flex-item  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e189026ba845ff278b20267021e81b75d1b761d9">e189026</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> variable flavors generate to &quot;tokens&quot; to not overwrite existing variables (#41)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/767d147484ec900ff4a6ee8c9d66ab07f3f05c2c">767d147</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> badge line-height fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/20d8ec29103686f6beea4d6a482e585af1649a2d">20d8ec2</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix btn sizes in BD. fix typo in $btn-size-padding. (#27)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/04771f5070ba1d050f4ce704a4919324703c71ef">04771f5</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> BD checkboxes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8e874cf0ebda631b7cffa3de9c37f34923152b92">8e874cf</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.3  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/9aa8f3c26a4ef05e4951003488c1ed062efd33bb">9aa8f3c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Add link to documentation site. (#40)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/928efda0b1e83b2247b325652c9c97123a7008fd">928efda</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> bd-adjustments - grid gutters, form label padding.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/81130e3535e84b41873d98e87f38677311c888d7">81130e3</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> form input fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c6f0a579741b56a960a8e0fc16abb3a894c4fbf7">c6f0a57</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="0.1.2-rc.0" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 0.1.2-rc.0
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-02-21</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/0.1.1-rc.0...0.1.2-rc.0" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> ability to have different style for btn active state <a href="https://code.ipreo.com/Ipreo/cupcake/pull/17">#17</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> remove c-btn-dropdown class <a href="https://code.ipreo.com/Ipreo/cupcake/pull/20">#20</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> removed codeclimate.yml  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c9a2e438d20156df7aa3145511e14cb4d2d6ffce">c9a2e43</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.2-rc.0  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/6ac144428e41c5bbd2d9316d056e5d122767f63c">6ac1444</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5b810f952b6317d5ca1ff794c898434dbd773174">5b810f9</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> codeclimate test  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4625f5dbe3dd12ff33545a215c5d5a08a5cd5aac">4625f5d</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="0.1.1-rc.0" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 0.1.1-rc.0
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-02-10</div>
+<a href="https://code.ipreo.com/Ipreo/cupcake/compare/0.1.0-rc.0...0.1.1-rc.0" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.1-rc.0  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1b8f9bf45f0a3d34677c53595c356715cf4e622b">1b8f9bf</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Removed a. from list group item  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/0e7121706f381530c6f3562ad46c7704cc8efbbc">0e71217</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+
+<div id="0.1.0-rc.0" class="changelog-item js-changelog-item">
+
+<header class="changelog-header">
+<div class="c-header-xs c-p-bottom-sm c-text-primary">
+Release 0.1.0-rc.0
+</div>
+<div class="c-text-md c-text-muted">
+<strong>Date:</strong>2017-02-09</div>
+<a href="" target="_blank" class="changelog-switch c-btn c-btn-primary-outline c-btn-pill"> View All Updated Files</a>
+</header>
+
+<div class="changelog-update-descriptions">
+
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Bd adjustments 2 <a href="https://code.ipreo.com/Ipreo/cupcake/pull/15">#15</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> .ipreo-ul-unstyled - doesn&#x60;t override .ipreo-ul <a href="https://code.ipreo.com/Ipreo/cupcake/pull/13">#13</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> remove old unused variables <a href="https://code.ipreo.com/Ipreo/cupcake/pull/14">#14</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> table states, including selected. table-condensed. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/12">#12</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> remove old forms files <a href="https://code.ipreo.com/Ipreo/cupcake/pull/11">#11</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> the box element bd-flavor, input-results fixes. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/10">#10</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Bd adjustments. <a href="https://code.ipreo.com/Ipreo/cupcake/pull/9">#9</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Bd adjustments <a href="https://code.ipreo.com/Ipreo/cupcake/pull/8">#8</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> fix links in cards <a href="https://code.ipreo.com/Ipreo/cupcake/pull/4">#4</a> </p>
+<p class="changelog-update-description changelog-merged js-changelog-update-description" data-instafilta-category="merged">
+<span class="changelog-type">Merge</span> Develop <a href="https://code.ipreo.com/Ipreo/cupcake/pull/2">#2</a> </p>
+
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Release 0.1.0-rc.0  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1024bb9acd22d6451129a7695d33644424dc8134">1024bb9</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> .idea folder added to ignore  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1d953b973a6939724998a2fedffe65f58ae70946">1d953b9</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added support for release-it and changelog  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bd6736bbaf038e050fabac0c59fc89113bb2a802">bd6736b</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> bd-flavored tabs  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e87d54c12abbb4621cc45295f0c63c6b0911dd2c">e87d54c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Selector Discrepancy Between Default and BD  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ea0cff2723ac49ae66fc898fc00521fedb9f0815">ea0cff2</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into bd-adjustments-2  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/3a1dfdbfedad7040a31d832e8e52bcfc4d8372b9">3a1dfdb</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> change list color  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/151bb13958919084043328502752b74389ff6ad6">151bb13</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> tabs, box adjustments  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/0c7dbaa5060a238bf42b9018c01c0d60592ad370">0c7dbaa</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> table states  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/1b2cbb25d5fd2e20164e3e51407b22f8c03a49ec">1b2cbb2</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into bd-adjustments  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/9e38e460df352e99ba50c0c7abbc5b05dd9341e3">9e38e46</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added card menu icon classes and variables  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8e623ba21086151e864b35c3128de651cd90b0a1">8e623ba</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> adjusting grid gutter.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/30981e823767108276a8e10ccd96deba27b703ec">30981e8</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into bd-adjustments  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/2715529b5ceb835f0592f39c5d3466db3452e355">2715529</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> cleanup and linting  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b570550e62277ecc351f4d8762931f34f56285d0">b570550</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added square switches  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/800054597d681d3f9d1399be68fb0a2334a8142d">8000545</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fixes tab border  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ff790a328a01064ad193a8b6999cbe5d19b7a791">ff790a3</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> renaming .c-p-lg to .c-p-lead in typography. small fixes.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/24bc6e26baa2672cc5a04b2bfeeb965afbcce99d">24bc6e2</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> restore overwritten(by 85945e0) changes in tables.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/fea7c4582aa29bb1e258451a9f0df12e04b00aa0">fea7c45</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Added export mixins for space &amp; flex  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/5610a5f78b873192c99f657776d31ef50e712390">5610a5f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> hotfix - fix spacing duplication across flavors  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/678b4f50ad49627f8831ea2c9968a8a631cfa622">678b4f5</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> hotfix -  font-size duplicated in btn-colors  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8ffcfc192fe0650421ef6c8dd22757f719c910e1">8ffcfc1</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> moved to single .c-container  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/213dd850d6ef8c4c088ab5a41ffc8f067439e8fe">213dd85</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> breakpoints and class fixes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/988a013e26ae35fb644f04937360b289f6bd9466">988a013</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fixed spacing duplications  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/cb1012ca708b3c06d22bf871f3ef711b2ef228fa">cb1012c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> removed box content  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/445a1139a67d8374211ed381aba0d5200c62916f">445a113</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> pcs naming fixes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b27d9e9193cc4c1d86ae4db41e41c061190dfe22">b27d9e9</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> simple box component  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/9693aa52cb34a9871c5999bded6c937e567402fe">9693aa5</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Tabs scroll bar fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/57e2d85fb4a4cbeab6b33a56e25353cd0f1c1baf">57e2d85</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> container max-widths, spacing and mq fixes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/85945e009b0436dad2124861bb96bf289dab1588">85945e0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> BF-flavor angle-down -&gt; caret-down  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/3b89376a979dc55a4d436053c0065753ee40dffa">3b89376</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> BD-flavor forms, headers, table adjustments  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b622774b99471688d98c3a759c040d31c013d7dc">b622774</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> BD-flavor styling - tables  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8c37028bdc6594ba38b139360cb552440c68a556">8c37028</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> card, base table styling for bd flavor  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/984ab8142f33ee333ae8e362ecaf44820ce5222e">984ab81</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; into bd-adjustments  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/6c78fd1d7cd80b5437c65d7061971c497af19434">6c78fd1</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> buttons and forms in bd-flavor  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b618cfd43c8d092f13c09f3849901dc094ed879e">b618cfd</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> added containers (#7)  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b0dc87d0d3ee78a53c6fedc6f0630dadaf1d30be">b0dc87d</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> BD: typography, buttons, dropdown  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/14d5ebad5ea901443b66424ce0efb15aa08c3cf9">14d5eba</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Cleaned up buttons and button groups - table import fixes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d9aee5f10d3c15f90abeb9257ac32f6682f366ef">d9aee5f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;button-groups&#x27; of code.ipreo.com:Ipreo/cupcake into button-groups  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/77bf0acb0d4b1e0945a717af98fb8b57ed7d5578">77bf0ac</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> table fixes  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/47fc98cb16dc9cc4ae85f0243d30aa44804fab81">47fc98c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> table fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bffe15521ad080d17b8bfa9c6b2aaa759d164330">bffe155</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> typography helper import order  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/4a1368ade885a32c16d0886a16cad3cfbdf77bcb">4a1368a</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> add ng-dirty class to ng-validation  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f344373425ec9117788435ae9276b7c12348d0bb">f344373</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Cleaned up buttons and button groups  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d54940813a5fd00e0ea57707d26889cc4162b1bc">d549408</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Fixes font/flavor refs  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f3047fb5493d30f837a043d47e6c928cec8e38cf">f3047fb</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> fix for dropdown overrides.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ee2590230dc3a3a82891ffa6f5ecd6f125d812a9">ee25902</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> flavor can be added with &#x27;gulp new flavor --name something&#x27;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/b219845507c51e220e89e90c3568680f58435e83">b219845</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> updated gulpfile based on structure conversations  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/bf37ae7fce0f3d28c36d2a69b98115370acfb7ba">bf37ae7</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> updated .gitignore and gulpfile  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/06f20ec633bcb4c267a76c57109b491926bed30c">06f20ec</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;gulpANDc-&#x27;  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f586328759dca6f312e30ce21d5487a099ec3234">f586328</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/d0a2daae01d8da52df0f240c13d31eea40a72769">d0a2daa</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Fixed package.json  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/50697fcf56d6d525c5b0f461b5dd44bf37c0d97e">50697fc</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update package.json  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ce9931f761fe37a90f7c8888c479e43456e1b0dc">ce9931f</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Gulp and c- prefix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/fc1dbeb3486e79290fcfd961bac5f53069c37192">fc1dbeb</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> changed copy npm task.  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/6f346696340ee151100b01530492108ff76d50f3">6f34669</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of code.ipreo.com:Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/149703cc5f24c6c7f0ee463d540ab392de45e81a">149703c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> - removed dist  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/09ce4131ecf7af1d1f31d1aae5dd4c7b9fb4765f">09ce413</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/566f53d73a5581eb09103867fdee984c20d29fc3">566f53d</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Merge branch &#x27;master&#x27; of https://code.ipreo.com/Ipreo/cupcake  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/92f2cee5ac9cbe153cab019d4f2bcfd9c594634b">92f2cee</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> logo-fix  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/8bc6c002e204a2b7c92ae84af95c7d55227dfd0c">8bc6c00</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/815bce05d7e7c6e6425c0f999cd4a68cdf64a41e">815bce0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> logo-update  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/fd71d56805cfd7c65445e170bc1a9d3dbb6e8bb5">fd71d56</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> stylelint  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/e997b1c23b5c0658d771b2aec1599036a8f9978d">e997b1c</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c0408e07b39f684c21947113e23c784fa94c0402">c0408e0</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/f132051f4a7a542f2cdf7b1f3996302512c1120d">f132051</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/c38df1d56453f9fc7f47edf2ceb6bdcbef4a7ae6">c38df1d</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Init core  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/26f5408433d0f438d5063a40fc19971d1c39a0d3">26f5408</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/92c8a03151eb09ac39c887dc50290b8efb8e07fa">92c8a03</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/a6db93e5c8094985f848f0f039b190928e325e90">a6db93e</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Add files via upload  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/febcb32ea6cfe45b2b7a212a2e359dc212389c61">febcb32</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Update README.md  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/24963e356853deed8a1019d20ddf20caae065c56">24963e3</a></p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+<span class="changelog-type">Commit</span> Initial commit  <a href="https://code.ipreo.com/Ipreo/cupcake/commit/ab25715fd61a809e12480d8ba5e9e81ac5ccd913">ab25715</a></p>
+
+<div class="changelog-link"></div>
+
+</div>
+</div>
+
+</div>
+
+      
+          </div>
+
+        </div>
+
+        <div class="c-footer">
+    <div class="c-footer-left">
+      © 2018 Ipreo. All Rights Reserved.
+    </div>
+    <div class="c-footer-right">
+      <div class="c-footer-link">
+        <a href="https://ipreo.slack.com/messages/C0T3KNMK7/" class="c-a" target="_blank">
+            <span class="fab fa-slack-hash" aria-hidden="true"></span>
+            Slack
+        </a>
+      </div>
+      <div class="c-footer-link">
+        <a href="https://code.ipreo.com/Ipreo/cupcake" class="c-a" target="_blank">
+            <span class="fab fa-github" aria-hidden="true"></span>
+            Github
+        </a>
+      </div>
+      <div class="c-footer-link">
+          <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
+            <span class="fas fa-info-circle" aria-hidden="true"></span>
+              Release Notes
+          </a>
+      </div>
+    </div>
+  </div>
+ 
+      </main>
+
+
+
+
+  <div class="c-footer">
+    <div class="c-footer-left">
+      © 2018 Ipreo. All Rights Reserved.
+    </div>
+    <div class="c-footer-right">
+      <div class="c-footer-link">
+        <a href="https://ipreo.slack.com/messages/C0T3KNMK7/" class="c-a" target="_blank">
+            <span class="fab fa-slack-hash" aria-hidden="true"></span>
+            Slack
+        </a>
+      </div>
+      <div class="c-footer-link">
+        <a href="https://code.ipreo.com/Ipreo/cupcake" class="c-a" target="_blank">
+            <span class="fab fa-github" aria-hidden="true"></span>
+            Github
+        </a>
+      </div>
+      <div class="c-footer-link">
+          <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
+            <span class="fas fa-info-circle" aria-hidden="true"></span>
+              Release Notes
+          </a>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
+  <script src="https://cupcake-design-system.github.io/assets/js/vendor/instafilta.js"></script>
+<script>
+  (function($){
+	"use strict";
+
+	// Module name: Changelog
+	// Dependencies: jquery.instafilta.js
+	// Docs: https://github.com/chromawoods/instaFilta/
+	(function(){
+		var changelogs = $('.js-changelog');
+
+		changelogs.each(function() {
+			var changelog = $(this);
+			var changelogItems = changelog.find('.js-changelog-item');
+
+			var changelogFilter = changelog.find('.js-changelog-input').instaFilta({
+				scope: '.js-changelog',
+				targets: '.js-changelog-update-description'
+			});
+			
+			var changelogCheckBox = changelog.find('.js-changelog-checkbox');
+
+
+			changelogCheckBox.on('change', function () {
+				var checkedCategories = [];
+
+			    changelogCheckBox.each(function() {
+			        if ($(this).prop('checked')) {
+			            checkedCategories.push($(this).val());
+			        }
+			    });
+
+			    changelogFilter.filterCategory(checkedCategories);
+			});
+
+			
+
+			
+		});
+	})();
+
+})(jQuery);
+</script>
+</body>
+
+</html>

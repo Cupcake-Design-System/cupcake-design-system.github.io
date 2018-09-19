@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Alerts are used to communicate errors, warnings, confirmation messages and critical information that can affect the user experience.">
+
+<title>Cupcake · Alert</title><!-- Theme Switch -->
+<script>
+  var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
+    {};
+  var themeName = themeSettings.themeName || '';
+  if (themeName) {
+    document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/assets/cupcake' + themeName + '.css">');
+  } else {
+    document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">');
+  }
+</script><!-- Documentation extras -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <aside class="c-sidenav">
+  <div class="docs-logo">
+    <a href="https://cupcake-design-system.github.io/index.html">
+      Cupcake 
+    <span>Design System</span>
+    </a>
+    <button class="c-md-d-none" type="button" id="docs-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    
+    <div class="c-d-none c-lg-d-block c-text-center c-text-sm c-text-bold c-p-bottom-lg">
+      Current Version       
+      <a href="https://code.ipreo.com/Ipreo/cupcake/releases/tag/1.4.6" class="c-a" data-tooltip="View Changelog" data-tooltip-conf="right">1.4.6</a>
+    </div>
+  </div>
+
+
+
+  <nav class="c-sidenav-body" data-simplebar="">
+
+    <ul class="c-sidenav-menu" id="js-nav">
+      <li class="c-sidenav-menu-item ">
+        <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/index.html">
+          <span class="c-sidenav-menu-icon fal fa-home" aria-hidden="true"></span>
+          <span class="c-sidenav-menu-title">
+            Introduction
+          </span>
+        </a>
+    </li>
+
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-info" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Getting Started
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/overview/">
+                  Overview 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/developers/">
+                  Developers 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/designers/">
+                  Designers 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/faq/">
+                  FAQ 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-paint-brush" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Style
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/primary-colors/">
+                  Primary Colors 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/extended-colors/">
+                  Extended Colors 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/typography/">
+                  Typography 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-desktop-alt" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Layout
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/app-layout/">
+                  App Layout 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/overview/">
+                  Overview 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/grid/">
+                  Grid 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/header/">
+                  Header 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/footer/">
+                  Footer 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item  c-sidenav-menu-item-active">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-object-ungroup" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Elements
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li class="c-sidenav-menu-item c-sidenav-menu-item-active">
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/alert/">
+                  Alert 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/avatar/">
+                  Avatar 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/badges/">
+                  Badges 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/buttons/">
+                  Buttons 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/button-group/">
+                  Button Group 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/card/">
+                  Card 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/checkboxes-radios/">
+                  Checkboxes & Radios 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/dropdown/">
+                  Dropdown 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/forms/">
+                  Forms 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/loaders/">
+                  Loaders 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/media-object/">
+                  Media object 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/modals/">
+                  Modals 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/pagination/">
+                  Pagination 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/progress/">
+                  Progress 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/switches/">
+                  Switches 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/table/">
+                  Table 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/tabs/">
+                  Tabs 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/tooltips-popovers/">
+                  Tooltips & Popovers 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-wrench" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Utilities
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/borders/">
+                  Borders 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/display/">
+                  Display 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/flex/">
+                  Flex 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/float/">
+                  Float 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/spacing/">
+                  Spacing 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-file-archive" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Resources
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/release-notes/">
+                  Release Notes 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/examples/">
+                  Examples 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/extensions/">
+                  Extensions 
+                </a></li></ul>
+      </li>
+   
+    </ul>
+
+  </nav>
+
+
+
+</aside>
+
+    <main class="main-container" role="main">
+        <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
+            <h1 class="docs-title" id="content">Alert</h1>
+            <p class="docs-lead">Alerts are used to communicate errors, warnings, confirmation messages and critical information that can affect the user experience.</p>
+          </div>
+
+      <div class="main-demo-content">
+
+        <div class="c-row">
+          <div class="c-col-12 c-col-lg-12 c-col-md-12 c-col-xl-10 c-p-bottom-md docs-content">
+
+            <h2 id="base">Base</h2>
+
+<p>Alerts provide contextual information relevent to the user.</p>
+
+<p>The default alert does not imply action. The color is simple gray and doesn’t include an icon or close action.</p>
+
+<div class="docs-example">
+<div class="c-alert">
+ <strong>Oh snap there is a problem!</strong>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;strong&gt;</span>Oh snap there is a problem!<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="color-examples">Color Examples</h2>
+
+<p>This is an example of available colors for the <strong>Alert</strong> element.</p>
+
+<div class="docs-example">
+<div class="c-alert c-alert-primary">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Primary alert
+</div>
+
+<div class="c-alert c-alert-success">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Success alert
+</div>
+
+<div class="c-alert c-alert-warning">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Warning alert
+</div>
+
+<div class="c-alert c-alert-danger">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Danger alert
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Primary alert
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Success alert
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Warning alert
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Danger alert
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="additional-stylesoptions">Additional Styles/Options</h2>
+
+<h3 id="alert-top">Alert top</h3>
+
+<div class="docs-example">
+<div class="c-alert c-alert-top c-alert-primary">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Primary alert
+</div>
+<br />
+
+<div class="c-alert c-alert-top c-alert-success">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Success alert
+</div>
+<br />
+
+<div class="c-alert c-alert-top c-alert-warning">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Warning alert
+</div>
+<br />
+
+<div class="c-alert c-alert-top c-alert-danger">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Danger alert
+</div>
+<br />
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Primary alert
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Success alert
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Warning alert
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Danger alert
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h3 id="in-columns-with-icons">In columns with icons</h3>
+
+<div class="docs-example">
+<div class="c-row">
+    <div class="c-col">
+        <div class="c-alert c-alert-danger">
+            <i class="fa fa-exclamation-circle c-m-right-sm"></i> Oops... Something went wrong!
+            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+    <div class="c-col">
+        <div class="c-alert c-alert-success">
+            <i class="fa fa-check-circle c-m-right-sm"></i> Great job! You are ready for the next step.
+            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-danger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-circle c-m-right-sm"</span><span class="nt">&gt;&lt;/i&gt;</span> Oops... Something went wrong!
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-success"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-check-circle c-m-right-sm"</span><span class="nt">&gt;&lt;/i&gt;</span> Great job! You are ready for the next step.
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h3 id="toast">Toast</h3>
+
+<div class="docs-example">
+<div class="c-toast-alert c-toast-alert-primary">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+
+<div class="c-toast-alert c-toast-alert-success">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+
+<div class="c-toast-alert c-toast-alert-warning">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+
+<div class="c-toast-alert c-toast-alert-danger">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="ux-guidance">UX Guidance</h2>
+
+<h3 id="structure">Structure</h3>
+
+<p>Alerts provide contextual information relevent to the user.</p>
+
+<p>The alerts are activated for the following reasons:</p>
+<ul>
+  <li>System alert - the system needs to communicate to the user a system related issue or status</li>
+  <li>Engagement alert - the user is nudged or guided to enter or update data in the system</li>
+  <li>Access alert - the user tries to access an item that was deleted or they don’t have access to</li>
+  <li>Feedback alerts - the system’s response to the user interacting with it</li>
+</ul>
+
+<hr />
+
+<h3 id="banner-alert">Banner alert</h3>
+<p>Banner alerts use the Alert top styling</p>
+
+<p>Banner alerts are used to communicate critical status information that is being communicated by the system.</p>
+
+<p>Banner alerts slide in from the top of the browser and remain there until the condition (for their activation) clears or they are dismissed.</p>
+
+<p>Banner alerts can be persistent or dismissible, depending of the nature of the message.</p>
+
+<p>Persistent banner alerts can be hidden. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for their activation) is still valid.</p>
+
+<p><img src="https://cupcake-design-system.github.io/assets/img/guide/alert/alert-top.png" /></p>
+
+<p><strong>What banner alerts must communicate:</strong></p>
+<ul>
+  <li>Offline status</li>
+  <li>Upcoming system maintenance or upgrade</li>
+  <li>Browser related issues</li>
+</ul>
+
+<p><strong>What banner alerts must not communicate:</strong></p>
+<ul>
+  <li>Feedback on actions the user has performed</li>
+  <li>Alerts relating to specific pages or components</li>
+</ul>
+
+<hr />
+
+<h3 id="page-status-alert">Page status alert</h3>
+<p>Page status alerts communicate the status of a particular page. Page alerts use the default alert styling.</p>
+
+<p>This alert can be either persistent (if condition it represents is still valid) or dismissible.</p>
+
+<p>Page status alerts appear in an embedded position between the page header and the page content. Since this alert inserts itself into the page it pushes the content down the page and only removes itself once dismissed (if dismissable).</p>
+
+<p><img src="https://cupcake-design-system.github.io/assets/img/guide/alert/alert-status.png" /></p>
+
+<p><strong>What Page status alerts must communicate:</strong></p>
+<ul>
+  <li>Page update status</li>
+  <li>Maintenance or recent changes to a page</li>
+  <li>Information or functionality that is not available</li>
+</ul>
+
+<p><strong>What Page status alerts must not communicate:</strong></p>
+<ul>
+  <li>Issues related to system status or maintenance</li>
+  <li>Feedback on actions the user has performed</li>
+</ul>
+
+<hr />
+
+<h3 id="toast-alert">Toast alert</h3>
+<p>Toast alerts serve as a feedback &amp; confirmation mechanism after the user performs an action.</p>
+
+<p>Toast alerts slide in from the top right corner of the browser, overlaying the content. It’s position is fixed ie. is not affected by scrolling.</p>
+
+<p>The toast alert can then either be dismissed or will disappear when its time duration has ended.</p>
+
+<p><img src="https://cupcake-design-system.github.io/assets/img/guide/alert/alert-toast.png" /></p>
+
+<p><strong>What toast alerts must communicate:</strong></p>
+<ul>
+  <li>Errors - when a user completes an action but system-related issues prevent that action from being executed</li>
+  <li>Informational - when a user completes an action, but there is some additional info to be aware of</li>
+  <li>Success - when a user completes an action</li>
+  <li>Warning - when a user cannot complete an action due to external factors that cannot immediately be resolved</li>
+</ul>
+
+<p><strong>What toast alerts must not communicate:</strong></p>
+<ul>
+  <li>Issues related to system status or maintenance</li>
+  <li>Alerts relating to specific pages or components</li>
+</ul>
+ 
+
+          </div>
+
+          
+          <div class="c-d-none c-xl-d-block c-col-xl-2 docs-toc">
+
+              
+              <div id="customize-menu" class="docs-flavor-switch c-d-none c-sm-d-block">
+                  <input type="hidden" name="Framework" id="Framework" class="docs-flavor-switch-input">
+                  <span class="docs-flavor-button docs-flavor-switch-current">Select A Flavor</span>
+                  <ul id="styleOptions" title="switch styling" class="docs-flavor-list">
+                    <li class="docs-flavor-list-item" data-dropdown-value="default">
+                      <a href="#" class="flavor" data-theme="default">Default</a>
+                    </li>
+                    <li class="docs-flavor-list-item" data-dropdown-value="bd">
+                      <a href="#" class="flavor" data-theme="bd">BD</a>
+                    </li>
+                    <li class="docs-flavor-list-item" data-dropdown-value="condensed">
+                      <a href="#" class="flavor" data-theme="condensed">Condensed</a>
+                    </li>
+                  </ul>
+                </div>
+                
+
+
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#base">Base</a></li>
+<li class="toc-entry toc-h2"><a href="#color-examples">Color Examples</a></li>
+<li class="toc-entry toc-h2"><a href="#additional-stylesoptions">Additional Styles/Options</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#alert-top">Alert top</a></li>
+<li class="toc-entry toc-h3"><a href="#in-columns-with-icons">In columns with icons</a></li>
+<li class="toc-entry toc-h3"><a href="#toast">Toast</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#ux-guidance">UX Guidance</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#structure">Structure</a></li>
+<li class="toc-entry toc-h3"><a href="#banner-alert">Banner alert</a></li>
+<li class="toc-entry toc-h3"><a href="#page-status-alert">Page status alert</a></li>
+<li class="toc-entry toc-h3"><a href="#toast-alert">Toast alert</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+          
+
+        </div>
+      </div>
+
+     
+    <div class="c-footer">
+    <div class="c-footer-left">
+      © 2018 Ipreo. All Rights Reserved.
+    </div>
+    <div class="c-footer-right">
+      <div class="c-footer-link">
+        <a href="https://ipreo.slack.com/messages/C0T3KNMK7/" class="c-a" target="_blank">
+            <span class="fab fa-slack-hash" aria-hidden="true"></span>
+            Slack
+        </a>
+      </div>
+      <div class="c-footer-link">
+        <a href="https://code.ipreo.com/Ipreo/cupcake" class="c-a" target="_blank">
+            <span class="fab fa-github" aria-hidden="true"></span>
+            Github
+        </a>
+      </div>
+      <div class="c-footer-link">
+          <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
+            <span class="fas fa-info-circle" aria-hidden="true"></span>
+              Release Notes
+          </a>
+      </div>
+    </div>
+  </div>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
+  </body>
+</html>
