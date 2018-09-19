@@ -61,4 +61,4 @@ typings/
 .next
 
 .sass-cache/
-.dist/
+dist/
