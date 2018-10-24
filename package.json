@@ -24,7 +24,6 @@
     "gulp-notify": "3.2.0",
     "gulp-sass": "4.0.1",
     "gulp-uglify": "3.0.1",
-    "source-sans-pro": "^2.20.2",
-    "surge": "0.20.1"
+    "source-sans-pro": "^2.20.2"
   }
 }
