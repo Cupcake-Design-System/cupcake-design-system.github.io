@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Change or adjust the display value.">
+<meta name="description" content="General guidelines for data visualization">
 
-<title>Cupcake · Display property</title><link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"><!-- Documentation extras -->
+<title>Cupcake · Examples</title><link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"><!-- Documentation extras -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@2.6.1/dist/simplebar.css">
 <script src="https://cdn.jsdelivr.net/npm/simplebar@2.6.1/dist/simplebar.js"></script>
 <script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
@@ -218,7 +218,7 @@
     
     
 
-      <li class="c-sidenav-menu-item ">
+      <li class="c-sidenav-menu-item  c-sidenav-menu-item-active">
           <a class="c-sidenav-menu-link">
 
             <span class="c-sidenav-menu-icon fal fa-chart-line" aria-hidden="true"></span>
@@ -235,7 +235,7 @@
           <ul class="c-sidenav-menu-submenu"><li>
                 <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/data-visualization/general-guidelines/">
                   General Guidelines 
-                </a></li><li>
+                </a></li><li class="c-sidenav-menu-item c-sidenav-menu-item-active">
                 <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/data-visualization/examples/">
                   Examples 
                 </a></li><li>
@@ -247,7 +247,7 @@
     
     
 
-      <li class="c-sidenav-menu-item  c-sidenav-menu-item-active">
+      <li class="c-sidenav-menu-item ">
           <a class="c-sidenav-menu-link">
 
             <span class="c-sidenav-menu-icon fal fa-wrench" aria-hidden="true"></span>
@@ -264,7 +264,7 @@
           <ul class="c-sidenav-menu-submenu"><li>
                 <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/borders/">
                   Borders 
-                </a></li><li class="c-sidenav-menu-item c-sidenav-menu-item-active">
+                </a></li><li>
                 <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/display/">
                   Display 
                 </a></li><li>
@@ -312,8 +312,8 @@
 
     <main class="main-container" role="main">
         <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
-            <h1 class="docs-title" id="content">Display property</h1>
-            <p class="docs-lead">Change or adjust the display value.</p>
+            <h1 class="docs-title" id="content">Examples</h1>
+            <p class="docs-lead">General guidelines for data visualization</p>
           </div>
 
       <div class="main-demo-content">
@@ -321,183 +321,7 @@
         <div class="c-row">
           <div class="c-col-12 c-col-lg-12 c-col-md-12 c-col-xl-10 c-p-bottom-md docs-content">
 
-            <h1 id="how-it-works">How it works</h1>
-
-<p>Single purpose classes for setting the display of an element at any breakpoint.</p>
-
-<p><em>The display property defines box’s display type, which consists of the two basic qualities of how an element generates boxes: the inner display type, which defines the kind of formatting context it generates, dictating how its descendant boxes are laid out. the outer display type, which dictates how the box participates in its parent formatting context.</em> - css3 Display Module Spec.</p>
-
-<h2 id="display-block">Display Block</h2>
-<p>Block will inherently set width to 100% of its parent element. It will also cause a line break, even if the declared width doesn’t take up the full width of the parent.</p>
-
-<div class="docs-example">
-<span class="c-d-block docs- c-p-sm c-bg-primary c-text-white">c-d-block</span>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-block"</span><span class="nt">&gt;</span>c-d-block<span class="nt">&lt;/span&gt;</span></code></pre></div>
-<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-<h2 id="display-inline-block">Display Inline Block</h2>
-<p>Inline-block will wrap around content inline. It also allows you to set height and width properties on the element, which display inline does not allow you to do. It does render the white-space between elements, so if you set width: 25% to four elements they will not just render as a 4 column layout by default.</p>
-
-<div class="docs-example">
-<span class="c-d-inline-block docs- c-p-sm c-bg-primary c-text-white">c-d-inline-block</span>
-<span class="c-d-inline-block docs- c-p-sm c-bg-success c-text-white">c-d-inline-block</span>
-<span class="c-d-inline-block docs- c-p-sm c-bg-warning c-text-white">c-d-inline-block</span>
-<span class="c-d-inline-block docs- c-p-sm c-bg-danger c-text-white">c-d-inline-block</span>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline-block"</span><span class="nt">&gt;</span>c-d-inline-block<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline-block"</span><span class="nt">&gt;</span>c-d-inline-block<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline-block"</span><span class="nt">&gt;</span>c-d-inline-block<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline-block"</span><span class="nt">&gt;</span>c-d-inline-block<span class="nt">&lt;/span&gt;</span></code></pre></div>
-<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-<h2 id="display-inline">Display Inline</h2>
-<p>Inline doesn’t respect height or width values. It does not render white space between elements.</p>
-
-<div class="docs-example">
-<span class="c-d-inline docs- c-p-sm c-bg-primary c-text-white">c-d-inline</span>
-<span class="c-d-inline docs- c-p-sm c-bg-success c-text-white">c-d-inline</span>
-<span class="c-d-inline docs- c-p-sm c-bg-warning c-text-white">c-d-inline</span>
-<span class="c-d-inline docs- c-p-sm c-bg-danger c-text-white">c-d-inline</span>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline"</span><span class="nt">&gt;</span>c-d-inline<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline"</span><span class="nt">&gt;</span>c-d-inline<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline"</span><span class="nt">&gt;</span>c-d-inline<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline"</span><span class="nt">&gt;</span>c-d-inline<span class="nt">&lt;/span&gt;</span></code></pre></div>
-<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-<h2 id="display-table">Display Table</h2>
-<p>The display table can be combined with display table-cell to render a table without table markup. This can be useful for vertically aligning content or for auto-calculating a variable number of table cells.</p>
-
-<div class="docs-example">
-<div class="c-d-table">
-  <span class="c-d-table-cell docs- c-p-sm c-bg-primary c-text-white">display</span>
-  <span class="c-d-table-cell docs- c-p-sm c-bg-success c-text-white">table</span>
-  <span class="c-d-table-cell docs- c-p-sm c-bg-warning c-text-white">will automatically</span>
-  <span class="c-d-table-cell docs- c-p-sm c-bg-danger c-text-white">compute cell width</span>
-</div>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-table"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-table-cell"</span><span class="nt">&gt;</span>display<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-table-cell"</span><span class="nt">&gt;</span>table<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-table-cell"</span><span class="nt">&gt;</span>will automatically<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-table-cell"</span><span class="nt">&gt;</span>compute cell width<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-<h2 id="syntax">Syntax</h2>
-
-<p>Display utility classes that apply to all breakpoints, from <code class="highlighter-rouge">sm</code> to <code class="highlighter-rouge">xl</code>, have no breakpoint abbreviation in them. These classes start with a <code class="highlighter-rouge">min-width: 0;</code>. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
-
-<p>This approach is adapted from Tachyons, Foundation 6 and Bootstrap 4.</p>
-
-<p>As such, the classes are named using the format:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">.c-d-{value}</code> for <code class="highlighter-rouge">xs</code></li>
-  <li><code class="highlighter-rouge">.c-{breakpoint}-d-{value}</code> for <code class="highlighter-rouge">sm</code>, <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">lg</code>, and <code class="highlighter-rouge">xl</code>.</li>
-</ul>
-
-<p>Supported display values are -</p>
-
-<ul>
-  <li><code class="highlighter-rouge">none</code></li>
-  <li><code class="highlighter-rouge">inline</code></li>
-  <li><code class="highlighter-rouge">inline-block</code></li>
-  <li><code class="highlighter-rouge">block</code></li>
-  <li><code class="highlighter-rouge">table</code></li>
-  <li><code class="highlighter-rouge">table-cell</code></li>
-  <li><code class="highlighter-rouge">table-row</code></li>
-  <li><code class="highlighter-rouge">flex</code></li>
-  <li><code class="highlighter-rouge">inline-flex</code></li>
-</ul>
-
-<p>The classes effect screen widths within the given breakpoint <em>or larger</em>.</p>
-
-<p>For example, <code class="highlighter-rouge">.c-lg-d-none</code> sets <code class="highlighter-rouge">display: none;</code> on both <code class="highlighter-rouge">lg</code> and <code class="highlighter-rouge">xl</code> screens.</p>
-
-<hr />
-
-<h1 id="advanced-usage">Advanced Usage</h1>
-
-<h2 id="hiding-elements">Hiding Elements</h2>
-
-<p>To hide elements simply use the <code class="highlighter-rouge">.c-d-none</code> class or one of the <code class="highlighter-rouge">.c-{sm,md,lg,xl}-d-none</code> classes for any responsive screen variation.</p>
-
-<table class="c-table">
-  <thead>
-    <tr>
-      <th>Screen Size</th>
-      <th>Class</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Hidden on all</td>
-      <td><code class="highlighter-rouge">.c-d-none</code></td>
-    </tr>
-    <tr>
-      <td>Hidden only on xs</td>
-      <td><code class="highlighter-rouge">.c-d-none .c-sm-d-block</code></td>
-    </tr>
-    <tr>
-      <td>Hidden only on sm</td>
-      <td><code class="highlighter-rouge">.c-sm-d-none .c-md-d-block</code></td>
-    </tr>
-    <tr>
-      <td>Hidden only on md</td>
-      <td><code class="highlighter-rouge">.c-md-d-none .c-lg-d-block</code></td>
-    </tr>
-    <tr>
-      <td>Hidden only on lg</td>
-      <td><code class="highlighter-rouge">.c-lg-d-none .c-xl-d-block</code></td>
-    </tr>
-    <tr>
-      <td>Hidden only on xl</td>
-      <td><code class="highlighter-rouge">.c-xl-d-none</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="showing-elements">Showing Elements</h2>
-
-<p>To show an element only on a given interval of screen sizes you can combine one <code class="highlighter-rouge">.c-*-d-none</code> class with a <code class="highlighter-rouge">.c-*-d-*</code> class, for example <code class="highlighter-rouge">.c-d-none .c-md-d-block .c-xl-d-none</code> will hide the element for all screen sizes except on medium and large devices.</p>
-
-<table class="c-table">
-  <thead>
-    <tr>
-      <th>Screen Size</th>
-      <th>Class</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Visible on all</td>
-      <td><code class="highlighter-rouge">.c-d-block</code></td>
-    </tr>
-    <tr>
-      <td>Visible only on xs</td>
-      <td><code class="highlighter-rouge">.c-d-block .c-sm-d-none</code></td>
-    </tr>
-    <tr>
-      <td>Visible only on sm</td>
-      <td><code class="highlighter-rouge">.c-d-none .c-sm-d-block .c-md-d-none</code></td>
-    </tr>
-    <tr>
-      <td>Visible only on md</td>
-      <td><code class="highlighter-rouge">.c-d-none .c-md-d-block .c-lg-d-none</code></td>
-    </tr>
-    <tr>
-      <td>Visible only on lg</td>
-      <td><code class="highlighter-rouge">.c-d-none .c-lg-d-block .c-xl-d-none</code></td>
-    </tr>
-    <tr>
-      <td>Visible only on xl</td>
-      <td><code class="highlighter-rouge">.c-d-none .c-xl-d-block</code></td>
-    </tr>
-  </tbody>
-</table>
-
+            
  
 
           </div>
@@ -509,21 +333,6 @@
 
 
             <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#how-it-works">How it works</a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#display-block">Display Block</a></li>
-<li class="toc-entry toc-h2"><a href="#display-inline-block">Display Inline Block</a></li>
-<li class="toc-entry toc-h2"><a href="#display-inline">Display Inline</a></li>
-<li class="toc-entry toc-h2"><a href="#display-table">Display Table</a></li>
-<li class="toc-entry toc-h2"><a href="#syntax">Syntax</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h1"><a href="#advanced-usage">Advanced Usage</a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#hiding-elements">Hiding Elements</a></li>
-<li class="toc-entry toc-h2"><a href="#showing-elements">Showing Elements</a></li>
-</ul>
-</li>
 </ul>
           </div>
           
