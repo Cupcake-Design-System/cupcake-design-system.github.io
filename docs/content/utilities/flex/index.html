@@ -1,0 +1,1678 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
+
+<title>Cupcake · Flex</title><link rel="stylesheet" href="/assets/cupcake/default.css"><!-- Documentation extras -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@2.6.1/dist/simplebar.css">
+<script src="https://cdn.jsdelivr.net/npm/simplebar@2.6.1/dist/simplebar.js"></script>
+<script defer src="/assets/js/fontawesome-all.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link href="/assets/scss/documentation.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <aside class="c-sidenav">
+  <div class="docs-logo">
+    <a href="/index.html">
+      Cupcake 
+    <span>Design System</span>
+    </a>
+    <button class="c-md-d-none" type="button" id="docs-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    
+    <div class="c-d-none c-lg-d-block c-text-center c-text-sm c-text-bold c-p-bottom-lg">
+      Current Version       
+      <a href="https://code.ipreo.com/Ipreo/cupcake/releases/tag/1.4.6" class="c-a" data-tooltip="View Changelog" data-tooltip-conf="right">1.4.6</a>
+    </div>
+  </div>
+
+
+
+  <nav class="c-sidenav-body" data-simplebar="">
+
+    <ul class="c-sidenav-menu" id="js-nav">
+      <li class="c-sidenav-menu-item ">
+        <a class="c-sidenav-menu-link" href="/index.html">
+          <span class="c-sidenav-menu-icon fal fa-home" aria-hidden="true"></span>
+          <span class="c-sidenav-menu-title">
+            Introduction
+          </span>
+        </a>
+    </li>
+
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-info" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Getting Started
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="/content/getting-started/overview/">
+                  Overview 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/getting-started/developers/">
+                  Developers 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/getting-started/designers/">
+                  Designers 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/getting-started/faq/">
+                  FAQ 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-paint-brush" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Style
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="/content/style/primary-colors/">
+                  Primary Colors 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/style/extended-colors/">
+                  Extended Colors 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/style/typography/">
+                  Typography 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-desktop-alt" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Layout
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="/content/layout/app-layout/">
+                  App Layout 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/layout/overview/">
+                  Overview 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/layout/grid/">
+                  Grid 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/layout/header/">
+                  Header 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/layout/footer/">
+                  Footer 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-object-ungroup" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Elements
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/alert/">
+                  Alert 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/avatar/">
+                  Avatar 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/badges/">
+                  Badges 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/buttons/">
+                  Buttons 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/button-group/">
+                  Button Group 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/card/">
+                  Card 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/checkboxes-radios/">
+                  Checkboxes & Radios 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/dropdown/">
+                  Dropdown 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/forms/">
+                  Forms 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/loaders/">
+                  Loaders 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/media-object/">
+                  Media object 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/modals/">
+                  Modals 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/pagination/">
+                  Pagination 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/progress/">
+                  Progress 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/switches/">
+                  Switches 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/table/">
+                  Table 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/tabs/">
+                  Tabs 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/elements/tooltips-popovers/">
+                  Tooltips & Popovers 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-chart-line" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Data Visualization
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="/content/data-visualization/general-guidelines/">
+                  General Guidelines 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/data-visualization/examples/">
+                  Examples 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/data-visualization/colors-and-visuals/">
+                  Colors and Visuals 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item  c-sidenav-menu-item-active">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-wrench" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Utilities
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="/content/utilities/borders/">
+                  Borders 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/utilities/display/">
+                  Display 
+                </a></li><li class="c-sidenav-menu-item c-sidenav-menu-item-active">
+                <a class="c-sidenav-menu-link" href="/content/utilities/flex/">
+                  Flex 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/utilities/float/">
+                  Float 
+                </a></li><li>
+                <a class="c-sidenav-menu-link" href="/content/utilities/spacing/">
+                  Spacing 
+                </a></li></ul>
+      </li>
+   
+    
+    
+
+      <li class="c-sidenav-menu-item ">
+          <a class="c-sidenav-menu-link">
+
+            <span class="c-sidenav-menu-icon fal fa-file-archive" aria-hidden="true"></span>
+
+            <span class="c-sidenav-menu-title">
+              Resources
+            </span>
+            
+            <span class="c-sidenav-menu-arrow">
+                <span class="fas fa-caret-right"></span>
+              </span>
+          </a>
+    
+          <ul class="c-sidenav-menu-submenu"><li>
+                <a class="c-sidenav-menu-link" href="/release-notes/">
+                  Release Notes 
+                </a></li></ul>
+      </li>
+   
+    </ul>
+
+  </nav>
+
+
+
+</aside>
+
+    <main class="main-container" role="main">
+        <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
+            <h1 class="docs-title" id="content">Flex</h1>
+            <p class="docs-lead">Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
+          </div>
+
+      <div class="main-demo-content">
+
+        <div class="c-row">
+          <div class="c-col-12 c-col-lg-12 c-col-md-12 c-col-xl-10 c-p-bottom-md docs-content">
+
+            <h2 id="flex">Flex</h2>
+
+<p>These flexbox-based utilities can replace the need for a grid system in many instances, and provide powerful constraint-based micro-layout solutions.</p>
+
+<p>To set a container to display flex, add the .c-d-flex class.</p>
+
+<div class="docs-example">
+<div class="c-d-flex docs- c-p-sm c-bg-success c-text-white">I'm a flexbox container!</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex"</span><span class="nt">&gt;</span>I'm a flexbox container!<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p>To set a container to inline-flex, use the class .c-d-inline-flex.</p>
+
+<div class="docs-example">
+<div class="c-d-inline-flex docs- c-p-sm c-bg-primary c-text-white">I'm an inline flexbox container!</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-inline-flex"</span><span class="nt">&gt;</span>I'm an inline flexbox container!<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p><strong>Inevitably you’ll wish to adjust flex at various breakpoints. You can do so with the responsive variations.</strong></p>
+
+<table class="c-table c-table-transparent">
+  <thead>
+    <tr>
+    
+      <th>Min-Width: 0px</th>
+    
+      <th>Min-Width: 576px</th>
+    
+      <th>Min-Width: 768px</th>
+    
+      <th>Min-Width: 992px</th>
+    
+      <th>Min-Width: 1200px</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-d-flex</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-d-flex</code></td>
+      
+        <td><code class="c-text-sm">.c-md-d-flex</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-d-flex</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-d-flex</code></td>
+      
+    </tr>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-d-inline-flex</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-d-inline-flex</code></td>
+      
+        <td><code class="c-text-sm">.c-md-d-inline-flex</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-d-inline-flex</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-d-inline-flex</code></td>
+      
+    </tr>   
+  </tbody>
+</table>
+
+<h1 id="direction">Direction</h1>
+
+<h2 id="horizontal">Horizontal</h2>
+<p>The browser default horizontal direction for a flex container is <code class="highlighter-rouge">row</code>.
+You may wish to reverse this - or change at the appropriate screen size.</p>
+
+<p>Use <code class="highlighter-rouge">.c-flex-row</code> to set a horizontal direction (the browser default not needed unless resetting at a different breakpoint), or <code class="highlighter-rouge">.c-flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
+
+<div class="docs-example">
+<div class="c-d-flex c-flex-row docs- c-bg-primary-3 c-text-white c-m-bottom-md">
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+</div>
+<div class="c-d-flex c-flex-row-reverse docs- c-bg-primary-3 c-text-white">
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-flex-row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-flex-row-reverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="vertical">Vertical</h2>
+<p>Use <code class="highlighter-rouge">.c-flex-column</code> to set a vertical direction, or <code class="highlighter-rouge">.c-flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
+
+<div class="docs-example">
+<div class="c-d-flex c-flex-column docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+</div>
+<div class="c-d-flex c-flex-column-reverse docs- c-bg-primary-3 c-text-white">
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
+  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-flex-column"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-flex-column-reverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p><strong>Responsive variations also exist for <code class="highlighter-rouge">flex-direction</code>.</strong></p>
+
+<table class="c-table c-table-transparent">
+  <thead>
+    <tr>
+    
+      <th>Min-Width: 0px</th>
+    
+      <th>Min-Width: 576px</th>
+    
+      <th>Min-Width: 768px</th>
+    
+      <th>Min-Width: 992px</th>
+    
+      <th>Min-Width: 1200px</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-flex-row</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-flex-row</code></td>
+      
+        <td><code class="c-text-sm">.c-md-flex-row</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-flex-row</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-flex-row</code></td>
+      
+    </tr>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-flex-row-reverse</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-flex-row-reverse</code></td>
+      
+        <td><code class="c-text-sm">.c-md-flex-row-reverse</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-flex-row-reverse</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-flex-row-reverse</code></td>
+      
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-flex-column</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-flex-column</code></td>
+      
+      <td><code class="c-text-sm">.c-md-flex-column</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-flex-column</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-flex-column</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-flex-column-reverse</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-flex-column-reverse</code></td>
+      
+      <td><code class="c-text-sm">.c-md-flex-column-reverse</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-flex-column-reverse</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-flex-column-reverse</code></td>
+        
+    </tr>       
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="wrap">Wrap</h1>
+
+<p>Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with <code class="highlighter-rouge">.c-flex-nowrap</code>, wrapping with <code class="highlighter-rouge">.c-flex-wrap</code>, or reverse wrapping with <code class="highlighter-rouge">.c-flex-wrap-reverse</code>.</p>
+
+<h2 id="nowrap">Nowrap</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-flex-nowrap docs- c-bg-primary-3 c-text-white">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-flex-nowrap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="auto-wrap">Auto Wrap</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-flex-wrap docs- c-bg-primary-3 c-text-white">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-flex-wrap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="wrap-reverse">Wrap Reverse</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-flex-wrap-reverse docs- c-bg-primary-3 c-text-white">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-flex-wrap-reverse"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p><strong>Responsive variations also exist for <code class="highlighter-rouge">c-flex-wrap</code>.</strong></p>
+
+<table class="c-table c-table-transparent">
+  <thead>
+    <tr>
+    
+      <th>Min-Width: 0px</th>
+    
+      <th>Min-Width: 576px</th>
+    
+      <th>Min-Width: 768px</th>
+    
+      <th>Min-Width: 992px</th>
+    
+      <th>Min-Width: 1200px</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-flex-nowrap</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-flex-nowrap</code></td>
+      
+        <td><code class="c-text-sm">.c-md-flex-nowrap</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-flex-nowrap</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-flex-nowrap</code></td>
+      
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-flex-wrap</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-flex-wrap</code></td>
+      
+      <td><code class="c-text-sm">.c-md-flex-wrap</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-flex-wrap</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-flex-wrap</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-flex-wrap-reverse</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-flex-wrap-reverse</code></td>
+      
+      <td><code class="c-text-sm">.c-md-flex-wrap-reverse</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-flex-wrap-reverse</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-flex-wrap-reverse</code></td>
+        
+    </tr>       
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="justify">Justify</h1>
+<p>To control the spacing for items on the main axis, use the justify-content utilities. Choose from <code class="highlighter-rouge">start</code> (browser default), <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">space-between</code>, or <code class="highlighter-rouge">space-around</code>.</p>
+
+<h2 id="start">Start</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-justify-start docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-justify-start"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="end">End</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-justify-end docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-justify-end"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="center">Center</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-justify-center docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-justify-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="space-between">Space Between</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-justify-space-between docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-justify-space-between"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="space-around">Space Around</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-justify-space-around docs- c-bg-primary-3 c-text-white">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-justify-space-around"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p><strong>Responsive variations also exist for <code class="highlighter-rouge">c-justify-content</code>.</strong></p>
+
+<table class="c-table c-table-transparent">
+  <thead>
+    <tr>
+    
+      <th>Min-Width: 0px</th>
+    
+      <th>Min-Width: 576px</th>
+    
+      <th>Min-Width: 768px</th>
+    
+      <th>Min-Width: 992px</th>
+    
+      <th>Min-Width: 1200px</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-justify-start</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-justify-start</code></td>
+      
+        <td><code class="c-text-sm">.c-md-justify-start</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-justify-start</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-justify-start</code></td>
+      
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-justify-end</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-justify-end</code></td>
+      
+      <td><code class="c-text-sm">.c-md-justify-end</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-justify-end</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-justify-end</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-justify-center</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-justify-center</code></td>
+      
+      <td><code class="c-text-sm">.c-md-justify-center</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-justify-center</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-justify-center</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-justify-space-between</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-justify-space-between</code></td>
+      
+      <td><code class="c-text-sm">.c-md-justify-space-between</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-justify-space-between</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-justify-space-between</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-justify-space-around</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-justify-space-around</code></td>
+      
+      <td><code class="c-text-sm">.c-md-justify-space-around</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-justify-space-around</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-justify-space-around</code></td>
+        
+    </tr>        
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="align-items">Align items</h1>
+
+<p>To align items along the cross-axis, use the align-content utilities. Choose from <code class="highlighter-rouge">top</code>, <code class="highlighter-rouge">bottom</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">baseline</code>, or <code class="highlighter-rouge">stretch</code> (browser default).</p>
+
+<h2 id="top">Top</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-top docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-top"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="bottom">Bottom</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-bottom docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-bottom"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="center-1">Center</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-center docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-center"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="baseline">Baseline</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-baseline docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-baseline"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="stretch">Stretch</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-stretch docs- c-bg-primary-3 c-text-white" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-stretch"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p><strong>Responsive variations also exist for <code class="highlighter-rouge">align</code>.</strong></p>
+
+<table class="c-table c-table-transparent">
+  <thead>
+    <tr>
+    
+      <th>Min-Width: 0px</th>
+    
+      <th>Min-Width: 576px</th>
+    
+      <th>Min-Width: 768px</th>
+    
+      <th>Min-Width: 992px</th>
+    
+      <th>Min-Width: 1200px</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-align-start</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-align-start</code></td>
+      
+        <td><code class="c-text-sm">.c-md-align-start</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-align-start</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-align-start</code></td>
+      
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-end</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-end</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-end</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-end</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-end</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-center</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-center</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-center</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-center</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-center</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-baseline</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-baseline</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-baseline</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-baseline</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-baseline</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-stretch</code></td>
+        
+    </tr>        
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="align-self">Align self</h1>
+
+<p>To align flexbox items on an item-by-item basis, use the align-self utilities. Choose from the same options as <code class="highlighter-rouge">align-items</code>: <code class="highlighter-rouge">start</code>, <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">baseline</code>, or <code class="highlighter-rouge">stretch</code> (browser default).</p>
+
+<h2 id="top-1">Top</h2>
+
+<div class="docs-example">
+<div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-top docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-align-self-top"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="bottom-1">Bottom</h2>
+
+<div class="docs-example">
+<div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-bottom docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-align-self-bottom"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="center-2">Center</h2>
+
+<div class="docs-example">
+<div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-center docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-align-self-center"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="baseline-1">Baseline</h2>
+
+<div class="docs-example">
+<div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-baseline docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-align-self-baseline"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="stretch-1">Stretch</h2>
+
+<div class="docs-example">
+<div class="c-d-flex docs- c-bg-primary-3 c-text-white" style="height: 100px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-stretch docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex"</span> <span class="na">style=</span><span class="s">"height: 100px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-align-self-stretch"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p><strong>Responsive variations also exist for <code class="highlighter-rouge">align-self</code>.</strong></p>
+
+<table class="c-table c-table-transparent">
+  <thead>
+    <tr>
+    
+      <th>Min-Width: 0px</th>
+    
+      <th>Min-Width: 576px</th>
+    
+      <th>Min-Width: 768px</th>
+    
+      <th>Min-Width: 992px</th>
+    
+      <th>Min-Width: 1200px</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-align-self-start</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-align-self-start</code></td>
+      
+        <td><code class="c-text-sm">.c-md-align-self-start</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-align-self-start</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-align-self-start</code></td>
+      
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-self-end</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-self-end</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-self-end</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-self-end</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-self-end</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-self-center</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-self-center</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-self-center</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-self-center</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-self-center</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-self-baseline</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-self-baseline</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-self-baseline</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-self-baseline</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-self-baseline</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-self-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-self-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-self-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-self-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-self-stretch</code></td>
+        
+    </tr>        
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="align-content">Align Content</h1>
+
+<p>To align items together on the cross-axis, use the align-content utilities. Choose from <code class="highlighter-rouge">start</code> (browser default), <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">between</code>, <code class="highlighter-rouge">around</code>, or <code class="highlighter-rouge">stretch</code>.</p>
+
+<p>In the demo below, we set the flex to wrap and added enough of flex items to wrap.</p>
+
+<div class="docs-callout docs-callout-info">
+<h4 id="this-is-for-multiple-rows-only">This is for multiple rows only</h4>
+
+<p>This property has no effect on single rows of flex items.</p>
+</div>
+
+<h2 id="start-1">Start</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-content-start c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-content-start c-flex-wrap"</span> <span class="na">style=</span><span class="s">"height: 200px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="end-1">End</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-content-end c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-content-end c-flex-wrap"</span> <span class="na">style=</span><span class="s">"height: 200px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="center-3">Center</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-content-center c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-content-center c-flex-wrap"</span> <span class="na">style=</span><span class="s">"height: 200px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="between">Between</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-content-between c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-content-between c-flex-wrap"</span> <span class="na">style=</span><span class="s">"height: 200px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="around">Around</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-content-around c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-content-around c-flex-wrap"</span> <span class="na">style=</span><span class="s">"height: 200px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h2 id="stretch-2">Stretch</h2>
+
+<div class="docs-example">
+<div class="c-d-flex c-align-content-stretch c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-d-flex c-align-content-stretch c-flex-wrap"</span> <span class="na">style=</span><span class="s">"height: 200px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p><strong>Responsive variations also exist for <code class="highlighter-rouge">.c-align-content</code>.</strong></p>
+
+<table class="c-table c-table-transparent">
+  <thead>
+    <tr>
+    
+      <th>Min-Width: 0px</th>
+    
+      <th>Min-Width: 576px</th>
+    
+      <th>Min-Width: 768px</th>
+    
+      <th>Min-Width: 992px</th>
+    
+      <th>Min-Width: 1200px</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+        <td><code class="c-text-sm">.c-align-content-start</code></td>
+      
+        <td><code class="c-text-sm">.c-sm-align-content-start</code></td>
+      
+        <td><code class="c-text-sm">.c-md-align-content-start</code></td>
+      
+        <td><code class="c-text-sm">.c-lg-align-content-start</code></td>
+      
+        <td><code class="c-text-sm">.c-xl-align-content-start</code></td>
+      
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-content-end</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-content-end</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-content-end</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-content-end</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-content-end</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-content-center</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-content-center</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-content-center</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-content-center</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-content-center</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-content-around</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-content-around</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-content-around</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-content-around</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-content-around</code></td>
+        
+    </tr>
+    <tr>
+      
+      <td><code class="c-text-sm">.c-align-content-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-sm-align-content-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-md-align-content-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-lg-align-content-stretch</code></td>
+      
+      <td><code class="c-text-sm">.c-xl-align-content-stretch</code></td>
+        
+    </tr>        
+  </tbody>
+</table>
+
+<hr />
+<p><br /></p>
+
+<p>To learn more about flexbox, see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Using CSS flexible boxes</a> and the <a href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexible Box Layout Module Specification</a>.</p>
+ 
+
+          </div>
+
+          
+          <div class="c-d-none c-xl-d-block c-col-xl-2 docs-toc">
+
+              
+
+
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#flex">Flex</a></li>
+<li class="toc-entry toc-h1"><a href="#direction">Direction</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#horizontal">Horizontal</a></li>
+<li class="toc-entry toc-h2"><a href="#vertical">Vertical</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#wrap">Wrap</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#nowrap">Nowrap</a></li>
+<li class="toc-entry toc-h2"><a href="#auto-wrap">Auto Wrap</a></li>
+<li class="toc-entry toc-h2"><a href="#wrap-reverse">Wrap Reverse</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#justify">Justify</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#start">Start</a></li>
+<li class="toc-entry toc-h2"><a href="#end">End</a></li>
+<li class="toc-entry toc-h2"><a href="#center">Center</a></li>
+<li class="toc-entry toc-h2"><a href="#space-between">Space Between</a></li>
+<li class="toc-entry toc-h2"><a href="#space-around">Space Around</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#align-items">Align items</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#top">Top</a></li>
+<li class="toc-entry toc-h2"><a href="#bottom">Bottom</a></li>
+<li class="toc-entry toc-h2"><a href="#center-1">Center</a></li>
+<li class="toc-entry toc-h2"><a href="#baseline">Baseline</a></li>
+<li class="toc-entry toc-h2"><a href="#stretch">Stretch</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#align-self">Align self</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#top-1">Top</a></li>
+<li class="toc-entry toc-h2"><a href="#bottom-1">Bottom</a></li>
+<li class="toc-entry toc-h2"><a href="#center-2">Center</a></li>
+<li class="toc-entry toc-h2"><a href="#baseline-1">Baseline</a></li>
+<li class="toc-entry toc-h2"><a href="#stretch-1">Stretch</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#align-content">Align Content</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#start-1">Start</a></li>
+<li class="toc-entry toc-h2"><a href="#end-1">End</a></li>
+<li class="toc-entry toc-h2"><a href="#center-3">Center</a></li>
+<li class="toc-entry toc-h2"><a href="#between">Between</a></li>
+<li class="toc-entry toc-h2"><a href="#around">Around</a></li>
+<li class="toc-entry toc-h2"><a href="#stretch-2">Stretch</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+          
+
+        </div>
+      </div>
+
+     
+    <div class="c-footer">
+    <div class="c-footer-left">
+      © 2018 Ipreo. All Rights Reserved.
+    </div>
+    <div class="c-footer-right">
+      <div class="c-footer-link">
+        <a href="https://ipreo.slack.com/messages/C0T3KNMK7/" class="c-a" target="_blank">
+            <span class="fab fa-slack-hash" aria-hidden="true"></span>
+            Slack
+        </a>
+      </div>
+      <div class="c-footer-link">
+        <a href="https://code.ipreo.com/Ipreo/cupcake" class="c-a" target="_blank">
+            <span class="fab fa-github" aria-hidden="true"></span>
+            Github
+        </a>
+      </div>
+      <div class="c-footer-link">
+          <a href="/release-notes/" class="c-a">
+            <span class="fas fa-info-circle" aria-hidden="true"></span>
+              Release Notes
+          </a>
+      </div>
+    </div>
+  </div>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/script.js"></script>
+  </body>
+</html>

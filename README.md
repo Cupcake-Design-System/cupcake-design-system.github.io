@@ -19,5 +19,10 @@ Tested with : node 5.12.0, jekyll 3.1.6, ruby 2.3.0
 ## Run Locally
 ```npm run dev```
 
+## Deploy
+This will compile and publish to the ghpages branch.
+
+```npm run deploy```
+
 
 

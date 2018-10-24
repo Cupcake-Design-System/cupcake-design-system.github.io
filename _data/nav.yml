@@ -52,6 +52,13 @@
     - title: Tabs
     - title: Tooltips & Popovers                      
 
+- title: Data Visualization
+  icon: fal fa-chart-line
+  pages:
+    - title: General Guidelines
+    - title: Examples
+    - title: Colors and Visuals
+
 - title: Utilities
   icon: fal fa-wrench
   pages:
@@ -65,6 +72,6 @@
   icon: fal fa-file-archive
   pages:
     - title: Release Notes
-    - title: Examples     
-    - title: Extensions
+   # - title: Examples     
+   # - title: Extensions
 
