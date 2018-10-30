@@ -11,3 +11,5 @@ colors:
 - warning
 - danger
 ---
+
+{% include guide-img.html img='dataviz/graph.jpg'%}
