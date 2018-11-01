@@ -12,7 +12,7 @@ colors:
 - danger
 ---
 
-{% include guide-img.html img='dataviz/graph.jpg'%}
+{% include dataviz-img.html img='graph.jpg'%}
 
 ### Comparison Graph Types
 Comparison graphs and data visualizations are the most common method of analysis. Implied by the name, these visualizations can easily compare values between 2 or more data points. These include bar charts, column graphs, and time trends. 
@@ -21,6 +21,8 @@ Comparison graphs would be used to answer these questions:
 - Does the user need to quickly find and read key values from a list (i.e. cost per quarter)?
 - Does the user need to see categories ranked (i.e. products from most to least profitable)?
 - What trends over time does the data suggest (gaps, spikes, outliers)?
+
+
 
 ### Relationship Types
 Relationship graphs, implied by the name, show specific relationships, correlation, or connections between 2 or more variables. On a high level, these charts demonstrate how a variable such as price does or does not affect another variable such as demand and whether that relationship is positive or negative. These visualizations can be given another dimenstion with bubble charts that show the scale of the relationship or plots over time. Chart types include scatter plots, bubble, line, and table. 
@@ -31,7 +33,14 @@ Relationship graphs could answer:
 
 ### Distribution Graph Types
  Distribution analaysis visualizes data to see what data deviates from the norm and can also be used geographically to demonstrate data over a map. Charts used in this category include histograms, line and area charts, scatter plots, data tables, and map charts.
- 
+ Distribution graphs can answer:
+ - What correlation between a cause and effect of a variable?
+ - Does my user need to spot bugs or constraints in their system?
+ - Does my consumer need a visual for a variable such as profits over different categories such as clients?
 
 ### Composition Types
+Composition graphs are used to show trends in desnse sets of data. This type should be used to show how individual parts make up a whole to show the significance of each part in regards to the total value. Charts in this type include scatter plots, bubble, node graphs, pie charts, and stacked area graphs.
+Composition graphs can answer:
+- How does this category of data affect my overall data set?
 
+When using stacked or waterfall graphs make sure to emphasize the intent and data the visualization is depicting as these often can be misunderstood.
