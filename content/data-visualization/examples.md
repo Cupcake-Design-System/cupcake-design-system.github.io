@@ -12,7 +12,7 @@ colors:
 - danger
 ---
 
-{% include dataviz-img.html img='graph.jpg'%}
+{% include guide-img.html img='dataviz/graph'%}
 
 ### Comparison Graph Types
 Comparison graphs and data visualizations are the most common method of analysis. Implied by the name, these visualizations can easily compare values between 2 or more data points. These include bar charts, column graphs, and time trends. 
