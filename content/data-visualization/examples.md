@@ -12,7 +12,7 @@ colors:
 - danger
 ---
 
-{% include guide-img.html img='dataviz/graph'%}
+{% include guide-img-jpg.html img='dataviz/graph'%}
 
 ### Comparison Graph Types
 Comparison graphs and data visualizations are the most common method of analysis. Implied by the name, these visualizations can easily compare values between 2 or more data points. These include bar charts, column graphs, and time trends. 
@@ -22,7 +22,26 @@ Comparison graphs would be used to answer these questions:
 - Does the user need to see categories ranked (i.e. products from most to least profitable)?
 - What trends over time does the data suggest (gaps, spikes, outliers)?
 
-
+<div class="c-row">
+  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/bar-chart'%} 
+  </div>
+	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/radial-bar-chart'%}
+  </div>
+	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/column-chart'%}
+  </div>
+	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/line-chart'%}
+  </div>
+  	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/column-histogram'%}
+  </div>
+  	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/choropleth-map'%}
+  </div>
+</div>
 
 ### Relationship Types
 Relationship graphs, implied by the name, show specific relationships, correlation, or connections between 2 or more variables. On a high level, these charts demonstrate how a variable such as price does or does not affect another variable such as demand and whether that relationship is positive or negative. These visualizations can be given another dimenstion with bubble charts that show the scale of the relationship or plots over time. Chart types include scatter plots, bubble, line, and table. 
@@ -31,6 +50,18 @@ Relationship graphs could answer:
 - Is there a positive or negative relationship between my two variables?
 - Does the user need to see 3 to 4 dimensions of analysis: correlation, clusters, outliers, timeline?
 
+<div class="c-row">
+  <div class="c-col-12 c-col-lg-4">
+{% include guide-img-jpg.html img='dataviz/scatter-chart'%} 
+  </div>
+	  <div class="c-col-12 c-col-lg-4">
+{% include guide-img-jpg.html img='dataviz/bubble-chart'%}
+  </div>
+	  <div class="c-col-12 c-col-lg-4">
+{% include guide-img-jpg.html img='dataviz/network-graph'%}
+  </div>
+</div>
+
 ### Distribution Graph Types
  Distribution analaysis visualizes data to see what data deviates from the norm and can also be used geographically to demonstrate data over a map. Charts used in this category include histograms, line and area charts, scatter plots, data tables, and map charts.
  Distribution graphs can answer:
@@ -38,9 +69,45 @@ Relationship graphs could answer:
  - Does my user need to spot bugs or constraints in their system?
  - Does my consumer need a visual for a variable such as profits over different categories such as clients?
 
+ <div class="c-row">
+  <div class="c-col-12 c-col-lg-3">
+{% include guide-img-jpg.html img='dataviz/column-histogram'%} 
+  </div>
+	  <div class="c-col-12 c-col-lg-3">
+{% include guide-img-jpg.html img='dataviz/line-histogram'%}
+  </div>
+	  <div class="c-col-12 c-col-lg-3">
+{% include guide-img-jpg.html img='dataviz/heatmap-chart'%}
+  </div>
+	  <div class="c-col-12 c-col-lg-3">
+{% include guide-img-jpg.html img='dataviz/scatter-chart'%}
+  </div>>
+</div>
+
 ### Composition Types
 Composition graphs are used to show trends in desnse sets of data. This type should be used to show how individual parts make up a whole to show the significance of each part in regards to the total value. Charts in this type include scatter plots, bubble, node graphs, pie charts, and stacked area graphs.
 Composition graphs can answer:
 - How does this category of data affect my overall data set?
 
 When using stacked or waterfall graphs make sure to emphasize the intent and data the visualization is depicting as these often can be misunderstood.
+
+<div class="c-row">
+  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/stacked-100-column-chart'%} 
+  </div>
+	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/stacked-area-chart'%}
+  </div>
+	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/stacked-100-area-chart'%}
+  </div>
+  	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/pie-chart'%}
+  </div>
+  	  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/waterfall-chart'%}
+  </div>
+  <div class="c-col-12 c-col-lg-2">
+{% include guide-img-jpg.html img='dataviz/tree-map-chart'%}
+  </div>
+</div>
