@@ -27,19 +27,19 @@ Comparison graphs would be used to answer these questions:
 {% include guide-img-jpg.html img='dataviz/Bar-Chart'%} 
   </div>
 	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/radial-bar-chart'%}
+{% include guide-img-jpg.html img='dataviz/Radial-Bar-Chart'%}
   </div>
 	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/column-chart'%}
+{% include guide-img-jpg.html img='dataviz/Column-Chart'%}
   </div>
 	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/line-chart'%}
+{% include guide-img-jpg.html img='dataviz/Line-Chart'%}
   </div>
   	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/column-histogram'%}
+{% include guide-img-jpg.html img='dataviz/Column-Histogram'%}
   </div>
   	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/choropleth-map'%}
+{% include guide-img-jpg.html img='dataviz/Choropleth-Map'%}
   </div>
 </div>
 
@@ -52,13 +52,13 @@ Relationship graphs could answer:
 
 <div class="c-row">
   <div class="c-col-12 c-col-lg-4">
-{% include guide-img-jpg.html img='dataviz/scatter-chart'%} 
+{% include guide-img-jpg.html img='dataviz/Scatter-Chart'%} 
   </div>
 	  <div class="c-col-12 c-col-lg-4">
-{% include guide-img-jpg.html img='dataviz/bubble-chart'%}
+{% include guide-img-jpg.html img='dataviz/Bubble-Chart'%}
   </div>
 	  <div class="c-col-12 c-col-lg-4">
-{% include guide-img-jpg.html img='dataviz/network-graph'%}
+{% include guide-img-jpg.html img='dataviz/Network-Graph'%}
   </div>
 </div>
 
@@ -71,16 +71,16 @@ Relationship graphs could answer:
 
  <div class="c-row">
   <div class="c-col-12 c-col-lg-3">
-{% include guide-img-jpg.html img='dataviz/column-histogram'%} 
+{% include guide-img-jpg.html img='dataviz/Column-Histogram'%} 
   </div>
 	  <div class="c-col-12 c-col-lg-3">
-{% include guide-img-jpg.html img='dataviz/line-histogram'%}
+{% include guide-img-jpg.html img='dataviz/Line-Histogram'%}
   </div>
 	  <div class="c-col-12 c-col-lg-3">
-{% include guide-img-jpg.html img='dataviz/heatmap-chart'%}
+{% include guide-img-jpg.html img='dataviz/Heatmap-Chart'%}
   </div>
 	  <div class="c-col-12 c-col-lg-3">
-{% include guide-img-jpg.html img='dataviz/scatter-chart'%}
+{% include guide-img-jpg.html img='dataviz/Scatter-Chart'%}
   </div>>
 </div>
 
@@ -93,21 +93,21 @@ When using stacked or waterfall graphs make sure to emphasize the intent and dat
 
 <div class="c-row">
   <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/stacked-100-column-chart'%} 
+{% include guide-img-jpg.html img='dataviz/Stacked-100-Column-Chart'%} 
   </div>
 	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/stacked-area-chart'%}
+{% include guide-img-jpg.html img='dataviz/Stacked-Area-Chart'%}
   </div>
 	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/stacked-100-area-chart'%}
+{% include guide-img-jpg.html img='dataviz/Stacked-100-area-chart'%}
   </div>
   	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/pie-chart'%}
+{% include guide-img-jpg.html img='dataviz/Pie-Chart'%}
   </div>
   	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/waterfall-chart'%}
+{% include guide-img-jpg.html img='dataviz/Waterfall-Chart'%}
   </div>
   <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/tree-map-chart'%}
+{% include guide-img-jpg.html img='dataviz/Tree-Map-Chart'%}
   </div>
 </div>
