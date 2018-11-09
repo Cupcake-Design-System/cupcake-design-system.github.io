@@ -24,7 +24,7 @@ Comparison graphs would be used to answer these questions:
 
 <div class="c-row">
   <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/bar-chart'%} 
+{% include guide-img-jpg.html img='dataviz/Bar-Chart'%} 
   </div>
 	  <div class="c-col-12 c-col-lg-2">
 {% include guide-img-jpg.html img='dataviz/radial-bar-chart'%}
