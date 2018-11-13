@@ -81,7 +81,7 @@ Relationship graphs could answer:
   </div>
 	  <div class="c-col-12 c-col-lg-3">
 {% include guide-img-jpg.html img='dataviz/Scatter-Chart'%}
-  </div>>
+  </div>
 </div>
 
 ### Composition Types
@@ -99,7 +99,7 @@ When using stacked or waterfall graphs make sure to emphasize the intent and dat
 {% include guide-img-jpg.html img='dataviz/Stacked-Area-Chart'%}
   </div>
 	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Stacked-100-area-chart'%}
+{% include guide-img-jpg.html img='dataviz/Stacked-100-Area-Chart'%}
   </div>
   	  <div class="c-col-12 c-col-lg-2">
 {% include guide-img-jpg.html img='dataviz/Pie-Chart'%}
