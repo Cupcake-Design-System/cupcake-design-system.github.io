@@ -1,38 +1,33 @@
 ---
 layout: docs-fullwidth
 title: Contribute to Cupcake
-description: The Cupcake Design System includes the resources to create user interfaces consistent with UX principles, design language, and best practices.
+description: Cupcake is a project that can help the whole company and needs the whole company to succeed in its goals.
 group: contribute
 ---
-
-# Cupcake Goals
-Rather than focusing on pixels, developers can focus on application logic, while designers can focus on user experience, interactions, and flows.
-
-These elements, components, and patterns provide a unified language and consistent look and feel when designing apps and products within the Ipreo ecosystem.
-
-For developers we’ve also created a powerful set of atomic/helpers classes that can be chained together to create just about any layout without writing a single line of new CSS. Further, these atomic classes can be used as modifiers of pre-existing components.
+# How to Contribute
+There are different levels of contribution. Choose a way to contribute that brings out the best in you and is best for the project.
 
 --- 
+## Participate in User Interviews
+As we create the Design System, we’re always looking for people to take part in our user interviews. We’re usually testing a new feature and always looking to gather ideas you have. Let us know you're available in the Slack channel #cupcake 
 
-## How to best use Cupcake?
-In order to use Cupcake, let’s consider the design you’d like to implement.
+## Ask for a feature
+Jump on the Github project, and let us know what you need from the Design System. Once we know what you need, we can work with you to make it more helpful to you.
 
-### If your design uses existing components.(It Should!)
-Identify if the design you’re implementing uses any existing components. Great, it does? Grab the markup from that component’s example page and paste that into your view, use the classes provided to build the ui, or install one of the existing components built with Cupcake!
+## Report a bug
+The Design System is used in many places. We have a hard time keeping our eyes on all of them to keep up with the issues you’re having. If you see something amiss, please report it via a Github issue so we have insight in order to resolve it.
 
-### If your design uses existing components but has some special cases.
-E.G. background colors, borders, etc. This is the most common use - you have a bunch of elements but need to implement them or combine them together on a page. Cupcake provides tons of atomic or helper classes to make this easy. Practically, this will likely just be adding something like an .c-m-bottom-lg class to a button, or hiding something temporarily with .c-d-none. These classes still adhere to the UX design standards - so using these classes to compose your pages - will be fast and stay in line with the ultimate vision.
+## Offer design direction
+Maybe you have a visual, interactive, or code design insight. We’d love to chat about your ideas and see how they might fit and be used to improve the Design System. Join #cupcake or #ux and share.
 
+## Make a Pull Request
+There’s a lot of code that has been written, and there’s even more left to write. It’ll be satisfying to take a look at the final product and know that you made your mark on it. Help as big as new components or as small as a typo fix in the docs is helpful and wanted. Become familiar with our Contribute Code guide, and push some bits.
 
-### If your design uses a new pattern that doesn’t have a component yet or isn't easily created with provided classes.
-We try to avoid this and stay constantly in the loop with designers and product. Sometimes things slip through the cracks. No worries, reach out to the Cupcake team and we will happily help you.
-
-
-### If your design is super special and you are going to write a lot of custom CSS from scratch in its own .scss file. 
-You probably shouldn’t be doing this often. With the amount of existing helper classes and pre-composed elements, you can build most of what you’re attempting to do without writing a single new line of CSS. Chances are you would be duplicating alot of existing work. Tread carefully - Every line of you write, the more you have to maintain. The exception may be laying out the page in an easier more flexible way - if this is the case - or you find yourself writing the same classes or css often - please let the Cupcake team know - we'd be happy to add it to the core!
+## Contribute to the design group
+The design group meets together regularly to review the Style Guide and the latest designs. The Design System is impacted by all these discussions and decisions. Bring your best ideas and share them.
 
 ---
 
-<a class="c-btn-link c-pull-right" href="{{ site.url }}{{ site.baseurl }}/content/contribute/contribute">
+<!-- <a class="c-btn-link c-pull-right" href="{{ site.url }}{{ site.baseurl }}/content/contribute/contribute">
  Continue to Contribution <i class="fa fa-arrow-right"></i>
-</a>
+</a> -->
