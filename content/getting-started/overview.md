@@ -5,7 +5,7 @@ description: The Cupcake Design System includes the resources to create user int
 group: getting-started
 ---
 
-# Goals
+# Cupcake Goals
 Rather than focusing on pixels, developers can focus on application logic, while designers can focus on user experience, interactions, and flows.
 
 These elements, components, and patterns provide a unified language and consistent look and feel when designing apps and products within the Ipreo ecosystem.
