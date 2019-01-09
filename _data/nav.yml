@@ -9,8 +9,9 @@
     - title: Overview     
     - title: Developers
     - title: Designers    
-    # - title: Component Status   
-    - title: FAQ       
+    # - title: Component Status  
+    - title: Adoption 
+    - title: FAQ      
 
 - title: Style
   icon: fal fa-paint-brush
