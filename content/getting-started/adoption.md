@@ -1,73 +1,39 @@
 ---
 layout: docs-fullwidth
 title: Adoption
-description: The most common questions we recieve.
+description: The Design System is flexible and allows for progressive adoption by product teams.
 group: getting-started
 ---
 
-## What is the Cupcake Design System?
-Cupcake is the design system for Ipreo applications. It is a series of individual styles, components, and guidelines used for creating unified UI.
+# Adoption Steps
+The Design System is adopted per product across gradual steps in priority order. These steps serve as milestones to track adoption across all products no matter the pace of an individual product team.
 
-Cupcake elements provide front-end developers & engineers a collection of reusable HTML and SCSS partials to build user interfaces. 
+Add Steps with graphic here
 
-Cupcake’s designs stem from continuous exploration and research. These designs are built into our HTML/CSS components, which can be used any web UI, regardless of the underlying JavaScript framework. 
+---
+# Planning
+## Approaches 
+Product teams tend to adopt a design system’s UI Component library using one of two approaches:
 
-## Why not bootstrap/foundation/material?
-The most popular question we used to answer.
+ - **Big Bang:** Across several sprints, a product team stops all other work to remove an old system and install the Cupcake Design System. This concentrated period slows a product’s work on new features, defects, and optimizations,but it cleanly and quickly applies the Design System so that a product can move forward confident that adoption is complete.
+ 
+ - **Incremental**: Due to existing commitments and competing priorities, a product team may choose to adopt Cupcake over a longer period of time. As such, the team may fold in tasks of replacing existing product features with Cupcake features alongside other work. Adoption steps tied to specific dates or sprints can provide a helpful barometer of intermediate goals and also help teams understand in what order Cupcake features should be adopted.
 
-Most importantly Ipreo has **very** wide range of products - that vary in tech debt. 
-In our initial research of current Ipreo products, we discovered **many** different front-end libraries and version some as old as bootstrap 2. 
+## Working With the Cupcake Team
+When considering adoption, contact the Cupcake team to schedule time to discuss your objectives and approach. This collaborative conversation will help you identify the following for your product’s adoption:
 
-Upgrading or changing **any** of that would be an **all or nothing** scenario and any new pieces would surely cause **conflicts**.
+- **Approach**: Will it be a “Big Bang” or “Incremental” adoption of the System?
 
-Here is a great list compiled by thought-leaders in the industry...
+- **Timing**: When might you start design and engineering work (potentially need more support) and complete the adoption process?
 
-- Those are rapid prototyping tools, not design systems
-- Their styles, elements, and components do not consider your users or your unique context.
-- Not detailed or specific enough so you spend as much time customizing or over-riding base out of the box styles.
-- Power over quality is taken from developers and designers.
-- You are beholden to their timeline and community. (For instance bootstrap 4 just came out of beta after **3 years** of updates and breaking changes)
-- Third Party Support - (if your component needs a specific version of bootstrap or material - Cupcake styles will not conflict with those needs)
+- **Priorities**: What Cupcake features are most relevant to your product? Knowing this will help our team to recommend effective techniques and shortcuts for planning and breaking down the work.
 
-Since most frameworks have gone modular - we could - at any point add a single element or component from any framework if it met the needs of our user. 
-We would simply add it underneath a cupcake class - ie. `.c-thing`.
+- **Depth** : Not every Cupcake feature may be relevant or feasible to integrate into your product. What are the priorities and/or limitations?
 
-This is **extremely powerful** as we now control the html class contract - at anytime we could change all of the styling inside a class like `.c-thing` **without having to do a full front-end rewrite of all html and angular components**
-
-Many teams are still using older versions of bootstrap alongside cupcake - this allows you to add new Cupcake elements without upgrading everything on the page.
-
-## Will Cupcake work with {insert third-party} component?
-Absolutely. Cupcake will not apply styles to the specific component - but it is scoped not to conflict with any component. *Some specific agreed upon third parties will have specific cupcake packages available for adding consistent styles.* If you need help with styling a third party component - please reach out - we **love** to help!
-
-## Which browsers are supported?
-Cupcake components is supported in the following browsers:
-- <i class="fab fa-internet-explorer c-text-muted" aria-hidden="true"></i> Partial IE10 Support
-- <i class="fab fa-internet-explorer" aria-hidden="true"></i> IE11
-- <i class="fab fa-edge" aria-hidden="true"></i> IE Edge latest
-- <i class="fab fa-firefox" aria-hidden="true"></i> Firefox latest
-- <i class="fab fa-chrome" aria-hidden="true"></i> Chrome latest
-- <i class="fab fa-safari" aria-hidden="true"></i> Safari latest
-
-## What language are the components written in?
-The Cupcake Design System is a written SCSS, and HTML and ships deliverables in compiled CSS and HTML. We are purposely framework agnostic so we can happily integrate the shared styles in **any** framework!
-There are also additional libraries - such as the angular components for Cupcake.
-
-## I see a bug, how do I report it?
-Please open an issue in the appropriate GitHub repo. We will address the bug as soon as we can. If you have a fix for the bug please feel free to submit a PR for it.
-
-## Why hasn't my bug been fixed yet?
-If you have a pressing bug or change it is best to make PR for the issue yourself. We work in sprints and will try to address your bug as soon as possible, usually by the following sprint. Issues that are out of scope will be tagged as such until it becomes a higher priority.
-
-## Where do I go if I've read everything and still have an issue/question?
-If you still have questions or can't find the answer you are looking for feel free to reach out in one of the following ways:
-
-General inquiries
-- Email: [teamcupcake@ipreo.com](teamcupcake@ipreo.com) 
-- For design questions: [#UX slack](https://ipreo.slack.com/messages/C521XQF4J)
-- For development questions: [#cupcake slack](https://ipreo.slack.com/messages/G37P0EKR9/)
+- **Customization**: How can you extend Cupcake to suit your product’s needs, and are any of those extensions relevant for the Cupcake team to support within the library itself?
 
 ---
 
-<a class="c-btn-link c-pull-right" href="{{ site.url }}{{ site.baseurl }}/content/getting-started/contribute/">
- Continue to Contribute <i class="fa fa-arrow-right"></i>
+<a class="c-btn-link c-pull-right" href="{{ site.url }}{{ site.baseurl }}/content/getting-started/developers/">
+ Continue to Developers <i class="fa fa-arrow-right"></i>
 </a>
