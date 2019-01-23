@@ -53,7 +53,7 @@ title:              Cupcake
 description:        "The Ipreo Design System Responsive, flex-enabled, and fully modular."
 
 # Custom variables
-current_version:      1.4.6
+current_version:      1.4.6 
 docs_version:         1.0
 repo:                 "https://code.ipreo.com/Ipreo/cupcake"
 slack:                "https://ipreo.slack.com/messages/C0T3KNMK7/"
