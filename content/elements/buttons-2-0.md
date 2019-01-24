@@ -11,7 +11,9 @@ sizes:
 - xl
 ---
 
-## Base
+# Components
+
+## Default Button
 
 Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
 
@@ -48,9 +50,11 @@ Make buttons look inactive by adding the `disabled` boolean attribute to any `<b
 <button type="button" class="c-btn c-btn-{{ color }}" disabled>{{ color | capitalize }}</button>{% endfor %}
 {% endexample %}
 
-## Additional Styles & Options
 
-This modifiers can be mixed/matched as needed
+## Additional Variations
+
+Don't see what your looking for? Check out the more [variations](https://cupcake.netlify.com/pages/buttons.html)
+
 
 <!-- ### Outlines
 {% example html %}
@@ -70,11 +74,179 @@ This modifiers can be mixed/matched as needed
 <button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>
 {% endexample %} -->
 
-## Components
+# Style Guide/Usage
 
-## Style Guide/Usage
+## Features
 
-## Developers
+##### All buttons have the following features:
+
+ * a hover and a click state
+ * can be either active or disabled
+ * come in 4 different sizes (primarily for use in grids, components and mobile apps)
+ 
+## Variations
+
+##### Buttons display in the following variations:
+
+ * Primary button
+ * Secondary button
+ * Action button
+ * Danger button
+ * Link-only button
+ * Icon button
+ * Icon-only button
+
+## General Do's and Dont's
+
+##### Button Wording
+
+<div class="c-row">
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-primary">Save as...</button>
+  </div>
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-success">
+      <i class="fas fa-plus-circle"></i> Add
+    </button>
+  </div>
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-success">
+      <i class="fas fa-plus-circle"></i> Add
+    </button>
+  </div>
+</div>
+
+<div class="c-row">
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-primary">Save as...</button>
+  </div>
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-success">
+      <i class="fas fa-plus-circle"></i> Add
+    </button>
+  </div>
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-success">
+      <i class="fas fa-plus-circle"></i> Add
+    </button>
+  </div>
+</div>
+
+<div class="c-row">
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-primary">Save as...</button>
+  </div>
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-success">
+      <i class="fas fa-plus-circle"></i> Add
+    </button>
+  </div>
+  <div class="c-col">
+    <button type="button" class="c-btn c-btn-success">
+      <i class="fas fa-plus-circle"></i> Add
+    </button>
+  </div>
+</div>
+
+
+
+#### Best <i class="fas fa-check c-text-success"></i>
+
+
+<button type="button" class="c-btn c-btn-primary">Save as...</button>
+<button type="button" class="c-btn c-btn-success">
+   <i class="fas fa-plus-circle"></i> Add
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+   <i class="fas fa-file-alt"></i> Export
+</button>
+<button type="button" class="c-btn c-btn-secondary">Discard</button>
+<button type="button" class="c-btn c-btn-secondary">Copy</button>
+<button type="button" class="c-btn c-btn-secondary">Add</button>
+
+
+#### OK <i class="fas fa-check c-text-success"></i>
+
+<button type="button" class="c-btn c-btn-primary">Save as New</button>
+<button type="button" class="c-btn c-btn-success">
+   <i class="fas fa-plus-circle"></i> Add New
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+   <i class="fas fa-file-alt"></i> Export .doc
+</button>
+<button type="button" class="c-btn c-btn-secondary">Discard Changes</button>
+<button type="button" class="c-btn c-btn-secondary">Copy to Clipboard</button>
+<button type="button" class="c-btn c-btn-secondary">Add Documents</button>
+
+
+#### NO <i class="fas fa-times c-text-danger"></i>
+
+<button type="button" class="c-btn c-btn-primary">Save as New View</button>
+<button type="button" class="c-btn c-btn-success">
+   <i class="fas fa-plus-circle"></i> Add New Deal
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+   <i class="fas fa-file-alt"></i> Export Word Document
+</button>
+<button type="button" class="c-btn c-btn-secondary">Discard all Changes</button>
+<button type="button" class="c-btn c-btn-secondary">Copy Orders to Clipboard</button>
+<button type="button" class="c-btn c-btn-secondary">Click to Add Documents</button>
+
+
+
+
+
+
+<table class="c-table c-table-transparent c-table-border-horizontal c-table-hover">
+  <thead>
+    <tr>
+      <th>
+        BEST
+          <i class="fa fa-check c-text-success c-pull-right"></i>
+      </th>
+      <th>
+        OK
+          <i class="fa fa-check c-text-success c-pull-right"></i>
+      </th>
+      <th>
+        NO
+          <i class="fa fa-times c-text-danger c-pull-right"></i>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Do keep primary buttons short and to the point</td>
+      <td>Do try limit button wording to two words (3 words max. if needed)</td>
+      <td>Don't use ambiguous or lengthy wording in buttons</td>
+    </tr>
+    <tr>
+      <td>Do use this approach when the context for the button is 100% clear</td>
+      <td>Do use wording and terms that need no additional explanation</td>
+      <td>Don't use more than two words (3 words max. in exceptions)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Create context with the design</td>
+      <td>Don't use wording that require additional explanations or context</td>
+    </tr>
+  </tbody>
+</table>
+
+
+![Button Wording Do's and Don'ts](\assets\img\button-wording-dos-donts.PNG "Button Wording Dos and Donts")
+
+
+
+<!-- | BEST                                                  | OK                                          | NO                                                             |
+|-------------------------------------------------------|---------------------------------------------|----------------------------------------------------------------|
+| Text is the best way to get some of the items in here | Text and rule goes here                     | dont do this when you have a button thingy                     |
+| asjtaljiojowijhwofijowmlkcm asdjeioja;klg;fga;ljdfa;s | sjiaeotjaweioefjkmsklcm asdfa;hsiohafiofjaj | daioejiofjklsm;skcnaskldcns;lfserioeawjhf[ ahsdfpishefionvndio | -->
+
+
+
+
+# Developers
 
 Multiple classes can be added for more complexity.
 
@@ -83,37 +255,25 @@ Multiple classes can be added for more complexity.
   <thead>
     <tr>
       <th>
-        Date Added
+        Class
         <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
           <i class="fa fa-search"></i>
         </button>
       </th>
       <th>
-        Company
+        Property
         <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
           <i class="fa fa-search"></i>
         </button>
       </th>
       <th>
-        Contact Person
+        SCSS
         <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
           <i class="fa fa-search"></i>
         </button>
       </th>
       <th>
-        Email Address
-        <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
-          <i class="fa fa-search"></i>
-        </button>
-      </th>
-      <th>
-        Profile
-        <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
-          <i class="fa fa-search"></i>
-        </button>
-      </th>
-      <th>
-        Contact
+        HEX
         <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
           <i class="fa fa-search"></i>
         </button>
@@ -122,159 +282,16 @@ Multiple classes can be added for more complexity.
   </thead>
   <tbody>
     <tr>
-      <td>6/19/2017</td>
-      <td>Pizza Hut</td>
-      <td>Gianni Block</td>
-      <td>gianni@pizzahut.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/19/2017</td>
-      <td>Siemens AG</td>
-      <td>Cooper Moore</td>
-      <td>coopermoore@siemens.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/20/2017</td>
-      <td>Oracle Corporation</td>
-      <td>Alexanne Stanton</td>
-      <td>alex@oracle.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/20/2017</td>
-      <td>
-        Wells Fargo
-        <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
-          <i class="fa fa-ellipsis-h"></i>
-        </button>
-      </td>
-      <td>Joyce Quitzon</td>
-      <td>joyce.quitzon@wellsfargo.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/21/2017</td>
-      <td>Johnson &amp; Johnson</td>
-      <td>Jaquan Roflson</td>
-      <td>jroflson@jandj.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/22/2017</td>
-      <td>United Parcel Service</td>
-      <td>Myrtle Stiedmann</td>
-      <td>myrtle@ups.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/23/2017</td>
-      <td>Chase</td>
-      <td>Nia Gutkowski</td>
-      <td>nia@chase.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/25/2017</td>
-      <td>American Express</td>
-      <td>Adrianna Roberts</td>
-      <td>adrianna@american.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/26/2017</td>
-      <td>Caterpillar Inc.</td>
-      <td>Milan Collier</td>
-      <td>milan@caterpillar.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/27/2017</td>
-      <td>Nike, Inc.</td>
-      <td>Otha Kemmer</td>
-      <td>otha@nike.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/28/2017</td>
-      <td>Toyota Motor Corporation</td>
-      <td>Aniyah Murray</td>
-      <td>aniyah@toyota.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
-    </tr>
-    <tr>
-      <td>6/29/2017</td>
-      <td>Yahoo!</td>
-      <td>Arianne Merkel</td>
-      <td>arianne@yahoo.com</td>
-      <td>
-        <button class="c-btn c-btn-primary c-btn-sm">Profile</button>
-      </td>
-      <td>
-        <button class="c-btn c-btn-default c-btn-sm">Profile</button>
-      </td>
+      <td>.c-btn .c-btn-primary</td>
+      <td>background-color</td>
+      <td>SCSS here</td>
+      <td>#0000</td>
     </tr>
   </tbody>
 </table>
 {% endexample %}
 
 
-## Layouts/Examples
+# Layouts/Examples
 
 Coming soon...
