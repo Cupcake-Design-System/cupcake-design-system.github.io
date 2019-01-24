@@ -99,8 +99,9 @@ Don't see what your looking for? Check out the more [variations](https://cupcake
 ## General Do's and Dont's
 
 ##### Button Wording
+![Button Wording Do's and Don'ts](\assets\img\button-wording-dos-donts.PNG "Button Wording Dos and Donts")
 
-<div class="c-row">
+<!-- <div class="c-row">
   <div class="c-col">
     <button type="button" class="c-btn c-btn-primary">Save as...</button>
   </div>
@@ -147,11 +148,9 @@ Don't see what your looking for? Check out the more [variations](https://cupcake
     </button>
   </div>
 </div>
-
 
 
 #### Best <i class="fas fa-check c-text-success"></i>
-
 
 <button type="button" class="c-btn c-btn-primary">Save as...</button>
 <button type="button" class="c-btn c-btn-success">
@@ -194,9 +193,6 @@ Don't see what your looking for? Check out the more [variations](https://cupcake
 
 
 
-
-
-
 <table class="c-table c-table-transparent c-table-border-horizontal c-table-hover">
   <thead>
     <tr>
@@ -231,10 +227,182 @@ Don't see what your looking for? Check out the more [variations](https://cupcake
       <td>Don't use wording that require additional explanations or context</td>
     </tr>
   </tbody>
-</table>
+</table> -->
 
 
-![Button Wording Do's and Don'ts](\assets\img\button-wording-dos-donts.PNG "Button Wording Dos and Donts")
+<!-- <div class="c-row">
+  <div class="c-col">
+      <div class="c-card">
+         <header class="c-card-header">
+           <div class="c-card-header-title">
+             DO 
+           </div>
+           <div class="c-card-header-menu">
+             <i class="fas fa-check-circle c-text-success" aria-hidden="true"></i>
+           </div>
+         </header>
+         <div class="c-card-content">
+           <div class="c-card-content-body">
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-primary">Save as...</button>
+                </div>
+              </div>
+               <div class="c-row">
+                <div class="c-col">
+                  <button type="button" class="c-btn c-btn-success">
+                  <i class="fas fa-plus-circle"></i> Add
+                 </button>
+                </div>
+              </div>
+               <div class="c-row">
+                <div class="c-col">
+                  <button type="button" class="c-btn c-btn-secondary">
+                    <i class="fas fa-file-alt"></i> Export
+                </button>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-secondary">Discard</button>
+                </div>
+              </div>
+               <div class="c-row">
+                <div class="c-col">
+                    <button type="button" class="c-btn c-btn-secondary">Copy</button>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-secondary">Add</button>
+                </div>
+              </div>
+           </div>
+         </div>
+         <div class="c-card-footer">
+            <ul>
+              <li class="c-text-bold">Do keep primary buttons short and to the point</li>
+              <li class="c-text-bold">Do use this approach when the context for the button is 100% clear</li>
+            </ul>
+         </div>
+     </div>
+  </div>
+    <div class="c-col">
+      <div class="c-card">
+         <header class="c-card-header">
+           <div class="c-card-header-title">
+             OK
+           </div>
+           <div class="c-card-header-menu">
+             <i class="fas fa-check-circle c-text-success" aria-hidden="true"></i>
+           </div>
+         </header>
+         <div class="c-card-content">
+           <div class="c-card-content-body">
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-primary">Save as New</button>
+                </div>
+              </div>
+               <div class="c-row">
+                <div class="c-col">
+                  <button type="button" class="c-btn c-btn-success">
+                  <i class="fas fa-plus-circle"></i> Add New 
+                 </button>
+                </div>
+              </div>
+               <div class="c-row">
+                <div class="c-col">
+                  <button type="button" class="c-btn c-btn-secondary">
+                    <i class="fas fa-file-alt"></i> Export .doc
+                </button>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-secondary">Discard Changes</button>
+                </div>
+              </div>
+               <div class="c-row">
+                <div class="c-col">
+                    <button type="button" class="c-btn c-btn-secondary">Copy to Clipboard</button>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-secondary">Add Documents</button>
+                </div>
+              </div>
+           </div>
+         </div>
+         <div class="c-card-footer">
+            <ul>
+              <li class="c-text-bold">Do try limit button wording to two words (3 words max. if needed)</li>
+              <li class="c-text-bold">Do use wording and terms that need no additional explanation</li>
+              <li class="c-text-bold">Create context with the design</li>
+            </ul>
+         </div>
+     </div>
+  </div>
+  <div class="c-col">
+      <div class="c-card">
+         <header class="c-card-header">
+           <div class="c-card-header-title">
+             DON'T
+           </div>
+           <div class="c-card-header-menu">
+             <i class="fas fa-times-circle c-text-danger" aria-hidden="true"></i>
+           </div>
+         </header>
+         <div class="c-card-content">
+           <div class="c-card-content-body">
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-primary">Save as...</button>
+                </div>
+              </div>
+               <div class="c-row">
+                <div class="c-col">
+                  <button type="button" class="c-btn c-btn-success">
+                  <i class="fas fa-plus-circle"></i> Add New Deal
+                 </button>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-col">
+                  <button type="button" class="c-btn c-btn-secondary">
+                    <i class="fas fa-file-alt"></i> Export Word Document
+                </button>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-secondary">Discard all Changes</button>
+                </div>
+              </div>
+               <div class="c-row">
+                <div class="c-col">
+                    <button type="button" class="c-btn c-btn-secondary">Copy Orders to Clipboard</button>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-col">
+                   <button type="button" class="c-btn c-btn-secondary">Click to Add Documents</button>
+                </div>
+              </div>
+           </div>
+         </div>
+         <div class="c-card-footer">
+            <ul>
+              <li class="c-text-bold">Don't use ambiguous or lengthy wording in buttons</li>
+              <li class="c-text-bold">Don't use more than two words (3 words max. in exceptions)</li>
+              <li class="c-text-bold">Don't use wording that require additional explanations or context</li>
+            </ul>
+         </div>
+     </div>
+  </div>
+</div> -->
+
 
 
 
