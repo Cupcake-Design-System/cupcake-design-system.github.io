@@ -101,6 +101,113 @@ Don't see what your looking for? Check out the more [variations](https://cupcake
 ##### Button Wording
 ![Button Wording Do's and Don'ts](\assets\img\button-wording-dos-donts.PNG "Button Wording Dos and Donts")
 
+##### Buttons + Icons
+![Buttons + Icons Do's and Don'ts](\assets\img\buttons-icons-dos-donts.PNG "Buttons + Icons Dos and Donts")
+
+## Primary Button
+Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
+
+### States
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary">Default</button>
+<button type="button" class="c-btn c-btn-primary-outline">Hover</button>
+<button type="button" class="c-btn c-btn-primary" disabled>Disabled</button>
+<button type="button" class="c-btn c-btn-primary" active>Active</button>
+{% endexample %}
+
+### Variations
+#### Primary Button + Icon
+Primary buttons can include icons to:
+  <ol>
+    <li>Visually emphasise their purpose and</li>
+    <li>Draw the eye to common and frequently used functions</li>
+  </ol>
+
+<button type="button" class="c-btn c-btn-primary">
+  <i class="fas fa-save"></i> Save
+</button>
+<button type="button" class="c-btn c-btn-primary">
+  <i class="fas fa-paper-plane"></i> Send
+</button>
+
+
+### General Do's and Dont's
+##### Primary Button Usage
+![Primary Button Do's and Don'ts](\assets\img\primary-button-dos-donts.PNG "Primary Button Dos and Donts")
+
+##### Grouping Primary Buttons
+![Grouping Primary Button Do's and Don'ts](\assets\img\grouping-primary-buttons-dos-donts.PNG "Grouping Primary Button Dos and Donts")
+
+##### Grouping and Button Order
+![Grouping Button Order Do's and Don'ts](\assets\img\grouping-button-order-primary-dos-donts.PNG "Grouping Button Order Dos and Donts")
+
+## Action Button
+Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
+
+### States
+{% example html %}
+<button type="button" class="c-btn c-btn-success">Default</button>
+<button type="button" class="c-btn c-btn-success-outline">Hover</button>
+<button type="button" class="c-btn c-btn-success" disabled>Disabled</button>
+<button type="button" class="c-btn c-btn-success">Active</button>
+{% endexample %}
+
+### Variations
+#### Secondary Button + Icon
+Action buttons can include icons to add additional visual emphasis
+
+<button type="button" class="c-btn c-btn-success">
+  <i class="fas fa-plus-circle"></i> Create
+</button>
+<button type="button" class="c-btn c-btn-success">
+  <i class="fas fa-plus-circle"></i> Add
+</button>
+
+### General Do's and Dont's
+
+##### Action Button Usage
+![Action Button Usage Do's and Don'ts](\assets\img\action-button-usage.PNG "Action Button Usage Do's and Don'ts")
+
+##### Action Button Combinations
+![Action Button Combinations Do's and Don'ts](\assets\img\action-button-combinations.PNG "Action Button Combinations Do's and Don'ts")
+
+## Danger Button
+* Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
+* A destructive action button can share the screen with an additive action button and/or a primary action button.
+
+### States
+{% example html %}
+<button type="button" class="c-btn c-btn-danger">Default</button>
+<button type="button" class="c-btn c-btn-danger-outline">Hover</button>
+<button type="button" class="c-btn c-btn-danger" disabled>Disabled</button>
+<button type="button" class="c-btn c-btn-danger">Active</button>
+{% endexample %}
+
+### Variations
+#### Danger Button + Icon
+Danger buttons can include icons to add additional visual emphasis
+
+<button type="button" class="c-btn c-btn-danger">
+  <i class="fas fa-trash-alt"></i>  Discard
+</button>
+<button type="button" class="c-btn c-btn-danger">
+  <i class="fas fa-trash-alt"></i>  Delete
+</button>
+
+
+### General Do's and Dont's
+
+##### Danger Button Usage
+![Danger Button Usage Do's and Don'ts](\assets\img\danger-button-usage.PNG "Danger Button Usage Do's and Don'ts")
+
+##### Danger Button Combinations
+![Danger Button Combinations Do's and Don'ts](\assets\img\danger-button-combinations.PNG "Danger Button Combinations Do's and Don'ts")
+
+
+
+
+
 <!-- <div class="c-row">
   <div class="c-col">
     <button type="button" class="c-btn c-btn-primary">Save as...</button>
