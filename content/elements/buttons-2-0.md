@@ -1,7 +1,7 @@
 ---
 title: Buttons 2.0
 layout: docs
-description: Buttons are clickable items used to trigger an action.
+description: Buttons are clickable items used to trigger an action. Buttons make common actions immediately visible and easy to perform with one click or tap.
 group: elements
 toc: true
 sizes:
@@ -13,31 +13,23 @@ sizes:
 
 # Components
 
-## Additional Variations
+## Additional Button Variations
 
 <!-- Don't see what your looking for? Check out the more [variations](https://cupcake.netlify.com/pages/buttons.html) -->
 
 Don't see what your looking for? Check out more variations <a href="https://deploy-preview-61--cupcake.netlify.com/pages/buttons.html" target="_blank">here</a> and <a href="https://cupcake.netlify.com/pages/buttons.html" target="_blank">here</a>
 
-## Default Button
-
-Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
+## Button Color Examples
 
 {% example html %}
-<button type="button" class="c-btn c-btn-primary">Button</button>
+<button type="button" class="c-btn c-btn-primary">Primary</button>
+<button type="button" class="c-btn c-btn-secondary">Secondary</button>
+<button type="button" class="c-btn c-btn-success">Success</button>
+<button type="button" class="c-btn c-btn-warning">Warning</button>
+<button type="button" class="c-btn c-btn-danger">Danger</button>
 {% endexample %}
 
-## Color Examples
-
-This is an example of available colors for the **{{ page.title }}** element. 
-
-{% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="c-btn c-btn-{{ color }}">{{ color | capitalize }}</button>{% endfor %}
-{% endexample %}
-
-
-## Size Examples
+## Button Size Examples
 
 This is an example of available sizes for the **{{ page.title }}** element. 
 
@@ -46,15 +38,55 @@ This is an example of available sizes for the **{{ page.title }}** element.
 <button type="button" class="c-btn c-btn-primary c-btn-{{ size.value }}">{{ size.name }}</button>{% endfor %}
 {% endexample %}
 
-
-## Disabled state
-
-Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element.
+## Button State Examples
 
 {% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="c-btn c-btn-{{ color }}" disabled>{{ color | capitalize }}</button>{% endfor %}
+<button type="button" class="c-btn c-btn-danger" disabled>Disabled</button>
 {% endexample %}
+
+## Buttons with Icons Examples
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary">
+  <i class="fas fa-paper-plane"></i> Send
+</button>
+<button type="button" class="c-btn c-btn-success">
+  <i class="fas fa-plus-circle"></i> Create
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+  <i class="fas fa-cut"></i> Cut
+</button>
+<button type="button" class="c-btn c-btn-danger">
+  <i class="fas fa-trashcan"></i> Delete
+</button>
+<button type="button" class="c-btn c-btn-primary c-btn-box"><i class="fas fa-chart-bar"></i></button>
+<button type="button" class="c-btn c-btn-secondary c-btn-box"><i class="fas fa-chart-pie"></i></button>
+{% endexample %}
+
+## Icon Button Examples
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary c-btn-box"><i class="fas fa-chart-bar"></i></button>
+<button type="button" class="c-btn c-btn-secondary c-btn-box"><i class="fas fa-chart-pie"></i></button>
+{% endexample %}
+
+## Icon-Only Button Examples
+
+{% example html %}
+<button type="button" class="c-btn c-btn-table-icon"><i class="fas fa-chart-bar"></i></button>
+<button type="button" class="c-btn c-btn-table-icon"><i class="fas fa-chart-pie"></i></button>
+{% endexample %}
+
+
+## Link-Only Button Examples
+
+{% example html %}
+<button class="c-btn-link c-btn-link-primary">Default Link</button>
+<button type="button" class="c-btn c-btn-link">
+  <i class="fas fa-comment"></i>  Add Comment
+</button>
+{% endexample %}
+
 
 
 <!-- ### Outlines
@@ -74,6 +106,8 @@ Make buttons look inactive by adding the `disabled` boolean attribute to any `<b
 {% example html %}
 <button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>
 {% endexample %} -->
+
+<hr>
 
 # Style Guide/Usage
 
@@ -651,40 +685,25 @@ Use colour on hover when using icon-only buttons as action or danger buttons.
 | Text is the best way to get some of the items in here | Text and rule goes here                     | dont do this when you have a button thingy                     |
 | asjtaljiojowijhwofijowmlkcm asdjeioja;klg;fga;ljdfa;s | sjiaeotjaweioefjkmsklcm asdfa;hsiohafiofjaj | daioejiofjklsm;skcnaskldcns;lfserioeawjhf[ ahsdfpishefionvndio | -->
 
-
+<hr>
 
 
 # Developers
 
-Multiple classes can be added for more complexity.
-
-{% example html %}
 <table class="c-table c-table-transparent c-table-border-horizontal c-table-hover">
   <thead>
     <tr>
       <th>
         Class
-        <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
-          <i class="fa fa-search"></i>
-        </button>
       </th>
       <th>
         Property
-        <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
-          <i class="fa fa-search"></i>
-        </button>
       </th>
       <th>
         SCSS
-        <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
-          <i class="fa fa-search"></i>
-        </button>
       </th>
       <th>
         HEX
-        <button class="c-btn c-btn-default c-btn-sm c-btn-table-icon c-pull-right">
-          <i class="fa fa-search"></i>
-        </button>
       </th>
     </tr>
   </thead>
@@ -697,8 +716,9 @@ Multiple classes can be added for more complexity.
     </tr>
   </tbody>
 </table>
-{% endexample %}
 
+
+<hr>
 
 # Layouts/Examples
 
