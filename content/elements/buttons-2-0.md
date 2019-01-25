@@ -97,6 +97,8 @@ Make buttons look inactive by adding the `disabled` boolean attribute to any `<b
  * Icon button
  * Icon-only button
 
+ Don't see what your looking for? Check out more variations <a href="https://deploy-preview-61--cupcake.netlify.com/pages/buttons.html" target="_blank">here</a> and <a href="https://cupcake.netlify.com/pages/buttons.html" target="_blank">here</a>
+
 ## General Do's and Dont's
 
 ##### Button Wording
@@ -105,7 +107,7 @@ Make buttons look inactive by adding the `disabled` boolean attribute to any `<b
 ##### Buttons + Icons
 ![Buttons + Icons Do's and Don'ts](\assets\img\buttons-icons-dos-donts.PNG "Buttons + Icons Dos and Donts")
 
-## Primary Button
+## Primary Buttons
 Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
 
 ### States
@@ -143,7 +145,7 @@ Primary buttons can include icons to:
 ##### Grouping and Button Order
 ![Grouping Button Order Do's and Don'ts](\assets\img\grouping-button-order-primary-dos-donts.PNG "Grouping Button Order Dos and Donts")
 
-## Action Button
+## Action Buttons
 Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
 
 ### States
@@ -173,7 +175,7 @@ Action buttons can include icons to add additional visual emphasis
 ##### Action Button Combinations
 ![Action Button Combinations Do's and Don'ts](\assets\img\action-button-combinations.PNG "Action Button Combinations Do's and Don'ts")
 
-## Danger Button
+## Danger Buttons
 * Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
 * A destructive action button can share the screen with an additive action button and/or a primary action button.
 
@@ -205,7 +207,7 @@ Danger buttons can include icons to add additional visual emphasis
 ##### Danger Button Combinations
 ![Danger Button Combinations Do's and Don'ts](\assets\img\danger-button-combinations.PNG "Danger Button Combinations Do's and Don'ts")
 
-## Secondary Button
+## Secondary Buttons
 * Secondary buttons are the standard button for general use. 
 * Secondary buttons are often used in combination with a primary button, to represent an opposing action.
 
