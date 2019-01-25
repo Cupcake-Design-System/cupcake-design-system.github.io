@@ -13,6 +13,12 @@ sizes:
 
 # Components
 
+## Additional Variations
+
+<!-- Don't see what your looking for? Check out the more [variations](https://cupcake.netlify.com/pages/buttons.html) -->
+
+Don't see what your looking for? Check out more variations <a href="https://deploy-preview-61--cupcake.netlify.com/pages/buttons.html" target="_blank">here</a> and <a href="https://cupcake.netlify.com/pages/buttons.html" target="_blank">here</a>
+
 ## Default Button
 
 Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
@@ -49,11 +55,6 @@ Make buttons look inactive by adding the `disabled` boolean attribute to any `<b
 {% for color in site.data.theme-colors %}
 <button type="button" class="c-btn c-btn-{{ color }}" disabled>{{ color | capitalize }}</button>{% endfor %}
 {% endexample %}
-
-
-## Additional Variations
-
-Don't see what your looking for? Check out the more [variations](https://cupcake.netlify.com/pages/buttons.html)
 
 
 <!-- ### Outlines
@@ -154,7 +155,7 @@ Action buttons represent and draw attention to an action where something is crea
 {% endexample %}
 
 ### Variations
-#### Secondary Button + Icon
+#### Action Button + Icon
 Action buttons can include icons to add additional visual emphasis
 
 <button type="button" class="c-btn c-btn-success">
@@ -203,6 +204,136 @@ Danger buttons can include icons to add additional visual emphasis
 
 ##### Danger Button Combinations
 ![Danger Button Combinations Do's and Don'ts](\assets\img\danger-button-combinations.PNG "Danger Button Combinations Do's and Don'ts")
+
+## Secondary Button
+* Secondary buttons are the standard button for general use. 
+* Secondary buttons are often used in combination with a primary button, to represent an opposing action.
+
+### States
+{% example html %}
+<button type="button" class="c-btn c-btn-secondary">Default</button>
+{% endexample %}
+
+### Variations
+#### Secondary Button + Icon
+Secondary buttons can include icons to:
+  <ol>
+    <li>Visually emphasise their purpose and</li>
+    <li>Draw the eye to common and frequently used functions</li>
+  </ol>
+
+<button type="button" class="c-btn c-btn-secondary">
+  <i class="fas fa-cut"></i>  Cut
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+  <i class="fas fa-copy"></i>  Copy
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+  <i class="fas fa-paste"></i>  Paste
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+  <i class="fas fa-edit"></i>  Edit
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+  <i class="fas fa-download"></i>  Download
+</button>
+<button type="button" class="c-btn c-btn-secondary">
+  <i class="fas fa-trash-alt"></i>  Delete
+</button>
+
+### General Do's and Dont's
+
+##### Secondary Button Usage
+![Secondary Button Usage Do's and Don'ts](\assets\img\secondary-button-usage-dos-donts.PNG "Secondary Button Usage Do's and Don'ts")
+
+##### Repetitive use of secondary buttons in tables
+![Secondary Button Repetitive Usage Do's and Don'ts](\assets\img\secondary-button-repetitive-usage.PNG "Secondary Button Repetitive Usage Do's and Don'ts")
+
+## Link-Only Buttons
+Link-only buttons are used under the following circumstances:
+* Primary and Secondary buttons have been used but an additional button is needed to highlight a less critical action or supporting link.
+* To add additional buttons to an already button heavy page
+* To represent less important or supporting actions
+
+### States
+{% example html %}
+<button type="button" class="c-btn c-btn-link">Default</button>
+{% endexample %}
+
+### Variations
+#### Link-only button + Icon
+Link-only buttons can include icons to:
+  <ol>
+    <li>Visually emphasise their purpose and</li>
+    <li>Draw the eye to common and frequently used functions</li>
+  </ol>
+
+<button type="button" class="c-btn c-btn-link">
+  <i class="fas fa-comment"></i>  Add Comment
+</button>
+<button type="button" class="c-btn c-btn-link">
+  <i class="fas fa-arrow-left"></i>  Back
+</button>
+
+### General Do's and Dont's
+
+##### Link-Only Button Usage
+![Link-Only Button Usage Do's and Don'ts](\assets\img\link-only-button-usage.PNG "Link-Only Button Usage Do's and Don'ts")
+
+##### Link-Only Button Combinations
+![Link-Only Button Combinations](\assets\img\link-only-button-combinations.PNG "Link-Only Button Combinations")
+
+##### Button Link vs. Text Link
+![Button Link vs. Text Link](\assets\img\button-link-vs-text-link.PNG "Button Link vs. Text Link")
+
+## Icon Buttons
+Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.
+
+### States
+{% example html %}
+<button type="button" class="c-btn c-btn-primary c-btn-box"><i class="fas fa-chart-bar"></i></button>
+<button type="button" class="c-btn c-btn-secondary c-btn-box"><i class="fas fa-chart-pie"></i></button>
+{% endexample %}
+
+### General Do's and Dont's
+
+##### Icon Button Usage
+![Icon Button Usage Do's and Don'ts](\assets\img\icon-button-usage.PNG "Icon Button Usage Do's and Don'ts")
+
+## Icon-Only Buttons
+Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.
+
+### States
+{% example html %}
+<button type="button" class="c-btn c-btn-table-icon"><i class="fas fa-chart-bar"></i></button>
+<button type="button" class="c-btn c-btn-table-icon"><i class="fas fa-chart-pie"></i></button>
+{% endexample %}
+
+### Variations
+Use colour on hover when using icon-only buttons as action or danger buttons.
+
+#### Action Variation
+{% example html %}
+<button type="button" class="c-btn c-btn-icon c-btn-icon-success"><i class="fas fa-plus-circle"></i></button>
+<button type="button" class="c-btn c-btn-icon c-btn-icon-success"><i class="fas fa-plus-circle"></i></button>
+{% endexample %}
+
+#### Danger Variation
+{% example html %}
+<button type="button" class="c-btn c-btn-icon c-btn-icon-danger"><i class="fas fa-trash"></i></button>
+<button type="button" class="c-btn c-btn-icon c-btn-icon-danger"><i class="fas fa-trash"></i></button>
+{% endexample %}
+
+### General Do's and Dont's
+
+##### Icon-Only Button Usage
+![Icon-Only Button Usage Do's and Don'ts](\assets\img\icon-only-button-usage.PNG "Icon-Only Button Usage Do's and Don'ts")
+
+##### Icon-Only Button Usage in Forms
+![Icon-Only Button Usage in Forms Do's and Don'ts](\assets\img\icon-only-button-usage-forms.PNG "Icon-Only Button Usage in Forms Do's and Don'ts")
+
+
+
 
 
 
