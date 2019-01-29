@@ -34,6 +34,9 @@ Drag and drop can be used to easily reorder movable cards to the user's liking.
 
 ##### Example of Use
 
+![Drag and Drop Cards](\assets\img\cards-draganddrop.PNG "Drag and Drop Cards")
+
+
 ![Drag and Drop Card 1](\assets\img\drag-and-drop-card-1.PNG "Drag and Drop Card 1")
 ![Drag and Drop Card 2](\assets\img\drag-and-drop-card-2.PNG "Drag and Drop Card 2")
 ![Drag and Drop Card 3](\assets\img\drag-and-drop-card-3.PNG "Drag and Drop Card 3")
