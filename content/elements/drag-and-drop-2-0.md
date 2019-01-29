@@ -34,14 +34,16 @@ Drag and drop can be used to easily reorder movable cards to the user's liking.
 
 ##### Example of Use
 
-![Drag and Drop Cards](\assets\img\cards-draganddrop.PNG "Drag and Drop Cards")
+![Drag and Drop Cards](\assets\img\drag-and-drop\cards-draganddrop.PNG "Drag and Drop Cards")
+![Drag and Drop Confluence Eample](\assets\img\drag-and-drop\drag-and-drop-confluence-example.PNG "Drag and Drop Confluence Example")
 
 
-![Drag and Drop Card 1](\assets\img\drag-and-drop-card-1.PNG "Drag and Drop Card 1")
-![Drag and Drop Card 2](\assets\img\drag-and-drop-card-2.PNG "Drag and Drop Card 2")
-![Drag and Drop Card 3](\assets\img\drag-and-drop-card-3.PNG "Drag and Drop Card 3")
-![Drag and Drop Card 4](\assets\img\drag-and-drop-card-4.PNG "Drag and Drop Card 4")
-![Drag and Drop Card 5](\assets\img\drag-and-drop-card-5.PNG "Drag and Drop Card 5")
+
+<!-- ![Drag and Drop Card 1](\assets\img\drag-and-drop\drag-and-drop-card-1.PNG "Drag and Drop Card 1")
+![Drag and Drop Card 2](\assets\img\drag-and-drop\drag-and-drop-card-2.PNG "Drag and Drop Card 2")
+![Drag and Drop Card 3](\assets\img\drag-and-drop\drag-and-drop-card-3.PNG "Drag and Drop Card 3")
+![Drag and Drop Card 4](\assets\img\drag-and-drop\drag-and-drop-card-4.PNG "Drag and Drop Card 4")
+![Drag and Drop Card 5](\assets\img\drag-and-drop\drag-and-drop-card-5.PNG "Drag and Drop Card 5") -->
 
 <hr>
 
@@ -50,7 +52,7 @@ Drag and drop can be used to easily reorder list items to the user's liking.
 
 ##### Example of Use
 
-![Drag and Drop List Item Example](\assets\img\drag-and-drop-list-items-example.PNG "Drag and Drop List Item Example")
+![Drag and Drop List Item Example](\assets\img\drag-and-drop\drag-and-drop-list-items-example.PNG "Drag and Drop List Item Example")
 
 <hr>
 
@@ -59,6 +61,6 @@ Drag and drop can be used to easily perform a function with a widget, such as a 
 
 ##### Example of Use
 
-![Drag and Drop Widgets Example](\assets\img\drag-and-drop-widgets-example.PNG "Drag and Drop Widgets Example")
+![Drag and Drop Widgets Example](\assets\img\drag-and-drop\drag-and-drop-widgets-example.PNG "Drag and Drop Widgets Example")
 
 
