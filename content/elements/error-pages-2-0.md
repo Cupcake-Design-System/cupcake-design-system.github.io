@@ -38,7 +38,7 @@ sizes:
 * This error appears outside of an application because the user has not signed in yet.
 
 ##### Example of Use
-![Error 401](\assets\img\error-401-example.PNG "Error 401")
+![Error 401](\assets\img\error-pages\error-401-example.PNG "Error 401")
 
 <hr>
 
@@ -48,7 +48,7 @@ sizes:
 * This error appears inside of an application when the user is signed in.
 
 ##### Example of Use
-![Error 403](\assets\img\error-403-example.PNG "Error 403")
+![Error 403](\assets\img\error-pages\error-403-example.PNG "Error 403")
 
 <hr>
 
@@ -58,7 +58,7 @@ sizes:
 * This error appears inside of an application when the user is signed in.
 
 ##### Example of Use
-![Error 404](\assets\img\error-404-example.PNG "Error 404")
+![Error 404](\assets\img\error-pages\error-404-example.PNG "Error 404")
 
 <hr>
 
@@ -68,7 +68,7 @@ sizes:
 * This error appears inside of an application when the user is signed in.
 
 ##### Example of Use
-![Error 500](\assets\img\error-500-example.PNG "Error 500")
+![Error 500](\assets\img\error-pages\error-500-example.PNG "Error 500")
 
 <hr>
 
@@ -78,6 +78,6 @@ sizes:
 * This error appears inside of an application when the user is signed in.
 
 ##### Example of Use
-![Error 503](\assets\img\error-503-example-1.PNG "Error 503")
+![Error 503](\assets\img\error-pages\error-503-example-1.PNG "Error 503")
 
-![Error 503](\assets\img\error-503-example-2.PNG "Error 503")
+![Error 503](\assets\img\error-pages\error-503-example-2.PNG "Error 503")
