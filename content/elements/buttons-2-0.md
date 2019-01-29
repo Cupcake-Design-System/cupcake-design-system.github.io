@@ -134,10 +134,10 @@ This is an example of available sizes for the **{{ page.title }}** element.
 ## General Do's and Dont's
 
 ##### Button Wording
-![Button Wording Do's and Don'ts](\assets\img\button-wording-dos-donts.PNG "Button Wording Dos and Donts")
+![Button Wording Do's and Don'ts](\assets\img\buttons\button-wording-dos-donts.PNG "Button Wording Dos and Donts")
 
 ##### Buttons + Icons
-![Buttons + Icons Do's and Don'ts](\assets\img\buttons-icons-dos-donts.PNG "Buttons + Icons Dos and Donts")
+![Buttons + Icons Do's and Don'ts](\assets\img\buttons\buttons-icons-dos-donts.PNG "Buttons + Icons Dos and Donts")
 
 ## Primary Buttons
 Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
@@ -169,13 +169,13 @@ Primary buttons can include icons to:
 
 ### General Do's and Dont's
 ##### Primary Button Usage
-![Primary Button Do's and Don'ts](\assets\img\primary-button-dos-donts.PNG "Primary Button Dos and Donts")
+![Primary Button Do's and Don'ts](\assets\img\buttons\primary-button-dos-donts.PNG "Primary Button Dos and Donts")
 
 ##### Grouping Primary Buttons
-![Grouping Primary Button Do's and Don'ts](\assets\img\grouping-primary-buttons-dos-donts.PNG "Grouping Primary Button Dos and Donts")
+![Grouping Primary Button Do's and Don'ts](\assets\img\buttons\grouping-primary-buttons-dos-donts.PNG "Grouping Primary Button Dos and Donts")
 
 ##### Grouping and Button Order
-![Grouping Button Order Do's and Don'ts](\assets\img\grouping-button-order-primary-dos-donts.PNG "Grouping Button Order Dos and Donts")
+![Grouping Button Order Do's and Don'ts](\assets\img\buttons\grouping-button-order-primary-dos-donts.PNG "Grouping Button Order Dos and Donts")
 
 ## Action Buttons
 Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
@@ -202,10 +202,10 @@ Action buttons can include icons to add additional visual emphasis
 ### General Do's and Dont's
 
 ##### Action Button Usage
-![Action Button Usage Do's and Don'ts](\assets\img\action-button-usage.PNG "Action Button Usage Do's and Don'ts")
+![Action Button Usage Do's and Don'ts](\assets\img\buttons\action-button-usage.PNG "Action Button Usage Do's and Don'ts")
 
 ##### Action Button Combinations
-![Action Button Combinations Do's and Don'ts](\assets\img\action-button-combinations.PNG "Action Button Combinations Do's and Don'ts")
+![Action Button Combinations Do's and Don'ts](\assets\img\buttons\action-button-combinations.PNG "Action Button Combinations Do's and Don'ts")
 
 ## Danger Buttons
 * Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
@@ -234,10 +234,10 @@ Danger buttons can include icons to add additional visual emphasis
 ### General Do's and Dont's
 
 ##### Danger Button Usage
-![Danger Button Usage Do's and Don'ts](\assets\img\danger-button-usage.PNG "Danger Button Usage Do's and Don'ts")
+![Danger Button Usage Do's and Don'ts](\assets\img\buttons\danger-button-usage.PNG "Danger Button Usage Do's and Don'ts")
 
 ##### Danger Button Combinations
-![Danger Button Combinations Do's and Don'ts](\assets\img\danger-button-combinations.PNG "Danger Button Combinations Do's and Don'ts")
+![Danger Button Combinations Do's and Don'ts](\assets\img\buttons\danger-button-combinations.PNG "Danger Button Combinations Do's and Don'ts")
 
 ## Secondary Buttons
 * Secondary buttons are the standard button for general use. 
@@ -278,10 +278,10 @@ Secondary buttons can include icons to:
 ### General Do's and Dont's
 
 ##### Secondary Button Usage
-![Secondary Button Usage Do's and Don'ts](\assets\img\secondary-button-usage-dos-donts.PNG "Secondary Button Usage Do's and Don'ts")
+![Secondary Button Usage Do's and Don'ts](\assets\img\buttons\secondary-button-usage-dos-donts.PNG "Secondary Button Usage Do's and Don'ts")
 
 ##### Repetitive use of secondary buttons in tables
-![Secondary Button Repetitive Usage Do's and Don'ts](\assets\img\secondary-button-repetitive-usage.PNG "Secondary Button Repetitive Usage Do's and Don'ts")
+![Secondary Button Repetitive Usage Do's and Don'ts](\assets\img\buttons\secondary-button-repetitive-usage.PNG "Secondary Button Repetitive Usage Do's and Don'ts")
 
 ## Link-Only Buttons
 Link-only buttons are used under the following circumstances:
@@ -312,13 +312,13 @@ Link-only buttons can include icons to:
 ### General Do's and Dont's
 
 ##### Link-Only Button Usage
-![Link-Only Button Usage Do's and Don'ts](\assets\img\link-only-button-usage.PNG "Link-Only Button Usage Do's and Don'ts")
+![Link-Only Button Usage Do's and Don'ts](\assets\img\buttons\link-only-button-usage.PNG "Link-Only Button Usage Do's and Don'ts")
 
 ##### Link-Only Button Combinations
-![Link-Only Button Combinations](\assets\img\link-only-button-combinations.PNG "Link-Only Button Combinations")
+![Link-Only Button Combinations](\assets\img\buttons\link-only-button-combinations.PNG "Link-Only Button Combinations")
 
 ##### Button Link vs. Text Link
-![Button Link vs. Text Link](\assets\img\button-link-vs-text-link.PNG "Button Link vs. Text Link")
+![Button Link vs. Text Link](\assets\img\buttons\button-link-vs-text-link.PNG "Button Link vs. Text Link")
 
 ## Icon Buttons
 Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.
@@ -332,7 +332,7 @@ Icon buttons are best used in combinations with other buttons, typically in tool
 ### General Do's and Dont's
 
 ##### Icon Button Usage
-![Icon Button Usage Do's and Don'ts](\assets\img\icon-button-usage.PNG "Icon Button Usage Do's and Don'ts")
+![Icon Button Usage Do's and Don'ts](\assets\img\buttons\icon-button-usage.PNG "Icon Button Usage Do's and Don'ts")
 
 ## Icon-Only Buttons
 Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.
@@ -361,10 +361,10 @@ Use colour on hover when using icon-only buttons as action or danger buttons.
 ### General Do's and Dont's
 
 ##### Icon-Only Button Usage
-![Icon-Only Button Usage Do's and Don'ts](\assets\img\icon-only-button-usage.PNG "Icon-Only Button Usage Do's and Don'ts")
+![Icon-Only Button Usage Do's and Don'ts](\assets\img\buttons\icon-only-button-usage.PNG "Icon-Only Button Usage Do's and Don'ts")
 
 ##### Icon-Only Button Usage in Forms
-![Icon-Only Button Usage in Forms Do's and Don'ts](\assets\img\icon-only-button-usage-forms.PNG "Icon-Only Button Usage in Forms Do's and Don'ts")
+![Icon-Only Button Usage in Forms Do's and Don'ts](\assets\img\buttons\icon-only-button-usage-forms.PNG "Icon-Only Button Usage in Forms Do's and Don'ts")
 
 
 
