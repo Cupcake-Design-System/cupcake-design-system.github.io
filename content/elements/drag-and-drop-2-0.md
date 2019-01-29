@@ -15,69 +15,47 @@ sizes:
 
 ## Structure
 
-##### Our error pages are made up of the following:
+##### Drag and Drop must haves:
 
- * Icon
- * Reason/Explanation
- * Error Code
- * Contact Link/Button
+ * All components that the user is able to drag and drop must have **grips on the left side** to indicate 
+ * All components that the user is able to drag and drop must have **50% opacity** applied when the user is dragging it to the drop zone
+ * All drop zones should have some sort of **indication** (blue box or list indication)
  
-## Types of Error Pages
+## Types of Drag and Drop
 
- * **Error 401** - Authentication required to view page
- * **Error 403** - Not authorized to view page
- * **Error 404** - Page not found
- * **Error 500** - Internal server error
- * **Error 503** - Service unavailable
+ * Drag and drop with cards
+ * Drag and drop with list items
+ * Drag and drop with widgets
 
  <hr>
 
-## Error 401
-
-* Error 401 requires the user to  sign in in order to view the page.
-* This error appears outside of an application because the user has not signed in yet.
+## Drag and Drop with Cards
+Drag and drop can be used to easily reorder movable cards to the user's liking. 
 
 ##### Example of Use
-![Error 401](\assets\img\error-401-example.PNG "Error 401")
+
+![Drag and Drop Card 1](\assets\img\drag-and-drop-card-1.PNG "Drag and Drop Card 1")
+![Drag and Drop Card 2](\assets\img\drag-and-drop-card-2.PNG "Drag and Drop Card 2")
+![Drag and Drop Card 3](\assets\img\drag-and-drop-card-3.PNG "Drag and Drop Card 3")
+![Drag and Drop Card 4](\assets\img\drag-and-drop-card-4.PNG "Drag and Drop Card 4")
+![Drag and Drop Card 5](\assets\img\drag-and-drop-card-5.PNG "Drag and Drop Card 5")
 
 <hr>
 
-## Error 403
-
-* Error 403 informs the user that they are not authorized to view the page that they are trying to access.
-* This error appears inside of an application when the user is signed in.
+## Drag and Drop with List Items
+Drag and drop can be used to easily reorder list items to the user's liking. 
 
 ##### Example of Use
-![Error 403](\assets\img\error-403-example.PNG "Error 403")
+
+![Drag and Drop List Item Example](\assets\img\drag-and-drop-list-items-example.PNG "Drag and Drop List Item Example")
 
 <hr>
 
-## Error 404
-
-* Error 404 informs the user that the page they are trying to access cannot be found.
-* This error appears inside of an application when the user is signed in.
+## Drag and Drop with Widgets
+Drag and drop can be used to easily perform a function with a widget, such as a file upload. 
 
 ##### Example of Use
-![Error 404](\assets\img\error-404-example.PNG "Error 404")
 
-<hr>
+![Drag and Drop Widgets Example](\assets\img\drag-and-drop-widgets-example.PNG "Drag and Drop Widgets Example")
 
-## Error 500
 
-* Error 500 informs the user that they have run into a general error that doesn't have much description around it.
-* This error appears inside of an application when the user is signed in.
-
-##### Example of Use
-![Error 500](\assets\img\error-500-example.PNG "Error 500")
-
-<hr>
-
-## Error 503
-
-* Error 503 informs the user that the server can not handle the request.
-* This error appears inside of an application when the user is signed in.
-
-##### Example of Use
-![Error 503](\assets\img\error-503-example-1.PNG "Error 503")
-
-![Error 503](\assets\img\error-503-example-2.PNG "Error 503")
