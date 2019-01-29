@@ -200,12 +200,12 @@ Make switches inactive.
  
  The mobile version has a bigger hit area and larger text for better performance on smaller mobile screens.
 
- ![Switches Versions](\assets\img\switches-versions.PNG "Switches Versions")
+ ![Switches Versions](\assets\img\switches\switches-versions.PNG "Switches Versions")
 
 ## General Do's and Dont's
 
 ### Basic Switch Hygiene
-![Switch Hygiene Do's and Don'ts](\assets\img\switch-hygiene-dos-donts.PNG "Switch Hygiene Do's and Don'ts")
+![Switch Hygiene Do's and Don'ts](\assets\img\switches\switch-hygiene-dos-donts.PNG "Switch Hygiene Do's and Don'ts")
 
 <hr>
 
@@ -214,20 +214,20 @@ Make switches inactive.
 * When switches are used in Settings pages, there should not be a requirement to apply the settings via a form.
 
 ##### Example of use
-![Switch Example Setting](\assets\img\switch-example-settings.PNG "Switch Example Setting")
+![Switch Example Setting](\assets\img\switches\switch-example-settings.PNG "Switch Example Setting")
 
 #### Do's and Don'ts
 ##### Placement relative to labels
 
-![Switch Placement Relative to Labels](\assets\img\switch-placement-labels-dos-donts.PNG "Switch Placement Relative to Lables")
+![Switch Placement Relative to Labels](\assets\img\switches\switch-placement-labels-dos-donts.PNG "Switch Placement Relative to Lables")
 
 ##### Label alignment relative to switches
 
-![Label alignment relative to switches](\assets\img\switches-label-alignment-dos-donts.PNG "Label alignment relative to switches")
+![Label alignment relative to switches](\assets\img\switches\switches-label-alignment-dos-donts.PNG "Label alignment relative to switches")
 
 ##### Settings vs Forms
 
-![Settings vs Forms](\assets\img\switches-settings-vs-forms-dos-donts.PNG "Settings vs Forms")
+![Settings vs Forms](\assets\img\switches\switches-settings-vs-forms-dos-donts.PNG "Settings vs Forms")
 
 <hr>
 
@@ -235,32 +235,32 @@ Make switches inactive.
 Switches are often used as controls with tables and data visualisations to affect the information the user can view and interact with.
 
 ##### Example of use
-![Switch Table Example](\assets\img\switch-table-example.PNG "Switch Table Example")
+![Switch Table Example](\assets\img\switches\switch-table-example.PNG "Switch Table Example")
 
 #### Do's and Don'ts
 ##### Placement as table control
 
-![Switch Placement as Table Control](\assets\img\switch-placement-table-dos-donts.PNG "Switch Placement as Table Control")
+![Switch Placement as Table Control](\assets\img\switches\switch-placement-table-dos-donts.PNG "Switch Placement as Table Control")
 
 ##### Placement of label relative to switch
 
-![Switch Placement Label](\assets\img\switch-placement-label.PNG "Switch Placement Label")
+![Switch Placement Label](\assets\img\switches\switch-placement-label.PNG "Switch Placement Label")
 
 ##### Vertical alignment of text relative to switch
 
-![Switch Text Alignment](\assets\img\switch-text-alignment.PNG "Switch Text Alignment")
+![Switch Text Alignment](\assets\img\switches\switch-text-alignment.PNG "Switch Text Alignment")
 
 ##### Label language
 
-![Switch Label Language](\assets\img\switch-label-language.PNG "Switch Label Language")
+![Switch Label Language](\assets\img\switches\switch-label-language.PNG "Switch Label Language")
 
 ##### Label length
 
-![Switch Label Length](\assets\img\switches-label-length.PNG "Switch Label Language")
+![Switch Label Length](\assets\img\switches\switches-label-length.PNG "Switch Label Language")
 
 ##### Table controls vs. form controls
 
-![Switch Label Language](\assets\img\switch-table-control-vs-form-control.PNG "Switch Label Length")
+![Switch Label Language](\assets\img\switches\switch-table-control-vs-form-control.PNG "Switch Label Length")
 
 <hr>
 
@@ -268,15 +268,17 @@ Switches are often used as controls with tables and data visualisations to affec
 Switches are often used as settings controls within tables to apply or disable immediate and continuous changes. 
 
 ##### Example of use
-![Switch Inside Table Example](\assets\img\switch-inside-table-example.PNG "Switch Inside Table Example")
+![Switch Inside Table Example](\assets\img\switches\switch-inside-table-example.PNG "Switch Inside Table Example")
 
 #### Do's and Don'ts
 ##### Alignment inside a table cell
 
-![Switch Alignment Table Cell Dos Donts](\assets\img\switch-alignment-table-cell-dos-donts.PNG "Switch Alignment Table Cell Dos Donts")
+![Switch Alignment Table Cell Dos Donts](\assets\img\switches\switch-alignment-table-cell-dos-donts.PNG "Switch Alignment Table Cell Dos Donts")
 
 ##### Tables vs Forms
 
-![Switch Inside Tables vs Forms](\assets\img\switches-inside-tables-vs-forms.PNG "Switch Inside Tables vs Forms")
+![Switch Inside Tables vs Forms](\assets\img\switches\switches-inside-tables-vs-forms.PNG "Switch Inside Tables vs Forms")
 
+# Developers
 
+# Layout/Examples
