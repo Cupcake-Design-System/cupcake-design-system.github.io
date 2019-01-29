@@ -11,396 +11,78 @@ sizes:
 - xl
 ---
 
-# Components
-
-## Additional Button Variations
-
-<!-- Don't see what your looking for? Check out the more [variations](https://cupcake.netlify.com/pages/buttons.html) -->
-
-Don't see what your looking for? Check out more variations <a href="https://deploy-preview-61--cupcake.netlify.com/pages/buttons.html" target="_blank">here</a> and <a href="https://cupcake.netlify.com/pages/buttons.html" target="_blank">here</a>
-
-## Button Color Examples
-
-{% example html %}
-<button type="button" class="c-btn c-btn-primary">Primary</button>
-<button type="button" class="c-btn c-btn-secondary">Secondary</button>
-<button type="button" class="c-btn c-btn-success">Success</button>
-<button type="button" class="c-btn c-btn-warning">Warning</button>
-<button type="button" class="c-btn c-btn-danger">Danger</button>
-{% endexample %}
-
-## Button Size Examples
-
-This is an example of available sizes for the **{{ page.title }}** element. 
-
-{% example html %}
-{% for size in site.data.theme-sizes %}
-<button type="button" class="c-btn c-btn-primary c-btn-{{ size.value }}">{{ size.name }}</button>{% endfor %}
-{% endexample %}
-
-## Button State Examples
-
-{% example html %}
-<button type="button" class="c-btn c-btn-danger" disabled>Disabled</button>
-{% endexample %}
-
-## Buttons with Icons Examples
-
-{% example html %}
-<button type="button" class="c-btn c-btn-primary">
-  <i class="fas fa-paper-plane"></i> Send
-</button>
-<button type="button" class="c-btn c-btn-success">
-  <i class="fas fa-plus-circle"></i> Create
-</button>
-<button type="button" class="c-btn c-btn-secondary">
-  <i class="fas fa-cut"></i> Cut
-</button>
-<button type="button" class="c-btn c-btn-danger">
-  <i class="fas fa-trashcan"></i> Delete
-</button>
-{% endexample %}
-
-## Icon Button Examples
-
-{% example html %}
-<button type="button" class="c-btn c-btn-primary c-btn-box"><i class="fas fa-chart-bar"></i></button>
-<button type="button" class="c-btn c-btn-secondary c-btn-box"><i class="fas fa-chart-pie"></i></button>
-{% endexample %}
-
-## Icon-Only Button Examples
-
-{% example html %}
-<button type="button" class="c-btn c-btn-table-icon"><i class="fas fa-chart-bar"></i></button>
-<button type="button" class="c-btn c-btn-table-icon"><i class="fas fa-chart-pie"></i></button>
-{% endexample %}
-
-
-## Link-Only Button Examples
-
-{% example html %}
-<button class="c-btn-link c-btn-link-primary">Default Link</button>
-<button type="button" class="c-btn c-btn-link">
-  <i class="fas fa-comment"></i>  Add Comment
-</button>
-{% endexample %}
-
-
-
-<!-- ### Outlines
-{% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="c-btn c-btn-{{ color }}-outline">{{ color | capitalize }}</button>{% endfor %}
-{% endexample %} -->
-
-<!-- ### Pills and Colors
-{% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="c-btn c-btn-{{ color }} c-btn-pill">{{ color | capitalize }}</button>{% endfor %}
-{% endexample %} -->
-
-
-<!-- ### Block Button
-{% example html %}
-<button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>
-{% endexample %} -->
-
-<hr>
-
 # Style Guide/Usage
 
-## Features
+## Structure
 
-##### All buttons have the following features:
+##### Our error pages are made up of the following:
 
- * a hover and a click state
- * can be either active or disabled
- * come in 4 different sizes (primarily for use in grids, components and mobile apps)
+ * Icon
+ * Reason/Explanation
+ * Error Code
+ * Contact Link/Button
  
-## Variations
+## Types of Error Pages
 
-##### Buttons display in the following variations:
+ * **Error 401** - Authentication required to view page
+ * **Error 403** - Not authorized to view page
+ * **Error 404** - Page not found
+ * **Error 500** - Internal server error
+ * **Error 503** - Service unavailable
 
- * Primary button
- * Secondary button
- * Action button
- * Danger button
- * Link-only button
- * Icon button
- * Icon-only button
+ <hr>
 
- Don't see what your looking for? Check out more variations <a href="https://deploy-preview-61--cupcake.netlify.com/pages/buttons.html" target="_blank">here</a> and <a href="https://cupcake.netlify.com/pages/buttons.html" target="_blank">here</a>
+## Error 401
 
-## General Do's and Dont's
+* Error 401 requires the user to  sign in in order to view the page.
+* This error appears outside of an application because the user has not signed in yet.
 
-##### Button Wording
-![Button Wording Do's and Don'ts](\assets\img\button-wording-dos-donts.PNG "Button Wording Dos and Donts")
-
-##### Buttons + Icons
-![Buttons + Icons Do's and Don'ts](\assets\img\buttons-icons-dos-donts.PNG "Buttons + Icons Dos and Donts")
-
-## Primary Buttons
-Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
-
-### States
-
-{% example html %}
-<button type="button" class="c-btn c-btn-primary">Default</button>
-<button type="button" class="c-btn c-btn-primary-outline">Hover</button>
-<button type="button" class="c-btn c-btn-primary" disabled>Disabled</button>
-<button type="button" class="c-btn c-btn-primary" active>Active</button>
-{% endexample %}
-
-### Variations
-#### Primary Button + Icon
-Primary buttons can include icons to:
-  <ol>
-    <li>Visually emphasise their purpose and</li>
-    <li>Draw the eye to common and frequently used functions</li>
-  </ol>
-
-<button type="button" class="c-btn c-btn-primary">
-  <i class="fas fa-save"></i> Save
-</button>
-<button type="button" class="c-btn c-btn-primary">
-  <i class="fas fa-paper-plane"></i> Send
-</button>
-
-
-### General Do's and Dont's
-##### Primary Button Usage
-![Primary Button Do's and Don'ts](\assets\img\primary-button-dos-donts.PNG "Primary Button Dos and Donts")
-
-##### Grouping Primary Buttons
-![Grouping Primary Button Do's and Don'ts](\assets\img\grouping-primary-buttons-dos-donts.PNG "Grouping Primary Button Dos and Donts")
-
-##### Grouping and Button Order
-![Grouping Button Order Do's and Don'ts](\assets\img\grouping-button-order-primary-dos-donts.PNG "Grouping Button Order Dos and Donts")
-
-## Action Buttons
-Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
-
-### States
-{% example html %}
-<button type="button" class="c-btn c-btn-success">Default</button>
-<button type="button" class="c-btn c-btn-success-outline">Hover</button>
-<button type="button" class="c-btn c-btn-success" disabled>Disabled</button>
-<button type="button" class="c-btn c-btn-success">Active</button>
-{% endexample %}
-
-### Variations
-#### Action Button + Icon
-Action buttons can include icons to add additional visual emphasis
-
-<button type="button" class="c-btn c-btn-success">
-  <i class="fas fa-plus-circle"></i> Create
-</button>
-<button type="button" class="c-btn c-btn-success">
-  <i class="fas fa-plus-circle"></i> Add
-</button>
-
-### General Do's and Dont's
-
-##### Action Button Usage
-![Action Button Usage Do's and Don'ts](\assets\img\action-button-usage.PNG "Action Button Usage Do's and Don'ts")
-
-##### Action Button Combinations
-![Action Button Combinations Do's and Don'ts](\assets\img\action-button-combinations.PNG "Action Button Combinations Do's and Don'ts")
-
-## Danger Buttons
-* Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
-* A destructive action button can share the screen with an additive action button and/or a primary action button.
-
-### States
-{% example html %}
-<button type="button" class="c-btn c-btn-danger">Default</button>
-<button type="button" class="c-btn c-btn-danger-outline">Hover</button>
-<button type="button" class="c-btn c-btn-danger" disabled>Disabled</button>
-<button type="button" class="c-btn c-btn-danger">Active</button>
-{% endexample %}
-
-### Variations
-#### Danger Button + Icon
-Danger buttons can include icons to add additional visual emphasis
-
-<button type="button" class="c-btn c-btn-danger">
-  <i class="fas fa-trash-alt"></i>  Discard
-</button>
-<button type="button" class="c-btn c-btn-danger">
-  <i class="fas fa-trash-alt"></i>  Delete
-</button>
-
-
-### General Do's and Dont's
-
-##### Danger Button Usage
-![Danger Button Usage Do's and Don'ts](\assets\img\danger-button-usage.PNG "Danger Button Usage Do's and Don'ts")
-
-##### Danger Button Combinations
-![Danger Button Combinations Do's and Don'ts](\assets\img\danger-button-combinations.PNG "Danger Button Combinations Do's and Don'ts")
-
-## Secondary Buttons
-* Secondary buttons are the standard button for general use. 
-* Secondary buttons are often used in combination with a primary button, to represent an opposing action.
-
-### States
-{% example html %}
-<button type="button" class="c-btn c-btn-secondary">Default</button>
-{% endexample %}
-
-### Variations
-#### Secondary Button + Icon
-Secondary buttons can include icons to:
-  <ol>
-    <li>Visually emphasise their purpose and</li>
-    <li>Draw the eye to common and frequently used functions</li>
-  </ol>
-
-<button type="button" class="c-btn c-btn-secondary">
-  <i class="fas fa-cut"></i>  Cut
-</button>
-<button type="button" class="c-btn c-btn-secondary">
-  <i class="fas fa-copy"></i>  Copy
-</button>
-<button type="button" class="c-btn c-btn-secondary">
-  <i class="fas fa-paste"></i>  Paste
-</button>
-<button type="button" class="c-btn c-btn-secondary">
-  <i class="fas fa-edit"></i>  Edit
-</button>
-<button type="button" class="c-btn c-btn-secondary">
-  <i class="fas fa-download"></i>  Download
-</button>
-<button type="button" class="c-btn c-btn-secondary">
-  <i class="fas fa-trash-alt"></i>  Delete
-</button>
-
-### General Do's and Dont's
-
-##### Secondary Button Usage
-![Secondary Button Usage Do's and Don'ts](\assets\img\secondary-button-usage-dos-donts.PNG "Secondary Button Usage Do's and Don'ts")
-
-##### Repetitive use of secondary buttons in tables
-![Secondary Button Repetitive Usage Do's and Don'ts](\assets\img\secondary-button-repetitive-usage.PNG "Secondary Button Repetitive Usage Do's and Don'ts")
-
-## Link-Only Buttons
-Link-only buttons are used under the following circumstances:
-* Primary and Secondary buttons have been used but an additional button is needed to highlight a less critical action or supporting link.
-* To add additional buttons to an already button heavy page
-* To represent less important or supporting actions
-
-### States
-{% example html %}
-<button type="button" class="c-btn c-btn-link">Default</button>
-{% endexample %}
-
-### Variations
-#### Link-only button + Icon
-Link-only buttons can include icons to:
-  <ol>
-    <li>Visually emphasise their purpose and</li>
-    <li>Draw the eye to common and frequently used functions</li>
-  </ol>
-
-<button type="button" class="c-btn c-btn-link">
-  <i class="fas fa-comment"></i>  Add Comment
-</button>
-<button type="button" class="c-btn c-btn-link">
-  <i class="fas fa-arrow-left"></i>  Back
-</button>
-
-### General Do's and Dont's
-
-##### Link-Only Button Usage
-![Link-Only Button Usage Do's and Don'ts](\assets\img\link-only-button-usage.PNG "Link-Only Button Usage Do's and Don'ts")
-
-##### Link-Only Button Combinations
-![Link-Only Button Combinations](\assets\img\link-only-button-combinations.PNG "Link-Only Button Combinations")
-
-##### Button Link vs. Text Link
-![Button Link vs. Text Link](\assets\img\button-link-vs-text-link.PNG "Button Link vs. Text Link")
-
-## Icon Buttons
-Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.
-
-### States
-{% example html %}
-<button type="button" class="c-btn c-btn-primary c-btn-box"><i class="fas fa-chart-bar"></i></button>
-<button type="button" class="c-btn c-btn-secondary c-btn-box"><i class="fas fa-chart-pie"></i></button>
-{% endexample %}
-
-### General Do's and Dont's
-
-##### Icon Button Usage
-![Icon Button Usage Do's and Don'ts](\assets\img\icon-button-usage.PNG "Icon Button Usage Do's and Don'ts")
-
-## Icon-Only Buttons
-Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.
-
-### States
-{% example html %}
-<button type="button" class="c-btn c-btn-table-icon"><i class="fas fa-chart-bar"></i></button>
-<button type="button" class="c-btn c-btn-table-icon"><i class="fas fa-chart-pie"></i></button>
-{% endexample %}
-
-### Variations
-Use colour on hover when using icon-only buttons as action or danger buttons.
-
-#### Action Variation
-{% example html %}
-<button type="button" class="c-btn c-btn-icon c-btn-icon-success"><i class="fas fa-plus-circle"></i></button>
-<button type="button" class="c-btn c-btn-icon c-btn-icon-success"><i class="fas fa-plus-circle"></i></button>
-{% endexample %}
-
-#### Danger Variation
-{% example html %}
-<button type="button" class="c-btn c-btn-icon c-btn-icon-danger"><i class="fas fa-trash"></i></button>
-<button type="button" class="c-btn c-btn-icon c-btn-icon-danger"><i class="fas fa-trash"></i></button>
-{% endexample %}
-
-### General Do's and Dont's
-
-##### Icon-Only Button Usage
-![Icon-Only Button Usage Do's and Don'ts](\assets\img\icon-only-button-usage.PNG "Icon-Only Button Usage Do's and Don'ts")
-
-##### Icon-Only Button Usage in Forms
-![Icon-Only Button Usage in Forms Do's and Don'ts](\assets\img\icon-only-button-usage-forms.PNG "Icon-Only Button Usage in Forms Do's and Don'ts")
-
+##### Example of Use
+![Error 401](\assets\img\error-401-example.PNG "Error 401")
 
 <hr>
 
-# Developers
+## Error 403
 
-<table class="c-table c-table-transparent c-table-border-horizontal c-table-hover">
-  <thead>
-    <tr>
-      <th>
-        Class
-      </th>
-      <th>
-        Property
-      </th>
-      <th>
-        SCSS
-      </th>
-      <th>
-        HEX
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>.c-btn .c-btn-primary</td>
-      <td>background-color</td>
-      <td>SCSS here</td>
-      <td>#0000</td>
-    </tr>
-  </tbody>
-</table>
+* Error 403 informs the user that they are not authorized to view the page that they are trying to access.
+* This error appears inside of an application when the user is signed in.
 
+##### Example of Use
+![Error 403](\assets\img\error-403-example.PNG "Error 403")
 
 <hr>
 
-# Layouts/Examples
+## Error 404
 
-Coming soon...
+* Error 404 informs the user that the page they are trying to access cannot be found.
+* This error appears inside of an application when the user is signed in.
+
+##### Example of Use
+![Error 404](\assets\img\error-404-example.PNG "Error 404")
+
+<hr>
+
+## Error 500
+
+* Error 500 informs the user that they have run into a general error that doesn't have much description around it.
+* This error appears inside of an application when the user is signed in.
+
+##### Example of Use
+![Error 500](\assets\img\error-500-example.PNG "Error 500")
+
+<hr>
+
+## Error 503
+
+* Error 503 informs the user that the server can not handle the request.
+* This error appears inside of an application when the user is signed in.
+
+##### Example of Use
+![Error 503](\assets\img\error-503-example-1.PNG "Error 503")
+
+![Error 503](\assets\img\error-503-example-2.PNG "Error 503")
+
+<hr>
+
+
+
