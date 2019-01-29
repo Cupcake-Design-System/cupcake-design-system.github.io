@@ -1,7 +1,7 @@
 ---
-title: Error Pages 2.0
+title: Drag and Drop 2.0
 layout: docs
-description: Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.
+description: Drag and drop is the action of selecting an element, moving it, and then placing it into the defined area.
 group: elements
 toc: true
 sizes:
