@@ -13,6 +13,17 @@ sizes:
 
 # Components
 
+<css-doodle>
+  :doodle {
+    @grid: 5x8 / 100% 15rem;
+  }
+  :after {
+    content: "@index()"
+  }
+  background: pink;
+  margin: .5rem;
+</css-doodle>
+
 ## Additional Button Variations
 
 <!-- Don't see what your looking for? Check out the more [variations](https://cupcake.netlify.com/pages/buttons.html) -->

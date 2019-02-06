@@ -65,6 +65,7 @@ Drag and drop can be used to easily perform a function with a widget, such as a 
 
 # Layouts/Examples
 
+<img src="\assests\img\drag-and-drop-gif.gif" alt="Drag and Drop Gif">
 
 
 <a href="https://pages.code.ipreo.com/adam-jarvis/issuelaunch/dist/reorder.html" target="_blank">Issue Launch Tranche Drag & Drop</a>
