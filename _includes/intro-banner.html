@@ -1,6 +1,9 @@
 <div class="docs-overview-banner c-text-center">
     <p id="c-logo">
-      <svg width="280px" height="315px" viewBox="0 0 280 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+      <img src="\assets\img\cupcake.png" width="280px" height="315px" alt="Cupcake Logo">
+
+      <!-- <svg width="280px" height="315px" viewBox="0 0 280 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
           <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
             <stop stop-color="#ffffff" offset="0%"></stop>
@@ -15,7 +18,38 @@
               id="Combined-Shape"></path>
           </g>
         </g>
-      </svg>
+      </svg> -->
+      <css-doodle>
+          :doodle {
+            @grid: 10 / 100%; 
+          }
+        
+          background: @pick(
+            #F38181, #FCE38A, #EAFFD0, #95E1D3
+          );
+        
+          transform: translate(
+            @rand(50vw, 10vw),
+            @rand(-50vh, 50vh)
+          );
+        
+          @size: 5vmin;
+          @shape: circle;
+          @place-cell: 50% 50%;
+        
+          animation-name: explosion;
+          animation-iteration-count: infinite;
+          animation-direction: reverse;
+          animation-duration: calc(@rand(5s, 5s, 1));
+          animation-delay: calc(@rand(-5s, 1s, 0.1));
+          animation-timing-function: ease-in-out;
+        
+          @keyframes explosion {
+            0% { opacity: 0; }
+            70% { opacity: 1; }
+            100% { transform: translate(0, 0); }
+          }
+        </css-doodle>
     </p>
     <h1 id="cupcake" class="c-header-xl c-text-white c-m-top-sm c-m-bottom-0">
         {{ page.title }}
@@ -24,3 +58,5 @@
       <strong>{{ page.description }}</strong>
     </h2>
   </div>
+
+

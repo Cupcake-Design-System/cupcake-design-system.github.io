@@ -8,9 +8,76 @@
 <body>
   {% include sidebar.html %}
 
+ 
+
   <main class="main-container" role="main">
         {% if page.banner %} 
-            {% include intro-banner.html %} 
+            {% include intro-banner.html %}
+
+            <!-- <css-doodle id="stars">
+                :doodle {
+                  @grid: 20 / 100vmax;
+                  background: coral;
+                }
+              
+                @shape: triangle;
+                background: hsla(0,0%,100%,@rand(0,1));
+                transform:
+                  scale(@rand(0.1, 0.35))  translate(
+                    @rand(-500%, 500%), @rand(-1000%, 500%)
+                  );
+                  
+                --delay: calc(@rand(@row() / @col() * @rand(@row()/@row())) *  -@rand(2.2s));
+                  opacity: @rand(0.5, 1);
+                  animation: twinkle 1s linear var(--delay)  infinite reverse;
+                  
+                  @keyframes twinkle{
+                  0%{
+                  background-color: white;
+                  opacity: 0;
+                   transform:scale(0);
+                  }
+                    60% {
+                  background-color: coral;
+                    opacity : 0;
+                   transform:scale(2);
+                    }
+                  }
+              </css-doodle> -->
+
+              <!-- <css-doodle>
+                  :doodle {
+                    @grid: 10 / 100vmax;
+                    background: midnightblue;
+                  }
+                  @shape: cross;
+                  background: hsla(
+                    calc(300 - @index() * 5),
+                    60%, 70%, @rand(.8)
+                  );
+                  transform:
+                    scale(@rand(.2, 1.2))
+                    translate(
+                      @rand(-50%, 50%), @rand(-20%, 20%)
+                    );
+                </css-doodle>   -->
+
+                <!-- <css-doodle>
+                    :doodle {
+                      @grid: 20 / 100vmax; 
+                      @min-size: 30em;
+                    }
+                    
+                    --c: @pick(
+                      #240041,#900048,#FF4057,#FF8260
+                    );
+                    
+                    background-image: linear-gradient(
+                      @rand(360deg), 
+                      var(--c) 50%, transparent 50%  
+                    );
+                  </css-doodle> -->
+
         {% else %}
         {% unless page.layout == "post" %}
         <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
@@ -29,5 +96,8 @@
         {% include footer.html %} 
       </main>
       {% include scripts.html %}
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.2.3/css-doodle.min.js"></script>
+
   </body>
 </html>
