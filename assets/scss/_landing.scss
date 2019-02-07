@@ -128,8 +128,9 @@
 .docs-overview-banner {
   width: 100%;
   height: $landing-banner-height;
-  background-color: $color-primary-7;
-  background-image: $landing-banner-bg-image;
+  // background-color: $color-primary-7;
+  background-color: #00B5F1;
+  // background-image: $landing-banner-bg-image;
   display: flex;
   flex-direction: column;
   align-items: center;

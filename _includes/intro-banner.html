@@ -64,11 +64,10 @@
   <style>
   :root {
   --border-color: #D7DBE3;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-  --green: #0CD977;
+  --green: #94d82d;
   --red: #FF1C1C;
-  --pink: #FF93DE;
-  --purple: #5767ED;
+  --pink: #e64980;
+  --purple: #862e9c;
   --yellow: #FFC61C;
   --rotation: 0deg;
   }
@@ -78,7 +77,6 @@
   0% {
     opacity: 1;
     margin-top: -100vh;
-    margin-left: -200px;
   } 
   
   100% {
@@ -93,7 +91,7 @@
   position: absolute;
   width: 1rem;
   height: 1.5rem;
-  animation: confettiRain 10s 1;
+  animation: confettiRain 8s 1;
 }
   </style>
 
@@ -110,7 +108,7 @@
   console.log(randomAnimationDelay)
 
   // Random colors
-  var colors = ['#0CD977', '#FF1C1C', '#FF93DE', '#5767ED', '#FFC61C', '#8497B0']
+  var colors = ['#0CD977', '#FF1C1C', '#ff82e6', '#5767ED', '#FFC61C']
   var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
   // Create confetti piece
