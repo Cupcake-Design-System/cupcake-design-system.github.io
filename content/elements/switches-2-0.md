@@ -15,7 +15,7 @@ sizes:
 - lg
 ---
 
-# Components
+# Getting Started
 
 Default switches support on/off text or blank depending on the design.
 
