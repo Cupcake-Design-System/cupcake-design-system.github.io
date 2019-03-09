@@ -15,3 +15,5 @@ fields:
   label: Url
   config:
     required: true
+pages:
+- content/elements/tabExample.md
