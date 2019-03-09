@@ -71,3 +71,76 @@
   max-width: 300px;
   font-size: 12px;
 }
+
+
+/*! CSS Used from: Embedded */
+.tabs {
+  margin-left: auto;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 28px;
+  min-width: 66px;
+  position: relative;
+  background: rgba(36, 36, 36, 0.25);
+  list-style: none;
+  padding: 0;
+}
+
+
+@media (min-width:60rem) {
+  .tabs {
+    min-width: 130px;
+  }
+}
+
+.PageTitle-module {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  transition: border-color .2s cubic-bezier(.445, .05, .55, .95);
+}
+
+
+  .fade {
+    opacity: 0;
+    -webkit-transition: opacity .5s linear;
+    -o-transition: opacity .5s linear;
+    transition: opacity .5s linear;
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .fade.in {
+    opacity: 1;
+  }
+
+
+  .tab-content.active {
+    display: block;
+    opacity: 1;
+  }
+
+
+  .tab-link {
+    padding: 0 8px;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    
+    &.active {
+      color: #000;
+      background: #fcfcfc;
+      border-radius: 40px;
+    }
+  }
+
+  iframe {
+    border: 0;
+    }

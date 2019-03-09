@@ -34,28 +34,9 @@
 - title: Elements
   icon: fal fa-object-ungroup
   pages:
-    - title: Alert
-    - title: Avatar 
-    - title: Badges
     - title: Buttons 2.0
     - title: Buttons
-    - title: Button Group
-    - title: Card
-    - title: Checkboxes & Radios
-    - title: Drag and Drop 2.0
-    - title: Dropdown
-    - title: Error Pages 2.0
-    - title: Forms
-    - title: Loaders
-    - title: Media object
-    - title: Modals            
-    - title: Pagination
-    - title: Progress
-    - title: Switches
-    - title: Switches 2.0
-    - title: Table       
-    - title: Tabs
-    - title: Tooltips & Popovers                      
+    - title: Button Group              
 
 - title: Data Visualization
   icon: fal fa-chart-line
