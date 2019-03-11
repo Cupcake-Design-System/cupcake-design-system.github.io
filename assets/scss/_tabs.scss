@@ -1,0 +1,55 @@
+
+.tabs {
+  padding: 0;
+  display: flex;
+  min-width: 66px;
+  min-height: 28px;
+  list-style: none;
+  margin-left: auto;
+  position: relative; 
+  border-radius: 18px;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(36, 36, 36, 0.25);
+}
+
+
+@media (min-width:60rem) {
+  .tabs {
+    min-width: 130px;
+  }
+}
+
+.PageTitle {
+  align-items: center;
+  display: flex;
+}
+
+
+  .tab-content {
+    display: none;
+  }
+
+
+  .tab-content.active {
+    display: block;
+    opacity: 1;
+  }
+
+
+  .tab-link {
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    
+    &.active {
+      color: #000;
+      background: #fcfcfc;
+      border-radius: 40px;
+    }
+  }
+

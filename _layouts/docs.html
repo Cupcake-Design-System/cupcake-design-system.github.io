@@ -4,17 +4,18 @@
     {% include header.html %}
   </head>
   <body>
-
     {% include sidebar.html %}
-
     <main class="main-container" role="main">
-        <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
-            <div class="PageTitle-module">
+   
+        <div class="docs-bg-img">
+            <div class="PageTitle">
               <h1 class="docs-title" id="content">{{ page.title }}</h1>
+              {% if page.tabs %}
               <ul class="tabs">
                   <li class="tab-link active" data-tab="design">Design</li>
                   <li class="tab-link" data-tab="code">Code</li>
                 </ul>
+                {% endif %}
             </div>
             <p class="docs-lead">{{ page.description }}</p>
           </div>
@@ -28,6 +29,32 @@
 
           </div>
 
+          <!-- {% if page.toc %}
+          <div class="c-d-none c-xl-d-block c-col-xl-2 docs-toc">
+
+              {% unless page.toc-flavors == false %}
+              <div id="customize-menu" class="docs-flavor-switch c-d-none c-sm-d-block">
+                  <input type="hidden" name="Framework" id="Framework" class="docs-flavor-switch-input">
+                  <span class="docs-flavor-button docs-flavor-switch-current">Select A Flavor</span>
+                  <ul id="styleOptions" title="switch styling" class="docs-flavor-list">
+                    <li class="docs-flavor-list-item" data-dropdown-value="default">
+                      <a href="#" class="flavor" data-theme="default">Default</a>
+                    </li>
+                    <li class="docs-flavor-list-item" data-dropdown-value="bd">
+                      <a href="#" class="flavor" data-theme="bd">BD</a>
+                    </li>
+                    <li class="docs-flavor-list-item" data-dropdown-value="condensed">
+                      <a href="#" class="flavor" data-theme="condensed">Condensed</a>
+                    </li>
+                  </ul>
+                </div>
+                {% endunless %}
+
+
+            {{ content | toc_only }}
+          </div>
+          {% endif %} -->
+
         </div>
       </div>
 
@@ -38,6 +65,5 @@
 
     {% include scripts.html %}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.2.3/css-doodle.min.js"></script>
   </body>
 </html>

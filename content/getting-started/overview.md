@@ -1,5 +1,5 @@
 ---
-layout: docs-fullwidth
+layout: docs
 title: Overview
 description: The Cupcake Design System includes the resources to create user interfaces consistent with UX principles, design language, and best practices.
 group: getting-started

@@ -1,5 +1,5 @@
 ---
-layout: docs-fullwidth
+layout: docs
 title: Primary Colors
 description: Convey meaning through color with a handful of color utility classes. Includes support for styling backgrounds, text, and borders.
 group: style

@@ -1,127 +1,24 @@
 <div class="docs-overview-banner c-text-center">
-    <p id="c-logo">
-
-      <div id="confetti-wrapper"> </div>
-
-      <img src="\assets\img\cupcake.png" width="280px" height="315px" alt="Cupcake Logo">
-      <!-- <css-doodle>
-          :doodle {
-            @grid: 10 / 100%; 
-          }
-        
-          background: @pick(
-            #F38181, #FCE38A, #EAFFD0, #95E1D3
-          );
-        
-          transform: translate(
-            @rand(50vw, 10vw),
-            @rand(-50vh, 50vh)
-          );
-        
-          @size: 5vmin;
-          @shape: circle;
-          @place-cell: 50% 50%;
-        
-          animation-name: explosion;
-          animation-iteration-count: infinite;
-          animation-direction: reverse;
-          animation-duration: calc(@rand(5s, 5s, 1));
-          animation-delay: calc(@rand(-5s, 1s, 0.1));
-          animation-timing-function: ease-in-out;
-        
-          @keyframes explosion {
-            0% { opacity: 0; }
-            70% { opacity: 1; }
-            100% { transform: translate(0, 0); }
-          }
-        </css-doodle> -->
-      <!-- <svg width="280px" height="315px" viewBox="0 0 280 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-          <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
-            <stop stop-color="#ffffff" offset="0%"></stop>
-            <stop stop-color="#ffffff" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="C-Copy" transform="translate(1.000000, 1.000000)" stroke="url(#linearGradient-1)" stroke-width="2">
-            <path d="M231.28334,99.3823117 L274.501146,55.3786572 C245.953035,21.5063536 203.294318,0 155.631274,0 C69.6784947,0 0,69.9395902 0,156.214447 C0,242.489304 69.6784947,312.428894 155.631274,312.428894 C205.013398,312.428894 249.023701,289.343208 277.534617,253.337352 L231.647469,206.615818 C215.306207,227.79018 189.47888,241.458616 160.414373,241.458616 C111.005951,241.458616 70.9525112,201.95882 70.9525112,153.233353 C70.9525112,104.507885 111.005951,65.008089 160.414373,65.008089 C189.263922,65.008089 214.923998,78.4750917 231.28334,99.3823117 Z"
-              id="Combined-Shape"></path>
-            <path d="M231.164749,208.945989 C211.877896,253.018662 169.901331,283.566547 121.223552,283.566547 C54.2736331,283.566547 0,225.780928 0,154.498755 C0,83.2165823 54.2736331,25.4309638 121.223552,25.4309638 C169.737195,25.4309638 211.229407,56.2362495 230.594146,100.081134 L230.038662,100.081143 C213.892147,79.2611499 188.672475,65.8664778 160.332799,65.8664778 C111.593801,65.8664778 72.0830368,105.48475 72.0830368,154.356365 C72.0830368,203.227981 111.593801,242.846253 160.332799,242.846253 C188.529566,242.846253 213.637716,229.586332 229.793703,208.945989 L231.164749,208.945989 Z"
-              id="Combined-Shape"></path>
-          </g>
+  <p id="c-logo">
+    <svg width="280px" height="315px" viewBox="0 0 280 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+          <stop stop-color="#ffffff" offset="0%"></stop>
+          <stop stop-color="#ffffff" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="C-Copy" transform="translate(1.000000, 1.000000)" stroke="url(#linearGradient-1)" stroke-width="2">
+          <path d="M231.28334,99.3823117 L274.501146,55.3786572 C245.953035,21.5063536 203.294318,0 155.631274,0 C69.6784947,0 0,69.9395902 0,156.214447 C0,242.489304 69.6784947,312.428894 155.631274,312.428894 C205.013398,312.428894 249.023701,289.343208 277.534617,253.337352 L231.647469,206.615818 C215.306207,227.79018 189.47888,241.458616 160.414373,241.458616 C111.005951,241.458616 70.9525112,201.95882 70.9525112,153.233353 C70.9525112,104.507885 111.005951,65.008089 160.414373,65.008089 C189.263922,65.008089 214.923998,78.4750917 231.28334,99.3823117 Z" id="Combined-Shape"></path>
+          <path d="M231.164749,208.945989 C211.877896,253.018662 169.901331,283.566547 121.223552,283.566547 C54.2736331,283.566547 0,225.780928 0,154.498755 C0,83.2165823 54.2736331,25.4309638 121.223552,25.4309638 C169.737195,25.4309638 211.229407,56.2362495 230.594146,100.081134 L230.038662,100.081143 C213.892147,79.2611499 188.672475,65.8664778 160.332799,65.8664778 C111.593801,65.8664778 72.0830368,105.48475 72.0830368,154.356365 C72.0830368,203.227981 111.593801,242.846253 160.332799,242.846253 C188.529566,242.846253 213.637716,229.586332 229.793703,208.945989 L231.164749,208.945989 Z" id="Combined-Shape"></path>
         </g>
-      </svg> -->
-
-    </p>
-    <h1 id="cupcake" class="c-header-xl c-text-white c-m-top-sm c-m-bottom-0">
-        {{ page.title }}
-    </h1>
-    <h2 id="modern-framework" class="c-header-md c-text-white c-m-top-0">
-      <strong>{{ page.description }}</strong>
-    </h2>
-  </div>
-
-  <style>
-  :root {
-  --border-color: #D7DBE3;
-  --green: #94d82d;
-  --red: #FF1C1C;
-  --pink: #e64980;
-  --purple: #862e9c;
-  --yellow: #FFC61C;
-  --rotation: 0deg;
-  }
-
-
-@keyframes confettiRain {
-  0% {
-    opacity: 1;
-    margin-top: -100vh;
-  } 
-  
-  100% {
-    opacity: 1;
-    margin-top: 100vh;
-    margin-left: 200px;
-  }
-}
-
-.confetti {
-  opacity: 0;
-  position: absolute;
-  width: 1rem;
-  height: 1.5rem;
-  animation: confettiRain 8s 1;
-}
-  </style>
-
-  <script>
-  for(i=0; i<200; i++) {
-  // Random rotation
-  var randomRotation = Math.floor(Math.random() * 360);
-  // Random width & height between 0 and viewport
-  var randomWidth = Math.floor(Math.random() * Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
-  var randomHeight =  Math.floor(Math.random() * Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
-  
-  // Random animation-delay
-  var randomAnimationDelay = Math.floor(Math.random() * 10);
-  console.log(randomAnimationDelay)
-
-  // Random colors
-  var colors = ['#0CD977', '#FF1C1C', '#ff82e6', '#5767ED', '#FFC61C']
-  var randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-  // Create confetti piece
-  var confetti = document.createElement('div');
-  confetti.className = 'confetti';
-  confetti.style.top=randomHeight + 'px';
-  confetti.style.left=randomWidth + 'px';
-  confetti.style.backgroundColor=randomColor;
-  confetti.style.transform='skew(15deg) rotate(' + randomRotation + 'deg)';
-  confetti.style.animationDelay=randomAnimationDelay + 's';
-  document.getElementById("confetti-wrapper").appendChild(confetti);
-}
-  
-  </script>
-
-
+      </g>
+    </svg>
+  </p>
+  <h1 id="cupcake" class="c-header-xl c-text-white c-m-top-sm c-m-bottom-0">
+      Cupcake Design System
+  </h1>
+  <h2 id="modern-framework" class="c-header-md c-text-white c-m-top-0">
+    <strong>Responsive, flex-enabled, and fully modular.</strong>
+  </h2>
+</div>

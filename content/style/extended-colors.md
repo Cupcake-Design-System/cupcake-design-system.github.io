@@ -1,5 +1,5 @@
 ---
-layout: docs-fullwidth
+layout: docs
 title: Extended Colors
 description: Additional supporting colors.
 group: style

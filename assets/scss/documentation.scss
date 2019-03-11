@@ -10,7 +10,7 @@
 @import "content";
 @import "flavor-switch";
 @import "sidebar";
-@import "simplebar";
+@import "tabs";
 @import "component-examples";
 @import "callouts";
 @import "clipboard-js";
@@ -73,74 +73,104 @@
 }
 
 
-/*! CSS Used from: Embedded */
-.tabs {
-  margin-left: auto;
-  border-radius: 18px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 28px;
-  min-width: 66px;
-  position: relative;
-  background: rgba(36, 36, 36, 0.25);
-  list-style: none;
-  padding: 0;
+iframe {
+  border: 0;
 }
 
 
-@media (min-width:60rem) {
-  .tabs {
-    min-width: 130px;
-  }
+::-webkit-scrollbar {
+  width: .25em;
 }
 
-.PageTitle-module {
-  align-items: center;
-  display: flex;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  transition: border-color .2s cubic-bezier(.445, .05, .55, .95);
+::-webkit-scrollbar-track {
+  background-color: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ced4da;
+  outline: none;
 }
 
 
-  .fade {
-    opacity: 0;
-    -webkit-transition: opacity .5s linear;
-    -o-transition: opacity .5s linear;
-    transition: opacity .5s linear;
-  }
-
-  .tab-content {
-    display: none;
-  }
-
-  .fade.in {
-    opacity: 1;
-  }
 
 
-  .tab-content.active {
-    display: block;
-    opacity: 1;
-  }
+.Overview-groupItems {
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.OverviewItem:hover {
+  background-color: #016cd1;
+  background-color: rgba(1, 108, 209, .079);
+  color: #016cd1;
+  margin: -4px;
+  padding: 4px;
+}
+
+.OverviewItem:active {
+  -webkit-box-shadow: 0 0 0 2px #016cd1;
+  background-color: #016cd1;
+  box-shadow: 0 0 0 2px #016cd1;
+  color: #fff;
+  margin: -4px;
+  padding: 4px;
+}
+
+.OverviewItem-image {
+  background-color: #fff;
+  border: none;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.OverviewItem-label {
+  display: block;
+  line-height: 18px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  text-align: center;
+}
 
 
-  .tab-link {
-    padding: 0 8px;
-    font-size: 14px;
+.Overview-groupItems {
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-    &:hover {
-      cursor: pointer;
-    }
-    
-    &.active {
-      color: #000;
-      background: #fcfcfc;
-      border-radius: 40px;
-    }
-  }
+.OverviewItem:hover {
+  background-color: #016cd1;
+  background-color: rgba(1, 108, 209, .079);
+  color: #016cd1;
+  margin: -4px;
+  padding: 4px;
+}
 
-  iframe {
-    border: 0;
-    }
+.OverviewItem:active {
+  -webkit-box-shadow: 0 0 0 2px #016cd1;
+  background-color: #016cd1;
+  box-shadow: 0 0 0 2px #016cd1;
+  color: #fff;
+  margin: -4px;
+  padding: 4px;
+}
+
+.OverviewItem-image {
+  background-color: #fff;
+  border: none;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.OverviewItem-label {
+  display: block;
+  line-height: 18px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  text-align: center;
+}

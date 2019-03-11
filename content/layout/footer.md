@@ -1,6 +1,6 @@
 ---
 title: Footer
-layout: docs-fullwidth
+layout: docs
 description: This is the default footer example.
 group: layout
 ---

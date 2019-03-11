@@ -1,9 +1,10 @@
 ---
 title: Buttons
 layout: docs
-description: Buttons trigger interactions throughout the experience.
+description: Buttons are clickable items used to trigger an action. Buttons make common actions immediately visible and easy to perform with one click or tap.
 group: elements
 toc: true
+tabs: true
 sizes:
 - xs
 - sm
@@ -11,61 +12,53 @@ sizes:
 - xl
 ---
 
-## Base
+<div class="tab-content active" id="design" markdown="1">
 
-Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
+# Style Guide/Usage
+
+## Features
+
+##### All buttons have the following features:
+
+ * a hover and a click state
+ * can be either active or disabled
+ * come in 4 different sizes (primarily for use in grids, components and mobile apps)
+ 
+## Variations
+
+##### Buttons display in the following variations:
+
+ * Primary button
+ * Secondary button
+ * Action button
+ * Danger button
+ * Link-only button
+ * Icon button
+ * Icon-only button
+
+ Don't see what your looking for? Check out more variations <a href="https://deploy-preview-61--cupcake.netlify.com/pages/buttons.html" target="_blank">here</a> and <a href="https://cupcake.netlify.com/pages/buttons.html" target="_blank">here</a>
+
+## General Do's and Dont's
+
+##### Button Wording
+{% include guide-img.html img='buttons/button-wording-dos-donts'%} 
+
+
+##### Buttons + Icons
+{% include guide-img.html img='buttons/buttons-icons-dos-donts'%} 
+
+
+## Primary Buttons
+Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
+
+
+</div> 
+
+<div class="tab-content" id="code" markdown="1">
 
 {% example html %}
-<button type="button" class="c-btn c-btn-primary">Button</button>
-{% endexample %}
-
-## Color Examples
-
-This is an example of available colors for the **{{ page.title }}** element. 
-
-{% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="c-btn c-btn-{{ color }}">{{ color | capitalize }}</button>{% endfor %}
-{% endexample %}
-
-
-## Size Examples
-
-This is an example of available sizes for the **{{ page.title }}** element. 
-
-{% example html %}
-{% for size in site.data.theme-sizes %}
-<button type="button" class="c-btn c-btn-primary c-btn-{{ size.value }}">{{ size.name }}</button>{% endfor %}
-{% endexample %}
-
-
-## Disabled state
-
-Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element.
-
-{% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="c-btn c-btn-{{ color }}" disabled>{{ color | capitalize }}</button>{% endfor %}
-{% endexample %}
-
-## Additional Styles & Options
-
-This modifiers can be mixed/matched as needed
-
-### Outlines
-{% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="c-btn c-btn-{{ color }}-outline">{{ color | capitalize }}</button>{% endfor %}
-{% endexample %}
-
-### Pills and Colors
-{% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="c-btn c-btn-{{ color }} c-btn-pill">{{ color | capitalize }}</button>{% endfor %}
+  <button type="button" class="c-btn c-btn-primary">Button</button>
 {% endexample %}
 
 
-### Block Button
-{% example html %}
-<button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>
-{% endexample %}
+</div>

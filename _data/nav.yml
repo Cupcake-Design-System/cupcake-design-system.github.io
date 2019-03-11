@@ -34,9 +34,8 @@
 - title: Elements
   icon: fal fa-object-ungroup
   pages:
-    - title: Buttons 2.0
     - title: Buttons
-    - title: Button Group              
+    - title: Button Group  
 
 - title: Data Visualization
   icon: fal fa-chart-line
@@ -60,11 +59,3 @@
     - title: Release Notes
    # - title: Examples     
    # - title: Extensions
-
-- title: Contribute
-  icon: fal fa-info
-  pages:
-    - title: Contribute  
-    - title: Adopt & Share  
-
-

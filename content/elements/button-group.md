@@ -1,9 +1,10 @@
 ---
 title: Button Group
 layout: docs
-description: Button groups are used to bunch together buttons with similar actions
+description: A basic button triggers a single action in a task flow. We use three types of button styles primary, secondary, and tertiary. We use these in different combinations to guide users to continue and complete tasks.
 group: elements
 toc: true
+tabs: true
 colors:
 - primary
 - secondary
@@ -16,9 +17,10 @@ sizes:
 - xl
 ---
 
-{% capture design %}
 
-### UX Guidance
+<div class="tab-content active" id="design" markdown="1">
+
+### UX Guidance Yo!
 
 ##### Icon-Only Button Usage
 {% include guide-img.html img='buttons/icon-only-button-usage'%} 
@@ -37,14 +39,19 @@ sizes:
 ##### Buttons + Icons
 {% include guide-img.html img='buttons/buttons-icons-dos-donts'%}
 
+</div>
 
-{% endcapture %}
+<div class="tab-content" id="code" markdown="1">
 
+# Code
 
-{% capture code %}
+### Code Example Normal
+{% example html %}
+  <button type="button" class="c-btn c-btn-primary">Button</button>
+{% endexample %}
 
+### Storybook iframe
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
 
-{% endcapture %}
+</div>
 
-{% include comp-2.html %}

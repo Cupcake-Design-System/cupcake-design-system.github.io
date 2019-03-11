@@ -93,20 +93,17 @@ Underscores
 
 {% callout info %}
 #### This is callout-info
-
 This is supporting text to describe what the information callout is about.
 {% endcallout %}
 
 {% callout danger %}
 #### This is callout-danger
-
 This is supporting text to describe what the danger callout is about.
 {% endcallout %}
 
 
 {% callout warning %}
 #### This is callout-warning
-
 This is supporting text to describe what the warning callout is about.
 {% endcallout %}
 

@@ -1,6 +1,6 @@
 ---
 title: Header
-layout: docs-fullwidth
+layout: docs
 description: This default header
 group: layout
 ---
