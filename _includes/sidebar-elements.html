@@ -26,7 +26,7 @@
                 {%- assign active = 'c-sidenav-menu-item-active' -%}
               {%- endif -%}
               <li {% unless active == nil %} class="c-sidenav-menu-item {{ active }}"{% endunless %}>
-                <a class="c-sidenav-menu-link" href="{% if group.title == "Resources" %}{{ site.url }}{{ site.baseurl }}/{{ doc_slug }}/{% else %}{{ site.url }}{{ site.baseurl }}/content/{{ group_slug }}/{{ doc_slug }}/{% endif %}">
+                <a class="c-sidenav-menu-link" href="{% if group.title == "Resources" %}{{ site.url }}{{ site.baseurl }}/{{ doc_slug }}/{% else %}{{ site.url }}{{ site.baseurl }}/{{ group_slug }}/{{ doc_slug }}/{% endif %}">
                   {{ doc.title }} 
                 </a>
     

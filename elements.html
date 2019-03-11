@@ -4,7 +4,18 @@ toc-flavors: false
 description: Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.
 ---
 
+ 
+
 <div class="clearfix">
+
+    {% for element in site.elements %}
+
+
+    <a href="{{ site.url }}{{ site.baseurl }}/elements/{{ element.title | slugify }}">
+            <h2>{{ element.title }}</h2>
+    </a>
+    
+    {% endfor %}    
   <header>
     <h2>Foundation</h2>
     <p>Styles and primitive components. Start here.</p>

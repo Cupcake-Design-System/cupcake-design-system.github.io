@@ -32,7 +32,18 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "default"  
+      layout: "default"
+
+collections:
+  foundations:
+    output: true
+    permalink: /foundations/:path/
+  patterns:
+    output: true
+    permalink: /patterns/:path/
+  elements:
+    output: true
+    permalink: /elements/:path/          
 
 sass:
     sass_dir: ./assets/scss
