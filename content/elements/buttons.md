@@ -1,6 +1,5 @@
 ---
 title: Buttons
-layout: docs
 description: Buttons are clickable items used to trigger an action. Buttons make common actions immediately visible and easy to perform with one click or tap.
 group: elements
 toc: true

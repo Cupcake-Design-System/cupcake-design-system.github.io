@@ -1,8 +1,7 @@
 ---
 title: Header
-layout: docs
 description: This default header
-group: layout
+group: patterns
 ---
 
 ## Default

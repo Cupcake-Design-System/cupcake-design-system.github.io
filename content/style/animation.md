@@ -1,5 +1,4 @@
 ---
-layout: docs-fullwidth
 title: Animation
 description: Info
 group: style

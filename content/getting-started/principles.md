@@ -1,5 +1,4 @@
 ---
-layout: docs-fullwidth
 title: Guiding Principles
 description: At Ipreo, we build products that connect ideas to capital?
 group: getting-started

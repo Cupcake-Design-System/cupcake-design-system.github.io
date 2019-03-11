@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Adoption
 description: The Design System is flexible and allows for progressive adoption by product teams.
 group: getting-started

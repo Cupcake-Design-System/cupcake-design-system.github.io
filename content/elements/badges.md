@@ -1,6 +1,5 @@
 ---
 title: Badges
-layout: docs
 description: Badges are labels which hold small amounts of information.
 group: elements
 toc: true

@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Designers
 description: The Cupcake Design Kit is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).
 group: getting-started

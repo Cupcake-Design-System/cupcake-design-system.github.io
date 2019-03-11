@@ -1,6 +1,5 @@
 ---
 title: Button Group
-layout: docs
 description: A basic button triggers a single action in a task flow. We use three types of button styles primary, secondary, and tertiary. We use these in different combinations to guide users to continue and complete tasks.
 group: elements
 toc: true

@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Depth
 description: Create groupings and associations between content as well as hierarchy and focus through depth.
 group: style

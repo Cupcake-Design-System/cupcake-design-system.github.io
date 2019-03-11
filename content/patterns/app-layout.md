@@ -1,8 +1,7 @@
 ---
-layout: docs
 title: App Layout
 description: All pages in our applications will follow a standardised structure.
-group: layout
+group: patterns
 toc: true
 toc-flavors: false
 ---

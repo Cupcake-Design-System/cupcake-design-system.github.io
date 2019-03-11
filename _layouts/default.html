@@ -4,15 +4,48 @@
     {% include header.html %}
   </head>
   <body>
+      {% include docs-navbar.html %}
 
-    {% include docs-navbar.html %}
+      {% if page.group.title == elements %}
+        {% include sidebar-elements.html %}
+      {% elsif page.group.title == patterns %}
+        {% include sidebar-patterns.html %}
+      {% elsif page.group.title == foundations %}  
+        {% include sidebar-foundations.html %}
+      {% endif %}
 
-    <div class="c-container-fixed">
-        {{ content }}
-    </div>
+    <main class="main-container" role="main">
+   
+        <div class="docs-bg-img">
+            <div class="PageTitle">
+              <h1 class="docs-title" id="content">{{ page.title }}</h1>
+              {% if page.tabs %}
+              <ul class="tabs">
+                  <li class="tab-link active" data-tab="design">Design</li>
+                  <li class="tab-link" data-tab="code">Code</li>
+                </ul>
+                {% endif %}
+            </div>
+            <p class="docs-lead">{{ page.description }}</p>
+          </div>
+
+      <div class="main-demo-content">
+
+        <div class="c-row">
+          <div class="c-col-12 c-p-vertical-md">
+
+            {{ content }} 
+
+          </div>
+        </div>
+      </div>
+
+     
+    {% include footer.html %}
+    </main>
 
 
     {% include scripts.html %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.2.3/css-doodle.min.js"></script>
+
   </body>
 </html>

@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: FAQ
 description: The most common questions we recieve.
 group: getting-started

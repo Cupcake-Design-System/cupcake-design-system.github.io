@@ -1,8 +1,7 @@
 ---
 title: Footer
-layout: docs
 description: This is the default footer example.
-group: layout
+group: patterns
 ---
 
 ## Default

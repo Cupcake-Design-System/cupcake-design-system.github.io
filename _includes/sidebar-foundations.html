@@ -2,7 +2,7 @@
   <nav class="c-sidenav-body">
     <ul class="c-sidenav-menu">
       {%- assign page_slug = page.url | split: '/' | last -%}
-      {%- for group in site.data.nav -%}
+      {%- for group in site.data.foundations -%}
       {%- assign link = group.pages | first -%}
       {%- assign link_slug = link.title | slugify -%}
       {%- assign group_slug = group.title | slugify -%}
@@ -10,16 +10,6 @@
       {%- if page.group == group_slug -%}
       {%- assign active = 'c-sidenav-menu-item-active' -%}
       {%- endif -%}
-      {% if group.url %}
-      <li class="c-sidenav-menu-item {% if page.home == "true" %}c-sidenav-menu-item-active{% endif %}">
-        <a class="c-sidenav-menu-link" href="{{ site.url }}{{ site.baseurl }}/{{ group.url }}">
-          <span class="c-sidenav-menu-title">
-            {{ group.title }}
-          </span>
-        </a>
-      </li>
-
-      {% else %}
 
       <li class="c-sidenav-menu-item {% unless active == nil %} {{ active }}{% endunless %}">
         <a class="c-sidenav-menu-link">
@@ -58,7 +48,6 @@
             {%- endfor -%}
           </ul>
       </li>
-      {% endif %}
       {%- endfor -%}
     </ul>
   </nav>

@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Component Status
 description: Current status of elements, components, and patterns.
 group: getting-started

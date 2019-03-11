@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Typography
 description: Documentation and examples for Cupcake typography, including global settings, headings, body text, lists, and more.
 group: style

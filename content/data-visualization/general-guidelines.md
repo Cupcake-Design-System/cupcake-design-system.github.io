@@ -1,6 +1,5 @@
 ---
 title: General Guidelines
-layout: docs
 description: Recommendations to create effective visualizations within Ipreo products
 group: data-visualization
 toc: true

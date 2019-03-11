@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Display property
 description: Change or adjust the display value.
 group: utilities

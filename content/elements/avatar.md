@@ -1,6 +1,5 @@
 ---
 title: Avatar
-layout: docs
 description: An avatar represents an object or entity
 group: elements
 toc: true

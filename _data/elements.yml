@@ -1,0 +1,24 @@
+- title: Elements
+  pages:
+    - title: Buttons
+    - title: Button Group  
+
+- title: Data Visualization
+  pages:
+    - title: General Guidelines
+    - title: Examples
+    - title: Colors and Visuals
+
+- title: Utilities
+  pages:
+    - title: Borders
+    - title: Display     
+    - title: Flex   
+    - title: Float
+    - title: Spacing
+
+- title: Resources
+  pages:
+    - title: Release Notes
+   # - title: Examples     
+   # - title: Extensions

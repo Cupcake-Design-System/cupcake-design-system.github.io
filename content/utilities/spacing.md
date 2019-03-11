@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Spacing
 description: Adjust whitespace with horizontal and vertical spacing helpers.
 group: utilities

@@ -4,7 +4,7 @@
     - title: Overview     
     - title: Developers
     - title: Designers    
-    - title: Component Status  
+    # - title: Component Status  
     - title: Adoption 
     - title: FAQ      
 
@@ -12,6 +12,6 @@
   pages:
     - title: Primary Colors
     - title: Extended Colors    
-    - title: Animation   
-    - title: Depth 
+    # - title: Animation   
+    # - title: Depth 
     - title: Typography               
