@@ -21,12 +21,6 @@ kramdown:
 # Permalinks
 permalink:      pretty
 
-plugins:
-  - jekyll-toc
-
-toc:
-  max_level: 3
-
 defaults:
   -
     scope:

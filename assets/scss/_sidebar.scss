@@ -94,7 +94,7 @@
 
 .c-sidenav {
   left: 0;
-  top: 50px;
+  top: 48px;
   bottom: 0;
   height: 100%;
   z-index: 1000;
@@ -130,27 +130,6 @@
       font-weight: 700;
       color: $sidebar-color;
     }
-    
-    &-icon {
-      flex-basis: 26px;
-      flex-shrink: 0;
-      font-size: 18px;
-      color: $sidebar-icon-color;
-      text-align: center;
-
-      &:hover {
-        color: $sidebar-color;
-      }
-    }
-
-    &-arrow {
-      display: inline-block;
-      margin-right: 5px;
-      font-size: 12px;
-      color: $sidebar-color;
-      cursor: pointer;
-      transition: transform .1s linear
-    }
 
     &-title {
       margin-top: 48px;
@@ -162,7 +141,7 @@
       line-height: 14px;
       letter-spacing: 1px;
       text-transform: uppercase;
-      }
+    }
 
     &-submenu {
       display: block;
