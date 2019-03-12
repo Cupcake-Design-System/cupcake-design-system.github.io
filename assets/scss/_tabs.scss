@@ -2,7 +2,7 @@
 .tabs {
   padding: 0;
   display: flex;
-  min-width: 66px;
+  min-width: 130px;
   min-height: 28px;
   list-style: none;
   margin-left: auto;
@@ -11,13 +11,6 @@
   align-items: center;
   justify-content: space-around;
   background: rgba(36, 36, 36, 0.25);
-}
-
-
-@media (min-width:60rem) {
-  .tabs {
-    min-width: 130px;
-  }
 }
 
 .PageTitle {

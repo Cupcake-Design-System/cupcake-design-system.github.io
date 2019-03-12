@@ -10,7 +10,7 @@
       <nav class="c-sidenav-body">
         <ul class="c-sidenav-menu">
           {%- assign page_slug = page.url | split: '/' | last -%}
-          {%- for group in site.data.elements -%}
+          {%- for group in site.data.foundations -%}
           {%- assign link = group.pages | first -%}
           {%- assign link_slug = link.title | slugify -%}
           {%- assign group_slug = group.title | slugify -%}
@@ -46,7 +46,7 @@
         </ul>
       </nav>
     </aside>
-        
+
     <main class="main-container" role="main">
    
         {% include page-header.html %}

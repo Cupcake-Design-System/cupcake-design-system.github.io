@@ -1,9 +1,9 @@
-- title: Patterns
+- title: Layout
   pages:
-    - title: App Layout     
-    - title: Overview    
+    - title: Overview   
+    - title: App Layout      
     - title: Grid
-    - title: Header        
+    - title: Header
     - title: Footer    
 
 - title: Resources

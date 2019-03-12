@@ -1,7 +1,8 @@
 - title: Elements
   pages:
+    - title: Overview    
+    - title: Alert
     - title: Buttons
-    - title: Button Group  
 
 - title: Data Visualization
   pages:
@@ -12,13 +13,7 @@
 - title: Utilities
   pages:
     - title: Borders
-    - title: Display     
+    - title: Display
     - title: Flex   
     - title: Float
     - title: Spacing
-
-- title: Resources
-  pages:
-    - title: Release Notes
-   # - title: Examples     
-   # - title: Extensions
