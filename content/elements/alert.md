@@ -2,12 +2,15 @@
 title: Alert
 description: Alerts are used to communicate errors, warnings, confirmation messages and critical information that can affect the user experience.
 group: elements
+tabs: true
 colors:
 - primary
 - success
 - warning
 - danger
 ---
+
+<div class="tab-content" id="code" markdown="1">
 
 ## Base
 
@@ -81,6 +84,10 @@ This is an example of available colors for the **{{ page.title }}** element.
 </div>
 {% endfor %}
 {% endexample %}
+
+</div>
+
+<div class="tab-content active" id="design" markdown="1">
 
 ## UX Guidance
 
@@ -158,3 +165,5 @@ The toast alert can then either be dismissed or will disappear when its time dur
 **What toast alerts must not communicate:**
 - Issues related to system status or maintenance
 - Alerts relating to specific pages or components
+
+</div>

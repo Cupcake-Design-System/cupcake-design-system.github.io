@@ -19,12 +19,12 @@
           {%- assign active = 'c-sidenav-menu-item-active' -%}
           {%- endif -%}
 
-          <li class="c-sidenav-menu-item {% unless active == nil %} {{ active }}{% endunless %}">
-            <a class="c-sidenav-menu-link">
+          <li class="c-sidenav-menu-item">
+            <span class="c-sidenav-menu-link">
               <span class="c-sidenav-menu-title">
                 {{ group.title }}
               </span>
-            </a>
+            </span>
 
             <ul class="c-sidenav-menu-submenu">
               {%- for doc in group.pages -%}

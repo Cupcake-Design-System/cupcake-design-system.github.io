@@ -1,3 +1,18 @@
+$(document).ready(function($) {
+  $('.tab_content').hide();
+  $('.tab_content:first').show();
+  $('.docs-tabs li:first').addClass('active');
+  $('.docs-tabs li').click(function(event) {
+    $('.docs-tabs li').removeClass('active');
+    $(this).addClass('active');
+    $('.docs-tabs-content').hide();
+
+    var selectTab = $(this).find('a').attr("data-tab");
+
+    $(selectTab).fadeIn();
+  });
+});
+
 // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
 // IT'S ALL JUST JUNK FOR OUR DOCS!
 // ++++++++++++++++++++++++++++++++++++++++++

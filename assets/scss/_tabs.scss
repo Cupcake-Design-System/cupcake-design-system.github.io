@@ -44,3 +44,44 @@
     border-radius: 40px;
   }
 }
+
+
+.docs-tabs {
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  align-items: stretch;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: inset 0 -1px 0 0 #e9ecef;
+  list-style: none;
+
+  li {
+    display: flex;
+    color: #495057;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0 !important;
+    padding: 0;
+    flex: 1;
+    line-height: 32px;
+
+    a {
+      color: #495057;
+      padding-bottom: 8px;
+    }
+  }
+
+  .active {
+    color: #1b6ec2;
+    border-bottom: 2px solid #1b6ec2;
+
+    a {
+      color: #1b6ec2;
+      font-weight: bold;
+    }
+  }
+}

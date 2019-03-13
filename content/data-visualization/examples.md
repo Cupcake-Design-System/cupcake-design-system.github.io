@@ -11,7 +11,22 @@ colors:
 - danger
 ---
 
+
+
+<ul class="docs-tabs">
+  <li><a data-tab="#getting-started">Getting Started</a></li>
+  <li><a data-tab="#comparison">Comparison</a></li>
+  <li><a data-tab="#relationship">Relationship</a></li>
+  <li><a data-tab="#composition">Composition</a></li>
+  <li><a data-tab="#distribution">Distribution</a></li>
+</ul>
+
+  <div id="getting-started" class="docs-tabs-content" markdown="1">
+
 {% include guide-img-jpg.html img='dataviz/graph'%}
+
+  </div>
+  <div id="comparison" class="docs-tabs-content" markdown="1">
 
 ### Comparison Graph Types
 Comparison graphs and data visualizations are the most common method of analysis. Implied by the name, these visualizations can easily compare values between 2 or more data points. These include bar charts, column graphs, and time trends. 
@@ -42,6 +57,12 @@ Comparison graphs would be used to answer these questions:
   </div>
 </div>
 
+  </div>
+
+
+
+<div id="relationship" class="docs-tabs-content" markdown="1">
+
 ### Relationship Types
 Relationship graphs, implied by the name, show specific relationships, correlation, or connections between 2 or more variables. On a high level, these charts demonstrate how a variable such as price does or does not affect another variable such as demand and whether that relationship is positive or negative. These visualizations can be given another dimenstion with bubble charts that show the scale of the relationship or plots over time. Chart types include scatter plots, bubble, line, and table. 
 Relationship graphs could answer:
@@ -60,6 +81,9 @@ Relationship graphs could answer:
 {% include guide-img-jpg.html img='dataviz/Network-Graph'%}
   </div>
 </div>
+</div>
+
+<div id="distribution" class="docs-tabs-content" markdown="1">
 
 ### Distribution Graph Types
  Distribution analaysis visualizes data to see what data deviates from the norm and can also be used geographically to demonstrate data over a map. Charts used in this category include histograms, line and area charts, scatter plots, data tables, and map charts.
@@ -82,6 +106,10 @@ Relationship graphs could answer:
 {% include guide-img-jpg.html img='dataviz/Scatter-Chart'%}
   </div>
 </div>
+
+</div>
+
+<div id="composition" class="docs-tabs-content" markdown="1">
 
 ### Composition Types
 Composition graphs are used to show trends in desnse sets of data. This type should be used to show how individual parts make up a whole to show the significance of each part in regards to the total value. Charts in this type include scatter plots, bubble, node graphs, pie charts, and stacked area graphs.
@@ -109,4 +137,5 @@ When using stacked or waterfall graphs make sure to emphasize the intent and dat
   <div class="c-col-12 c-col-lg-2">
 {% include guide-img-jpg.html img='dataviz/Tree-Map-Chart'%}
   </div>
+</div>
 </div>

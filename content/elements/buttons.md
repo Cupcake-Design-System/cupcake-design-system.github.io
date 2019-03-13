@@ -15,8 +15,10 @@ sizes:
 - xl
 ---
 
+<amber-tabs labels="Design,Code,Angular" fitted>
+  <amber-tab-content>
 
-<div class="tab-content active" id="design" markdown="1">
+<div markdown="1">
 
 ### UX Guidance Yo!
 
@@ -39,17 +41,27 @@ sizes:
 
 </div>
 
-<div class="tab-content" id="code" markdown="1">
+</amber-tab-content>
 
-# Code
+<amber-tab-content>
+<div markdown="1">
 
 ### Code Example Normal
 {% example html %}
   <button type="button" class="c-btn c-btn-primary">Button</button>
 {% endexample %}
 
+</div>
+
+</amber-tab-content>
+
+<amber-tab-content>
+<div markdown="1">
+
 ### Storybook iframe
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
 
 </div>
 
+</amber-tab-content>
+</amber-tabs>
