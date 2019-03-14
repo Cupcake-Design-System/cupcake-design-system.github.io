@@ -8,9 +8,14 @@ colors:
 - success
 - warning
 - danger
+tabs: 
+- Design
+- Code 
+- Angular
+tab-class: fullwidth
 ---
 
-<div class="tab-content" id="code" markdown="1">
+<div id="code" class="docs-tabs-content" markdown="1">
 
 ## Base
 
@@ -87,7 +92,7 @@ This is an example of available colors for the **{{ page.title }}** element.
 
 </div>
 
-<div class="tab-content active" id="design" markdown="1">
+<div id="design" class="docs-tabs-content" markdown="1">
 
 ## UX Guidance
 

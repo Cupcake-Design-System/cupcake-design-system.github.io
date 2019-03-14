@@ -1,18 +1,21 @@
 ---
-title: Colors and Visuals
-description: General guidelines for data visualization
-group: data-visualization
+title: Data Visualization
+description: Recommendations to create effective visualizations within Ipreo products
+group: elements
 colors:
 - primary
-- success 
+- success
 - warning
 - danger
+tabs: 
+- Getting Started
+- Comparison 
+- Relationship
+- Distribution
+tab-class: fullwidth
 ---
 
-<amber-tabs labels="General Guidelines,Color Usage,Examples" fitted>
-  <amber-tab-content>
-
-<div markdown="1">
+<div id="getting-started" class="docs-tabs-content" markdown="1">
 
 ### Before you start
 A complete understanding of the data you have is crucial before building visualizations. Referring to this guide will help you transform your data and apply appropriate branding properties according to Ipreo Brand Guidelines.
@@ -30,27 +33,12 @@ A common misconception with data visualization is the assumption the audience kn
 ### Sketches and Prototyping
 Before going through the examples, it may be beneficial to sketch out ideas with pen and paper. Defining different ways to tell your story will help land on the best visualization. From there, simple prototyping with software
 
-</div>
-</amber-tab-content>
-
-<amber-tab-content>
-
-<div markdown="1">
-
-### Color Usage
-Color is a powerful encoding used to convey categorical or frequency information in data visualizations. Ipreo by IHS Markit has a particular color pallet and simple rules around our graphs. Our color pallet can be found here.
-
-{% include guide-img-jpg.html img='dataviz/data-point-colors'%}
-
-</div>
-
-</amber-tab-content>
-
-<amber-tab-content>
-
-<div markdown="1">
 
 {% include guide-img-jpg.html img='dataviz/graph'%}
+
+</div>
+
+<div id="comparison" class="docs-tabs-content" markdown="1">
 
 ### Comparison Graph Types
 Comparison graphs and data visualizations are the most common method of analysis. Implied by the name, these visualizations can easily compare values between 2 or more data points. These include bar charts, column graphs, and time trends. 
@@ -60,26 +48,35 @@ Comparison graphs would be used to answer these questions:
 - Does the user need to see categories ranked (i.e. products from most to least profitable)?
 - What trends over time does the data suggest (gaps, spikes, outliers)?
 
-<div class="c-row">
-  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Bar-Chart'%} 
-  </div>
-	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Radial-Bar-Chart'%}
-  </div>
-	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Column-Chart'%}
-  </div>
-	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Line-Chart'%}
-  </div>
-  	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Column-Histogram'%}
-  </div>
-  	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Choropleth-Map'%}
+  <div class="c-row">
+    <div class="c-col-12 c-col-lg-2">
+      {% include guide-img-jpg.html img='dataviz/Bar-Chart'%}
+    </div>
+
+    <div class="c-col-12 c-col-lg-2">
+      {% include guide-img-jpg.html img='dataviz/Radial-Bar-Chart'%}
+    </div>
+
+    <div class="c-col-12 c-col-lg-2">
+      {% include guide-img-jpg.html img='dataviz/Column-Chart'%}
+    </div>
+
+    <div class="c-col-12 c-col-lg-2">
+      {% include guide-img-jpg.html img='dataviz/Line-Chart'%}
+    </div>
+
+    <div class="c-col-12 c-col-lg-2">
+      {% include guide-img-jpg.html img='dataviz/Column-Histogram'%}
+    </div>
+
+    <div class="c-col-12 c-col-lg-2">
+      {% include guide-img-jpg.html img='dataviz/Choropleth-Map'%}
+    </div>
   </div>
 </div>
+
+
+<div id="relationship" class="docs-tabs-content" markdown="1">
 
 ### Relationship Types
 Relationship graphs, implied by the name, show specific relationships, correlation, or connections between 2 or more variables. On a high level, these charts demonstrate how a variable such as price does or does not affect another variable such as demand and whether that relationship is positive or negative. These visualizations can be given another dimenstion with bubble charts that show the scale of the relationship or plots over time. Chart types include scatter plots, bubble, line, and table. 
@@ -88,17 +85,22 @@ Relationship graphs could answer:
 - Is there a positive or negative relationship between my two variables?
 - Does the user need to see 3 to 4 dimensions of analysis: correlation, clusters, outliers, timeline?
 
-<div class="c-row">
-  <div class="c-col-12 c-col-lg-4">
-{% include guide-img-jpg.html img='dataviz/Scatter-Chart'%} 
+  <div class="c-row">
+    <div class="c-col-12 c-col-lg-4">
+      {% include guide-img-jpg.html img='dataviz/Scatter-Chart'%} 
+    </div>
+    <div class="c-col-12 c-col-lg-4">
+      {% include guide-img-jpg.html img='dataviz/Bubble-Chart'%}
+    </div>
+    <div class="c-col-12 c-col-lg-4">
+      {% include guide-img-jpg.html img='dataviz/Network-Graph'%}
+    </div>
   </div>
-	  <div class="c-col-12 c-col-lg-4">
-{% include guide-img-jpg.html img='dataviz/Bubble-Chart'%}
-  </div>
-	  <div class="c-col-12 c-col-lg-4">
-{% include guide-img-jpg.html img='dataviz/Network-Graph'%}
-  </div>
+
 </div>
+
+
+<div id="distribution" class="docs-tabs-content" markdown="1">
 
 ### Distribution Graph Types
  Distribution analaysis visualizes data to see what data deviates from the norm and can also be used geographically to demonstrate data over a map. Charts used in this category include histograms, line and area charts, scatter plots, data tables, and map charts.
@@ -107,52 +109,21 @@ Relationship graphs could answer:
  - Does my user need to spot bugs or constraints in their system?
  - Does my consumer need a visual for a variable such as profits over different categories such as clients?
 
- <div class="c-row">
-  <div class="c-col-12 c-col-lg-3">
-{% include guide-img-jpg.html img='dataviz/Column-Histogram'%} 
-  </div>
-	  <div class="c-col-12 c-col-lg-3">
-{% include guide-img-jpg.html img='dataviz/Line-Histogram'%}
-  </div>
-	  <div class="c-col-12 c-col-lg-3">
-{% include guide-img-jpg.html img='dataviz/Heatmap-Chart'%}
-  </div>
-	  <div class="c-col-12 c-col-lg-3">
-{% include guide-img-jpg.html img='dataviz/Scatter-Chart'%}
-  </div>
-</div>
-
-### Composition Types
-Composition graphs are used to show trends in desnse sets of data. This type should be used to show how individual parts make up a whole to show the significance of each part in regards to the total value. Charts in this type include scatter plots, bubble, node graphs, pie charts, and stacked area graphs.
-Composition graphs can answer:
-- How does this category of data affect my overall data set?
-
-When using stacked or waterfall graphs make sure to emphasize the intent and data the visualization is depicting as these often can be misunderstood.
-
 <div class="c-row">
-  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Stacked-100-Column-Chart'%} 
+  <div class="c-col-12 c-col-lg-3">
+    {% include guide-img-jpg.html img='dataviz/Column-Histogram'%}
   </div>
-	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Stacked-Area-Chart'%}
+  <div class="c-col-12 c-col-lg-3">
+    {% include guide-img-jpg.html img='dataviz/Line-Histogram'%}
   </div>
-	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Stacked-100-Area-Chart'%}
+  <div class="c-col-12 c-col-lg-3">
+    {% include guide-img-jpg.html img='dataviz/Heatmap-Chart'%}
   </div>
-  	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Pie-Chart'%}
-  </div>
-  	  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Waterfall-Chart'%}
-  </div>
-  <div class="c-col-12 c-col-lg-2">
-{% include guide-img-jpg.html img='dataviz/Tree-Map-Chart'%}
+  <div class="c-col-12 c-col-lg-3">
+    {% include guide-img-jpg.html img='dataviz/Scatter-Chart'%}
   </div>
 </div>
+
 </div>
 
-</amber-tab-content>
-
-
-</amber-tabs>
 

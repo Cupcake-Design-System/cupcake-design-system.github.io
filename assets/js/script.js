@@ -1,8 +1,12 @@
+// NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
+// IT'S ALL JUST JUNK FOR OUR DOCS!
+// ++++++++++++++++++++++++++++++++++++++++++
+/* Global Scroll, Sidebar, Flavor, Clipboard, Anchors */
 $(document).ready(function($) {
-  $('.tab_content').hide();
-  $('.tab_content:first').show();
+  $('.docs-tabs-content').hide();
+  $('.docs-tabs-content:first').show();
   $('.docs-tabs li:first').addClass('active');
-  $('.docs-tabs li').click(function(event) {
+  $('.docs-tabs li').click(function() {
     $('.docs-tabs li').removeClass('active');
     $(this).addClass('active');
     $('.docs-tabs-content').hide();
@@ -12,24 +16,6 @@ $(document).ready(function($) {
     $(selectTab).fadeIn();
   });
 });
-
-// NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
-// IT'S ALL JUST JUNK FOR OUR DOCS!
-// ++++++++++++++++++++++++++++++++++++++++++
-/* Global Scroll, Sidebar, Flavor, Clipboard, Anchors */
-$(document).ready(function(){
-	
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
-
-		$('ul.tabs li').removeClass('active');
-		$('.tab-content').removeClass('active');
-
-		$(this).addClass('active');
-		$("#"+tab_id).addClass('active');
-	})
-
-})
 
 
 $(function () {

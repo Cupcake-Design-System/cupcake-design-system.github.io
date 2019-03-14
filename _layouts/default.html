@@ -48,11 +48,13 @@
     </aside>
         
     <main class="main-container" role="main">
-   
-        {% include page-header.html %}
-
+      {% include page-header.html %}
+      
+      {% if page.tabs %}
+        {% include tabs.html %}
+      {% endif %}
+      
       <div class="main-demo-content">
-
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
@@ -61,13 +63,10 @@
           </div>
         </div>
       </div>
-
      
     {% include footer.html %}
     </main>
-
-
+    
     {% include scripts.html %}
-
   </body>
 </html>
