@@ -1,6 +1,15 @@
 ---
 title: Avatar
-description: An avatar represents an object or entity
+description: An avatar represents an object or entity.
+colors:
+- primary
+- success
+- warning
+- danger
+tabs: 
+- Design
+- Code
+tab-class: fullwidth
 sizes:
 - sm
 - md

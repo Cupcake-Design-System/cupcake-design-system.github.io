@@ -66,6 +66,4 @@ You can find some of those in the resources section [here]({{ site.url }}{{ site
 
 ---
 
-<a class="c-btn-link c-pull-right" href="{{ site.url }}{{ site.baseurl }}/content/getting-started/designers/">
- Continue to Designers <i class="fa fa-arrow-right"></i>
-</a>
+{% include continue.html page='elements/overview' content="Elements" %}

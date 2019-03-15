@@ -1,7 +1,7 @@
 ---
 title: Primary Colors
 description: Convey meaning through color with a handful of color utility classes. Includes support for styling backgrounds, text, and borders.
-category: Style
+category: Visual Guidelines
 colors:
 - gray
 - primary

@@ -1,7 +1,7 @@
 ---
 title: Extended Colors
 description: Additional supporting colors.
-category: Style
+category: Visual Guidelines
 colors:
 - pink
 - grape

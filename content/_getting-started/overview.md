@@ -32,6 +32,5 @@ You probably shouldn’t be doing this often. With the amount of existing helper
 
 ---
 
-<a class="c-btn-link c-pull-right" href="{{ site.url }}{{ site.baseurl }}/getting-started/principles/">
- Continue to Principles <i class="fa fa-arrow-right"></i>
-</a>
+
+{% include continue.html page='getting-started/principles' content="Principles" %}

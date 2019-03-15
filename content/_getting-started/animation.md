@@ -1,7 +1,7 @@
 ---
 title: Animation
 description: Info
-category: Style
+category: Visual Guidelines
 ---
 
 ## 1. Thing

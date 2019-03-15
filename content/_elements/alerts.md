@@ -1,5 +1,5 @@
 ---
-title: Alert
+title: Alerts
 description: Alerts are used to communicate errors, warnings, confirmation messages and critical information that can affect the user experience.
 colors:
 - primary

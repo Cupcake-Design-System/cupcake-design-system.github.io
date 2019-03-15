@@ -1,6 +1,6 @@
 ---
 title: Button Group
-description: Button groups are used to bunch together buttons with similar actions
+description: Button groups are used to bunch together buttons with similar actions.
 colors:
 - primary
 - secondary
@@ -11,6 +11,10 @@ sizes:
 - sm
 - lg
 - xl
+tabs:
+- Design
+- Code 
+- Angular
 ---
 
 ## Base
