@@ -92,49 +92,6 @@ iframe {
 }
 
 
-
-
-.Overview-groupItems {
-  display: grid;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.OverviewItem:hover {
-  background-color: #016cd1;
-  background-color: rgba(1, 108, 209, .079);
-  color: #016cd1;
-  margin: -4px;
-  padding: 4px;
-}
-
-.OverviewItem:active {
-  -webkit-box-shadow: 0 0 0 2px #016cd1;
-  background-color: #016cd1;
-  box-shadow: 0 0 0 2px #016cd1;
-  color: #fff;
-  margin: -4px;
-  padding: 4px;
-}
-
-.OverviewItem-image {
-  background-color: #fff;
-  border: none;
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.OverviewItem-label {
-  display: block;
-  line-height: 18px;
-  margin-bottom: 16px;
-  margin-top: 16px;
-  text-align: center;
-}
-
-
 .c-header-inverse {
   background: #104678;
   height: 48px;

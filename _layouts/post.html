@@ -28,13 +28,40 @@
 
 <body>
 
+{% include docs-navbar.html %}
+{% assign items = site.posts | group_by: 'category' %}
 
-  {% include sidebar.html %}
+<aside class="c-sidenav">
+  <nav class="c-sidenav-body">
+    <ul class="c-sidenav-menu">
+      <li class="c-sidenav-menu-item">
+        {% for cat in items %}
+        <span class="c-sidenav-menu-link">
+          <span class="c-sidenav-menu-title">
+            {{ cat.name | capitalize }}
+          </span>
+        </span>
+        <ul class="c-sidenav-menu-submenu">
+          {% assign items = cat.items | sort: 'weight' %}
+          {% for item in items %}
+          <li class="c-sidenav-menu-item {% if item.url == page.url %}c-sidenav-menu-item-active{% endif %}">
+            <a class="c-sidenav-menu-link" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </li>
+    </ul>
+  </nav>
+</aside>
+
 
 
   <main class="main-container" role="main">
         <div class="main-content">            
-            <div class="docs-article-image is-single" style="background-color:{{ page.color }}">
+            <div class="docs-article-image" style="background-color:{{ page.color }}">
               <span class="docs-article-overlay"></span>
               
               <span class="docs-article-icon">

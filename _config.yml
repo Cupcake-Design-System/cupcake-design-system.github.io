@@ -87,7 +87,15 @@ defaults:
       type: getting-started
     values:
         group: getting-started
-        category: getting-started                 
+        category: getting-started
+  # _posts defaults
+  - scope:
+      path: ""
+      type: posts
+    values:
+        layout: "post"
+        group: posts
+        category: posts             
 
 collections:
   elements:

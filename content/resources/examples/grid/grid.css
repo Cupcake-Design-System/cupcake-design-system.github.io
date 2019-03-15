@@ -10,15 +10,17 @@ h3 {
 .c-row {
   margin-bottom: 1rem;
 }
+
 .c-row .c-row {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+
 [class*="c-col-"] {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(86, 61, 124, .15);
-  border: 1px solid rgba(86, 61, 124, .2);
+  background-color: rgba(1, 102, 43, 0.15);
+  border: 1px solid rgba(1, 102, 43, .2);
 }
 
 hr {

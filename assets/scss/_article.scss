@@ -1,7 +1,8 @@
 .docs-article-image {
   background-color: $primary;
   display: block;
-  height: 150px;
+  margin: 0 -32px 40px -32px;
+  height: 200px;
   position: relative;
   text-align: center;
   flex-grow: 1;
@@ -29,6 +30,15 @@
   &.is-danger {
     background-color: $danger;
   }
+
+  .c-card-header & {
+    margin: 0;
+    height: 150px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin: -16px -16px 40px -16px;
+  }
 }
 
 .c-card-header:hover {
@@ -54,14 +64,6 @@
   }
 }
 
-.is-single {
-  margin: -32px -32px 40px -32px;
-  height: 200px;
-
-  @include media-breakpoint-down(md) {
-    margin: -16px -16px 40px -16px;
-  }
-}
 
 .docs-article-overlay {
   bottom: 0;
