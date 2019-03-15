@@ -21,13 +21,6 @@ kramdown:
 # Permalinks
 permalink:      pretty
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"      
-
 sass:
     sass_dir: ./assets/scss
 
@@ -63,3 +56,46 @@ cdn:
   # See https://www.srihash.org for info on how to generate the hashes
   jquery:           "https://code.jquery.com/jquery-3.2.1.slim.min.js"
   jquery_hash:      "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+
+
+collections_dir: content
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      weight: 100
+  # _patterns defaults
+  - scope:
+      path: ""
+      type: patterns
+    values:
+        group: patterns
+        category: patterns
+  # _elements defaults
+  - scope:
+      path: ""
+      type: elements
+    values:
+        group: elements
+        category: elements
+  # _getting-started defaults
+  - scope:
+      path: ""
+      type: getting-started
+    values:
+        group: getting-started
+        category: getting-started                 
+
+collections:
+  elements:
+    output: true
+    permalink: /elements/:path/
+  patterns:
+    output: true
+    permalink: /patterns/:path/ 
+  getting-started:
+    output: true
+    permalink: /getting-started/:path/
