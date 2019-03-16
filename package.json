@@ -6,7 +6,7 @@
   "scripts": {
     "git-deploy": "git-directory-deploy --directory dist --branch master",
     "deploy": "npm run compile && npm run git-deploy",
-    "deploy-surge": "surge --project ./dist --domain cupcake-docs.surge.sh",
+    "deploy-surge": "surge --project ./dist --domain rural-thrill.surge.sh",
     "compile": "bundle exec jekyll build --config _config.yml,_config.prod.yml",
     "compile-demo": "bundle exec jekyll build --config _config.yml,_config.demo.yml",
     "start-2": "bundle exec jekyll serve --config _config.yml",
