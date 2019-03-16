@@ -57,10 +57,7 @@ a {
 .main-demo-content,
 .main-content {
   h1, h2 {
-    color: $color-gray-7;
-    max-width: 100%;
-    font-size: 1.75rem;
-    
+    color: $color-gray-8;
       &:first-child {
         margin-top: 2rem;
       }
@@ -69,8 +66,8 @@ a {
     }
   }
   	
-  h3 {
-    margin-top: 1.5rem;
+  h3 {		
+    margin-top: 1.5rem;		
   }		
   	
   ul li:not(.toc-entry):not(.c-tab-item),	
@@ -126,12 +123,12 @@ a {
 //
 
 .docs-title {
-  margin: 0;
+  margin-top: 1rem;
   margin-bottom: .5rem;
   font-weight: 600;
 
   @include media-breakpoint-up(sm) {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -141,9 +138,9 @@ a {
   line-height: normal;
 
   @include media-breakpoint-up(sm) {
-    max-width: 85%;
-    margin: 0;
-    font-size: 1.25rem;
+    max-width: 80%;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -154,9 +151,6 @@ a {
   position: relative;
   background-size: cover;
   background-position: center center;
-  background-color: $primary;
-  padding: 2rem;
-  color: white;
 }
 
 .special-link {
@@ -265,7 +259,6 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin-top: 48px;
 }
 
 .main-content {

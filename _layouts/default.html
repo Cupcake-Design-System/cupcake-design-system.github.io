@@ -2,31 +2,18 @@
 <html lang="en">
   <head>
     {% include header.html %}
+    <!-- <link rel="shortcut icon" type="image/png" href="CupcakeFavicon.png"/> -->
+
   </head>
   <body>
-      {% include docs-navbar.html %}
-      {% include sidebar.html %}
-        
-    <main class="main-container" role="main">
-      {% include page-header.html %}
-      
-      {% if page.tabs %}
-        {% include tabs.html %}
-      {% endif %}
-      
-      <div class="main-demo-content">
-        <div class="c-row">
-          <div class="c-col-12 c-p-vertical-md">
 
-            {{ content }}
+    {% include docs-navbar.html %}
 
-          </div>
-        </div>
-      </div>
-     
-    {% include footer.html %}
-    </main>
-    
+    <div class="c-container-fixed">
+        {{ content }}
+    </div>
+
+
     {% include scripts.html %}
   </body>
 </html>

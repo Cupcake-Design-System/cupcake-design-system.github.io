@@ -60,7 +60,7 @@ eos
         formatter = Rouge::Formatters::HTML.new(line_numbers: @options[:linenos], wrap: false)
         lexer = Rouge::Lexer.find_fancy(@lang, code) || Rouge::Lexers::PlainText
         code = formatter.format(lexer.lex(code))
-        "<div class=\"highlight\"><pre>#{code}</pre></div> <div class=\"c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1\" id=\"highlight-toggle\">HTML <i class=\"fas fa-caret-down\"></i></div>"
+        "<div class=\"highlight\"><pre>#{code}</pre></div> <div class=\"c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2\" id=\"highlight-toggle\">HTML <i class=\"fas fa-caret-down\"></i></div>"
       end
 
       def add_code_tag(code)
