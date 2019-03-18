@@ -12,28 +12,10 @@
 
 
 
-{%- if page.toc-flavors == false -%}
+
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/cupcake/default.css">
-{%- else -%}
 
-<!-- Theme Switch -->
-<script>
-  var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
-    {};
-  var themeName = themeSettings.themeName || '';
-  if (themeName) {
-    document.write('<link rel="stylesheet" id="theme-style" href="{{ site.url }}{{ site.baseurl }}/assets/cupcake' + themeName + '.css">');
-  } else {
-    document.write('<link rel="stylesheet" id="theme-style" href="{{ site.url }}{{ site.baseurl }}/assets/cupcake/default.css">');
-  }
-</script>
-
-
-{%- endif -%}
 
 <!-- Documentation extras -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@2.6.1/dist/simplebar.css">
-<script src="https://cdn.jsdelivr.net/npm/simplebar@2.6.1/dist/simplebar.js"></script>
 <script defer src="{{ site.url }}{{ site.baseurl }}/assets/js/fontawesome-all.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 <link href="{{ site.url }}{{ site.baseurl }}/assets/scss/documentation.css" rel="stylesheet">
