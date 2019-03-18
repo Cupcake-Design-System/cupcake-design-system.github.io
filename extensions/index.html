@@ -6,332 +6,117 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.">
 
-<title>Cupcake · Extensions</title><link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"><!-- Documentation extras -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@2.6.1/dist/simplebar.css">
-<script src="https://cdn.jsdelivr.net/npm/simplebar@2.6.1/dist/simplebar.js"></script>
+<title>Cupcake · Extensions</title>
+
+
+
+
+<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">
+
+
+<!-- Documentation extras -->
 <script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
+
 </head>
 
 <body>
+  <header class="c-header c-header-inverse c-header-fixed">
 
-
-  <aside class="c-sidenav">
-  <div class="docs-logo">
-    <a href="https://cupcake-design-system.github.io/index.html">
-      Cupcake 
-    <span>Design System</span>
-    </a>
-    <button class="c-md-d-none" type="button" id="docs-menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-
-    
-    <div class="c-d-none c-lg-d-block c-text-center c-text-sm c-text-bold c-p-bottom-lg">
-      Current Version       
-      <a href="https://code.ipreo.com/Ipreo/cupcake/releases/tag/1.4.6" class="c-a" data-tooltip="View Changelog" data-tooltip-conf="right">1.4.6</a>
+  <div class="c-header-left">
+    <div class="c-header-item">
+      <a class="c-header-item-link c-header-item-link-logo" href="https://cupcake-design-system.github.io/index.html">
+        <svg width="77px" height="86px" viewBox="0 0 77 86" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <linearGradient x1="10.8997675%" y1="-3.72942074%" x2="114.31576%" y2="119.749188%" id="linearGradient-1">
+              <stop stop-color="#0082DE" offset="0%"></stop>
+              <stop stop-color="#004E92" offset="100%"></stop>
+            </linearGradient>
+            <path d="M63.3607333,28.84934 L74.6434414,16.3060637 C66.9284682,7.11082335 55.4001793,1.27254046 42.5194983,1.27254046 C19.2912225,1.27254046 0.460984352,20.2588885 0.460984352,43.6797357 C0.460984352,67.1005826 19.2912225,86.086931 42.5194983,86.086931 C55.8647518,86.086931 67.758299,79.8199101 75.4632204,70.0454788 L63.277379,57.5818973 C58.9813792,63.6154317 52.0592824,67.5310258 44.2516796,67.5310258 C34.555459,67.5310258 26.2249563,61.4919954 22.5940602,52.8571201 C21.2891137,49.8381114 20.5640197,46.4958875 20.5640197,42.9796686 C20.5640197,29.5254902 31.1799181,18.6187237 44.2752922,18.6187237 C55.3901737,18.6187237 60.8241913,25.1300833 62.5933202,27.8168755 C62.8577613,28.1537189 63.1136788,28.4979905 63.3607333,28.84934 Z"
+              id="path-2"></path>
+            <linearGradient x1="6.99466701%" y1="-3.72942074%" x2="120.739238%" y2="119.749188%" id="linearGradient-4">
+              <stop stop-color="#0082DE" offset="0%"></stop>
+              <stop stop-color="#004E92" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Group-4" transform="translate(0.000000, -58.000000)">
+              <g id="c-copy" transform="translate(0.500000, 57.000000)">
+                <path d="M63.3607333,28.84934 L74.6434414,16.3060637 C66.9284682,7.11082335 55.4001793,1.27254046 42.5194983,1.27254046 C19.2912225,1.27254046 0.460984352,20.2588885 0.460984352,43.6797357 C0.460984352,67.1005826 19.2912225,86.086931 42.5194983,86.086931 C55.8647518,86.086931 67.758299,79.8199101 75.4632204,70.0454788 L63.277379,57.5818973 C58.9813792,63.6154317 52.0592824,67.5310258 44.2516796,67.5310258 C34.555459,67.5310258 26.2249563,61.4919954 22.5940602,52.8571201 C21.2891137,49.8381114 20.5640197,46.4958875 20.5640197,42.9796686 C20.5640197,29.5254902 31.1799181,18.6187237 44.2752922,18.6187237 C55.3901737,18.6187237 60.8241913,25.1300833 62.5933202,27.8168755 C62.8577613,28.1537189 63.1136788,28.4979905 63.3607333,28.84934 Z"
+                  id="path-2" stroke="url(#linearGradient-1)" stroke-width="0.5"></path>
+                <g id="path-2" fill="#329AF0" fill-rule="nonzero">
+                  <path d="M63.3607333,28.84934 L74.6434414,16.3060637 C66.9284682,7.11082335 55.4001793,1.27254046 42.5194983,1.27254046 C19.2912225,1.27254046 0.460984352,20.2588885 0.460984352,43.6797357 C0.460984352,67.1005826 19.2912225,86.086931 42.5194983,86.086931 C55.8647518,86.086931 67.758299,79.8199101 75.4632204,70.0454788 L63.277379,57.5818973 C58.9813792,63.6154317 52.0592824,67.5310258 44.2516796,67.5310258 C34.555459,67.5310258 26.2249563,61.4919954 22.5940602,52.8571201 C21.2891137,49.8381114 20.5640197,46.4958875 20.5640197,42.9796686 C20.5640197,29.5254902 31.1799181,18.6187237 44.2752922,18.6187237 C55.3901737,18.6187237 60.8241913,25.1300833 62.5933202,27.8168755 C62.8577613,28.1537189 63.1136788,28.4979905 63.3607333,28.84934 Z"></path>
+                </g>
+                <g id="Combined-Shape-Clipped">
+                  <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                  </mask>
+                  <g id="path-2"></g>
+                  <path d="M63.2399885,57.6194183 C57.9551108,68.7166803 47.1695308,77.0451341 34.7233222,77.0451341 C17.06117,77.0451341 1.37649339,66.9355489 0.829824068,43.4375946 C0.283154743,19.93964 17.06117,9.28359087 34.7233222,9.28359087 C47.5090997,9.28359087 58.5423993,17.499952 63.6601882,28.7346746 C59.3706344,22.5744585 52.354309,18.5604705 44.4267028,18.5604705 C31.3687868,18.5604705 20.7832544,29.4507657 20.7832544,42.8846257 C20.7832544,56.3184857 31.3687868,67.2087812 44.4267028,67.2087812 C52.1005753,67.2087812 58.9205668,63.4476275 63.2399885,57.6194183 Z"
+                    id="Combined-Shape" stroke="url(#linearGradient-4)" stroke-width="0.5" fill="url(#linearGradient-4)"
+                    fill-rule="nonzero" mask="url(#mask-3)"></path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+        Cupcake Design System
+      </a>
     </div>
   </div>
 
+  <div class="c-header-center"></div>
 
-
-  <nav class="c-sidenav-body" data-simplebar="">
-
-    <ul class="c-sidenav-menu" id="js-nav">
-      <li class="c-sidenav-menu-item ">
-        <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/index.html">
-          <span class="c-sidenav-menu-icon fal fa-home" aria-hidden="true"></span>
-          <span class="c-sidenav-menu-title">
-            Introduction
-          </span>
-        </a>
-    </li>
-
-    
-    
-
-      <li class="c-sidenav-menu-item ">
-          <a class="c-sidenav-menu-link">
-
-            <span class="c-sidenav-menu-icon fal fa-info" aria-hidden="true"></span>
-
-            <span class="c-sidenav-menu-title">
-              Getting Started
-            </span>
-            
-            <span class="c-sidenav-menu-arrow">
-                <span class="fas fa-caret-right"></span>
-              </span>
-          </a>
-    
-          <ul class="c-sidenav-menu-submenu"><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/overview/">
-                  Overview 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/developers/">
-                  Developers 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/designers/">
-                  Designers 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/getting-started/faq/">
-                  FAQ 
-                </a></li></ul>
-      </li>
-   
-    
-    
-
-      <li class="c-sidenav-menu-item ">
-          <a class="c-sidenav-menu-link">
-
-            <span class="c-sidenav-menu-icon fal fa-paint-brush" aria-hidden="true"></span>
-
-            <span class="c-sidenav-menu-title">
-              Style
-            </span>
-            
-            <span class="c-sidenav-menu-arrow">
-                <span class="fas fa-caret-right"></span>
-              </span>
-          </a>
-    
-          <ul class="c-sidenav-menu-submenu"><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/primary-colors/">
-                  Primary Colors 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/extended-colors/">
-                  Extended Colors 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/style/typography/">
-                  Typography 
-                </a></li></ul>
-      </li>
-   
-    
-    
-
-      <li class="c-sidenav-menu-item ">
-          <a class="c-sidenav-menu-link">
-
-            <span class="c-sidenav-menu-icon fal fa-desktop-alt" aria-hidden="true"></span>
-
-            <span class="c-sidenav-menu-title">
-              Layout
-            </span>
-            
-            <span class="c-sidenav-menu-arrow">
-                <span class="fas fa-caret-right"></span>
-              </span>
-          </a>
-    
-          <ul class="c-sidenav-menu-submenu"><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/app-layout/">
-                  App Layout 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/overview/">
-                  Overview 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/grid/">
-                  Grid 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/header/">
-                  Header 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/layout/footer/">
-                  Footer 
-                </a></li></ul>
-      </li>
-   
-    
-    
-
-      <li class="c-sidenav-menu-item ">
-          <a class="c-sidenav-menu-link">
-
-            <span class="c-sidenav-menu-icon fal fa-object-ungroup" aria-hidden="true"></span>
-
-            <span class="c-sidenav-menu-title">
-              Elements
-            </span>
-            
-            <span class="c-sidenav-menu-arrow">
-                <span class="fas fa-caret-right"></span>
-              </span>
-          </a>
-    
-          <ul class="c-sidenav-menu-submenu"><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/alert/">
-                  Alert 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/avatar/">
-                  Avatar 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/badges/">
-                  Badges 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/buttons/">
-                  Buttons 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/button-group/">
-                  Button Group 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/card/">
-                  Card 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/checkboxes-radios/">
-                  Checkboxes & Radios 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/dropdown/">
-                  Dropdown 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/forms/">
-                  Forms 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/loaders/">
-                  Loaders 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/media-object/">
-                  Media object 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/modals/">
-                  Modals 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/pagination/">
-                  Pagination 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/progress/">
-                  Progress 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/switches/">
-                  Switches 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/table/">
-                  Table 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/tabs/">
-                  Tabs 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/elements/tooltips-popovers/">
-                  Tooltips & Popovers 
-                </a></li></ul>
-      </li>
-   
-    
-    
-
-      <li class="c-sidenav-menu-item ">
-          <a class="c-sidenav-menu-link">
-
-            <span class="c-sidenav-menu-icon fal fa-chart-line" aria-hidden="true"></span>
-
-            <span class="c-sidenav-menu-title">
-              Data Visualization
-            </span>
-            
-            <span class="c-sidenav-menu-arrow">
-                <span class="fas fa-caret-right"></span>
-              </span>
-          </a>
-    
-          <ul class="c-sidenav-menu-submenu"><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/data-visualization/general-guidelines/">
-                  General Guidelines 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/data-visualization/examples/">
-                  Examples 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/data-visualization/colors-and-visuals/">
-                  Colors and Visuals 
-                </a></li></ul>
-      </li>
-   
-    
-    
-
-      <li class="c-sidenav-menu-item ">
-          <a class="c-sidenav-menu-link">
-
-            <span class="c-sidenav-menu-icon fal fa-wrench" aria-hidden="true"></span>
-
-            <span class="c-sidenav-menu-title">
-              Utilities
-            </span>
-            
-            <span class="c-sidenav-menu-arrow">
-                <span class="fas fa-caret-right"></span>
-              </span>
-          </a>
-    
-          <ul class="c-sidenav-menu-submenu"><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/borders/">
-                  Borders 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/display/">
-                  Display 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/flex/">
-                  Flex 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/float/">
-                  Float 
-                </a></li><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/content/utilities/spacing/">
-                  Spacing 
-                </a></li></ul>
-      </li>
-   
-    
-    
-
-      <li class="c-sidenav-menu-item  c-sidenav-menu-item-active">
-          <a class="c-sidenav-menu-link">
-
-            <span class="c-sidenav-menu-icon fal fa-file-archive" aria-hidden="true"></span>
-
-            <span class="c-sidenav-menu-title">
-              Resources
-            </span>
-            
-            <span class="c-sidenav-menu-arrow">
-                <span class="fas fa-caret-right"></span>
-              </span>
-          </a>
-    
-          <ul class="c-sidenav-menu-submenu"><li>
-                <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/release-notes/">
-                  Release Notes 
-                </a></li></ul>
-      </li>
-   
-    </ul>
-
-  </nav>
-
-
-
-</aside>
+  <div class="c-header-right">
+    <div class="c-header-item c-hidden-xs">
+      <a class="c-header-item-link" href="https://cupcake-design-system.github.io/getting-started/overview">
+        Getting Started
+      </a>
+    </div>
+    <div class="c-header-item c-hidden-xs">
+      <a class="c-header-item-link" href="https://cupcake-design-system.github.io/elements/overview">
+        Elements
+      </a>
+    </div>
+    <div class="c-header-item c-hidden-xs">
+      <a class="c-header-item-link" href="https://cupcake-design-system.github.io/patterns/overview">
+        Patterns
+      </a>
+    </div>
+    <div class="c-header-item">
+      <button class="c-header-item-link c-md-d-none" type="button" id="docs-menu-toggle">
+        <svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <i class="fas fa-bars"></i> -->
+      </button>
+    </div>
+    <div class="c-header-item c-hidden-xs">
+      <a class="c-header-item-link" href="https://code.ipreo.com/Ipreo/cupcake">
+        <span class="fab fa-github" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  
+</header>
 
 
   <main class="main-container" role="main">
+    
+  
 
-        
+  
+    <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
+      <h1 class="docs-title" id="content">Extensions</h1>
+      <p class="docs-lead">Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.</p>
+    </div>
+  
+  
 
-        
-        <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
-          <h1 class="docs-title" id="content">Extensions</h1>
-          <p class="docs-lead">Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.</p>
-        </div>
-        
-
-        
-
-        
-        <div class="main-content">            
+  
+  
+    <div class="main-content">            
+  
             
-
-          <div class="c-row">
+      <div class="c-row">
   
   <div class="c-col-12 c-col-lg-4 c-m-vertical-lg">
       <div class="c-card">
@@ -391,10 +176,10 @@
       </div>
     </div> -->
 
-
-        </div>
-
-        <div class="c-footer">
+      
+    </div>
+        
+      <div class="c-footer">
     <div class="c-footer-left">
       © 2018 Ipreo. All Rights Reserved.
     </div>
@@ -420,13 +205,11 @@
     </div>
   </div>
  
-      </main>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
 
-</body>
-
+  </body>
 </html>
