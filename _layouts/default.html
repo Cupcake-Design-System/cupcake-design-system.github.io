@@ -4,15 +4,29 @@
     {% include header.html %}
   </head>
   <body>
+      {% include docs-navbar.html %}
+      {% include sidebar.html %}
+        
+    <main class="main-container" role="main">
+      {% include page-header.html %}
+      
+      {% if page.tabs %}
+        {% include tabs.html %}
+      {% endif %}
+      
+      <div class="main-demo-content">
+        <div class="c-row">
+          <div class="c-col-12 c-p-vertical-md">
 
-    {% include docs-navbar.html %}
+            {{ content }}
 
-    <div class="c-container-fixed">
-        {{ content }}
-    </div>
-
-
+          </div>
+        </div>
+      </div>
+     
+    {% include footer.html %}
+    </main>
+    
     {% include scripts.html %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.2.3/css-doodle.min.js"></script>
   </body>
 </html>

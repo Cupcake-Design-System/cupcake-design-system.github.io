@@ -1,0 +1,5 @@
+<ul class="docs-tabs {{ page.tab-class }}">
+    {% for item in page.tabs %}
+    <li><a data-tab="#{{ item | slugify }}">{{ item }}</a></li>
+    {% endfor %}
+</ul>

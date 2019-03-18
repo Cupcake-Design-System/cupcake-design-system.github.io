@@ -62,3 +62,4 @@ typings/
 
 .sass-cache/
 dist/
+.DS_Store

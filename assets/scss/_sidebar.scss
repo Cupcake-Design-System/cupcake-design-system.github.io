@@ -1,223 +1,163 @@
-//
-// Right side table of contents
-//
-
-.docs-toc {
-  @supports (position: sticky) {
-    position: sticky;
-    top: 0;
-    max-height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-
-  order: 2;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  font-size: $toc-font-size;
-}
-
-.section-nav {
-  padding-left: 0;
-  // border-left: 1px solid $toc-border;
-
-  ul {
-    padding-left: 1rem;
-
-    ul {
-      display: none;
-    }
-  }
-}
-
-.toc-entry {
-  display: block;
-
-  a {
-    display: block;
-    padding: .5rem;
-    color: $toc-color;
-    text-transform: capitalize;
-    line-height: 1;
-    font-size: 13px;
-
-    &:hover {
-      color: $toc-color-hover;
-      text-decoration: none;
-    }
-  }
-}
-
-.docs-search {
-  position: relative; // To contain the Algolia search
-  padding: 1rem 15px;
-  border-bottom: 1px solid $color-gray-2;
-}
-
-.docs-hamburger {
-  line-height: 1;
-  color: $color-gray-6;
-}
-
-
-.docs-logo {
-  display: inline-block;
-  width: 100%;
-  color: $color-gray-8;
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 2;
-  margin-top: 2rem;
-  white-space: nowrap;
-  text-align: center;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid $color-gray-2;
-
-  & span {
-    font-weight: 400;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-  }
-}
-
-
-
-
 .c-sidenav {
-  position: fixed;
-  top: 0;
+  left: 0;
+  top: 48px;
   bottom: 0;
-  z-index: 997;
-  display: flex;
-  flex-direction: column;
-  width: 250px;
+  height: 100%;
+  z-index: 1000;
+  display: block;
+  position: fixed;
+  overflow-y: auto;
   white-space: nowrap;
-  background-color: #fff;
-  border-right: 1px solid #dee2e6;
-  backface-visibility: hidden;
-  will-change: transform
-}
+  transition: all 0.3s;
+  color: $sidebar-color;
+  width: $sidebar-width;
+  background-color: $sidebar-bg-color;
+  border-right: $sidebar-border-right;
 
-.c-sidenav-body {
-  position: relative;
-  -ms-flex: 1 1 0%;
-  flex: 1 1 0%;
-  overflow-x: hidden;
-  overflow-y: auto
+  &-body {
+    position: relative;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 24px 50px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 24px 24px;
+    }
+  }
+
+  &-menu {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    list-style: none;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0px;
+    }
+
+    &-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: $sidebar-color;
+    }
+
+    &-title {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      color: #adb5bd;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 24px;
+      }
+    }
+
+    &-submenu {
+      display: block;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style-type: none; 
+      
+      .c-sidenav-menu-link {
+        font-weight: 400;
+        color: $sidebar-color;
+        letter-spacing: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 0 8px;
+        line-height: 40px;
+
+        &:hover {
+          color: $sidebar-color;
+          background-color: #f1f3f5;
+          border-radius: 4px;
+        }
+      }
+      
+      .c-sidenav-menu-item-active {
+        .c-sidenav-menu-link {
+          background-color: #f1f3f5;
+          border-radius: 4px;
+          font-weight: bold;
+        }
+        &:hover > .c-sidenav-menu-link{
+          background-color: #f1f3f5;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
 }
 
 .c-sidenav~.main-container {
-  margin-left: 250px;
+  margin-left: $sidebar-width;
 }
-
-
-.c-sidenav-menu {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 30px;
-  list-style: none;
-}
-
-
 
 .c-sidenav-menu-item:hover>.c-sidenav-menu-link {
-  color: #1c7cd6;
+  color: $sidebar-color-active;
 }
 
 .c-sidenav-menu-item-active>.c-sidenav-menu-link .c-sidenav-menu-icon,
 .c-sidenav-menu-item:hover>.c-sidenav-menu-link .c-sidenav-menu-icon {
-  color: #1c7cd6
+  color: $sidebar-color-active
 }
 
 .c-sidenav-menu-item-active>.c-sidenav-menu-link {
-  color: #1c7cd6;
+  color: $sidebar-color-active;
 }
-
-
-
-.c-sidenav-menu-link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 16px 13px;
-  font-weight: 700;
-  color: #495057
-}
-
-
 
 .c-sidenav-menu-link .c-sidenav-menu-icon:hover {
-  color: #495057
-}
-
-.c-sidenav-menu-icon {
-  flex-basis: 26px;
-  flex-shrink: 0;
-  font-size: 18px;
-  color: #adb5bd;
-  text-align: center
-}
-
-.c-sidenav-menu-icon:hover {
-  color: #495057
-}
-
-.c-sidenav-menu-arrow {
-  display: inline-block;
-  margin-right: 5px;
-  font-size: 12px;
-  color: #495057;
-  cursor: pointer;
-  transition: transform .1s linear
-}
-
-.c-sidenav-menu-submenu {
-  display: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style-type: none; 
-  
-  .c-sidenav-menu-link {
-    padding: 10px 50px;
-    font-size: 13px;
-    font-weight: 400;
-    color: #495057;
-    letter-spacing: 0;
-    box-shadow: none;
-    &:hover {
-      color: #495057;
-      background-color: #f8f9fa;
-    }
-  }
-  .c-sidenav-menu-item-active {
-    .c-sidenav-menu-link {
-      background-color: #f8f9fa;
-      font-weight: bold;
-    }
-    &:hover > .c-sidenav-menu-link{
-      background: transparent !important;
-    }
-  }
-}
-
-
-.c-sidenav-menu-title {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-grow: 1;
-  margin-left: 10px;
-  font-size: 14px;
-  line-height: 1
+  color: $sidebar-color;
 }
 
 .c-sidenav-menu-item.c-sidenav-menu-item-active {
   .c-sidenav-menu-submenu {
     display: block !important;
+  }
+}
+
+.c-sidenav-navbar {
+  display: none;
+
+  &-link {
+    color: #6f7c8a;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 8px;
+    line-height: 40px;
+
+    &-active {
+      color: #454545;
+      font-weight: bold;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    margin: 12px 0 0;
+  }
+}
+
+.c-header-item-link-logo {
+  width: $sidebar-width;
+  padding-left: 14px;
+
+  svg {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin-right: 8px;
   }
 }

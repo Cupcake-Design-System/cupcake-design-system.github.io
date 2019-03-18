@@ -8,13 +8,10 @@
 @import "landing";
 @import "article";
 @import "content";
-@import "flavor-switch";
 @import "sidebar";
-@import "simplebar";
+@import "tabs";
 @import "component-examples";
 @import "callouts";
-@import "clipboard-js";
-@import "changelog";
 
 // Load docs dependencies
 @import "syntax";
@@ -22,47 +19,25 @@
 @import "algolia";
 
 
-
-.c-btn-primary:hover {
-  color: white;
-}
-
-.c-btn-secondary:hover {
-  color: black;
-}
-
-.c-modal-confirmation-icon {
-  font-size: 17px !important;
-}
-
-
-
-
 @media (max-width:767px) {
   .c-sidenav {
     width: 100%;
     position: relative;
   }
+
   .c-sidenav-body {
     display: none;
   }
+
   .main-container {
     width: 100%;
     margin-left: 0 !important;
   }
+
   .docs-bg-img {
-    padding: 1rem !important;
+    padding: 1.5rem 1rem !important;
   }
 }
-
-.c-sidenav-menu-item.c-sidenav-menu-item-active .c-sidenav-menu-link .c-sidenav-menu-arrow {
-  transform: rotate(90deg);
-}
-
-.c-dropdown-grid .c-dropdown-item {
-  align-items: center;
-}
-
 
 [data-tooltip]::after {
   padding: 4px 10px;
@@ -70,4 +45,33 @@
   line-height: 12px;
   max-width: 300px;
   font-size: 12px;
+}
+
+iframe {
+  border: 0;
+}
+
+
+::-webkit-scrollbar {
+  width: .25em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ced4da;
+  outline: none;
+}
+
+.c-header-inverse {
+  background: $dark;
+  height: 48px;
+}
+
+.c-header-item-link {
+  height: 48px;
+  padding: 0 16px;
+  font-size: 15px;
 }
