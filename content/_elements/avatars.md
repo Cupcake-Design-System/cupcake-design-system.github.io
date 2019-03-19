@@ -1,6 +1,6 @@
 ---
 title: Avatars
-description: A basic button triggers a single action in a task flow. We use three types of button styles primary, secondary, and tertiary. We use these in different combinations to guide users to continue and complete tasks.
+description: Avatars are used to represent the user’s identity onscreen with simple visuals/designs or to provide a placeholder identity for users who haven’t uploaded their own personal representation.
 colors:
 - primary
 - secondary
@@ -19,10 +19,14 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-### UX Guidance Yo! I'm in _Elements
+### Overview
 
-##### Icon-Only Button Usage
-{% include guide-img.html img='elements/buttons/icon-only-button-usage'%} 
+##### Types of avatars available:
+
+- People Version the user version is circular and should only be used for personal users.
+- Company Version - The company version is square and should only be used for company users.
+
+{% include guide-img.html img='elements/avatars/Types-of-Avatars'%} 
 
 ##### Icon-Only Button Usage in Forms
 {% include guide-img.html img='elements/buttons/icon-only-button-usage-forms'%} 
