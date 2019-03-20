@@ -203,7 +203,6 @@ Icon buttons are best used in combinations with other buttons, typically in tool
 ##### Variations
 Use colour on hover when using icon-only buttons as action or danger buttons.
 
-
 ##### Do's and Dont's
 
 ##### Icon button usage
@@ -229,8 +228,6 @@ Icon-only buttons are best used for common or repetitive actions, typically wher
 
 {% include guide-img.html img='elements/buttons/'%}
 
-
-
 ##### Do's and Dont's
 
 ##### Icon-only button usage
@@ -251,32 +248,71 @@ Icon-only buttons are best used for common or repetitive actions, typically wher
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ### Base
-Use when displaying information that does not require a user action, such as a read-only document or a supplemental video.
+Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
 
 {% example html %}
-<div id="modal_info" class="c-modal c-modal-info c-modal-fade c-modal-in">
-<div class="c-modal-dialog">
-    <div class="c-modal-content">
-        <div class="c-modal-header">
-            <div class="c-modal-title">Modal header</div>
-            <button type="button" class="c-modal-close">
-                    <span onclick="closeDefault()" aria-hidden="true">×</span>
-                </button>
-        </div>
-    <div class="c-modal-body c-text-center">
-        <i class="fa fa-question-circle c-modal-confirmation-icon"></i>
-        <span class="c-modal-confirmation-title">Modal Title</span>
-        <p class="c-modal-confirmation-text">Modal Text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eum.</p>
-        <div class="c-modal-confirmation-buttons">
-        <span class="close-modal" aria-hidden="true">
-            <button onclick="closeInfo()" class=" close-modal c-btn c-btn-secondary c-m-right-sm">Cancel</button>
-            <button onclick="closeInfo()" class=" close c-btn c-btn-primary">Ok</button>
-            </span>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
+<button type="button" class="c-btn c-btn-primary">Button</button>
+{% endexample %}
+
+### Color Examples
+This is an example of available colors for the Buttons element.
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary">Primary</button>
+<button type="button" class="c-btn c-btn-secondary">Secondary</button>
+<button type="button" class="c-btn c-btn-success">Success</button>
+<button type="button" class="c-btn c-btn-warning">Warning</button>
+<button type="button" class="c-btn c-btn-danger">Danger</button>
+{% endexample %}
+
+### Size Examples
+This is an example of available sizes for the Buttons element.
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary c-btn-xs">X-Small</button>
+<button type="button" class="c-btn c-btn-primary c-btn-sm">Small</button>
+<button type="button" class="c-btn c-btn-primary c-btn-lg">Large</button>
+<button type="button" class="c-btn c-btn-primary c-btn-xl">X-Large</button>
+{% endexample %}
+
+### Disabled State
+Make buttons look inactive by adding the disabled boolean attribute to any <button> element.
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary" disabled>Primary</button>
+<button type="button" class="c-btn c-btn-secondary" disabled>Secondary</button>
+<button type="button" class="c-btn c-btn-success" disabled>Success</button>
+<button type="button" class="c-btn c-btn-warning" disabled>Warning</button>
+<button type="button" class="c-btn c-btn-danger" disabled>Danger</button>
+{% endexample %}
+
+### Additional Styles and Options
+This modifiers can be mixed/matched as needed
+
+#### Outlines
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary-outline">Primary</button>
+<button type="button" class="c-btn c-btn-secondary-outline">Secondary</button>
+<button type="button" class="c-btn c-btn-success-outline">Success</button>
+<button type="button" class="c-btn c-btn-warning-outline">Warning</button>
+<button type="button" class="c-btn c-btn-danger-outline">Danger</button>
+{% endexample %}
+
+#### Pills and Colors
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary c-btn-pill">Primary</button>
+<button type="button" class="c-btn c-btn-secondary c-btn-pill">Secondary</button>
+<button type="button" class="c-btn c-btn-success c-btn-pill">Success</button>
+<button type="button" class="c-btn c-btn-warning c-btn-pill">Warning</button>
+<button type="button" class="c-btn c-btn-danger c-btn-pill">Danger</button>
+{% endexample %}
+
+#### Block Button
+
+{% example html %}
+<button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>
 {% endexample %}
 
 </div>
