@@ -51,19 +51,19 @@ By consistently tying typographic styles to appropriate functions in the interfa
 
 ### Body
 
-{% example html %}
+<div data-example>
 {% for size in page.sizes %}
 <div class="c-text-{{ size }}">This is {{ size }} text</div>{% endfor %}
-{% endexample %}
+</div>
 
 ### Header
 
 Heading should be used for titles of top-level sections of a screen or section.
 
-{% example html %}
+<div data-example>
 {% for size in page.sizes %}
 <div class="c-header-{{ size }}">This is the {{ size }} header</div>{% endfor %}
-{% endexample %}
+</div>
 
 
 ## Emphasis
@@ -74,9 +74,9 @@ To communicate content hierarchy, use the core typographic scale first. Once the
 ### Muted
 Muted content isn’t unimportant or superfluous, but rather makes room for the eye to orient itself and focus on core content.
 
-{% example html %}
+<div data-example>
 <div class="c-header-lg">I'm a Header <span class="c-text-muted"> I am muted</span></div>
-{% endexample %}
+</div>
 
 In general, avoid using muted on its own, when not contrasting with other text from the same part of the type scale. There are exceptions: muted may be used for standalone content when it represents a non-actionable or otherwise unimportant state of something, i.e. when the normal content is absent.
 
@@ -85,22 +85,22 @@ In general, avoid using muted on its own, when not contrasting with other text f
 
 Default text styles have a normal font weight. You can add emphasis in context by adding a bold style.
 
-{% example html %}
+<div data-example>
 <div class="c-text-lg">This is normal text<span class="c-text-bold"> This text is bold.</span></div>
-{% endexample %}
+</div>
 
 
 ### Additional Styles
 
 Additional text helpers also available.
 
-{% example html %}
+<div data-example>
 <div class="c-text-lg c-a">This is a link</div>
 <div class="c-text-lg c-text-capitalize">this is capitalized</div>
 <div class="c-text-lg c-text-italic">This is italic</div>
 <div class="c-header-xs">This header is bold <span class="c-text-light">yet this has.c-text-light applied</span>
 </div>
-{% endexample %}
+</div>
 
 ### Text Styles
 

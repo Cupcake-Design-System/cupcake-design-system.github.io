@@ -24,7 +24,7 @@ Cards can also have specialist functionality when used in a specific context.
 ## Base
 The base card provides a simple container with padding, borders, background, text values
 
-{% example html %}
+<div data-example>
 <div class="c-card">
   <div class="c-card-content">
     <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>
@@ -35,13 +35,13 @@ The base card provides a simple container with padding, borders, background, tex
       et iaculis est facil isis nec.</div>
   </div>
 </div>
-{% endexample %}
+</div>
 
 ### With Header
 
 Cards can include headers, footers, a wide variety of content and card-specific styles.
 
-{% example html %}
+<div data-example>
 <div class="c-card">
   <header class="c-card-header">
     <div class="c-card-header-title">
@@ -65,13 +65,13 @@ Cards can include headers, footers, a wide variety of content and card-specific 
       et iaculis est facil isis nec.</div>
   </div>
 </div>
-{% endexample %}
+</div>
 
 
 ### Header and Footer
 
 
-{% example html %}
+<div data-example>
 <div class="c-card">
   <header class="c-card-header">
     <div class="c-card-header-title">
@@ -91,7 +91,7 @@ Cards can include headers, footers, a wide variety of content and card-specific 
   </div>
   <div class="c-card-footer">Footer if needed</div>
 </div>
-{% endexample %}
+</div>
 
 
 
@@ -99,7 +99,7 @@ Cards can include headers, footers, a wide variety of content and card-specific 
 
 This is an example of available colors for the **{{ page.title }}** element. 
 
-{% example html %}
+<div data-example>
 {% for color in page.colors %}
 <div class="c-card c-card-{{ color }}">
   <header class="c-card-header">
@@ -121,7 +121,7 @@ This is an example of available colors for the **{{ page.title }}** element.
   <div class="c-card-footer">Footer if needed</div>
 </div>
 {% endfor %}
-{% endexample %}
+</div>
 </div>
 
 

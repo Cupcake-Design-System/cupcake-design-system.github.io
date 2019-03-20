@@ -25,14 +25,14 @@ These flexbox-based utilities can replace the need for a grid system in many ins
 
 
 To set a container to display flex, add the .c-d-flex class.
-{% example html %}
+<div data-example>
 <div class="c-d-flex docs- c-p-sm c-bg-success c-text-white">I'm a flexbox container!</div>
-{% endexample %}
+</div>
 
 To set a container to inline-flex, use the class .c-d-inline-flex.
-{% example html %}
+<div data-example>
 <div class="c-d-inline-flex docs- c-p-sm c-bg-primary c-text-white">I'm an inline flexbox container!</div>
-{% endexample %}
+</div>
 
 
 **Inevitably you'll wish to adjust flex at various breakpoints. You can do so with the responsive variations.**
@@ -67,7 +67,7 @@ You may wish to reverse this - or change at the appropriate screen size.
 
 Use `.c-flex-row` to set a horizontal direction (the browser default not needed unless resetting at a different breakpoint), or `.c-flex-row-reverse` to start the horizontal direction from the opposite side.
 
-{% example html %}
+<div data-example>
 <div class="c-d-flex c-flex-row docs- c-bg-primary-3 c-text-white c-m-bottom-md">
   <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
   <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
@@ -78,12 +78,12 @@ Use `.c-flex-row` to set a horizontal direction (the browser default not needed 
   <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
   <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
 </div>
-{% endexample %}
+</div>
 
 ## Vertical
 Use `.c-flex-column` to set a vertical direction, or `.c-flex-column-reverse`  to start the vertical direction from the opposite side.
 
-{% example html %}
+<div data-example>
 <div class="c-d-flex c-flex-column docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
   <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
   <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
@@ -94,7 +94,7 @@ Use `.c-flex-column` to set a vertical direction, or `.c-flex-column-reverse`  t
   <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
   <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
 </div>
-{% endexample %}
+</div>
 
 
 **Responsive variations also exist for `flex-direction`.**
@@ -140,7 +140,7 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 
 
 ## Nowrap
-{% example html %}
+<div data-example>
   <div class="c-d-flex c-flex-nowrap docs- c-bg-primary-3 c-text-white">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -158,11 +158,11 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}
+</div>
 
 
 ## Auto Wrap
-{% example html %}
+<div data-example>
   <div class="c-d-flex c-flex-wrap docs- c-bg-primary-3 c-text-white">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -180,12 +180,12 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}
+</div>
 
 
 ## Wrap Reverse
 
-{% example html %}
+<div data-example>
   <div class="c-d-flex c-flex-wrap-reverse docs- c-bg-primary-3 c-text-white">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -203,7 +203,7 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}
+</div>
 
 
 **Responsive variations also exist for `c-flex-wrap`.**
@@ -241,49 +241,49 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 To control the spacing for items on the main axis, use the justify-content utilities. Choose from `start` (browser default), `end`, `center`, `space-between`, or `space-around`.
 
 ## Start
-{% example html %}
+<div data-example>
   <div class="c-d-flex c-justify-start docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 ## End
-{% example html %}
+<div data-example>
   <div class="c-d-flex c-justify-end docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 ## Center
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-justify-center docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 ## Space Between
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-justify-space-between docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 ## Space Around
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-justify-space-around docs- c-bg-primary-3 c-text-white">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 
 **Responsive variations also exist for `c-justify-content`.**
@@ -333,53 +333,53 @@ To align items along the cross-axis, use the align-content utilities. Choose fro
 
 ## Top
 
-{% example html %} 
+<div data-example> 
   <div class="c-d-flex c-align-top docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}    
+</div>    
 
 ## Bottom
 
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-align-bottom docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}    
+</div>    
 
 ## Center
 
-{% example html %}    
+<div data-example>    
   <div class="c-d-flex c-align-center docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}    
+</div>    
 
 ## Baseline
 
-{% example html %}    
+<div data-example>    
   <div class="c-d-flex c-align-baseline docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}    
+</div>    
 
 ## Stretch
 
-{% example html %}    
+<div data-example>    
   <div class="c-d-flex c-align-stretch docs- c-bg-primary-3 c-text-white" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}    
+</div>    
 
 **Responsive variations also exist for `align`.**
 
@@ -429,49 +429,49 @@ To align flexbox items on an item-by-item basis, use the align-self utilities. C
 
 
 ## Top
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="c-align-self-top docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}   
+</div>   
 
 ## Bottom
-{% example html %}    
+<div data-example>    
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="c-align-self-bottom docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}   
+</div>   
 
 ## Center
-{% example html %}    
+<div data-example>    
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="c-align-self-center docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}   
+</div>   
 
 ## Baseline
-{% example html %}    
+<div data-example>    
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="c-align-self-baseline docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}   
+</div>   
 
 ## Stretch
-{% example html %}    
+<div data-example>    
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="c-align-self-stretch docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %} 
+</div> 
 
 
 **Responsive variations also exist for `align-self`.**
@@ -531,7 +531,7 @@ This property has no effect on single rows of flex items.
 
 ## Start
 
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-align-content-start c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -549,12 +549,12 @@ This property has no effect on single rows of flex items.
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 
 ## End
 
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-align-content-end c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -572,13 +572,13 @@ This property has no effect on single rows of flex items.
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 
 
 ## Center
 
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-align-content-center c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -596,11 +596,11 @@ This property has no effect on single rows of flex items.
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 ## Between
 
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-align-content-between c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -618,12 +618,12 @@ This property has no effect on single rows of flex items.
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 
 ## Around
 
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-align-content-around c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -641,12 +641,12 @@ This property has no effect on single rows of flex items.
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 
 ## Stretch
 
-{% example html %}  
+<div data-example>  
   <div class="c-d-flex c-align-content-stretch c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -664,7 +664,7 @@ This property has no effect on single rows of flex items.
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-{% endexample %}  
+</div>  
 
 **Responsive variations also exist for `.c-align-content`.**
 
@@ -724,22 +724,22 @@ These utility classes float an element to the left or right, or disable floating
 
 Toggle a float with a class:
 
-{% example html %}
+<div data-example>
 <div class="c-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on all viewport sizes</div><br>
 <div class="c-pull-right docs- c-p-sm c-bg-primary c-text-white ">Float right on all viewport sizes</div><br>
 <div class="c-pull-none docs- c-p-sm c-bg-primary c-text-white c-m-top-lg">Don't float on all viewport sizes</div>
-{% endexample %}
+</div>
 
 ## Responsive
 
 Responsive variations also exist for each `float` value.
 
-{% example html %}
+<div data-example>
 <div class="c-sm-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized SM (small) or wider</div><br>
 <div class="c-md-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized MD (medium) or wider</div><br>
 <div class="c-lg-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized LG (large) or wider</div><br>
 <div class="c-xl-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized XL (extra-large) or wider</div><br>
-{% endexample %}
+</div>
 
 
 Here are all the support classes:

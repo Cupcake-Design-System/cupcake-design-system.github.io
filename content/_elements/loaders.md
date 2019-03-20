@@ -44,26 +44,26 @@ The basic skeleton loader is used to represent any smaller piece of text based d
 
 ## Application loader
 
-{% example html %}
+<div data-example>
 <div class="c-card">
   <div class="c-card-content c-m-top-lg c-m-bottom-lg c-full-page-loader-logo">
   </div>
 </div>
-{% endexample %}
+</div>
 
 ---
 
 ## Content Loader
 
-{% example html %}
+<div data-example>
 <div class="c-full-page-loader"></div>
-{% endexample %}
+</div>
 
 ---
 
 ## Skeleton Loaders
 
-{% example html %}
+<div data-example>
 <div class="c-card">
     <div class="c-card-content">
       <div class="c-skeleton-loading"></div>
@@ -71,6 +71,6 @@ The basic skeleton loader is used to represent any smaller piece of text based d
       <div class="c-skeleton-loading"></div>
     </div>
   </div>
-{% endexample %}
+</div>
 
 </div>

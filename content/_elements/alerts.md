@@ -102,17 +102,17 @@ Alerts provide contextual information relevent to the user.
 
 The default alert does not imply action. The color is simple gray and doesn't include an icon or close action.
 
-{% example html %}
+<div data-example>
 <div class="c-alert">
  <strong>Oh snap there is a problem!</strong>
 </div>
-{% endexample %}
+</div>
 
 ## Color Examples
 
 This is an example of available colors for the **{{ page.title }}** element. 
 
-{% example html %}
+<div data-example>
 {% for color in page.colors %}
 <div class="c-alert c-alert-{{ color }}">
     <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
@@ -121,14 +121,14 @@ This is an example of available colors for the **{{ page.title }}** element.
     This is a {{ color | capitalize }} alert
 </div>
 {% endfor %}
-{% endexample %}
+</div>
 
 
 ## Additional Styles/Options
 
 ### Alert top
 
-{% example html %}
+<div data-example>
 {% for color in page.colors %}
 <div class="c-alert c-alert-top c-alert-{{ color }}">
     <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
@@ -138,11 +138,11 @@ This is an example of available colors for the **{{ page.title }}** element.
 </div>
 <br>
 {% endfor %}
-{% endexample %}
+</div>
 
 ### In columns with icons
 
-{% example html %}
+<div data-example>
 <div class="c-row">
     <div class="c-col">
         <div class="c-alert c-alert-danger">
@@ -157,16 +157,16 @@ This is an example of available colors for the **{{ page.title }}** element.
         </div>
     </div>
 </div>
-{% endexample %}
+</div>
 
 ### Toast
-{% example html %}
+<div data-example>
 {% for color in page.colors %}
 <div class="c-toast-alert c-toast-alert-{{ color }}">
     <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
     dictum sem, a pretium dui.
 </div>
 {% endfor %}
-{% endexample %}
+</div>
 
 </div>

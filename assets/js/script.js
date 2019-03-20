@@ -54,37 +54,6 @@ $('html').on('click.ui.btn', '#highlight-toggle', function(e) {
 
 
 /************************************************
-* Clipboard
-*************************************************/
-$('div.highlight pre').each(function () {
-  var btnHtml = '<div class="docs-clipboard"><button class="docs-btn c-btn c-btn-xs c-btn-primary" data-tooltip="Copy To Clipboard" data-tooltip-conf="right square">Copy</button></div>'
-  $(this).after(btnHtml)
-})
-
-var clipboard = new Clipboard('.docs-btn', {
-  target: function (trigger) {
-    return trigger.parentNode.previousElementSibling
-  }
-})
-
-clipboard.on('success', function (e) {
-  $(e.trigger)
-    .attr('data-tooltip', 'Copied!')
-    .attr('data-tooltip-conf', 'success right square')
-
-  e.clearSelection()
-})
-
-clipboard.on('error', function (e) {
-  var modifierKey = /Mac/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl-'
-  var fallbackMsg = 'Press ' + modifierKey + 'C to copy'
-
-  $(e.trigger)
-    .attr('title', fallbackMsg)
-})
-
-
-/************************************************
 * Add deep anchors
 *************************************************/  
 anchors.options = {
@@ -111,4 +80,33 @@ clipboard.on('success', function (e) {
   });
 
 }(jQuery));
+
+
+
+// Add prism highlighting to code
+  $( window ).bind( "create.example", function( e ) {
+
+    $( ".highlight" ).find( "code" ).addClass( "language-markup" );
+    Prism.highlightAll();
+
+
+      var $target = $( e.target );
+      
+			var $snippet = $target.find( ".docs-snippet" );
+			var html = $snippet.html();
+			var $link = $( "<button href='#' class='c-btn c-btn-xs c-btn-primary doc-btn' data-tooltip='Copy To Clipboard' data-tooltip-conf='right square'>Copy</button>" );
+			// place the link after the snippet but before the code
+			$( "pre.language-markup" ).after( $link );
+			// set of up the clipboard to use the html
+			new Clipboard($link[0], {
+				text: function(){
+					return html;
+				}
+      });
+    
+			// disable the normal link click behavior
+			$link.bind( "click", function(event ){ event.preventDefault() });
+
+  });
+
 

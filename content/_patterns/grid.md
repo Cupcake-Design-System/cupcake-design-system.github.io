@@ -13,14 +13,14 @@ Cupcake's grid system uses a series of containers, rows, and columns to layout a
 By Default rows are flex enabled. They have a -15px margin to offset and align correctly inside containers.
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col">First c-col</div>
   <div class="c-col">Second c-col</div>
   <div class="c-col">Third c-col</div>
   <div class="c-col">Fourth c-col</div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
@@ -30,7 +30,7 @@ By Default columns are flex enabled and will stretch to fit the row.
 Adding row modifiers can change the flex behavior, alignment, and wrapping.
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col">
     1a
@@ -48,14 +48,14 @@ Adding row modifiers can change the flex behavior, alignment, and wrapping.
     4a
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
 ### Unstretch
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-content-unstretch">
   <div class="c-col">
     1a
@@ -73,13 +73,13 @@ Adding row modifiers can change the flex behavior, alignment, and wrapping.
     4a
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Align Start
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-align-start">
   <div class="c-col">
     1a
@@ -97,12 +97,12 @@ Adding row modifiers can change the flex behavior, alignment, and wrapping.
     4a
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Align End
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-align-end">
   <div class="c-col">
     1a
@@ -120,12 +120,12 @@ Adding row modifiers can change the flex behavior, alignment, and wrapping.
     4a
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Align Center
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-align-center">
   <div class="c-col">
     1a
@@ -143,12 +143,12 @@ Adding row modifiers can change the flex behavior, alignment, and wrapping.
     4a
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Align Stretch
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-align-stretch">
   <div class="c-col">
     1a
@@ -166,21 +166,21 @@ Adding row modifiers can change the flex behavior, alignment, and wrapping.
     4a
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Collapsed
 Adding **`.c-row-collapsed`** will remove the default padding on a column.
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-collapsed">
   <div class="c-col">First c-col</div>
   <div class="c-col">Second c-col</div>
   <div class="c-col">Third c-col</div>
   <div class="c-col">Fourth c-col</div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Wrap
@@ -191,7 +191,7 @@ Wrapping Columns will take up an equal amount of horizontal space per line, unle
 Please resize your browser to a small width to see this effect.
 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-wrap">
   <div class="c-col">1</div>
   <div class="c-col">2</div>
@@ -206,11 +206,11 @@ Please resize your browser to a small width to see this effect.
   <div class="c-col">11</div>
   <div class="c-col">12</div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-wrap-reverse">
   <div class="c-col">1</div>
   <div class="c-col">2</div>
@@ -225,7 +225,7 @@ Please resize your browser to a small width to see this effect.
   <div class="c-col">11</div>
   <div class="c-col">12</div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
@@ -241,7 +241,7 @@ Each column will have an equal width, no matter the number of columns.
 Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like .c-col-sm-4.
 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col-sm-4">
     .c-col-sm-4
@@ -253,7 +253,7 @@ Utilize breakpoint-specific column classes for easy column sizing without an exp
     .c-col-sm-4
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
@@ -262,19 +262,19 @@ Utilize breakpoint-specific column classes for easy column sizing without an exp
 Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like .c-col-sm-4.
 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row c-row-vertical">
   <div class="c-col">1</div>
   <div class="c-col">2</div>
   <div class="c-col">3</div>
   <div class="c-col">4</div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col">
     First Column
@@ -289,12 +289,12 @@ Utilize breakpoint-specific column classes for easy column sizing without an exp
     Fourth Column
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Column Sizes 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
   <div class="c-row">
     <div class="c-col-md-8">
       .c-col-md-8
@@ -334,21 +334,21 @@ Utilize breakpoint-specific column classes for easy column sizing without an exp
       .c-col-md-9
     </div>    
   </div> 
-  {% endexample %} 
+  </div> 
 </div>
 
 ### Order
 The order of Columns in a c-row section can be altered by adding a .c-col-order-{#} class to the Columns. In the example below the HTML elements exist in alphabetical order, but the classes re-order them without altering the HTML order.
 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col c-col-order-4">1</div>
   <div class="c-col c-col-order-1">2</div>
   <div class="c-col c-col-order-start">3</div>
   <div class="c-col c-col-order-2">4</div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Offset
@@ -356,7 +356,7 @@ While you can use empty c-row (like <div class="c-col"></div>) to create horizon
 
 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col-sm-6 c-col-sm-offset-3">
     .c-col-sm-6 .c-col-sm-offset-3
@@ -372,7 +372,7 @@ While you can use empty c-row (like <div class="c-col"></div>) to create horizon
     .c-col-sm-11 .c-col-sm-offset-1
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
@@ -381,7 +381,7 @@ You can define a c-col size for each viewport size.
 
 
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col-12 c-col-sm-6 c-col-md-3">
   .c-col-12 .c-col-sm-6 .c-col-md-3
@@ -393,7 +393,7 @@ You can define a c-col size for each viewport size.
   <div class="c-col">
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
@@ -405,21 +405,21 @@ This will only alter the alignment of the specific Columns. All Columns without 
 Please note that the .c-col-align-baseline class has to be applied to at least two .c-col elements within a .c-row section for this property to have effect.
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col">Default(Stretch)</div>
   <div class="c-col c-col-align-start">Align Start</div>
   <div class="c-col c-col-align-center">Align Center</div>
   <div class="c-col c-col-align-end">Align End</div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 ### Column Shrink
 If you want a c-col to only take the space it needs, use the .c-col-shrink modifier. The other c-col(s) will fill up the remaining space.
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row">
       <div class="c-col c-col-shrink">
         .c-col-shrink
@@ -428,14 +428,14 @@ If you want a c-col to only take the space it needs, use the .c-col-shrink modif
         Flexible column
       </div>
     </div>
-{% endexample %}
+</div>
 </div>
 
 ### Column Collapsed
 Sometimes it might be preferable to disable the gutters of a specific c-col instead of all Columns. This can be achieved by adding the .c-col-collapsed class to a .c-col element. Please note that this ONLY WORKS when combined with a specific .c-col-{number} class. Otherwise the other Columns will take up the newly freed up space created by the lack of gutters on the c-col.
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col-3">
   Normal
@@ -450,13 +450,13 @@ Sometimes it might be preferable to disable the gutters of a specific c-col inst
   Normal
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
 ### Nesting
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-row">
   <div class="c-col-sm-12">
     Level 1: .col-sm-9
@@ -470,13 +470,13 @@ Sometimes it might be preferable to disable the gutters of a specific c-col inst
     </div>
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
 ### Variable width content
 <div class="docs-example-row">
-{% example html %}
+<div data-example>
 <div class="c-container">
   <div class="c-row c-justify-center">
     <div class="c-col-2">
@@ -501,5 +501,5 @@ Sometimes it might be preferable to disable the gutters of a specific c-col inst
     </div>
   </div>
 </div>
-{% endexample %}
+</div>
 </div>

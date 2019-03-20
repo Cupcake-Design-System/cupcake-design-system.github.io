@@ -43,9 +43,21 @@ tabs:
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ### Code Example Normal
-{% example html %}
+<div data-example>
   <button type="button" class="c-btn c-btn-primary">Button</button>
-{% endexample %}
+</div>
+
+<div data-example>
+  <button type="button" class="c-btn c-btn-primary">Button</button>
+</div>
+
+
+<div data-example>
+{% for color in page.colors %}
+<button type="button" class="c-btn c-btn-{{ color }}">Button</button>
+{% endfor %}
+</div>
+
 
 </div>
 

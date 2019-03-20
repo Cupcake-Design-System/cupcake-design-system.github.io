@@ -28,43 +28,43 @@ Single purpose classes for setting the display of an element at any breakpoint.
 ## Display Block
 Block will inherently set width to 100% of its parent element. It will also cause a line break, even if the declared width doesn’t take up the full width of the parent.
 
-{% example html %}
+<div data-example>
 <span class="c-d-block docs- c-p-sm c-bg-primary c-text-white">c-d-block</span>
-{% endexample %}
+</div>
 
 ## Display Inline Block
 Inline-block will wrap around content inline. It also allows you to set height and width properties on the element, which display inline does not allow you to do. It does render the white-space between elements, so if you set width: 25% to four elements they will not just render as a 4 column layout by default.
 
-{% example html %}
+<div data-example>
 <span class="c-d-inline-block docs- c-p-sm c-bg-primary c-text-white">c-d-inline-block</span>
 <span class="c-d-inline-block docs- c-p-sm c-bg-success c-text-white">c-d-inline-block</span>
 <span class="c-d-inline-block docs- c-p-sm c-bg-warning c-text-white">c-d-inline-block</span>
 <span class="c-d-inline-block docs- c-p-sm c-bg-danger c-text-white">c-d-inline-block</span>
-{% endexample %}
+</div>
 
 
 ## Display Inline 
 Inline doesn’t respect height or width values. It does not render white space between elements.
 
-{% example html %}
+<div data-example>
 <span class="c-d-inline docs- c-p-sm c-bg-primary c-text-white">c-d-inline</span>
 <span class="c-d-inline docs- c-p-sm c-bg-success c-text-white">c-d-inline</span>
 <span class="c-d-inline docs- c-p-sm c-bg-warning c-text-white">c-d-inline</span>
 <span class="c-d-inline docs- c-p-sm c-bg-danger c-text-white">c-d-inline</span>
-{% endexample %}
+</div>
 
 
 ## Display Table 
 The display table can be combined with display table-cell to render a table without table markup. This can be useful for vertically aligning content or for auto-calculating a variable number of table cells.
 
-{% example html %}
+<div data-example>
 <div class="c-d-table">
   <span class="c-d-table-cell docs- c-p-sm c-bg-primary c-text-white">display</span>
   <span class="c-d-table-cell docs- c-p-sm c-bg-success c-text-white">table</span>
   <span class="c-d-table-cell docs- c-p-sm c-bg-warning c-text-white">will automatically</span>
   <span class="c-d-table-cell docs- c-p-sm c-bg-danger c-text-white">compute cell width</span>
 </div>
-{% endexample %}
+</div>
 
 
 ## Syntax

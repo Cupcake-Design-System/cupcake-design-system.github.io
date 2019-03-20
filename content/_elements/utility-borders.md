@@ -28,14 +28,14 @@ directions:
 Add classes to an element to remove all borders or some borders.
 
 <div class="docs-example-border-utils">
-{% example html %}
+<div data-example>
 <span class="c-bd-0"></span>
 <span class="c-bd"></span>
 <span class="c-bd-top"></span>
 <span class="c-bd-right"></span>
 <span class="c-bd-bottom"></span>
 <span class="c-bd-left"></span>
-{% endexample %}
+</div>
 </div>
 
 ## Border color
@@ -43,9 +43,9 @@ Add classes to an element to remove all borders or some borders.
 Change the border color using utilities built on our theme colors.
 
 <div class="docs-example-border-color-utils">
-{% example html %}
+<div data-example>
 {% for color in site.data.theme-colors %}
 <span class="c-bd c-bd-{{ color.name }}"></span>{% endfor %}
-{% endexample %}
+</div>
 </div>
 

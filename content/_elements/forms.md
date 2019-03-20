@@ -37,9 +37,9 @@ tabs:
 
 A text field is an input field that a user can type into. It has a range of options and supports several text formats.
 
-{% example html %}
+<div data-example>
 <input class="c-input" type="text" placeholder="Text input">
-{% endexample %}
+</div>
 
 ---
 
@@ -52,13 +52,13 @@ This is an example of available colors for the **{{ page.title }}** element.
 - A warning state kicks in when the user input is in a less desirable format than preferred by the system. The user can still progress past the warning state, but is given the opportunity to course correct to a more desirable format.
 
 
-{% example html %}
+<div data-example>
 {% for color in page.colors %}
 <div class="c-form-group">
   <input class="c-input c-input-{{ color }}" type="text" placeholder="{{ color | capitalize }} input">
 </div>
 {% endfor %}
-{% endexample %}
+</div>
 
 ---
 
@@ -66,13 +66,13 @@ This is an example of available colors for the **{{ page.title }}** element.
 
 This is an example of available size's for the **{{ page.title }}** element.
 
-{% example html %}
+<div data-example>
 {% for size in page.sizes %}
 <div class="c-form-group">
   <input class="c-input c-input-{{ size }}" type="text" placeholder="{{ size | capitalize }} input">
 </div>
 {% endfor %}
-{% endexample %}
+</div>
 
 ---
 
@@ -80,9 +80,9 @@ This is an example of available size's for the **{{ page.title }}** element.
 
 Make buttons look inactive by adding the disabled boolean attribute to any <button> element.
 
-{% example html %}
+<div data-example>
 <input class="c-input" type="text" placeholder="I`m disabled" disabled>
-{% endexample %}
+</div>
 
 ---
 
@@ -90,7 +90,7 @@ Make buttons look inactive by adding the disabled boolean attribute to any <butt
 
 ### Labels
 
-{% example html %}
+<div data-example>
 <div class="c-row">
 <div class="c-col-md-2">
   <label for="forms-input-warning" class="c-input-label">Label:  
@@ -100,35 +100,35 @@ Make buttons look inactive by adding the disabled boolean attribute to any <butt
     <input type="text" id="forms-input" placeholder="Text input" class="c-input">
 </div>
 </div>
-{% endexample %}
+</div>
 
 ---
 
 ### Helper Text
 
 Static always visible
-{% example html %}
+<div data-example>
 <div class="c-input-container c-m-bottom-sm">
   <input class="c-input c-input-success" type="text" placeholder="Text input" value="$J-Money$" id="input-helper-1">
   <span class="c-hint c-hint-static c-hint-success">
     <i class="fa fa-check"></i> This username is silly but available!</span>
 </div>
-{% endexample %}
+</div>
 
 
 Text appears on focus.
-{% example html %}
+<div data-example>
 <div class="c-input-container c-m-bottom-sm">
   <input class="c-input c-input-error" type="text" placeholder="Click in here to see helper text" value id="input-helper-1">
   <span class="c-hint c-hint-error"><i class="fa fa-check"></i> I animate in when input is focused!</span>
 </div>
-{% endexample %}
+</div>
 
 ---
 
 ### Icons inside inputs
 
-{% example html %}
+<div data-example>
 <div class="c-row">
 <div class="c-col-md-2">
   <label for="forms-input-warning" class="c-input-label">Label:  
@@ -141,13 +141,13 @@ Text appears on focus.
   </div>
 </div>
 </div>
-{% endexample %}
+</div>
 
 ---
 
 ### Input Add-ons
 
-{% example html %}
+<div data-example>
 <div class="c-input-group">
   <div class="c-input-addon">@</div>
   <div class="c-input-container">
@@ -192,14 +192,14 @@ Text appears on focus.
     <input type="text" class="c-input">
   </div>
 </div>
-{% endexample %}
+</div>
 
 
 ---
 
 ### Add Buttons at any size
 
-{% example html %}
+<div data-example>
 {% for size in page.sizes %}
 <div class="c-input-group">
   <button class="c-btn c-btn-primary c-btn-{{ size }}">Action</button>
@@ -209,11 +209,11 @@ Text appears on focus.
 </div>
 <br>
 {% endfor %}
-{% endexample %}
+</div>
 
 
 
-{% example html %}
+<div data-example>
 {% for size in page.sizes %}
 <div class="c-input-group">
   <div class="c-input-container">
@@ -224,60 +224,60 @@ Text appears on focus.
 </div>
 <br>
 {% endfor %}
-{% endexample %}
+</div>
 
 ---
 
 ### Elements Inline
 
-{% example html %}
+<div data-example>
 <div class="c-m-bottom-md c-body-text">
 	<span>Write some text in the box</span>
   <input placeholder="write here!" type="text" class="c-input c-input-sm c-input-inline">
   <span>Submit when done</span>
   <button class="c-btn c-btn-primary c-btn-sm">Submit</button>
 </div>
-{% endexample %}
+</div>
 
 ---
 
 ## Textarea 
 
 ### Default 
-{% example html %}
+<div data-example>
 <div class="c-form-group">
   <textarea class="c-input" placeholder="Placeholder Text"></textarea>
 </div>
-{% endexample %}
+</div>
 
 ### Define Height
 You can set the height of the textarea using the rows HTML attribute.
-{% example html %}
+<div data-example>
 <div class="c-form-group">
   <textarea class="c-input" placeholder="10 lines of textarea" rows="10"></textarea>
 </div>
-{% endexample %}
+</div>
 
 
 ### Textarea Colors
-{% example html %}
+<div data-example>
 {% for color in page.colors %}
 <div class="c-form-group">
   <textarea class="c-input c-input-{{ color }}" type="text" placeholder="{{ color | capitalize }} input">
 </textarea>
 </div>
 {% endfor %}
-{% endexample %}
+</div>
 
 ### Textarea Sizes
-{% example html %}
+<div data-example>
 {% for size in page.sizes %}
 <div class="c-form-group">
   <textarea class="c-input c-input-{{ size }}" type="text" placeholder="{{ size | capitalize }} input">
 </textarea>
 </div>
 {% endfor %}
-{% endexample %}
+</div>
 
 ---
 
@@ -285,17 +285,17 @@ You can set the height of the textarea using the rows HTML attribute.
 The browser built-in select dropdown, styled accordingly
 
 ### Default Select
-{% example html %}
+<div data-example>
 <div class="c-form-group">
 <select class="c-input">
   <option>Select dropdown</option>
   <option>With options</option>
 </select>
 </div>
-{% endexample %}
+</div>
 
 ### Select Sizes
-{% example html %}
+<div data-example>
 {% for size in page.sizes %}
 <div class="c-form-group">
 <select class="c-input c-input-{{ size }}">
@@ -304,17 +304,17 @@ The browser built-in select dropdown, styled accordingly
 </select>
 </div>
 {% endfor %}
-{% endexample %}
+</div>
 
 ### Disabled
-{% example html %}
+<div data-example>
 <div class="c-form-group">
 <select class="c-input" disabled>
   <option>Select dropdown</option>
   <option>With options</option>
 </select>
 </div>
-{% endexample %}
+</div>
 
 ---
 
@@ -322,12 +322,12 @@ The browser built-in select dropdown, styled accordingly
 ## File Upload
 Some basic styling for file upload areas.
 
-{% example html %}
+<div data-example>
 <div class="c-file-upload">
   File Upload
   <button class="c-btn c-btn-sm c-btn-primary"> Button </button>
 </div>
-{% endexample %}
+</div>
 
 ---
 

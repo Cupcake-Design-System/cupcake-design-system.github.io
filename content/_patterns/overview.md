@@ -11,29 +11,29 @@ Containers are the most basic layout element in Cupcake and are required when us
  The default container class - **`.c-container`** - is fluid-width. This will fill 100% of available width.
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-container docs- c-bg-danger">
   <div class="c-row">
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 
  Using the class - **`.c-container-fixed`** - will give you a responsive container that has a fixed width. The width is responsive and will change based on the breakpoint.
 
- {% callout info %}
+{% callout info %}
 #### Note: You need to resize your screen to see the below.
 {% endcallout %}
 
 
 <div class="docs-example-row docs-example-row-flex">
-{% example html %}
+<div data-example>
 <div class="c-container-fixed">
   <div class="c-row">
   </div>
 </div>
-{% endexample %}
+</div>
 </div>
 
 

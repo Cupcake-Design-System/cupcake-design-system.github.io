@@ -5,7 +5,7 @@ description: This is the default footer example.
 
 ## Default
 
-{% example html %}
+<div data-example>
 <div class="c-footer">
   <div class="c-footer-left">
     © 2016 Ipreo. All Rights Reserved.
@@ -22,11 +22,11 @@ description: This is the default footer example.
     </div>
   </div>
 </div>
-{% endexample %}
+</div>
 
 
 ## Transparent
-{% example html %}
+<div data-example>
 <div class="c-footer c-footer-transparent">
   <div class="c-footer-left">
     © 2016 Ipreo. All Rights Reserved.
@@ -43,5 +43,5 @@ description: This is the default footer example.
     </div>
   </div>
 </div>
-{% endexample %}
+</div>
 

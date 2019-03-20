@@ -7,7 +7,7 @@ description: This default header
 
 This is the base header. The very top of the page.
 
-{% example html %}
+<div data-example>
 <header class="c-header">
   <div class="c-header-left">
     <div class="c-header-item">
@@ -63,11 +63,11 @@ This is the base header. The very top of the page.
     </div>
   </div>
 </header>
-{% endexample %}
+</div>
 
 
 ## With Tabs
-{% example html %}
+<div data-example>
 <header class="c-header">
   <div class="c-header-left">
     <div class="c-header-item">
@@ -137,13 +137,13 @@ This is the base header. The very top of the page.
     <a class="c-tab-item-link" href="">Tab D</a>
   </li>
 </ul>
-{% endexample %}
+</div>
 
 
 ## Inverse
 
 Best choice for theming. After adding an inverse class you can then change the bg color to match a theme.
-{% example html %}
+<div data-example>
 <header class="c-header c-header-inverse">
   <div class="c-header-left">
     <div class="c-header-item">
@@ -318,4 +318,4 @@ Best choice for theming. After adding an inverse class you can then change the b
     </div>
   </div>
 </header>
-{% endexample %}
+</div>
