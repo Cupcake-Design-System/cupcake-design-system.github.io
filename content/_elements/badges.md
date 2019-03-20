@@ -26,96 +26,150 @@ tabs:
 - Status Badges
 - Numeric Badges
 
-{% include guide-img.html img='elements/avatars/Types-of-Avatars'%} 
+{% include guide-img.html img='elements/badges/BadgeTypes'%} 
 
-There are different ways an avatar can be displayed within people  and company versions:
+##### Badge Colors
+Cupcake Color Palette: 
+https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color
 
-- First + last name or company initials - The default avatar 
-- Placeholder user icon - The default avatar if the user does not provide name
-- Image (with and without border) - The avatar displays an image of the user's choice if uploaded
+##### Light Color Set
+- Only use values 3-5
 
-{% include guide-img.html img='elements/avatars/Avatars-MoreTypes'%} 
+{% include guide-img.html img='elements/badges/LightColorSet'%} 
 
-For the companies that have more than 3 initials, the avatars will appear as the following:
+##### Dark Color Set
+- Only use values 6-9
 
-{% include guide-img.html img='elements/avatars/Company3+Initials'%} 
+{% include guide-img.html img='elements/badges/DarkColorSet'%} 
+
+#### Status Badges
+Standard badges are used to indicate the status of an entity.
+
+##### Do's and Dont's
+
+##### Color Use
+
+##### Light vs Dark Color Sets
+
+##### Badge Use
+
+##### Content
+
+##### Scaling in Table Cells
+
+#### Numeric Badges
+
+Numeric badges are used to indicate a running tally/count of an entity. 
+
+##### Light vs Dark Color Sets
+
+##### Content
 
 <hr>
 
 ## Do's and Dont's
-
-##### Usage
-{% include guide-img.html img='elements/buttons/button-wording-dos-donts'%} 
-
-##### Colors
-{% include guide-img.html img='elements/buttons/buttons-icons-dos-donts'%}
-
-##### Avatars in Headers
-{% include guide-img.html img='elements/buttons/buttons-icons-dos-donts'%}
-
-##### Avatar Sizes in Table Cells
-{% include guide-img.html img='elements/buttons/buttons-icons-dos-donts'%}
 
 </div>
 
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ### Base
-Avatars are used to show a thumbnail representation of an individual or business in the interface.
-
-If an image is unavailable, up to two letters can be used instead. Text is best applied with a data attribute - data-text=”{value}”.
-
-Icons can also be used if relevent to the context.
+Badges are typically used to inform the user of status, information, or of an action that’s been taken.
 
 {% example html %}
-<span class="c-avatar" >
-  <img src="https://unsplash.it/200?image=1027">
-</span>
-<span class="c-avatar c-avatar-primary">
-<i class="fas fa-cloud-download"></i>
-</span>
-<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
+<div class="c-badge">v.1.0.5</div>
+<div class="c-badge c-badge-rounded">v.1.0.5</div>
 {% endexample %}
 
 ### Color Examples
-This is an example of available colors for the Avatar element.
+This is an example of available colors for the Badges element.
 
 {% example html %}
-<span class="c-avatar c-avatar-primary" data-text="AB"></span>
+<div class="c-badge c-badge-primary">Primary</div>
 
-<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
+<div class="c-badge c-badge-secondary">Secondary</div>
 
-<span class="c-avatar c-avatar-success" data-text="AB"></span>
+<div class="c-badge c-badge-success">Success</div>
 
-<span class="c-avatar c-avatar-warning" data-text="AB"></span>
+<div class="c-badge c-badge-warning">Warning</div>
 
-<span class="c-avatar c-avatar-danger" data-text="AB"></span>
+<div class="c-badge c-badge-danger">Danger</div>
 {% endexample %}
 
 ### Size Examples
-This is an example of available sizes for the Avatar element.
+This is an example of available sizes for the Badges element.
 
 {% example html %}
-<span class="c-avatar c-avatar-primary c-avatar-sm" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-md" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-lg" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-xl" data-text="AB"></span>
+<div class="c-badge c-badge-secondary c-badge-sm">Small</div>
+<div class="c-badge c-badge-secondary c-badge">Default</div>
+<div class="c-badge c-badge-secondary c-badge-lg">Large</div>
+<div class="c-badge c-badge-secondary c-badge-xl">X-Large</div>
 {% endexample %}
 
-### Status
-In addition you can add a status to the avatar to alert the user. Status is applied with a data attribute - data-status=”{value}”.
+### Additional Styles/Options
 
 {% example html %}
-<span class="c-avatar" data-status="success">
-  <img src="https://unsplash.it/200?image=1011">
-</span>
-<span class="c-avatar c-avatar-primary" data-status="success">
-  <i class="fas fa-cloud-download"></i>
-</span>
-<span class="c-avatar c-avatar-secondary" data-text="CD" data-status="primary"></span>
-<span class="c-avatar c-avatar-success" data-text="EF" data-status="danger"></span>
-<span class="c-avatar c-avatar-danger" data-text="GH" data-status="warning"></span>
-<span class="c-avatar c-avatar-warning" data-text="HI" data-status="success"></span>
+<div class="c-badge c-badge-secondary c-badge-sm">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge-lg">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge-xl">Information <i class="fal fa-anchor"></i></div>
+{% endexample %}
+
+### Multiple Modifiers
+
+{% example html %}
+<div class="c-badge c-badge-rounded c-badge-primary"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Icon</div>
+<div class="c-badge c-badge-rounded c-badge-success-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Outline</div>
+<div class="c-badge c-badge-danger-outline">Outline</div>
+<div class="c-badge c-badge-warning-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Outline Icon</div>
+<div class="c-badge c-badge-rounded c-badge-primary-outline c-badge-xl"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded XL</div>
+{% endexample %}
+
+### Inline Status
+
+{% example html %}
+<div class="c-body-text-xl"> 
+  Information 
+  <span class="c-badge c-badge-rounded c-badge-primary c-badge-top">8</span>
+</div>
+{% endexample %}
+
+### Empty Status Badges
+
+{% example html %}
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-danger"></div>
+
+
+
+<div class="c-badge c-badge-rounded c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-danger"></div>
+
+
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-danger"></div>
 {% endexample %}
 
 
