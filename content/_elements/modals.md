@@ -178,84 +178,52 @@ A delete warning, featuring a danger button, let's the user understand the poten
 ##### Button Usage
 {% include guide-img.html img='elements/modals/'%} 
 
-
-
-
-
-
-
-
-
-
 </div>
+<!-- End Design Section -->
 
+
+<!-- Start Cupcake Code Section -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ### Base
-Avatars are used to show a thumbnail representation of an individual or business in the interface.
-
-If an image is unavailable, up to two letters can be used instead. Text is best applied with a data attribute - data-text=”{value}”.
-
-Icons can also be used if relevent to the context.
+Use when displaying information that does not require a user action, such as a read-only document or a supplemental video.
 
 {% example html %}
-<span class="c-avatar" >
-  <img src="https://unsplash.it/200?image=1027">
-</span>
-<span class="c-avatar c-avatar-primary">
-<i class="fas fa-cloud-download"></i>
-</span>
-<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
+<div id="modal_info" class="c-modal c-modal-info c-modal-fade c-modal-in">
+<div class="c-modal-dialog">
+    <div class="c-modal-content">
+        <div class="c-modal-header">
+            <div class="c-modal-title">Modal header</div>
+            <button type="button" class="c-modal-close">
+                    <span onclick="closeDefault()" aria-hidden="true">×</span>
+                </button>
+        </div>
+    <div class="c-modal-body c-text-center">
+        <i class="fa fa-question-circle c-modal-confirmation-icon"></i>
+        <span class="c-modal-confirmation-title">Modal Title</span>
+        <p class="c-modal-confirmation-text">Modal Text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eum.</p>
+        <div class="c-modal-confirmation-buttons">
+        <span class="close-modal" aria-hidden="true">
+            <button onclick="closeInfo()" class=" close-modal c-btn c-btn-secondary c-m-right-sm">Cancel</button>
+            <button onclick="closeInfo()" class=" close c-btn c-btn-primary">Ok</button>
+            </span>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
 {% endexample %}
-
-### Color Examples
-This is an example of available colors for the Avatar element.
-
-{% example html %}
-<span class="c-avatar c-avatar-primary" data-text="AB"></span>
-
-<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
-
-<span class="c-avatar c-avatar-success" data-text="AB"></span>
-
-<span class="c-avatar c-avatar-warning" data-text="AB"></span>
-
-<span class="c-avatar c-avatar-danger" data-text="AB"></span>
-{% endexample %}
-
-### Size Examples
-This is an example of available sizes for the Avatar element.
-
-{% example html %}
-<span class="c-avatar c-avatar-primary c-avatar-sm" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-md" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-lg" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-xl" data-text="AB"></span>
-{% endexample %}
-
-### Status
-In addition you can add a status to the avatar to alert the user. Status is applied with a data attribute - data-status=”{value}”.
-
-{% example html %}
-<span class="c-avatar" data-status="success">
-  <img src="https://unsplash.it/200?image=1011">
-</span>
-<span class="c-avatar c-avatar-primary" data-status="success">
-  <i class="fas fa-cloud-download"></i>
-</span>
-<span class="c-avatar c-avatar-secondary" data-text="CD" data-status="primary"></span>
-<span class="c-avatar c-avatar-success" data-text="EF" data-status="danger"></span>
-<span class="c-avatar c-avatar-danger" data-text="GH" data-status="warning"></span>
-<span class="c-avatar c-avatar-warning" data-text="HI" data-status="success"></span>
-{% endexample %}
-
 
 </div>
+<!-- End Cupcake Code Section -->
 
+<!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
 ### Storybook iframe
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
 
 </div>
+<!-- End Angular Code Section -->
+
 
