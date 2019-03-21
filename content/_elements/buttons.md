@@ -43,7 +43,7 @@ tabs:
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ### Code Example Normal
-<div data-example>
+<div data-xrayhtml="inline">
   <button type="button" class="c-btn c-btn-primary">Button</button>
 </div>
 

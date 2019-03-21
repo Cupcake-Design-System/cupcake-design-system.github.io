@@ -83,30 +83,33 @@ clipboard.on('success', function (e) {
 
 
 
-// Add prism highlighting to code
-  $( window ).bind( "create.example", function( e ) {
+/************************************************
+* Clipboard and prism
+*************************************************/
+$( window ).bind( "create.example", function( e ) {
 
-    $( ".highlight" ).find( "code" ).addClass( "language-markup" );
+  $( ".highlight" ).find( "code" ).addClass( "language-markup" );
     Prism.highlightAll();
 
-
-      var $target = $( e.target );
-      
-			var $snippet = $target.find( ".docs-snippet" );
-			var html = $snippet.html();
-			var $link = $( "<button href='#' class='c-btn c-btn-xs c-btn-primary doc-btn' data-tooltip='Copy To Clipboard' data-tooltip-conf='right square'>Copy</button>" );
-			// place the link after the snippet but before the code
-			$( "pre.language-markup" ).after( $link );
+			var $xray = $( e.target );
+      var $source = $xray.find( ".highlight" );
+      var $pre = $xray.find( ".docs-snippet" );
+			var $link = $( "<button href='#' class='doc-btn c-btn c-btn-xs c-btn-primary' data-tooltip='Copy To Clipboard' data-tooltip-conf='invert left square'>Copy</button>" );
+			$pre.append( $link );
 			// set of up the clipboard to use the html
-			new Clipboard($link[0], {
-				text: function(){
-					return html;
+      var clipboard = new Clipboard($link[0], {
+				text: function(trigger){
+					return $source.text();
 				}
-      });
-    
-			// disable the normal link click behavior
-			$link.bind( "click", function(event ){ event.preventDefault() });
+			})
 
+      clipboard.on('success', function (e) {
+        $(e.trigger)
+        .attr('data-tooltip', 'Copied!')
+        .attr('data-tooltip-conf', 'success left square')
+
+        e.clearSelection()
+      })
   });
 
 

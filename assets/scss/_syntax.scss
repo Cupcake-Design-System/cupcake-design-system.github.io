@@ -12,15 +12,20 @@ figure.highlight {
 }
 .code-slide.view-source .highlight {
 	z-index: 2;
-	display: block;
+  display: block;
+  position: relative;
 }
 
 .doc-btn {
+  display: none;
   position: absolute;
-  left: 88px;
-  margin-top: 4px;
-  box-shadow: none;
-  border-radius: 0;
+  bottom: -26px;
+  right: 8px;
+  z-index: 1002;
+}
+
+.view-source .doc-btn {
+  display: inline-block;
 }
 
  code[class*="language-"],
