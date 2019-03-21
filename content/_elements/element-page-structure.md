@@ -28,6 +28,8 @@ Text
 
 {% include guide-img.html img=''%} 
 
+<hr>
+
 ### States:
 
 - active
@@ -37,7 +39,7 @@ Text
 
 <hr>
 
-## Do's and Dont's
+### Do's and Dont's
 
 ##### Image Description
 
@@ -63,8 +65,10 @@ Text
 - List item
 - List item
 
+<hr>
+
 ### Element Type 1
-Typically used in forms where up to 3 listed options are displayed. Used where space is restricted. Labels should be short and concise.
+Text description of element here
 
 {% include guide-img.html img='elements/radio-buttons/'%} 
 
@@ -78,6 +82,8 @@ Typically used in forms where up to 3 listed options are displayed. Used where s
 
 ##### Image Description
 {% include guide-img.html img='elements/radio-buttons/'%} 
+
+<hr>
 
 ### Element Type 2
 Text description of element here
