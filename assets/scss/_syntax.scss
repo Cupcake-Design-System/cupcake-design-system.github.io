@@ -24,6 +24,14 @@ figure.highlight {
   z-index: 1002;
 }
 
+.code-inline {
+  .doc-btn {
+    display: block;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
 .view-source .doc-btn {
   display: inline-block;
 }
@@ -45,7 +53,7 @@ figure.highlight {
   padding: 5px 20px 20px;
   margin: 0;
   overflow: auto;
-  font-size: 12px;
+  font-size: 13px;
  }
  
  :not(pre) > code[class*="language-"],
@@ -119,3 +127,61 @@ figure.highlight {
    position: relative;
    padding: 1em 0 1em 3em;
  }
+
+
+.split {
+  display: flex;
+
+  .view-source {
+    display: flex;
+    flex-grow: 1;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .docs-snippet {
+    flex-grow: 1;
+  }
+
+  &.example.code-inline { 
+    .doc-btn {
+      position: absolute;
+      bottom: -1px;
+      right: -1px;
+      z-index: 2;
+      border-bottom: 0;
+      border-right: 0;
+      background: none;
+      padding-bottom: 4px;
+      border-color: #e9ecef;
+    }
+    .highlight {
+      z-index: 2;
+      display: flex !important;
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      max-width: 50%;
+  }
+}
+
+  &.code-slide.view-source .highlight {
+    z-index: 2;
+    display: flex !important;
+    position: relative;
+  }
+
+  code[class*="language-"], 
+  pre[class*="language-"] {
+    padding: 5px 20px 20px;
+    margin: 0;
+    overflow: auto;
+    font-size: 13px;
+  }
+}
+
+.hide-example {
+  .docs-snippet {
+    display: none !important;
+  }
+}

@@ -24,7 +24,7 @@ Cards can also have specialist functionality when used in a specific context.
 ## Base
 The base card provides a simple container with padding, borders, background, text values
 
-<div data-example>
+<div data-example="inline" class="split">
 <div class="c-card">
   <div class="c-card-content">
     <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>

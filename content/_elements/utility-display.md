@@ -29,17 +29,17 @@ Single purpose classes for setting the display of an element at any breakpoint.
 Block will inherently set width to 100% of its parent element. It will also cause a line break, even if the declared width doesn’t take up the full width of the parent.
 
 <div data-example>
-<span class="c-d-block docs- c-p-sm c-bg-primary c-text-white">c-d-block</span>
+<span class="c-d-block c-p-sm c-bg-primary c-text-white">c-d-block</span>
 </div>
 
 ## Display Inline Block
 Inline-block will wrap around content inline. It also allows you to set height and width properties on the element, which display inline does not allow you to do. It does render the white-space between elements, so if you set width: 25% to four elements they will not just render as a 4 column layout by default.
 
 <div data-example>
-<span class="c-d-inline-block docs- c-p-sm c-bg-primary c-text-white">c-d-inline-block</span>
-<span class="c-d-inline-block docs- c-p-sm c-bg-success c-text-white">c-d-inline-block</span>
-<span class="c-d-inline-block docs- c-p-sm c-bg-warning c-text-white">c-d-inline-block</span>
-<span class="c-d-inline-block docs- c-p-sm c-bg-danger c-text-white">c-d-inline-block</span>
+<span class="c-d-inline-block c-p-sm c-bg-primary c-text-white">c-d-inline-block</span>
+<span class="c-d-inline-block c-p-sm c-bg-success c-text-white">c-d-inline-block</span>
+<span class="c-d-inline-block c-p-sm c-bg-warning c-text-white">c-d-inline-block</span>
+<span class="c-d-inline-block c-p-sm c-bg-danger c-text-white">c-d-inline-block</span>
 </div>
 
 
@@ -47,10 +47,10 @@ Inline-block will wrap around content inline. It also allows you to set height a
 Inline doesn’t respect height or width values. It does not render white space between elements.
 
 <div data-example>
-<span class="c-d-inline docs- c-p-sm c-bg-primary c-text-white">c-d-inline</span>
-<span class="c-d-inline docs- c-p-sm c-bg-success c-text-white">c-d-inline</span>
-<span class="c-d-inline docs- c-p-sm c-bg-warning c-text-white">c-d-inline</span>
-<span class="c-d-inline docs- c-p-sm c-bg-danger c-text-white">c-d-inline</span>
+<span class="c-d-inline c-p-sm c-bg-primary c-text-white">c-d-inline</span>
+<span class="c-d-inline c-p-sm c-bg-success c-text-white">c-d-inline</span>
+<span class="c-d-inline c-p-sm c-bg-warning c-text-white">c-d-inline</span>
+<span class="c-d-inline c-p-sm c-bg-danger c-text-white">c-d-inline</span>
 </div>
 
 
@@ -59,10 +59,10 @@ The display table can be combined with display table-cell to render a table with
 
 <div data-example>
 <div class="c-d-table">
-  <span class="c-d-table-cell docs- c-p-sm c-bg-primary c-text-white">display</span>
-  <span class="c-d-table-cell docs- c-p-sm c-bg-success c-text-white">table</span>
-  <span class="c-d-table-cell docs- c-p-sm c-bg-warning c-text-white">will automatically</span>
-  <span class="c-d-table-cell docs- c-p-sm c-bg-danger c-text-white">compute cell width</span>
+  <span class="c-d-table-cell c-p-sm c-bg-primary c-text-white">display</span>
+  <span class="c-d-table-cell c-p-sm c-bg-success c-text-white">table</span>
+  <span class="c-d-table-cell c-p-sm c-bg-warning c-text-white">will automatically</span>
+  <span class="c-d-table-cell c-p-sm c-bg-danger c-text-white">compute cell width</span>
 </div>
 </div>
 

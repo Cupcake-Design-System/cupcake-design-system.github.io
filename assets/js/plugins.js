@@ -16,12 +16,151 @@
 !(function(e,t){"function"==typeof define&&define.amd?define([],(function(){return t(e)})):"object"==typeof exports?module.exports=t(e):e.SmoothScroll=t(e)})("undefined"!=typeof global?global:"undefined"!=typeof window?window:this,(function(e){"use strict";var t="querySelector"in document&&"addEventListener"in e&&"requestAnimationFrame"in e&&"closest"in e.Element.prototype,n={ignore:"[data-scroll-ignore]",header:null,speed:500,offset:0,easing:"easeInOutCubic",customEasing:null,before:function(){},after:function(){}},o=function(){for(var e={},t=0,n=arguments.length;t<n;t++){var o=arguments[t];!(function(t){for(var n in t)t.hasOwnProperty(n)&&(e[n]=t[n])})(o)}return e},a=function(t){return parseInt(e.getComputedStyle(t).height,10)},r=function(e){"#"===e.charAt(0)&&(e=e.substr(1));for(var t,n=String(e),o=n.length,a=-1,r="",i=n.charCodeAt(0);++a<o;){if(0===(t=n.charCodeAt(a)))throw new InvalidCharacterError("Invalid character: the input contains U+0000.");t>=1&&t<=31||127==t||0===a&&t>=48&&t<=57||1===a&&t>=48&&t<=57&&45===i?r+="\\"+t.toString(16)+" ":r+=t>=128||45===t||95===t||t>=48&&t<=57||t>=65&&t<=90||t>=97&&t<=122?n.charAt(a):"\\"+n.charAt(a)}return"#"+r},i=function(e,t){var n;return"easeInQuad"===e.easing&&(n=t*t),"easeOutQuad"===e.easing&&(n=t*(2-t)),"easeInOutQuad"===e.easing&&(n=t<.5?2*t*t:(4-2*t)*t-1),"easeInCubic"===e.easing&&(n=t*t*t),"easeOutCubic"===e.easing&&(n=--t*t*t+1),"easeInOutCubic"===e.easing&&(n=t<.5?4*t*t*t:(t-1)*(2*t-2)*(2*t-2)+1),"easeInQuart"===e.easing&&(n=t*t*t*t),"easeOutQuart"===e.easing&&(n=1- --t*t*t*t),"easeInOutQuart"===e.easing&&(n=t<.5?8*t*t*t*t:1-8*--t*t*t*t),"easeInQuint"===e.easing&&(n=t*t*t*t*t),"easeOutQuint"===e.easing&&(n=1+--t*t*t*t*t),"easeInOutQuint"===e.easing&&(n=t<.5?16*t*t*t*t*t:1+16*--t*t*t*t*t),e.customEasing&&(n=e.customEasing(t)),n||t},u=function(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight)},c=function(e,t,n){var o=0;if(e.offsetParent)do{o+=e.offsetTop,e=e.offsetParent}while(e);return o=Math.max(o-t-n,0)},s=function(e){return e?a(e)+e.offsetTop:0},l=function(t,n,o){o||(t.focus(),document.activeElement.id!==t.id&&(t.setAttribute("tabindex","-1"),t.focus(),t.style.outline="none"),e.scrollTo(0,n))},f=function(t){return!!("matchMedia"in e&&e.matchMedia("(prefers-reduced-motion)").matches)};return function(a,d){var m,h,g,p,v,b,y,S={};S.cancelScroll=function(){cancelAnimationFrame(y)},S.animateScroll=function(t,a,r){var f=o(m||n,r||{}),d="[object Number]"===Object.prototype.toString.call(t),h=d||!t.tagName?null:t;if(d||h){var g=e.pageYOffset;f.header&&!p&&(p=document.querySelector(f.header)),v||(v=s(p));var b,y,E,I=d?t:c(h,v,parseInt("function"==typeof f.offset?f.offset():f.offset,10)),O=I-g,A=u(),C=0,w=function(n,o){var r=e.pageYOffset;if(n==o||r==o||(g<o&&e.innerHeight+r)>=A)return S.cancelScroll(),l(t,o,d),f.after(t,a),b=null,!0},Q=function(t){b||(b=t),C+=t-b,y=C/parseInt(f.speed,10),y=y>1?1:y,E=g+O*i(f,y),e.scrollTo(0,Math.floor(E)),w(E,I)||(e.requestAnimationFrame(Q),b=t)};0===e.pageYOffset&&e.scrollTo(0,0),f.before(t,a),S.cancelScroll(),e.requestAnimationFrame(Q)}};var E=function(e){h&&(h.id=h.getAttribute("data-scroll-id"),S.animateScroll(h,g),h=null,g=null)},I=function(t){if(!f()&&0===t.button&&!t.metaKey&&!t.ctrlKey&&(g=t.target.closest(a))&&"a"===g.tagName.toLowerCase()&&!t.target.closest(m.ignore)&&g.hostname===e.location.hostname&&g.pathname===e.location.pathname&&/#/.test(g.href)){var n;try{n=r(decodeURIComponent(g.hash))}catch(e){n=r(g.hash)}if("#"===n){t.preventDefault(),h=document.body;var o=h.id?h.id:"smooth-scroll-top";return h.setAttribute("data-scroll-id",o),h.id="",void(e.location.hash.substring(1)===o?E():e.location.hash=o)}h=document.querySelector(n),h&&(h.setAttribute("data-scroll-id",h.id),h.id="",g.hash===e.location.hash&&(t.preventDefault(),E()))}},O=function(e){b||(b=setTimeout((function(){b=null,v=s(p)}),66))};return S.destroy=function(){m&&(document.removeEventListener("click",I,!1),e.removeEventListener("resize",O,!1),S.cancelScroll(),m=null,h=null,g=null,p=null,v=null,b=null,y=null)},S.init=function(a){t&&(S.destroy(),m=o(n,a||{}),p=m.header?document.querySelector(m.header):null,v=s(p),document.addEventListener("click",I,!1),e.addEventListener("hashchange",E,!1),p&&e.addEventListener("resize",O,!1))},S.init(d),S}}));
 
 
+// (function( $ ) {
+//   var pluginName = "example",
+// 		o = {
+// 		text: {
+// 			open: "View Source",
+// 			close: "Hide Source"
+// 		},
+// 		classes: {
+// 			button: "c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1 c-d-block",
+// 			open: "view-source",
+// 			sourcepanel: "highlight"
+// 		},
+// 		initSelector: "[data-" + pluginName + "]",
+// 		defaultReveal: "slide"
+// 	},
+// 	methods = {
+// 		_create: function() {
+// 			return $( this ).each(function() {
+// 				var init = $( this ).data( "init." + pluginName );
+
+// 				if( init ) {
+// 					return false;
+// 				}
+
+// 				$( this )
+// 					.data( "init." + pluginName, true )
+// 					[ pluginName ]( "_init" )
+// 					.trigger( "create." +  pluginName );
+// 			});
+// 		},
+// 		_init: function() {
+// 			var $self =	 $(this);
+
+// 			$self.data( "id." + pluginName);
+
+// 			var method = $( this ).attr( "data-" + pluginName ) || o.defaultReveal;
+
+// 			$( this )[ pluginName ]( "_createButton" );
+      
+
+// 			$( this )
+// 				.addClass( pluginName + " " + "code-" + method )
+// 			[ pluginName ]( "_createSource" );
+// 		},
+// 		_createButton: function() {
+// 			var btn = document.createElement( "a" ),
+// 				txt = document.createTextNode( o.text.open ),
+// 				el = $( this );
+
+// 			btn.setAttribute( "class", o.classes.button );
+// 			btn.href = " ";
+// 			btn.appendChild( txt );
+
+// 			$( btn )
+// 				.bind( "click", function( e ) {
+// 					var isOpen = el.attr( "class" ).indexOf( o.classes.open ) > -1;
+
+// 					el[ isOpen ? "removeClass" : "addClass" ]( o.classes.open );
+// 					btn.innerHTML = ( isOpen ? o.text.open : o.text.close );
+
+// 					e.preventDefault();
+
+// 				})
+// 				.insertAfter( el );
+// 		},
+// 		_createSource: function() {
+// 			var el = this;
+// 			var preel = document.createElement( "pre" );
+// 			var codeel = document.createElement( "code" );
+// 			var wrap = document.createElement( "div" );
+// 			var sourcepanel = document.createElement( "div" );
+// 			var code;
+// 			var leadingWhiteSpace;
+// 			var source;
+
+// 			// remove empty value attributes
+// 			code = el.innerHTML.replace( /\=\"\"/g, '' );
+// 			leadingWhiteSpace = code.match( /(^[\s]+)/ );
+
+// 			if( leadingWhiteSpace ) {
+// 				code = code.replace( new RegExp( leadingWhiteSpace[ 1 ], "gmi" ), "\n" );
+// 			}
+
+// 			source = document.createTextNode( code );
+
+// 			wrap.setAttribute( "class", "docs-snippet" );
+
+// 			$( el ).wrapInner( wrap );
+
+// 			codeel.appendChild( source );
+// 			preel.appendChild( codeel );
+
+// 			sourcepanel.setAttribute( "class", o.classes.sourcepanel );
+// 			sourcepanel.appendChild( preel );
+
+// 			this.appendChild( sourcepanel );
+// 		}
+// 	};
+
+// 	// Collection method.
+// 	$.fn[ pluginName ] = function( arrg, a, b, c ) {
+// 		return this.each(function() {
+
+// 			// if it's a method
+// 			if( arrg && typeof( arrg ) === "string" ){
+// 				return $.fn[ pluginName ].prototype[ arrg ].call( this, a, b, c );
+// 			}
+
+// 			// don't re-init
+// 			if( $( this ).data( pluginName + "data" ) ){
+// 				return $( this );
+// 			}
+
+// 			// otherwise, init
+// 			$( this ).data( pluginName + "active", true );
+// 			$.fn[ pluginName ].prototype._create.call( this );
+// 		});
+// 	};
+
+// 	// add methods
+// 	$.extend( $.fn[ pluginName ].prototype, methods );
+
+// 	//  auto-init
+// 	var initted;
+// 	function init(){
+// 		if( !initted ){
+// 			$( o.initSelector )[ pluginName ]();
+// 			initted = true;
+// 		}
+// 	}
+// 	// init either on beforeenhance event or domready, whichever comes first.
+// 	$( document ).bind("beforeenhance", init );
+// 	$( init );
+
+
+// }( jQuery ));
+
+
+
 (function( $ ) {
   var pluginName = "example",
 		o = {
 		text: {
 			open: "View Source",
-			close: "Hide Source"
+			close: "View Demo"
 		},
 		classes: {
 			button: "c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1 c-d-block",
@@ -53,8 +192,9 @@
 
 			var method = $( this ).attr( "data-" + pluginName ) || o.defaultReveal;
 
-			$( this )[ pluginName ]( "_createButton" );
-      
+			if( method === "slide" ) {
+				$( this )[ pluginName ]( "_createButton" );
+			}
 
 			$( this )
 				.addClass( pluginName + " " + "code-" + method )
@@ -83,16 +223,24 @@
 		},
 		_createSource: function() {
 			var el = this;
+			var suppliedsourcepanel = $( el ).find("." + o.classes.sourcepanel );
+			var sourcepanel = document.createElement( "div" );
 			var preel = document.createElement( "pre" );
 			var codeel = document.createElement( "code" );
 			var wrap = document.createElement( "div" );
-			var sourcepanel = document.createElement( "div" );
 			var code;
 			var leadingWhiteSpace;
 			var source;
 
+			if( suppliedsourcepanel.length ) {
+				code = suppliedsourcepanel[0].innerHTML;
+				suppliedsourcepanel.remove();
+			} else {
+				code = el.innerHTML;
+			}
+
 			// remove empty value attributes
-			code = el.innerHTML.replace( /\=\"\"/g, '' );
+			code = code.replace( /\=\"\"/g, '' );
 			leadingWhiteSpace = code.match( /(^[\s]+)/ );
 
 			if( leadingWhiteSpace ) {
@@ -152,4 +300,3 @@
 
 
 }( jQuery ));
-

@@ -23,17 +23,31 @@ directions:
 
 These flexbox-based utilities can replace the need for a grid system in many instances, and provide powerful constraint-based micro-layout solutions. 
 
-
 To set a container to display flex, add the .c-d-flex class.
-<div data-example>
-<div class="c-d-flex docs- c-p-sm c-bg-success c-text-white">I'm a flexbox container!</div>
+<div class="docs-snippet">
+<div class="c-d-flex c-p-sm c-bg-success c-text-white">I'm a flexbox container!</div>
+
+<div data-example="inline" class="hide-example c-m-top-md">
+<div class="c-d-flex">I'm a flexbox container!</div>
 </div>
+
+</div>
+
+---
 
 To set a container to inline-flex, use the class .c-d-inline-flex.
-<div data-example>
-<div class="c-d-inline-flex docs- c-p-sm c-bg-primary c-text-white">I'm an inline flexbox container!</div>
+
+<div class="docs-snippet">
+<div class="c-d-inline-flex c-p-sm c-bg-primary c-text-white">I'm an inline flexbox container!</div>
+
+
+<div data-example="inline" class="hide-example c-m-top-md">
+<div class="c-d-inline-flex">I'm a flexbox container!</div>
 </div>
 
+</div>
+
+---
 
 **Inevitably you'll wish to adjust flex at various breakpoints. You can do so with the responsive variations.**
 
@@ -67,34 +81,63 @@ You may wish to reverse this - or change at the appropriate screen size.
 
 Use `.c-flex-row` to set a horizontal direction (the browser default not needed unless resetting at a different breakpoint), or `.c-flex-row-reverse` to start the horizontal direction from the opposite side.
 
-<div data-example>
-<div class="c-d-flex c-flex-row docs- c-bg-primary-3 c-text-white c-m-bottom-md">
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+<div class="docs-snippet">
+<div class="c-d-flex c-flex-row c-bg-primary-3 c-text-white c-m-bottom-md">
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
 </div>
-<div class="c-d-flex c-flex-row-reverse docs- c-bg-primary-3 c-text-white">
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+<div class="c-d-flex c-flex-row-reverse c-bg-primary-3 c-text-white">
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+</div>
+
+
+<div data-example="inline" class="hide-example c-m-top-md">
+<div class="c-d-flex c-flex-row">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="c-d-flex c-flex-row-reverse">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
 </div>
 </div>
 
 ## Vertical
 Use `.c-flex-column` to set a vertical direction, or `.c-flex-column-reverse`  to start the vertical direction from the opposite side.
 
-<div data-example>
-<div class="c-d-flex c-flex-column docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+<div class="docs-snippet">
+<div class="c-d-flex c-flex-column c-bg-primary-3 c-text-white c-m-bottom-sm">
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
 </div>
-<div class="c-d-flex c-flex-column-reverse docs- c-bg-primary-3 c-text-white">
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
-  <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+<div class="c-d-flex c-flex-column-reverse c-bg-primary-3 c-text-white">
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 1</div>
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 2</div>
+  <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item 3</div>
+</div>
+
+<div data-example="inline" class="hide-example c-m-top-md">
+<div class="c-d-flex c-flex-column">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="c-d-flex c-flex-column-reverse">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
 </div>
 </div>
+
+</div>
+
 
 
 **Responsive variations also exist for `flex-direction`.**
@@ -140,69 +183,132 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 
 
 ## Nowrap
-<div data-example>
-  <div class="c-d-flex c-flex-nowrap docs- c-bg-primary-3 c-text-white">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+<div class="docs-snippet">
+  <div class="c-d-flex c-flex-nowrap c-bg-primary-3 c-text-white">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
+
+
+<div data-example="inline" class="hide-example c-m-top-md">
+  <div class="c-d-flex c-flex-nowrap">
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+  </div>
+</div>
 </div>
 
 
 ## Auto Wrap
-<div data-example>
-  <div class="c-d-flex c-flex-wrap docs- c-bg-primary-3 c-text-white">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+<div class="docs-snippet">
+  <div class="c-d-flex c-flex-wrap c-bg-primary-3 c-text-white">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
+
+
+<div data-example="inline" class="hide-example c-m-top-md">
+  <div class="c-d-flex c-flex-wrap">
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+  </div>
+</div>
 </div>
 
 
 ## Wrap Reverse
 
-<div data-example>
-  <div class="c-d-flex c-flex-wrap-reverse docs- c-bg-primary-3 c-text-white">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+<div class="docs-snippet">
+  <div class="c-d-flex c-flex-wrap-reverse c-bg-primary-3 c-text-white">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
+
+
+<div data-example="inline" class="hide-example c-m-top-md">
+  <div class="c-d-flex c-flex-wrap-reverse">
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+  </div>
+</div>
 </div>
 
 
@@ -241,49 +347,96 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 To control the spacing for items on the main axis, use the justify-content utilities. Choose from `start` (browser default), `end`, `center`, `space-between`, or `space-around`.
 
 ## Start
-<div data-example>
-  <div class="c-d-flex c-justify-start docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+
+<div class="docs-snippet">
+  <div class="c-d-flex c-justify-start c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-</div>  
+
+<div data-example="inline" class="hide-example c-m-top-md">
+  <div class="c-d-flex c-justify-start">
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+  </div>
+</div>
+</div> 
 
 ## End
-<div data-example>
-  <div class="c-d-flex c-justify-end docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+<div class="docs-snippet">
+  <div class="c-d-flex c-justify-end c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-</div>  
+
+  <div data-example="inline" class="hide-example c-m-top-md">
+    <div class="c-d-flex c-justify-end">
+      <div>Flex item</div>
+      <div>Flex item</div>
+      <div>Flex item</div>
+    </div>
+  </div>
+</div>
+
 
 ## Center
-<div data-example>  
-  <div class="c-d-flex c-justify-center docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+
+<div class="docs-snippet">
+  <div class="c-d-flex c-justify-center c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-</div>  
+
+<div data-example="inline" class="hide-example c-m-top-md">
+  <div class="c-d-flex c-justify-center">
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+  </div>
+</div>
+</div> 
+
 
 ## Space Between
-<div data-example>  
-  <div class="c-d-flex c-justify-space-between docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+<div class="docs-snippet">
+
+  <div class="c-d-flex c-justify-space-between c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-</div>  
+
+<div data-example="inline" class="hide-example c-m-top-md">
+  <div class="c-d-flex c-justify-space-between">
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+  </div>
+</div>
+</div> 
+
 
 ## Space Around
-<div data-example>  
-  <div class="c-d-flex c-justify-space-around docs- c-bg-primary-3 c-text-white">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+<div class="docs-snippet">
+
+  <div class="c-d-flex c-justify-space-around c-bg-primary-3 c-text-white c-m-bottom-sm">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
-</div>  
+
+<div data-example="inline" class="hide-example c-m-top-md">
+  <div class="c-d-flex c-justify-space-around">
+    <div>Flex item</div>
+    <div>Flex item</div>
+    <div>Flex item</div>
+  </div>
+</div>
+</div> 
 
 
 **Responsive variations also exist for `c-justify-content`.**
@@ -334,50 +487,50 @@ To align items along the cross-axis, use the align-content utilities. Choose fro
 ## Top
 
 <div data-example> 
-  <div class="c-d-flex c-align-top docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-top c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>    
 
 ## Bottom
 
 <div data-example>  
-  <div class="c-d-flex c-align-bottom docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-bottom c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>    
 
 ## Center
 
 <div data-example>    
-  <div class="c-d-flex c-align-center docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-center c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>    
 
 ## Baseline
 
 <div data-example>    
-  <div class="c-d-flex c-align-baseline docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-baseline c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>    
 
 ## Stretch
 
 <div data-example>    
-  <div class="c-d-flex c-align-stretch docs- c-bg-primary-3 c-text-white" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-stretch c-bg-primary-3 c-text-white" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>    
 
@@ -430,46 +583,46 @@ To align flexbox items on an item-by-item basis, use the align-self utilities. C
 
 ## Top
 <div data-example>  
-  <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="c-align-self-top docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-top c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>   
 
 ## Bottom
 <div data-example>    
-  <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="c-align-self-bottom docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-bottom c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>   
 
 ## Center
 <div data-example>    
-  <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="c-align-self-center docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-center c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>   
 
 ## Baseline
 <div data-example>    
-  <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="c-align-self-baseline docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-baseline c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>   
 
 ## Stretch
 <div data-example>    
-  <div class="c-d-flex docs- c-bg-primary-3 c-text-white" style="height: 100px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="c-align-self-stretch docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-bg-primary-3 c-text-white" style="height: 100px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-align-self-stretch c-p-sm c-bg-primary c-bd c-bd-primary-9">Aligned flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div> 
 
@@ -532,22 +685,22 @@ This property has no effect on single rows of flex items.
 ## Start
 
 <div data-example>  
-  <div class="c-d-flex c-align-content-start c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-content-start c-flex-wrap c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>  
 
@@ -555,22 +708,22 @@ This property has no effect on single rows of flex items.
 ## End
 
 <div data-example>  
-  <div class="c-d-flex c-align-content-end c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-content-end c-flex-wrap c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>  
 
@@ -579,44 +732,44 @@ This property has no effect on single rows of flex items.
 ## Center
 
 <div data-example>  
-  <div class="c-d-flex c-align-content-center c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-content-center c-flex-wrap c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>  
 
 ## Between
 
 <div data-example>  
-  <div class="c-d-flex c-align-content-between c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-content-between c-flex-wrap c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>  
 
@@ -624,22 +777,22 @@ This property has no effect on single rows of flex items.
 ## Around
 
 <div data-example>  
-  <div class="c-d-flex c-align-content-around c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-content-around c-flex-wrap c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>  
 
@@ -647,22 +800,22 @@ This property has no effect on single rows of flex items.
 ## Stretch
 
 <div data-example>  
-  <div class="c-d-flex c-align-content-stretch c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
-    <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+  <div class="c-d-flex c-align-content-stretch c-flex-wrap c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
+    <div class="c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
   </div>
 </div>  
 
@@ -710,11 +863,6 @@ This property has no effect on single rows of flex items.
 
 To learn more about flexbox, see [Using CSS flexible boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) and the [CSS Flexible Box Layout Module Specification](https://www.w3.org/TR/css-flexbox-1/).
 
-</div>
-
-
-<div id="float" class="docs-tabs-content" markdown="1">
-
 
 ## Overview
 
@@ -725,9 +873,9 @@ These utility classes float an element to the left or right, or disable floating
 Toggle a float with a class:
 
 <div data-example>
-<div class="c-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on all viewport sizes</div><br>
-<div class="c-pull-right docs- c-p-sm c-bg-primary c-text-white ">Float right on all viewport sizes</div><br>
-<div class="c-pull-none docs- c-p-sm c-bg-primary c-text-white c-m-top-lg">Don't float on all viewport sizes</div>
+<div class="c-pull-left c-p-sm c-bg-primary c-text-white">Float left on all viewport sizes</div><br>
+<div class="c-pull-right c-p-sm c-bg-primary c-text-white ">Float right on all viewport sizes</div><br>
+<div class="c-pull-none c-p-sm c-bg-primary c-text-white c-m-top-lg">Don't float on all viewport sizes</div>
 </div>
 
 ## Responsive
@@ -735,10 +883,10 @@ Toggle a float with a class:
 Responsive variations also exist for each `float` value.
 
 <div data-example>
-<div class="c-sm-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized SM (small) or wider</div><br>
-<div class="c-md-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized MD (medium) or wider</div><br>
-<div class="c-lg-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized LG (large) or wider</div><br>
-<div class="c-xl-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized XL (extra-large) or wider</div><br>
+<div class="c-sm-pull-left c-p-sm c-bg-primary c-text-white">Float left on viewports sized SM (small) or wider</div><br>
+<div class="c-md-pull-left c-p-sm c-bg-primary c-text-white">Float left on viewports sized MD (medium) or wider</div><br>
+<div class="c-lg-pull-left c-p-sm c-bg-primary c-text-white">Float left on viewports sized LG (large) or wider</div><br>
+<div class="c-xl-pull-left c-p-sm c-bg-primary c-text-white">Float left on viewports sized XL (extra-large) or wider</div><br>
 </div>
 
 

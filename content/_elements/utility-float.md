@@ -28,9 +28,9 @@ These utility classes float an element to the left or right, or disable floating
 Toggle a float with a class:
 
 <div data-example>
-<div class="c-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on all viewport sizes</div><br>
-<div class="c-pull-right docs- c-p-sm c-bg-primary c-text-white ">Float right on all viewport sizes</div><br>
-<div class="c-pull-none docs- c-p-sm c-bg-primary c-text-white c-m-top-lg">Don't float on all viewport sizes</div>
+<div class="c-pull-left c-text-white">Float left on all viewport sizes</div><br>
+<div class="c-pull-right">Float right on all viewport sizes</div><br>
+<div class="c-pull-none c-m-top-lg">Don't float on all viewport sizes</div>
 </div>
 
 ## Responsive
@@ -38,10 +38,10 @@ Toggle a float with a class:
 Responsive variations also exist for each `float` value.
 
 <div data-example>
-<div class="c-sm-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized SM (small) or wider</div><br>
-<div class="c-md-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized MD (medium) or wider</div><br>
-<div class="c-lg-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized LG (large) or wider</div><br>
-<div class="c-xl-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized XL (extra-large) or wider</div><br>
+<div class="c-sm-pull-left c-p-sm c-bg-primary c-text-white">Float left on viewports sized SM (small) or wider</div><br>
+<div class="c-md-pull-left c-p-sm c-bg-primary c-text-white">Float left on viewports sized MD (medium) or wider</div><br>
+<div class="c-lg-pull-left c-p-sm c-bg-primary c-text-white">Float left on viewports sized LG (large) or wider</div><br>
+<div class="c-xl-pull-left c-p-sm c-bg-primary c-text-white">Float left on viewports sized XL (extra-large) or wider</div><br>
 </div>
 
 

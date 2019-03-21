@@ -145,13 +145,14 @@ Default switches support on/off text or blank depending on the design.
 This is an example of available colors for the **{{ page.title }}** element.
 
 
-<div data-example>
+<div data-example="inline" class="split">
 {% for color in page.colors %}
 <label class="c-switch c-switch-{{ color }}">
     <input type="checkbox" class="c-switch-input" checked>
     <span class="c-switch-label" data-on="On" data-off="Off"></span>
     <span class="c-switch-handle"></span>
 </label>
+
 {% endfor %}
 </div>
 

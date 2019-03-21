@@ -94,7 +94,7 @@ $( window ).bind( "create.example", function( e ) {
 			var $xray = $( e.target );
       var $source = $xray.find( ".highlight" );
       var $pre = $xray.find( ".docs-snippet" );
-			var $link = $( "<button href='#' class='doc-btn c-btn c-btn-xs c-btn-primary' data-tooltip='Copy To Clipboard' data-tooltip-conf='invert left square'>Copy</button>" );
+			var $link = $( "<button href='#' class='doc-btn c-btn c-btn-xs c-btn-secondary' data-tooltip='Copy To Clipboard' data-tooltip-conf='invert shadow left square'>Copy</button>" );
 			$pre.append( $link );
 			// set of up the clipboard to use the html
       var clipboard = new Clipboard($link[0], {

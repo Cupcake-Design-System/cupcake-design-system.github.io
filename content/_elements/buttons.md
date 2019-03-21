@@ -43,16 +43,19 @@ tabs:
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ### Code Example Normal
-<div data-xrayhtml="inline">
+
+<div data-example="inline" class="split">
   <button type="button" class="c-btn c-btn-primary">Button</button>
 </div>
+
+<br>
 
 <div data-example>
   <button type="button" class="c-btn c-btn-primary">Button</button>
 </div>
 
 
-<div data-example>
+<div data-example="inline" class="split">
 {% for color in page.colors %}
 <button type="button" class="c-btn c-btn-{{ color }}">Button</button>
 {% endfor %}

@@ -142,15 +142,18 @@ This is an example of available colors for the **{{ page.title }}** element.
 
 ### In columns with icons
 
-<div data-example>
+<div data-example="inline" class="split">
 <div class="c-row">
-    <div class="c-col">
+    <div class="c-col-12">
         <div class="c-alert c-alert-danger">
             <i class="fa fa-exclamation-circle c-m-right-sm"></i> Oops... Something went wrong!
             <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
         </div>
     </div>
-    <div class="c-col">
+</div>
+<br>
+<div class="c-row"> 
+    <div class="c-col-12">
         <div class="c-alert c-alert-success">
             <i class="fa fa-check-circle c-m-right-sm"></i> Great job! You are ready for the next step.
             <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
@@ -162,10 +165,14 @@ This is an example of available colors for the **{{ page.title }}** element.
 ### Toast
 <div data-example>
 {% for color in page.colors %}
+<div class="c-row"> 
+    <div class="c-col-12">
 <div class="c-toast-alert c-toast-alert-{{ color }}">
     <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
     dictum sem, a pretium dui.
 </div>
+        </div>
+    </div>
 {% endfor %}
 </div>
 

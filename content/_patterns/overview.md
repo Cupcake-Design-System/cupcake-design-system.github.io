@@ -12,7 +12,7 @@ Containers are the most basic layout element in Cupcake and are required when us
 
 <div class="docs-example-row docs-example-row-flex">
 <div data-example>
-<div class="c-container docs- c-bg-danger">
+<div class="c-container c-bg-danger">
   <div class="c-row">
   </div>
 </div>
