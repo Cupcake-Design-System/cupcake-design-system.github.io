@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.">
+<meta name="description" content="Avatars are used to represent the user’s identity onscreen with simple visuals/designs or to provide a placeholder identity for users who haven’t uploaded their own personal representation.">
 
-<title>Cupcake · Overview</title>
+<title>Cupcake · Avatars</title>
 
 
 
@@ -129,7 +129,7 @@
             </a>
           </li>
           
-          <li class="c-sidenav-menu-item ">
+          <li class="c-sidenav-menu-item c-sidenav-menu-item-active">
             <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/elements/avatars/">
               Avatars
             </a>
@@ -239,7 +239,7 @@
         <ul class="c-sidenav-menu-submenu">
           
           
-          <li class="c-sidenav-menu-item c-sidenav-menu-item-active">
+          <li class="c-sidenav-menu-item ">
             <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/elements/utilities/">
               Overview
             </a>
@@ -285,18 +285,175 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img">
-  <h1 class="docs-title" id="content">Overview</h1>
-  <p class="docs-lead">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
+  <h1 class="docs-title" id="content">Avatars</h1>
+  <p class="docs-lead">Avatars are used to represent the user’s identity onscreen with simple visuals/designs or to provide a placeholder identity for users who haven’t uploaded their own personal representation.</p>
 </div>
 
       
+      
+        <ul class="docs-tabs ">
+    
+    <li><a data-tab="#design">Design</a></li>
+    
+    <li><a data-tab="#code">Code</a></li>
+    
+    <li><a data-tab="#angular">Angular</a></li>
+    
+</ul>
       
       
       <div class="main-demo-content">
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h2 id="overview">Overview</h2>
+            <div id="design" class="docs-tabs-content">
+
+  <h2 id="overview">Overview</h2>
+
+  <h5 id="types-of-avatars-available">Types of avatars available:</h5>
+
+  <ul>
+    <li>People Version the user version is circular and should only be used for personal users.</li>
+    <li>Company Version - The company version is square and should only be used for company users.</li>
+  </ul>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Types-of-Avatars.png" /></p>
+
+  <p>There are different ways an avatar can be displayed within people  and company versions:</p>
+
+  <ul>
+    <li>First + last name or company initials - The default avatar</li>
+    <li>Placeholder user icon - The default avatar if the user does not provide name</li>
+    <li>Image (with and without border) - The avatar displays an image of the user’s choice if uploaded</li>
+  </ul>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars-MoreTypes.png" /></p>
+
+  <p>For the companies that have more than 3 initials, the avatars will appear as the following:</p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Company3+Initials.png" /></p>
+
+  <hr />
+
+  <h2 id="dos-and-donts">Do’s and Dont’s</h2>
+
+  <h5 id="usage">Usage</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/button-wording-dos-donts.png" /></p>
+
+  <h5 id="colors">Colors</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/buttons-icons-dos-donts.png" /></p>
+
+  <h5 id="avatars-in-headers">Avatars in Headers</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/buttons-icons-dos-donts.png" /></p>
+
+  <h5 id="avatar-sizes-in-table-cells">Avatar Sizes in Table Cells</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/buttons-icons-dos-donts.png" /></p>
+
+</div>
+
+<div id="code" class="docs-tabs-content">
+
+  <h2 id="base">Base</h2>
+  <p>Avatars are used to show a thumbnail representation of an individual or business in the interface.</p>
+
+  <p>If an image is unavailable, up to two letters can be used instead. Text is best applied with a data attribute - data-text=”{value}”.</p>
+
+  <p>Icons can also be used if relevent to the context.</p>
+
+  <div class="docs-example">
+<span class="c-avatar">
+  <img src="https://unsplash.it/200?image=1027" />
+</span>
+<span class="c-avatar c-avatar-primary">
+<i class="fas fa-cloud-download"></i>
+</span>
+<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar"</span> <span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://unsplash.it/200?image=1027"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud-download"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="color-examples">Color Examples</h2>
+  <p>This is an example of available colors for the Avatar element.</p>
+
+  <div class="docs-example">
+<span class="c-avatar c-avatar-primary" data-text="AB"></span>
+
+<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
+
+<span class="c-avatar c-avatar-success" data-text="AB"></span>
+
+<span class="c-avatar c-avatar-warning" data-text="AB"></span>
+
+<span class="c-avatar c-avatar-danger" data-text="AB"></span>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-success"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-warning"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-danger"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="size-examples">Size Examples</h2>
+  <p>This is an example of available sizes for the Avatar element.</p>
+
+  <div class="docs-example">
+<span class="c-avatar c-avatar-primary c-avatar-sm" data-text="AB"></span>
+<span class="c-avatar c-avatar-primary c-avatar-md" data-text="AB"></span>
+<span class="c-avatar c-avatar-primary c-avatar-lg" data-text="AB"></span>
+<span class="c-avatar c-avatar-primary c-avatar-xl" data-text="AB"></span>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary c-avatar-sm"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary c-avatar-md"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary c-avatar-lg"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary c-avatar-xl"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="status">Status</h2>
+  <p>In addition you can add a status to the avatar to alert the user. Status is applied with a data attribute - data-status=”{value}”.</p>
+
+  <div class="docs-example">
+<span class="c-avatar" data-status="success">
+  <img src="https://unsplash.it/200?image=1011" />
+</span>
+<span class="c-avatar c-avatar-primary" data-status="success">
+  <i class="fas fa-cloud-download"></i>
+</span>
+<span class="c-avatar c-avatar-secondary" data-text="CD" data-status="primary"></span>
+<span class="c-avatar c-avatar-success" data-text="EF" data-status="danger"></span>
+<span class="c-avatar c-avatar-danger" data-text="GH" data-status="warning"></span>
+<span class="c-avatar c-avatar-warning" data-text="HI" data-status="success"></span>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://unsplash.it/200?image=1011"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud-download"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"CD"</span> <span class="na">data-status=</span><span class="s">"primary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-success"</span> <span class="na">data-text=</span><span class="s">"EF"</span> <span class="na">data-status=</span><span class="s">"danger"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-danger"</span> <span class="na">data-text=</span><span class="s">"GH"</span> <span class="na">data-status=</span><span class="s">"warning"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-warning"</span> <span class="na">data-text=</span><span class="s">"HI"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+</div>
+
+<div id="angular" class="docs-tabs-content">
+
+  <h3 id="storybook-iframe">Storybook iframe</h3>
+  <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&amp;full=0&amp;addons=1&amp;stories=0&amp;panelRight=0&amp;addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
+
+</div>
+
 
 
           </div>

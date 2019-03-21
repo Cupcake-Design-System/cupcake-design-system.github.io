@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.">
+<meta name="description" content="Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task. Modals should be used sparingly as they interrupt the user's workflow.">
 
-<title>Cupcake · Overview</title>
+<title>Cupcake · Modals</title>
 
 
 
@@ -171,7 +171,7 @@
             </a>
           </li>
           
-          <li class="c-sidenav-menu-item ">
+          <li class="c-sidenav-menu-item c-sidenav-menu-item-active">
             <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/elements/modals/">
               Modals
             </a>
@@ -239,7 +239,7 @@
         <ul class="c-sidenav-menu-submenu">
           
           
-          <li class="c-sidenav-menu-item c-sidenav-menu-item-active">
+          <li class="c-sidenav-menu-item ">
             <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/elements/utilities/">
               Overview
             </a>
@@ -285,18 +285,271 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img">
-  <h1 class="docs-title" id="content">Overview</h1>
-  <p class="docs-lead">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
+  <h1 class="docs-title" id="content">Modals</h1>
+  <p class="docs-lead">Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task. Modals should be used sparingly as they interrupt the user's workflow.</p>
 </div>
 
       
+      
+        <ul class="docs-tabs ">
+    
+    <li><a data-tab="#design">Design</a></li>
+    
+    <li><a data-tab="#code">Code</a></li>
+    
+    <li><a data-tab="#angular">Angular</a></li>
+    
+</ul>
       
       
       <div class="main-demo-content">
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h2 id="overview">Overview</h2>
+            <div id="design" class="docs-tabs-content">
+
+  <h2 id="overview">Overview</h2>
+
+  <p>Modals generally conform to the following criteria:</p>
+
+  <ul>
+    <li>Modals appear on a layer above of the main content</li>
+    <li>Modals require user interaction</li>
+    <li>Modals disable the main content until the user explicitly interacts with the dialog</li>
+  </ul>
+
+  <p>Currently the following modals are in use:</p>
+
+  <ul>
+    <li>Standard modals</li>
+    <li>Modal dialogs</li>
+  </ul>
+
+  <hr />
+
+  <h3 id="standard-modals">Standard Modals</h3>
+  <p>Standard modals are used to deliver content or additional functionality that supports the underlying page or task.</p>
+
+  <h4 id="structure">Structure</h4>
+  <p>Standard modals are typically made up of the following:</p>
+
+  <ul>
+    <li>Heading</li>
+    <li>Close button</li>
+    <li>Content area</li>
+    <li>A 1 button or a 2 button combination (depending on the use case)</li>
+  </ul>
+
+  <p>Types of Standard Modals</p>
+
+  <ul>
+    <li>Fixed width standard modals</li>
+    <li>Flexible width standard modals (variation)</li>
+    <li>Full screen modals (variation)</li>
+  </ul>
+
+  <h4 id="examples-of-use">Examples of Use</h4>
+
+  <h5 id="fixed-width-modal">Fixed Width Modal</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/FIXED WIDTH.png" /></p>
+
+  <h5 id="flexible-width-modal">Flexible Width Modal</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/FLEXIBLE WIDTH.png" /></p>
+
+  <h5 id="full-screen-modal">Full Screen Modal</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/FULLSCREEN.png" /></p>
+  <hr />
+
+  <h4 id="dos-and-donts">Do’s and Dont’s</h4>
+
+  <h5 id="titles">Titles</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="button-usage">Button Usage</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="button-sizing">Button Sizing</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="button-placement">Button Placement</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <hr />
+
+  <h3 id="fixed-width-modals">Fixed Width Modals</h3>
+  <p>The default version of standard modals.</p>
+
+  <h5 id="behavior">Behavior</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="dos-and-donts-1">Do’s and Dont’s</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <hr />
+
+  <h3 id="flexible-width-modals">Flexible Width Modals</h3>
+  <p>A variation of the standard modal, the width of this modal can be adjusted to suit content too wide for the fixed width version.</p>
+
+  <h5 id="behavior-1">Behavior</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="dos-and-donts-2">Do’s and Dont’s</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <hr />
+
+  <h3 id="full-screen-modals">Full Screen Modals</h3>
+  <p>Another variation of the standard modal, this version is used to display large tables and grids.</p>
+
+  <h5 id="behavior-2">Behavior</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="dos-and-donts-3">Do’s and Dont’s</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <hr />
+
+  <h3 id="modal-dialogs">Modal Dialogs</h3>
+  <p>Modal Dialogs are used to communicate important information, and require a user response.</p>
+
+  <p>Structure</p>
+  <ul>
+    <li>Heading</li>
+    <li>Supportive copy</li>
+    <li>An confirmation checkbox (optional)</li>
+    <li>A one button or two button combination (depending on the use case)</li>
+  </ul>
+
+  <p>Types</p>
+  <ul>
+    <li>Modal dialogs requiring acknowledgement</li>
+    <li>Modal dialogs requiring a decision</li>
+  </ul>
+
+  <h4 id="dos-and-donts-4">Do’s and Dont’s</h4>
+
+  <h5 id="icon-usage-optional">Icon Usage (optional)</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="icon-placement">Icon Placement</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="headings">Headings</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="supportive-copy">Supportive Copy</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="button-sizing-1">Button Sizing</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="button-placement-1">Button Placement</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h5 id="positioning">Positioning</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h3 id="modal-dialog-requiring-an-acknowledgement">Modal Dialog requiring an acknowledgement</h3>
+  <p>This modal dialog requires the user to acknowledge important information, but not to make any specific decisions.</p>
+
+  <h5 id="examples-of-use-1">Examples of Use</h5>
+  <p>This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue.</p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/modal dialog 1.png" /></p>
+
+  <p>This version contains a checkbox that, if checked, will make it a once-off acknowledgement.</p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialog2.png" /></p>
+
+  <h4 id="dos-and-donts-5">Do’s and Dont’s</h4>
+
+  <h5 id="button-usage-1">Button Usage</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+  <h3 id="modal-dialog-requiring-an-decision">Modal Dialog requiring an decision</h3>
+  <p>This modal dialog requires the user to view important information, and to make a decision on wether to continue or not.</p>
+
+  <h5 id="examples-of-use-2">Examples of Use</h5>
+  <p>A delete warning, featuring a danger button, let’s the user understand the potential impact of their decision.</p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/modal dialog decision.png" /></p>
+
+  <h4 id="dos-and-donts-6">Do’s and Dont’s</h4>
+
+  <h5 id="button-usage-2">Button Usage</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/.png" /></p>
+
+</div>
+<!-- End Design Section -->
+
+<!-- Start Cupcake Code Section -->
+<div id="code" class="docs-tabs-content">
+
+  <h2 id="base">Base</h2>
+  <p>Use when displaying information that does not require a user action, such as a read-only document or a supplemental video.</p>
+
+  <div class="docs-example">
+<div id="modal_info" class="c-modal c-modal-info c-modal-fade c-modal-in">
+<div class="c-modal-dialog">
+    <div class="c-modal-content">
+        <div class="c-modal-header">
+            <div class="c-modal-title">Modal header</div>
+            <button type="button" class="c-modal-close">
+                    <span onclick="closeDefault()" aria-hidden="true">×</span>
+                </button>
+        </div>
+    <div class="c-modal-body c-text-center">
+        <i class="fa fa-question-circle c-modal-confirmation-icon"></i>
+        <span class="c-modal-confirmation-title">Modal Title</span>
+        <p class="c-modal-confirmation-text">Modal Text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eum.</p>
+        <div class="c-modal-confirmation-buttons">
+        <span class="close-modal" aria-hidden="true">
+            <button onclick="closeInfo()" class=" close-modal c-btn c-btn-secondary c-m-right-sm">Cancel</button>
+            <button onclick="closeInfo()" class=" close c-btn c-btn-primary">Ok</button>
+            </span>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"modal_info"</span> <span class="na">class=</span><span class="s">"c-modal c-modal-info c-modal-fade c-modal-in"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-modal-dialog"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-modal-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-modal-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-modal-title"</span><span class="nt">&gt;</span>Modal header<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-modal-close"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">onclick=</span><span class="s">"closeDefault()"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-modal-body c-text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-question-circle c-modal-confirmation-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-modal-confirmation-title"</span><span class="nt">&gt;</span>Modal Title<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"c-modal-confirmation-text"</span><span class="nt">&gt;</span>Modal Text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eum.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-modal-confirmation-buttons"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"close-modal"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"closeInfo()"</span> <span class="na">class=</span><span class="s">" close-modal c-btn c-btn-secondary c-m-right-sm"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"closeInfo()"</span> <span class="na">class=</span><span class="s">" close c-btn c-btn-primary"</span><span class="nt">&gt;</span>Ok<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+</div>
+<!-- End Cupcake Code Section -->
+
+<!-- Start Angular Code Section -->
+<div id="angular" class="docs-tabs-content">
+
+  <h3 id="storybook-iframe">Storybook iframe</h3>
+  <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&amp;full=0&amp;addons=1&amp;stories=0&amp;panelRight=0&amp;addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
+
+</div>
+<!-- End Angular Code Section -->
+
 
 
           </div>

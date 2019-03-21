@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.">
+<meta name="description" content="Radio buttons allow users to select a single option from a list of predefined options.">
 
-<title>Cupcake · Overview</title>
+<title>Cupcake · Radio Buttons</title>
 
 
 
@@ -177,7 +177,7 @@
             </a>
           </li>
           
-          <li class="c-sidenav-menu-item ">
+          <li class="c-sidenav-menu-item c-sidenav-menu-item-active">
             <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/elements/radio-buttons/">
               Radio Buttons
             </a>
@@ -239,7 +239,7 @@
         <ul class="c-sidenav-menu-submenu">
           
           
-          <li class="c-sidenav-menu-item c-sidenav-menu-item-active">
+          <li class="c-sidenav-menu-item ">
             <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/elements/utilities/">
               Overview
             </a>
@@ -285,18 +285,247 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img">
-  <h1 class="docs-title" id="content">Overview</h1>
-  <p class="docs-lead">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
+  <h1 class="docs-title" id="content">Radio Buttons</h1>
+  <p class="docs-lead">Radio buttons allow users to select a single option from a list of predefined options.</p>
 </div>
 
       
+      
+        <ul class="docs-tabs ">
+    
+    <li><a data-tab="#design">Design</a></li>
+    
+    <li><a data-tab="#code">Code</a></li>
+    
+    <li><a data-tab="#angular">Angular</a></li>
+    
+</ul>
       
       
       <div class="main-demo-content">
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h2 id="overview">Overview</h2>
+            <div id="design" class="docs-tabs-content">
+
+  <h2 id="overview">Overview</h2>
+  <p>Radio buttons are recommended for use when:</p>
+
+  <ul>
+    <li>A limited number of options are available</li>
+    <li>There is a recommended default value</li>
+    <li>Users need to see and compare options</li>
+    <li>One value is required to proceed</li>
+  </ul>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h4 id="states">States:</h4>
+
+  <ul>
+    <li>active</li>
+    <li>inactive</li>
+    <li>active (disabled)</li>
+    <li>inactive (disabled)</li>
+  </ul>
+
+  <hr />
+
+  <h4 id="dos-and-donts">Do’s and Dont’s</h4>
+
+  <h5 id="label-length">Label length</h5>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="capitalizing-labels">Capitalizing labels</h5>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="label-format">Label format</h5>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="radio-button-to-label-placement">Radio button to label placement</h5>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="default-selected-values">Default selected values</h5>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <hr />
+
+  <h3 id="radio-buttons-in-forms">Radio buttons in forms</h3>
+  <p>Radio buttons are typically used in forms as:</p>
+
+  <ul>
+    <li>Horizontal list groups</li>
+    <li>Vertical list groups</li>
+  </ul>
+
+  <h3 id="horizontal-list-groups">Horizontal list groups</h3>
+  <p>Typically used in forms where up to 3 listed options are displayed. Used where space is restricted. Labels should be short and concise.</p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h4 id="dos-and-donts---horizontal-list-groups">Do’s and Dont’s - Horizontal list groups</h4>
+
+  <h5 id="number-of-items">Number of items</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="label-vs-radio-placement">Label vs. radio placement</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="list-item-spacing">List item spacing</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="provide-an-escape-hatch">Provide an escape hatch</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h3 id="vertical-list-groups">Vertical list groups</h3>
+  <p>The most common way to display a radio list group in a form.</p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h4 id="dos-and-donts---vertical-list-groups">Do’s and Dont’s - Vertical list groups</h4>
+
+  <h5 id="number-of-items-1">Number of items</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="provide-an-escape-hatch-1">Provide an escape hatch</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+  <h5 id="list-item-spacing-1">List item spacing</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+
+</div>
+
+<div id="code" class="docs-tabs-content">
+
+  <h2 id="base">Base</h2>
+  <p>Use radio buttons to present each item in a list of options where users must make a single selection.</p>
+
+  <div class="docs-example">
+<label class="c-radio">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i> 
+    Yes
+</label>
+<label class="c-radio">
+    <input type="radio" name="radio" />
+    <i class="c-bg-primary"></i> 
+    No
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span> 
+    Yes
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span> 
+    No
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="color-examples">Color Examples</h2>
+  <p>This is an example of available colors for the Radio element.</p>
+
+  <div class="docs-example">
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+    Primary
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-success"></i>
+    Success
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-warning"></i>
+    Warning
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-danger"></i>
+    Danger
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Primary
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Success
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Warning
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Danger
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="size-examples">Size Examples</h2>
+  <p>This is an example of available colors for the Radio element.</p>
+
+  <div class="docs-example">
+<label class="c-radio-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-radio-lg">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-radio-xl">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-lg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-xl"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+</div>
+
+<div id="angular" class="docs-tabs-content">
+
+  <h3 id="storybook-iframe">Storybook iframe</h3>
+  <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&amp;full=0&amp;addons=1&amp;stories=0&amp;panelRight=0&amp;addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
+
+</div>
+
 
 
           </div>
