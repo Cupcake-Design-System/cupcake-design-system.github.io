@@ -19,7 +19,7 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-### Overview
+## Overview
 Radio buttons are recommended for use when:
 
 - A limited number of options are available
@@ -62,18 +62,18 @@ Radio buttons are recommended for use when:
 
 <hr>
 
-#### Radio buttons in forms
+### Radio buttons in forms
 Radio buttons are typically used in forms as:
 
 - Horizontal list groups
 - Vertical list groups
 
-#### Horizontal list groups
+### Horizontal list groups
 Typically used in forms where up to 3 listed options are displayed. Used where space is restricted. Labels should be short and concise.
 
 {% include guide-img.html img='elements/radio-buttons/'%} 
 
-##### Do's and Dont's - Horizontal list groups
+#### Do's and Dont's - Horizontal list groups
 
 ##### Number of items
 {% include guide-img.html img='elements/radio-buttons/'%} 
@@ -87,12 +87,13 @@ Typically used in forms where up to 3 listed options are displayed. Used where s
 ##### Provide an escape hatch
 {% include guide-img.html img='elements/radio-buttons/'%} 
 
-#### Vertical list groups
+
+### Vertical list groups
 The most common way to display a radio list group in a form.
 
 {% include guide-img.html img='elements/radio-buttons/'%} 
 
-##### Do's and Dont's - Vertical list groups
+#### Do's and Dont's - Vertical list groups
 
 ##### Number of items
 {% include guide-img.html img='elements/radio-buttons/'%} 
@@ -107,9 +108,8 @@ The most common way to display a radio list group in a form.
 
 <div id="code" class="docs-tabs-content" markdown="1">
 
-### Base
+## Base
 Use radio buttons to present each item in a list of options where users must make a single selection.
-
 
 {% example html %}
 <label class="c-radio">
@@ -124,7 +124,7 @@ Use radio buttons to present each item in a list of options where users must mak
 </label>
 {% endexample %}
 
-### Color Examples
+## Color Examples
 This is an example of available colors for the Radio element.
 
 {% example html %}
@@ -153,7 +153,7 @@ This is an example of available colors for the Radio element.
 </label>
 {% endexample %}
 
-### Size Examples
+## Size Examples
 This is an example of available colors for the Radio element.
 
 {% example html %}
