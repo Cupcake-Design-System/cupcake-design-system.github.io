@@ -122,7 +122,7 @@ Switches are often used as settings controls within tables to apply or disable i
 
 <div id="code" class="docs-tabs-content" markdown="1">
 
-# Components
+## Base
 
 Default switches support on/off text or blank depending on the design.
 

@@ -19,7 +19,7 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-### Overview
+## Overview
 
 ##### Types of avatars available:
 
@@ -60,7 +60,7 @@ For the companies that have more than 3 initials, the avatars will appear as the
 
 <div id="code" class="docs-tabs-content" markdown="1">
 
-### Base
+## Base
 Avatars are used to show a thumbnail representation of an individual or business in the interface.
 
 If an image is unavailable, up to two letters can be used instead. Text is best applied with a data attribute - data-text=”{value}”.
@@ -77,7 +77,7 @@ Icons can also be used if relevent to the context.
 <span class="c-avatar c-avatar-secondary" data-text="AB"></span>
 {% endexample %}
 
-### Color Examples
+## Color Examples
 This is an example of available colors for the Avatar element.
 
 {% example html %}
@@ -92,7 +92,7 @@ This is an example of available colors for the Avatar element.
 <span class="c-avatar c-avatar-danger" data-text="AB"></span>
 {% endexample %}
 
-### Size Examples
+## Size Examples
 This is an example of available sizes for the Avatar element.
 
 {% example html %}
@@ -102,7 +102,7 @@ This is an example of available sizes for the Avatar element.
 <span class="c-avatar c-avatar-primary c-avatar-xl" data-text="AB"></span>
 {% endexample %}
 
-### Status
+## Status
 In addition you can add a status to the avatar to alert the user. Status is applied with a data attribute - data-status=”{value}”.
 
 {% example html %}

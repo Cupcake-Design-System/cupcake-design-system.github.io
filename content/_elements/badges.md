@@ -19,16 +19,16 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-### Overview
+## Overview
 
-##### Types of badges available:
+Types of badges available:
 
 - Status Badges
 - Numeric Badges
 
 {% include guide-img.html img='elements/badges/BadgeTypes'%} 
 
-##### Badge Colors
+### Badge Colors
 Cupcake Color Palette: 
 https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color
 
@@ -42,10 +42,12 @@ https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color
 
 {% include guide-img.html img='elements/badges/DarkColorSet'%} 
 
-#### Status Badges
+<hr>
+
+## Status Badges
 Standard badges are used to indicate the status of an entity.
 
-##### Do's and Dont's
+### Do's and Dont's
 
 ##### Color Use
 
@@ -57,7 +59,9 @@ Standard badges are used to indicate the status of an entity.
 
 ##### Scaling in Table Cells
 
-#### Numeric Badges
+<hr>
+
+## Numeric Badges
 
 Numeric badges are used to indicate a running tally/count of an entity. 
 
@@ -65,15 +69,12 @@ Numeric badges are used to indicate a running tally/count of an entity.
 
 ##### Content
 
-<hr>
-
-## Do's and Dont's
 
 </div>
 
 <div id="code" class="docs-tabs-content" markdown="1">
 
-### Base
+## Base
 Badges are typically used to inform the user of status, information, or of an action that’s been taken.
 
 {% example html %}
@@ -81,7 +82,7 @@ Badges are typically used to inform the user of status, information, or of an ac
 <div class="c-badge c-badge-rounded">v.1.0.5</div>
 {% endexample %}
 
-### Color Examples
+## Color Examples
 This is an example of available colors for the Badges element.
 
 {% example html %}
@@ -96,7 +97,7 @@ This is an example of available colors for the Badges element.
 <div class="c-badge c-badge-danger">Danger</div>
 {% endexample %}
 
-### Size Examples
+## Size Examples
 This is an example of available sizes for the Badges element.
 
 {% example html %}
@@ -106,7 +107,7 @@ This is an example of available sizes for the Badges element.
 <div class="c-badge c-badge-secondary c-badge-xl">X-Large</div>
 {% endexample %}
 
-### Additional Styles/Options
+## Additional Styles/Options
 
 {% example html %}
 <div class="c-badge c-badge-secondary c-badge-sm">Information <i class="fal fa-anchor"></i></div>
@@ -158,7 +159,6 @@ This is an example of available sizes for the Badges element.
 <div class="c-badge c-badge-rounded c-badge-warning"></div>
 
 <div class="c-badge c-badge-rounded c-badge-danger"></div>
-
 
 
 <div class="c-badge c-badge-rounded c-badge-lg c-badge-primary"></div>

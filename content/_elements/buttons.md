@@ -19,7 +19,7 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-### Overview
+## Overview
 
 All buttons have the following features:
 - A hover and a click state
@@ -38,7 +38,7 @@ Buttons display in the following variations:
 
 <hr>
 
-#### Primary button
+### Primary button
 Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
 
 ##### States
@@ -56,7 +56,7 @@ draw the eye to common and frequently used functions.
 
 {% include guide-img.html img='elements/buttons/primary-button-icon-example'%} 
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Primary Button Usage
 
@@ -72,7 +72,7 @@ draw the eye to common and frequently used functions.
 
 <hr>
 
-#### Action button
+### Action button
 Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
 
 ##### States
@@ -87,7 +87,7 @@ Action buttons can include icons to add additional visual emphasis.
 
 {% include guide-img.html img='elements/buttons/'%} 
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Action button usage
 
@@ -99,7 +99,7 @@ Action buttons can include icons to add additional visual emphasis.
 
 <hr>
 
-#### Danger button
+### Danger button
 Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
 
 A destructive action button can share the screen with an additive action button and/or a primary action button
@@ -115,7 +115,7 @@ Action buttons can include icons to add additional visual emphasis.
 
 {% include guide-img.html img='elements/buttons/'%} 
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Danger button usage
 
@@ -127,7 +127,7 @@ Action buttons can include icons to add additional visual emphasis.
 
 <hr>
 
-#### Secondary button
+### Secondary button
 Secondary buttons are the standard button for general use. Secondary buttons are often used in combination with a primary button, to represent an opposing action.
 
 ##### States
@@ -144,7 +144,7 @@ Secondary buttons can include icons to:
 
 {% include guide-img.html img='elements/buttons/'%} 
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Secondary button usage
 
@@ -156,7 +156,7 @@ Secondary buttons can include icons to:
 
 <hr>
 
-#### Link-only button
+### Link-only button
 Link-only buttons are used under the following circumstances:
 
 - Primary and Secondary buttons have been used but an additional button is needed to highlight a less critical action or supporting link.
@@ -177,7 +177,7 @@ Link-only buttons can include icons to:
 
 {% include guide-img.html img='elements/buttons/'%} 
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Link-only button usage
 
@@ -193,7 +193,7 @@ Link-only buttons can include icons to:
 
 <hr>
 
-#### Icon button
+### Icon button
 Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.
 
 ##### States
@@ -203,7 +203,7 @@ Icon buttons are best used in combinations with other buttons, typically in tool
 ##### Variations
 Use colour on hover when using icon-only buttons as action or danger buttons.
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Icon button usage
 
@@ -211,7 +211,7 @@ Use colour on hover when using icon-only buttons as action or danger buttons.
 
 <hr>
 
-#### Icon-only button
+### Icon-only button
 Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.
 
 ##### States
@@ -228,7 +228,7 @@ Icon-only buttons are best used for common or repetitive actions, typically wher
 
 {% include guide-img.html img='elements/buttons/'%}
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Icon-only button usage
 
@@ -247,14 +247,14 @@ Icon-only buttons are best used for common or repetitive actions, typically wher
 <!-- Start Cupcake Code Section -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-### Base
+## Base
 Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
 
 {% example html %}
 <button type="button" class="c-btn c-btn-primary">Button</button>
 {% endexample %}
 
-### Color Examples
+## Color Examples
 This is an example of available colors for the Buttons element.
 
 {% example html %}
@@ -265,7 +265,7 @@ This is an example of available colors for the Buttons element.
 <button type="button" class="c-btn c-btn-danger">Danger</button>
 {% endexample %}
 
-### Size Examples
+## Size Examples
 This is an example of available sizes for the Buttons element.
 
 {% example html %}
@@ -275,7 +275,7 @@ This is an example of available sizes for the Buttons element.
 <button type="button" class="c-btn c-btn-primary c-btn-xl">X-Large</button>
 {% endexample %}
 
-### Disabled State
+## Disabled State
 Make buttons look inactive by adding the disabled boolean attribute to any <button> element.
 
 {% example html %}
@@ -286,10 +286,10 @@ Make buttons look inactive by adding the disabled boolean attribute to any <butt
 <button type="button" class="c-btn c-btn-danger" disabled>Danger</button>
 {% endexample %}
 
-### Additional Styles and Options
+## Additional Styles and Options
 These modifiers can be mixed/matched as needed
 
-#### Outlines
+### Outlines
 
 {% example html %}
 <button type="button" class="c-btn c-btn-primary-outline">Primary</button>
@@ -299,7 +299,7 @@ These modifiers can be mixed/matched as needed
 <button type="button" class="c-btn c-btn-danger-outline">Danger</button>
 {% endexample %}
 
-#### Pills and Colors
+### Pills and Colors
 
 {% example html %}
 <button type="button" class="c-btn c-btn-primary c-btn-pill">Primary</button>
@@ -309,7 +309,7 @@ These modifiers can be mixed/matched as needed
 <button type="button" class="c-btn c-btn-danger c-btn-pill">Danger</button>
 {% endexample %}
 
-#### Block Button
+### Block Button
 
 {% example html %}
 <button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>

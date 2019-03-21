@@ -19,7 +19,7 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-### Overview
+## Overview
 
 Modals generally conform to the following criteria:
 
@@ -34,10 +34,10 @@ Currently the following modals are in use:
 
 <hr>
 
-#### Standard Modals
+### Standard Modals
 Standard modals are used to deliver content or additional functionality that supports the underlying page or task.
 
-##### Structure
+#### Structure
 Standard modals are typically made up of the following:
 
 - Heading
@@ -51,19 +51,19 @@ Types of Standard Modals
 - Flexible width standard modals (variation)
 - Full screen modals (variation)
 
-##### Examples of Use
+#### Examples of Use
 
-Fixed Width Modal
+##### Fixed Width Modal
 {% include guide-img.html img='elements/modals/FIXED WIDTH'%} 
 
-Flexible Width Modal
+##### Flexible Width Modal
 {% include guide-img.html img='elements/modals/FLEXIBLE WIDTH'%} 
 
-Full Screen Modal
+##### Full Screen Modal
 {% include guide-img.html img='elements/modals/FULLSCREEN'%} 
 <hr>
 
-## Do's and Dont's
+#### Do's and Dont's
 
 ##### Titles
 {% include guide-img.html img='elements/modals/'%} 
@@ -79,40 +79,40 @@ Full Screen Modal
 
 <hr>
 
-##### Fixed Width Modals
+### Fixed Width Modals
 The default version of standard modals.
 
-Behavior 
+##### Behavior 
 {% include guide-img.html img='elements/modals/'%} 
 
-Do's and Dont's
+##### Do's and Dont's
 {% include guide-img.html img='elements/modals/'%} 
 
 <hr>
 
-##### Flexible Width Modals
+### Flexible Width Modals
 A variation of the standard modal, the width of this modal can be adjusted to suit content too wide for the fixed width version.
 
-Behavior 
+##### Behavior 
 {% include guide-img.html img='elements/modals/'%} 
 
-Do's and Dont's
+##### Do's and Dont's
 {% include guide-img.html img='elements/modals/'%} 
 
 <hr>
 
-##### Full Screen Modals
+### Full Screen Modals
 Another variation of the standard modal, this version is used to display large tables and grids.
 
-Behavior 
+##### Behavior 
 {% include guide-img.html img='elements/modals/'%} 
 
-Do's and Dont's
+##### Do's and Dont's
 {% include guide-img.html img='elements/modals/'%} 
 
 <hr>
 
-#### Modal Dialogs
+### Modal Dialogs
 Modal Dialogs are used to communicate important information, and require a user response.
 
 Structure
@@ -125,7 +125,7 @@ Types
 - Modal dialogs requiring acknowledgement
 - Modal dialogs requiring a decision
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Icon Usage (optional)
 {% include guide-img.html img='elements/modals/'%} 
@@ -148,7 +148,7 @@ Types
 ##### Positioning
 {% include guide-img.html img='elements/modals/'%} 
 
-#### Modal Dialog requiring an acknowledgement
+### Modal Dialog requiring an acknowledgement
 This modal dialog requires the user to acknowledge important information, but not to make any specific decisions.
 
 ##### Examples of Use
@@ -160,12 +160,12 @@ This version contains a checkbox that, if checked, will make it a once-off ackno
 
 {% include guide-img.html img='elements/modals/ModalDialog2'%} 
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Button Usage
 {% include guide-img.html img='elements/modals/'%} 
 
-#### Modal Dialog requiring an decision
+### Modal Dialog requiring an decision
 This modal dialog requires the user to view important information, and to make a decision on wether to continue or not.
 
 ##### Examples of Use
@@ -173,7 +173,7 @@ A delete warning, featuring a danger button, let's the user understand the poten
 
 {% include guide-img.html img='elements/modals/modal dialog decision'%} 
 
-##### Do's and Dont's
+#### Do's and Dont's
 
 ##### Button Usage
 {% include guide-img.html img='elements/modals/'%} 
@@ -185,7 +185,7 @@ A delete warning, featuring a danger button, let's the user understand the poten
 <!-- Start Cupcake Code Section -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-### Base
+## Base
 Use when displaying information that does not require a user action, such as a read-only document or a supplemental video.
 
 {% example html %}
