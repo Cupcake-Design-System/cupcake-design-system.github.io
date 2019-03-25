@@ -13,28 +13,27 @@ sizes:
 tabs:
 - Design
 - Code 
+- Angular
 ---
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-# Style Guide/Usage
+## Overview
 
-## Usage
-##### Switches are typically used in the following 3 ways:
+Switches are typically used in the following 3 ways:
 
 * As a control used in Settings pages
 * As a control used with tables, data visualisations, etc.
 * As a control used in tables
 
-## Switch States
-##### Switches have 4 different states:
+### Switch States
+Switches have 4 different states:
  * Active
  * Inactive
  * Active (disabled)
  * Inactive (disabled)
 
-## Types of Switches
-
+### Types of Switches
  * Standard version
  * Mobile version
  
@@ -42,14 +41,14 @@ tabs:
 
 {% include guide-img.html img='elements/switches/switches-versions'%}
 
-## General Do's and Dont's
+### General Do's and Dont's
 
-### Basic Switch Hygiene
+##### Basic Switch Hygiene
 {% include guide-img.html img='elements/switches/switch-hygiene-dos-donts'%}
 
 <hr>
 
-### Controls used in Settings pages
+#### Controls used in Settings pages
 * Switches are typically used on Settings screens to affect system or user account specific settings.
 * When switches are used in Settings pages, there should not be a requirement to apply the settings via a form.
 
@@ -123,7 +122,7 @@ Switches are often used as settings controls within tables to apply or disable i
 
 <div id="code" class="docs-tabs-content" markdown="1">
 
-# Components
+## Base
 
 Default switches support on/off text or blank depending on the design.
 
@@ -287,6 +286,11 @@ Make switches inactive.
 {% endexample %}
 
 
+</div>
 
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+### Storybook iframe
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
 
 </div>

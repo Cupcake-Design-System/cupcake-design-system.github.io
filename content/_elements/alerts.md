@@ -39,7 +39,7 @@ Banner alerts can be persistent or dismissible, depending of the nature of the m
 
 Persistent banner alerts can be hidden. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for their activation) is still valid.
 
-{% include guide-img.html img='elements/alert/alert-top'%}
+{% include guide-img.html img='elements/alert/banner-alert-1'%}
 
 **What banner alerts must communicate:**
 - Offline status
