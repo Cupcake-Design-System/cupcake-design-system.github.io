@@ -18,16 +18,16 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-## Overview
+# Overview
 
-Switches are typically used in the following 3 ways:
+**Switches are typically used in the following 3 ways:**
 
 * As a control used in Settings pages
 * As a control used with tables, data visualisations, etc.
 * As a control used in tables
 
 ### Switch States
-Switches have 4 different states:
+**Switches have 4 different states:**
  * Active
  * Inactive
  * Active (disabled)
@@ -48,11 +48,11 @@ Switches have 4 different states:
 
 <hr>
 
-#### Controls used in Settings pages
+## Controls used in Settings pages
 * Switches are typically used on Settings screens to affect system or user account specific settings.
 * When switches are used in Settings pages, there should not be a requirement to apply the settings via a form.
 
-##### Example of use
+#### Example of use
 {% include guide-img.html img='elements/switches/switch-example-settings'%}
 
 #### Do's and Don'ts
@@ -68,10 +68,10 @@ Switches have 4 different states:
 
 <hr>
 
-### Controls used with tables, data visualizations, etc.
+## Controls used with tables, data visualizations, etc.
 Switches are often used as controls with tables and data visualisations to affect the information the user can view and interact with.
 
-##### Example of use
+#### Example of use
 {% include guide-img.html img='elements/switches/switch-table-example' %}
 
 #### Do's and Don'ts
@@ -101,10 +101,10 @@ Switches are often used as controls with tables and data visualisations to affec
 
 <hr>
 
-### Controls used inside a table
+## Controls used inside a table
 Switches are often used as settings controls within tables to apply or disable immediate and continuous changes. 
 
-##### Example of use
+#### Example of use
 {% include guide-img.html img='elements/switches/switch-inside-table-example' %}
 
 #### Do's and Don'ts
@@ -116,8 +116,6 @@ Switches are often used as settings controls within tables to apply or disable i
 {% include guide-img.html img='elements/switches/switches-inside-tables-vs-forms' %}
 
 </div>
-
-
 
 
 <div id="code" class="docs-tabs-content" markdown="1">

@@ -19,7 +19,7 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-## Overview
+# Overview
 
 Modals generally conform to the following criteria:
 
@@ -34,33 +34,34 @@ Currently the following modals are in use:
 
 <hr>
 
-### Standard Modals
+## Standard Modals
 Standard modals are used to deliver content or additional functionality that supports the underlying page or task.
 
-#### Structure
-Standard modals are typically made up of the following:
+### Structure
+**Standard modals are typically made up of the following:**
 
 - Heading
 - Close button 
 - Content area
 - A 1 button or a 2 button combination (depending on the use case)
 
-Types of Standard Modals
+**Types of Standard Modals**
 
 - Fixed width standard modals
 - Flexible width standard modals (variation)
 - Full screen modals (variation)
 
-#### Examples of Use
+### Examples of Use
 
 ##### Fixed Width Modal
-{% include guide-img.html img='elements/modals/FIXED WIDTH'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/FIXED WIDTH.png" width="800px;">
 
 ##### Flexible Width Modal
-{% include guide-img.html img='elements/modals/FLEXIBLE WIDTH'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/FLEXIBLE WIDTH.png" width="800px;">
 
 ##### Full Screen Modal
-{% include guide-img.html img='elements/modals/FULLSCREEN'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/FULLSCREEN.png" width="800px;">
+
 <hr>
 
 #### Do's and Dont's
@@ -154,11 +155,11 @@ This modal dialog requires the user to acknowledge important information, but no
 ##### Examples of Use
 This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue. 
 
-{% include guide-img.html img='elements/modals/modal dialog 1'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/modal dialog 1.png" width="500px;">
 
 This version contains a checkbox that, if checked, will make it a once-off acknowledgement.
 
-{% include guide-img.html img='elements/modals/ModalDialog2'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/ModalDialog2.png" width="500px;">
 
 #### Do's and Dont's
 
@@ -171,7 +172,8 @@ This modal dialog requires the user to view important information, and to make a
 ##### Examples of Use
 A delete warning, featuring a danger button, let's the user understand the potential impact of their decision. 
 
-{% include guide-img.html img='elements/modals/modal dialog decision'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/modal dialog decision.png" width="500px;">
+
 
 #### Do's and Dont's
 
