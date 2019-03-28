@@ -19,14 +19,14 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-## Overview
+# Overview
 
-##### Types of avatars available:
+**Types of avatars available:**
 
 - People Version the user version is circular and should only be used for personal users.
 - Company Version - The company version is square and should only be used for company users.
 
-{% include guide-img.html img='elements/avatars/Types-of-Avatars'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/Types-of-Avatars.png" width="500px;">
 
 There are different ways an avatar can be displayed within people  and company versions:
 
@@ -34,11 +34,11 @@ There are different ways an avatar can be displayed within people  and company v
 - Placeholder user icon - The default avatar if the user does not provide name
 - Image (with and without border) - The avatar displays an image of the user's choice if uploaded
 
-{% include guide-img.html img='elements/avatars/Avatars-MoreTypes'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/Avatars-MoreTypes.png" width="500px;">
 
 For the companies that have more than 3 initials, the avatars will appear as the following:
 
-{% include guide-img.html img='elements/avatars/Company3+Initials'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/Company3+Initials.png" width="500px;">
 
 <hr>
 

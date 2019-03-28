@@ -19,28 +19,28 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-## Overview
+# Overview
 
-Types of badges available:
+**Types of badges available:**
 
 - Status Badges
 - Numeric Badges
 
-{% include guide-img.html img='elements/badges/BadgeTypes'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/BadgeTypes.png" width="500px;">
 
 ### Badge Colors
 Cupcake Color Palette: 
 https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color
 
 ##### Light Color Set
-- Only use values 3-5
+- Only use values **3-5**
 
-{% include guide-img.html img='elements/badges/LightColorSet'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="500px;">
 
 ##### Dark Color Set
-- Only use values 6-9
+- Only use values **6-9**
 
-{% include guide-img.html img='elements/badges/DarkColorSet'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="500px;">
 
 <hr>
 
@@ -49,13 +49,13 @@ Standard badges are used to indicate the status of an entity.
 
 ### Do's and Dont's
 
-##### Color Use
+### Color Use
 
 ##### Light vs Dark Color Sets
 
-##### Badge Use
+### Badge Use
 
-##### Content
+### Content
 
 ##### Scaling in Table Cells
 
