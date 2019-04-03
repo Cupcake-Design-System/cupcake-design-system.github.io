@@ -45,16 +45,16 @@ For the companies that have more than 3 initials, the avatars will appear as the
 ## Do's and Dont's
 
 ##### Usage
-{% include guide-img.html img='elements/buttons/button-wording-dos-donts'%} 
+{% include guide-img.html img='elements/avatars/name-of-file'%} 
 
 ##### Colors
-{% include guide-img.html img='elements/buttons/buttons-icons-dos-donts'%}
+{% include guide-img.html img='elements/avatars/name-of-file'%} 
 
 ##### Avatars in Headers
-{% include guide-img.html img='elements/buttons/buttons-icons-dos-donts'%}
+{% include guide-img.html img='elements/avatars/name-of-file'%} 
 
 ##### Avatar Sizes in Table Cells
-{% include guide-img.html img='elements/buttons/buttons-icons-dos-donts'%}
+{% include guide-img.html img='elements/avatars/name-of-file'%} 
 
 </div>
 

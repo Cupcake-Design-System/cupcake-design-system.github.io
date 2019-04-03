@@ -33,12 +33,12 @@ Cupcake Color Palette:
 https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color
 
 ##### Light Color Set
-- Only use values **3-5**
+- Only use **values 3-5**
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="500px;">
 
 ##### Dark Color Set
-- Only use values **6-9**
+- Only use **values 6-9**
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="500px;">
 
