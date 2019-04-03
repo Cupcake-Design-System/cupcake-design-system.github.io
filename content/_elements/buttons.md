@@ -19,14 +19,14 @@ tabs:
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-## Overview
+# Overview
 
-All buttons have the following features:
+**All buttons have the following features:**
 - A hover and a click state
 - Can be either active or disabled
 - Come in 4 different sizes (primarily for use in grids, components and mobile apps)
 
-Buttons display in the following variations:
+**Buttons display in the following variations:**
 
 - Primary button
 - Secondary button
@@ -36,105 +36,112 @@ Buttons display in the following variations:
 - Icon button
 - Icon-only button
 
+### General Do's and Don'ts
+
+##### Button wording 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/button-wording-dos-donts.png">
+
+##### Button + icon
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/buttons-icons-dos-donts.png">
+
 <hr>
 
-### Primary button
+## Primary button
 Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
 
-##### States
+#### States
 
-{% include guide-img.html img='elements/buttons/primary-button-states'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/primary-button-states.png" width="500px;">
 
-##### Variations
+#### Variations
 
 ##### Primary button + icon
 
 Primary buttons can include icons to:
 
 - Visually emphasise their purpose and
-draw the eye to common and frequently used functions.
+- Draw the eye to common and frequently used functions.
 
-{% include guide-img.html img='elements/buttons/primary-button-icon-example'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/primary-button-icon-example@2x.png" width="250px;">
 
 #### Do's and Dont's
 
 ##### Primary Button Usage
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/primary-button-dos-donts'%} 
 
 ##### Grouping Primary Buttons
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/grouping-primary-buttons-dos-donts'%} 
 
 ##### Grouping and Button Order
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/grouping-button-order-primary-dos-donts'%} 
 
 <hr>
 
-### Action button
+## Action button
 Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
 
-##### States
+#### States
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/action-button-states.png" width="500px;">
 
-{% include guide-img.html img='elements/buttons/'%} 
-
-##### Variations
+#### Variations
 
 ##### Action button + icon
 
 Action buttons can include icons to add additional visual emphasis.
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/action-button-icon-example@2x.png" width="250px;">
 
 #### Do's and Dont's
 
 ##### Action button usage
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/action-button-usage'%} 
 
 ##### Action button combinations
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/action-button-combinations'%} 
 
 <hr>
 
-### Danger button
+## Danger button
 Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
 
 A destructive action button can share the screen with an additive action button and/or a primary action button
 
-##### States
+#### States
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/danger-button-states.png" width="500px;">
 
-##### Variations
+#### Variations
 
 ##### Danger button + icon
 Action buttons can include icons to add additional visual emphasis.
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/danger-button-icon-example@2x.png" width="250px;">
 
 #### Do's and Dont's
 
 ##### Danger button usage
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/danger-button-usage'%} 
 
 ##### Danger button combinations
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/danger-button-combinations'%} 
 
 <hr>
 
-### Secondary button
+## Secondary button
 Secondary buttons are the standard button for general use. Secondary buttons are often used in combination with a primary button, to represent an opposing action.
 
-##### States
+#### States
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/secondary-button-states.png" width="500px;">
 
-##### Variations
+#### Variations
 
 ##### Seconary button + icon
 Secondary buttons can include icons to:
@@ -142,32 +149,32 @@ Secondary buttons can include icons to:
 - Visually emphasise their purpose and
 - Draw the eye to common and frequently used functions.
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/secondary-button-icon-example@2x.png" width="800px;">
 
 #### Do's and Dont's
 
 ##### Secondary button usage
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/secondary-button-usage-dos-donts'%} 
 
 ##### Repetitive use of secondary buttons in tables
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/secondary-button-repetitive-usage'%} 
 
 <hr>
 
-### Link-only button
+## Link-only button
 Link-only buttons are used under the following circumstances:
 
 - Primary and Secondary buttons have been used but an additional button is needed to highlight a less critical action or supporting link.
 - To add additional buttons to an already button heavy page
 - To represent less important or supporting actions.
 
-##### States
+#### States
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/link-button-states.png" width="500px;">
 
-##### Variations
+#### Variations
 
 ##### Link-only button + icon
 Link-only buttons can include icons to:
@@ -175,17 +182,17 @@ Link-only buttons can include icons to:
 - Visually emphasise their purpose and
 - Draw the eye to common and frequently used functions.
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/link-button-icon-example@2x.png" width="250px;">
 
 #### Do's and Dont's
 
 ##### Link-only button usage
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/link-only-button-usage'%} 
 
 ##### Button combinations
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/link-only-button-combinations'%} 
 
 ##### Button link vs text link
 
@@ -196,47 +203,45 @@ Link-only buttons can include icons to:
 ### Icon button
 Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.
 
-##### States
+#### States
 
-{% include guide-img.html img='elements/buttons/'%} 
-
-##### Variations
-Use colour on hover when using icon-only buttons as action or danger buttons.
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/icon-button-states.png" width="250px;">
 
 #### Do's and Dont's
 
 ##### Icon button usage
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/icon-button-usage'%} 
 
 <hr>
 
 ### Icon-only button
 Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.
 
-##### States
+#### States
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/icon-only-button-states.png" width="250px;">
 
-##### Variations
+#### Variations
+Use colour on hover when using icon-only buttons as action or danger buttons.
 
 ##### Action Variation
 
-{% include guide-img.html img='elements/buttons/'%} 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/icon-only-button-action-variation.png" width="100px;">
 
 ##### Danger Variation
 
-{% include guide-img.html img='elements/buttons/'%}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/icon-only-button-danger-variation.png" width="100px;">
 
 #### Do's and Dont's
 
 ##### Icon-only button usage
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/icon-only-button-usage'%} 
 
 ##### Icon-only button in forms
 
-{% include guide-img.html img='elements/buttons/'%} 
+{% include guide-img.html img='elements/buttons/icon-only-button-usage-forms'%} 
 
 
 
@@ -513,8 +518,18 @@ This is an example of available sizes for the Button Group element.
 <!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
+### Standard Button
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--standard"></iframe>
+
+### Submit Button
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--submit"></iframe>
+
+### Button Link
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--link"></iframe>
+
+
+### Icon Button
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--icon"></iframe>
 
 </div>
 <!-- End Angular Code Section -->
