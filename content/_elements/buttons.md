@@ -518,8 +518,18 @@ This is an example of available sizes for the Button Group element.
 <!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs"></iframe>
+### Standard Button
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--standard"></iframe>
+
+### Submit Button
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--submit"></iframe>
+
+### Button Link
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--link"></iframe>
+
+
+### Icon Button
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--icon"></iframe>
 
 </div>
 <!-- End Angular Code Section -->
