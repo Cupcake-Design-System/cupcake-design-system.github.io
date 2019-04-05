@@ -20,7 +20,10 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    branch: master
+    branch: dev
+  branches:
+    only:
+      - dev
 cache:
   directories:
     - node_modules
