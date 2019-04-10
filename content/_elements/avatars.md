@@ -45,18 +45,159 @@ For the companies that have more than 3 initials, the avatars will appear as the
 ## Do's and Dont's
 
 ##### Usage
-{% include guide-img.html img='elements/avatars/name-of-file'%} 
+<div class="c-row">
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_Usage_Do'%} 
+  </div>
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_Usage_Dont'%} 
+  </div>
+</div>
+<div class="c-row c-m-top-md">
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-check c-text-success"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Use a circular avatar for a personal user and a square avatar for a company user </span>
+      </div>
+    </div>
+  </div>
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-times c-text-danger"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Use a square avatar for a personal user or a circular avatar for a company user</span>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<br>
 
 ##### Colors
-{% include guide-img.html img='elements/avatars/name-of-file'%} 
+<div class="c-row">
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_Colors_Do'%} 
+  </div>
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_Colors_Dont'%} 
+  </div>
+</div>
+<div class="c-row c-m-top-lg">
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-check c-text-success"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Use the light colored avatars on dark backgrounds and the dark colored avatars on light backgrounds</span>
+      </div>
+    </div>
+  </div>
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-times c-text-danger"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Don't use the dark colored avatars on dark backgrounds or light colored avatars on light backgrounds</span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<br>
 
 ##### Avatars in Headers
-{% include guide-img.html img='elements/avatars/name-of-file'%} 
+<div class="c-row">
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_Header_Do'%} 
+  </div>
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_Header_Dont'%} 
+  </div>
+</div>
+<div class="c-row c-m-top-lg">
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-check c-text-success"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Use the avatar with an account name</span>
+      </div>
+    </div>
+  </div>
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-times c-text-danger"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Don't use an avatar without an account name or vice versa</span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<br>
+
+##### Avatars in Headers - Account Names
+  <div class="c-row">
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_AccountName_Do'%} 
+  </div>
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_AccountName_Dont'%} 
+  </div>
+</div>
+<div class="c-row c-m-top-lg">
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-check c-text-success"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Use the avatar on the left-hand side of the account name
+      </span>
+      </div>
+    </div>
+  </div>
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-times c-text-danger"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Don't use an avatar on the right-hand side of the account name</span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+<br>
 
 ##### Avatar Sizes in Table Cells
-{% include guide-img.html img='elements/avatars/name-of-file'%} 
-
+<div class="c-row">
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_Tables_Do'%} 
+  </div>
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/Avatars_Tables_Dont'%} 
+  </div>
 </div>
+<div class="c-row c-m-top-lg">
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-check c-text-success"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Use "XS" avatars in compact table cells, "SM" avatars in cosy table cells, and default avatars in comfortable table cells</span>
+      </div>
+    </div>
+  </div>
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-times c-text-danger"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Don't use any other sizes for avatars in table cells except for "XS" avatars in compact table cells, "SM" avatars in cosy table cells, and default avatars in comfortable table cells</span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<br>
+
+
 
 <div id="code" class="docs-tabs-content" markdown="1">
 

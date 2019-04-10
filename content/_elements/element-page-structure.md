@@ -75,7 +75,49 @@ Text description of element here
 #### Do's and Dont's - Element Type 1
 
 ##### Image Description
-{% include guide-img.html img='elements/radio-buttons/'%} 
+
+<div class="c-row">
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/file name'%} 
+  </div>
+  <div class="c-col">
+  {% include guide-img.html img='elements/avatars/file name'%} 
+  </div>
+</div>
+
+<div class="c-row c-m-top-md">
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-check c-text-success"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Use a circular avatar for a personal user and a square avatar for a company user </span>
+      </div>
+    </div>
+     <div class="c-media c-p-sm">
+      <span class="fas fa-check c-text-success"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Do 2 </span>
+      </div>
+    </div>
+  </div>
+  <div class="c-col">
+    <div class="c-media c-p-sm">
+      <span class="fas fa-times c-text-danger"></span>
+      <div class="c-media-body">
+        <span class="c-text-md">Use a square avatar for a personal user or a circular avatar for a company user</span>
+      </div>
+    </div>
+      <div class="c-media c-p-sm">
+       <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
 
 ##### Image Description
 {% include guide-img.html img='elements/radio-buttons/'%} 
