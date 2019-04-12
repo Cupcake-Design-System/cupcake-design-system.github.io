@@ -216,10 +216,10 @@ Toast alerts serve as a feedback & confirmation mechanism after the user perform
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert/toast-alert-1.png" width="50%;">
 
-<div class="c-header-xs">Box Alert Color Options</div>
+<div class="c-header-xs">Toast Alert Color Options</div>
 Toast alerts fall into three categories:
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/toast-alert-colors.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/toast-alert-colors.png" width="50%;">
 
 **What toast alerts must communicate:**
 
