@@ -22,6 +22,7 @@ tabs:
 # Overview
 
 **All buttons have the following features:**
+
 - A hover and a click state
 - Can be either active or disabled
 - Come in 4 different sizes (primarily for use in grids, components and mobile apps)
@@ -36,217 +37,726 @@ tabs:
 - Icon button
 - Icon-only button
 
-### General Do's and Don'ts
+<hr>
+  
+  <!-- Start General Do's and Don'ts Row -->
+  <div class="c-header-md">General Do's and Dont's</div>
 
-##### Button wording 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/button-wording-dos-donts.png">
+  <!-- Start Button Wording Row -->
+  <div class="c-header-xs">Button wording</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/general/general-wording-best@2x'%} 
+    </div>
+    <div class="c-col">
+   {% include guide-img.html img='elements/buttons/general/general-wording-better2x'%}  
+    </div>
+    <div class="c-col">
+     {% include guide-img.html img='elements/buttons/general/general-wording-no@2x'%} 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do keep primary buttons short and to the point</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use this approach when the context for the button is 100% clear</span>
+        </div>
+      </div>
+    </div>
+    <!-- Better -->
+     <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do try limit button wording to two words (3 words max. if needed)</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use wording and terms that need no additional explanation</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Create context with the design</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Better Col -->
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use ambiguous or lengthy wording in buttons</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use more than two words (3 words max. in exceptions)</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use wording that require additional explanations or context</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- End Button Wording Row -->
 
-##### Button + icon
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/buttons-icons-dos-donts.png">
+ <!-- Start Buttons + Icons Row -->
+  <div class="c-header-xs">Buttons + icons</div>
+  <div class="c-row">
+    <div class="c-col">
+      {% include guide-img.html img='elements/buttons/general/general-button-icon-do@2x'%} 
+    </div>
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/general/general-button-icon-dont@2x'%} 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Use generic icons with an accepted meaning associated with it</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Use that icon linked to one button or type of action only</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use icons which are ambiguous in meaning or not universally accepted for a specific purpose</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use icons which need an explanation</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use icons which might already be associated with other buttons or actions</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Buttons + Icons Row -->
+  <!-- End General Do's and Don'ts Section -->
 
 <hr>
 
-## Primary button
-Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
+  <!-- Start Primary Button Row -->
+  <div class="c-header-md">Primary button</div>
+  Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
 
-#### States
+  <!-- Start Primary Button Do's and Don'ts Section -->
+  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/primary-button-states.png" width="500px;">
+ <!-- Start Primary Button Usage Row -->
+  <div class="c-header-xs">Primary button usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/primary-button/primary-button-usage-do@2x'%} 
+    </div>
+    <div class="c-col">
+     {% include guide-img.html img='elements/buttons/primary-button/primary-button-usage-dont@2x'%}  
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use only one visible primary button per screen*</span>
+        </div>
+      </div>
+       <div class="c-media c-p-sm">
+        <span class=""></span>
+        <div class="c-media-body">
+          <span class="c-text-md">* Exception: Primary buttons hidden in interactions do not apply</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use more than one visible primary button per screen*</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Primary Button Usage Row -->
 
-#### Variations
+  <!-- Start Grouping Primary Buttons Row -->
+  <div class="c-header-xs">Grouping Primary Buttons</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/primary-button/primary-button-combo-do@2x'%}
+    </div>
+    <div class="c-col">
+  {% include guide-img.html img='elements/buttons/primary-button/primary-button-combo-dont@2x'%}  
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do combine primary buttons with secondary buttons</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do combine a primary button with a secondary button representing an opposing action</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't combine two or more primary buttons</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- End Grouping Primary Buttons Row -->
 
-##### Primary button + icon
-
-Primary buttons can include icons to:
-
-- Visually emphasise their purpose and
-- Draw the eye to common and frequently used functions.
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/primary-button-icon-example@2x.png" width="250px;">
-
-#### Do's and Dont's
-
-##### Primary Button Usage
-
-{% include guide-img.html img='elements/buttons/primary-button-dos-donts'%} 
-
-##### Grouping Primary Buttons
-
-{% include guide-img.html img='elements/buttons/grouping-primary-buttons-dos-donts'%} 
-
-##### Grouping and Button Order
-
-{% include guide-img.html img='elements/buttons/grouping-button-order-primary-dos-donts'%} 
+  <!-- Start Grouping and Button Order Row -->
+  <div class="c-header-xs">Grouping and button order</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/primary-button/primary-button-order-do@2x'%}
+    </div>
+    <div class="c-col">
+  {% include guide-img.html img='elements/buttons/primary-button/primary-button-order-dont@2x'%}  
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do place the button representing the opposing secondary action first</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't place the primary action button first</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't combine two or more primary buttons</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- End Grouping and Button Order Row -->
+  <!-- End Primary Button Section -->
 
 <hr>
 
-## Action button
+  <!-- Start Action Button Row -->
+  <div class="c-header-md">Action button</div>
 Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
 
-#### States
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/action-button-states.png" width="500px;">
+  <!-- Start Action Button Do's and Don'ts Section -->
+  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
 
-#### Variations
+ <!-- Start Action Button Usage Row -->
+  <div class="c-header-xs">Action button combinations</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/action-button/action-button-combo-do@2x'%} 
+    </div>
+    <div class="c-col">
+     {% include guide-img.html img='elements/buttons/action-button/action-button-combo-do@2x'%}   
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use an action button on the same screen with a primary action button</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do try to place the positive action button in the topmost area of the page or component as it represents the start of an interaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't combine multiple visible primary action buttons on a screen</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Action Button Combinations Row -->
 
-##### Action button + icon
-
-Action buttons can include icons to add additional visual emphasis.
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/action-button-icon-example@2x.png" width="250px;">
-
-#### Do's and Dont's
-
-##### Action button usage
-
-{% include guide-img.html img='elements/buttons/action-button-usage'%} 
-
-##### Action button combinations
-
-{% include guide-img.html img='elements/buttons/action-button-combinations'%} 
+  <!-- Start Action Button Usage Row -->
+  <div class="c-header-xs">Action button usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/action-button/action-button-usage-do@2x'%}
+    </div>
+    <div class="c-col">
+  {% include guide-img.html img='elements/buttons/primary-button/primary-button-usage-dont@2x'%}  
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use the action button instead of a primary button.</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Use only one instance of an action button per page, whether visible or hidden</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't combine multiple action buttons on a screen, whether visible or hidden</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- End Action Button Usage Row -->
+  <!-- End Action Button Section -->
 
 <hr>
 
-## Danger button
+<!-- Start Danger Button Row -->
+<div class="c-header-md">Danger button</div>
 Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
 
-A destructive action button can share the screen with an additive action button and/or a primary action button
+*A destructive action button can share the screen with an additive action button and/or a primary action button.
 
-#### States
+  <!-- Start Danger Button Do's and Don'ts Section -->
+  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/danger-button-states.png" width="500px;">
+ <!-- Start Danger Button Usage Row -->
+  <div class="c-header-xs">Danger button combinations</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/danger-button/danger-button-combo-do@2x'%} 
+    </div>
+    <div class="c-col">
+     {% include guide-img.html img='elements/buttons/danger-button/danger-button-combo-dont@2x'%}   
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do combine a danger button with a secondary action button so the user has the option to opt out</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use only one instance of a danger button visible on the screen at a time</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use a danger button without offering the user a way to opt out (destructive action buttons can be permanent)</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Danger Button Combinations Row -->
 
-#### Variations
+  <!-- Start Danger Button Usage Row -->
+  <div class="c-header-xs">Danger button usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/danger-button/danger-button-usage-do@2x'%} 
+    </div>
+    <div class="c-col">
+  {% include guide-img.html img='elements/buttons/danger-button/danger-button-usage-dont@2x'%} 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do make the danger button the final decision before a destructive action is taken</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't give the user additional decisions after the danger button is clicked</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- End Danger Button Usage Row -->
+  <!-- End Danger Button Section -->
 
-##### Danger button + icon
-Action buttons can include icons to add additional visual emphasis.
+  <hr>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/danger-button-icon-example@2x.png" width="250px;">
-
-#### Do's and Dont's
-
-##### Danger button usage
-
-{% include guide-img.html img='elements/buttons/danger-button-usage'%} 
-
-##### Danger button combinations
-
-{% include guide-img.html img='elements/buttons/danger-button-combinations'%} 
-
-<hr>
-
-## Secondary button
+<!-- Start Secondary Button Row -->
+<div class="c-header-md">Secondary button</div>
 Secondary buttons are the standard button for general use. Secondary buttons are often used in combination with a primary button, to represent an opposing action.
 
-#### States
+  <!-- Start Secondary Button Do's and Don'ts Section -->
+  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/secondary-button-states.png" width="500px;">
+ <!-- Start Secondary Button Usage Row -->
+  <div class="c-header-xs">Secondary button usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/secondary-button/secondary-button-usage-do@2x'%} 
+    </div>
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/secondary-button/secondary-button-usage-dont@2x'%}   
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do try to keep visible secondary button usage to a minimum</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do try to hide additional secondary button usage in interactions</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do hide additional options in a dropdown button if possible</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't clutter the screen with multiple secondary button clusters</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't be lazy - analyse your workflow to find solutions</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Secondary Button Usage Row -->
 
-#### Variations
+  <!-- Start Secondary Button Repeitive Use in Tables Row -->
+  <div class="c-header-xs">Repetitive use of secondary button use in tables</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/secondary-button/secondary-button-repeat-do@2x'%}
+    </div>
+    <div class="c-col">
+   {% include guide-img.html img='elements/buttons/secondary-button/secondary-button-repeat-dont@2x'%}
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do reveal repetitive button options on hover</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't clutter a table with repetitive buttons esp. if each button represents the same action. </span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- Start Secondary Button Repeitive Use in Tables Row -->
+  <!-- End Secondary Button Section -->
 
-##### Seconary button + icon
-Secondary buttons can include icons to:
-
-- Visually emphasise their purpose and
-- Draw the eye to common and frequently used functions.
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/secondary-button-icon-example@2x.png" width="800px;">
-
-#### Do's and Dont's
-
-##### Secondary button usage
-
-{% include guide-img.html img='elements/buttons/secondary-button-usage-dos-donts'%} 
-
-##### Repetitive use of secondary buttons in tables
-
-{% include guide-img.html img='elements/buttons/secondary-button-repetitive-usage'%} 
-
-<hr>
-
-## Link-only button
+ <!-- Start Link Only Button Row -->
+<div class="c-header-md">Link-only button</div>
 Link-only buttons are used under the following circumstances:
 
 - Primary and Secondary buttons have been used but an additional button is needed to highlight a less critical action or supporting link.
 - To add additional buttons to an already button heavy page
 - To represent less important or supporting actions.
 
-#### States
+<!-- Start Link-only Button Do's and Don'ts Section -->
+<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/link-button-states.png" width="500px;">
+ <!-- Start Link-only Button Usage Row -->
+  <div class="c-header-xs">Link-only button usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/link-only-button/link-button-usage-do@2x'%} 
+    </div>
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/link-only-button/link-button-usage-dont@2x'%}    
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use link-only buttons to highlight less critical actions or supporting links, thereby reducing overall button use on a page</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't crowd a page with button heavy layouts</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Link-only Button Usage Row -->
 
-#### Variations
+  <!-- Start Link-only Button Combinations Row -->
+  <div class="c-header-xs">Link-only button combinations</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/link-only-button/link-button-combo-do@2x'%} 
+    </div>
+    <div class="c-col">
+   {% include guide-img.html img='elements/buttons/link-only-button/link-button-combo-dont@2x'%}
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do present a link-only button as an additional non-critical action or link in combination with critical choice buttons</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't present a link-only button as a counter action to a primary or secondary button </span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- End Link-only Button Combinations Row -->
 
-##### Link-only button + icon
-Link-only buttons can include icons to:
-
-- Visually emphasise their purpose and
-- Draw the eye to common and frequently used functions.
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/link-button-icon-example@2x.png" width="250px;">
-
-#### Do's and Dont's
-
-##### Link-only button usage
-
-{% include guide-img.html img='elements/buttons/link-only-button-usage'%} 
-
-##### Button combinations
-
-{% include guide-img.html img='elements/buttons/link-only-button-combinations'%} 
-
-##### Button link vs text link
-
-{% include guide-img.html img='elements/buttons/'%} 
+  <!-- Start Button link vs text link Row -->
+  <div class="c-header-xs">Button link vs text link</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/link-only-button/link-button-vs-do@2x'%} 
+    </div>
+    <div class="c-col">
+   {% include guide-img.html img='elements/buttons/link-only-button/link-button-vs-dont@2x'%}
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use text links instead of button-only links where appropriate</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use button-only links to highlight more important actions over text links</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use button-only links where text links will be more appropriate</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- End Button link vs text link Row -->
+  <!-- End Link Only Button Section --> 
 
 <hr>
 
-### Icon button
+ <!-- Start Icon Button Row -->
+<div class="c-header-md">Icon button</div>
 Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.
 
-#### States
+<!-- Start Icon Button Do's and Don'ts Section -->
+<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/icon-button-states.png" width="250px;">
-
-#### Do's and Dont's
-
-##### Icon button usage
-
-{% include guide-img.html img='elements/buttons/icon-button-usage'%} 
+ <!-- Start Icon Button Usage Row -->
+  <div class="c-header-xs">Icon button usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/icon-button/icon-only-button-combo-do@2x'%} 
+    </div>
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/icon-button/icon-only-button-combo-dont@2x'%}     
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use icon buttons in combination with other buttons</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use icon buttons in locations where borderless icon buttons will not be noticed or expected</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use use borderless icon buttons when a standard icon button will be more effective</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Icon Button Usage Row -->
+  <!-- End Icon Button Section --> 
 
 <hr>
 
-### Icon-only button
+ <!-- Start Icon-only Button Row -->
+<div class="c-header-md">Icon-only button</div>
 Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.
 
-#### States
+<!-- Start Icon-only Button Do's and Don'ts Section -->
+<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/icon-only-button-states.png" width="250px;">
+ <!-- Start Icon-only Button Usage Row -->
+  <div class="c-header-xs">Icon-only button usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/icon-button/nameoffile'%} 
+    </div>
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/icon-button/nameoffile'%}     
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use icon-only buttons for common or repetitive actions in forms  </span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use icon buttons in tables</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Icon-only Button Usage Row -->
 
-#### Variations
-Use colour on hover when using icon-only buttons as action or danger buttons.
-
-##### Action Variation
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/icon-only-button-action-variation.png" width="100px;">
-
-##### Danger Variation
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/icon-only-button-danger-variation.png" width="100px;">
-
-#### Do's and Dont's
-
-##### Icon-only button usage
-
-{% include guide-img.html img='elements/buttons/icon-only-button-usage'%} 
-
-##### Icon-only button in forms
-
-{% include guide-img.html img='elements/buttons/icon-only-button-usage-forms'%} 
-
+ <!-- Start Icon-only Button in Forms Row -->
+  <div class="c-header-xs">Icon-only button in forms</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/icon-only-button/icon-only-button-forms-do@2x'%} 
+    </div>
+    <div class="c-col">
+    {% include guide-img.html img='elements/buttons/icon-only-button/icon-only-button-forms-dont@2x'%}     
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use icon-only buttons to represent critical action or danger button functions in tables and forms</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't modify icon buttons to conform to behave like primary or secondary buttons</span>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- End Icon-only Button in Forms Row -->
+  <!-- End Icon-only Button Section --> 
 
 
 </div>
-<!-- End Design Section -->
+<!-- End Design Tab -->
 
 
 <!-- Start Cupcake Code Section -->
