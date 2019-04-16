@@ -157,7 +157,7 @@ Dashboard cards generally conform to the following criteria:
 <div id="angular" class="docs-tabs-content" markdown="1">
 
 ### Card
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--cards"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--cards&nav=0"></iframe>
 
 </div>
 <!-- End Angular Code Section -->
