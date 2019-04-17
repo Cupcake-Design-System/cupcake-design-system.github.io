@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Radio buttons allow users to select a single option from a list of predefined options.">
+<meta name="description" content="Checkboxes allow users to select none, one or multiple options from a pre-defined list of options.">
 
-<title>Cupcake · Radio Buttons</title>
+<title>Cupcake · Checkboxes</title>
 
 
 
@@ -164,7 +164,7 @@
                 href="https://cupcake-design-system.github.io/elements/card/">
                 Card
               </a>
-              </li><li>
+              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/checkboxes/">
                 Checkboxes*
@@ -184,7 +184,7 @@
                 href="https://cupcake-design-system.github.io/elements/modals/">
                 Modals*
               </a>
-              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+              </li><li>
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/radio-buttons/">
                 Radio Buttons*
@@ -291,8 +291,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img">
-  <h1 class="docs-title" id="content">Radio Buttons</h1>
-  <p class="docs-lead">Radio buttons allow users to select a single option from a list of predefined options.</p>
+  <h1 class="docs-title" id="content">Checkboxes</h1>
+  <p class="docs-lead">Checkboxes allow users to select none, one or multiple options from a pre-defined list of options.</p>
 </div>
 
       
@@ -312,103 +312,483 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <div id="design" class="docs-tabs-content">
+            <!-- Start Design Tab -->
+<div id="design" class="docs-tabs-content">
 
-  <h2 id="overview">Overview</h2>
-  <p>Radio buttons are recommended for use when:</p>
+  <h1 id="overview">Overview</h1>
+
+  <p><strong>Checkboxes have 4 different states:</strong></p>
 
   <ul>
-    <li>A limited number of options are available</li>
-    <li>There is a recommended default value</li>
-    <li>Users need to see and compare options</li>
-    <li>One value is required to proceed</li>
+    <li>Active</li>
+    <li>Inactive</li>
+    <li>Active (disabled)</li>
+    <li>Inactive (disabled)</li>
   </ul>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
-
-  <h4 id="states">States:</h4>
+  <p><strong>Checkboxes are typically used as:</strong></p>
 
   <ul>
-    <li>active</li>
-    <li>inactive</li>
-    <li>active (disabled)</li>
-    <li>inactive (disabled)</li>
+    <li>Multiple selection controls in forms</li>
+    <li>Standalone checkboxes</li>
+    <li>Bulk action selectors in tables</li>
   </ul>
 
   <hr />
 
-  <h4 id="dos-and-donts">Do’s and Dont’s</h4>
+  <p><!-- Start Multiple Selection Controls in Forms Section --></p>
+  <div class="c-header-md">Multiple selection controls in forms</div>
 
-  <h5 id="label-length">Label length</h5>
+  <div class="c-header-sm c-m-top-md">Do's and Dont's</div>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <p><!-- Start Vertical list vs. horizontal list Row --></p>
+  <div class="c-header-xs">Vertical list vs. horizontal list</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use multiple selection lists in a vertical format</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use multiple selection lists in a horizontal format</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Vertical list vs. horizontal list Row --></p>
 
-  <h5 id="capitalizing-labels">Capitalizing labels</h5>
+  <p><!-- Start Label Length Row --></p>
+  <div class="c-header-xs">Label length</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do keep checkbox text short and concise</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use a sentence to describe something if it can be summed up in three or less words</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Label Length Row --></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <p><!-- Start Capitalizing Labels Row --></p>
+  <div class="c-header-xs">Capitalizing Labels</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use sentence style capitalization</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't start the label as lowercase</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Capitalizing Labels Row --></p>
 
-  <h5 id="label-format">Label format</h5>
+  <p><!-- Start Label Format Row --></p>
+  <div class="c-header-xs">Label format</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do list radio list items without any additional characters or punctuation at the end of the label</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't add in any special characters or punctuation at the end of the label</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Label Format Row --></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <p><!-- Start Radio button to label placement Row --></p>
+  <div class="c-header-xs">Radio button to label placement</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do vertically center the label so there is an equal amount of space top and bottom in relation to the button</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't position the label so there is an unequal amount of space at the top and bottom in relation to the button</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Radio button to label placement Row --></p>
 
-  <h5 id="radio-button-to-label-placement">Radio button to label placement</h5>
+  <p><!-- Start Number of Items Row --></p>
+  <div class="c-header-xs">Number of items</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do keep vertical list groups to 6 items or less</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't add more than 6 items in a vertical list group</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Number of Items Row --></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
-
-  <h5 id="default-selected-values">Default selected values</h5>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <p><!-- Start List Item Spacing Row --></p>
+  <div class="c-header-xs">List item spacing</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do keep spacing at a just-right ratio</span>
+        </div>
+      </div>
+        <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use consistent spacing between list items</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use too-tight or too-loose spacing</span>
+        </div>
+      </div>
+       <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't allow inconsistent spacing between list items in order to conform to a specific list height</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End List Item Spacing Row -->
+  <!-- END Multiple Selection Controls in Forms Section --></p>
 
   <hr />
 
-  <h3 id="radio-buttons-in-forms">Radio buttons in forms</h3>
-  <p>Radio buttons are typically used in forms as:</p>
+  <p><!-- Start Standalone Checkboxes Section --></p>
+  <div class="c-header-md">Standalone checkboxes</div>
 
-  <ul>
-    <li>Horizontal list groups</li>
-    <li>Vertical list groups</li>
-  </ul>
+  <div class="c-header-sm c-m-top-md">Do's and Dont's</div>
 
-  <h3 id="horizontal-list-groups">Horizontal list groups</h3>
-  <p>Typically used in forms where up to 3 listed options are displayed. Used where space is restricted. Labels should be short and concise.</p>
+  <p><!-- Start Label Length Row --></p>
+  <div class="c-header-xs">Label length</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do limit standalone checkbox text to two short sentences and to one paragraph</span>
+        </div>
+      </div>
+       <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do link to any supporting text or documentation</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use more than two short sentences or more than one paragraph; rather hyperlink to the supporting text or documentation</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Label Length Row --></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <p><!-- Start Forms vs Settings Row --></p>
+  <div class="c-header-xs">Forms vs Settings</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use standalone checkboxes in forms to record user compliance or agreement</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use checkboxes to apply settings; use a switch instead</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Forms vs Settings Row -->
+  <!-- END Standalone Checkboxes Section --></p>
 
-  <h4 id="dos-and-donts---horizontal-list-groups">Do’s and Dont’s - Horizontal list groups</h4>
+  <hr />
 
-  <h5 id="number-of-items">Number of items</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <p><!-- Start Bulk action selectors in a table Section --></p>
+  <div class="c-header-md">Bulk action selectors in a table</div>
+  <p>Checkboxes are used in tables to select which rows to apply bulk actions to.</p>
 
-  <h5 id="label-vs-radio-placement">Label vs. radio placement</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/nameoffile.png" width="500px;" /></p>
 
-  <h5 id="list-item-spacing">List item spacing</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <div class="c-header-sm c-m-top-md">Do's and Dont's</div>
 
-  <h5 id="provide-an-escape-hatch">Provide an escape hatch</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
-
-  <h3 id="vertical-list-groups">Vertical list groups</h3>
-  <p>The most common way to display a radio list group in a form.</p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
-
-  <h4 id="dos-and-donts---vertical-list-groups">Do’s and Dont’s - Vertical list groups</h4>
-
-  <h5 id="number-of-items-1">Number of items</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
-
-  <h5 id="provide-an-escape-hatch-1">Provide an escape hatch</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
-
-  <h5 id="list-item-spacing-1">List item spacing</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/radio-buttons/.png" /></p>
+  <p><!-- Start Visual Indicators Row --></p>
+  <div class="c-header-xs">Visual indicators</div>
+  <div class="c-row">
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+    <div class="c-col">
+    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do support a bulk action selector with an additional visual indicator</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use a checkbox in isolation when indicating bulk actions</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  <p><!-- End Visual Indicators Row -->
+  <!-- END Bulk action selectors in a table Section --></p>
 
 </div>
+<!-- End Design Tab -->
 
+<!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content">
 
-  <h2 id="base">Base</h2>
+  <h2 id="checkbox">Checkbox</h2>
+  <p>Checkboxes are most commonly used to give merchants a way to make a range of selections (zero, one, or multiple).</p>
+
+  <div class="docs-example">
+<label class="c-checkbox">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+    Basic Checkbox
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Basic Checkbox
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="color-examples">Color Examples</h2>
+
+  <div class="docs-example">
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+    Primary
+</label>
+
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-success"></i>
+    Success
+</label>
+
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-warning"></i>
+    Warning
+</label>
+
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-danger"></i>
+    Danger
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Primary
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Success
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Warning
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Danger
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="size-examples">Size Examples</h2>
+
+  <div class="docs-example">
+<label class="c-checkbox-sm c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-checkbox-lg c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-checkbox-xl c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-sm c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-lg c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-xl c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="radio-buttons">Radio Buttons</h2>
   <p>Use radio buttons to present each item in a list of options where users must make a single selection.</p>
 
   <div class="docs-example">
@@ -435,8 +815,7 @@
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="color-examples">Color Examples</h2>
-  <p>This is an example of available colors for the Radio element.</p>
+  <h2 id="color-examples-1">Color Examples</h2>
 
   <div class="docs-example">
 <label class="c-radio c-m-right-sm">
@@ -488,8 +867,7 @@
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="size-examples">Size Examples</h2>
-  <p>This is an example of available colors for the Radio element.</p>
+  <h2 id="size-examples-1">Size Examples</h2>
 
   <div class="docs-example">
 <label class="c-radio-sm">
@@ -524,13 +902,16 @@
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
 </div>
+<!-- End Cupcake Code Tab -->
 
+<!-- Start Angular Code Tab -->
 <div id="angular" class="docs-tabs-content">
 
-  <h3 id="radio-button">Radio Button</h3>
-  <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--radio-button&amp;nav=0"></iframe>
+  <h3 id="storybook-iframe">Storybook iframe</h3>
+  <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&amp;full=0&amp;addons=1&amp;stories=0&amp;panelRight=0&amp;addonPanel=storybooks%2Fstorybook-addon-knobs&amp;nav=0"></iframe>
 
 </div>
+<!-- End Angular Code Tab -->
 
 
 
