@@ -1,0 +1,82 @@
+
+{% assign items = site.data.resources-nav %}
+
+<aside class="doc-sidenav">
+    <nav class="doc-sidenav-body" data-simplebar="">
+    
+        <ul class="doc-sidenav-menu">
+    
+          <div class="doc-sidenav-navbar">
+            <a class="doc-sidenav-navbar-link {% if page.group == "getting-started" %}doc-sidenav-navbar-link-active{% endif %}"
+              href="{{ site.url }}{{ site.baseurl }}/getting-started/overview">
+              Getting Started
+            </a>
+            <a class="doc-sidenav-navbar-link {% if page.group == "elements" %}doc-sidenav-navbar-link-active{% endif %}"
+              href="{{ site.url }}{{ site.baseurl }}/elements/overview">
+              Elements
+            </a>
+            <a class="doc-sidenav-navbar-link {% if page.group == "patterns" %}doc-sidenav-navbar-link-active{% endif %}"
+              href="{{ site.url }}{{ site.baseurl }}/patterns/overview">
+              Patterns
+            </a>
+          </div>
+    
+          {%- assign page_slug = page.url | split: '/' | last -%}
+          {%- for group in items -%}
+          {%- assign link = group.pages | first -%}
+          {%- assign link_slug = link.title | slugify -%}
+          {%- assign group_slug = group.title | slugify -%}
+          {%- assign active = nil -%}
+        
+          {%- if page.group == group_slug -%}
+            {%- assign active = 'doc-sidenav-menu-item-active' -%}
+          {%- endif -%}
+    
+          {% if group.url %}
+    
+          <li class="doc-sidenav-menu-item {% if page.home == "true" %}doc-sidenav-menu-item-active{% endif %}">
+            <a class="doc-sidenav-menu-link" href="{{ site.url }}{{ site.baseurl }}/{{ group.url }}">
+              <span class="doc-sidenav-menu-title">
+                {{ group.title }}
+              </span>
+            </a>
+          </li>
+    
+        {% else %}
+        
+          <li class="doc-sidenav-menu-item {% unless active == nil %} {{ active }}{% endunless %}">
+              
+            <a class="doc-sidenav-menu-link">
+              <span class="doc-sidenav-menu-title">
+                {{ group.title }}
+              </span>
+            </a>
+        
+              <ul class="doc-sidenav-menu-submenu">
+                {%- for doc in group.pages -%}
+                {%- assign doc_slug = doc.title | slugify -%}
+                {%- assign active = nil -%}
+    
+                {%- if page.group == page.group and page_slug == doc_slug -%}
+                {%- assign active = 'doc-sidenav-menu-item-active' -%}
+                {%- endif -%}
+    
+    
+                <li{% unless active == nil %} class="doc-sidenav-menu-item {{ active }}" {% endunless %}>
+                  <a class="doc-sidenav-menu-link"
+                    href="{% if group.title == "Resources" %}{{ site.url }}{{ site.baseurl }}/{{ doc_slug }}/{% else %}{{ site.url }}{{ site.baseurl }}/{{ page.group }}/{{ doc_slug }}/{% endif %}">
+                    {{ doc.title }}
+                  </a>
+                  </li>
+                  {%- endfor -%}
+              </ul>
+    
+          </li>
+       
+        {% endif %}
+        {%- endfor -%}
+    
+        </ul>
+    
+      </nav>
+    </aside>

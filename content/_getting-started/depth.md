@@ -1,7 +1,6 @@
 ---
 title: Depth
 description: Create groupings and associations between content as well as hierarchy and focus through depth.
-category: Visual Guidelines
 sizes:
 - 0
 - xs

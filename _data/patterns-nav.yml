@@ -1,0 +1,12 @@
+- title: Patterns
+  pages:
+    - title: Overview
+    - title: App Layout
+    - title: Header
+    - title: Footer
+    - title: Grid
+
+- title: Pages
+  pages:
+    - title: Drag and Drop
+    - title: Error Pages

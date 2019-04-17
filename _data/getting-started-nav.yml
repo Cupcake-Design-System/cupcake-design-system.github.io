@@ -1,0 +1,17 @@
+- title: Getting Started
+  pages:
+    - title: Overview
+    - title: Principles
+    - title: Designers
+    - title: Developers
+    - title: Adoption
+    - title: FAQ
+    - title: Contribute           
+
+- title: Visual Guidelines
+  pages:
+    - title: Animation
+    - title: Depth 
+    - title: Extended Colors
+    - title: Primary Colors
+    - title: Typography

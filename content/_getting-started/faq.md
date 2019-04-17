@@ -66,6 +66,5 @@ General inquiries
 
 ---
 
-<a class="c-btn-link c-pull-right" href="{{ site.url }}{{ site.baseurl }}/content/getting-started/contribute/">
- Continue to Contribute <i class="fa fa-arrow-right"></i>
-</a>
+{% include continue.html page='getting-started/contribute' content="Contribute" %}
+

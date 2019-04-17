@@ -1,4 +1,4 @@
-.c-sidenav {
+.doc-sidenav {
   left: 0;
   top: 48px;
   bottom: 0;
@@ -15,11 +15,10 @@
   border-right: $sidebar-border-right;
 
   &-body {
-    position: relative;
-    -ms-flex: 1 1 0%;
     flex: 1 1 0%;
-    overflow-x: hidden;
     overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
     padding: 0 24px 50px;
 
     @include media-breakpoint-down(sm) {
@@ -30,7 +29,7 @@
   &-menu {
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     list-style: none;
 
     @include media-breakpoint-down(sm) {
@@ -67,7 +66,7 @@
       margin-bottom: 0;
       list-style-type: none; 
       
-      .c-sidenav-menu-link {
+      .doc-sidenav-menu-link {
         font-weight: 400;
         color: $sidebar-color;
         letter-spacing: 0;
@@ -84,13 +83,13 @@
         }
       }
       
-      .c-sidenav-menu-item-active {
-        .c-sidenav-menu-link {
+      .doc-sidenav-menu-item-active {
+        .doc-sidenav-menu-link {
           background-color: #f1f3f5;
           border-radius: 4px;
           font-weight: bold;
         }
-        &:hover > .c-sidenav-menu-link{
+        &:hover > .doc-sidenav-menu-link{
           background-color: #f1f3f5;
           border-radius: 4px;
         }
@@ -99,34 +98,34 @@
   }
 }
 
-.c-sidenav~.main-container {
+.doc-sidenav~.main-container {
   margin-left: $sidebar-width;
 }
 
-.c-sidenav-menu-item:hover>.c-sidenav-menu-link {
+.doc-sidenav-menu-item:hover>.doc-sidenav-menu-link {
   color: $sidebar-color-active;
 }
 
-.c-sidenav-menu-item-active>.c-sidenav-menu-link .c-sidenav-menu-icon,
-.c-sidenav-menu-item:hover>.c-sidenav-menu-link .c-sidenav-menu-icon {
+.doc-sidenav-menu-item-active>.doc-sidenav-menu-link .doc-sidenav-menu-icon,
+.doc-sidenav-menu-item:hover>.doc-sidenav-menu-link .doc-sidenav-menu-icon {
   color: $sidebar-color-active
 }
 
-.c-sidenav-menu-item-active>.c-sidenav-menu-link {
+.doc-sidenav-menu-item-active>.doc-sidenav-menu-link {
   color: $sidebar-color-active;
 }
 
-.c-sidenav-menu-link .c-sidenav-menu-icon:hover {
+.doc-sidenav-menu-link .doc-sidenav-menu-icon:hover {
   color: $sidebar-color;
 }
 
-.c-sidenav-menu-item.c-sidenav-menu-item-active {
-  .c-sidenav-menu-submenu {
+.doc-sidenav-menu-item.doc-sidenav-menu-item-active {
+  .doc-sidenav-menu-submenu {
     display: block !important;
   }
 }
 
-.c-sidenav-navbar {
+.doc-sidenav-navbar {
   display: none;
 
   &-link {

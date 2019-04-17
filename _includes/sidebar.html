@@ -1,45 +1,88 @@
 {% if page.group == "elements" %}
-  {% assign items = site.elements | group_by: 'category' %}
+  {% assign items = site.data.elements-nav %}
 {% elsif page.group == "patterns" %}
-  {% assign items = site.patterns | group_by: 'category' %}
+  {% assign items = site.data.patterns-nav %}
 {% elsif page.group == "getting-started" %}
-  {% assign items = site.getting-started | group_by: 'category' %}
+  {% assign items = site.data.getting-started-nav %}
 {% endif %}
 
 
-<aside class="c-sidenav">
-  <nav class="c-sidenav-body">
-    <ul class="c-sidenav-menu">
-      <div class="c-sidenav-navbar">
-        <a class="c-sidenav-navbar-link {% if page.group == "getting-started" %}c-sidenav-navbar-link-active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/getting-started/overview">
+<aside class="doc-sidenav">
+<nav class="doc-sidenav-body" data-simplebar="">
+
+    <ul class="doc-sidenav-menu">
+
+      <div class="doc-sidenav-navbar">
+        <a class="doc-sidenav-navbar-link {% if page.group == "getting-started" %}doc-sidenav-navbar-link-active{% endif %}"
+          href="{{ site.url }}{{ site.baseurl }}/getting-started/overview">
           Getting Started
         </a>
-        <a class="c-sidenav-navbar-link {% if page.group == "elements" %}c-sidenav-navbar-link-active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/elements/overview">
+        <a class="doc-sidenav-navbar-link {% if page.group == "elements" %}doc-sidenav-navbar-link-active{% endif %}"
+          href="{{ site.url }}{{ site.baseurl }}/elements/overview">
           Elements
         </a>
-        <a class="c-sidenav-navbar-link {% if page.group == "patterns" %}c-sidenav-navbar-link-active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/patterns/overview">
+        <a class="doc-sidenav-navbar-link {% if page.group == "patterns" %}doc-sidenav-navbar-link-active{% endif %}"
+          href="{{ site.url }}{{ site.baseurl }}/patterns/overview">
           Patterns
         </a>
-      </div>      
-      <li class="c-sidenav-menu-item">
-        {% for cat in items %}
-        <span class="c-sidenav-menu-link">
-          <span class="c-sidenav-menu-title">
-            {{ cat.name | capitalize }}
+      </div>
+
+      {%- assign page_slug = page.url | split: '/' | last -%}
+      {%- for group in items -%}
+      {%- assign link = group.pages | first -%}
+      {%- assign link_slug = link.title | slugify -%}
+      {%- assign group_slug = group.title | slugify -%}
+      {%- assign active = nil -%}
+    
+      {%- if page.group == group_slug -%}
+        {%- assign active = 'doc-sidenav-menu-item-active' -%}
+      {%- endif -%}
+
+      {% if group.url %}
+
+      <li class="doc-sidenav-menu-item {% if page.home == "true" %}doc-sidenav-menu-item-active{% endif %}">
+        <a class="doc-sidenav-menu-link" href="{{ site.url }}{{ site.baseurl }}/{{ group.url }}">
+          <span class="doc-sidenav-menu-title">
+            {{ group.title }}
           </span>
-        </span>
-        <ul class="c-sidenav-menu-submenu">
-          {% assign items = cat.items | sort: 'weight' %}
-          {% for item in items %}
-          <li class="c-sidenav-menu-item {% if item.url == page.url %}c-sidenav-menu-item-active{% endif %}">
-            <a class="c-sidenav-menu-link" href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">
-              {{ item.title }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-        {% endfor %}
+        </a>
       </li>
+
+    {% else %}
+    
+      <li class="doc-sidenav-menu-item {% unless active == nil %} {{ active }}{% endunless %}">
+          
+        <a class="doc-sidenav-menu-link">
+          <span class="doc-sidenav-menu-title">
+            {{ group.title }}
+          </span>
+        </a>
+    
+          <ul class="doc-sidenav-menu-submenu">
+            {%- for doc in group.pages -%}
+            {%- assign doc_slug = doc.title | slugify -%}
+            {%- assign active = nil -%}
+
+            {%- if page.group == page.group and page_slug == doc_slug -%}
+            {%- assign active = 'doc-sidenav-menu-item-active' -%}
+            {%- endif -%}
+
+
+            <li{% unless active == nil %} class="doc-sidenav-menu-item {{ active }}" {% endunless %}>
+              <a class="doc-sidenav-menu-link"
+                href="{% if group.title == "Resources" %}{{ site.url }}{{ site.baseurl }}/{{ doc_slug }}/{% else %}{{ site.url }}{{ site.baseurl }}/{{ page.group }}/{{ doc_slug }}/{% endif %}">
+                {{ doc.title }}
+              </a>
+              </li>
+              {%- endfor -%}
+          </ul>
+
+      </li>
+   
+    {% endif %}
+    {%- endfor -%}
+
     </ul>
+
   </nav>
 </aside>

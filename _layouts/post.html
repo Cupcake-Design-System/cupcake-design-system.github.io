@@ -18,10 +18,7 @@
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/cupcake/default.css">
   
   <!-- Documentation extras -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
-  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
   <script defer src="{{ site.url }}{{ site.baseurl }}/assets/js/fontawesome-all.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" rel="stylesheet">
   <link href="{{ site.url }}{{ site.baseurl }}/assets/scss/documentation.css" rel="stylesheet">
 </head>
 
@@ -30,21 +27,21 @@
 {% include docs-navbar.html %}
 {% assign items = site.posts | group_by: 'category' %}
 
-<aside class="c-sidenav">
-  <nav class="c-sidenav-body">
-    <ul class="c-sidenav-menu">
-      <li class="c-sidenav-menu-item">
+<aside class="doc-sidenav">
+  <nav class="doc-sidenav-body">
+    <ul class="doc-sidenav-menu">
+      <li class="doc-sidenav-menu-item">
         {% for cat in items %}
-        <span class="c-sidenav-menu-link">
-          <span class="c-sidenav-menu-title">
+        <span class="doc-sidenav-menu-link">
+          <span class="doc-sidenav-menu-title">
             {{ cat.name | capitalize }}
           </span>
         </span>
-        <ul class="c-sidenav-menu-submenu">
+        <ul class="doc-sidenav-menu-submenu">
           {% assign items = cat.items | sort: 'weight' %}
           {% for item in items %}
-          <li class="c-sidenav-menu-item {% if item.url == page.url %}c-sidenav-menu-item-active{% endif %}">
-            <a class="c-sidenav-menu-link" href="{{ item.url }}">
+          <li class="doc-sidenav-menu-item {% if item.url == page.url %}doc-sidenav-menu-item-active{% endif %}">
+            <a class="doc-sidenav-menu-link" href="{{ item.url }}">
               {{ item.title }}
             </a>
           </li>
@@ -76,10 +73,11 @@
             
             
               {{ content }}
-            
-              <a class="c-btn c-btn-primary" href="{{ site.url }}{{ site.baseurl }}/release-notes/">
+
+              <a class="c-btn-link c-pull-left" href="{{ site.url }}{{ site.baseurl }}/release-notes/">
                 <i class="fa fa-arrow-left"></i> Back to all release notes
               </a>
+            
 
         </div>
 

@@ -9,40 +9,49 @@ colors:
 tabs: 
 - Design
 - Code
+- Angular
 ---
 
 
 <div id="design" class="docs-tabs-content" markdown="1">
 
-## UX Guidance
+# Overview
 
-### Structure
+**Types of alerts available:**
 
-Alerts provide contextual information relevent to the user.
+- Banner alert
+- Box alert
+- Toast alert
+- Icon alert
+- Modal alert (see Modal Dialogue)
 
-The alerts are activated for the following reasons:
-- System alert - the system needs to communicate to the user a system related issue or status
-- Engagement alert - the user is nudged or guided to enter or update data in the system
-- Access alert - the user tries to access an item that was deleted or they don't have access to
-- Feedback alerts - the system's response to the user interacting with it
+<hr>
 
----
+ <!-- Start Banner Alert Row -->
+  <div class="c-header-md c-m-top-sm c-m-bottom-sm">Banner Alerts</div>
+  Banner alerts are used to communicate critical status information that is being communicated by the system.
 
-### Banner alert 
-Banner alerts use the Alert top styling
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert/banner-alert-4.png" width="100%;">
 
-Banner alerts are used to communicate critical status information that is being communicated by the system.
+   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert/banner-alert-3.png" width="100%;">
 
-Banner alerts slide in from the top of the browser and remain there until the condition (for their activation) clears or they are dismissed.
+- Banner alerts slide in from the top of the browser and remain there until the condition (for it's activation) clears or it is dismissed.
 
-Banner alerts can be persistent or dismissible, depending of the nature of the message.
+- Banner alerts can be persistent or dismissible.
 
-Persistent banner alerts can be hidden. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for their activation) is still valid.
+- Persistent banner alerts can be hidden. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for it's activation) is still valid.
 
-{% include guide-img.html img='elements/alert/banner-alert-1'%}
+<div class="c-header-xs">Banner Alert Placement</div>
 
-**What banner alerts must communicate:**
-- Offline status
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert/banner-alert-1.png" width="50%;">
+
+<div class="c-header-xs">Banner Alert Color Options</div>
+Page status alerts fall into three categories:
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/banner-alert-colors.png" width="75%;">
+
+**What banner alerts communicate:**
+- System unavailable
 - Upcoming system maintenance or upgrade
 - Browser related issues
 
@@ -50,48 +59,301 @@ Persistent banner alerts can be hidden. When a banner is hidden it will not show
 - Feedback on actions the user has performed
 - Alerts relating to specific pages or components
 
----
+<!-- Start Dos and Donts - Banner Alerts -->
+<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+<!-- Start Multiple Banner Alers Row -->
+  <div class="c-header-xs">Multiple banner alerts</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/alerts/banner-alert/banner-alert-do'%}
+    </div>
+    <div class="c-col">
+   {% include guide-img.html img='elements/alerts/banner-alert/banner-alert-dont'%}
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do show the most relevant banner alert only</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't stack multiple banner alerts</span>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- End Multiple Banner Alerts Row -->
+<!-- END Banner Alert Row -->
 
-### Page status alert
-Page status alerts communicate the status of a particular page. Page alerts use the default alert styling.
+<hr>
 
-This alert can be either persistent (if condition it represents is still valid) or dismissible.
+ <!-- Start Box Alert Row -->
+  <div class="c-header-md c-m-top-sm c-m-bottom-sm">Box Alerts</div>
+  Box alerts communicate the status of a page or component.
 
-Page status alerts appear in an embedded position between the page header and the page content. Since this alert inserts itself into the page it pushes the content down the page and only removes itself once dismissed (if dismissable).
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alert/page-alert-4.png" width="100%;">
+    
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alert/page-alert-2.png" width="100%;">
 
-{% include guide-img.html img='elements/alert/alert-status'%}
+- Box alerts can be either persistent or dismissible.
 
-**What Page status alerts must communicate:**
-- Page update status
-- Maintenance or recent changes to a page
-- Information or functionality that is not available
+- Box alerts appear in the topmost position of the content area of a page or component. This alert inserts itself into the content area and pushes the content down the page, remaining in that position until the condition (for it's activation) clears or it is dismissed.
 
-**What Page status alerts must not communicate:**
-- Issues related to system status or maintenance
+<div class="c-header-xs">Box alert placement</div>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alert/page-alert-1.png" width="50%;">
+
+<div class="c-header-xs">Box alert placement in content area of page</div>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alert/component-alert-1.png" width="50%;">
+
+<div class="c-header-xs">Box Alert Color Options</div>
+Page status alerts fall into three categories:
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/box-alert-colors.png" width="75%;">
+
+**What box alerts communicate:**
+- Page or component status
+- Validation status
+
+**What box alerts must not communicate:**
+- System status or maintenance
 - Feedback on actions the user has performed
 
----
+<!-- Start Dos and Donts - Box Alerts -->
+<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+<!-- Start Box Alerts - Dos and Donts Row -->
+  <div class="c-header-xs">Box Alerts</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/alerts/box-alert/page-alert-multiple-do'%}
+    </div>
+    <div class="c-col">
+   {% include guide-img.html img='elements/alerts/box-alert/page-alert-multiple-dont'%}
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do limit box alerts to two per page or component</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do remember that users have a limited capacity to process alert messaging. Too many alerts will affect the user experience negatively and mess up the UI.</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't stack more than two banners on any page</span>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- End Box Alerts - Dos and Donts Row -->
 
-### Toast alert 
-Toast alerts serve as a feedback & confirmation mechanism after the user performs an action. 
+<!-- Start Stacking order - Dos and Donts Row -->
+  <div class="c-header-xs">Stacking Order</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/alerts/box-alert/page-alert-order-do'%}
+    </div>
+    <div class="c-col">
+   {% include guide-img.html img='elements/alerts/box-alert/page-alert-order-dont'%}
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do stack alerts in order of newest at the top, irrespective of priority</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't stack the newest alert under the alert already present</span>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- End Stacking Order - Dos and Donts Row -->
+<!-- END Box Alert Row -->
 
-Toast alerts slide in from the top right corner of the browser, overlaying the content. It's position is fixed ie. is not affected by scrolling.
+<hr>
 
-The toast alert can then either be dismissed or will disappear when its time duration has ended.
+ <!-- Start Toast Alert Row -->
+<div class="c-header-md c-m-top-sm c-m-bottom-sm">Toast alerts</div>
+Toast alerts serve as a feedback & confirmation mechanism after the user performs an action.
 
-{% include guide-img.html img='elements/alert/alert-toast'%}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert/toast-alert-3.png" width="50%;">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert/toast-alert-4.png" width="50%;">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert/toast-alert-2.png" width="50%;">
+
+- Toast alerts slide in from the top right corner of the browser, overlaying the content. It's position is fixed ie. is not affected by scrolling.
+
+- Toast alerts are both dismissible and will auto-clear when its time duration has ended.
+
+<div class="c-header-xs">Toast alert placement</div>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert/toast-alert-1.png" width="50%;">
+
+<div class="c-header-xs">Toast Alert Color Options</div>
+Toast alerts fall into three categories:
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/toast-alert-colors.png" width="50%;">
 
 **What toast alerts must communicate:**
-- Errors - when a user completes an action but system-related issues prevent that action from being executed
+
 - Informational - when a user completes an action, but there is some additional info to be aware of
 - Success - when a user completes an action
-- Warning - when a user cannot complete an action due to external factors that cannot immediately be resolved
+- Errors - when a user completes an action but system-related issues prevent that action from being executed
 
 **What toast alerts must not communicate:**
+
 - Issues related to system status or maintenance
 - Alerts relating to specific pages or components
 
+<!-- Start Dos and Donts - Toast Alerts -->
+<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+<!-- Start Toast Alerts Placement - Dos and Donts Row -->
+  <div class="c-header-xs">Toast alert placement</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/alerts/toast-alert/toast-alert-multiple-do'%}
+    </div>
+    <div class="c-col">
+   {% include guide-img.html img='elements/alerts/toast-alert/toast-alert-multiple-dont'%}
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do make sure the toast alert displays in the top right corner</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't move toast alert placement to any position other than the default placement (top right corner)</span>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- End Toast Alerts Placement - Dos and Donts Row -->
+
+<!-- Start Toast Alert Stacking order - Dos and Donts Row -->
+  <div class="c-header-xs">Stacking Order</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/alerts/toast-alert/toast-alert-order-do'%}
+    </div>
+    <div class="c-col">
+      {% include guide-img.html img='elements/alerts/toast-alert/toast-alert-order-dont'%}
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do stack alerts in order of newest at the top, irrespective of priority</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do make sure that toast fade from the bottom up, oldest to newest</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't stack the newest toast under the toast already present</span>
+        </div>
+      </div>
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't change the fade order other than from the default (bottom up, oldest to newest)</span>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- End Toast Alert Stacking Order - Dos and Donts Row -->
+<!-- END Toast Alert Row -->
+
+<hr>
+
+ <!-- Start Icon Alert Row -->
+<div class="c-header-md c-m-top-sm c-m-bottom-sm">Icon alert</div>
+<div class="c-text-danger c-text-italic c-text-md">
+Please note: Icon alerts are primarily used in form validations but can be used as a standalone alert. The following info relate only to the Icon alert as a standalone replacement for the Box alert. For more info on Icon alerts used in form validations refer to...
 </div>
+
+The icon alert can be used as a standalone alert under special conditions. The icon alert should be used only if space or conditions don't allow for a box alert.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/icon-alert/icon-alert-1@2x.png" width="25%;">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/icon-alert/icon-alert-2@2x.png" width="25%;">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/icon-alert/icon-alert-3@2x.png" width="25%;">
+
+- The icon alert is persistent and cannot be dismissed.
+
+- The icon alert is triggered by an action or specific condition and remains in position until the condition (for it's activation) is resolved.
+
+<div class="c-header-xs">Icon Alert Color Options</div>
+Icon alerts fall into three categories:
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/icon-alert-colors.png" width="75%;">
+
+**What icon alerts communicate:**
+
+- Page or component status
+- Validation status
+
+**What icon alerts must not communicate:**
+- System status or maintenance
+- Feedback on actions the user has performed
+<!-- END Icon Alert Row -->
+
+<hr>
+
+ <!-- Start Modal Alert Row -->
+<div class="c-header-md c-m-top-sm c-m-bottom-sm">Modal alert</div>
+<div class="c-text-danger c-text-italic c-text-md">
+See Modal Dialogue (to be linked...)
+</div>
+<!-- END Modal Alert Row -->
+
+
+</div>
+<!-- End Design Tab -->
 
 
 <div id="code" class="docs-tabs-content" markdown="1">
@@ -170,3 +432,14 @@ This is an example of available colors for the **{{ page.title }}** element.
 {% endexample %}
 
 </div>
+<!-- End Code Tab -->
+
+
+<!-- Start Angular Tab -->
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+### Storybook iframe
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+
+</div>
+<!-- End Angular Tab -->

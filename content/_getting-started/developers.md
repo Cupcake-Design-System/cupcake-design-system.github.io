@@ -1,7 +1,6 @@
 ---
 title: Developers
 description: The Cupcake Component Library provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build user interfaces.
-weight: 4
 ---
 
 

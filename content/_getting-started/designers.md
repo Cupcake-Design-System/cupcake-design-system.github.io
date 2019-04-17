@@ -1,7 +1,6 @@
 ---
 title: Designers
 description: The Cupcake Design Kit is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).
-weight: 3
 ---
 
 ## 1. Download the Kit

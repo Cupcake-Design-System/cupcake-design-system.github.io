@@ -1,0 +1,28 @@
+- title: Elements
+  pages:
+    - title: Overview
+    - title: Alerts
+    - title: Avatars 
+    - title: Badges
+    - title: Buttons
+    - title: Card
+    - title: Forms
+    - title: Loaders
+    - title: Modals
+    - title: Switches
+
+- title: Data Visualization
+  pages:
+    - title: Data Overview
+    - title: Data Comparison     
+    - title: Data Distribution 
+    - title: Data Relationship    
+
+- title: CSS Utilities
+  pages:
+    - title: Utility Overview
+    - title: Borders
+    - title: Display
+    - title: Flex
+    - title: Float
+    - title: Space

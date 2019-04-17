@@ -178,7 +178,7 @@ This is an example of available colors for the Radio element.
 <div id="angular" class="docs-tabs-content" markdown="1">
 
 ### Radio Button
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--radio-button"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--radio-button&nav=0"></iframe>
 
 </div>
 
