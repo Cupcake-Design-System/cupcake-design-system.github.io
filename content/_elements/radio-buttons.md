@@ -17,6 +17,7 @@ tabs:
 - Angular
 ---
 
+<!-- Start Design Tab -->
 <div id="design" class="docs-tabs-content" markdown="1">
 
 ## Overview
@@ -105,10 +106,11 @@ The most common way to display a radio list group in a form.
 {% include guide-img.html img='elements/radio-buttons/'%} 
 
 </div>
+<!-- End Design Tab -->
 
+<!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
-
-## Base
+## Radio Buttons
 Use radio buttons to present each item in a list of options where users must make a single selection.
 
 {% example html %}
@@ -125,7 +127,6 @@ Use radio buttons to present each item in a list of options where users must mak
 {% endexample %}
 
 ## Color Examples
-This is an example of available colors for the Radio element.
 
 {% example html %}
 <label class="c-radio c-m-right-sm">
@@ -154,7 +155,6 @@ This is an example of available colors for the Radio element.
 {% endexample %}
 
 ## Size Examples
-This is an example of available colors for the Radio element.
 
 {% example html %}
 <label class="c-radio-sm">
@@ -174,6 +174,7 @@ This is an example of available colors for the Radio element.
 {% endexample %}
 
 </div>
+<!-- End Cupcake Code Tab -->
 
 <div id="angular" class="docs-tabs-content" markdown="1">
 

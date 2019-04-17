@@ -497,7 +497,7 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ## Checkbox
-Checkboxes are most commonly used to give merchants a way to make a range of selections (zero, one, or multiple).
+Tooltips are floating labels that briefly explain the function of a user interface element.
 
 {% example html %}
 <label class="c-checkbox">
