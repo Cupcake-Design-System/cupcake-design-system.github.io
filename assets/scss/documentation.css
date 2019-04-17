@@ -483,7 +483,7 @@ a {
   .c-p-lg.c-p-lg {
     padding: 1rem; } }
 
-.c-sidenav {
+.doc-sidenav {
   left: 0;
   top: 48px;
   bottom: 0;
@@ -498,31 +498,30 @@ a {
   width: 250px;
   background-color: #f8f9fa;
   border-right: 1px solid #e9ecef; }
-  .c-sidenav-body {
-    position: relative;
-    -ms-flex: 1 1 0%;
+  .doc-sidenav-body {
     flex: 1 1 0%;
-    overflow-x: hidden;
     overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
     padding: 0 24px 50px; }
     @media (max-width: 767px) {
-      .c-sidenav-body {
+      .doc-sidenav-body {
         padding: 0 24px 24px; } }
-  .c-sidenav-menu {
+  .doc-sidenav-menu {
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     list-style: none; }
     @media (max-width: 767px) {
-      .c-sidenav-menu {
+      .doc-sidenav-menu {
         margin-bottom: 0px; } }
-    .c-sidenav-menu-link {
+    .doc-sidenav-menu-link {
       position: relative;
       display: flex;
       align-items: center;
       font-weight: 700;
       color: #212529; }
-    .c-sidenav-menu-title {
+    .doc-sidenav-menu-title {
       margin-top: 48px;
       margin-bottom: 16px;
       padding: 0 8px;
@@ -533,14 +532,14 @@ a {
       letter-spacing: 1px;
       text-transform: uppercase; }
       @media (max-width: 767px) {
-        .c-sidenav-menu-title {
+        .doc-sidenav-menu-title {
           margin-top: 24px; } }
-    .c-sidenav-menu-submenu {
+    .doc-sidenav-menu-submenu {
       display: block;
       padding-left: 0;
       margin-bottom: 0;
       list-style-type: none; }
-      .c-sidenav-menu-submenu .c-sidenav-menu-link {
+      .doc-sidenav-menu-submenu .doc-sidenav-menu-link {
         font-weight: 400;
         color: #212529;
         letter-spacing: 0;
@@ -549,40 +548,40 @@ a {
         text-decoration: none;
         padding: 0 8px;
         line-height: 40px; }
-        .c-sidenav-menu-submenu .c-sidenav-menu-link:hover {
+        .doc-sidenav-menu-submenu .doc-sidenav-menu-link:hover {
           color: #212529;
           background-color: #f1f3f5;
           border-radius: 4px; }
-      .c-sidenav-menu-submenu .c-sidenav-menu-item-active .c-sidenav-menu-link {
+      .doc-sidenav-menu-submenu .doc-sidenav-menu-item-active .doc-sidenav-menu-link {
         background-color: #f1f3f5;
         border-radius: 4px;
         font-weight: bold; }
-      .c-sidenav-menu-submenu .c-sidenav-menu-item-active:hover > .c-sidenav-menu-link {
+      .doc-sidenav-menu-submenu .doc-sidenav-menu-item-active:hover > .doc-sidenav-menu-link {
         background-color: #f1f3f5;
         border-radius: 4px; }
 
-.c-sidenav ~ .main-container {
+.doc-sidenav ~ .main-container {
   margin-left: 250px; }
 
-.c-sidenav-menu-item:hover > .c-sidenav-menu-link {
+.doc-sidenav-menu-item:hover > .doc-sidenav-menu-link {
   color: #1b6ec2; }
 
-.c-sidenav-menu-item-active > .c-sidenav-menu-link .c-sidenav-menu-icon,
-.c-sidenav-menu-item:hover > .c-sidenav-menu-link .c-sidenav-menu-icon {
+.doc-sidenav-menu-item-active > .doc-sidenav-menu-link .doc-sidenav-menu-icon,
+.doc-sidenav-menu-item:hover > .doc-sidenav-menu-link .doc-sidenav-menu-icon {
   color: #1b6ec2; }
 
-.c-sidenav-menu-item-active > .c-sidenav-menu-link {
+.doc-sidenav-menu-item-active > .doc-sidenav-menu-link {
   color: #1b6ec2; }
 
-.c-sidenav-menu-link .c-sidenav-menu-icon:hover {
+.doc-sidenav-menu-link .doc-sidenav-menu-icon:hover {
   color: #212529; }
 
-.c-sidenav-menu-item.c-sidenav-menu-item-active .c-sidenav-menu-submenu {
+.doc-sidenav-menu-item.doc-sidenav-menu-item-active .doc-sidenav-menu-submenu {
   display: block !important; }
 
-.c-sidenav-navbar {
+.doc-sidenav-navbar {
   display: none; }
-  .c-sidenav-navbar-link {
+  .doc-sidenav-navbar-link {
     color: #6f7c8a;
     white-space: nowrap;
     align-items: center;
@@ -590,11 +589,11 @@ a {
     text-decoration: none;
     padding: 0 8px;
     line-height: 40px; }
-    .c-sidenav-navbar-link-active {
+    .doc-sidenav-navbar-link-active {
       color: #454545;
       font-weight: bold; }
   @media (max-width: 767px) {
-    .c-sidenav-navbar {
+    .doc-sidenav-navbar {
       display: block;
       margin: 12px 0 0; } }
 
@@ -1063,11 +1062,11 @@ figure.highlight {
   flex: 1; }
 
 @media (max-width: 767px) {
-  .c-sidenav {
+  .doc-sidenav {
     width: 100%;
     position: relative; }
 
-  .c-sidenav-body {
+  .doc-sidenav-body {
     display: none; }
 
   .main-container {

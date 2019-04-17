@@ -107,7 +107,7 @@ clipboard.on('success', function (e) {
 
   $('#docs-menu-toggle').on('click', function(e) {
     e.preventDefault();
-    $('.c-sidenav-body').slideToggle(200);
+    $('.doc-sidenav-body').slideToggle(200);
   });
 
 }(jQuery));
