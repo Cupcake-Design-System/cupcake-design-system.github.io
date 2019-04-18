@@ -590,10 +590,10 @@ Modal dialogs requiring a decision
 <div class="c-header-xs">Headings</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_IconPlacement_Do'%} 
+    {% include guide-img.html img='elements/modals/ModalDialogs_Headings_Do'%} 
     </div>
     <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_IconPlacement_Dont'%} 
+     {% include guide-img.html img='elements/modals/ModalDialogs_Headings_Dont'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -620,10 +620,10 @@ Modal dialogs requiring a decision
 <div class="c-header-xs">Supportive Copy</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_IconPlacement_Do'%} 
+    {% include guide-img.html img='elements/modals/ModalDialogs_Copy_Do'%} 
     </div>
     <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_IconPlacement_Dont'%} 
+     {% include guide-img.html img='elements/modals/ModalDialogs_Copy_Dont'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -713,13 +713,13 @@ Modal dialogs requiring a decision
 <!-- End Button Placement Row -->
 
 <!-- Start Positioning Row -->
-<div class="c-header-xs">Button Placement</div>
+<div class="c-header-xs">Positioning</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_ButtonPlace_Do'%} 
+    {% include guide-img.html img='elements/modals/ModalDialogs_Position_Do'%} 
     </div>
     <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_ButtonPlace_Dont'%} 
+     {% include guide-img.html img='elements/modals/ModalDialogs_Position_Dont'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
