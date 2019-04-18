@@ -32,8 +32,6 @@ Currently the following modals are in use:
 - Standard modals
 - Modal dialogs
 
-<!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/Types-of-Avatars.png" width="500px;"> -->
-
 <hr>
 
  <!-- Start Standard Modals Section -->
@@ -744,7 +742,110 @@ Modal dialogs requiring a decision
     </div>
 <!-- End Positioning Row -->
 <!-- End Modal Dialog General Dos and Donts -->
+
+<!-- Start Modal Dialog Requiring and Acknowledgement Section-->
+  <div class="c-header-sm c-m-bottom-md">Modal Dialog requiring an acknowledgement</div>
+
+  <div class="c-header-xs">Examples of Use</div>
+  
+   This modal dialog requires the user to acknowledge important information, but not to make any specific decisions.
+
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDA_Example1.png" width="500px;">
+
+  This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue. 
+
+   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDA_Example2.png" width="500px;">
+
+   This version contains a checkbox that, if checked, will make it a once-off acknowledgement.
+<!-- END Modal Dialog Requiring and Acknowledgement Section-->
+
+<div class="c-header-sm c-m-bottom-md">Dos and Dont's</div>
+
+
+<!-- Start Modal Dialog Requiring Acknowledgement - Button Usage Row -->
+<div class="c-header-xs">Button Usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/modals/ModalDialogs_MDA_Button_Do'%} 
+    </div>
+    <div class="c-col">
+     {% include guide-img.html img='elements/modals/ModalDialogs_MDA_Button_Dont'%} 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use a single button for acknowledgement </span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use two buttons or more for acknowledgement</span>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- End Modal Dialog Requiring Acknowledgement - Button Usage Row -->
+
+<!-- Start Modal Dialog Requiring Decision Section-->
+  <div class="c-header-sm c-m-bottom-md">Modal Dialog requiring an decision</div>
+
+  <div class="c-header-xs">Examples of Use</div>
+  
+    This modal dialog requires the user to view important information, and to make a decision on wether to continue or not.
+
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDD_Example.png" width="500px;">
+
+  A delete warning, featuring a danger button, let's the user understand the potential impact of their decision.
+
+<!-- END Modal Dialog Requiring Decision Section-->
+
+<div class="c-header-sm c-m-bottom-md">Dos and Dont's</div>
+
+
+<!-- Start Modal Dialog Requiring Decision - Button Usage Row -->
+<div class="c-header-xs">Button Usage</div>
+  <div class="c-row">
+    <div class="c-col">
+    {% include guide-img.html img='elements/modals/ModalDialogs_MDD_Button_Do'%} 
+    </div>
+    <div class="c-col">
+     {% include guide-img.html img='elements/modals/ModalDialogs_MDD_Button_Dont'%} 
+    </div>
+  </div>
+  <div class="c-row c-m-top-md c-m-bottom-xl">
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-check c-text-success"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Do use two buttons</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-col">
+      <div class="c-media c-p-sm">
+        <span class="fas fa-times c-text-danger"></span>
+        <div class="c-media-body">
+          <span class="c-text-md">Don't use more than two buttons</span>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- End Modal Dialog Requiring Decision - Button Usage Row -->
+
+
+
+
+
+
 <!-- End Modal Dialogs Section -->
+
+
 
 </div>
 <!-- End Design Section -->
