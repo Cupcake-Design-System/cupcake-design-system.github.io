@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Checkboxes allow users to select none, one or multiple options from a pre-defined list of options.">
+<meta name="description" content="Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.">
 
-<title>Cupcake · Checkboxes</title>
+<title>Cupcake · Error Pages</title>
 
 
 
@@ -164,7 +164,7 @@
                 href="https://cupcake-design-system.github.io/elements/card/">
                 Card
               </a>
-              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+              </li><li>
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/checkboxes/">
                 Checkboxes
@@ -174,7 +174,7 @@
                 href="https://cupcake-design-system.github.io/elements/drag-and-drop/">
                 Drag and Drop
               </a>
-              </li><li>
+              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/error-pages/">
                 Error Pages
@@ -301,8 +301,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img">
-  <h1 class="docs-title" id="content">Checkboxes</h1>
-  <p class="docs-lead">Checkboxes allow users to select none, one or multiple options from a pre-defined list of options.</p>
+  <h1 class="docs-title" id="content">Error Pages</h1>
+  <p class="docs-lead">Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.</p>
 </div>
 
       
@@ -327,367 +327,102 @@
 
   <h1 id="overview">Overview</h1>
 
-  <p><strong>Checkboxes have 4 different states:</strong></p>
+  <p><strong>Structure</strong>
+Error pages are made up of the following:</p>
 
   <ul>
-    <li>Active</li>
-    <li>Inactive</li>
-    <li>Active (disabled)</li>
-    <li>Inactive (disabled)</li>
+    <li>Icon</li>
+    <li>Reason/Explanation</li>
+    <li>Error Code</li>
+    <li>Contact Link/Button</li>
   </ul>
 
-  <p><strong>Checkboxes are typically used as:</strong></p>
+  <p><strong>Types of Error Pages</strong></p>
 
   <ul>
-    <li>Multiple selection controls in forms</li>
-    <li>Standalone checkboxes</li>
-    <li>Bulk action selectors in tables</li>
+    <li><strong>Error 401</strong> - Authentication required to view page</li>
+    <li><strong>Error 403</strong> - Not authorized to view page</li>
+    <li><strong>Error 404</strong> - Page not found</li>
+    <li><strong>Error 500</strong> - Internal server error</li>
+    <li><strong>Error 503</strong> - Service unavailable</li>
   </ul>
 
   <hr />
 
-  <p><!-- Start Multiple Selection Controls in Forms Section --></p>
-  <div class="c-header-md">Multiple selection controls in forms</div>
+  <!-- Start Error 401 Section -->
+  <div class="c-header-md">Error 401</div>
+  <p>Error 401 requires the user to  sign in in order to view the page.</p>
 
-  <div class="c-header-sm c-m-top-md">Do's and Dont's</div>
+  <p>This error appears outside of an application because the user has not signed in yet.</p>
 
-  <p><!-- Start Vertical list vs. horizontal list Row --></p>
-  <div class="c-header-xs">Vertical list vs. horizontal list</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-vert-vs-horiz-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-vert-vs-horiz-dont@2x.png" />  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use multiple selection lists in a vertical format</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use multiple selection lists in a horizontal format</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Vertical list vs. horizontal list Row --></p>
+  <p><!-- Start Examples of Use Row --></p>
+  <div class="c-header-sm">Examples of Use</div>
 
-  <p><!-- Start Label Length Row --></p>
-  <div class="c-header-xs">Label length</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-label-length-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-label-length-dont@2x.png" />  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep checkbox text short and concise</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use a sentence to describe something if it can be summed up in three or less words</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Label Length Row --></p>
-
-  <p><!-- Start Capitalizing Labels Row --></p>
-  <div class="c-header-xs">Capitalizing Labels</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-label-capitalise-do@2x.png" />  
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-label-capitalise-dont@2x.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use sentence style capitalization</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't start the label as lowercase</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Capitalizing Labels Row --></p>
-
-  <p><!-- Start Label Format Row --></p>
-  <div class="c-header-xs">Label format</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-label-format-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-label-format-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do list radio list items without any additional characters or punctuation at the end of the label</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't add in any special characters or punctuation at the end of the label</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Label Format Row --></p>
-
-  <p><!-- Start Checkbox to label placement Row --></p>
-  <div class="c-header-xs">Checkbox to label placement</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-label-placement-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-label-placement-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do vertically center the label so there is an equal amount of space top and bottom in relation to the button</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't position the label so there is an unequal amount of space at the top and bottom in relation to the button</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Checkbox to label placement Row --></p>
-
-  <p><!-- Start Number of Items Row --></p>
-  <div class="c-header-xs">Number of items</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-items-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-items-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep vertical list groups to 6 items or less</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't add more than 6 items in a vertical list group</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Number of Items Row --></p>
-
-  <p><!-- Start List Item Spacing Row --></p>
-  <div class="c-header-xs">List item spacing</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-spacing-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/multiple-selection-controls/multiple-spacing-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep spacing at a just-right ratio</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use consistent spacing between list items</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use too-tight or too-loose spacing</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't allow inconsistent spacing between list items in order to conform to a specific list height</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End List Item Spacing Row -->
-  <!-- END Multiple Selection Controls in Forms Section --></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/error-pages/nameoffile.png" width="500px;" />
+  <!-- End Examples of Use Row -->
+  <!-- END Error 401 Section --></p>
 
   <hr />
 
-  <p><!-- Start Standalone Checkboxes Section --></p>
-  <div class="c-header-md">Standalone checkboxes</div>
+  <!-- Start Error 403 Section -->
+  <div class="c-header-md">Error 403</div>
+  <p>Error 403 informs the user that they are not authorized to view the page that they are trying to access.</p>
 
-  <div class="c-header-sm c-m-top-md">Do's and Dont's</div>
+  <p>This error appears inside of an application when the user is signed in.</p>
 
-  <p><!-- Start Label Length Row --></p>
-  <div class="c-header-xs">Label length</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/standalone-checkbox/standalone-length-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/standalone-checkbox/standalone-length-dont@2x.png" />  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do limit standalone checkbox text to two short sentences and to one paragraph</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do link to any supporting text or documentation</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than two short sentences or more than one paragraph; rather hyperlink to the supporting text or documentation</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Label Length Row --></p>
+  <p><!-- Start Examples of Use Row --></p>
+  <div class="c-header-sm">Examples of Use</div>
 
-  <p><!-- Start Forms vs Settings Row --></p>
-  <div class="c-header-xs">Forms vs Settings</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/standalone-checkbox/standalone-form-vs-settings-do@2x.png" />
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/standalone-checkbox/standalone-form-vs-settings-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use standalone checkboxes in forms to record user compliance or agreement</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use checkboxes to apply settings; use a switch instead</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Forms vs Settings Row -->
-  <!-- END Standalone Checkboxes Section --></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/error-pages/nameoffile.png" width="500px;" />
+  <!-- End Examples of Use Row -->
+  <!-- END Error 403 Section --></p>
 
   <hr />
 
-  <p><!-- Start Bulk action selectors in a table Section --></p>
-  <div class="c-header-md">Bulk action selectors in a table</div>
-  <p>Checkboxes are used in tables to select which rows to apply bulk actions to.</p>
+  <p><!-- Start Error 404 Section --></p>
+  <div class="c-header-md">Error 404</div>
+  <p>Error 404 informs the user that the page they are trying to access cannot be found.</p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/bulk-action-selectors/bulk-selectors-example@2x.png" width="500px;" /></p>
+  <p>This error appears inside of an application when the user is signed in.</p>
 
-  <div class="c-header-sm c-m-top-xl">Do's and Dont's</div>
+  <p><!-- Start Examples of Use Row --></p>
+  <div class="c-header-sm">Examples of Use</div>
 
-  <p><!-- Start Visual Indicators Row --></p>
-  <div class="c-header-xs">Visual indicators</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/bulk-action-selectors/bulk-support-indicators-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/bulk-action-selectors/bulk-support-indicators-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do support a bulk action selector with an additional visual indicator</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use a checkbox in isolation when indicating bulk actions</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Visual Indicators Row -->
-  <!-- END Bulk action selectors in a table Section --></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/error-pages/nameoffile.png" width="500px;" />
+  <!-- End Examples of Use Row -->
+  <!-- END Error 404 Section --></p>
+
+  <hr />
+
+  <!-- Start Error 500 Section -->
+  <div class="c-header-md">Error 500</div>
+  <p>Error 500 informs the user that they have run into a general error that doesn’t have much description around it.</p>
+
+  <p>This error appears inside of an application when the user is signed in.</p>
+
+  <p><!-- Start Examples of Use Row --></p>
+  <div class="c-header-sm">Examples of Use</div>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/error-pages/nameoffile.png" width="500px;" />
+<!-- End Examples of Use Row -->
+<!-- END Error 500 Section --></p>
+
+  <hr />
+
+  <!-- Start Error 503 Section -->
+  <div class="c-header-md">Error 503</div>
+  <p>Error 503 informs the user that the server can not handle the request.</p>
+
+  <p>This error appears inside of an application when the user is signed in.</p>
+
+  <p><!-- Start Examples of Use Row --></p>
+  <div class="c-header-sm">Examples of Use</div>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/error-pages/nameoffile.png" width="500px;" /></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/error-pages/nameoffile.png" width="500px;" />
+<!-- End Examples of Use Row -->
+<!-- END Error 503 Section --></p>
 
 </div>
 <!-- End Design Tab -->
@@ -696,7 +431,7 @@
 <div id="code" class="docs-tabs-content">
 
   <h2 id="checkbox">Checkbox</h2>
-  <p>Checkboxes are most commonly used to give merchants a way to make a range of selections (zero, one, or multiple).</p>
+  <p>Tooltips are floating labels that briefly explain the function of a user interface element.</p>
 
   <div class="docs-example">
 <label class="c-checkbox">
@@ -794,6 +529,119 @@
 
 <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-xl c-m-right-sm"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="radio-buttons">Radio Buttons</h2>
+  <p>Use radio buttons to present each item in a list of options where users must make a single selection.</p>
+
+  <div class="docs-example">
+<label class="c-radio">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i> 
+    Yes
+</label>
+<label class="c-radio">
+    <input type="radio" name="radio" />
+    <i class="c-bg-primary"></i> 
+    No
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span> 
+    Yes
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span> 
+    No
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="color-examples-1">Color Examples</h2>
+
+  <div class="docs-example">
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+    Primary
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-success"></i>
+    Success
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-warning"></i>
+    Warning
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-danger"></i>
+    Danger
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Primary
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Success
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Warning
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Danger
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="size-examples-1">Size Examples</h2>
+
+  <div class="docs-example">
+<label class="c-radio-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-radio-lg">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-radio-xl">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-lg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-xl"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
     <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
