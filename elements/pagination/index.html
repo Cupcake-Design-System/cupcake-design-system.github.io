@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Recommendations to create effective visualizations within Ipreo products">
+<meta name="description" content="Pagination affords navigation between pages of content, and it highlights which page is currently in view.">
 
-<title>Cupcake · Relationship</title>
+<title>Cupcake · Pagination</title>
 
 
 
@@ -199,7 +199,7 @@
                 href="https://cupcake-design-system.github.io/elements/modals/">
                 Modals
               </a>
-              </li><li>
+              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/pagination/">
                 Pagination
@@ -307,7 +307,7 @@
                 href="https://cupcake-design-system.github.io/elements/data-distribution/">
                 Data Distribution
               </a>
-              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+              </li><li>
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/data-relationship/">
                 Data Relationship
@@ -326,40 +326,131 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img">
-  <h1 class="docs-title" id="content">Relationship</h1>
-  <p class="docs-lead">Recommendations to create effective visualizations within Ipreo products</p>
+  <h1 class="docs-title" id="content">Pagination</h1>
+  <p class="docs-lead">Pagination affords navigation between pages of content, and it highlights which page is currently in view.</p>
 </div>
 
       
+      
+        <ul class="docs-tabs ">
+    
+    <li><a data-tab="#design">Design</a></li>
+    
+    <li><a data-tab="#code">Code</a></li>
+    
+    <li><a data-tab="#angular">Angular</a></li>
+    
+</ul>
       
       
       <div class="main-demo-content">
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h3 id="relationship-types">Relationship Types</h3>
+            <!-- Start Design Tab -->
+<div id="design" class="docs-tabs-content">
 
-<p>Relationship graphs, implied by the name, show specific relationships, correlation, or connections between 2 or more variables. On a high level, these charts demonstrate how a variable such as price does or does not affect another variable such as demand and whether that relationship is positive or negative. These visualizations can be given another dimenstion with bubble charts that show the scale of the relationship or plots over time. Chart types include scatter plots, bubble, line, and table. 
-Relationship graphs could answer:</p>
-<ul>
-  <li>Does variable a depend on variable b?</li>
-  <li>Is there a positive or negative relationship between my two variables?</li>
-  <li>
-    <p>Does the user need to see 3 to 4 dimensions of analysis: correlation, clusters, outliers, timeline?</p>
+  <h1 id="design-guidelines-coming-soon">Design Guidelines coming soon…</h1>
 
-    <div class="c-row">
-  <div class="c-col-12 c-col-lg-4">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/dataviz/Scatter-Chart.jpg" width="500px" /> 
-  </div>
-  <div class="c-col-12 c-col-lg-4">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/dataviz/Bubble-Chart.jpg" width="500px" />
-  </div>
-  <div class="c-col-12 c-col-lg-4">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/dataviz/Network-Graph.jpg" width="500px" />
-  </div>
 </div>
-  </li>
+<!-- End Design Tab -->
+
+<!-- Start Cupcake Code Tab -->
+<div id="code" class="docs-tabs-content">
+
+  <h2 id="base">Base</h2>
+  <p>Use pagination to allow navigation between pages that represent an ordered collection of items.</p>
+
+  <div class="docs-example">
+<ul class="c-pagination">
+  <li><a href="" class="c-pagination-previous c-pagination-link"> </a></li>
+  <li><a href="" class="c-pagination-link">1</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-current">2</a></li>
+  <li><a href="" class="c-pagination-link">3</a></li>
+  <li><a href="" class="c-pagination-link">4</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-ellipsis"></a></li>
+  <li><a href="" class="c-pagination-link">12</a></li>
+  <li><a href="" class="c-pagination-link">13</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-next"></a></li>
 </ul>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-pagination"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-previous c-pagination-link"</span><span class="nt">&gt;</span> <span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-current"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-ellipsis"</span><span class="nt">&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>13<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-next"</span><span class="nt">&gt;&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="size-examples">Size Examples</h2>
+
+  <div class="docs-example">
+<ul class="c-pagination c-pagination-sm">
+  <li><a href="" class="c-pagination-previous c-pagination-link"> </a></li>
+  <li><a href="" class="c-pagination-link">1</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-current">2</a></li>
+  <li><a href="" class="c-pagination-link">3</a></li>
+  <li><a href="" class="c-pagination-link">4</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-ellipsis"></a></li>
+  <li><a href="" class="c-pagination-link">12</a></li>
+  <li><a href="" class="c-pagination-link">13</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-next"></a></li>
+</ul>
+
+<ul class="c-pagination c-pagination-xl">
+  <li><a href="" class="c-pagination-previous c-pagination-link"> </a></li>
+  <li><a href="" class="c-pagination-link">1</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-current">2</a></li>
+  <li><a href="" class="c-pagination-link">3</a></li>
+  <li><a href="" class="c-pagination-link">4</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-ellipsis"></a></li>
+  <li><a href="" class="c-pagination-link">12</a></li>
+  <li><a href="" class="c-pagination-link">13</a></li>
+  <li><a href="" class="c-pagination-link c-pagination-next"></a></li>
+</ul>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-pagination c-pagination-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-previous c-pagination-link"</span><span class="nt">&gt;</span> <span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-current"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-ellipsis"</span><span class="nt">&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>13<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-next"</span><span class="nt">&gt;&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-pagination c-pagination-xl"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-previous c-pagination-link"</span><span class="nt">&gt;</span> <span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-current"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-ellipsis"</span><span class="nt">&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link"</span><span class="nt">&gt;</span>13<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-pagination-link c-pagination-next"</span><span class="nt">&gt;&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+</div>
+<!-- End Cupcake Code Tab -->
+
+<!-- Start Angular Code Tab -->
+<div id="angular" class="docs-tabs-content">
+
+  <h3 id="storybook-iframe">Storybook iframe</h3>
+  <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&amp;full=0&amp;addons=1&amp;stories=0&amp;panelRight=0&amp;addonPanel=storybooks%2Fstorybook-addon-knobs&amp;nav=0"></iframe>
+
+</div>
+<!-- End Angular Code Tab -->
+
 
 
           </div>
