@@ -18,11 +18,21 @@ weight: 1
 <div class="c-header-sm c-m-top-lg">What is an element?</div>
 Elements are the foundational building blocks that comprise all user interfaces. 
 
+<div class="c-header-sm c-m-top-lg">Element Design Process</div>
+A new element is added to the Cupcake library after it is cycled through the following design process:
+
+- There is a clear, repeatable need for the element across multiple products
+- Designers will discuss guidelines and best practices on how and when to use the element
+- Developers will create the element in code and deploy to the Cupcake code package 
+
 <hr>
 
 <div class="c-header-md">CSS Utilities Overview</div>
 <div class="c-header-sm c-m-top-lg">What is an CSS Utility?</div>
-Definition goes here...
+The Cupcake Design Systemprovides a set of CSS utility classes that can be used on any element in order to modify the text, element placement or adjust the padding and margin.
+
+Utilities provide the building blocks for layout and handle a range common use cases that help us avoid writing custom styles. When we need to add something like margin or padding padding to an element, rather than adding a new selector specific to that use case, we can use utilities. This helps reduce the number of unique property-value pairs, and helps keep consistent styles across products.
+
 
 <hr>
 
