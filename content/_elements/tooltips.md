@@ -496,126 +496,34 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Checkbox
-Tooltips are floating labels that briefly explain the function of a user interface element.
+# Cupcake 2.0 updates coming soon...
+
+## Base
+Base popovers have no color but multiple direction options.
 
 {% example html %}
-<label class="c-checkbox">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Basic Checkbox
-</label>
+<div class="c-popover c-popover-{DIRECTION}">
+    <div class="c-popover-arrow"></div>
+    <div class="c-popover-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus.
+    </div>
+</div>    
 {% endexample %}
 
 ## Color Examples
+It uses for-loop over the colors array in the head of the markdown file. You can easily add or remove colors there to show whats supported.
 
 {% example html %}
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Primary
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-success"></i>
-    Success
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-warning"></i>
-    Warning
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-danger"></i>
-    Danger
-</label>
+<div class="c-popover c-popover-{DIRECTION} c-popover-{COLOR}">
+    <div class="c-popover-arrow"></div>
+    <div class="c-popover-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus.
+    </div>
+</div>     
 {% endexample %}
 
-## Size Examples
 
-{% example html %}
-<label class="c-checkbox-sm c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
 
-<label class="c-checkbox-lg c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-checkbox-xl c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-{% endexample %}
-
-## Radio Buttons
-Use radio buttons to present each item in a list of options where users must make a single selection.
-
-{% example html %}
-<label class="c-radio">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i> 
-    Yes
-</label>
-<label class="c-radio">
-    <input type="radio" name="radio">
-    <i class="c-bg-primary"></i> 
-    No
-</label>
-{% endexample %}
-
-## Color Examples
-
-{% example html %}
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Primary
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-success"></i>
-    Success
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-warning"></i>
-    Warning
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-danger"></i>
-    Danger
-</label>
-{% endexample %}
-
-## Size Examples
-
-{% example html %}
-<label class="c-radio-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-radio-lg">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-radio-xl">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-{% endexample %}
 
 
 </div>
