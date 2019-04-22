@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Avatars are used to represent the user’s identity onscreen with simple visuals/designs or to provide a placeholder identity for users who haven’t uploaded their own personal representation.">
+<meta name="description" content="Drag and drop is the action of selecting an element, moving it, and then placing it into the defined area.">
 
-<title>Cupcake · Avatars</title>
+<title>Cupcake · Drag and Drop</title>
 
 
 
@@ -144,7 +144,7 @@
                 href="https://cupcake-design-system.github.io/elements/alerts/">
                 Alerts
               </a>
-              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+              </li><li>
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/avatars/">
                 Avatars
@@ -169,7 +169,7 @@
                 href="https://cupcake-design-system.github.io/elements/checkboxes/">
                 Checkboxes
               </a>
-              </li><li>
+              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/drag-and-drop/">
                 Drag and Drop
@@ -296,8 +296,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img">
-  <h1 class="docs-title" id="content">Avatars</h1>
-  <p class="docs-lead">Avatars are used to represent the user’s identity onscreen with simple visuals/designs or to provide a placeholder identity for users who haven’t uploaded their own personal representation.</p>
+  <h1 class="docs-title" id="content">Drag and Drop</h1>
+  <p class="docs-lead">Drag and drop is the action of selecting an element, moving it, and then placing it into the defined area.</p>
 </div>
 
       
@@ -317,295 +317,299 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <div id="design" class="docs-tabs-content">
+            <!-- Start Design Tab -->
+<div id="design" class="docs-tabs-content">
 
   <h1 id="overview">Overview</h1>
 
-  <p><strong>Types of avatars available:</strong></p>
+  <p><strong>Types of drag and drop:</strong></p>
 
   <ul>
-    <li>People Version the user version is circular and should only be used for personal users.</li>
-    <li>Company Version - The company version is square and should only be used for company users.</li>
+    <li>Drag and drop with cards</li>
+    <li>Drag and drop with list items</li>
+    <li>Drag and drop with widgets</li>
   </ul>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Types-of-Avatars.png" width="500px;" /></p>
-
-  <p><strong>There are different ways an avatar can be displayed within people  and company versions:</strong></p>
+  <p><strong>Drag and drop must haves:</strong></p>
 
   <ul>
-    <li>First + last name or company initials - The default avatar</li>
-    <li>Placeholder user icon - The default avatar if the user does not provide name</li>
-    <li>Image (with and without border) - The avatar displays an image of the user’s choice if uploaded</li>
+    <li>All components that the user is able to drag and drop must have grips on the left side to indicate</li>
+    <li>All components that the user is able to drag and drop must have 50% opacity applied when the user is dragging it to the drop zone</li>
+    <li>All drop zones should have some sort of indication (blue box or list indication)</li>
   </ul>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars-MoreTypes.png" width="500px;" /></p>
-
-  <p><strong>For the companies that have more than 3 initials, the avatars will appear as the following:</strong></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Company3+Initials.png" width="500px;" /></p>
 
   <hr />
 
-  <p><!-- Start Do's and Don'ts Section --></p>
-  <div class="c-header-md">Do's and Dont's</div>
+  <p><!-- Start Drag and Drop with Cards Section --></p>
+  <div class="c-header-md">Drag and Drop with cards</div>
+  <p>Drag and drop can be used to easily reorder movable cards to the user’s liking.</p>
 
-  <p><!-- Start Usage Row --></p>
-  <div class="c-header-xs">Usage</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_Usage_Do.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_Usage_Dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use a circular avatar for a personal user and a square avatar for a company user </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use a square avatar for a personal user or a circular avatar for a company user</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Usage Row --></p>
+  <p><!-- Start Examples of Use Row --></p>
+  <div class="c-header-sm">Examples of Use</div>
 
-  <p><!-- Start Colors Row --></p>
-  <div class="c-header-xs">Colors</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_Colors_Do.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_Colors_Dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use the light colored avatars on dark backgrounds and the dark colored avatars on light backgrounds</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use the dark colored avatars on dark backgrounds or light colored avatars on light backgrounds</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Colors Row --></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/drag-and-drop/nameoffile.png" width="500px;" />
+  <!-- End Examples of Use Row -->
+  <!-- END Drag and Drop with Cards Section --></p>
 
-  <p><!-- Start Avatars in Headers Row --></p>
-  <div class="c-header-xs">Avatars in Headers</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_Header_Do.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_Header_Dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use the avatar with an account name</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use an avatar without an account name or vice versa</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Avatars in Headers Row --></p>
+  <hr />
 
-  <p><!-- Start Avatars in Headers-Account Names Row --></p>
-  <div class="c-header-xs">Avatars in Headers - Account Names</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_AccountName_Do.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_AccountName_Dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use the avatar on the left-hand side of the account name</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use an avatar on the right-hand side of the account name</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Avatars in Headers - Account Names Row --></p>
+  <p><!-- Start Drag and Drop with List Items Section --></p>
+  <div class="c-header-md">Drag and Drop with list items</div>
+  <p>Drag and drop can be used to easily reorder list items to the user’s liking.</p>
 
-  <p><!-- Start Avatar Sizes in Table Cells Row --></p>
-  <div class="c-header-xs">Avatar Sizes in Table Cells</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_Tables_Do.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/avatars/Avatars_Tables_Dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use "XS" avatars in compact table cells, "SM" avatars in cosy table cells, and default avatars in comfortable table cells</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use any other sizes for avatars in table cells except for "XS" avatars in compact table cells, "SM" avatars in cosy table cells, and default avatars in comfortable table cells</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Avatar Sizes in Table Cells Row --></p>
+  <p><!-- Start Examples of Use Row --></p>
+  <div class="c-header-sm">Examples of Use</div>
 
-  <p><!-- End Do's and Don'ts Section --></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/drag-and-drop/nameoffile.png" width="500px;" />
+  <!-- End Examples of Use Row -->
+  <!-- END Drag and Drop with List Items Section --></p>
+
+  <hr />
+
+  <p><!-- Start Drag and Drop with Widgets Section --></p>
+  <div class="c-header-md">Drag and Drop with widgets</div>
+  <p>Drag and drop can be used to easily perform a function with a widget, such as a file upload.</p>
+
+  <p><!-- Start Examples of Use Row --></p>
+  <div class="c-header-sm">Examples of Use</div>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/drag-and-drop/nameoffile.png" width="500px;" />
+  <!-- End Examples of Use Row -->
+  <!-- END Drag and Drop with Widgets Section --></p>
 
 </div>
 <!-- End Design Tab -->
 
+<!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content">
 
-  <h2 id="base">Base</h2>
-  <p>Avatars are used to show a thumbnail representation of an individual or business in the interface.</p>
-
-  <p>If an image is unavailable, up to two letters can be used instead. Text is best applied with a data attribute - data-text=”{value}”.</p>
-
-  <p>Icons can also be used if relevent to the context.</p>
+  <h2 id="checkbox">Checkbox</h2>
+  <p>Tooltips are floating labels that briefly explain the function of a user interface element.</p>
 
   <div class="docs-example">
-<span class="c-avatar">
-  <img src="https://unsplash.it/200?image=1027" />
-</span>
-<span class="c-avatar c-avatar-primary">
-<i class="fas fa-cloud-download"></i>
-</span>
-<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
+<label class="c-checkbox">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+    Basic Checkbox
+</label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar"</span> <span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://unsplash.it/200?image=1027"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud-download"</span><span class="nt">&gt;&lt;/i&gt;</span>
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Basic Checkbox
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
   <h2 id="color-examples">Color Examples</h2>
-  <p>This is an example of available colors for the Avatar element.</p>
 
   <div class="docs-example">
-<span class="c-avatar c-avatar-primary" data-text="AB"></span>
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+    Primary
+</label>
 
-<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-success"></i>
+    Success
+</label>
 
-<span class="c-avatar c-avatar-success" data-text="AB"></span>
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-warning"></i>
+    Warning
+</label>
 
-<span class="c-avatar c-avatar-warning" data-text="AB"></span>
-
-<span class="c-avatar c-avatar-danger" data-text="AB"></span>
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-danger"></i>
+    Danger
+</label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Primary
+<span class="nt">&lt;/label&gt;</span>
 
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Success
+<span class="nt">&lt;/label&gt;</span>
 
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-success"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Warning
+<span class="nt">&lt;/label&gt;</span>
 
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-warning"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
-
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-danger"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Danger
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
   <h2 id="size-examples">Size Examples</h2>
-  <p>This is an example of available sizes for the Avatar element.</p>
 
   <div class="docs-example">
-<span class="c-avatar c-avatar-primary c-avatar-sm" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-md" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-lg" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-xl" data-text="AB"></span>
+<label class="c-checkbox-sm c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-checkbox-lg c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-checkbox-xl c-m-right-sm">
+    <input type="checkbox" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary c-avatar-sm"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary c-avatar-md"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary c-avatar-lg"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary c-avatar-xl"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-sm c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-lg c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-xl c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="status">Status</h2>
-  <p>In addition you can add a status to the avatar to alert the user. Status is applied with a data attribute - data-status=”{value}”.</p>
+  <h2 id="radio-buttons">Radio Buttons</h2>
+  <p>Use radio buttons to present each item in a list of options where users must make a single selection.</p>
 
   <div class="docs-example">
-<span class="c-avatar" data-status="success">
-  <img src="https://unsplash.it/200?image=1011" />
-</span>
-<span class="c-avatar c-avatar-primary" data-status="success">
-  <i class="fas fa-cloud-download"></i>
-</span>
-<span class="c-avatar c-avatar-secondary" data-text="CD" data-status="primary"></span>
-<span class="c-avatar c-avatar-success" data-text="EF" data-status="danger"></span>
-<span class="c-avatar c-avatar-danger" data-text="GH" data-status="warning"></span>
-<span class="c-avatar c-avatar-warning" data-text="HI" data-status="success"></span>
+<label class="c-radio">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i> 
+    Yes
+</label>
+<label class="c-radio">
+    <input type="radio" name="radio" />
+    <i class="c-bg-primary"></i> 
+    No
+</label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://unsplash.it/200?image=1011"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud-download"</span><span class="nt">&gt;&lt;/i&gt;</span>
-<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"CD"</span> <span class="na">data-status=</span><span class="s">"primary"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-success"</span> <span class="na">data-text=</span><span class="s">"EF"</span> <span class="na">data-status=</span><span class="s">"danger"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-danger"</span> <span class="na">data-text=</span><span class="s">"GH"</span> <span class="na">data-status=</span><span class="s">"warning"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-warning"</span> <span class="na">data-text=</span><span class="s">"HI"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span> 
+    Yes
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span> 
+    No
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="color-examples-1">Color Examples</h2>
+
+  <div class="docs-example">
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+    Primary
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-success"></i>
+    Success
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-warning"></i>
+    Warning
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-danger"></i>
+    Danger
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Primary
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Success
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Warning
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio c-m-right-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    Danger
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="size-examples-1">Size Examples</h2>
+
+  <div class="docs-example">
+<label class="c-radio-sm">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-radio-lg">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-radio-xl">
+    <input type="radio" name="radio" checked="" />
+    <i class="c-bg-primary"></i>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-lg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-radio-xl"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
 </div>
+<!-- End Cupcake Code Tab -->
 
+<!-- Start Angular Code Tab -->
 <div id="angular" class="docs-tabs-content">
 
   <h3 id="storybook-iframe">Storybook iframe</h3>
   <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&amp;full=0&amp;addons=1&amp;stories=0&amp;panelRight=0&amp;addonPanel=storybooks%2Fstorybook-addon-knobs&amp;nav=0"></iframe>
 
 </div>
+<!-- End Angular Code Tab -->
 
 
 
