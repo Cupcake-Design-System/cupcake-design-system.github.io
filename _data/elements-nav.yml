@@ -8,6 +8,7 @@
     - title: Card
     - title: Checkboxes
     # - title: Drag and Drop
+    - title: Dropdown
     # - title: Error Pages
     - title: Forms
     - title: Loaders
