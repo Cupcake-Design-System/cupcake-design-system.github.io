@@ -46,10 +46,10 @@ tabs:
   <div class="c-header-xs">Vertical list vs. horizontal list</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-vert-vs-horiz-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-vert-vs-horiz-dont@2x'%}  
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -76,10 +76,10 @@ tabs:
   <div class="c-header-xs">Label length</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-length-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-length-dont@2x'%}  
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -106,10 +106,10 @@ tabs:
   <div class="c-header-xs">Capitalizing Labels</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-capitalise-do@2x'%}  
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-capitalise-dont@2x'%}
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -136,10 +136,10 @@ tabs:
   <div class="c-header-xs">Label format</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-format-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-format-dont@2x'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -162,14 +162,14 @@ tabs:
     </div>
    <!-- End Label Format Row -->
 
-  <!-- Start Radio button to label placement Row -->
-  <div class="c-header-xs">Radio button to label placement</div>
+  <!-- Start Checkbox to label placement Row -->
+  <div class="c-header-xs">Checkbox to label placement</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-placement-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-placement-dont@2x'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -190,16 +190,16 @@ tabs:
       </div>
       </div>
     </div>
-   <!-- End Radio button to label placement Row -->
+   <!-- End Checkbox to label placement Row -->
 
   <!-- Start Number of Items Row -->
   <div class="c-header-xs">Number of items</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-items-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-items-dont@2x'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -226,10 +226,10 @@ tabs:
   <div class="c-header-xs">List item spacing</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-spacing-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-spacing-dont@2x'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -276,10 +276,10 @@ tabs:
   <div class="c-header-xs">Label length</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-length-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-length-dont@2x'%}  
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -312,10 +312,10 @@ tabs:
   <div class="c-header-xs">Forms vs Settings</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-form-vs-settings-do@2x'%}
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-form-vs-settings-dont@2x'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -344,18 +344,18 @@ tabs:
   <div class="c-header-md">Bulk action selectors in a table</div>
   Checkboxes are used in tables to select which rows to apply bulk actions to.
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/bulk-action-selectors/bulk-selectors-example@2x.png" width="500px;">
 
-  <div class="c-header-sm c-m-top-md">Do's and Dont's</div>
+  <div class="c-header-sm c-m-top-xl">Do's and Dont's</div>
 
   <!-- Start Visual Indicators Row -->
   <div class="c-header-xs">Visual indicators</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+    {% include guide-img.html img='elements/checkboxes/bulk-action-selectors/bulk-support-indicators-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/file name'%} 
+     {% include guide-img.html img='elements/checkboxes/bulk-action-selectors/bulk-support-indicators-dont@2x'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
