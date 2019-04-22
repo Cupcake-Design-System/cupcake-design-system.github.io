@@ -25,6 +25,19 @@ A new element is added to the Cupcake library after it is cycled through the fol
 - Designers will discuss guidelines and best practices on how and when to use the element
 - Developers will create the element in code and deploy to the Cupcake code package 
 
+<div class="c-header-sm c-m-top-lg">Custom Elements</div>
+
+- When to reach out for a custom element
+- Expectations for a custom element
+- Etc...
+
+<div class="c-header-sm c-m-top-lg">Contributing to the Element library</div>
+
+Do you have an element in your product that you use frequently? Send it to us! One of the major goals for Cupcake Design System is to house all elements in one place to make them eaily accessible across the company.
+
+
+
+
 <hr>
 
 <div class="c-header-md">CSS Utilities Overview</div>

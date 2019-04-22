@@ -7,8 +7,8 @@
     - title: Buttons
     - title: Card
     - title: Checkboxes
-    - title: Drag and Drop
-    - title: Error Pages
+    # - title: Drag and Drop
+    # - title: Error Pages
     - title: Forms
     - title: Loaders
     - title: Media Object
