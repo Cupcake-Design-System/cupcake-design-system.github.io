@@ -6,13 +6,13 @@
     - title: Badges
     - title: Buttons
     - title: Card
-    - title: Checkboxes*
+    - title: Checkboxes
     - title: Forms
     - title: Loaders
-    - title: Modals*
+    - title: Modals
     - title: Radio Buttons
     - title: Switches
-    - title: Tooltips*
+    - title: Tooltips
 
 - title: CSS Utilities
   pages:
