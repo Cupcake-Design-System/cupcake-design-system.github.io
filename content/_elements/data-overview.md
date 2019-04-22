@@ -32,3 +32,4 @@ Before going through the examples, it may be beneficial to sketch out ideas with
 {% include guide-img-jpg.html img='elements/dataviz/graph'%}
 
 {% include continue.html page='elements/data-comparison' content="Comparison Graphs" %}
+
