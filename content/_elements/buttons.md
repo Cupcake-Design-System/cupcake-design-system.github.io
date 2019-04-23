@@ -298,7 +298,7 @@ Action buttons represent and draw attention to an action where something is crea
     {% include guide-img.html img='elements/buttons/action-button/action-button-combo-do@2x'%} 
     </div>
     <div class="c-col">
-     {% include guide-img.html img='elements/buttons/action-button/action-button-combo-do@2x'%}   
+     {% include guide-img.html img='elements/buttons/action-button/action-button-combo-dont@2x'%}   
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -697,10 +697,10 @@ Icon-only buttons are best used for common or repetitive actions, typically wher
   <div class="c-header-xs">Icon-only button usage</div>
   <div class="c-row">
     <div class="c-col">
-    {% include guide-img.html img='elements/buttons/icon-button/nameoffile'%} 
+      {% include guide-img.html img='elements/buttons/icon-only-button/icon-only-button-combo-do@2x'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/buttons/icon-button/nameoffile'%}     
+    {% include guide-img.html img='elements/buttons/icon-only-button/icon-only-button-combo-dont@2x'%} 
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
