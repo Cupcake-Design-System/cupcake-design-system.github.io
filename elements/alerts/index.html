@@ -329,11 +329,11 @@
       
         <ul class="docs-tabs ">
     
-    <li><a data-tab="#design">Design</a></li>
-    
     <li><a data-tab="#code">Code</a></li>
     
     <li><a data-tab="#angular">Angular</a></li>
+    
+    <li><a data-tab="#guidelines">Guidelines</a></li>
     
 </ul>
       
@@ -342,7 +342,248 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <div id="design" class="docs-tabs-content">
+            <div id="code" class="docs-tabs-content">
+
+  <h2 id="base">Base</h2>
+
+  <p>Alerts provide contextual information relevent to the user.</p>
+
+  <p>The default alert does not imply action. The color is simple gray and doesn’t include an icon or close action.</p>
+
+  <div class="docs-example">
+<div class="c-alert">
+ <strong>Oh snap there is a problem!</strong>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;strong&gt;</span>Oh snap there is a problem!<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="color-examples">Color Examples</h2>
+
+  <p>This is an example of available colors for the <strong>Alerts</strong> element.</p>
+
+  <div class="docs-example">
+<div class="c-alert c-alert-primary">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Primary alert
+</div>
+
+<div class="c-alert c-alert-success">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Success alert
+</div>
+
+<div class="c-alert c-alert-warning">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Warning alert
+</div>
+
+<div class="c-alert c-alert-danger">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Danger alert
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Primary alert
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Success alert
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Warning alert
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Danger alert
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="additional-stylesoptions">Additional Styles/Options</h2>
+
+  <h3 id="alert-top">Alert top</h3>
+
+  <div class="docs-example">
+<div class="c-alert c-alert-top c-alert-primary">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Primary alert
+</div>
+<br />
+
+<div class="c-alert c-alert-top c-alert-success">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Success alert
+</div>
+<br />
+
+<div class="c-alert c-alert-top c-alert-warning">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Warning alert
+</div>
+<br />
+
+<div class="c-alert c-alert-top c-alert-danger">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a Danger alert
+</div>
+<br />
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Primary alert
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Success alert
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Warning alert
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    This is a Danger alert
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h3 id="in-columns-with-icons">In columns with icons</h3>
+
+  <div class="docs-example">
+<div class="c-row">
+    <div class="c-col">
+        <div class="c-alert c-alert-danger">
+            <i class="fa fa-exclamation-circle c-m-right-sm"></i> Oops... Something went wrong!
+            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+    <div class="c-col">
+        <div class="c-alert c-alert-success">
+            <i class="fa fa-check-circle c-m-right-sm"></i> Great job! You are ready for the next step.
+            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-danger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-circle c-m-right-sm"</span><span class="nt">&gt;&lt;/i&gt;</span> Oops... Something went wrong!
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-success"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-check-circle c-m-right-sm"</span><span class="nt">&gt;&lt;/i&gt;</span> Great job! You are ready for the next step.
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h3 id="toast">Toast</h3>
+
+  <div class="docs-example">
+<div class="c-toast-alert c-toast-alert-primary">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+
+<div class="c-toast-alert c-toast-alert-success">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+
+<div class="c-toast-alert c-toast-alert-warning">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+
+<div class="c-toast-alert c-toast-alert-danger">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+</div>
+<!-- End Code Tab -->
+
+<!-- Start Angular Tab -->
+<div id="angular" class="docs-tabs-content">
+
+  <h3 id="storybook-iframe">Storybook iframe</h3>
+  <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&amp;full=0&amp;addons=1&amp;stories=0&amp;panelRight=0&amp;addonPanel=storybooks%2Fstorybook-addon-knobs&amp;nav=0"></iframe>
+
+</div>
+<!-- End Angular Tab -->
+
+<!-- Start Design Guidelines Tab -->
+<div id="guidelines" class="docs-tabs-content">
 
   <h1 id="overview">Overview</h1>
 
@@ -722,245 +963,6 @@ See Modal Dialogue (to be linked...)
 </div>
 <!-- End Design Tab -->
 
-<div id="code" class="docs-tabs-content">
-
-  <h2 id="base">Base</h2>
-
-  <p>Alerts provide contextual information relevent to the user.</p>
-
-  <p>The default alert does not imply action. The color is simple gray and doesn’t include an icon or close action.</p>
-
-  <div class="docs-example">
-<div class="c-alert">
- <strong>Oh snap there is a problem!</strong>
-</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;strong&gt;</span>Oh snap there is a problem!<span class="nt">&lt;/strong&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h2 id="color-examples">Color Examples</h2>
-
-  <p>This is an example of available colors for the <strong>Alerts</strong> element.</p>
-
-  <div class="docs-example">
-<div class="c-alert c-alert-primary">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a Primary alert
-</div>
-
-<div class="c-alert c-alert-success">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a Success alert
-</div>
-
-<div class="c-alert c-alert-warning">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a Warning alert
-</div>
-
-<div class="c-alert c-alert-danger">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a Danger alert
-</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    This is a Primary alert
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-success"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    This is a Success alert
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-warning"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    This is a Warning alert
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-danger"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    This is a Danger alert
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h2 id="additional-stylesoptions">Additional Styles/Options</h2>
-
-  <h3 id="alert-top">Alert top</h3>
-
-  <div class="docs-example">
-<div class="c-alert c-alert-top c-alert-primary">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a Primary alert
-</div>
-<br />
-
-<div class="c-alert c-alert-top c-alert-success">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a Success alert
-</div>
-<br />
-
-<div class="c-alert c-alert-top c-alert-warning">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a Warning alert
-</div>
-<br />
-
-<div class="c-alert c-alert-top c-alert-danger">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a Danger alert
-</div>
-<br />
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    This is a Primary alert
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-success"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    This is a Success alert
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-warning"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    This is a Warning alert
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-top c-alert-danger"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span> <span class="na">data-dismiss=</span><span class="s">"c-alert"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-    This is a Danger alert
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;br&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="in-columns-with-icons">In columns with icons</h3>
-
-  <div class="docs-example">
-<div class="c-row">
-    <div class="c-col">
-        <div class="c-alert c-alert-danger">
-            <i class="fa fa-exclamation-circle c-m-right-sm"></i> Oops... Something went wrong!
-            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
-        </div>
-    </div>
-    <div class="c-col">
-        <div class="c-alert c-alert-success">
-            <i class="fa fa-check-circle c-m-right-sm"></i> Great job! You are ready for the next step.
-            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
-        </div>
-    </div>
-</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-danger"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-circle c-m-right-sm"</span><span class="nt">&gt;&lt;/i&gt;</span> Oops... Something went wrong!
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-alert c-alert-success"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-check-circle c-m-right-sm"</span><span class="nt">&gt;&lt;/i&gt;</span> Great job! You are ready for the next step.
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-a c-alert-close"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="toast">Toast</h3>
-
-  <div class="docs-example">
-<div class="c-toast-alert c-toast-alert-primary">
-    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-</div>
-
-<div class="c-toast-alert c-toast-alert-success">
-    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-</div>
-
-<div class="c-toast-alert c-toast-alert-warning">
-    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-</div>
-
-<div class="c-toast-alert c-toast-alert-danger">
-    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-success"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-warning"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-toast-alert c-toast-alert-danger"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-toast-alert-close"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-</div>
-<!-- End Code Tab -->
-
-<!-- Start Angular Tab -->
-<div id="angular" class="docs-tabs-content">
-
-  <h3 id="storybook-iframe">Storybook iframe</h3>
-  <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&amp;full=0&amp;addons=1&amp;stories=0&amp;panelRight=0&amp;addonPanel=storybooks%2Fstorybook-addon-knobs&amp;nav=0"></iframe>
-
-</div>
-<!-- End Angular Tab -->
 
 
           </div>

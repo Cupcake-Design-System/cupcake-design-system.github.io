@@ -329,11 +329,11 @@
       
         <ul class="docs-tabs ">
     
-    <li><a data-tab="#design">Design</a></li>
-    
     <li><a data-tab="#code">Code</a></li>
     
     <li><a data-tab="#angular">Angular</a></li>
+    
+    <li><a data-tab="#guidelines">Guidelines</a></li>
     
 </ul>
       
@@ -342,7 +342,187 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <div id="design" class="docs-tabs-content">
+            <div id="code" class="docs-tabs-content">
+
+  <h2 id="base">Base</h2>
+  <p>Badges are typically used to inform the user of status, information, or of an action that’s been taken.</p>
+
+  <div class="docs-example">
+<div class="c-badge">v.1.0.5</div>
+<div class="c-badge c-badge-rounded">v.1.0.5</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge"</span><span class="nt">&gt;</span>v.1.0.5<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded"</span><span class="nt">&gt;</span>v.1.0.5<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="color-examples">Color Examples</h2>
+  <p>This is an example of available colors for the Badges element.</p>
+
+  <div class="docs-example">
+<div class="c-badge c-badge-primary">Primary</div>
+
+<div class="c-badge c-badge-secondary">Secondary</div>
+
+<div class="c-badge c-badge-success">Success</div>
+
+<div class="c-badge c-badge-warning">Warning</div>
+
+<div class="c-badge c-badge-danger">Danger</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="size-examples">Size Examples</h2>
+  <p>This is an example of available sizes for the Badges element.</p>
+
+  <div class="docs-example">
+<div class="c-badge c-badge-secondary c-badge-sm">Small</div>
+<div class="c-badge c-badge-secondary c-badge">Default</div>
+<div class="c-badge c-badge-secondary c-badge-lg">Large</div>
+<div class="c-badge c-badge-secondary c-badge-xl">X-Large</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-sm"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-xl"</span><span class="nt">&gt;</span>X-Large<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h2 id="additional-stylesoptions">Additional Styles/Options</h2>
+
+  <div class="docs-example">
+<div class="c-badge c-badge-secondary c-badge-sm">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge-lg">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge-xl">Information <i class="fal fa-anchor"></i></div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-sm"</span><span class="nt">&gt;</span>Information <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fal fa-anchor"</span><span class="nt">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge"</span><span class="nt">&gt;</span>Information <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fal fa-anchor"</span><span class="nt">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-lg"</span><span class="nt">&gt;</span>Information <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fal fa-anchor"</span><span class="nt">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-xl"</span><span class="nt">&gt;</span>Information <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fal fa-anchor"</span><span class="nt">&gt;&lt;/i&gt;&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h3 id="multiple-modifiers">Multiple Modifiers</h3>
+
+  <div class="docs-example">
+<div class="c-badge c-badge-rounded c-badge-primary"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Icon</div>
+<div class="c-badge c-badge-rounded c-badge-success-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Outline</div>
+<div class="c-badge c-badge-danger-outline">Outline</div>
+<div class="c-badge c-badge-warning-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Outline Icon</div>
+<div class="c-badge c-badge-rounded c-badge-primary-outline c-badge-xl"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded XL</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Rounded Icon<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-success-outline"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Rounded Outline<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-danger-outline"</span><span class="nt">&gt;</span>Outline<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-warning-outline"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Outline Icon<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-primary-outline c-badge-xl"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Rounded XL<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h3 id="inline-status">Inline Status</h3>
+
+  <div class="docs-example">
+<div class="c-body-text-xl"> 
+  Information 
+  <span class="c-badge c-badge-rounded c-badge-primary c-badge-top">8</span>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-body-text-xl"</span><span class="nt">&gt;</span> 
+  Information 
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-primary c-badge-top"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h3 id="empty-status-badges">Empty Status Badges</h3>
+
+  <div class="docs-example">
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-danger"></div>
+
+
+
+<div class="c-badge c-badge-rounded c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-danger"></div>
+
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-danger"></div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-primary"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-secondary"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-success"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-warning"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-danger"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-primary"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-secondary"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-success"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-warning"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-danger"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-primary"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-secondary"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-success"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-warning"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-danger"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+</div>
+<!-- End Code Tab -->
+
+<!-- Start Angular Tab -->
+<div id="angular" class="docs-tabs-content">
+
+  <h2 id="standard-button">Standard Button</h2>
+  <iframe title="storybook" width="100%" height="500px" src=""></iframe>
+
+</div>
+<!-- End Angular Tab -->
+
+<!-- Start Design Guidelines Tab -->
+<div id="guidelines" class="docs-tabs-content">
 
   <h1 id="overview">Overview</h1>
 
@@ -613,182 +793,6 @@
 
 </div>
 <!-- End Design Tab -->
-
-<div id="code" class="docs-tabs-content">
-
-  <h2 id="base">Base</h2>
-  <p>Badges are typically used to inform the user of status, information, or of an action that’s been taken.</p>
-
-  <div class="docs-example">
-<div class="c-badge">v.1.0.5</div>
-<div class="c-badge c-badge-rounded">v.1.0.5</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge"</span><span class="nt">&gt;</span>v.1.0.5<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded"</span><span class="nt">&gt;</span>v.1.0.5<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h2 id="color-examples">Color Examples</h2>
-  <p>This is an example of available colors for the Badges element.</p>
-
-  <div class="docs-example">
-<div class="c-badge c-badge-primary">Primary</div>
-
-<div class="c-badge c-badge-secondary">Secondary</div>
-
-<div class="c-badge c-badge-success">Success</div>
-
-<div class="c-badge c-badge-warning">Warning</div>
-
-<div class="c-badge c-badge-danger">Danger</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h2 id="size-examples">Size Examples</h2>
-  <p>This is an example of available sizes for the Badges element.</p>
-
-  <div class="docs-example">
-<div class="c-badge c-badge-secondary c-badge-sm">Small</div>
-<div class="c-badge c-badge-secondary c-badge">Default</div>
-<div class="c-badge c-badge-secondary c-badge-lg">Large</div>
-<div class="c-badge c-badge-secondary c-badge-xl">X-Large</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-sm"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-xl"</span><span class="nt">&gt;</span>X-Large<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h2 id="additional-stylesoptions">Additional Styles/Options</h2>
-
-  <div class="docs-example">
-<div class="c-badge c-badge-secondary c-badge-sm">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge-lg">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge-xl">Information <i class="fal fa-anchor"></i></div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-sm"</span><span class="nt">&gt;</span>Information <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fal fa-anchor"</span><span class="nt">&gt;&lt;/i&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge"</span><span class="nt">&gt;</span>Information <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fal fa-anchor"</span><span class="nt">&gt;&lt;/i&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-lg"</span><span class="nt">&gt;</span>Information <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fal fa-anchor"</span><span class="nt">&gt;&lt;/i&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary c-badge-xl"</span><span class="nt">&gt;</span>Information <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fal fa-anchor"</span><span class="nt">&gt;&lt;/i&gt;&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="multiple-modifiers">Multiple Modifiers</h3>
-
-  <div class="docs-example">
-<div class="c-badge c-badge-rounded c-badge-primary"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Icon</div>
-<div class="c-badge c-badge-rounded c-badge-success-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Outline</div>
-<div class="c-badge c-badge-danger-outline">Outline</div>
-<div class="c-badge c-badge-warning-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Outline Icon</div>
-<div class="c-badge c-badge-rounded c-badge-primary-outline c-badge-xl"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded XL</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Rounded Icon<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-success-outline"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Rounded Outline<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-danger-outline"</span><span class="nt">&gt;</span>Outline<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-warning-outline"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Outline Icon<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-primary-outline c-badge-xl"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Rounded XL<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="inline-status">Inline Status</h3>
-
-  <div class="docs-example">
-<div class="c-body-text-xl"> 
-  Information 
-  <span class="c-badge c-badge-rounded c-badge-primary c-badge-top">8</span>
-</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-body-text-xl"</span><span class="nt">&gt;</span> 
-  Information 
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-primary c-badge-top"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="empty-status-badges">Empty Status Badges</h3>
-
-  <div class="docs-example">
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-danger"></div>
-
-
-
-<div class="c-badge c-badge-rounded c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-danger"></div>
-
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-danger"></div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-primary"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-secondary"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-success"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-warning"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-sm c-badge-danger"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-primary"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-secondary"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-success"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-warning"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-danger"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-primary"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-secondary"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-success"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-warning"</span><span class="nt">&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-rounded c-badge-lg c-badge-danger"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-</div>
-
-<div id="angular" class="docs-tabs-content">
-
-  <h2 id="standard-button">Standard Button</h2>
-  <iframe title="storybook" width="100%" height="500px" src=""></iframe>
-
-</div>
 
 
 
