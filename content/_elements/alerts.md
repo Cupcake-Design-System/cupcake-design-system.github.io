@@ -7,12 +7,100 @@ colors:
 - warning
 - danger
 tabs: 
-- Design
 - Code
 - Angular
+- Guidelines
 ---
 
+<div id="code" class="docs-tabs-content" markdown="1">
 
+## Base
+
+Alerts provide contextual information relevent to the user.
+
+The default alert does not imply action. The color is simple gray and doesn't include an icon or close action.
+
+{% example html %}
+<div class="c-alert">
+ <strong>Oh snap there is a problem!</strong>
+</div>
+{% endexample %}
+
+## Color Examples
+
+This is an example of available colors for the **{{ page.title }}** element. 
+
+{% example html %}
+{% for color in page.colors %}
+<div class="c-alert c-alert-{{ color }}">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a {{ color | capitalize }} alert
+</div>
+{% endfor %}
+{% endexample %}
+
+
+## Additional Styles/Options
+
+### Alert top
+
+{% example html %}
+{% for color in page.colors %}
+<div class="c-alert c-alert-top c-alert-{{ color }}">
+    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    This is a {{ color | capitalize }} alert
+</div>
+<br>
+{% endfor %}
+{% endexample %}
+
+### In columns with icons
+
+{% example html %}
+<div class="c-row">
+    <div class="c-col">
+        <div class="c-alert c-alert-danger">
+            <i class="fa fa-exclamation-circle c-m-right-sm"></i> Oops... Something went wrong!
+            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+    <div class="c-col">
+        <div class="c-alert c-alert-success">
+            <i class="fa fa-check-circle c-m-right-sm"></i> Great job! You are ready for the next step.
+            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+</div>
+{% endexample %}
+
+### Toast
+{% example html %}
+{% for color in page.colors %}
+<div class="c-toast-alert c-toast-alert-{{ color }}">
+    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
+    dictum sem, a pretium dui.
+</div>
+{% endfor %}
+{% endexample %}
+
+</div>
+<!-- End Code Tab -->
+
+<!-- Start Angular Tab -->
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+### Storybook iframe
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+
+</div>
+<!-- End Angular Tab -->
+
+
+<!-- Start Design Guidelines Tab -->
 <div id="design" class="docs-tabs-content" markdown="1">
 
 # Overview
@@ -356,90 +444,7 @@ See Modal Dialogue (to be linked...)
 <!-- End Design Tab -->
 
 
-<div id="code" class="docs-tabs-content" markdown="1">
-
-## Base
-
-Alerts provide contextual information relevent to the user.
-
-The default alert does not imply action. The color is simple gray and doesn't include an icon or close action.
-
-{% example html %}
-<div class="c-alert">
- <strong>Oh snap there is a problem!</strong>
-</div>
-{% endexample %}
-
-## Color Examples
-
-This is an example of available colors for the **{{ page.title }}** element. 
-
-{% example html %}
-{% for color in page.colors %}
-<div class="c-alert c-alert-{{ color }}">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a {{ color | capitalize }} alert
-</div>
-{% endfor %}
-{% endexample %}
 
 
-## Additional Styles/Options
-
-### Alert top
-
-{% example html %}
-{% for color in page.colors %}
-<div class="c-alert c-alert-top c-alert-{{ color }}">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a {{ color | capitalize }} alert
-</div>
-<br>
-{% endfor %}
-{% endexample %}
-
-### In columns with icons
-
-{% example html %}
-<div class="c-row">
-    <div class="c-col">
-        <div class="c-alert c-alert-danger">
-            <i class="fa fa-exclamation-circle c-m-right-sm"></i> Oops... Something went wrong!
-            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
-        </div>
-    </div>
-    <div class="c-col">
-        <div class="c-alert c-alert-success">
-            <i class="fa fa-check-circle c-m-right-sm"></i> Great job! You are ready for the next step.
-            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
-        </div>
-    </div>
-</div>
-{% endexample %}
-
-### Toast
-{% example html %}
-{% for color in page.colors %}
-<div class="c-toast-alert c-toast-alert-{{ color }}">
-    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
-</div>
-{% endfor %}
-{% endexample %}
-
-</div>
-<!-- End Code Tab -->
 
 
-<!-- Start Angular Tab -->
-<div id="angular" class="docs-tabs-content" markdown="1">
-
-### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
-
-</div>
-<!-- End Angular Tab -->
