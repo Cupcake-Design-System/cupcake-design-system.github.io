@@ -12,13 +12,86 @@ sizes:
 - lg
 - xl
 tabs:
-- Design
-- Code 
+- Code
 - Angular
+- Guidelines
 ---
 
+<!-- Start Cupcake Code Tab -->
+<div id="code" class="docs-tabs-content" markdown="1">
+
+## Checkbox
+Checkboxes are most commonly used to give merchants a way to make a range of selections (zero, one, or multiple).
+
+{% example html %}
+<label class="c-checkbox">
+    <input type="checkbox" name="radio" checked>
+    <i class="c-bg-primary"></i>
+    Basic Checkbox
+</label>
+{% endexample %}
+
+## Color Examples
+
+{% example html %}
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked>
+    <i class="c-bg-primary"></i>
+    Primary
+</label>
+
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked>
+    <i class="c-bg-success"></i>
+    Success
+</label>
+
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked>
+    <i class="c-bg-warning"></i>
+    Warning
+</label>
+
+<label class="c-checkbox c-m-right-sm">
+    <input type="checkbox" name="radio" checked>
+    <i class="c-bg-danger"></i>
+    Danger
+</label>
+{% endexample %}
+
+## Size Examples
+
+{% example html %}
+<label class="c-checkbox-sm c-m-right-sm">
+    <input type="checkbox" name="radio" checked>
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-checkbox-lg c-m-right-sm">
+    <input type="checkbox" name="radio" checked>
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-checkbox-xl c-m-right-sm">
+    <input type="checkbox" name="radio" checked>
+    <i class="c-bg-primary"></i>
+</label>
+{% endexample %}
+
+</div>
+<!-- End Cupcake Code Tab -->
+
+<!-- Start Angular Code Tab -->
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+### Storybook iframe
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+
+</div>
+<!-- End Angular Code Tab -->
+
 <!-- Start Design Tab -->
-<div id="design" class="docs-tabs-content" markdown="1">
+<div id="guidelines" class="docs-tabs-content" markdown="1">
 
 # Overview
 
@@ -383,77 +456,6 @@ tabs:
 </div>
 <!-- End Design Tab -->
 
-<!-- Start Cupcake Code Tab -->
-<div id="code" class="docs-tabs-content" markdown="1">
 
-## Checkbox
-Checkboxes are most commonly used to give merchants a way to make a range of selections (zero, one, or multiple).
-
-{% example html %}
-<label class="c-checkbox">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Basic Checkbox
-</label>
-{% endexample %}
-
-## Color Examples
-
-{% example html %}
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Primary
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-success"></i>
-    Success
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-warning"></i>
-    Warning
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-danger"></i>
-    Danger
-</label>
-{% endexample %}
-
-## Size Examples
-
-{% example html %}
-<label class="c-checkbox-sm c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-checkbox-lg c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-checkbox-xl c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-{% endexample %}
-
-</div>
-<!-- End Cupcake Code Tab -->
-
-<!-- Start Angular Code Tab -->
-<div id="angular" class="docs-tabs-content" markdown="1">
-
-### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
-
-</div>
-<!-- End Angular Code Tab -->
 
 

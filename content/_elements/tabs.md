@@ -12,19 +12,10 @@ sizes:
 - lg
 - xl
 tabs:
-- Design
 - Code 
 - Angular
+- Guidelines
 ---
-
-<!-- Start Design Tab -->
-<div id="design" class="docs-tabs-content" markdown="1">
-
-# Design Guidelines coming soon...
-
-
-</div>
-<!-- End Design Tab -->
 
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
@@ -237,5 +228,14 @@ Use tabs to alternate among related views within the same context.
 
 </div>
 <!-- End Angular Code Tab -->
+
+<!-- Start Design Tab -->
+<div id="guidelines" class="docs-tabs-content" markdown="1">
+
+# Design Guidelines coming soon...
+
+
+</div>
+<!-- End Design Tab -->
 
 

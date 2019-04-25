@@ -101,7 +101,7 @@ This is an example of available colors for the **{{ page.title }}** element.
 
 
 <!-- Start Design Guidelines Tab -->
-<div id="design" class="docs-tabs-content" markdown="1">
+<div id="guidelines" class="docs-tabs-content" markdown="1">
 
 # Overview
 

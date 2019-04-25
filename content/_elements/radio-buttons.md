@@ -12,12 +12,89 @@ sizes:
 - lg
 - xl
 tabs:
-- Design
-- Code 
-- Angular
+- Code
+- Angular 
+- Guidelines
 ---
 
-<div id="design" class="docs-tabs-content" markdown="1">
+<!-- Start Cupcake Code Tab -->
+<div id="code" class="docs-tabs-content" markdown="1">
+## Radio Buttons
+Use radio buttons to present each item in a list of options where users must make a single selection.
+
+{% example html %}
+<label class="c-radio">
+    <input type="radio" name="radio" checked>
+    <i class="c-bg-primary"></i> 
+    Yes
+</label>
+<label class="c-radio">
+    <input type="radio" name="radio">
+    <i class="c-bg-primary"></i> 
+    No
+</label>
+{% endexample %}
+
+## Color Examples
+
+{% example html %}
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked>
+    <i class="c-bg-primary"></i>
+    Primary
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked>
+    <i class="c-bg-success"></i>
+    Success
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked>
+    <i class="c-bg-warning"></i>
+    Warning
+</label>
+
+<label class="c-radio c-m-right-sm">
+    <input type="radio" name="radio" checked>
+    <i class="c-bg-danger"></i>
+    Danger
+</label>
+{% endexample %}
+
+## Size Examples
+
+{% example html %}
+<label class="c-radio-sm">
+    <input type="radio" name="radio" checked>
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-radio-lg">
+    <input type="radio" name="radio" checked>
+    <i class="c-bg-primary"></i>
+</label>
+
+<label class="c-radio-xl">
+    <input type="radio" name="radio" checked>
+    <i class="c-bg-primary"></i>
+</label>
+{% endexample %}
+
+</div>
+<!-- End Cupcake Code Tab -->
+
+<!-- Start Angular Tab -->
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+### Radio Button
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--radio-button&nav=0"></iframe>
+
+</div>
+<!-- End Angular Tab -->
+
+<div id="guidelines" class="docs-tabs-content" markdown="1">
 
 # Overview
 
@@ -496,83 +573,8 @@ The most common way to display a radio list group in a form.
  <!-- END Radio Buttons in Forms Section -->
 
 
-
-
 </div>
 <!-- End Design Section -->
 
-<!-- Start Cupcake Code Tab -->
-<div id="code" class="docs-tabs-content" markdown="1">
-## Radio Buttons
-Use radio buttons to present each item in a list of options where users must make a single selection.
 
-{% example html %}
-<label class="c-radio">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i> 
-    Yes
-</label>
-<label class="c-radio">
-    <input type="radio" name="radio">
-    <i class="c-bg-primary"></i> 
-    No
-</label>
-{% endexample %}
-
-## Color Examples
-
-{% example html %}
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Primary
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-success"></i>
-    Success
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-warning"></i>
-    Warning
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-danger"></i>
-    Danger
-</label>
-{% endexample %}
-
-## Size Examples
-
-{% example html %}
-<label class="c-radio-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-radio-lg">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-radio-xl">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-{% endexample %}
-
-</div>
-<!-- End Cupcake Code Tab -->
-
-<div id="angular" class="docs-tabs-content" markdown="1">
-
-### Radio Button
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--radio-button&nav=0"></iframe>
-
-</div>
 

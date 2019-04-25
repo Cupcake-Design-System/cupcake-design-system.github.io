@@ -12,13 +12,58 @@ sizes:
 - lg
 - xl
 tabs:
-- Design
 - Code 
 - Angular
+- Guidelines
 ---
 
+<!-- Start Cupcake Code Tab -->
+<div id="code" class="docs-tabs-content" markdown="1">
+
+# Cupcake 2.0 updates coming soon...
+
+## Base
+Base popovers have no color but multiple direction options.
+
+{% example html %}
+<div class="c-popover c-popover-{DIRECTION}">
+    <div class="c-popover-arrow"></div>
+    <div class="c-popover-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus.
+    </div>
+</div>    
+{% endexample %}
+
+## Color Examples
+It uses for-loop over the colors array in the head of the markdown file. You can easily add or remove colors there to show whats supported.
+
+{% example html %}
+<div class="c-popover c-popover-{DIRECTION} c-popover-{COLOR}">
+    <div class="c-popover-arrow"></div>
+    <div class="c-popover-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus.
+    </div>
+</div>     
+{% endexample %}
+
+
+
+
+
+</div>
+<!-- End Cupcake Code Tab -->
+
+<!-- Start Angular Code Tab -->
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+### Storybook iframe
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+
+</div>
+<!-- End Angular Code Tab -->
+
 <!-- Start Design Tab -->
-<div id="design" class="docs-tabs-content" markdown="1">
+<div id="guidelines" class="docs-tabs-content" markdown="1">
 
 # Overview
 
@@ -493,49 +538,6 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
 </div>
 <!-- End Design Tab -->
 
-<!-- Start Cupcake Code Tab -->
-<div id="code" class="docs-tabs-content" markdown="1">
 
-# Cupcake 2.0 updates coming soon...
-
-## Base
-Base popovers have no color but multiple direction options.
-
-{% example html %}
-<div class="c-popover c-popover-{DIRECTION}">
-    <div class="c-popover-arrow"></div>
-    <div class="c-popover-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus.
-    </div>
-</div>    
-{% endexample %}
-
-## Color Examples
-It uses for-loop over the colors array in the head of the markdown file. You can easily add or remove colors there to show whats supported.
-
-{% example html %}
-<div class="c-popover c-popover-{DIRECTION} c-popover-{COLOR}">
-    <div class="c-popover-arrow"></div>
-    <div class="c-popover-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus.
-    </div>
-</div>     
-{% endexample %}
-
-
-
-
-
-</div>
-<!-- End Cupcake Code Tab -->
-
-<!-- Start Angular Code Tab -->
-<div id="angular" class="docs-tabs-content" markdown="1">
-
-### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
-
-</div>
-<!-- End Angular Code Tab -->
 
 

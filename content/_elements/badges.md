@@ -12,12 +12,126 @@ sizes:
 - lg
 - xl
 tabs:
-- Design
-- Code 
-- Angular
+- Code
+- Angular 
+- Guidelines
 ---
 
-<div id="design" class="docs-tabs-content" markdown="1">
+<div id="code" class="docs-tabs-content" markdown="1">
+
+## Base
+Badges are typically used to inform the user of status, information, or of an action that’s been taken.
+
+{% example html %}
+<div class="c-badge">v.1.0.5</div>
+<div class="c-badge c-badge-rounded">v.1.0.5</div>
+{% endexample %}
+
+## Color Examples
+This is an example of available colors for the Badges element.
+
+{% example html %}
+<div class="c-badge c-badge-primary">Primary</div>
+
+<div class="c-badge c-badge-secondary">Secondary</div>
+
+<div class="c-badge c-badge-success">Success</div>
+
+<div class="c-badge c-badge-warning">Warning</div>
+
+<div class="c-badge c-badge-danger">Danger</div>
+{% endexample %}
+
+## Size Examples
+This is an example of available sizes for the Badges element.
+
+{% example html %}
+<div class="c-badge c-badge-secondary c-badge-sm">Small</div>
+<div class="c-badge c-badge-secondary c-badge">Default</div>
+<div class="c-badge c-badge-secondary c-badge-lg">Large</div>
+<div class="c-badge c-badge-secondary c-badge-xl">X-Large</div>
+{% endexample %}
+
+## Additional Styles/Options
+
+{% example html %}
+<div class="c-badge c-badge-secondary c-badge-sm">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge-lg">Information <i class="fal fa-anchor"></i></div>
+<div class="c-badge c-badge-secondary c-badge-xl">Information <i class="fal fa-anchor"></i></div>
+{% endexample %}
+
+### Multiple Modifiers
+
+{% example html %}
+<div class="c-badge c-badge-rounded c-badge-primary"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Icon</div>
+<div class="c-badge c-badge-rounded c-badge-success-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Outline</div>
+<div class="c-badge c-badge-danger-outline">Outline</div>
+<div class="c-badge c-badge-warning-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Outline Icon</div>
+<div class="c-badge c-badge-rounded c-badge-primary-outline c-badge-xl"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded XL</div>
+{% endexample %}
+
+### Inline Status
+
+{% example html %}
+<div class="c-body-text-xl"> 
+  Information 
+  <span class="c-badge c-badge-rounded c-badge-primary c-badge-top">8</span>
+</div>
+{% endexample %}
+
+### Empty Status Badges
+
+{% example html %}
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-sm c-badge-danger"></div>
+
+
+
+<div class="c-badge c-badge-rounded c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-danger"></div>
+
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-primary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-secondary"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-success"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-warning"></div>
+
+<div class="c-badge c-badge-rounded c-badge-lg c-badge-danger"></div>
+{% endexample %}
+
+
+</div>
+<!-- End Code Tab -->
+
+<!-- Start Angular Tab -->
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+## Standard Button
+<iframe title="storybook" width="100%" height="500px" src=""></iframe>
+
+</div>
+<!-- End Angular Tab -->
+
+<!-- Start Design Guidelines Tab -->
+<div id="guidelines" class="docs-tabs-content" markdown="1">
 
 # Overview
 
@@ -279,113 +393,5 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
 </div>
 <!-- End Design Tab -->
 
-<div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
-Badges are typically used to inform the user of status, information, or of an action that’s been taken.
-
-{% example html %}
-<div class="c-badge">v.1.0.5</div>
-<div class="c-badge c-badge-rounded">v.1.0.5</div>
-{% endexample %}
-
-## Color Examples
-This is an example of available colors for the Badges element.
-
-{% example html %}
-<div class="c-badge c-badge-primary">Primary</div>
-
-<div class="c-badge c-badge-secondary">Secondary</div>
-
-<div class="c-badge c-badge-success">Success</div>
-
-<div class="c-badge c-badge-warning">Warning</div>
-
-<div class="c-badge c-badge-danger">Danger</div>
-{% endexample %}
-
-## Size Examples
-This is an example of available sizes for the Badges element.
-
-{% example html %}
-<div class="c-badge c-badge-secondary c-badge-sm">Small</div>
-<div class="c-badge c-badge-secondary c-badge">Default</div>
-<div class="c-badge c-badge-secondary c-badge-lg">Large</div>
-<div class="c-badge c-badge-secondary c-badge-xl">X-Large</div>
-{% endexample %}
-
-## Additional Styles/Options
-
-{% example html %}
-<div class="c-badge c-badge-secondary c-badge-sm">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge-lg">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge-xl">Information <i class="fal fa-anchor"></i></div>
-{% endexample %}
-
-### Multiple Modifiers
-
-{% example html %}
-<div class="c-badge c-badge-rounded c-badge-primary"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Icon</div>
-<div class="c-badge c-badge-rounded c-badge-success-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Outline</div>
-<div class="c-badge c-badge-danger-outline">Outline</div>
-<div class="c-badge c-badge-warning-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Outline Icon</div>
-<div class="c-badge c-badge-rounded c-badge-primary-outline c-badge-xl"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded XL</div>
-{% endexample %}
-
-### Inline Status
-
-{% example html %}
-<div class="c-body-text-xl"> 
-  Information 
-  <span class="c-badge c-badge-rounded c-badge-primary c-badge-top">8</span>
-</div>
-{% endexample %}
-
-### Empty Status Badges
-
-{% example html %}
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-danger"></div>
-
-
-
-<div class="c-badge c-badge-rounded c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-danger"></div>
-
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-danger"></div>
-{% endexample %}
-
-
-</div>
-
-<div id="angular" class="docs-tabs-content" markdown="1">
-
-## Standard Button
-<iframe title="storybook" width="100%" height="500px" src=""></iframe>
-
-</div>
 

@@ -7,11 +7,12 @@ colors:
 - warning
 - danger
 tabs:
-- Design
-- Code 
+- Code
 - Angular
+- Guidelines
 ---
 
+<!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ## Intro
@@ -67,9 +68,7 @@ Cards can include headers, footers, a wide variety of content and card-specific 
 </div>
 {% endexample %}
 
-
 ### Header and Footer
-
 
 {% example html %}
 <div class="c-card">
@@ -92,8 +91,6 @@ Cards can include headers, footers, a wide variety of content and card-specific 
   <div class="c-card-footer">Footer if needed</div>
 </div>
 {% endexample %}
-
-
 
 ### Colors
 
@@ -123,10 +120,21 @@ This is an example of available colors for the **{{ page.title }}** element.
 {% endfor %}
 {% endexample %}
 </div>
+<!-- End Cupcake Code Tab -->
 
+<!-- Start Angular Code Section -->
+<div id="angular" class="docs-tabs-content" markdown="1">
 
-<div id="design" class="docs-tabs-content" markdown="1">
-## UX Guidance
+### Card
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--cards&nav=0"></iframe>
+
+</div>
+<!-- End Angular Code Section -->
+
+<!-- Start Design Guidelines Tab -->
+<div id="guidelines" class="docs-tabs-content" markdown="1">
+
+#Overview
 
 ### Structure
 
@@ -152,12 +160,5 @@ Dashboard cards generally conform to the following criteria:
 {% include guide-img.html img='elements/card/card-content'%}
 
 </div>
+<!-- End Design Guidelines Tab -->
 
-<!-- Start Angular Code Section -->
-<div id="angular" class="docs-tabs-content" markdown="1">
-
-### Card
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--cards&nav=0"></iframe>
-
-</div>
-<!-- End Angular Code Section -->

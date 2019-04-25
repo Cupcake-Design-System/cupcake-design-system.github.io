@@ -12,19 +12,10 @@ sizes:
 - lg
 - xl
 tabs:
-- Design
-- Code 
+- Code
 - Angular
+- Guidelines
 ---
-
-<!-- Start Design Tab -->
-<div id="design" class="docs-tabs-content" markdown="1">
-
-# Design Guidelines coming soon...
-
-
-</div>
-<!-- End Design Tab -->
 
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
@@ -86,5 +77,16 @@ Use pagination to allow navigation between pages that represent an ordered colle
 
 </div>
 <!-- End Angular Code Tab -->
+
+<!-- Start Design Tab -->
+<div id="guidelines" class="docs-tabs-content" markdown="1">
+
+# Design Guidelines coming soon...
+
+
+</div>
+<!-- End Design Tab -->
+
+
 
 
