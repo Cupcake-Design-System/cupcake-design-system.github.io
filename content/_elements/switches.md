@@ -11,12 +11,193 @@ sizes:
 - sm
 - lg
 tabs:
-- Design
-- Code 
-- Angular
+- Code
+- Angular 
+- Guidelines
 ---
 
-<div id="design" class="docs-tabs-content" markdown="1">
+
+<!-- Start Cupcake Code Tab -->
+<div id="code" class="docs-tabs-content" markdown="1">
+
+## Base
+
+Default switches support on/off text or blank depending on the design.
+
+{% example html %}
+<label class="c-switch c-switch-primary">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch c-switch-primary">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+{% endexample %}
+
+## Color Examples
+
+This is an example of available colors for the **{{ page.title }}** element.
+
+
+{% example html %}
+{% for color in page.colors %}
+<label class="c-switch c-switch-{{ color }}">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+{% endfor %}
+{% endexample %}
+
+
+## Size Examples
+
+This is an example of available size's for the **{{ page.title }}** element.
+
+
+{% example html %}
+<label class="c-switch c-switch-primary c-switch-xs">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch c-switch-primary c-switch-sm">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch c-switch-primary">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch c-switch-primary c-switch-lg">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+{% endexample %}
+
+
+## Disabled state
+
+Make switches inactive.
+
+{% example html %}
+<label class="c-switch c-switch-disabled c-switch-sm">
+    <input type="checkbox" class="c-switch-input">
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch c-switch-disabled">
+    <input type="checkbox" class="c-switch-input">
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch c-switch-disabled c-switch-lg">
+    <input type="checkbox" class="c-switch-input">
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+{% endexample %}
+
+
+## Additional Styles/Options
+
+
+### Material
+{% example html %}
+<label class="c-switch-material c-switch-primary c-switch-xs">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch-material c-switch-primary c-switch-sm">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch-material c-switch-primary">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch-material c-switch-primary c-switch-lg">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+{% endexample %}
+
+### Square
+{% example html %}
+<label class="c-switch-square c-switch-primary">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch-square c-switch-success">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch-square c-switch-warning">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch-square c-switch-danger">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch-square c-switch-disabled">
+    <input type="checkbox" class="c-switch-input">
+    <span class="c-switch-label" data-on="On" data-off="Off"></span>
+    <span class="c-switch-handle"></span>
+</label>
+{% endexample %}
+
+<hr>
+
+## Switch States
+
+{% example html %}
+<label class="c-switch c-switch-primary">
+    <input type="checkbox" class="c-switch-input" checked>
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch c-switch-primary">
+    <input type="checkbox" class="c-switch-input">
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+<label class="c-switch c-switch-disabled">
+    <input type="checkbox" class="c-switch-input">
+    <span class="c-switch-label"></span>
+    <span class="c-switch-handle"></span>
+</label>
+{% endexample %}
+
+
+</div>
+<!-- End Cupcake Code Tab -->
+
+<!-- Start Angular Tab -->
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+### Switches
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--switch&nav=0"></iframe>
+
+</div>
+<!-- End Angular Tab -->
+
+<!-- Start Design Guidelines Tab -->
+<div id="guidelines" class="docs-tabs-content" markdown="1">
 
 # Overview
 
@@ -499,178 +680,3 @@ Switches are often used as controls with tables and data visualisations to affec
 
 </div>
 <!-- End Design Tab -->
-
-<div id="code" class="docs-tabs-content" markdown="1">
-
-## Base
-
-Default switches support on/off text or blank depending on the design.
-
-{% example html %}
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-## Color Examples
-
-This is an example of available colors for the **{{ page.title }}** element.
-
-
-{% example html %}
-{% for color in page.colors %}
-<label class="c-switch c-switch-{{ color }}">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endfor %}
-{% endexample %}
-
-
-## Size Examples
-
-This is an example of available size's for the **{{ page.title }}** element.
-
-
-{% example html %}
-<label class="c-switch c-switch-primary c-switch-xs">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary c-switch-sm">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary c-switch-lg">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-
-## Disabled state
-
-Make switches inactive.
-
-{% example html %}
-<label class="c-switch c-switch-disabled c-switch-sm">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-disabled">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-disabled c-switch-lg">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-
-## Additional Styles/Options
-
-
-### Material
-{% example html %}
-<label class="c-switch-material c-switch-primary c-switch-xs">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary c-switch-sm">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary c-switch-lg">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-### Square
-{% example html %}
-<label class="c-switch-square c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-success">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-warning">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-danger">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-disabled">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-<hr>
-
-## Switch States
-
-{% example html %}
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-disabled">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-
-</div>
-
-<div id="angular" class="docs-tabs-content" markdown="1">
-
-### Switches
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--switch&nav=0"></iframe>
-
-</div>
