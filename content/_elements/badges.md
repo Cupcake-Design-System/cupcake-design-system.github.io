@@ -5,116 +5,209 @@ colors:
 - primary
 - secondary
 - success
+- warning
 - danger
 sizes:
-- xs
 - sm
 - lg
-- xl
 tabs:
 - Code
-- Angular 
 - Guidelines
 ---
 
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+### Base
 Badges are typically used to inform the user of status, information, or of an action that’s been taken.
 
 {% example html %}
 <div class="c-badge">v.1.0.5</div>
-<div class="c-badge c-badge-rounded">v.1.0.5</div>
+<div class="c-badge c-badge-square">v.1.0.5</div>
 {% endexample %}
 
-## Color Examples
-This is an example of available colors for the Badges element.
+### Color Examples
+Below are the available theme colors for the Badges element.
 
 {% example html %}
-<div class="c-badge c-badge-primary">Primary</div>
-
-<div class="c-badge c-badge-secondary">Secondary</div>
-
-<div class="c-badge c-badge-success">Success</div>
-
-<div class="c-badge c-badge-warning">Warning</div>
-
-<div class="c-badge c-badge-danger">Danger</div>
+  {% for color in page.colors %}
+<div class="c-badge c-badge-{{ color }}">Badge</div>
+  {% endfor %}
 {% endexample %}
 
-## Size Examples
-This is an example of available sizes for the Badges element.
+
+### Extended Palette
+Badges are also available with the extended color palette.
 
 {% example html %}
-<div class="c-badge c-badge-secondary c-badge-sm">Small</div>
-<div class="c-badge c-badge-secondary c-badge">Default</div>
-<div class="c-badge c-badge-secondary c-badge-lg">Large</div>
-<div class="c-badge c-badge-secondary c-badge-xl">X-Large</div>
+  {% for color in site.data.theme-colors-extended %}
+<div class="c-badge c-badge-{{ color }}">Badge</div>
+  {% endfor %}
 {% endexample %}
 
-## Additional Styles/Options
+
+
+### Size Examples
+In addition to the default size, badges are also available in small and large.
 
 {% example html %}
-<div class="c-badge c-badge-secondary c-badge-sm">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge-lg">Information <i class="fal fa-anchor"></i></div>
-<div class="c-badge c-badge-secondary c-badge-xl">Information <i class="fal fa-anchor"></i></div>
+  {% for size in page.sizes %}
+<div class="c-badge c-badge-{{ size }}">Badge</div>
+  {% endfor %}
 {% endexample %}
 
-### Multiple Modifiers
+
+### Dismissable
+Badges can also be made dismissable.
 
 {% example html %}
-<div class="c-badge c-badge-rounded c-badge-primary"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Icon</div>
-<div class="c-badge c-badge-rounded c-badge-success-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded Outline</div>
-<div class="c-badge c-badge-danger-outline">Outline</div>
-<div class="c-badge c-badge-warning-outline"><i class="fa fa-info-circle" aria-hidden="true"></i> Outline Icon</div>
-<div class="c-badge c-badge-rounded c-badge-primary-outline c-badge-xl"><i class="fa fa-info-circle" aria-hidden="true"></i> Rounded XL</div>
+<div class="c-badge c-badge-sm c-badge-indigo">
+  Value <a href="#" class="c-badge-close"></a>
+</div>
+<div class="c-badge c-badge-square c-badge-sm c-badge-indigo">
+  Value <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-grape">
+  Value <a href="#" class="c-badge-close"></a>
+</div>
+<div class="c-badge c-badge-square c-badge-grape">
+  Value <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-lg c-badge-teal">
+  Value <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-square c-badge-lg c-badge-teal">
+  Value <a href="#" class="c-badge-close"></a>
+</div>
 {% endexample %}
 
-### Inline Status
+#### Multiple Modifiers
+
+{% example html %}
+<div class="c-badge-group">
+<div class="c-badge c-badge-primary">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+    <img src="https://unsplash.it/200?image=433">
+  </div>
+  Primary Bear
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-square c-badge-primary">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+    <img src="https://unsplash.it/200?image=433">
+  </div>
+  Primary Bear
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-lg c-badge-primary">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+    <img src="https://unsplash.it/200?image=433">
+  </div>
+  Primary Bear
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-square c-badge-lg c-badge-primary">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+    <img src="https://unsplash.it/200?image=433">
+  </div>
+  Primary Bear
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+
+<div class="c-badge c-badge-success">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+    <img src="https://unsplash.it/200?image=433">
+  </div>
+  Success Bear
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-square c-badge-success">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+    <img src="https://unsplash.it/200?image=433">
+  </div>
+  Success Bear
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-lg c-badge-success">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+    <img src="https://unsplash.it/200?image=433">
+  </div>
+  Success Bear
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+
+<div class="c-badge c-badge-square c-badge-lg c-badge-success">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+    <img src="https://unsplash.it/200?image=433">
+  </div>
+  Success Bear
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+<br>
+<br>
+
+<div class="c-badge c-badge-lg c-badge-orange-light">
+    <div class="c-avatar c-avatar-orange">
+        <i class="fab fa-amazon"></i>
+    </div>
+    Amazon
+    <a href="#" class="c-badge-close"></a>
+  </div>
+
+<div class="c-badge c-badge-lg c-badge-success-light">
+  <div class="c-avatar c-avatar-success">
+      <i class="fab fa-apple"></i>
+  </div>
+  Apple
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-square c-badge-lg c-badge-pink">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+      <img src="https://unsplash.it/200?image=433">
+  </div>
+  Pink Bear Large Square - with long title
+  <a href="#" class="c-badge-close"></a>
+</div>
+
+<div class="c-badge c-badge-square c-badge-lg c-badge-teal">
+  <div class="c-avatar c-avatar-success" data-text="AB">
+      <img src="https://unsplash.it/200?image=433">
+  </div>
+  Teal Bear Large Square - with long title
+  <a href="#" class="c-badge-close"></a>
+</div>
+</div>
+{% endexample %}
+
+#### Inline Status
 
 {% example html %}
 <div class="c-body-text-xl"> 
   Information 
-  <span class="c-badge c-badge-rounded c-badge-primary c-badge-top">8</span>
+  <span class="c-badge c-badge-sm c-badge-primary c-badge-top">8</span>
 </div>
 {% endexample %}
 
-### Empty Status Badges
+#### Empty Status Badges
 
 {% example html %}
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-sm c-badge-danger"></div>
-
-
-
-<div class="c-badge c-badge-rounded c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-danger"></div>
-
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-primary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-secondary"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-success"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-warning"></div>
-
-<div class="c-badge c-badge-rounded c-badge-lg c-badge-danger"></div>
+  {% for color in page.colors %}
+<div class="c-badge c-badge-{{ color }}"></div>
+  {% endfor %}
+  {% for color in site.data.theme-colors-extended %}
+<div class="c-badge c-badge-{{ color }}"></div>
+  {% endfor %}
 {% endexample %}
 
 
@@ -124,7 +217,7 @@ This is an example of available sizes for the Badges element.
 <!-- Start Angular Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-## Standard Button
+### Standard Button
 <iframe title="storybook" width="100%" height="500px" src=""></iframe>
 
 </div>
@@ -142,15 +235,15 @@ This is an example of available sizes for the Badges element.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/Badges_Types.png" width="500px;">
 
-### Badge Colors
+#### Badge Colors
 Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color
 
-##### Light Color Set
+###### Light Color Set
 - Only use values 3-5 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="500px;">
 
-##### Dark Color Set
+###### Dark Color Set
 - Only use values 6-9 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="500px;">

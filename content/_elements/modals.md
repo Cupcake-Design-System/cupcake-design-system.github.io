@@ -1,19 +1,8 @@
 ---
 title: Modals
-description: Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task. Modals should be used sparingly as they interrupt the user's workflow.
-colors:
-- primary
-- secondary
-- success
-- danger
-sizes:
-- xs
-- sm
-- lg
-- xl
+description: Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task.
 tabs:
 - Code
-- Angular 
 - Guidelines
 ---
 
@@ -21,31 +10,178 @@ tabs:
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ## Base
-Use when displaying information that does not require a user action, such as a read-only document or a supplemental video.
+The default modal contains a header, body, and footer section. 
+
 
 {% example html %}
-<div id="modal_info" class="c-modal c-modal-info c-modal-fade c-modal-in">
-<div class="c-modal-dialog">
+<button id="defaultBtn" class="c-btn c-btn-secondary c-m-xs">Modal Default Trigger</button>
+<div class="c-modal-backdrop" id="newDark">
+  <div class="c-modal">
     <div class="c-modal-content">
-        <div class="c-modal-header">
-            <div class="c-modal-title">Modal header</div>
-            <button type="button" class="c-modal-close">
-                    <span onclick="closeDefault()" aria-hidden="true">×</span>
-                </button>
-        </div>
-    <div class="c-modal-body c-text-center">
-        <i class="fa fa-question-circle c-modal-confirmation-icon"></i>
-        <span class="c-modal-confirmation-title">Modal Title</span>
-        <p class="c-modal-confirmation-text">Modal Text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eum.</p>
-        <div class="c-modal-confirmation-buttons">
-        <span class="close-modal" aria-hidden="true">
-            <button onclick="closeInfo()" class=" close-modal c-btn c-btn-secondary c-m-right-sm">Cancel</button>
-            <button onclick="closeInfo()" class=" close c-btn c-btn-primary">Ok</button>
-            </span>
-        </div>
+      <div class="c-modal-header">
+        <h4 class="c-modal-title">Modal header</h4>
+        <span id="close" class="c-modal-close"></span>
+      </div>
+      <div class="c-modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus fugit perferendis voluptates cumque unde fuga
+        reprehenderit illum doloribus, error, officia earum odit quasi minus odio eveniet explicabo accusantium, tempore
+        quisquam.
+      </div>
+      <div class="c-modal-footer">
+        <button id="cancel" class="c-btn c-btn-secondary c-m-right-sm">Cancel</button>
+        <button class="c-btn c-btn-primary">Submit</button>
+      </div>
     </div>
+  </div>
+</div>
+{% endexample %}
+
+
+**Smaller Size**
+{% example html %}
+<button id="smallBtn" class="c-btn c-btn-secondary">Modal Small Trigger</button>
+<div class="c-modal-backdrop" id="smallModal">
+    <div class="c-modal c-modal-sm">
+      <div class="c-modal-content">
+        <div class="c-modal-header">
+          <h4 class="c-modal-title">Modal header</h4>
+          <span id="close" class="c-modal-close"></span>
+        </div>
+        <div class="c-modal-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus fugit perferendis voluptates cumque unde fuga
+          reprehenderit illum doloribus, error, officia earum odit quasi minus odio eveniet explicabo accusantium, tempore
+          quisquam.
+        </div>
+        <div class="c-modal-footer c-modal-footer">
+            <button id="cancel" class="c-btn c-btn-secondary c-m-right-sm">Cancel</button>
+            <button class="c-btn c-btn-primary">Submit</button>
+          </div>
+      </div>
     </div>
 </div>
+{% endexample %}
+
+
+**Larger Size**
+{% example html %}
+<button id="largeBtn" class="c-btn c-btn-secondary c-m-xs">Modal Large Trigger</button>
+<div class="c-modal-backdrop" id="largeModal">
+  <div class="c-modal c-modal-lg">
+    <div class="c-modal-content">
+      <div class="c-modal-header">
+        <h4 class="c-modal-title">Modal header</h4>
+        <span id="close" class="c-modal-close"></span>
+      </div>
+      <div class="c-modal-body">
+        <div class="c-text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Fusce et elementum risus. Etiam rutrum nibh nulla, condimentum aliquam
+          ligula suscipit et. Nunc quis ornare ipsum. Integer a odio sed tortor
+          imperdiet scelerisque. Integer non est consequat justo fringilla malesuada
+          at quis nulla. Aenean id ornare ligula, quis mattis ante. Ut faucibus mi
+          nisl, vel lobortis arcu mollis vel. Aenean dapibus lacus sit amet ligula
+          pellentesque euismod. Cras sed purus sollicitudin, varius metus vel,
+          maximus tortor. Praesent eget dolor vel odio vulputate sagittis eget vel
+          quam. Fusce hendrerit neque lacus, et ultricies massa maximus aliquam.
+          Curabitur vel augue a eros posuere vulputate ac a enim.</div>
+        <br>
+        <div class="c-text-md">Cras pellentesque lectus et purus cursus pellentesque.
+          Ut pulvinar bibendum felis, eget consectetur ex auctor quis. Nunc volutpat
+          leo et mauris mattis pharetra. Fusce ac dolor et odio faucibus dignissim.
+          Curabitur ac vestibulum ante, lobortis tincidunt nulla. In purus metus,
+          rhoncus in sapien id, dignissim commodo velit. Integer at molestie turpis.
+          Nullam tempor luctus nibh, vel mollis ante posuere sit amet. Vivamus tempus
+          egestas egestas. Phasellus purus metus, malesuada in malesuada a, bibendum
+          at est. Pellentesque interdum dictum massa, sed blandit dolor hendrerit
+          quis.</div>
+        <br>
+        <div class="c-text-md">Mauris viverra ultricies euismod. Sed porta ipsum erat,
+          id cursus dolor facilisis eget. Proin at viverra ex. Quisque vitae
+          consequat ante. Fusce gravida neque tellus, ut eleifend augue consectetur
+          nec. Ut nec rhoncus odio, vel ornare est. Sed nec leo orci. Curabitur
+          euismod euismod odio sed gravida. Integer mattis ex non finibus vestibulum.
+          Suspendisse placerat, arcu eu euismod convallis, enim ex imperdiet dui,
+          pellentesque tempus ante lectus in lorem. Vivamus volutpat gravida
+          tincidunt. Curabitur eu tristique dolor. Sed scelerisque hendrerit magna,
+          at rutrum nibh rhoncus quis. Vivamus laoreet quis mi ac sagittis.</div>
+        <br>
+        <div class="c-text-md">Morbi quis leo faucibus, interdum dolor non, lacinia
+          justo. In consequat purus et nunc scelerisque luctus. Ut feugiat ante vel
+          tristique fermentum. Duis posuere, magna ut consequat sollicitudin, lectus
+          felis finibus nibh, quis accumsan leo risus sit amet enim. Curabitur
+          pharetra lobortis lectus. Aenean id vestibulum elit. Maecenas finibus dolor
+          vitae nunc suscipit molestie id ut nibh. Ut ultrices ligula massa, eu
+          pulvinar est ornare et. Fusce consectetur tellus ut ipsum molestie
+          tincidunt. Fusce porta lacinia felis, quis pellentesque eros sagittis vel.
+          Curabitur eget leo pellentesque, ornare ex sit amet, blandit sem. Vivamus
+          sodales diam vitae turpis euismod, eget varius eros sollicitudin. In hac
+          habitasse platea dictumst. Donec id hendrerit libero, a sollicitudin magna.
+          Nulla mattis eros sit amet lacus aliquet, vel interdum felis iaculis.</div>
+        <br>
+        <div class="c-text-md">Nunc ut diam ut diam ultrices venenatis in at risus.
+          Quisque nisl nibh, interdum eu purus eget, faucibus faucibus magna. Sed
+          posuere, tellus vitae bibendum pretium, elit turpis ullamcorper leo, sit
+          amet mollis eros est at urna. Aenean placerat sapien sed libero lobortis
+          sagittis. Donec sed lobortis nunc. Pellentesque ligula metus, tempor et
+          egestas non, ullamcorper ac lectus. Curabitur eget aliquet arcu. Vivamus
+          blandit, libero eget pulvinar sagittis, augue leo luctus neque, commodo
+          molestie nibh lacus dictum lacus. Vestibulum malesuada nec eros nec
+          maximus. Mauris sollicitudin lacinia fermentum. Nunc feugiat felis odio,
+          nec ornare sapien accumsan at. Fusce a nunc ullamcorper, accumsan justo
+          nec, posuere magna. Nulla iaculis rhoncus ante eget elementum. Mauris
+          tincidunt id purus vel posuere.</div>
+      </div>
+      <div class="c-modal-footer">
+        <button id="cancel" class="c-btn c-btn-secondary c-m-right-sm">Cancel</button>
+        <button class="c-btn c-btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+
+**Fullscreen**
+{% example html %}
+<button id="fullscreenBtn" class="c-btn c-btn-secondary c-m-xs">Modal Fullscreen Trigger</button>
+<div class="c-modal-backdrop" id="fullscreenModal">
+  <div class="c-modal c-modal-fullscreen">
+    <div class="c-modal-content">
+      <div class="c-modal-header">
+        <h4 class="c-modal-title">Modal header</h4>
+        <span id="close" class="c-modal-close"></span>
+      </div>
+      <div class="c-modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus fugit perferendis voluptates cumque unde fuga
+        reprehenderit illum doloribus, error, officia earum odit quasi minus odio eveniet explicabo accusantium, tempore
+        quisquam.
+      </div>
+      <div class="c-modal-footer">
+        <button id="cancel" class="c-btn c-btn-secondary c-m-right-sm">Cancel</button>
+        <button class="c-btn c-btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+
+**Additional styling for displaying centered content**
+{% example html %}
+<button id="centerBtn" class="c-btn c-btn-secondary c-m-xs">Modal Dialog Trigger</button>
+<div class="c-modal-backdrop" id="centerModal">
+  <div class="c-modal c-modal-dialog">
+    <div class="c-modal-content">
+      <div class="c-modal-body">
+      <div class="c-modal-title"><i class="fas fa-exclamation-circle c-m-right-xs"></i> Modal Title</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus fugit perferendis voluptates cumque unde fuga
+        officia earum odit quasi minus odio eveniet explicabo accusantium.
+      </div>
+      <div class="c-modal-footer c-modal-footer-center">
+        <button id="cancel" class="c-btn c-btn-secondary c-m-right-sm">Go Back</button>
+        <button class="c-btn c-btn-primary">Continue</button>
+      </div>
+    </div>
+  </div>
 </div>
 {% endexample %}
 

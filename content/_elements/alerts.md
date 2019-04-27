@@ -8,7 +8,6 @@ colors:
 - danger
 tabs: 
 - Code
-- Angular
 - Guidelines
 ---
 
@@ -33,10 +32,12 @@ This is an example of available colors for the **{{ page.title }}** element.
 {% example html %}
 {% for color in page.colors %}
 <div class="c-alert c-alert-{{ color }}">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
+  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+    <div class="c-alert-content"><strong>
     This is a {{ color | capitalize }} alert
+      </strong>
+    </div>
+    <a href="#" class="c-alert-close" aria-hidden="true"></a>
 </div>
 {% endfor %}
 {% endexample %}
@@ -49,10 +50,11 @@ This is an example of available colors for the **{{ page.title }}** element.
 {% example html %}
 {% for color in page.colors %}
 <div class="c-alert c-alert-top c-alert-{{ color }}">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a {{ color | capitalize }} alert
+  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+    <div class="c-alert-content">
+      <div class="c-alert-title">{{ color | capitalize }} Alert Title</div>
+        Lipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  <a href="#" class="c-alert-close" aria-hidden="true"></a>
 </div>
 <br>
 {% endfor %}
@@ -63,16 +65,24 @@ This is an example of available colors for the **{{ page.title }}** element.
 {% example html %}
 <div class="c-row">
     <div class="c-col">
-        <div class="c-alert c-alert-danger">
-            <i class="fa fa-exclamation-circle c-m-right-sm"></i> Oops... Something went wrong!
-            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+    <div class="c-alert c-alert-danger">
+      <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+        <div class="c-alert-content"><strong>
+        This is a {{ color | capitalize }} alert
+          </strong>
         </div>
+        <a href="#" class="c-alert-close" aria-hidden="true"></a>
+    </div>
     </div>
     <div class="c-col">
-        <div class="c-alert c-alert-success">
-            <i class="fa fa-check-circle c-m-right-sm"></i> Great job! You are ready for the next step.
-            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+    <div class="c-alert c-alert-success">
+      <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+        <div class="c-alert-content"><strong>
+        This is a {{ color | capitalize }} alert
+          </strong>
         </div>
+        <a href="#" class="c-alert-close" aria-hidden="true"></a>
+    </div>
     </div>
 </div>
 {% endexample %}
@@ -81,8 +91,10 @@ This is an example of available colors for the **{{ page.title }}** element.
 {% example html %}
 {% for color in page.colors %}
 <div class="c-toast-alert c-toast-alert-{{ color }}">
-    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
+  <i class="c-toast-alert-icon fa fa-check-circle"></i>
+  Nam porttitor blandit accumsan.
+  Ut vel dictum sem, a pretium dui.
+  <a href="#" class="c-toast-alert-close"></a>
 </div>
 {% endfor %}
 {% endexample %}

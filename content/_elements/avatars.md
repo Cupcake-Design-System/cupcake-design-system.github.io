@@ -5,22 +5,17 @@ colors:
 - primary
 - secondary
 - success
+- warning
 - danger
-sizes:
-- xs
-- sm
-- lg
-- xl
 tabs:
 - Code
-- Angular
 - Guidelines
 ---
 
 <!-- Start Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+### Base
 Avatars are used to show a thumbnail representation of an individual or business in the interface.
 
 If an image is unavailable, up to two letters can be used instead. Text is best applied with a data attribute - data-text=”{value}”.
@@ -32,37 +27,57 @@ Icons can also be used if relevent to the context.
   <img src="https://unsplash.it/200?image=1027">
 </span>
 <span class="c-avatar c-avatar-primary">
-<i class="fas fa-cloud-download"></i>
+<i class="fas fa-robot"></i>
 </span>
-<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
-{% endexample %}
-
-## Color Examples
-This is an example of available colors for the Avatar element.
-
-{% example html %}
-<span class="c-avatar c-avatar-primary" data-text="AB"></span>
-
-<span class="c-avatar c-avatar-secondary" data-text="AB"></span>
-
 <span class="c-avatar c-avatar-success" data-text="AB"></span>
-
-<span class="c-avatar c-avatar-warning" data-text="AB"></span>
-
-<span class="c-avatar c-avatar-danger" data-text="AB"></span>
+<div class="c-avatar" data-text="YZ" data-status="success"></div>
 {% endexample %}
 
-## Size Examples
-This is an example of available sizes for the Avatar element.
+
+#### Color Examples
+Below are the available theme colors for the Avatar element.
 
 {% example html %}
-<span class="c-avatar c-avatar-primary c-avatar-sm" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-md" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-lg" data-text="AB"></span>
-<span class="c-avatar c-avatar-primary c-avatar-xl" data-text="AB"></span>
+  {% for color in page.colors %}
+<div class="c-avatar c-avatar-{{ color }}"><i class="fas fa-robot"></i></div>
+  {% endfor %}
 {% endexample %}
 
-## Status
+
+#### Extended Palette
+Avatar are also available with the extended color palette.
+
+{% example html %}
+  {% for color in site.data.theme-colors-extended %}
+<div class="c-avatar c-avatar-{{ color }}"><i class="fas fa-robot"></i></div>
+  {% endfor %}
+{% endexample %}
+
+
+### Size Examples
+In addition to the default size, Avatar are also available in x-small, small, large, & X-Large.
+
+{% example html %}
+<span class="c-avatar c-avatar-xs" data-text="A"></span>
+<span class="c-avatar c-avatar-sm" data-text="AB"></span>
+<span class="c-avatar" data-text="AB"></span>
+<span class="c-avatar c-avatar-lg" data-text="AB"></span>
+<span class="c-avatar c-avatar-xl" data-text="AB"></span>
+{% endexample %}
+
+
+
+### Square Examples
+Avatars can also be square at any of the available sizes.
+
+{% example html %}
+<span class="c-avatar c-avatar-square c-avatar-sm" data-text="AB"></span>
+<span class="c-avatar c-avatar-square" data-text="AB"></span>
+<span class="c-avatar c-avatar-square c-avatar-lg" data-text="AB"></span>
+<span class="c-avatar c-avatar-square c-avatar-xl" data-text="AB"></span>
+{% endexample %}
+
+### Status
 In addition you can add a status to the avatar to alert the user. Status is applied with a data attribute - data-status=”{value}”.
 
 {% example html %}
@@ -70,7 +85,7 @@ In addition you can add a status to the avatar to alert the user. Status is appl
   <img src="https://unsplash.it/200?image=1011">
 </span>
 <span class="c-avatar c-avatar-primary" data-status="success">
-  <i class="fas fa-cloud-download"></i>
+  <i class="fas fa-star"></i>
 </span>
 <span class="c-avatar c-avatar-secondary" data-text="CD" data-status="primary"></span>
 <span class="c-avatar c-avatar-success" data-text="EF" data-status="danger"></span>
@@ -79,11 +94,26 @@ In addition you can add a status to the avatar to alert the user. Status is appl
 {% endexample %}
 
 
+### Groups
+Avatars can also be grouped.
+
+{% example html %}
+<div class="c-avatar-group">
+  <div class="c-avatar"><i class="fas fa-robot"></i></div>
+  <div class="c-avatar c-avatar-primary"><i class="fas fa-robot"></i></div>
+  <div class="c-avatar c-avatar-grape"><i class="fas fa-robot"></i></div>
+  <div class="c-avatar c-avatar-danger"><i class="fas fa-robot"></i></div>
+  <div class="c-avatar c-avatar-warning"><i class="fas fa-robot"></i></div>
+  <div class="c-avatar c-avatar-teal"><i class="fas fa-robot"></i></div>
+</div>
+{% endexample %}
+
+
 </div>
 
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Storybook iframe
+#### Storybook iframe
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
 
 </div>

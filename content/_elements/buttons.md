@@ -10,7 +10,6 @@ sizes:
 - xs
 - sm
 - lg
-- xl
 tabs:
 - Code
 - Angular
@@ -20,69 +19,43 @@ tabs:
 <!-- Start Cupcake Code Section -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+#### Base
 Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
 
 {% example html %}
 <button type="button" class="c-btn c-btn-primary">Button</button>
 {% endexample %}
 
-## Color Examples
+#### Color Examples
 This is an example of available colors for the Buttons element.
 
 {% example html %}
-<button type="button" class="c-btn c-btn-primary">Primary</button>
-<button type="button" class="c-btn c-btn-secondary">Secondary</button>
-<button type="button" class="c-btn c-btn-success">Success</button>
-<button type="button" class="c-btn c-btn-warning">Warning</button>
-<button type="button" class="c-btn c-btn-danger">Danger</button>
+  {% for color in page.colors %}
+<div class="c-btn c-btn-{{ color }}">Button</div>
+  {% endfor %}
 {% endexample %}
 
-## Size Examples
+#### Size Examples
 This is an example of available sizes for the Buttons element.
 
 {% example html %}
-<button type="button" class="c-btn c-btn-primary c-btn-xs">X-Small</button>
-<button type="button" class="c-btn c-btn-primary c-btn-sm">Small</button>
-<button type="button" class="c-btn c-btn-primary c-btn-lg">Large</button>
-<button type="button" class="c-btn c-btn-primary c-btn-xl">X-Large</button>
+  {% for size in page.sizes %}
+<div class="c-btn c-btn-primary c-btn-{{ size }}">Button</div>
+  {% endfor %}
 {% endexample %}
 
-## Disabled State
+#### Disabled State
 Make buttons look inactive by adding the disabled boolean attribute to any <button> element.
 
 {% example html %}
 <button type="button" class="c-btn c-btn-primary" disabled>Primary</button>
-<button type="button" class="c-btn c-btn-secondary" disabled>Secondary</button>
-<button type="button" class="c-btn c-btn-success" disabled>Success</button>
-<button type="button" class="c-btn c-btn-warning" disabled>Warning</button>
-<button type="button" class="c-btn c-btn-danger" disabled>Danger</button>
 {% endexample %}
 
-## Additional Styles and Options
+#### Additional Styles and Options
 These modifiers can be mixed/matched as needed
 
-### Outlines
 
-{% example html %}
-<button type="button" class="c-btn c-btn-primary-outline">Primary</button>
-<button type="button" class="c-btn c-btn-secondary-outline">Secondary</button>
-<button type="button" class="c-btn c-btn-success-outline">Success</button>
-<button type="button" class="c-btn c-btn-warning-outline">Warning</button>
-<button type="button" class="c-btn c-btn-danger-outline">Danger</button>
-{% endexample %}
-
-### Pills and Colors
-
-{% example html %}
-<button type="button" class="c-btn c-btn-primary c-btn-pill">Primary</button>
-<button type="button" class="c-btn c-btn-secondary c-btn-pill">Secondary</button>
-<button type="button" class="c-btn c-btn-success c-btn-pill">Success</button>
-<button type="button" class="c-btn c-btn-warning c-btn-pill">Warning</button>
-<button type="button" class="c-btn c-btn-danger c-btn-pill">Danger</button>
-{% endexample %}
-
-### Block Button
+##### Block Button
 
 {% example html %}
 <button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>
@@ -90,9 +63,9 @@ These modifiers can be mixed/matched as needed
 
 <hr>
 
-## Button Group
+#### Button Group
 
-### Base
+##### Base
 Button group displays multiple related actions in a row to help with horizontal arrangement and the spacing of calls to action.
 
 {% example html %}
@@ -103,70 +76,37 @@ Button group displays multiple related actions in a row to help with horizontal 
 </div>
 {% endexample %}
 
-### Color Examples
+
+##### Color Examples
 This is an example of available colors for the Button Group element.
 
 {% example html %}
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary">Primary</button>
-  <button type="button" class="c-btn c-btn-primary">Group</button>
-  <button type="button" class="c-btn c-btn-primary">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-secondary">Secondary</button>
-  <button type="button" class="c-btn c-btn-secondary">Group</button>
-  <button type="button" class="c-btn c-btn-secondary">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-success">Success</button>
-  <button type="button" class="c-btn c-btn-success">Group</button>
-  <button type="button" class="c-btn c-btn-success">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-warning">Warning</button>
-  <button type="button" class="c-btn c-btn-warning">Group</button>
-  <button type="button" class="c-btn c-btn-warning">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-danger">Danger</button>
-  <button type="button" class="c-btn c-btn-danger">Group</button>
-  <button type="button" class="c-btn c-btn-danger">Buttons</button>
-</div>
+  {% for color in page.colors %}
+  <div class="c-btn-group">
+    <button type="button" class="c-btn c-btn-{{ color }}">Button</button>
+    <button type="button" class="c-btn c-btn-{{ color }}">Group</button>
+    <button type="button" class="c-btn c-btn-{{ color }}">Colors</button>
+  </div>
+  {% endfor %}
 {% endexample %}
 
-### Size Examples
+
+##### Size Examples
 This is an example of available sizes for the Button Group element.
 
 {% example html %}
+  {% for size in page.sizes %}
 <div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary c-btn-xs">X-Small</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-xs">Group</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-xs">Buttons</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-{{ size }}">Button</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-{{ size }}">Group</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-{{ size }}">Sizes</button>
 </div>
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary c-btn-sm">Small</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-sm">Group</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-sm">Buttons</button>
-</div>
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary c-btn-lg">Large</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-lg">Group</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-lg">Buttons</button>
-</div>
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary c-btn-xl">X-Large</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-xl">Group</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-xl">Buttons</button>
-</div>
+  {% endfor %}
 {% endexample %}
 
-### Additional Styles and Options
 
-### Icons
+
+##### Icons
 
 {% example html %}
 <div class="c-btn-group">
@@ -181,7 +121,8 @@ This is an example of available sizes for the Button Group element.
 </div>
 {% endexample %}
 
-### Vertical
+
+##### Vertical
 
 {% example html %}
 <div class="c-btn-group-vertical">
@@ -191,89 +132,20 @@ This is an example of available sizes for the Button Group element.
 	<button class="c-btn c-btn-primary c-text-left">Drafts</button>
 </div>
 <div class="c-btn-group-vertical">
-	<button class="c-btn c-btn-primary-outline c-text-left">All</button>
-	<button class="c-btn c-btn-primary-outline c-text-left">Published</button>
-	<button class="c-btn c-btn-primary-outline c-text-left">Unpublished</button>
-	<button class="c-btn c-btn-primary-outline c-text-left">Drafts</button>
-</div>
-<div class="c-btn-group-vertical">
 	<button class="c-btn c-btn-primary"><i class="fas fa-euro-sign"></i> EUR</button>
 	<button class="c-btn c-btn-primary"><i class="fas fa-pound-sign"></i> GBP</button>
 	<button class="c-btn c-btn-primary"><i class="fas fa-dollar-sign"></i> USD</button>
 	<button class="c-btn c-btn-primary"><i class="fas fa-dollar-sign"></i> USD</button>
 </div>
 <div class="c-btn-group-vertical">
-	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"> <i class="fa fa-exclamation-circle"></i></button>
-	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"> <i class="fa fa-exclamation-circle"></i></button>
-	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"><i class="fa fa-exclamation-circle"></i></button>
+	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"><i class="fas fa-robot"></i></button>
+	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"><i class="fas fa-robot"></i></button>
+	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"><i class="fas fa-robot"></i></button>
 </div>
-{% endexample %}
-
-### Pills
-
-{% example html %}
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-primary">Primary</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-primary">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-primary">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-secondary">Secondary</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-secondary">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-secondary">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-success">Success</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-success">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-success">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-warning">Warning</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-warning">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-warning">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-danger">Danger</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-danger">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-danger">Buttons</button>
-</div>
-{% endexample %}
-
-### Outline
-
-{% example html %}
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary-outline">Primary</button>
-  <button type="button" class="c-btn c-btn-primary-outline">Group</button>
-  <button type="button" class="c-btn c-btn-primary-outline">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-secondary-outline">Secondary</button>
-  <button type="button" class="c-btn c-btn-secondary-outline">Group</button>
-  <button type="button" class="c-btn c-btn-secondary-outline">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-success-outline">Success</button>
-  <button type="button" class="c-btn c-btn-success-outline">Group</button>
-  <button type="button" class="c-btn c-btn-success-outline">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-warning-outline">Warning</button>
-  <button type="button" class="c-btn c-btn-warning-outline">Group</button>
-  <button type="button" class="c-btn c-btn-warning-outline">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-danger-outline">Danger</button>
-  <button type="button" class="c-btn c-btn-danger-outline">Group</button>
-  <button type="button" class="c-btn c-btn-danger-outline">Buttons</button>
+<div class="c-btn-group-vertical">
+	<button class="c-btn c-btn-box c-btn-primary"><i class="fas fa-robot"></i></button>
+	<button class="c-btn c-btn-box c-btn-primary"><i class="fas fa-robot"></i></button>
+	<button class="c-btn c-btn-box c-btn-primary"><i class="fas fa-robot"></i></button>
 </div>
 {% endexample %}
 
@@ -283,17 +155,17 @@ This is an example of available sizes for the Button Group element.
 <!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Standard Button
+##### Standard Button
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--standard&nav=0"></iframe>
 
-### Submit Button
+##### Submit Button
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--submit&nav=0"></iframe>
 
-### Button Link
+##### Button Link
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--link&nav=0"></iframe>
 
 
-### Icon Button
+##### Icon Button
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--icon&nav=0"></iframe>
 
 </div>

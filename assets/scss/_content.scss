@@ -7,42 +7,48 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 
-li {
+ul {
+  padding: 8px 24px;
+}
+
+li:not(.c-tab-item) {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;	
+  line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 h1 {
   font-weight: 700;
   font-size: 32px;
-  margin: .67em 0;
+  margin: .27em 0;
 }
 
 h2 {
   font-weight: 600;
   font-size: 24px;
-  margin: .67em 0;
+  margin: .27em 0;
 }
 
 h3 {
   font-weight: 600;
   font-size: 22px;
-  margin: .67em 0;
+  margin: .27em 0;
 }
 
 h4 {
   font-weight: 700;
   font-size: 20px;
-  margin: .67em 0;
+  margin: .27em 0;
 }
 
 h5 {
   font-weight: 700;
   font-size: 16px;
-  margin: .67em 0;
+  margin: .27em 0;
   }
 
 a {
@@ -91,31 +97,31 @@ a {
     clear: both;
   }
 
-  table {
+  table:not(.c-table) {
     width: 100%;
     max-width: 100%;
     margin-bottom: 1rem;
   }
 
-  table > thead > tr > th,
-  table > thead > tr > td,
-  table > tbody > tr > th,
-  table > tbody > tr > td,
-  table > tfoot > tr > th,
-  table > tfoot > tr > td {
+  table:not(.c-table) > thead > tr > th,
+  table:not(.c-table) > thead > tr > td,
+  table:not(.c-table) > tbody > tr > th,
+  table:not(.c-table) > tbody > tr > td,
+  table:not(.c-table) > tfoot > tr > th,
+  table:not(.c-table) > tfoot > tr > td {
     border: 1px solid #ccc;
   }
 
-  table > thead > tr > th > p:last-child,
-  table > thead > tr > td > p:last-child,
-  table > tbody > tr > th > p:last-child,
-  table > tbody > tr > td > p:last-child,
-  table > tfoot > tr > th > p:last-child,
-  table > tfoot > tr > td > p:last-child {
+  table:not(.c-table) > thead > tr > th > p:last-child,
+  table:not(.c-table) > thead > tr > td > p:last-child,
+  table:not(.c-table) > tbody > tr > th > p:last-child,
+  table:not(.c-table) > tbody > tr > td > p:last-child,
+  table:not(.c-table) > tfoot > tr > th > p:last-child,
+  table:not(.c-table) > tfoot > tr > td > p:last-child {
     margin-bottom: 0;
   }
 
-   table td:first-child > code {
+   table:not(.c-table) td:first-child > code {
     white-space: nowrap;
   }
 }
