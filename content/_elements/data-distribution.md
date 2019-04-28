@@ -1,16 +1,11 @@
 ---
 title: Distribution
-description: Recommendations to create effective visualizations within Ipreo products
+description: Distribution analaysis visualizes data to see what data deviates from the norm and can also be used geographically to demonstrate data over a map.
 category: Data Visualization
-colors:
-- primary
-- success
-- warning
-- danger
 ---
 
 ### Distribution Graph Types
- Distribution analaysis visualizes data to see what data deviates from the norm and can also be used geographically to demonstrate data over a map. Charts used in this category include histograms, line and area charts, scatter plots, data tables, and map charts.
+Charts used in this category include histograms, line and area charts, scatter plots, data tables, and map charts.
  Distribution graphs can answer:
  - What correlation between a cause and effect of a variable?
  - Does my user need to spot bugs or constraints in their system?

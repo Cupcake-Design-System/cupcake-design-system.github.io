@@ -9,7 +9,8 @@ tabs:
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+### Base
+
 Use pagination to allow navigation between pages that represent an ordered collection of items.
 
 {% example html %}

@@ -20,7 +20,7 @@ The default radio requires the `<label></label>` tag even if no text is provided
 </div>
 {% endexample %}
 
-Adding label text that is not clickable.
+**Adding label text that is not clickable.**
 {% example html %}
 <div class="c-radio">
 	<input type="radio" name="check">
@@ -29,7 +29,7 @@ Adding label text that is not clickable.
 {% endexample %}
 
 
-To make the full label clickable - supply the input with an id and the label with a a matching for value as shown below.
+**To make the full label clickable - supply the input with an id and the label with a a matching for value as shown below.**
 {% example html %}
 <div class="c-radio">
   <input type="radio" id="radio1" name="check">
@@ -39,8 +39,7 @@ To make the full label clickable - supply the input with an id and the label wit
 
 
 
-Adding disabled to the input.
-
+**Adding disabled to the input.**
 {% example html %}
 <div class="c-radio">
   <input type="radio" id="radio2" name="check" disabled>
@@ -49,8 +48,7 @@ Adding disabled to the input.
 {% endexample %}
 
 
-Adding disabled to the input and label.
-
+**Adding disabled to the input and label.**
 {% example html %}
 <div class="c-radio" disabled>
   <input type="radio" id="radio3" name="radio" disabled>
@@ -59,8 +57,7 @@ Adding disabled to the input and label.
 {% endexample %}
 
 
-Adding disabled to a toggled input.
-
+**Adding disabled to a toggled input.**
 {% example html %}
 <div class="c-radio">
   <input type="radio" id="radio4" name="radio" checked="checked" disabled>
@@ -69,7 +66,7 @@ Adding disabled to a toggled input.
 {% endexample %}
 
 
-Adding disabled to a toggled input and label.
+**Adding disabled to a toggled input and label.**
 {% example html %}
 <div class="c-radio" disabled="">
   <input type="radio" id="radio5" name="radio4" checked="checked" disabled="">

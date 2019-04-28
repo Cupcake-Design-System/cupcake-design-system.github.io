@@ -25,6 +25,11 @@ Badges are typically used to inform the user of status, information, or of an ac
 <div class="c-badge c-badge-square">v.1.0.5</div>
 {% endexample %}
 
+
+<hr>
+<br>
+
+
 ### Color Examples
 Below are the available theme colors for the Badges element.
 
@@ -45,6 +50,9 @@ Badges are also available with the extended color palette.
 {% endexample %}
 
 
+<hr>
+<br>
+
 
 ### Size Examples
 In addition to the default size, badges are also available in small and large.
@@ -54,6 +62,10 @@ In addition to the default size, badges are also available in small and large.
 <div class="c-badge c-badge-{{ size }}">Badge</div>
   {% endfor %}
 {% endexample %}
+
+
+<hr>
+<br>
 
 
 ### Dismissable
@@ -82,6 +94,11 @@ Badges can also be made dismissable.
   Value <a href="#" class="c-badge-close"></a>
 </div>
 {% endexample %}
+
+
+<hr>
+<br>
+
 
 #### Multiple Modifiers
 
@@ -118,7 +135,6 @@ Badges can also be made dismissable.
   Primary Bear
   <a href="#" class="c-badge-close"></a>
 </div>
-
 
 <div class="c-badge c-badge-success">
   <div class="c-avatar c-avatar-success" data-text="AB">
@@ -190,6 +206,10 @@ Badges can also be made dismissable.
 </div>
 {% endexample %}
 
+
+<hr>
+<br>
+
 #### Inline Status
 
 {% example html %}
@@ -199,7 +219,12 @@ Badges can also be made dismissable.
 </div>
 {% endexample %}
 
+<hr>
+<br>
+
+
 #### Empty Status Badges
+A badge with no content can be used to add visual attention to an element. 
 
 {% example html %}
   {% for color in page.colors %}

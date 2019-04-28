@@ -190,6 +190,8 @@ With simple list items below the toggle
 </span>
 {% endexample %}
 
+<hr>
+<br>
 
 ### List Location
 

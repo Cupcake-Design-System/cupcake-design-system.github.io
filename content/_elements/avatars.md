@@ -33,6 +33,9 @@ Icons can also be used if relevent to the context.
 <div class="c-avatar" data-text="YZ" data-status="success"></div>
 {% endexample %}
 
+<hr>
+<br>
+
 
 #### Color Examples
 Below are the available theme colors for the Avatar element.
@@ -54,6 +57,9 @@ Avatar are also available with the extended color palette.
 {% endexample %}
 
 
+<hr>
+<br>
+
 ### Size Examples
 In addition to the default size, Avatar are also available in x-small, small, large, & X-Large.
 
@@ -66,6 +72,8 @@ In addition to the default size, Avatar are also available in x-small, small, la
 {% endexample %}
 
 
+<hr>
+<br>
 
 ### Square Examples
 Avatars can also be square at any of the available sizes.
@@ -76,6 +84,9 @@ Avatars can also be square at any of the available sizes.
 <span class="c-avatar c-avatar-square c-avatar-lg" data-text="AB"></span>
 <span class="c-avatar c-avatar-square c-avatar-xl" data-text="AB"></span>
 {% endexample %}
+
+<hr>
+<br>
 
 ### Status
 In addition you can add a status to the avatar to alert the user. Status is applied with a data attribute - data-status=”{value}”.
@@ -93,6 +104,8 @@ In addition you can add a status to the avatar to alert the user. Status is appl
 <span class="c-avatar c-avatar-warning" data-text="HI" data-status="success"></span>
 {% endexample %}
 
+<hr>
+<br>
 
 ### Groups
 Avatars can also be grouped.

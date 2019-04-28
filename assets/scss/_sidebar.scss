@@ -26,6 +26,7 @@
     position: relative;
     overflow-x: hidden;
     padding: 0 24px 50px;
+    margin-bottom: 50px;
 
     @include media-breakpoint-down(sm) {
       padding: 0 24px 24px;

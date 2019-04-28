@@ -17,7 +17,8 @@ tabs:
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-#### Form Input
+
+### Form Input
 
 A text field is an input field that a user can type into. It has a range of options and supports several text formats.
 
@@ -25,7 +26,8 @@ A text field is an input field that a user can type into. It has a range of opti
 <input class="c-input" type="text" placeholder="Text input">
 {% endexample %}
 
----
+<hr>
+<br>
 
 #### Color Examples
 
@@ -42,7 +44,8 @@ This is an example of available colors for the **{{ page.title }}** element.
 {% endfor %}
 {% endexample %}
 
----
+<hr>
+<br>
 
 #### Size Examples
 
@@ -54,7 +57,8 @@ This is an example of available size's for the **{{ page.title }}** element.
 {% endfor %}
 {% endexample %}
 
----
+<hr>
+<br>
 
 #### Disabled state
 
@@ -64,11 +68,11 @@ Make buttons look inactive by adding the disabled boolean attribute to any <butt
 <input class="c-input" type="text" placeholder="Disabled Input" disabled>
 {% endexample %}
 
----
+<hr>
+<br>
 
-#### Additional Options
 
-##### Labels
+#### Labels
 
 {% example html %}
 <div class="c-row">
@@ -82,7 +86,8 @@ Make buttons look inactive by adding the disabled boolean attribute to any <butt
 </div>
 {% endexample %}
 
----
+<hr>
+<br>
 
 ##### Helper Text
 
@@ -105,7 +110,10 @@ Text appears on focus.
 </div>
 {% endexample %}
 
----
+
+<hr>
+<br>
+
 
 ##### Icons inside inputs
 
@@ -124,7 +132,10 @@ Text appears on focus.
 </div>
 {% endexample %}
 
----
+
+<hr>
+<br>
+
 
 ##### Input Add-ons
 
@@ -176,7 +187,9 @@ Text appears on focus.
 {% endexample %}
 
 
----
+<hr>
+<br>
+
 
 ##### Add Buttons at any size
 
@@ -207,7 +220,10 @@ Text appears on focus.
 {% endfor %}
 {% endexample %}
 
----
+
+<hr>
+<br>
+
 
 ##### Elements Inline
 
@@ -244,11 +260,12 @@ Text appears on focus.
 </form>
 {% endexample %}
 
----
+
+<hr>
+<br>
+
 
 #### Textarea 
-
-##### Default 
 {% example html %}
 <div class="c-form-group">
   <textarea class="c-input" placeholder="Placeholder Text"></textarea>
@@ -267,29 +284,25 @@ You can set the height of the textarea using the rows HTML attribute.
 ##### Textarea Colors
 {% example html %}
 {% for color in page.colors %}
-<div class="c-form-group">
-  <textarea class="c-input c-input-{{ color }}" type="text" placeholder="{{ color | capitalize }} input">
+<textarea class="c-input c-input-{{ color }} docs- c-m-bottom-sm" type="text" placeholder="{{ color | capitalize }} input">
 </textarea>
-</div>
 {% endfor %}
 {% endexample %}
 
 ##### Textarea Sizes
 {% example html %}
 {% for size in page.sizes %}
-<div class="c-form-group">
-  <textarea class="c-input c-input-{{ size }}" type="text" placeholder="{{ size | capitalize }} input">
+<textarea class="c-input c-input-{{ size }} docs- c-m-bottom-sm" type="text" placeholder="{{ size | capitalize }} input">
 </textarea>
-</div>
 {% endfor %}
 {% endexample %}
 
----
+<hr>
+<br>
 
 #### Select
 The browser built-in select dropdown, styled accordingly
 
-##### Default Select
 {% example html %}
 <select class="c-input docs- c-m-sm">
   <option>Select dropdown</option>
@@ -297,7 +310,7 @@ The browser built-in select dropdown, styled accordingly
 </select>
 {% endexample %}
 
-##### Select Sizes
+**Select Sizes**
 {% example html %}
 {% for size in page.sizes %}
 <select class="c-input c-input-{{ size }} docs- c-m-sm">
@@ -307,7 +320,7 @@ The browser built-in select dropdown, styled accordingly
 {% endfor %}
 {% endexample %}
 
-##### Disabled
+**Disabled**
 {% example html %}
 <select class="c-input" disabled>
   <option>Select dropdown</option>
@@ -315,7 +328,8 @@ The browser built-in select dropdown, styled accordingly
 </select>
 {% endexample %}
 
----
+<hr>
+<br>
 
 
 #### File Upload

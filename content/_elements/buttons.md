@@ -19,7 +19,7 @@ tabs:
 <!-- Start Cupcake Code Section -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-#### Base
+### Base
 Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
 
 {% example html %}
@@ -35,6 +35,10 @@ This is an example of available colors for the Buttons element.
   {% endfor %}
 {% endexample %}
 
+<hr>
+<br>
+
+
 #### Size Examples
 This is an example of available sizes for the Buttons element.
 
@@ -44,6 +48,10 @@ This is an example of available sizes for the Buttons element.
   {% endfor %}
 {% endexample %}
 
+
+<hr>
+<br>
+
 #### Disabled State
 Make buttons look inactive by adding the disabled boolean attribute to any <button> element.
 
@@ -51,21 +59,21 @@ Make buttons look inactive by adding the disabled boolean attribute to any <butt
 <button type="button" class="c-btn c-btn-primary" disabled>Primary</button>
 {% endexample %}
 
-#### Additional Styles and Options
-These modifiers can be mixed/matched as needed
 
+<hr>
+<br>
 
-##### Block Button
+#### Block Button
+Block buttons will span 100% width of the buttons container.
 
 {% example html %}
 <button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>
 {% endexample %}
 
 <hr>
+<br>
 
-#### Button Group
-
-##### Base
+#### Button Groups
 Button group displays multiple related actions in a row to help with horizontal arrangement and the spacing of calls to action.
 
 {% example html %}
@@ -77,7 +85,8 @@ Button group displays multiple related actions in a row to help with horizontal 
 {% endexample %}
 
 
-##### Color Examples
+**Color Examples**
+
 This is an example of available colors for the Button Group element.
 
 {% example html %}
@@ -91,7 +100,8 @@ This is an example of available colors for the Button Group element.
 {% endexample %}
 
 
-##### Size Examples
+**Size Examples**
+
 This is an example of available sizes for the Button Group element.
 
 {% example html %}
@@ -105,8 +115,7 @@ This is an example of available sizes for the Button Group element.
 {% endexample %}
 
 
-
-##### Icons
+**Icons**
 
 {% example html %}
 <div class="c-btn-group">
@@ -122,7 +131,7 @@ This is an example of available sizes for the Button Group element.
 {% endexample %}
 
 
-##### Vertical
+**Vertical**
 
 {% example html %}
 <div class="c-btn-group-vertical">

@@ -1,11 +1,6 @@
 ---
 title: Media Object
-description: The famous media object prevalent in social media interfaces, but useful in any context
-colors:
-- primary
-- secondary
-- success
-- danger
+description: The famous media object prevalent in social media interfaces, but useful in any context.
 tabs:
 - Code
 - Guidelines
@@ -14,7 +9,9 @@ tabs:
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+
+### Base
+
 This simplest form of the media object. An inline flexible object with something like a checkbox on one side.
 
 {% example html %}
@@ -115,8 +112,11 @@ This simplest form of the media object. An inline flexible object with something
     </div>
   </div>
 </div>
-
 {% endexample %}
+
+
+<hr>
+<br>
 
 #### Actions
 
@@ -249,6 +249,8 @@ As vertical heights grow - additional classes allow for better alignment.
 </div>
 {% endexample %}
 
+<hr>
+<br>
 
 #### More Examples
 
@@ -305,6 +307,10 @@ Here are a few examples of whats possible when mixing classes.
 
 </div>
 {% endexample %}
+
+
+<hr>
+<br>
 
 #### Groups
 Group multiple objects inside a list class. This becomes a powerful option for repeatable content.

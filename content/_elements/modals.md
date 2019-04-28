@@ -9,7 +9,8 @@ tabs:
 <!-- Start Cupcake Code Section -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+### Base
+
 The default modal contains a header, body, and footer section. 
 
 

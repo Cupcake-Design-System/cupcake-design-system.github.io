@@ -19,20 +19,26 @@ directions:
 - horizontal
 ---
 
-# Display Properties
+## Display Properties
 
 Single purpose classes for setting the display of an element at any breakpoint.
 
 *The display property defines box’s display type, which consists of the two basic qualities of how an element generates boxes: the inner display type, which defines the kind of formatting context it generates, dictating how its descendant boxes are laid out. the outer display type, which dictates how the box participates in its parent formatting context.* - css3 Display Module Spec.
 
-## Display Block
+<hr>
+<br>
+
+#### Display Block
 Block will inherently set width to 100% of its parent element. It will also cause a line break, even if the declared width doesn’t take up the full width of the parent.
 
 {% example html %}
 <span class="c-d-block docs- c-p-sm c-bg-primary c-text-white">c-d-block</span>
 {% endexample %}
 
-## Display Inline Block
+<hr>
+<br>
+
+#### Display Inline Block
 Inline-block will wrap around content inline. It also allows you to set height and width properties on the element, which display inline does not allow you to do. It does render the white-space between elements, so if you set width: 25% to four elements they will not just render as a 4 column layout by default.
 
 {% example html %}
@@ -42,8 +48,10 @@ Inline-block will wrap around content inline. It also allows you to set height a
 <span class="c-d-inline-block docs- c-p-sm c-bg-danger c-text-white">c-d-inline-block</span>
 {% endexample %}
 
+<hr>
+<br>
 
-## Display Inline 
+#### Display Inline 
 Inline doesn’t respect height or width values. It does not render white space between elements.
 
 {% example html %}
@@ -53,8 +61,10 @@ Inline doesn’t respect height or width values. It does not render white space 
 <span class="c-d-inline docs- c-p-sm c-bg-danger c-text-white">c-d-inline</span>
 {% endexample %}
 
+<hr>
+<br>
 
-## Display Table 
+#### Display Table 
 The display table can be combined with display table-cell to render a table without table markup. This can be useful for vertically aligning content or for auto-calculating a variable number of table cells.
 
 {% example html %}
@@ -66,8 +76,10 @@ The display table can be combined with display table-cell to render a table with
 </div>
 {% endexample %}
 
+<hr>
+<br>
 
-## Syntax
+#### Syntax
 
 Display utility classes that apply to all breakpoints, from `sm` to `xl`, have no breakpoint abbreviation in them. These classes start with a `min-width: 0;`. The remaining breakpoints, however, do include a breakpoint abbreviation.
 
@@ -96,11 +108,11 @@ The classes effect screen widths within the given breakpoint *or larger*.
 
 For example, `.c-lg-d-none` sets `display: none;` on both `lg` and `xl` screens.
 
----
+<hr>
+<br>
 
-# Advanced Usage
 
-## Hiding Elements
+#### Hiding Elements
 
 To hide elements simply use the `.c-d-none` class or one of the `.c-{sm,md,lg,xl}-d-none` classes for any responsive screen variation.
 
@@ -115,7 +127,7 @@ To hide elements simply use the `.c-d-none` class or one of the `.c-{sm,md,lg,xl
 {: .c-table}
 
 
-## Showing Elements
+#### Showing Elements
 
 To show an element only on a given interval of screen sizes you can combine one `.c-*-d-none` class with a `.c-*-d-*` class, for example `.c-d-none .c-md-d-block .c-xl-d-none` will hide the element for all screen sizes except on medium and large devices.
 

@@ -33,6 +33,9 @@ The base card provides a simple container with padding, borders, background, tex
 </div>
 {% endexample %}
 
+<hr>
+<br>
+
 
 #### With Hover
 Adding a hover class provides the styles for hover interactions.
@@ -48,6 +51,8 @@ Adding a hover class provides the styles for hover interactions.
 </div>
 {% endexample %}
 
+<hr>
+<br>
 
 #### With Header
 
@@ -127,7 +132,7 @@ Cards can include headers, footers, a wide variety of content and card-specific 
 </div>
 {% endexample %}
 
-You can also add a subtitle and the right menu items will stay aligned.
+**You can also add a subtitle and the right menu items will stay aligned.**
 
 {% example html %}
 <div class="c-row">
@@ -208,6 +213,10 @@ You can also add a subtitle and the right menu items will stay aligned.
 </div>
 {% endexample %}
 
+
+<hr>
+<br>
+
 #### Header and Footer
 
 {% example html %}
@@ -253,9 +262,12 @@ You can also add a subtitle and the right menu items will stay aligned.
 </div>
 {% endexample %}
 
-#### Card Group
 
-This is an example of available colors for the **{{ page.title }}** element. 
+<hr>
+<br>
+
+#### Card Group
+Cards can be grouped together.
 
 {% example html %}
 <div class="c-card-group">
@@ -290,7 +302,7 @@ This is an example of available colors for the **{{ page.title }}** element.
 {% endexample %}
 
 
-Remove gutters from the card group with a collapsed class. 
+**Remove gutters from the card group with a collapsed class.**
 
 {% example html %}
 <div class="c-card-group-collapsed">

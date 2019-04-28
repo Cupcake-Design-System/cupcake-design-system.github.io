@@ -2,12 +2,6 @@
 title: Overview
 description: Recommendations to create effective visualizations within Ipreo products
 category: Data Visualization
-weight: 1
-colors:
-- primary
-- success
-- warning
-- danger
 ---
 
 ### Before you start

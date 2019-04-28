@@ -3,7 +3,7 @@ title: Footer
 description: This is the default footer example.
 ---
 
-## Default
+#### Default
 
 {% example html %}
 <div class="c-footer">
@@ -25,7 +25,7 @@ description: This is the default footer example.
 {% endexample %}
 
 
-## Transparent
+#### Transparent
 {% example html %}
 <div class="c-footer c-footer-transparent">
   <div class="c-footer-left">

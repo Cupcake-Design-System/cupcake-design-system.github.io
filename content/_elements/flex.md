@@ -59,9 +59,14 @@ To set a container to inline-flex, use the class .c-d-inline-flex.
   </tbody>
 </table>
 
-# Direction
+<br>
+<hr>
+<br>
 
-## Horizontal
+#### Direction
+
+**Horizontal**
+
 The browser default horizontal direction for a flex container is `row`.
 You may wish to reverse this - or change at the appropriate screen size.
 
@@ -80,7 +85,8 @@ Use `.c-flex-row` to set a horizontal direction (the browser default not needed 
 </div>
 {% endexample %}
 
-## Vertical
+**Vertical**
+
 Use `.c-flex-column` to set a vertical direction, or `.c-flex-column-reverse`  to start the vertical direction from the opposite side.
 
 {% example html %}
@@ -131,15 +137,19 @@ Use `.c-flex-column` to set a vertical direction, or `.c-flex-column-reverse`  t
   </tbody>
 </table>
 
----
+
+<br>
+<hr>
+<br>
 
 
-# Wrap
+#### Wrap
 
 Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with `.c-flex-nowrap`, wrapping with `.c-flex-wrap`, or reverse wrapping with `.c-flex-wrap-reverse`.
 
+<br>
 
-## Nowrap
+**Nowrap**
 {% example html %}
   <div class="c-d-flex c-flex-nowrap docs- c-bg-primary-3 c-text-white">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -161,7 +171,7 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 {% endexample %}
 
 
-## Auto Wrap
+**Auto Wrap**
 {% example html %}
   <div class="c-d-flex c-flex-wrap docs- c-bg-primary-3 c-text-white">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -183,7 +193,7 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 {% endexample %}
 
 
-## Wrap Reverse
+**Wrap Reverse**
 
 {% example html %}
   <div class="c-d-flex c-flex-wrap-reverse docs- c-bg-primary-3 c-text-white">
@@ -235,12 +245,19 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
   </tbody>
 </table>
 
----
 
-# Justify
+<br>
+<hr>
+<br>
+
+
+#### Justify
+
 To control the spacing for items on the main axis, use the justify-content utilities. Choose from `start` (browser default), `end`, `center`, `space-between`, or `space-around`.
 
-## Start
+<br>
+
+**Start**
 {% example html %}
   <div class="c-d-flex c-justify-start docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -249,7 +266,7 @@ To control the spacing for items on the main axis, use the justify-content utili
   </div>
 {% endexample %}  
 
-## End
+**End**
 {% example html %}
   <div class="c-d-flex c-justify-end docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -258,7 +275,7 @@ To control the spacing for items on the main axis, use the justify-content utili
   </div>
 {% endexample %}  
 
-## Center
+**Center**
 {% example html %}  
   <div class="c-d-flex c-justify-center docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -267,7 +284,7 @@ To control the spacing for items on the main axis, use the justify-content utili
   </div>
 {% endexample %}  
 
-## Space Between
+**Space Between**
 {% example html %}  
   <div class="c-d-flex c-justify-space-between docs- c-bg-primary-3 c-text-white c-m-bottom-sm">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -276,7 +293,7 @@ To control the spacing for items on the main axis, use the justify-content utili
   </div>
 {% endexample %}  
 
-## Space Around
+**Space Around**
 {% example html %}  
   <div class="c-d-flex c-justify-space-around docs- c-bg-primary-3 c-text-white">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -325,14 +342,17 @@ To control the spacing for items on the main axis, use the justify-content utili
   </tbody>
 </table>
 
----
+<br>
+<hr>
 
-# Align items
+
+#### Align items
 
 To align items along the cross-axis, use the align-content utilities. Choose from `top`, `bottom`, `center`, `baseline`, or `stretch` (browser default).
 
-## Top
+<br>
 
+**Top**
 {% example html %} 
   <div class="c-d-flex c-align-top docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -341,7 +361,7 @@ To align items along the cross-axis, use the align-content utilities. Choose fro
   </div>
 {% endexample %}    
 
-## Bottom
+**Bottom**
 
 {% example html %}  
   <div class="c-d-flex c-align-bottom docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
@@ -351,7 +371,7 @@ To align items along the cross-axis, use the align-content utilities. Choose fro
   </div>
 {% endexample %}    
 
-## Center
+**Center**
 
 {% example html %}    
   <div class="c-d-flex c-align-center docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
@@ -361,7 +381,7 @@ To align items along the cross-axis, use the align-content utilities. Choose fro
   </div>
 {% endexample %}    
 
-## Baseline
+**Baseline**
 
 {% example html %}    
   <div class="c-d-flex c-align-baseline docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
@@ -371,7 +391,7 @@ To align items along the cross-axis, use the align-content utilities. Choose fro
   </div>
 {% endexample %}    
 
-## Stretch
+**Stretch**
 
 {% example html %}    
   <div class="c-d-flex c-align-stretch docs- c-bg-primary-3 c-text-white" style="height: 100px">
@@ -420,15 +440,17 @@ To align items along the cross-axis, use the align-content utilities. Choose fro
   </tbody>
 </table>
 
----
+<br>
+<hr>
 
 
-# Align self
+#### Align self
 
 To align flexbox items on an item-by-item basis, use the align-self utilities. Choose from the same options as `align-items`: `start`, `end`, `center`, `baseline`, or `stretch` (browser default).
 
+<br>
 
-## Top
+**Top**
 {% example html %}  
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -437,7 +459,7 @@ To align flexbox items on an item-by-item basis, use the align-self utilities. C
   </div>
 {% endexample %}   
 
-## Bottom
+**Bottom**
 {% example html %}    
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -446,7 +468,7 @@ To align flexbox items on an item-by-item basis, use the align-self utilities. C
   </div>
 {% endexample %}   
 
-## Center
+**Center**
 {% example html %}    
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -455,7 +477,7 @@ To align flexbox items on an item-by-item basis, use the align-self utilities. C
   </div>
 {% endexample %}   
 
-## Baseline
+**Baseline**
 {% example html %}    
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -464,7 +486,7 @@ To align flexbox items on an item-by-item basis, use the align-self utilities. C
   </div>
 {% endexample %}   
 
-## Stretch
+**Stretch**
 {% example html %}    
   <div class="c-d-flex docs- c-bg-primary-3 c-text-white" style="height: 100px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -514,12 +536,16 @@ To align flexbox items on an item-by-item basis, use the align-self utilities. C
 </table>
 
 
----
+<br>
+<hr>
 
 
-# Align Content
+
+#### Align Content
 
 To align items together on the cross-axis, use the align-content utilities. Choose from `start` (browser default), `end`, `center`, `between`, `around`, or `stretch`. 
+
+<br>
 
 In the demo below, we set the flex to wrap and added enough of flex items to wrap.
 
@@ -529,8 +555,7 @@ In the demo below, we set the flex to wrap and added enough of flex items to wra
 This property has no effect on single rows of flex items.
 {% endcallout %}
 
-## Start
-
+**Start**
 {% example html %}  
   <div class="c-d-flex c-align-content-start c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -552,8 +577,7 @@ This property has no effect on single rows of flex items.
 {% endexample %}  
 
 
-## End
-
+**End**
 {% example html %}  
   <div class="c-d-flex c-align-content-end c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -575,9 +599,7 @@ This property has no effect on single rows of flex items.
 {% endexample %}  
 
 
-
-## Center
-
+**Center**
 {% example html %}  
   <div class="c-d-flex c-align-content-center c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -598,8 +620,7 @@ This property has no effect on single rows of flex items.
   </div>
 {% endexample %}  
 
-## Between
-
+**Between**
 {% example html %}  
   <div class="c-d-flex c-align-content-between c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -621,8 +642,7 @@ This property has no effect on single rows of flex items.
 {% endexample %}  
 
 
-## Around
-
+**Around**
 {% example html %}  
   <div class="c-d-flex c-align-content-around c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -644,8 +664,7 @@ This property has no effect on single rows of flex items.
 {% endexample %}  
 
 
-## Stretch
-
+**Stretch**
 {% example html %}  
   <div class="c-d-flex c-align-content-stretch c-flex-wrap docs- c-bg-primary-3 c-text-white c-m-bottom-sm" style="height: 200px">
     <div class="docs- c-p-sm c-bg-primary c-bd c-bd-primary-9">Flex item</div>
@@ -710,63 +729,3 @@ This property has no effect on single rows of flex items.
 
 To learn more about flexbox, see [Using CSS flexible boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) and the [CSS Flexible Box Layout Module Specification](https://www.w3.org/TR/css-flexbox-1/).
 
-</div>
-
-
-<div id="float" class="docs-tabs-content" markdown="1">
-
-
-## Overview
-
-These utility classes float an element to the left or right, or disable floating, based on the current viewport size using the [CSS `float` property](https://developer.mozilla.org/en-US/docs/Web/CSS/float). `!important` is included to avoid specificity issues. These use the same viewport breakpoints as our grid system.
-
-## Classes
-
-Toggle a float with a class:
-
-{% example html %}
-<div class="c-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on all viewport sizes</div><br>
-<div class="c-pull-right docs- c-p-sm c-bg-primary c-text-white ">Float right on all viewport sizes</div><br>
-<div class="c-pull-none docs- c-p-sm c-bg-primary c-text-white c-m-top-lg">Don't float on all viewport sizes</div>
-{% endexample %}
-
-## Responsive
-
-Responsive variations also exist for each `float` value.
-
-{% example html %}
-<div class="c-sm-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized SM (small) or wider</div><br>
-<div class="c-md-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized MD (medium) or wider</div><br>
-<div class="c-lg-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized LG (large) or wider</div><br>
-<div class="c-xl-pull-left docs- c-p-sm c-bg-primary c-text-white">Float left on viewports sized XL (extra-large) or wider</div><br>
-{% endexample %}
-
-
-Here are all the support classes:
-
-<table class="c-table c-table-transparent">
-  <thead>
-    <tr>
-    {% for bp in site.data.breakpoints %}
-      <th>Min-Width: {{ bp.min-width }}</th>
-    {% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      {% for bp in site.data.breakpoints %}
-        <td><code class="c-text-sm">.c{{ bp.abbr }}-pull-left</code></td>
-      {% endfor %}
-    </tr>
-    <tr>
-      {% for bp in site.data.breakpoints %}
-      <td><code class="c-text-sm">.c{{ bp.abbr }}-pull-right</code></td>
-      {% endfor %}  
-    </tr>
-    <tr>
-      {% for bp in site.data.breakpoints %}
-      <td><code class="c-text-sm">.c{{ bp.abbr }}-pull-none</code></td>
-      {% endfor %}  
-    </tr>  
-  </tbody>
-</table>

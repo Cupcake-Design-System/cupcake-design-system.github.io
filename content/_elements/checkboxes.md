@@ -20,7 +20,7 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
 </div>
 {% endexample %}
 
-Adding label text that is not clickable.
+**Adding label text that is not clickable.**
 {% example html %}
 <div class="c-checkbox">
 	<input type="checkbox" name="check">
@@ -29,7 +29,7 @@ Adding label text that is not clickable.
 {% endexample %}
 
 
-To make the full label clickable - supply the input with an id and the label with a a matching for value as shown below.
+**To make the full label clickable - supply the input with an id and the label with a a matching for value as shown below.**
 {% example html %}
 <div class="c-checkbox">
   <input type="checkbox" id="checkbox1" name="check">
@@ -39,7 +39,7 @@ To make the full label clickable - supply the input with an id and the label wit
 
 
 
-Adding disabled to the input.
+**Adding disabled to the input.**
 
 {% example html %}
 <div class="c-checkbox">
@@ -49,7 +49,7 @@ Adding disabled to the input.
 {% endexample %}
 
 
-Adding disabled to the input and label.
+**Adding disabled to the input and label.**
 
 {% example html %}
 <div class="c-checkbox" disabled>
@@ -59,7 +59,7 @@ Adding disabled to the input and label.
 {% endexample %}
 
 
-Adding disabled to a checked input.
+**Adding disabled to a checked input.**
 
 {% example html %}
 <div class="c-checkbox">
@@ -69,7 +69,7 @@ Adding disabled to a checked input.
 {% endexample %}
 
 
-Adding disabled to a checked input and label.
+**Adding disabled to a checked input and label.**
 {% example html %}
 <div class="c-checkbox" disabled="">
   <input type="checkbox" id="checkbox5" name="checkbox4" checked="checked" disabled="">

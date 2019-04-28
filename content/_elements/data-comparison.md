@@ -1,16 +1,11 @@
 ---
 title: Comparison
-description: Recommendations to create effective visualizations within Ipreo products
+description: Comparison graphs and data visualizations are the most common method of analysis.
 category: Data Visualization
-colors:
-- primary
-- success
-- warning
-- danger
 ---
 
 ### Comparison Graph Types
-Comparison graphs and data visualizations are the most common method of analysis. Implied by the name, these visualizations can easily compare values between 2 or more data points. These include bar charts, column graphs, and time trends. 
+Implied by the name, these visualizations can easily compare values between 2 or more data points. These include bar charts, column graphs, and time trends. 
 Comparison graphs would be used to answer these questions:
 - Which value between 2 or more data points is higher/lower?
 - Does the user need to quickly find and read key values from a list (i.e. cost per quarter)?
