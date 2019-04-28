@@ -8,18 +8,21 @@
 <title>Cupcake · Checkboxes</title>
 
 
+<!-- Documentation extras -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
 
-<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">
-
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
 
 <!-- Documentation extras -->
-<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
   <body>
-      <header class="c-header c-header-inverse c-header-fixed">
+      <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
     <div class="c-header-item">
@@ -345,107 +348,103 @@
             <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content">
 
-  <h2 id="checkbox">Checkbox</h2>
-  <p>Checkboxes are most commonly used to give merchants a way to make a range of selections (zero, one, or multiple).</p>
+  <h3 id="checkbox">Checkbox</h3>
+  <p>The default checkbox requires the <code class="highlighter-rouge">&lt;label&gt;&lt;/label&gt;</code> tag even if no text is provided.</p>
 
   <div class="docs-example">
-<label class="c-checkbox">
-    <input type="checkbox" name="radio" checked="" />
-    <i class="c-bg-primary"></i>
-    Basic Checkbox
-</label>
+<div class="c-checkbox">
+	<input type="checkbox" name="check" />
+	<label></label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    Basic Checkbox
-<span class="nt">&lt;/label&gt;</span></code></pre></div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"check"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="color-examples">Color Examples</h2>
+  <p><strong>Adding label text that is not clickable.</strong></p>
 
   <div class="docs-example">
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked="" />
-    <i class="c-bg-primary"></i>
-    Primary
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked="" />
-    <i class="c-bg-success"></i>
-    Success
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked="" />
-    <i class="c-bg-warning"></i>
-    Warning
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked="" />
-    <i class="c-bg-danger"></i>
-    Danger
-</label>
+<div class="c-checkbox">
+	<input type="checkbox" name="check" />
+	<label>Label Text</label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    Primary
-<span class="nt">&lt;/label&gt;</span>
-
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    Success
-<span class="nt">&lt;/label&gt;</span>
-
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    Warning
-<span class="nt">&lt;/label&gt;</span>
-
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox c-m-right-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    Danger
-<span class="nt">&lt;/label&gt;</span></code></pre></div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"check"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label&gt;</span>Label Text<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="size-examples">Size Examples</h2>
+  <p><strong>To make the full label clickable - supply the input with an id and the label with a a matching for value as shown below.</strong></p>
 
   <div class="docs-example">
-<label class="c-checkbox-sm c-m-right-sm">
-    <input type="checkbox" name="radio" checked="" />
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-checkbox-lg c-m-right-sm">
-    <input type="checkbox" name="radio" checked="" />
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-checkbox-xl c-m-right-sm">
-    <input type="checkbox" name="radio" checked="" />
-    <i class="c-bg-primary"></i>
-</label>
+<div class="c-checkbox">
+  <input type="checkbox" id="checkbox1" name="check" />
+  <label for="checkbox1">Default with Label</label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-sm c-m-right-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox1"</span> <span class="na">name=</span><span class="s">"check"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox1"</span><span class="nt">&gt;</span>Default with Label<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-lg c-m-right-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
+  <p><strong>Adding disabled to the input.</strong></p>
 
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-checkbox-xl c-m-right-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-bg-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
-<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="docs-example">
+<div class="c-checkbox">
+  <input type="checkbox" id="checkbox2" name="check" disabled="" />
+  <label for="checkbox2">This is still a normal label</label>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox2"</span> <span class="na">name=</span><span class="s">"check"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox2"</span><span class="nt">&gt;</span>This is still a normal label<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <p><strong>Adding disabled to the input and label.</strong></p>
+
+  <div class="docs-example">
+<div class="c-checkbox" disabled="">
+  <input type="checkbox" id="checkbox3" name="checkbox" disabled="" />
+  <label for="checkbox3">This label is disabled</label>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox3"</span> <span class="na">name=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox3"</span><span class="nt">&gt;</span>This label is disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <p><strong>Adding disabled to a checked input.</strong></p>
+
+  <div class="docs-example">
+<div class="c-checkbox">
+  <input type="checkbox" id="checkbox4" name="checkbox" checked="checked" disabled="" />
+  <label for="checkbox4">This is still a normal label</label>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox4"</span> <span class="na">name=</span><span class="s">"checkbox"</span> <span class="na">checked=</span><span class="s">"checked"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox4"</span><span class="nt">&gt;</span>This is still a normal label<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <p><strong>Adding disabled to a checked input and label.</strong></p>
+
+  <div class="docs-example">
+<div class="c-checkbox" disabled="">
+  <input type="checkbox" id="checkbox5" name="checkbox4" checked="checked" disabled="" />
+  <label for="checkbox5">This label is disabled</label>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-checkbox"</span> <span class="na">disabled=</span><span class="s">""</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox5"</span> <span class="na">name=</span><span class="s">"checkbox4"</span> <span class="na">checked=</span><span class="s">"checked"</span> <span class="na">disabled=</span><span class="s">""</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox5"</span><span class="nt">&gt;</span>This label is disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
 </div>

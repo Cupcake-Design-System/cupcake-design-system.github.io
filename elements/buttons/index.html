@@ -8,18 +8,21 @@
 <title>Cupcake · Buttons</title>
 
 
+<!-- Documentation extras -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
 
-<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">
-
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
 
 <!-- Documentation extras -->
-<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
   <body>
-      <header class="c-header c-header-inverse c-header-fixed">
+      <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
     <div class="c-header-item">
@@ -345,7 +348,7 @@
             <!-- Start Cupcake Code Section -->
 <div id="code" class="docs-tabs-content">
 
-  <h2 id="base">Base</h2>
+  <h3 id="base">Base</h3>
   <p>Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.</p>
 
   <div class="docs-example">
@@ -354,91 +357,67 @@
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="color-examples">Color Examples</h2>
+  <h4 id="color-examples">Color Examples</h4>
   <p>This is an example of available colors for the Buttons element.</p>
 
   <div class="docs-example">
-<button type="button" class="c-btn c-btn-primary">Primary</button>
-<button type="button" class="c-btn c-btn-secondary">Secondary</button>
-<button type="button" class="c-btn c-btn-success">Success</button>
-<button type="button" class="c-btn c-btn-warning">Warning</button>
-<button type="button" class="c-btn c-btn-danger">Danger</button>
+<div class="c-btn c-btn-primary">Button</div>
+  
+<div class="c-btn c-btn-secondary">Button</div>
+  
+<div class="c-btn c-btn-success">Button</div>
+  
+<div class="c-btn c-btn-danger">Button</div>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span></code></pre></div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/div&gt;</span>
+  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/div&gt;</span>
+  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/div&gt;</span>
+  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="size-examples">Size Examples</h2>
+  <hr />
+
+  <p><br /></p>
+
+  <h4 id="size-examples">Size Examples</h4>
   <p>This is an example of available sizes for the Buttons element.</p>
 
   <div class="docs-example">
-<button type="button" class="c-btn c-btn-primary c-btn-xs">X-Small</button>
-<button type="button" class="c-btn c-btn-primary c-btn-sm">Small</button>
-<button type="button" class="c-btn c-btn-primary c-btn-lg">Large</button>
-<button type="button" class="c-btn c-btn-primary c-btn-xl">X-Large</button>
+<div class="c-btn c-btn-primary c-btn-xs">Button</div>
+  
+<div class="c-btn c-btn-primary c-btn-sm">Button</div>
+  
+<div class="c-btn c-btn-primary c-btn-lg">Button</div>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xs"</span><span class="nt">&gt;</span>X-Small<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-sm"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xl"</span><span class="nt">&gt;</span>X-Large<span class="nt">&lt;/button&gt;</span></code></pre></div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xs"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/div&gt;</span>
+  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-sm"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/div&gt;</span>
+  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-lg"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="disabled-state">Disabled State</h2>
+  <hr />
+
+  <p><br /></p>
+
+  <h4 id="disabled-state">Disabled State</h4>
   <p>Make buttons look inactive by adding the disabled boolean attribute to any <button> element.</button></p>
 
   <div class="docs-example">
 <button type="button" class="c-btn c-btn-primary" disabled="">Primary</button>
-<button type="button" class="c-btn c-btn-secondary" disabled="">Secondary</button>
-<button type="button" class="c-btn c-btn-success" disabled="">Success</button>
-<button type="button" class="c-btn c-btn-warning" disabled="">Warning</button>
-<button type="button" class="c-btn c-btn-danger" disabled="">Danger</button>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span></code></pre></div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="additional-styles-and-options">Additional Styles and Options</h2>
-  <p>These modifiers can be mixed/matched as needed</p>
+  <hr />
 
-  <h3 id="outlines">Outlines</h3>
+  <p><br /></p>
 
-  <div class="docs-example">
-<button type="button" class="c-btn c-btn-primary-outline">Primary</button>
-<button type="button" class="c-btn c-btn-secondary-outline">Secondary</button>
-<button type="button" class="c-btn c-btn-success-outline">Success</button>
-<button type="button" class="c-btn c-btn-warning-outline">Warning</button>
-<button type="button" class="c-btn c-btn-danger-outline">Danger</button>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary-outline"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary-outline"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success-outline"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning-outline"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger-outline"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="pills-and-colors">Pills and Colors</h3>
-
-  <div class="docs-example">
-<button type="button" class="c-btn c-btn-primary c-btn-pill">Primary</button>
-<button type="button" class="c-btn c-btn-secondary c-btn-pill">Secondary</button>
-<button type="button" class="c-btn c-btn-success c-btn-pill">Success</button>
-<button type="button" class="c-btn c-btn-warning c-btn-pill">Warning</button>
-<button type="button" class="c-btn c-btn-danger c-btn-pill">Danger</button>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-pill"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary c-btn-pill"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success c-btn-pill"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning c-btn-pill"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger c-btn-pill"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="block-button">Block Button</h3>
+  <h4 id="block-button">Block Button</h4>
+  <p>Block buttons will span 100% width of the buttons container.</p>
 
   <div class="docs-example">
 <button type="button" class="c-btn c-btn-primary c-btn-lg c-btn-block">Block level button</button>
@@ -448,9 +427,9 @@
 
   <hr />
 
-  <h2 id="button-group">Button Group</h2>
+  <p><br /></p>
 
-  <h3 id="base-1">Base</h3>
+  <h4 id="button-groups">Button Groups</h4>
   <p>Button group displays multiple related actions in a row to help with horizontal arrangement and the spacing of calls to action.</p>
 
   <div class="docs-example">
@@ -467,121 +446,103 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h3 id="color-examples-1">Color Examples</h3>
+  <p><strong>Color Examples</strong></p>
+
   <p>This is an example of available colors for the Button Group element.</p>
 
   <div class="docs-example">
 <div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary">Primary</button>
-  <button type="button" class="c-btn c-btn-primary">Group</button>
-  <button type="button" class="c-btn c-btn-primary">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-secondary">Secondary</button>
-  <button type="button" class="c-btn c-btn-secondary">Group</button>
-  <button type="button" class="c-btn c-btn-secondary">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-success">Success</button>
-  <button type="button" class="c-btn c-btn-success">Group</button>
-  <button type="button" class="c-btn c-btn-success">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-warning">Warning</button>
-  <button type="button" class="c-btn c-btn-warning">Group</button>
-  <button type="button" class="c-btn c-btn-warning">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-danger">Danger</button>
-  <button type="button" class="c-btn c-btn-danger">Group</button>
-  <button type="button" class="c-btn c-btn-danger">Buttons</button>
-</div>
+    <button type="button" class="c-btn c-btn-primary">Button</button>
+    <button type="button" class="c-btn c-btn-primary">Group</button>
+    <button type="button" class="c-btn c-btn-primary">Colors</button>
+  </div>
+  
+  <div class="c-btn-group">
+    <button type="button" class="c-btn c-btn-secondary">Button</button>
+    <button type="button" class="c-btn c-btn-secondary">Group</button>
+    <button type="button" class="c-btn c-btn-secondary">Colors</button>
+  </div>
+  
+  <div class="c-btn-group">
+    <button type="button" class="c-btn c-btn-success">Button</button>
+    <button type="button" class="c-btn c-btn-success">Group</button>
+    <button type="button" class="c-btn c-btn-success">Colors</button>
+  </div>
+  
+  <div class="c-btn-group">
+    <button type="button" class="c-btn c-btn-danger">Button</button>
+    <button type="button" class="c-btn c-btn-danger">Group</button>
+    <button type="button" class="c-btn c-btn-danger">Colors</button>
+  </div>
 </div>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Colors<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span><span class="nt">&gt;</span>Colors<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success"</span><span class="nt">&gt;</span>Colors<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger"</span><span class="nt">&gt;</span>Colors<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h3 id="size-examples-1">Size Examples</h3>
+  <p><strong>Size Examples</strong></p>
+
   <p>This is an example of available sizes for the Button Group element.</p>
 
   <div class="docs-example">
 <div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary c-btn-xs">X-Small</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-xs">Button</button>
   <button type="button" class="c-btn c-btn-primary c-btn-xs">Group</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-xs">Buttons</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-xs">Sizes</button>
 </div>
+  
 <div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary c-btn-sm">Small</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-sm">Button</button>
   <button type="button" class="c-btn c-btn-primary c-btn-sm">Group</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-sm">Buttons</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-sm">Sizes</button>
 </div>
+  
 <div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary c-btn-lg">Large</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-lg">Button</button>
   <button type="button" class="c-btn c-btn-primary c-btn-lg">Group</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-lg">Buttons</button>
-</div>
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary c-btn-xl">X-Large</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-xl">Group</button>
-  <button type="button" class="c-btn c-btn-primary c-btn-xl">Buttons</button>
+  <button type="button" class="c-btn c-btn-primary c-btn-lg">Sizes</button>
 </div>
 </div>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xs"</span><span class="nt">&gt;</span>X-Small<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xs"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xs"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xs"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xs"</span><span class="nt">&gt;</span>Sizes<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
+  
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-sm"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-sm"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-sm"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-sm"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-sm"</span><span class="nt">&gt;</span>Sizes<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
+  
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-lg"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-lg"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-lg"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xl"</span><span class="nt">&gt;</span>X-Large<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xl"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-xl"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-btn-lg"</span><span class="nt">&gt;</span>Sizes<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h3 id="additional-styles-and-options-1">Additional Styles and Options</h3>
-
-  <h3 id="icons">Icons</h3>
+  <p><strong>Icons</strong></p>
 
   <div class="docs-example">
 <div class="c-btn-group">
@@ -607,7 +568,7 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h3 id="vertical">Vertical</h3>
+  <p><strong>Vertical</strong></p>
 
   <div class="docs-example">
 <div class="c-btn-group-vertical">
@@ -617,21 +578,20 @@
 	<button class="c-btn c-btn-primary c-text-left">Drafts</button>
 </div>
 <div class="c-btn-group-vertical">
-	<button class="c-btn c-btn-primary-outline c-text-left">All</button>
-	<button class="c-btn c-btn-primary-outline c-text-left">Published</button>
-	<button class="c-btn c-btn-primary-outline c-text-left">Unpublished</button>
-	<button class="c-btn c-btn-primary-outline c-text-left">Drafts</button>
-</div>
-<div class="c-btn-group-vertical">
 	<button class="c-btn c-btn-primary"><i class="fas fa-euro-sign"></i> EUR</button>
 	<button class="c-btn c-btn-primary"><i class="fas fa-pound-sign"></i> GBP</button>
 	<button class="c-btn c-btn-primary"><i class="fas fa-dollar-sign"></i> USD</button>
 	<button class="c-btn c-btn-primary"><i class="fas fa-dollar-sign"></i> USD</button>
 </div>
 <div class="c-btn-group-vertical">
-	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"> <i class="fa fa-exclamation-circle"></i></button>
-	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"> <i class="fa fa-exclamation-circle"></i></button>
-	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"><i class="fa fa-exclamation-circle"></i></button>
+	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"><i class="fas fa-robot"></i></button>
+	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"><i class="fas fa-robot"></i></button>
+	<button class="c-btn c-btn-box c-btn-sm c-btn-primary"><i class="fas fa-robot"></i></button>
+</div>
+<div class="c-btn-group-vertical">
+	<button class="c-btn c-btn-box c-btn-primary"><i class="fas fa-robot"></i></button>
+	<button class="c-btn c-btn-box c-btn-primary"><i class="fas fa-robot"></i></button>
+	<button class="c-btn c-btn-box c-btn-primary"><i class="fas fa-robot"></i></button>
 </div>
 </div>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group-vertical"</span><span class="nt">&gt;</span>
@@ -641,149 +601,20 @@
 	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary c-text-left"</span><span class="nt">&gt;</span>Drafts<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group-vertical"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary-outline c-text-left"</span><span class="nt">&gt;</span>All<span class="nt">&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary-outline c-text-left"</span><span class="nt">&gt;</span>Published<span class="nt">&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary-outline c-text-left"</span><span class="nt">&gt;</span>Unpublished<span class="nt">&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary-outline c-text-left"</span><span class="nt">&gt;</span>Drafts<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group-vertical"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-euro-sign"</span><span class="nt">&gt;&lt;/i&gt;</span> EUR<span class="nt">&lt;/button&gt;</span>
 	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-pound-sign"</span><span class="nt">&gt;&lt;/i&gt;</span> GBP<span class="nt">&lt;/button&gt;</span>
 	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-dollar-sign"</span><span class="nt">&gt;&lt;/i&gt;</span> USD<span class="nt">&lt;/button&gt;</span>
 	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-dollar-sign"</span><span class="nt">&gt;&lt;/i&gt;</span> USD<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group-vertical"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-sm c-btn-primary"</span><span class="nt">&gt;</span> <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-circle"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-sm c-btn-primary"</span><span class="nt">&gt;</span> <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-circle"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-sm c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-circle"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="pills">Pills</h3>
-
-  <div class="docs-example">
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-primary">Primary</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-primary">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-primary">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-secondary">Secondary</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-secondary">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-secondary">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-success">Success</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-success">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-success">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-warning">Warning</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-warning">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-warning">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-pill c-btn-danger">Danger</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-danger">Group</button>
-  <button type="button" class="c-btn c-btn-pill c-btn-danger">Buttons</button>
-</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-primary"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-primary"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-sm c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-robot"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-sm c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-robot"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-sm c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-robot"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-secondary"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-secondary"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-success"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-success"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-warning"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-warning"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-danger"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-pill c-btn-danger"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="outline">Outline</h3>
-
-  <div class="docs-example">
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-primary-outline">Primary</button>
-  <button type="button" class="c-btn c-btn-primary-outline">Group</button>
-  <button type="button" class="c-btn c-btn-primary-outline">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-secondary-outline">Secondary</button>
-  <button type="button" class="c-btn c-btn-secondary-outline">Group</button>
-  <button type="button" class="c-btn c-btn-secondary-outline">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-success-outline">Success</button>
-  <button type="button" class="c-btn c-btn-success-outline">Group</button>
-  <button type="button" class="c-btn c-btn-success-outline">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-warning-outline">Warning</button>
-  <button type="button" class="c-btn c-btn-warning-outline">Group</button>
-  <button type="button" class="c-btn c-btn-warning-outline">Buttons</button>
-</div>
-
-<div class="c-btn-group">
-  <button type="button" class="c-btn c-btn-danger-outline">Danger</button>
-  <button type="button" class="c-btn c-btn-danger-outline">Group</button>
-  <button type="button" class="c-btn c-btn-danger-outline">Buttons</button>
-</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary-outline"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary-outline"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary-outline"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary-outline"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary-outline"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary-outline"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success-outline"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success-outline"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-success-outline"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning-outline"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning-outline"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-warning-outline"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger-outline"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger-outline"</span><span class="nt">&gt;</span>Group<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"c-btn c-btn-danger-outline"</span><span class="nt">&gt;</span>Buttons<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-btn-group-vertical"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-robot"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-robot"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-robot"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
@@ -793,16 +624,16 @@
 <!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content">
 
-  <h3 id="standard-button">Standard Button</h3>
+  <h5 id="standard-button">Standard Button</h5>
   <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--standard&amp;nav=0"></iframe>
 
-  <h3 id="submit-button">Submit Button</h3>
+  <h5 id="submit-button">Submit Button</h5>
   <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--submit&amp;nav=0"></iframe>
 
-  <h3 id="button-link">Button Link</h3>
+  <h5 id="button-link">Button Link</h5>
   <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--link&amp;nav=0"></iframe>
 
-  <h3 id="icon-button">Icon Button</h3>
+  <h5 id="icon-button">Icon Button</h5>
   <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--icon&amp;nav=0"></iframe>
 
 </div>
@@ -836,7 +667,7 @@
   <hr />
 
   <p><!-- Start General Do's and Don'ts Row --></p>
-  <div class="c-header-md">General Do's and Dont's</div>
+  <h4 id="general-dos-and-donts">General Do’s and Dont’s</h4>
 
   <p><!-- Start Button Wording Row --></p>
   <div class="c-header-xs">Button wording</div>
@@ -963,11 +794,11 @@
   <hr />
 
   <p><!-- Start Primary Button Row --></p>
-  <div class="c-header-md">Primary button</div>
+  <h4 id="primary-button">Primary button</h4>
   <p>Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.</p>
 
-  <p><!-- Start Primary Button Do's and Don'ts Section --></p>
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  <p><!-- Start Primary Button Do's and Don'ts Section -->
+  <strong>Do’s and Dont’s</strong></p>
 
   <p><!-- Start Primary Button Usage Row --></p>
   <div class="c-header-xs">Primary button usage</div>
@@ -1081,11 +912,11 @@
   <hr />
 
   <p><!-- Start Action Button Row --></p>
-  <div class="c-header-md">Action button</div>
+  <h4 id="action-button">Action button</h4>
   <p>Action buttons represent and draw attention to an action where something is created or introduced into the workflow.</p>
 
-  <p><!-- Start Action Button Do's and Don'ts Section --></p>
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  <p><!-- Start Action Button Do's and Don'ts Section -->
+  <strong>Do’s and Dont’s</strong></p>
 
   <p><!-- Start Action Button Usage Row --></p>
   <div class="c-header-xs">Action button combinations</div>
@@ -1163,13 +994,13 @@
   <hr />
 
   <!-- Start Danger Button Row -->
-  <div class="c-header-md">Danger button</div>
+  <h4 id="danger-button">Danger button</h4>
   <p>Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.</p>
 
   <p>*A destructive action button can share the screen with an additive action button and/or a primary action button.</p>
 
-  <p><!-- Start Danger Button Do's and Don'ts Section --></p>
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  <p><!-- Start Danger Button Do's and Don'ts Section -->
+  <strong>Do’s and Dont’s</strong></p>
 
   <p><!-- Start Danger Button Usage Row --></p>
   <div class="c-header-xs">Danger button combinations</div>
@@ -1241,11 +1072,11 @@
   <hr />
 
   <!-- Start Secondary Button Row -->
-  <div class="c-header-md">Secondary button</div>
+  <h4 id="secondary-button">Secondary button</h4>
   <p>Secondary buttons are the standard button for general use. Secondary buttons are often used in combination with a primary button, to represent an opposing action.</p>
 
-  <p><!-- Start Secondary Button Do's and Don'ts Section --></p>
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  <p><!-- Start Secondary Button Do's and Don'ts Section -->
+  <strong>Do’s and Dont’s</strong></p>
 
   <p><!-- Start Secondary Button Usage Row --></p>
   <div class="c-header-xs">Secondary button usage</div>
@@ -1327,7 +1158,7 @@
   <!-- End Secondary Button Section --></p>
 
   <p><!-- Start Link Only Button Row --></p>
-  <div class="c-header-md">Link-only button</div>
+  <h4 id="link-only-button">Link-only button</h4>
   <p>Link-only buttons are used under the following circumstances:</p>
 
   <ul>
@@ -1337,7 +1168,7 @@
   </ul>
 
   <!-- Start Link-only Button Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  <p><strong>Do’s and Dont’s</strong></p>
 
   <p><!-- Start Link-only Button Usage Row --></p>
   <div class="c-header-xs">Link-only button usage</div>
@@ -1439,11 +1270,11 @@
   <hr />
 
   <p><!-- Start Icon Button Row --></p>
-  <div class="c-header-md">Icon button</div>
+  <h4 id="icon-button-1">Icon button</h4>
   <p>Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.</p>
 
   <!-- Start Icon Button Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  <p><strong>Do’s and Dont’s</strong></p>
 
   <p><!-- Start Icon Button Usage Row --></p>
   <div class="c-header-xs">Icon button usage</div>
@@ -1485,11 +1316,11 @@
   <hr />
 
   <p><!-- Start Icon-only Button Row --></p>
-  <div class="c-header-md">Icon-only button</div>
+  <h4 id="icon-only-button">Icon-only button</h4>
   <p>Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.</p>
 
   <!-- Start Icon-only Button Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  <p><strong>Do’s and Dont’s</strong></p>
 
   <p><!-- Start Icon-only Button Usage Row --></p>
   <div class="c-header-xs">Icon-only button usage</div>

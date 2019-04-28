@@ -8,18 +8,21 @@
 <title>Cupcake · Header</title>
 
 
+<!-- Documentation extras -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
 
-<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">
-
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
 
 <!-- Documentation extras -->
-<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
   <body>
-      <header class="c-header c-header-inverse c-header-fixed">
+      <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
     <div class="c-header-item">
@@ -216,54 +219,86 @@
 <header class="c-header">
   <div class="c-header-left">
     <div class="c-header-item">
-      <a href="" class="c-header-item-link c-header-logo">
-      <img src="https://cupcake-design-system.github.io/assets/img/ipreo-logo.png" />
-        </a>
-    </div>
-  </div>
-  <div class="c-header-center"></div>
-  <div class="c-header-right">
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-          <span class="fa fa-search" aria-hidden="true"></span>
-        </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-          <span class="fa fa-comments" aria-hidden="true"></span>
-        </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-          <span class="fa fa-bell" aria-hidden="true"></span>
-        </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-          <span class="fa fa-th" aria-hidden="true"></span>
-        </a>
+      <a href="#" class="c-header-item-link c-header-logo">
+        <svg height="22" viewBox="0 0 79 22" width="79" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z" fill="#1c7cd6" fill-opacity="1"></path>
+            <path d="M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51" fill="#94DBFF"></path>
+            <path d="M7.94 4.807h-2.3V22h2.47V4.807h-.17" fill="#1c7cd6"></path>
+            <path d="M7.867 0h-2.23v2.357h2.395V0h-.165" fill="#EB8B2D"></path>
+          </g>
+        </svg>
+      </a>
     </div>
     <div class="c-header-item">
       <span class="c-dropdown">
-          <a class="c-header-item-link" href="">
-            <span class="c-avatar c-avatar-sm c-avatar-primary" data-text="AB" data-status="success">
-            </span>
-      <i class="fa fa-caret-down c-m-left-sm" aria-hidden="true"></i>
+        <a class="c-header-item-link">
+          <span class="c-text-sm c-text-bold">Fixed Income</span>
+          <span class="c-text-sm">
+            <i class="fas fa-caret-down c-m-left-sm" aria-hidden="true"></i>
+          </span>
+        </a>
+        <ul class="c-dropdown-list c-dropdown-list-below" style="display: none;">
+          <a class="c-dropdown-item" href="#">
+            <span class="c-dropdown-icon fas fa-university"></span>
+            Municipals
+          </a>
+          <a class="c-dropdown-item" href="#">
+            <span class="c-dropdown-icon fas fa-chart-line"></span>
+            Equities
+          </a>
+        </ul>
+      </span>
+    </div>
+  </div>
+  <div class="c-header-right">
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-comments" aria-hidden="true"></span>
       </a>
-      <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
-        <li>
-          <a href="javascript:void(0)" class="c-a">Help</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Contact Support</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Settings</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Log Out</a>
-        </li>
-      </div>
+    </div>
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-bell" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-th" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <span class="c-dropdown">
+        <a class="c-header-item-link">
+          <span class="c-avatar c-avatar-primary" data-text="AB" data-status="success">
+          </span>
+          <span class="c-text-sm c-text-bold c-p-left-sm">Belinda Preno</span>
+          <i class="fa fa-caret-down c-p-left-sm" aria-hidden="true"></i>
+        </a>
+        <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
+          <div class="c-media c-media-middle">
+            <span class="c-avatar c-avatar-primary" data-text="AA"></span>
+            <div class="c-media-body">
+              <div class="c-text-md c-text-bold">Belinda Preno</div>
+              <div class="c-text-sm c-text-muted">belinda@sequoiacap.com</div>
+            </div>
+          </div>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-id-badge"></i> My Profile
+          </a>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-cog"></i>Account Settings
+          </a>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-question-circle"></i>Help &amp; FAQ
+          </a>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-power-off"></i>Log Out
+          </a>
+        </div>
       </span>
     </div>
   </div>
@@ -272,68 +307,467 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-header"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-left"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://cupcake-design-system.github.io/assets/img/ipreo-logo.png"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-center"</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-right"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-bell"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-th"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">height=</span><span class="s">"22"</span> <span class="na">viewBox=</span><span class="s">"0 0 79 22"</span> <span class="na">width=</span><span class="s">"79"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"none"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span> <span class="na">fill-opacity=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51"</span> <span class="na">fill=</span><span class="s">"#94DBFF"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.94 4.807h-2.3V22h2.47V4.807h-.17"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.867 0h-2.23v2.357h2.395V0h-.165"</span> <span class="na">fill=</span><span class="s">"#EB8B2D"</span><span class="nt">&gt;&lt;/path&gt;</span>
+          <span class="nt">&lt;/g&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-sm c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-m-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold"</span><span class="nt">&gt;</span>Fixed Income<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-caret-down c-m-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-university"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            Municipals
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-chart-line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            Equities
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Contact Support<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Log Out<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-bell"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-th"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold c-p-left-sm"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-p-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AA"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md c-text-bold"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-muted"</span><span class="nt">&gt;</span>belinda@sequoiacap.com<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-id-badge"</span><span class="nt">&gt;&lt;/i&gt;</span> My Profile
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-cog"</span><span class="nt">&gt;&lt;/i&gt;</span>Account Settings
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-question-circle"</span><span class="nt">&gt;&lt;/i&gt;</span>Help <span class="ni">&amp;amp;</span> FAQ
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-power-off"</span><span class="nt">&gt;&lt;/i&gt;</span>Log Out
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/header&gt;</span></code></pre></div>
 <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<h2 id="with-tabs">With Tabs</h2>
+<p><strong>A dark header is achieved by adding a class for inverse</strong></p>
+
+<div class="docs-example">
+<header class="c-header c-header-inverse">
+  <div class="c-header-left">
+    <div class="c-header-item">
+      <a href="#" class="c-header-item-link c-header-logo">
+        <svg height="22" viewBox="0 0 79 22" width="79" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z" fill="#1c7cd6" fill-opacity="1"></path>
+            <path d="M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51" fill="#94DBFF"></path>
+            <path d="M7.94 4.807h-2.3V22h2.47V4.807h-.17" fill="#1c7cd6"></path>
+            <path d="M7.867 0h-2.23v2.357h2.395V0h-.165" fill="#EB8B2D"></path>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <span class="c-dropdown">
+        <a class="c-header-item-link">
+          <span class="c-text-sm c-text-bold">Fixed Income</span>
+          <span class="c-text-sm">
+            <i class="fas fa-caret-down c-m-left-sm" aria-hidden="true"></i>
+          </span>
+        </a>
+        <ul class="c-dropdown-list c-dropdown-list-below" style="display: none;">
+          <a class="c-dropdown-item" href="#">
+            <span class="c-dropdown-icon fas fa-university"></span>
+            Municipals
+          </a>
+          <a class="c-dropdown-item" href="#">
+            <span class="c-dropdown-icon fas fa-chart-line"></span>
+            Equities
+          </a>
+        </ul>
+      </span>
+    </div>
+  </div>
+  <div class="c-header-right">
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-comments" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-bell" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-th" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <span class="c-dropdown">
+        <a class="c-header-item-link">
+          <span class="c-avatar c-avatar-primary" data-text="AB" data-status="success">
+          </span>
+          <span class="c-text-sm c-text-bold c-p-left-sm">Belinda Preno</span>
+          <i class="fa fa-caret-down c-p-left-sm" aria-hidden="true"></i>
+        </a>
+        <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
+          <div class="c-media c-media-middle">
+            <span class="c-avatar c-avatar-primary" data-text="AA"></span>
+            <div class="c-media-body">
+              <div class="c-text-md c-text-bold">Belinda Preno</div>
+              <div class="c-text-sm c-text-muted">belinda@sequoiacap.com</div>
+            </div>
+          </div>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-id-badge"></i> My Profile
+          </a>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-cog"></i>Account Settings
+          </a>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-question-circle"></i>Help &amp; FAQ
+          </a>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-power-off"></i>Log Out
+          </a>
+        </div>
+      </span>
+    </div>
+  </div>
+</header>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-header c-header-inverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">height=</span><span class="s">"22"</span> <span class="na">viewBox=</span><span class="s">"0 0 79 22"</span> <span class="na">width=</span><span class="s">"79"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"none"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span> <span class="na">fill-opacity=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51"</span> <span class="na">fill=</span><span class="s">"#94DBFF"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.94 4.807h-2.3V22h2.47V4.807h-.17"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.867 0h-2.23v2.357h2.395V0h-.165"</span> <span class="na">fill=</span><span class="s">"#EB8B2D"</span><span class="nt">&gt;&lt;/path&gt;</span>
+          <span class="nt">&lt;/g&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold"</span><span class="nt">&gt;</span>Fixed Income<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-caret-down c-m-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-university"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            Municipals
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-chart-line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            Equities
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-bell"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-th"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold c-p-left-sm"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-p-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AA"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md c-text-bold"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-muted"</span><span class="nt">&gt;</span>belinda@sequoiacap.com<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-id-badge"</span><span class="nt">&gt;&lt;/i&gt;</span> My Profile
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-cog"</span><span class="nt">&gt;&lt;/i&gt;</span>Account Settings
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-question-circle"</span><span class="nt">&gt;&lt;/i&gt;</span>Help <span class="ni">&amp;amp;</span> FAQ
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-power-off"</span><span class="nt">&gt;&lt;/i&gt;</span>Log Out
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<p><strong>Once inverse you can use any color for the Background</strong></p>
+
+<div class="docs-example">
+<header class="c-header c-header-inverse c-bg-primary">
+  <div class="c-header-left">
+    <div class="c-header-item">
+      <a href="#" class="c-header-item-link c-header-logo">
+        <svg height="22" viewBox="0 0 79 22" width="79" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z" fill="#fff" fill-opacity="1"></path>
+            <path d="M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51" fill="#fff"></path>
+            <path d="M7.94 4.807h-2.3V22h2.47V4.807h-.17" fill="#fff"></path>
+            <path d="M7.867 0h-2.23v2.357h2.395V0h-.165" fill="#fff"></path>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <span class="c-dropdown">
+        <a class="c-header-item-link">
+          <span class="c-text-sm c-text-bold">Fixed Income</span>
+          <span class="c-text-sm">
+            <i class="fas fa-caret-down c-m-left-sm" aria-hidden="true"></i>
+          </span>
+        </a>
+        <ul class="c-dropdown-list c-dropdown-list-below" style="display: none;">
+          <a class="c-dropdown-item" href="#">
+            <span class="c-dropdown-icon fas fa-university"></span>
+            Municipals
+          </a>
+          <a class="c-dropdown-item" href="#">
+            <span class="c-dropdown-icon fas fa-chart-line"></span>
+            Equities
+          </a>
+        </ul>
+      </span>
+    </div>
+  </div>
+  <div class="c-header-right">
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-comments" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-bell" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+        <span class="fa fa-th" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="c-header-item">
+      <span class="c-dropdown">
+        <a class="c-header-item-link">
+          <span class="c-avatar c-avatar-dark" data-text="AB" data-status="success">
+          </span>
+          <span class="c-text-sm c-text-bold c-p-left-sm">Belinda Preno</span>
+          <i class="fa fa-caret-down c-p-left-sm" aria-hidden="true"></i>
+        </a>
+        <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
+          <div class="c-media c-media-middle">
+            <span class="c-avatar c-avatar-primary" data-text="AA"></span>
+            <div class="c-media-body">
+              <div class="c-text-md c-text-bold">Belinda Preno</div>
+              <div class="c-text-sm c-text-muted">belinda@sequoiacap.com</div>
+            </div>
+          </div>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-id-badge"></i> My Profile
+          </a>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-cog"></i>Account Settings
+          </a>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-question-circle"></i>Help &amp; FAQ
+          </a>
+          <div class="c-dropdown-divider"></div>
+          <a class="c-dropdown-item" href="#">
+            <i class="c-dropdown-icon fas fa-power-off"></i>Log Out
+          </a>
+        </div>
+      </span>
+    </div>
+  </div>
+</header>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-header c-header-inverse c-bg-primary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">height=</span><span class="s">"22"</span> <span class="na">viewBox=</span><span class="s">"0 0 79 22"</span> <span class="na">width=</span><span class="s">"79"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"none"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z"</span> <span class="na">fill=</span><span class="s">"#fff"</span> <span class="na">fill-opacity=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51"</span> <span class="na">fill=</span><span class="s">"#fff"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.94 4.807h-2.3V22h2.47V4.807h-.17"</span> <span class="na">fill=</span><span class="s">"#fff"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.867 0h-2.23v2.357h2.395V0h-.165"</span> <span class="na">fill=</span><span class="s">"#fff"</span><span class="nt">&gt;&lt;/path&gt;</span>
+          <span class="nt">&lt;/g&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold"</span><span class="nt">&gt;</span>Fixed Income<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-caret-down c-m-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-university"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            Municipals
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-chart-line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            Equities
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-bell"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-th"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-dark"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold c-p-left-sm"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-p-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AA"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md c-text-bold"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-muted"</span><span class="nt">&gt;</span>belinda@sequoiacap.com<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-id-badge"</span><span class="nt">&gt;&lt;/i&gt;</span> My Profile
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-cog"</span><span class="nt">&gt;&lt;/i&gt;</span>Account Settings
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-question-circle"</span><span class="nt">&gt;&lt;/i&gt;</span>Help <span class="ni">&amp;amp;</span> FAQ
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-power-off"</span><span class="nt">&gt;&lt;/i&gt;</span>Log Out
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<h4 id="additionally-add-tabs">Additionally add Tabs</h4>
 
 <div class="docs-example">
 <header class="c-header">
   <div class="c-header-left">
     <div class="c-header-item">
       <a href="" class="c-header-item-link c-header-logo">
-              <img src="https://cupcake-design-system.github.io/assets/img/ipreo-logo.png" />
+        <svg height="22" viewBox="0 0 79 22" width="79" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z" fill="#1c7cd6" fill-opacity="1"></path>
+            <path d="M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51" fill="#94DBFF"></path>
+            <path d="M7.94 4.807h-2.3V22h2.47V4.807h-.17" fill="#1c7cd6"></path>
+            <path d="M7.867 0h-2.23v2.357h2.395V0h-.165" fill="#EB8B2D"></path>
+          </g>
+        </svg>
       </a>
     </div>
   </div>
@@ -403,7 +837,14 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-left"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://cupcake-design-system.github.io/assets/img/ipreo-logo.png"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">height=</span><span class="s">"22"</span> <span class="na">viewBox=</span><span class="s">"0 0 79 22"</span> <span class="na">width=</span><span class="s">"79"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"none"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span> <span class="na">fill-opacity=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51"</span> <span class="na">fill=</span><span class="s">"#94DBFF"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.94 4.807h-2.3V22h2.47V4.807h-.17"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.867 0h-2.23v2.357h2.395V0h-.165"</span> <span class="na">fill=</span><span class="s">"#EB8B2D"</span><span class="nt">&gt;&lt;/path&gt;</span>
+          <span class="nt">&lt;/g&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -470,182 +911,241 @@
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<h2 id="inverse">Inverse</h2>
+<h4 id="with-centered-nav">With centered nav</h4>
 
-<p>Best choice for theming. After adding an inverse class you can then change the bg color to match a theme.</p>
+<div class="docs-example">
+<header class="c-header">
+  <div class="c-header-left">
+    <div class="c-header-item">
+      <a href="#" class="c-header-item-link c-header-logo">
+        <svg height="22" viewBox="0 0 79 22" width="79" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z" fill="#1c7cd6" fill-opacity="1"></path>
+            <path d="M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51" fill="#94DBFF"></path>
+            <path d="M7.94 4.807h-2.3V22h2.47V4.807h-.17" fill="#1c7cd6"></path>
+            <path d="M7.867 0h-2.23v2.357h2.395V0h-.165" fill="#EB8B2D"></path>
+          </g>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="c-header-center">
+    <ul class="c-nav c-nav-pills">
+      <a class="c-nav-link c-nav-link-active">
+        <i class="c-nav-icon fas fa-list-alt"></i>
+        Deal Monitor
+      </a>
+      <a class="c-nav-link">
+        <i class="c-nav-icon fas fa-archive"></i>
+        Deal Query
+      </a>
+      <a class="c-nav-link">
+        <i class="c-nav-icon fas fa-exchange-alt"></i>
+        Activity Stream
+      </a>
+      <a class="c-nav-link" href="compliance.html">
+        <i class="c-nav-icon fas fa-shield-alt"></i>
+        Compliance
+      </a>
+    </ul>
+  </div>
+  <div class="c-header-right">
+  <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="c-header-item">
+        <span class="c-dropdown">
+            <a class="c-header-item-link">
+              <span class="c-avatar c-avatar-primary" data-text="AB" data-status="success">
+              </span>
+              <span class="c-text-sm c-text-bold c-p-left-sm">Belinda Preno</span>
+              <i class="fa fa-caret-down c-p-left-sm" aria-hidden="true"></i>
+            </a>
+            <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
+              <div class="c-media c-media-middle">
+                <span class="c-avatar c-avatar-primary" data-text="AA"></span>
+                <div class="c-media-body">
+                  <div class="c-text-md c-text-bold">Belinda Preno</div>
+                  <div class="c-text-sm c-text-muted">belinda@sequoiacap.com</div>
+                </div>
+              </div>
+              <div class="c-dropdown-divider"></div>
+              <a class="c-dropdown-item" href="#">
+                <i class="c-dropdown-icon fas fa-id-badge"></i> My Profile
+              </a>
+              <a class="c-dropdown-item" href="#">
+                <i class="c-dropdown-icon fas fa-cog"></i>Account Settings
+              </a>
+              <div class="c-dropdown-divider"></div>
+              <a class="c-dropdown-item" href="#">
+                <i class="c-dropdown-icon fas fa-question-circle"></i>Help &amp; FAQ
+              </a>
+              <div class="c-dropdown-divider"></div>
+              <a class="c-dropdown-item" href="#">
+                <i class="c-dropdown-icon fas fa-power-off"></i>Log Out
+              </a>
+            </div>
+          </span>
+    </div>
+  </div>
+</header>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-header"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">height=</span><span class="s">"22"</span> <span class="na">viewBox=</span><span class="s">"0 0 79 22"</span> <span class="na">width=</span><span class="s">"79"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"none"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span> <span class="na">fill-opacity=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51"</span> <span class="na">fill=</span><span class="s">"#94DBFF"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.94 4.807h-2.3V22h2.47V4.807h-.17"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.867 0h-2.23v2.357h2.395V0h-.165"</span> <span class="na">fill=</span><span class="s">"#EB8B2D"</span><span class="nt">&gt;&lt;/path&gt;</span>
+          <span class="nt">&lt;/g&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-nav c-nav-pills"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav-link c-nav-link-active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-nav-icon fas fa-list-alt"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        Deal Monitor
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav-link"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-nav-icon fas fa-archive"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        Deal Query
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav-link"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-nav-icon fas fa-exchange-alt"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        Activity Stream
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav-link"</span> <span class="na">href=</span><span class="s">"compliance.html"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-nav-icon fas fa-shield-alt"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        Compliance
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-right"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold c-p-left-sm"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-p-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AA"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md c-text-bold"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-muted"</span><span class="nt">&gt;</span>belinda@sequoiacap.com<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-id-badge"</span><span class="nt">&gt;&lt;/i&gt;</span> My Profile
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-cog"</span><span class="nt">&gt;&lt;/i&gt;</span>Account Settings
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-question-circle"</span><span class="nt">&gt;&lt;/i&gt;</span>Help <span class="ni">&amp;amp;</span> FAQ
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-power-off"</span><span class="nt">&gt;&lt;/i&gt;</span>Log Out
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
 <div class="docs-example">
 <header class="c-header c-header-inverse">
   <div class="c-header-left">
     <div class="c-header-item">
-      <a href="" class="c-header-item-link c-header-logo">
-      <img src="https://cupcake-design-system.github.io/assets/img/ipreo-logo-white.png" />
+      <a href="#" class="c-header-item-link c-header-logo">
+        <svg height="22" viewBox="0 0 79 22" width="79" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z" fill="#1c7cd6" fill-opacity="1"></path>
+            <path d="M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51" fill="#94DBFF"></path>
+            <path d="M7.94 4.807h-2.3V22h2.47V4.807h-.17" fill="#1c7cd6"></path>
+            <path d="M7.867 0h-2.23v2.357h2.395V0h-.165" fill="#EB8B2D"></path>
+          </g>
+        </svg>
       </a>
     </div>
-
   </div>
-  <div class="c-header-center"></div>
+  <div class="c-header-center">
+    <ul class="c-nav c-nav-pills">
+      <a class="c-nav-link c-nav-link-active">
+        <i class="c-nav-icon fas fa-list-alt"></i>
+        Deal Monitor
+      </a>
+      <a class="c-nav-link">
+        <i class="c-nav-icon fas fa-archive"></i>
+        Deal Query
+      </a>
+      <a class="c-nav-link">
+        <i class="c-nav-icon fas fa-exchange-alt"></i>
+        Activity Stream
+      </a>
+      <a class="c-nav-link" href="compliance.html">
+        <i class="c-nav-icon fas fa-shield-alt"></i>
+        Compliance
+      </a>
+    </ul>
+  </div>
   <div class="c-header-right">
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-search" aria-hidden="true"></span>
-      </a>
+  <div class="c-header-item">
+      <a class="c-header-item-link" href="#">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </a>
     </div>
     <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-comments" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-bell" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-th" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <span class="c-dropdown">
-        <a class="c-header-item-link" href="">
-          <span class="c-avatar c-avatar-sm c-avatar-secondary" data-text="AB" data-status="success">
+        <span class="c-dropdown">
+            <a class="c-header-item-link">
+              <span class="c-avatar c-avatar-primary" data-text="AB" data-status="success">
+              </span>
+              <span class="c-text-sm c-text-bold c-p-left-sm">Belinda Preno</span>
+              <i class="fa fa-caret-down c-p-left-sm" aria-hidden="true"></i>
+            </a>
+            <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
+              <div class="c-media c-media-middle">
+                <span class="c-avatar c-avatar-primary" data-text="AA"></span>
+                <div class="c-media-body">
+                  <div class="c-text-md c-text-bold">Belinda Preno</div>
+                  <div class="c-text-sm c-text-muted">belinda@sequoiacap.com</div>
+                </div>
+              </div>
+              <div class="c-dropdown-divider"></div>
+              <a class="c-dropdown-item" href="#">
+                <i class="c-dropdown-icon fas fa-id-badge"></i> My Profile
+              </a>
+              <a class="c-dropdown-item" href="#">
+                <i class="c-dropdown-icon fas fa-cog"></i>Account Settings
+              </a>
+              <div class="c-dropdown-divider"></div>
+              <a class="c-dropdown-item" href="#">
+                <i class="c-dropdown-icon fas fa-question-circle"></i>Help &amp; FAQ
+              </a>
+              <div class="c-dropdown-divider"></div>
+              <a class="c-dropdown-item" href="#">
+                <i class="c-dropdown-icon fas fa-power-off"></i>Log Out
+              </a>
+            </div>
           </span>
-      <i class="fa fa-caret-down c-m-left-sm" aria-hidden="true"></i>
-      </a>
-      <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
-        <li>
-          <a href="javascript:void(0)" class="c-a">Help</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Contact Support</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Settings</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Log Out</a>
-        </li>
-      </div>
-      </span>
-    </div>
-  </div>
-</header>
-
-<br />
-
-<header class="c-header c-header-inverse c-bg-primary">
-  <div class="c-header-left">
-    <div class="c-header-item">
-      <a href="" class="c-header-item-link c-header-logo">
-      <img src="https://cupcake-design-system.github.io/assets/img/ipreo-logo-white.png" />
-      </a>
-    </div>
-
-  </div>
-  <div class="c-header-center"></div>
-  <div class="c-header-right">
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-search" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-comments" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-bell" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-th" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <span class="c-dropdown">
-        <a class="c-header-item-link" href="">
-          <span class="c-avatar c-avatar-sm c-avatar-secondary" data-text="AB" data-status="success">
-          </span>
-      <i class="fa fa-caret-down c-m-left-sm" aria-hidden="true"></i>
-      </a>
-      <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
-        <li>
-          <a href="javascript:void(0)" class="c-a">Help</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Contact Support</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Settings</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Log Out</a>
-        </li>
-      </div>
-      </span>
-    </div>
-  </div>
-</header>
-
-<br />
-
-<header class="c-header c-header-inverse c-bg-success">
-  <div class="c-header-left">
-    <div class="c-header-item">
-      <a href="" class="c-header-item-link c-header-logo">
-      <img src="https://cupcake-design-system.github.io/assets/img/ipreo-logo-white.png" />
-      </a>
-    </div>
-
-  </div>
-  <div class="c-header-center"></div>
-  <div class="c-header-right">
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-search" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-comments" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-bell" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <a class="c-header-item-link" href="">
-        <span class="fa fa-th" aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="c-header-item">
-      <span class="c-dropdown">
-        <a class="c-header-item-link" href="">
-          <span class="c-avatar c-avatar-sm c-avatar-secondary" data-text="AB" data-status="success">
-          </span>
-      <i class="fa fa-caret-down c-m-left-sm" aria-hidden="true"></i>
-      </a>
-      <div class="c-dropdown-list c-dropdown-list-below c-dropdown-list-right">
-        <li>
-          <a href="javascript:void(0)" class="c-a">Help</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Contact Support</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Settings</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="c-a">Log Out</a>
-        </li>
-      </div>
-      </span>
     </div>
   </div>
 </header>
@@ -653,174 +1153,77 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-header c-header-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-left"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://cupcake-design-system.github.io/assets/img/ipreo-logo-white.png"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">height=</span><span class="s">"22"</span> <span class="na">viewBox=</span><span class="s">"0 0 79 22"</span> <span class="na">width=</span><span class="s">"79"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"none"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M24.665 18.274h1.2c.402 0 .468.065.468.457v1.25c0 .39-.066.46-.467.46h-5.45c-.422 0-.467-.04-.467-.45v-1.24c0-.39.06-.46.46-.46h1.2V7.66h-1.2c-.4 0-.47-.068-.47-.46V5.96c0-.414.04-.457.46-.457h5.45c.4 0 .46.07.46.46V7.2c0 .39-.07.456-.47.456h-1.2v10.62m9.14-6.267c1.86 0 2.51-.59 2.51-2.25 0-1.55-.57-2.05-2.28-2.05h-.82V12h.59zm-.59 7.96c0 .39-.07.46-.45.46h-2c-.4 0-.44-.05-.44-.46V5.95c0-.413.04-.456.44-.456h3.42c1.684 0 2.612.174 3.31.61.99.63 1.602 1.936 1.602 3.48 0 2.94-1.9 4.876-4.81 4.876H33.2v5.506zm13.54-7.8c1.99 0 2.69-.61 2.69-2.3 0-1.59-.61-2.1-2.44-2.1h-.88v4.39h.63zm6.6 7.81c.06.11.11.24.11.33 0 .11-.09.2-.37.27l-2.01.55c-.206.07-.206.07-.27.07-.11 0-.18-.07-.317-.31l-3.188-6.36h-1.2v5.8c0 .4-.07.47-.48.47h-2.08c-.43 0-.475-.05-.475-.54V5.97c0-.426.044-.47.473-.47h3.684c1.697 0 2.555.156 3.347.58 1.29.715 1.92 1.987 1.92 3.817 0 2.054-.745 3.326-2.53 4.264l3.366 5.83zm7.52-8.55h3.2c.34 0 .4.06.4.45v1.46c0 .39-.06.45-.4.45h-3.2v4.244h4.02c.34 0 .4.065.4.457v1.46c0 .41-.04.456-.408.456h-6.24c-.36 0-.4-.05-.4-.46v-14c0-.417.04-.46.4-.46h6.4c.29 0 .387.063.387.24 0 .063-.02.17-.035.28L65 7.49c-.06.28-.154.37-.423.37h-3.71v3.57m10.26 1.39c0 3.41.76 5.095 2.295 5.095 1.536 0 2.315-1.683 2.315-5.055 0-3.556-.73-5.18-2.34-5.18-1.47 0-2.27 1.81-2.27 5.14zm6.17-5.89c1.116 1.155 1.65 3.044 1.65 5.704 0 4.95-1.893 7.47-5.59 7.47-3.63 0-5.437-2.46-5.437-7.374 0-2.963.604-4.77 1.96-5.99.96-.833 2.187-1.26 3.657-1.26 1.47 0 2.92.55 3.766 1.44z"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span> <span class="na">fill-opacity=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M13.75 6.317h-1.912V20.49h1.91V22H9.673V4.807h4.077v1.51M0 20.49h1.91V6.317H0v-1.51h4.078V22H0v-1.51"</span> <span class="na">fill=</span><span class="s">"#94DBFF"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.94 4.807h-2.3V22h2.47V4.807h-.17"</span> <span class="na">fill=</span><span class="s">"#1c7cd6"</span><span class="nt">&gt;&lt;/path&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M7.867 0h-2.23v2.357h2.395V0h-.165"</span> <span class="na">fill=</span><span class="s">"#EB8B2D"</span><span class="nt">&gt;&lt;/path&gt;</span>
+          <span class="nt">&lt;/g&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-center"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-nav c-nav-pills"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav-link c-nav-link-active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-nav-icon fas fa-list-alt"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        Deal Monitor
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav-link"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-nav-icon fas fa-archive"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        Deal Query
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav-link"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-nav-icon fas fa-exchange-alt"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        Activity Stream
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-nav-link"</span> <span class="na">href=</span><span class="s">"compliance.html"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-nav-icon fas fa-shield-alt"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        Compliance
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-right"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-bell"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-th"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-sm c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold c-p-left-sm"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-p-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-primary"</span> <span class="na">data-text=</span><span class="s">"AA"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md c-text-bold"</span><span class="nt">&gt;</span>Belinda Preno<span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-muted"</span><span class="nt">&gt;</span>belinda@sequoiacap.com<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-id-badge"</span><span class="nt">&gt;&lt;/i&gt;</span> My Profile
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-cog"</span><span class="nt">&gt;&lt;/i&gt;</span>Account Settings
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-question-circle"</span><span class="nt">&gt;&lt;/i&gt;</span>Help <span class="err">&amp;</span> FAQ
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"c-dropdown-icon fas fa-power-off"</span><span class="nt">&gt;&lt;/i&gt;</span>Log Out
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-m-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Contact Support<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Log Out<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/header&gt;</span>
-
-<span class="nt">&lt;br&gt;</span>
-
-<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-header c-header-inverse c-bg-primary"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-left"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://cupcake-design-system.github.io/assets/img/ipreo-logo-white.png"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-center"</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-right"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-bell"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-th"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-sm c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-m-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Contact Support<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Log Out<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/header&gt;</span>
-
-<span class="nt">&lt;br&gt;</span>
-
-<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-header c-header-inverse c-bg-success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-left"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"c-header-item-link c-header-logo"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://cupcake-design-system.github.io/assets/img/ipreo-logo-white.png"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-center"</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-right"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-bell"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-th"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-header-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-dropdown"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-header-item-link"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-sm c-avatar-secondary"</span> <span class="na">data-text=</span><span class="s">"AB"</span> <span class="na">data-status=</span><span class="s">"success"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down c-m-left-sm"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-dropdown-list c-dropdown-list-below c-dropdown-list-right"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Contact Support<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"c-a"</span><span class="nt">&gt;</span>Log Out<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/header&gt;</span></code></pre></div>

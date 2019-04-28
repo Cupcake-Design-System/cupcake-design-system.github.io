@@ -8,18 +8,21 @@
 <title>Cupcake · Display</title>
 
 
+<!-- Documentation extras -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
 
-<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">
-
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
 
 <!-- Documentation extras -->
-<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
   <body>
-      <header class="c-header c-header-inverse c-header-fixed">
+      <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
     <div class="c-header-item">
@@ -332,13 +335,17 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h1 id="display-properties">Display Properties</h1>
+            <h2 id="display-properties">Display Properties</h2>
 
 <p>Single purpose classes for setting the display of an element at any breakpoint.</p>
 
 <p><em>The display property defines box’s display type, which consists of the two basic qualities of how an element generates boxes: the inner display type, which defines the kind of formatting context it generates, dictating how its descendant boxes are laid out. the outer display type, which dictates how the box participates in its parent formatting context.</em> - css3 Display Module Spec.</p>
 
-<h2 id="display-block">Display Block</h2>
+<hr />
+
+<p><br /></p>
+
+<h4 id="display-block">Display Block</h4>
 <p>Block will inherently set width to 100% of its parent element. It will also cause a line break, even if the declared width doesn’t take up the full width of the parent.</p>
 
 <div class="docs-example">
@@ -347,7 +354,11 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-block"</span><span class="nt">&gt;</span>c-d-block<span class="nt">&lt;/span&gt;</span></code></pre></div>
 <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<h2 id="display-inline-block">Display Inline Block</h2>
+<hr />
+
+<p><br /></p>
+
+<h4 id="display-inline-block">Display Inline Block</h4>
 <p>Inline-block will wrap around content inline. It also allows you to set height and width properties on the element, which display inline does not allow you to do. It does render the white-space between elements, so if you set width: 25% to four elements they will not just render as a 4 column layout by default.</p>
 
 <div class="docs-example">
@@ -362,7 +373,11 @@
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline-block"</span><span class="nt">&gt;</span>c-d-inline-block<span class="nt">&lt;/span&gt;</span></code></pre></div>
 <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<h2 id="display-inline">Display Inline</h2>
+<hr />
+
+<p><br /></p>
+
+<h4 id="display-inline">Display Inline</h4>
 <p>Inline doesn’t respect height or width values. It does not render white space between elements.</p>
 
 <div class="docs-example">
@@ -377,7 +392,11 @@
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-d-inline"</span><span class="nt">&gt;</span>c-d-inline<span class="nt">&lt;/span&gt;</span></code></pre></div>
 <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<h2 id="display-table">Display Table</h2>
+<hr />
+
+<p><br /></p>
+
+<h4 id="display-table">Display Table</h4>
 <p>The display table can be combined with display table-cell to render a table without table markup. This can be useful for vertically aligning content or for auto-calculating a variable number of table cells.</p>
 
 <div class="docs-example">
@@ -396,7 +415,11 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-<h2 id="syntax">Syntax</h2>
+<hr />
+
+<p><br /></p>
+
+<h4 id="syntax">Syntax</h4>
 
 <p>Display utility classes that apply to all breakpoints, from <code class="highlighter-rouge">sm</code> to <code class="highlighter-rouge">xl</code>, have no breakpoint abbreviation in them. These classes start with a <code class="highlighter-rouge">min-width: 0;</code>. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
 
@@ -429,9 +452,9 @@
 
 <hr />
 
-<h1 id="advanced-usage">Advanced Usage</h1>
+<p><br /></p>
 
-<h2 id="hiding-elements">Hiding Elements</h2>
+<h4 id="hiding-elements">Hiding Elements</h4>
 
 <p>To hide elements simply use the <code class="highlighter-rouge">.c-d-none</code> class or one of the <code class="highlighter-rouge">.c-{sm,md,lg,xl}-d-none</code> classes for any responsive screen variation.</p>
 
@@ -470,7 +493,7 @@
   </tbody>
 </table>
 
-<h2 id="showing-elements">Showing Elements</h2>
+<h4 id="showing-elements">Showing Elements</h4>
 
 <p>To show an element only on a given interval of screen sizes you can combine one <code class="highlighter-rouge">.c-*-d-none</code> class with a <code class="highlighter-rouge">.c-*-d-*</code> class, for example <code class="highlighter-rouge">.c-d-none .c-md-d-block .c-xl-d-none</code> will hide the element for all screen sizes except on medium and large devices.</p>
 

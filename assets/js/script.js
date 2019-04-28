@@ -18,18 +18,40 @@ $(document).ready(function($) {
 
 
 /************************************************
-* SmoothScroll
+* Modal Demo stuff
 *************************************************/
-var scroll = new SmoothScroll('a[href*="#"]', {
-  // Selectors
-  ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
-  header: null, // Selector for fixed headers (must be a valid CSS selector)
-  // Speed & Easing
-  speed: 500, // Integer. How fast to complete the scroll in milliseconds
-  offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-  easing: 'easeInOutCubic' // Easing pattern to use
+  $(document).ready(function() {
+    $("#defaultBtn").click(function() {
+        $("#newDark").toggleClass("c-modal-visible")
+    });
+    $("#close, #cancel").click(function() {
+        $("#newDark").removeClass("c-modal-visible")
+    });
+    $("#largeBtn").click(function() {
+        $("#largeModal").toggleClass("c-modal-visible")
+    });
+    $("#close, #cancel").click(function() {
+        $("#largeModal").removeClass("c-modal-visible")
+    });
+    $("#smallBtn").click(function() {
+        $("#smallModal").toggleClass("c-modal-visible")
+    });
+    $("#close, #cancel").click(function() {
+        $("#smallModal").removeClass("c-modal-visible")
+    });
+    $("#centerBtn").click(function() {
+        $("#centerModal").toggleClass("c-modal-visible")
+    });
+    $("#close, #cancel").click(function() {
+        $("#centerModal").removeClass("c-modal-visible")
+    });
+    $("#fullscreenBtn").click(function() {
+        $("#fullscreenModal").toggleClass("c-modal-visible")
+    });
+    $("#close, #cancel").click(function() {
+        $("#fullscreenModal").removeClass("c-modal-visible")
+    })
 });
-
 
 /************************************************
 * Disable empty links in docs examples
@@ -42,6 +64,9 @@ $('[href=""]').click(function (e) {
   e.preventDefault()
 })
  
+$('a[href="#"]').click(function(e) {
+  e.preventDefault ? e.preventDefault() : e.returnValue = false
+});
 
 /************************************************
 * Docs Highlight

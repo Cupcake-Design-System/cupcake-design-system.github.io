@@ -8,18 +8,21 @@
 <title>Cupcake · Switches</title>
 
 
+<!-- Documentation extras -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
 
-<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">
-
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
 
 <!-- Documentation extras -->
-<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
   <body>
-      <header class="c-header c-header-inverse c-header-fixed">
+      <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
     <div class="c-header-item">
@@ -345,313 +348,385 @@
             <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content">
 
-  <h2 id="base">Base</h2>
-
-  <p>Default switches support on/off text or blank depending on the design.</p>
+  <h3 id="switch">Switch</h3>
+  <p>The default switch is available in default and Large size.</p>
 
   <div class="docs-example">
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
+<label class="c-switch">
+  <input type="checkbox" />
+  <span class="c-switch-handle"></span>
 </label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h2 id="color-examples">Color Examples</h2>
-
-  <p>This is an example of available colors for the <strong>Switches</strong> element.</p>
-
   <div class="docs-example">
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-
-<label class="c-switch c-switch-success">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-
-<label class="c-switch c-switch-warning">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-
-<label class="c-switch c-switch-danger">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
+<label class="c-switch c-switch-lg">
+  <input type="checkbox" />
+  <span class="c-switch-handle"></span>
 </label>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-success"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-warning"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-danger"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h2 id="size-examples">Size Examples</h2>
-
-  <p>This is an example of available size’s for the <strong>Switches</strong> element.</p>
-
-  <div class="docs-example">
-<label class="c-switch c-switch-primary c-switch-xs">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary c-switch-sm">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary c-switch-lg">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary c-switch-xs"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary c-switch-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary c-switch-lg"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h2 id="disabled-state">Disabled state</h2>
-
-  <p>Make switches inactive.</p>
-
-  <div class="docs-example">
-<label class="c-switch c-switch-disabled c-switch-sm">
-    <input type="checkbox" class="c-switch-input" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-disabled">
-    <input type="checkbox" class="c-switch-input" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-disabled c-switch-lg">
-    <input type="checkbox" class="c-switch-input" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-disabled c-switch-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-disabled"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-disabled c-switch-lg"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h2 id="additional-stylesoptions">Additional Styles/Options</h2>
-
-  <h3 id="material">Material</h3>
-
-  <div class="docs-example">
-<label class="c-switch-material c-switch-primary c-switch-xs">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary c-switch-sm">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary c-switch-lg">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-material c-switch-primary c-switch-xs"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-material c-switch-primary c-switch-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-material c-switch-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-material c-switch-primary c-switch-lg"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
-
-  <h3 id="square">Square</h3>
-
-  <div class="docs-example">
-<label class="c-switch-square c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-success">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-warning">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-danger">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-disabled">
-    <input type="checkbox" class="c-switch-input" />
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-square c-switch-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-square c-switch-success"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-square c-switch-warning"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-square c-switch-danger"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-square c-switch-disabled"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
   <hr />
 
-  <h2 id="switch-states">Switch States</h2>
+  <p><br /></p>
+
+  <p><strong>Adding label text.</strong></p>
+
+  <div class="docs-example">
+<label class="c-switch">
+  <input type="checkbox" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with label</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Default with label<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-lg">
+  <input type="checkbox" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with label</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Default with label<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <hr />
+
+  <p><br /></p>
+
+  <p><strong>Adding disabled to the input.</strong></p>
+
+  <div class="docs-example">
+<label class="c-switch">
+  <input type="checkbox" disabled="" />
+  <span class="c-switch-handle"></span>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-lg">
+  <input type="checkbox" disabled="" />
+  <span class="c-switch-handle"></span>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <hr />
+
+  <p><br /></p>
+
+  <p><strong>Adding disabled to the input and label - where label text stays normal.</strong></p>
+
+  <div class="docs-example">
+<label class="c-switch">
+  <input type="checkbox" disabled="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with switch disabled</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Default with switch disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-lg">
+  <input type="checkbox" disabled="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Large with switch disabled</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Large with switch disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <hr />
+
+  <p><br /></p>
+
+  <p><strong>Adding disabled to the input and label - where label is disabled as well.</strong></p>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-disabled">
+  <input type="checkbox" disabled="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with switch disabled</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-disabled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Default with switch disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-lg c-switch-disabled">
+  <input type="checkbox" disabled="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Large with switch disabled</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-disabled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Large with switch disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <hr />
+
+  <p><br /></p>
+
+  <p><strong>Adding disabled to the input when checked.</strong></p>
+
+  <div class="docs-example">
+<label class="c-switch">
+  <input type="checkbox" checked="" disabled="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with switch selected and disabled</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Default with switch selected and disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-lg">
+  <input type="checkbox" checked="" disabled="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Large with switch selected and disabled</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Large with switch selected and disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <hr />
+
+  <p><br /></p>
+
+  <p><strong>Adding disabled to the input and label when checked.</strong></p>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-disabled">
+  <input type="checkbox" checked="" disabled="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with switch and label disabled</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-disabled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Default with switch and label disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-lg c-switch-disabled">
+  <input type="checkbox" checked="" disabled="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Large with switch and label disabled</label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-disabled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;</span>Large with switch and label disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <h3 id="additional">Additional</h3>
+  <p>Although not encouraged for general useage - additional colors are available.</p>
 
   <div class="docs-example">
 <label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked="" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
 </label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
+
+<label class="c-switch c-switch-success">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
 </label>
-<label class="c-switch c-switch-disabled">
-    <input type="checkbox" class="c-switch-input" />
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
+
+<label class="c-switch c-switch-warning">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
+</label>
+
+<label class="c-switch c-switch-danger">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
+</label>
+
+
+<label class="c-switch c-switch-lg c-switch-primary">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
+</label>
+
+<label class="c-switch c-switch-lg c-switch-success">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
+</label>
+
+<label class="c-switch c-switch-lg c-switch-warning">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
+</label>
+
+<label class="c-switch c-switch-lg c-switch-danger">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
 </label>
 </div>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/label&gt;</span>
 <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-primary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/label&gt;</span>
 <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-disabled"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"c-switch-input"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-primary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <p>You can also add text to the large switch size. Again, use carefully - anything other than ON/OFF text is outside of the intended usage.</p>
+
+  <div class="docs-example">
+<label class="c-switch c-switch-lg c-switch-primary">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label" data-on="On" data-off="Off"></label>
+</label>
+
+<label class="c-switch c-switch-lg c-switch-success">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label" data-on="On" data-off="Off"></label>
+</label>
+
+<label class="c-switch c-switch-lg c-switch-warning">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label" data-on="On" data-off="Off"></label>
+</label>
+
+<label class="c-switch c-switch-lg c-switch-danger">
+  <input type="checkbox" checked="" />
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label" data-on="On" data-off="Off"></label>
+</label>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-primary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/label&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch c-switch-lg c-switch-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-switch-handle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"c-switch-label"</span> <span class="na">data-on=</span><span class="s">"On"</span> <span class="na">data-off=</span><span class="s">"Off"</span><span class="nt">&gt;&lt;/label&gt;</span>
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 

@@ -274,37 +274,42 @@ body {
 p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 8px; }
 
-li {
+ul {
+  padding: 8px 24px; }
+
+li:not(.c-tab-item) {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 8px; }
 
 h1 {
   font-weight: 700;
   font-size: 32px;
-  margin: .67em 0; }
+  margin: .27em 0; }
 
 h2 {
   font-weight: 600;
   font-size: 24px;
-  margin: .67em 0; }
+  margin: .27em 0; }
 
 h3 {
   font-weight: 600;
   font-size: 22px;
-  margin: .67em 0; }
+  margin: .27em 0; }
 
 h4 {
   font-weight: 700;
   font-size: 20px;
-  margin: .67em 0; }
+  margin: .27em 0; }
 
 h5 {
   font-weight: 700;
   font-size: 16px;
-  margin: .67em 0; }
+  margin: .27em 0; }
 
 a {
   color: #1b6ec2; }
@@ -345,39 +350,39 @@ a {
   border-left: 0;
   margin: 20px auto;
   clear: both; }
-.main-demo-content table,
-.main-content table {
+.main-demo-content table:not(.c-table),
+.main-content table:not(.c-table) {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem; }
-.main-demo-content table > thead > tr > th,
-.main-demo-content table > thead > tr > td,
-.main-demo-content table > tbody > tr > th,
-.main-demo-content table > tbody > tr > td,
-.main-demo-content table > tfoot > tr > th,
-.main-demo-content table > tfoot > tr > td,
-.main-content table > thead > tr > th,
-.main-content table > thead > tr > td,
-.main-content table > tbody > tr > th,
-.main-content table > tbody > tr > td,
-.main-content table > tfoot > tr > th,
-.main-content table > tfoot > tr > td {
+.main-demo-content table:not(.c-table) > thead > tr > th,
+.main-demo-content table:not(.c-table) > thead > tr > td,
+.main-demo-content table:not(.c-table) > tbody > tr > th,
+.main-demo-content table:not(.c-table) > tbody > tr > td,
+.main-demo-content table:not(.c-table) > tfoot > tr > th,
+.main-demo-content table:not(.c-table) > tfoot > tr > td,
+.main-content table:not(.c-table) > thead > tr > th,
+.main-content table:not(.c-table) > thead > tr > td,
+.main-content table:not(.c-table) > tbody > tr > th,
+.main-content table:not(.c-table) > tbody > tr > td,
+.main-content table:not(.c-table) > tfoot > tr > th,
+.main-content table:not(.c-table) > tfoot > tr > td {
   border: 1px solid #ccc; }
-.main-demo-content table > thead > tr > th > p:last-child,
-.main-demo-content table > thead > tr > td > p:last-child,
-.main-demo-content table > tbody > tr > th > p:last-child,
-.main-demo-content table > tbody > tr > td > p:last-child,
-.main-demo-content table > tfoot > tr > th > p:last-child,
-.main-demo-content table > tfoot > tr > td > p:last-child,
-.main-content table > thead > tr > th > p:last-child,
-.main-content table > thead > tr > td > p:last-child,
-.main-content table > tbody > tr > th > p:last-child,
-.main-content table > tbody > tr > td > p:last-child,
-.main-content table > tfoot > tr > th > p:last-child,
-.main-content table > tfoot > tr > td > p:last-child {
+.main-demo-content table:not(.c-table) > thead > tr > th > p:last-child,
+.main-demo-content table:not(.c-table) > thead > tr > td > p:last-child,
+.main-demo-content table:not(.c-table) > tbody > tr > th > p:last-child,
+.main-demo-content table:not(.c-table) > tbody > tr > td > p:last-child,
+.main-demo-content table:not(.c-table) > tfoot > tr > th > p:last-child,
+.main-demo-content table:not(.c-table) > tfoot > tr > td > p:last-child,
+.main-content table:not(.c-table) > thead > tr > th > p:last-child,
+.main-content table:not(.c-table) > thead > tr > td > p:last-child,
+.main-content table:not(.c-table) > tbody > tr > th > p:last-child,
+.main-content table:not(.c-table) > tbody > tr > td > p:last-child,
+.main-content table:not(.c-table) > tfoot > tr > th > p:last-child,
+.main-content table:not(.c-table) > tfoot > tr > td > p:last-child {
   margin-bottom: 0; }
-.main-demo-content table td:first-child > code,
-.main-content table td:first-child > code {
+.main-demo-content table:not(.c-table) td:first-child > code,
+.main-content table:not(.c-table) td:first-child > code {
   white-space: nowrap; }
 
 .docs-title {
@@ -498,12 +503,16 @@ a {
   width: 250px;
   background-color: #f8f9fa;
   border-right: 1px solid #e9ecef; }
+  .doc-sidenav ul {
+    padding: 0;
+    margin: 0; }
   .doc-sidenav-body {
     flex: 1 1 0%;
     overflow-y: auto;
     position: relative;
     overflow-x: hidden;
-    padding: 0 24px 50px; }
+    padding: 0 24px 50px;
+    margin-bottom: 50px; }
     @media (max-width: 767px) {
       .doc-sidenav-body {
         padding: 0 24px 24px; } }
@@ -675,14 +684,14 @@ a {
       margin-right: 0;
       margin-bottom: 0;
       margin-left: 0;
+      margin-top: 16px;
       border-width: 1px; } }
   .docs-example + .highlight,
   .docs-example + .clipboard + .highlight {
     margin-top: 0; }
   .docs-example + p {
     margin-top: 2rem; }
-  .docs-example .c-btn-group,
-  .docs-example .c-card {
+  .docs-example .c-btn-group {
     margin: .5rem; }
   .docs-example .c-tabs {
     margin-bottom: 1rem; }
@@ -1095,7 +1104,7 @@ iframe {
   background-color: #ced4da;
   outline: none; }
 
-.c-header-inverse {
+.c-header-inverse.docs-nav {
   background: #212529;
   height: 48px; }
 

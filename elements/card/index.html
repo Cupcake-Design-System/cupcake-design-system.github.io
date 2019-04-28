@@ -8,18 +8,21 @@
 <title>Cupcake · Card</title>
 
 
+<!-- Documentation extras -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
 
-<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css">
-
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
 
 <!-- Documentation extras -->
-<script defer src="https://cupcake-design-system.github.io/assets/js/fontawesome-all.min.js"></script>
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
   <body>
-      <header class="c-header c-header-inverse c-header-fixed">
+      <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
     <div class="c-header-item">
@@ -345,21 +348,21 @@
             <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content">
 
-  <h2 id="intro">Intro</h2>
+  <h3 id="intro">Intro</h3>
   <p>Cards are used to group similar concepts and tasks together to make the software easier for users to scan, read, and get things done.</p>
 
   <p>Cards can include headers, footers, a wide variety of content and card-specific styles.</p>
 
   <p>Cards can also have specialist functionality when used in a specific context.</p>
 
-  <h2 id="base">Base</h2>
+  <p><br /></p>
+
+  <h4 id="base">Base</h4>
   <p>The base card provides a simple container with padding, borders, background, text values</p>
 
   <div class="docs-example">
 <div class="c-card">
   <div class="c-card-content">
-    <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>
-    <div class="c-card-content-subtitle">Lorem ipsum dolor sit amet consectetur.</div>
     <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
       enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
       id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
@@ -369,8 +372,6 @@
 </div>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-title"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consecteur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-subtitle"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
       enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
       id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
@@ -379,267 +380,565 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h3 id="with-header">With Header</h3>
+  <hr />
+
+  <p><br /></p>
+
+  <h4 id="with-hover">With Hover</h4>
+  <p>Adding a hover class provides the styles for hover interactions.</p>
+
+  <div class="docs-example">
+<div class="c-card c-card-hover">
+  <div class="c-card-content">
+    <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
+      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
+      et iaculis est facil isis nec.</div>
+  </div>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card c-card-hover"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
+      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
+      et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <hr />
+
+  <p><br /></p>
+
+  <h4 id="with-header">With Header</h4>
 
   <p>Cards can include headers, footers, a wide variety of content and card-specific styles.</p>
 
   <div class="docs-example">
+<div class="c-row">
+
+  <div class="c-col-md-4">
+    <div class="c-card">
+      <header class="c-card-header">
+        <div class="c-card-header-title">
+          Card Title
+        </div>
+      </header>
+      <div class="c-card-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+        ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+        dignissim nulla
+        id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui,
+        et iaculis est facil isis nec.
+      </div>
+    </div>
+  </div>
+
+  <div class="c-col-md-4">
+    <div class="c-card">
+      <header class="c-card-header">
+        <div class="c-card-header-title">
+          Card Title
+        </div>
+        <div class="c-card-header-menu">
+          <a class="c-btn c-btn-secondary c-btn-sm c-btn-box">
+            <i class="fa fa-expand"></i>
+          </a>
+          <a class="c-btn c-btn-secondary c-btn-sm c-btn-box">
+            <i class="fa fa-cog"></i>
+          </a>
+        </div>
+      </header>
+      <div class="c-card-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+        ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+        dignissim nulla
+        id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui,
+        et iaculis est facil isis nec.
+      </div>
+    </div>
+  </div>
+
+  <div class="c-col-md-4">
+    <div class="c-card">
+      <header class="c-card-header">
+        <div class="c-card-header-title">
+          Card Title
+        </div>
+        <div class="c-card-header-menu">
+          <button class="c-btn c-btn-sm c-btn-primary">Button</button>
+        </div>
+      </header>
+      <div class="c-card-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+        ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+        dignissim nulla
+        id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui,
+        et iaculis est facil isis nec.
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-row"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
+          Card Title
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/header&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+        ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+        dignissim nulla
+        id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui,
+        et iaculis est facil isis nec.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
+          Card Title
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary c-btn-sm c-btn-box"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-expand"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary c-btn-sm c-btn-box"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cog"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/header&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+        ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+        dignissim nulla
+        id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui,
+        et iaculis est facil isis nec.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
+          Card Title
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-sm c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/header&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+        ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+        dignissim nulla
+        id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui,
+        et iaculis est facil isis nec.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <p><strong>You can also add a subtitle and the right menu items will stay aligned.</strong></p>
+
+  <div class="docs-example">
+<div class="c-row">
+    <div class="c-col-md-4">
+      <div class="c-card">
+        <header class="c-card-header">
+          <div class="c-card-header-title">
+            Card Title
+          </div>
+          <div class="c-card-header-subtitle">
+            Card Subtitle
+          </div>
+        </header>
+        <div class="c-card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+          ac suscipit eros. Praesent fringilla,
+          enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+          dignissim nulla
+          id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+          dui,
+          et iaculis est facil isis nec.
+        </div>
+      </div>
+    </div>
+    <div class="c-col-md-4">
+      <div class="c-card">
+        <header class="c-card-header">
+          <div class="c-card-header-title">
+            Card Title
+          </div>
+          <div class="c-card-header-subtitle">
+            Card Subtitle
+          </div>
+          <div class="c-card-header-menu">
+            <a class="c-btn c-btn-secondary c-btn-sm c-btn-box" href="#">
+              <i class="fa fa-expand" aria-hidden="true"></i>
+            </a>
+            <a class="c-btn c-btn-secondary c-btn-sm c-btn-box" href="#">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            </a>
+          </div>
+        </header>
+        <div class="c-card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+          ac suscipit eros. Praesent fringilla,
+          enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+          dignissim nulla
+          id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+          dui,
+          et iaculis est facil isis nec.
+        </div>
+      </div>
+    </div>
+    <div class="c-col-md-4">
+      <div class="c-card">
+        <header class="c-card-header">
+          <div class="c-card-header-title">
+            Card Title
+          </div>
+          <div class="c-card-header-subtitle">
+            Card Subtitle
+          </div>
+          <div class="c-card-header-menu">
+            <button class="c-btn c-btn-primary">Button</button>
+          </div>
+        </header>
+        <div class="c-card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+          ac suscipit eros. Praesent fringilla,
+          enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+          dignissim nulla
+          id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+          dui,
+          et iaculis est facil isis nec.
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
+            Card Title
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-subtitle"</span><span class="nt">&gt;</span>
+            Card Subtitle
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/header&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+          ac suscipit eros. Praesent fringilla,
+          enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+          dignissim nulla
+          id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+          dui,
+          et iaculis est facil isis nec.
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
+            Card Title
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-subtitle"</span><span class="nt">&gt;</span>
+            Card Subtitle
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary c-btn-sm c-btn-box"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-expand"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary c-btn-sm c-btn-box"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/header&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+          ac suscipit eros. Praesent fringilla,
+          enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+          dignissim nulla
+          id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+          dui,
+          et iaculis est facil isis nec.
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
+            Card Title
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-subtitle"</span><span class="nt">&gt;</span>
+            Card Subtitle
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/header&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui,
+          ac suscipit eros. Praesent fringilla,
+          enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque
+          dignissim nulla
+          id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+          dui,
+          et iaculis est facil isis nec.
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+  <hr />
+
+  <p><br /></p>
+
+  <h4 id="header-and-footer">Header and Footer</h4>
+
+  <div class="docs-example">
 <div class="c-card">
-  <header class="c-card-header">
-    <div class="c-card-header-title">
-      Component
-    </div>
-    <div class="c-card-header-menu">
-    	<div class="c-card-header-menu-item">
-    		<a class="c-btn c-btn-box c-btn-secondary" href=""><i class="fas fa-cog" aria-hidden="true"></i></a>
-    	</div>
-    	<div class="c-card-header-menu-item">
-    		<a class="c-btn c-btn-box c-btn-secondary" href=""><i class="fas fa-cog" aria-hidden="true"></i></a>
-    	</div>
-    </div>
-  </header>
+<header class="c-card-header">
+  <div class="c-card-header-title">
+    Card Title
+  </div>
+  <div class="c-card-header-subtitle">
+    Card Subtitle
+  </div>
+  <div class="c-card-header-menu">
+    <a class="c-btn c-btn-secondary c-btn-sm c-btn-box" href="#">
+      <i class="fa fa-expand" aria-hidden="true"></i>
+    </a>
+    <a class="c-btn c-btn-secondary c-btn-sm c-btn-box" href="#">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+    </a>
+  </div>
+</header>
   <div class="c-card-content">
     <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>
     <div class="c-card-content-subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-    <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
+    <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac
+      suscipit eros. Praesent fringilla,
+      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+      nulla
+      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+      dui,
       et iaculis est facil isis nec.</div>
+  </div>
+  <div class="c-card-footer">
+    <div class="c-card-footer-item c-card-footer-item-left">
+      <button class="c-btn c-btn-sm c-btn-primary">Button</button>
+    </div>
+    <a class="c-card-footer-item c-card-footer-item-center" href="#">
+      Card Footer Link
+    </a>
+    <div class="c-card-footer-item c-card-footer-item-right">
+      <button class="c-btn c-btn-sm c-btn-primary">Button</button>
+    </div>
   </div>
 </div>
 </div>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
-      Component
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
-    	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu-item"</span><span class="nt">&gt;</span>
-    		<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-secondary"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-    	<span class="nt">&lt;/div&gt;</span>
-    	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu-item"</span><span class="nt">&gt;</span>
-    		<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-secondary"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-    	<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
+    Card Title
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-subtitle"</span><span class="nt">&gt;</span>
+    Card Subtitle
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary c-btn-sm c-btn-box"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-expand"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary c-btn-sm c-btn-box"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-title"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consecteur.<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-subtitle"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac
+      suscipit eros. Praesent fringilla,
+      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+      nulla
+      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+      dui,
       et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-footer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-footer-item c-card-footer-item-left"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-sm c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-card-footer-item c-card-footer-item-center"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      Card Footer Link
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-footer-item c-card-footer-item-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-sm c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h3 id="header-and-footer">Header and Footer</h3>
+  <hr />
+
+  <p><br /></p>
+
+  <h4 id="card-group">Card Group</h4>
+  <p>Cards can be grouped together.</p>
 
   <div class="docs-example">
-<div class="c-card">
-  <header class="c-card-header">
-    <div class="c-card-header-title">
-      Component
+<div class="c-card-group">
+  <div class="c-card">
+    <div class="c-card-content">
+      <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.</div>
     </div>
-    <div class="c-card-header-menu">
-      <a class="c-btn c-btn-box c-btn-secondary" href=""><i class="fas fa-cog" aria-hidden="true"></i></a>
-    </div>
-  </header>
-  <div class="c-card-content">
-    <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>
-    <div class="c-card-content-subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-    <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.</div>
   </div>
-  <div class="c-card-footer">Footer if needed</div>
+
+  <div class="c-card">
+    <div class="c-card-content">
+      <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.</div>
+    </div>
+  </div>
+
+  <div class="c-card">
+    <div class="c-card-content">
+      <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.
+      </div>
+    </div>
+  </div>
 </div>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
-      Component
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-secondary"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/header&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-title"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consecteur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-subtitle"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-footer"</span><span class="nt">&gt;</span>Footer if needed<span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h3 id="colors">Colors</h3>
-
-  <p>This is an example of available colors for the <strong>Card</strong> element.</p>
+  <p><strong>Remove gutters from the card group with a collapsed class.</strong></p>
 
   <div class="docs-example">
-<div class="c-card c-card-primary">
-  <header class="c-card-header">
-    <div class="c-card-header-title">
-      Component
+<div class="c-card-group-collapsed">
+  <div class="c-card">
+    <div class="c-card-content">
+      <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.</div>
     </div>
-    <div class="c-card-header-menu">
-      <a class="c-btn c-btn-box c-btn-secondary" href=""><i class="fas fa-cog" aria-hidden="true"></i></a>
-    </div>
-  </header>
-  <div class="c-card-content">
-    <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>
-    <div class="c-card-content-subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-    <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.</div>
   </div>
-  <div class="c-card-footer">Footer if needed</div>
-</div>
 
-<div class="c-card c-card-success">
-  <header class="c-card-header">
-    <div class="c-card-header-title">
-      Component
+  <div class="c-card">
+    <div class="c-card-content">
+      <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.</div>
     </div>
-    <div class="c-card-header-menu">
-      <a class="c-btn c-btn-box c-btn-secondary" href=""><i class="fas fa-cog" aria-hidden="true"></i></a>
-    </div>
-  </header>
-  <div class="c-card-content">
-    <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>
-    <div class="c-card-content-subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-    <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.</div>
   </div>
-  <div class="c-card-footer">Footer if needed</div>
-</div>
-
-<div class="c-card c-card-warning">
-  <header class="c-card-header">
-    <div class="c-card-header-title">
-      Component
+  
+  <div class="c-card">
+    <div class="c-card-content">
+      <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.
+      </div>
     </div>
-    <div class="c-card-header-menu">
-      <a class="c-btn c-btn-box c-btn-secondary" href=""><i class="fas fa-cog" aria-hidden="true"></i></a>
-    </div>
-  </header>
-  <div class="c-card-content">
-    <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>
-    <div class="c-card-content-subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-    <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.</div>
   </div>
-  <div class="c-card-footer">Footer if needed</div>
-</div>
-
-<div class="c-card c-card-danger">
-  <header class="c-card-header">
-    <div class="c-card-header-title">
-      Component
-    </div>
-    <div class="c-card-header-menu">
-      <a class="c-btn c-btn-box c-btn-secondary" href=""><i class="fas fa-cog" aria-hidden="true"></i></a>
-    </div>
-  </header>
-  <div class="c-card-content">
-    <div class="c-card-content-title">Lorem ipsum dolor sit amet consecteur.</div>
-    <div class="c-card-content-subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-    <div class="c-card-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.</div>
-  </div>
-  <div class="c-card-footer">Footer if needed</div>
 </div>
 </div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card c-card-primary"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
-      Component
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-group-collapsed"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-secondary"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/header&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-title"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consecteur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-subtitle"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-footer"</span><span class="nt">&gt;</span>Footer if needed<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card c-card-success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
-      Component
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-secondary"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/header&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-title"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consecteur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-subtitle"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-footer"</span><span class="nt">&gt;</span>Footer if needed<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card c-card-warning"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
-      Component
+  
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
+        enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim
+        nulla id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo
+        dui, et iaculis est facil isis nec.
+      <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-secondary"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/header&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-title"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consecteur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-subtitle"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-footer"</span><span class="nt">&gt;</span>Footer if needed<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card c-card-danger"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-card-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-title"</span><span class="nt">&gt;</span>
-      Component
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-header-menu"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-box c-btn-secondary"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/header&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-title"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consecteur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-subtitle"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet consectetur.<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-content-body"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis luctus dui, ac suscipit eros. Praesent fringilla,
-      enim quis placerat dignissim, turpis metus vehicula lectus, faucibus tie turpis metus et urna. Quisque dignissim nulla
-      id scelerisque maximus. Praesent consectetur rhoncus mi, eget sollicitudin leo placerat in. Sed semper commodo dui,
-      et iaculis est facil isis nec.<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-card-footer"</span><span class="nt">&gt;</span>Footer if needed<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
   <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
@@ -649,7 +948,7 @@
 <!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content">
 
-  <h3 id="card">Card</h3>
+  <h4 id="card">Card</h4>
   <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--cards&amp;nav=0"></iframe>
 
 </div>
@@ -658,9 +957,9 @@
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content">
 
-  <p>#Overview</p>
+  <h2 id="overview">Overview</h2>
 
-  <h3 id="structure">Structure</h3>
+  <h4 id="structure">Structure</h4>
 
   <p><img src="https://cupcake-design-system.github.io/assets/img/elements/card/card-structure.png" /></p>
 
@@ -674,13 +973,13 @@
     <li>the card has a settings icon and overlay</li>
   </ul>
 
-  <h3 id="titles">Titles</h3>
+  <h4 id="titles">Titles</h4>
   <p><img src="https://cupcake-design-system.github.io/assets/img/elements/card/card-dont.png" /></p>
 
-  <h3 id="size">Size</h3>
+  <h4 id="size">Size</h4>
   <p><img src="https://cupcake-design-system.github.io/assets/img/elements/card/card-size.png" /></p>
 
-  <h3 id="content">Content</h3>
+  <h4 id="content">Content</h4>
   <p><img src="https://cupcake-design-system.github.io/assets/img/elements/card/card-content.png" /></p>
 
 </div>
