@@ -20,167 +20,187 @@ tabs:
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
-
-Default switches support on/off text or blank depending on the design.
-
-{% example html %}
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-## Color Examples
-
-This is an example of available colors for the **{{ page.title }}** element.
-
+### Switch
+The default switch is available in default and Large size.
 
 {% example html %}
-{% for color in page.colors %}
-<label class="c-switch c-switch-{{ color }}">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endfor %}
-{% endexample %}
-
-
-## Size Examples
-
-This is an example of available size's for the **{{ page.title }}** element.
-
-
-{% example html %}
-<label class="c-switch c-switch-primary c-switch-xs">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary c-switch-sm">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-primary c-switch-lg">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
+<label class="c-switch">
+  <input type="checkbox">
+  <span class="c-switch-handle"></span>
 </label>
 {% endexample %}
 
 
-## Disabled state
-
-Make switches inactive.
-
 {% example html %}
-<label class="c-switch c-switch-disabled c-switch-sm">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-disabled">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch c-switch-disabled c-switch-lg">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-
-## Additional Styles/Options
-
-
-### Material
-{% example html %}
-<label class="c-switch-material c-switch-primary c-switch-xs">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary c-switch-sm">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-material c-switch-primary c-switch-lg">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
-</label>
-{% endexample %}
-
-### Square
-{% example html %}
-<label class="c-switch-square c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-success">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-warning">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-danger">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
-</label>
-<label class="c-switch-square c-switch-disabled">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label" data-on="On" data-off="Off"></span>
-    <span class="c-switch-handle"></span>
+<label class="c-switch c-switch-lg">
+  <input type="checkbox">
+  <span class="c-switch-handle"></span>
 </label>
 {% endexample %}
 
 <hr>
+<br>
 
-## Switch States
+
+**Adding label text.**
+{% example html %}
+<label class="c-switch">
+  <input type="checkbox">
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with label</label>
+</label>
+{% endexample %}
+
 
 {% example html %}
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input" checked>
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
+<label class="c-switch c-switch-lg">
+  <input type="checkbox">
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with label</label>
 </label>
-<label class="c-switch c-switch-primary">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
+{% endexample %}
+
+<hr>
+<br>
+
+
+**Adding disabled to the input.**
+{% example html %}
+<label class="c-switch">
+  <input type="checkbox" disabled>
+  <span class="c-switch-handle"></span>
 </label>
+{% endexample %}
+
+{% example html %}
+<label class="c-switch c-switch-lg">
+  <input type="checkbox" disabled>
+  <span class="c-switch-handle"></span>
+</label>
+{% endexample %}
+
+
+<hr>
+<br>
+
+
+**Adding disabled to the input and label - where label text stays normal.**
+{% example html %}
+<label class="c-switch">
+  <input type="checkbox" disabled>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with switch disabled</label>
+</label>
+{% endexample %}
+
+{% example html %}
+<label class="c-switch c-switch-lg">
+  <input type="checkbox" disabled>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Large with switch disabled</label>
+</label>
+{% endexample %}
+
+<hr>
+<br>
+
+
+**Adding disabled to the input and label - where label is disabled as well.**
+{% example html %}
 <label class="c-switch c-switch-disabled">
-    <input type="checkbox" class="c-switch-input">
-    <span class="c-switch-label"></span>
-    <span class="c-switch-handle"></span>
+  <input type="checkbox" disabled>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with switch disabled</label>
 </label>
+{% endexample %}
+
+
+{% example html %}
+<label class="c-switch c-switch-lg c-switch-disabled">
+  <input type="checkbox" disabled>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Large with switch disabled</label>
+</label>
+{% endexample %}
+
+
+<hr>
+<br>
+
+
+**Adding disabled to the input when checked.**
+{% example html %}
+<label class="c-switch">
+  <input type="checkbox" checked disabled>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with switch selected and disabled</label>
+</label>
+{% endexample %}
+
+
+{% example html %}
+<label class="c-switch c-switch-lg">
+  <input type="checkbox" checked disabled>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Large with switch selected and disabled</label>
+</label>
+{% endexample %}
+
+
+
+<hr>
+<br>
+
+
+**Adding disabled to the input and label when checked.**
+{% example html %}
+<label class="c-switch c-switch-disabled">
+  <input type="checkbox" checked disabled>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Default with switch and label disabled</label>
+</label>
+{% endexample %}
+
+
+{% example html %}
+<label class="c-switch c-switch-lg c-switch-disabled">
+  <input type="checkbox" checked disabled>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label">Large with switch and label disabled</label>
+</label>
+{% endexample %}
+
+
+### Additional
+Although not encouraged for general useage - additional colors are available.
+
+{% example html %}
+{% for color in page.colors %}
+<label class="c-switch c-switch-{{ color }}">
+  <input type="checkbox" checked>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
+</label>
+{% endfor %}
+{% for color in page.colors %}
+<label class="c-switch c-switch-lg c-switch-{{ color }}">
+  <input type="checkbox" checked>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label"></label>
+</label>
+{% endfor %}
+{% endexample %}
+
+You can also add text to the large switch size. Again, use carefully - anything other than ON/OFF text is outside of the intended usage.
+
+{% example html %}
+{% for color in page.colors %}
+<label class="c-switch c-switch-lg c-switch-{{ color }}">
+  <input type="checkbox" checked>
+  <span class="c-switch-handle"></span>
+  <label class="c-switch-label" data-on="On" data-off="Off"></label>
+</label>
+{% endfor %}
 {% endexample %}
 
 

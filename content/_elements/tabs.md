@@ -1,26 +1,20 @@
 ---
 title: Tabs
 description: Tabs keep related content in a single container
-colors:
-- primary
-- secondary
-- success
-- danger
 sizes:
 - xs
 - sm
 - lg
 - xl
 tabs:
-- Code 
-- Angular
+- Code
 - Guidelines
 ---
 
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+#### Base
 Use tabs to alternate among related views within the same context.
 
 {% example html %}
@@ -40,50 +34,8 @@ Use tabs to alternate among related views within the same context.
 </ul>
 {% endexample %}
 
-## Size Examples
 
-### Small
-
-{% example html %}
-<ul class="c-tabs c-tabs-sm">
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href="">Rock</a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link c-tab-item-link-active" href="">Paper</a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href="">Scissors</a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href="">Spock</a>
-  </li>
-</ul>
-{% endexample %}
-
-### Large
-
-{% example html %}
-<ul class="c-tabs c-tabs-lg">
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href="">Rock</a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link c-tab-item-link-active" href="">Paper</a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href="">Scissors</a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href="">Spock</a>
-  </li>
-</ul>
-{% endexample %}
-
-## Additional Styles/Options
-
-### Fullwidth
-
+**Fullwidth to stretch the entire container**
 {% example html %}
 <ul class="c-tabs c-tabs-fullwidth">
   <li class="c-tab-item">
@@ -109,8 +61,82 @@ Use tabs to alternate among related views within the same context.
 </ul>
 {% endexample %}
 
-### Toggle
+<hr>
+<br>
 
+#### Additional Sizes
+Using additional sizes can help tighter layouts or with another element such as cards.
+<br>
+
+**Small**
+{% example html %}
+<ul class="c-tabs c-tabs-sm">
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href="">Rock</a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link c-tab-item-link-active" href="">Paper</a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href="">Scissors</a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href="">Spock</a>
+  </li>
+</ul>
+{% endexample %}
+
+**Large**
+{% example html %}
+<ul class="c-tabs c-tabs-lg">
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href="">Rock</a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link c-tab-item-link-active" href="">Paper</a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href="">Scissors</a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href="">Spock</a>
+  </li>
+</ul>
+{% endexample %}
+
+<hr>
+<br>
+
+#### Alignment
+By default tabs are left aligned. Additional classes provide center and right alignment options.
+
+**Center**
+{% example html %}
+<ul class="c-tabs c-tabs-center">
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href>
+      <i class="fas fa-hand-rock" aria-hidden="true"></i> Rock
+    </a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link c-tab-item-link-active" href>
+      <i class="fas fa-hand-paper" aria-hidden="true"></i> Paper
+    </a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href>
+      <i class="fas fa-hand-scissors" aria-hidden="true"></i> Scissors
+    </a>
+  </li>
+  <li class="c-tab-item">
+    <a class="c-tab-item-link" href>
+      <i class="fas fa-hand-spock" aria-hidden="true"></i> Spock
+    </a>
+  </li>
+</ul>
+{% endexample %}
+
+**Right**
 {% example html %}
 <ul class="c-tabs c-tabs-right">
   <li class="c-tab-item">
@@ -136,7 +162,15 @@ Use tabs to alternate among related views within the same context.
 </ul>
 {% endexample %}
 
-### Bordered
+
+<hr>
+<br>
+
+
+#### Additional Styles/Options
+
+
+**Bordered**
 
 {% example html %}
 <ul class="c-tabs c-tabs-bordered">
@@ -163,59 +197,6 @@ Use tabs to alternate among related views within the same context.
 </ul>
 {% endexample %}
 
-## Alignment
-
-### Center
-{% example html %}
-<ul class="c-tabs c-tabs-center">
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href>
-      <i class="fas fa-hand-rock" aria-hidden="true"></i> Rock
-    </a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link c-tab-item-link-active" href>
-      <i class="fas fa-hand-paper" aria-hidden="true"></i> Paper
-    </a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href>
-      <i class="fas fa-hand-scissors" aria-hidden="true"></i> Scissors
-    </a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href>
-      <i class="fas fa-hand-spock" aria-hidden="true"></i> Spock
-    </a>
-  </li>
-</ul>
-{% endexample %}
-
-### Right
-{% example html %}
-<ul class="c-tabs c-tabs-right">
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href>
-      <i class="fas fa-hand-rock" aria-hidden="true"></i> Rock
-    </a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link c-tab-item-link-active" href>
-      <i class="fas fa-hand-paper" aria-hidden="true"></i> Paper
-    </a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href>
-      <i class="fas fa-hand-scissors" aria-hidden="true"></i> Scissors
-    </a>
-  </li>
-  <li class="c-tab-item">
-    <a class="c-tab-item-link" href>
-      <i class="fas fa-hand-spock" aria-hidden="true"></i> Spock
-    </a>
-  </li>
-</ul>
-{% endexample %}
 
 </div>
 <!-- End Cupcake Code Tab -->
@@ -223,7 +204,7 @@ Use tabs to alternate among related views within the same context.
 <!-- Start Angular Code Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Storybook iframe
+##### Storybook iframe
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
 
 </div>

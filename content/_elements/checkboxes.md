@@ -1,16 +1,6 @@
 ---
 title: Checkboxes
 description: Checkboxes allow users to select none, one or multiple options from a pre-defined list of options.
-colors:
-- primary
-- secondary
-- success
-- danger
-sizes:
-- xs
-- sm
-- lg
-- xl
 tabs:
 - Code
 - Angular
@@ -20,62 +10,71 @@ tabs:
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Checkbox
-Checkboxes are most commonly used to give merchants a way to make a range of selections (zero, one, or multiple).
+### Checkbox
+The default checkbox requires the `<label></label>` tag even if no text is provided.
 
 {% example html %}
-<label class="c-checkbox">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Basic Checkbox
-</label>
+<div class="c-checkbox">
+	<input type="checkbox" name="check">
+	<label></label>
+</div>
 {% endexample %}
 
-## Color Examples
-
+**Adding label text that is not clickable.**
 {% example html %}
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Primary
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-success"></i>
-    Success
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-warning"></i>
-    Warning
-</label>
-
-<label class="c-checkbox c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-danger"></i>
-    Danger
-</label>
+<div class="c-checkbox">
+	<input type="checkbox" name="check">
+	<label>Label Text</label>
+</div>
 {% endexample %}
 
-## Size Examples
+
+**To make the full label clickable - supply the input with an id and the label with a a matching for value as shown below.**
+{% example html %}
+<div class="c-checkbox">
+  <input type="checkbox" id="checkbox1" name="check">
+  <label for="checkbox1">Default with Label</label>
+</div>
+{% endexample %}
+
+
+
+**Adding disabled to the input.**
 
 {% example html %}
-<label class="c-checkbox-sm c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
+<div class="c-checkbox">
+  <input type="checkbox" id="checkbox2" name="check" disabled>
+  <label for="checkbox2">This is still a normal label</label>
+</div>
+{% endexample %}
 
-<label class="c-checkbox-lg c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
 
-<label class="c-checkbox-xl c-m-right-sm">
-    <input type="checkbox" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
+**Adding disabled to the input and label.**
+
+{% example html %}
+<div class="c-checkbox" disabled>
+  <input type="checkbox" id="checkbox3" name="checkbox" disabled>
+  <label for="checkbox3">This label is disabled</label>
+</div>
+{% endexample %}
+
+
+**Adding disabled to a checked input.**
+
+{% example html %}
+<div class="c-checkbox">
+  <input type="checkbox" id="checkbox4" name="checkbox" checked="checked" disabled>
+  <label for="checkbox4">This is still a normal label</label>
+</div>
+{% endexample %}
+
+
+**Adding disabled to a checked input and label.**
+{% example html %}
+<div class="c-checkbox" disabled="">
+  <input type="checkbox" id="checkbox5" name="checkbox4" checked="checked" disabled="">
+  <label for="checkbox5">This label is disabled</label>
+</div>
 {% endexample %}
 
 </div>

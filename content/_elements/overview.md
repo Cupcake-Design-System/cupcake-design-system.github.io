@@ -13,14 +13,17 @@ weight: 1
   </ul>
 {% endfor %} -->
 
-<div class="c-header-md">Elements Overview</div>
+#### Elements Overview
 
-<div class="c-header-sm c-m-top-lg">What is an element?</div>
+**What is an element?**
+
 Elements are the foundational building blocks that comprise all user interfaces. 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-diagram.png" width="800px;">
 
-<div class="c-header-sm c-m-top-lg">Element Design Process</div>
+
+#### Element Design Process
+
 A new element is added to the Cupcake library after it is cycled through the following design process:
 
 - There is a clear, repeatable need for the element across multiple products
@@ -29,13 +32,13 @@ A new element is added to the Cupcake library after it is cycled through the fol
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-design-process-diagram.png" width="300px;">
 
-<div class="c-header-sm c-m-top-lg">Custom Elements</div>
+#### Custom Elements
 
 - When to reach out for a custom element
 - Expectations for a custom element
 - Etc...
 
-<div class="c-header-sm c-m-top-lg">Contributing to the Element library</div>
+#### Contributing to the Element library
 
 Do you have an element in your product that you use frequently? Send it to us! One of the major goals for Cupcake Design System is to house all elements in one place to make them eaily accessible across the company.
 

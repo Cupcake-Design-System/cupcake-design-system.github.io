@@ -8,13 +8,12 @@ colors:
 - danger
 tabs: 
 - Code
-- Angular
 - Guidelines
 ---
 
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+### Base
 
 Alerts provide contextual information relevent to the user.
 
@@ -26,63 +25,92 @@ The default alert does not imply action. The color is simple gray and doesn't in
 </div>
 {% endexample %}
 
-## Color Examples
+
+<hr>
+<br>
+
+### Color Examples
 
 This is an example of available colors for the **{{ page.title }}** element. 
 
 {% example html %}
 {% for color in page.colors %}
 <div class="c-alert c-alert-{{ color }}">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
+  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+    <div class="c-alert-content"><strong>
     This is a {{ color | capitalize }} alert
+      </strong>
+    </div>
+    <a href="#" class="c-alert-close" aria-hidden="true"></a>
 </div>
 {% endfor %}
 {% endexample %}
 
 
-## Additional Styles/Options
+<hr>
+<br>
+
 
 ### Alert top
+Designed to sit flush vertically and horizontally within a container. In most cases at the very top of the page.
 
 {% example html %}
 {% for color in page.colors %}
 <div class="c-alert c-alert-top c-alert-{{ color }}">
-    <a href="" class="c-a c-alert-close" data-dismiss="c-alert" aria-hidden="true">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    This is a {{ color | capitalize }} alert
+  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+    <div class="c-alert-content">
+      <div class="c-alert-title">{{ color | capitalize }} Alert Title</div>
+        Lipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  <a href="#" class="c-alert-close" aria-hidden="true"></a>
 </div>
 <br>
 {% endfor %}
 {% endexample %}
+
+
+<hr>
+<br>
+
 
 ### In columns with icons
 
 {% example html %}
 <div class="c-row">
     <div class="c-col">
-        <div class="c-alert c-alert-danger">
-            <i class="fa fa-exclamation-circle c-m-right-sm"></i> Oops... Something went wrong!
-            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+    <div class="c-alert c-alert-danger">
+      <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+        <div class="c-alert-content"><strong>
+        This is a {{ color | capitalize }} alert
+          </strong>
         </div>
+        <a href="#" class="c-alert-close" aria-hidden="true"></a>
+    </div>
     </div>
     <div class="c-col">
-        <div class="c-alert c-alert-success">
-            <i class="fa fa-check-circle c-m-right-sm"></i> Great job! You are ready for the next step.
-            <a class="c-a c-alert-close"><i class="fa fa-times"></i></a>
+    <div class="c-alert c-alert-success">
+      <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+        <div class="c-alert-content"><strong>
+        This is a {{ color | capitalize }} alert
+          </strong>
         </div>
+        <a href="#" class="c-alert-close" aria-hidden="true"></a>
+    </div>
     </div>
 </div>
 {% endexample %}
+
+
+<hr>
+<br>
 
 ### Toast
 {% example html %}
 {% for color in page.colors %}
 <div class="c-toast-alert c-toast-alert-{{ color }}">
-    <button href="javascript:void(0)" class="c-toast-alert-close">&times;</button> Nam porttitor blandit accumsan. Ut vel
-    dictum sem, a pretium dui.
+  <i class="c-toast-alert-icon fa fa-check-circle"></i>
+  Nam porttitor blandit accumsan.
+  Ut vel dictum sem, a pretium dui.
+  <a href="#" class="c-toast-alert-close"></a>
 </div>
 {% endfor %}
 {% endexample %}
@@ -103,7 +131,7 @@ This is an example of available colors for the **{{ page.title }}** element.
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Overview
+## Overview
 
 **Types of alerts available:**
 
@@ -116,12 +144,14 @@ This is an example of available colors for the **{{ page.title }}** element.
 <hr>
 
  <!-- Start Banner Alert Row -->
-  <div class="c-header-md c-m-top-sm c-m-bottom-sm">Banner Alerts</div>
-  Banner alerts are used to communicate critical status information that is being communicated by the system.
+#### Banner Alerts
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert/banner-alert-4.png" width="100%;">
+Banner alerts are used to communicate critical status information that is being communicated by the system.
 
-   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert/banner-alert-3.png" width="100%;">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert/banner-alert-4.png" width="100%;">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert/banner-alert-3.png" width="100%;">
 
 - Banner alerts slide in from the top of the browser and remain there until the condition (for it's activation) clears or it is dismissed.
 
@@ -129,14 +159,19 @@ This is an example of available colors for the **{{ page.title }}** element.
 
 - Persistent banner alerts can be hidden. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for it's activation) is still valid.
 
-<div class="c-header-xs">Banner Alert Placement</div>
+<br>
+<hr>
+
+#### Banner Alert Placement
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert/banner-alert-1.png" width="50%;">
 
-<div class="c-header-xs">Banner Alert Color Options</div>
-Page status alerts fall into three categories:
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/banner-alert-colors.png" width="75%;">
+
+<br>
+<hr>
+
+#### Banner Alert Communication
 
 **What banner alerts communicate:**
 - System unavailable
@@ -147,10 +182,41 @@ Page status alerts fall into three categories:
 - Feedback on actions the user has performed
 - Alerts relating to specific pages or components
 
+
+<br>
+<hr>
+
+#### Banner Alert Color Options
+
+Page status alerts fall into three categories:
+
+<ul class="c-ul-unstyled">
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-primary c-avatar-square"></div>
+    <strong class="c-p-left-md">Info: </strong>
+    Information that is helpful or of interest to the user
+  </li>
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-warning c-avatar-square"></div>
+    <strong class="c-p-left-md">Warning: </strong>
+    Information that <strong>can critically affect</strong> user's productivity
+  </li>
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-danger c-avatar-square"></div>
+    <strong class="c-p-left-md">Warning: </strong>
+    Information that is <strong>already having a critical impact</strong> on the user's productivity
+  </li>
+</ul>
+
+
+
+<br>
+<hr>
+
 <!-- Start Dos and Donts - Banner Alerts -->
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+#### Do's and Dont's
 <!-- Start Multiple Banner Alers Row -->
-  <div class="c-header-xs">Multiple banner alerts</div>
+**Multiple banner alerts**
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/alerts/banner-alert/banner-alert-do'%}
@@ -181,6 +247,7 @@ Page status alerts fall into three categories:
 <!-- END Banner Alert Row -->
 
 <hr>
+<br>
 
  <!-- Start Box Alert Row -->
   <div class="c-header-md c-m-top-sm c-m-bottom-sm">Box Alerts</div>
@@ -194,18 +261,27 @@ Page status alerts fall into three categories:
 
 - Box alerts appear in the topmost position of the content area of a page or component. This alert inserts itself into the content area and pushes the content down the page, remaining in that position until the condition (for it's activation) clears or it is dismissed.
 
-<div class="c-header-xs">Box alert placement</div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alert/page-alert-1.png" width="50%;">
+<hr>
+<br>
 
-<div class="c-header-xs">Box alert placement in content area of page</div>
+<div class="c-row">
+  <div class="c-col">
+    <div class="c-header-md c-m-bottom-sm">Box alert placement</div>
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alert/page-alert-1.png">
+  </div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alert/component-alert-1.png" width="50%;">
+  <div class="c-col">
+    <div class="c-header-md c-m-bottom-sm">Box alert placement in content area of page</div>
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alert/component-alert-1.png">
+  </div>
+</div>
 
-<div class="c-header-xs">Box Alert Color Options</div>
-Page status alerts fall into three categories:
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/box-alert-colors.png" width="75%;">
+<hr>
+<br>
+
+#### Box Alert Communication
 
 **What box alerts communicate:**
 - Page or component status
@@ -215,10 +291,39 @@ Page status alerts fall into three categories:
 - System status or maintenance
 - Feedback on actions the user has performed
 
+
+<hr>
+<br>
+
+#### Box Alert Color Options
+
+Page status alerts fall into three categories:
+
+<ul class="c-ul-unstyled">
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-primary c-avatar-square"></div>
+    <strong class="c-p-left-md">Info: </strong>
+    Information that is helpful or of interest to the user
+  </li>
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-warning c-avatar-square"></div>
+    <strong class="c-p-left-md">Warning: </strong>
+    Information that <strong>can critically affect</strong> user's productivity
+  </li>
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-danger c-avatar-square"></div>
+    <strong class="c-p-left-md">Warning: </strong>
+    Information that is <strong>already having a critical impact</strong> on the user's productivity
+  </li>
+</ul>
+
+
+<hr>
+<br>
+
 <!-- Start Dos and Donts - Box Alerts -->
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+#### Do's and Dont's
 <!-- Start Box Alerts - Dos and Donts Row -->
-  <div class="c-header-xs">Box Alerts</div>
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/alerts/box-alert/page-alert-multiple-do'%}
@@ -287,7 +392,7 @@ Page status alerts fall into three categories:
 <hr>
 
  <!-- Start Toast Alert Row -->
-<div class="c-header-md c-m-top-sm c-m-bottom-sm">Toast alerts</div>
+#### Toast alerts
 Toast alerts serve as a feedback & confirmation mechanism after the user performs an action.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert/toast-alert-3.png" width="50%;">
@@ -300,14 +405,40 @@ Toast alerts serve as a feedback & confirmation mechanism after the user perform
 
 - Toast alerts are both dismissible and will auto-clear when its time duration has ended.
 
-<div class="c-header-xs">Toast alert placement</div>
+**Toast alert placement**
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert/toast-alert-1.png" width="50%;">
 
-<div class="c-header-xs">Toast Alert Color Options</div>
+<br>
+<hr>
+
+
+#### Toast Alert Color Options
 Toast alerts fall into three categories:
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/toast-alert-colors.png" width="50%;">
+<ul class="c-ul-unstyled">
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-primary c-avatar-square"></div>
+    <strong class="c-p-left-md">Info: </strong>
+    Information that is helpful or of interest to the user
+  </li>
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-warning c-avatar-square"></div>
+    <strong class="c-p-left-md">Warning: </strong>
+    Information that <strong>can critically affect</strong> user's productivity
+  </li>
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-danger c-avatar-square"></div>
+    <strong class="c-p-left-md">Warning: </strong>
+    Information that is <strong>already having a critical impact</strong> on the user's productivity
+  </li>
+</ul>
+
+
+<br>
+<hr>
+
+#### Toast Alert Communication
 
 **What toast alerts must communicate:**
 
@@ -320,10 +451,13 @@ Toast alerts fall into three categories:
 - Issues related to system status or maintenance
 - Alerts relating to specific pages or components
 
+<br>
+<hr>
+
 <!-- Start Dos and Donts - Toast Alerts -->
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+#### Do's and Dont's
 <!-- Start Toast Alerts Placement - Dos and Donts Row -->
-  <div class="c-header-xs">Toast alert placement</div>
+**Toast alert placement**
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/alerts/toast-alert/toast-alert-multiple-do'%}
@@ -353,7 +487,7 @@ Toast alerts fall into three categories:
 <!-- End Toast Alerts Placement - Dos and Donts Row -->
 
 <!-- Start Toast Alert Stacking order - Dos and Donts Row -->
-  <div class="c-header-xs">Stacking Order</div>
+**Stacking Order**
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/alerts/toast-alert/toast-alert-order-do'%}
@@ -398,7 +532,8 @@ Toast alerts fall into three categories:
 <hr>
 
  <!-- Start Icon Alert Row -->
-<div class="c-header-md c-m-top-sm c-m-bottom-sm">Icon alert</div>
+#### Icon alert
+
 <div class="c-text-danger c-text-italic c-text-md">
 Please note: Icon alerts are primarily used in form validations but can be used as a standalone alert. The following info relate only to the Icon alert as a standalone replacement for the Box alert. For more info on Icon alerts used in form validations refer to...
 </div>
@@ -415,10 +550,10 @@ The icon alert can be used as a standalone alert under special conditions. The i
 
 - The icon alert is triggered by an action or specific condition and remains in position until the condition (for it's activation) is resolved.
 
-<div class="c-header-xs">Icon Alert Color Options</div>
-Icon alerts fall into three categories:
+<br>
+<hr>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/alert-colors/icon-alert-colors.png" width="75%;">
+#### Icon Alert Communication
 
 **What icon alerts communicate:**
 
@@ -431,6 +566,28 @@ Icon alerts fall into three categories:
 <!-- END Icon Alert Row -->
 
 <hr>
+
+#### Icon Alert Color Options
+Icon alerts fall into three categories:
+
+<ul class="c-ul-unstyled">
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-primary c-avatar-square"></div>
+    <strong class="c-p-left-md">Info: </strong>
+    Information that is helpful or of interest to the user
+  </li>
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-warning c-avatar-square"></div>
+    <strong class="c-p-left-md">Warning: </strong>
+    Information that <strong>can critically affect</strong> user's productivity
+  </li>
+  <li class="c-m-bottom-md">
+    <div class="c-avatar c-avatar-danger c-avatar-square"></div>
+    <strong class="c-p-left-md">Warning: </strong>
+    Information that is <strong>already having a critical impact</strong> on the user's productivity
+  </li>
+</ul>
+
 
  <!-- Start Modal Alert Row -->
 <div class="c-header-md c-m-top-sm c-m-bottom-sm">Modal alert</div>

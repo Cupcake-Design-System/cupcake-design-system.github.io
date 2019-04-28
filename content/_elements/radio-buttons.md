@@ -1,16 +1,6 @@
 ---
 title: Radio Buttons
 description: Radio buttons allow users to select a single option from a list of predefined options.
-colors:
-- primary
-- secondary
-- success
-- danger
-sizes:
-- xs
-- sm
-- lg
-- xl
 tabs:
 - Code
 - Angular 
@@ -19,68 +9,71 @@ tabs:
 
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
-## Radio Buttons
-Use radio buttons to present each item in a list of options where users must make a single selection.
+
+### Radio Button
+The default radio requires the `<label></label>` tag even if no text is provided.
 
 {% example html %}
-<label class="c-radio">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i> 
-    Yes
-</label>
-<label class="c-radio">
-    <input type="radio" name="radio">
-    <i class="c-bg-primary"></i> 
-    No
-</label>
+<div class="c-radio">
+	<input type="radio" name="check">
+	<label></label>
+</div>
 {% endexample %}
 
-## Color Examples
-
+**Adding label text that is not clickable.**
 {% example html %}
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-    Primary
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-success"></i>
-    Success
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-warning"></i>
-    Warning
-</label>
-
-<label class="c-radio c-m-right-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-danger"></i>
-    Danger
-</label>
+<div class="c-radio">
+	<input type="radio" name="check">
+	<label>Label Text</label>
+</div>
 {% endexample %}
 
-## Size Examples
 
+**To make the full label clickable - supply the input with an id and the label with a a matching for value as shown below.**
 {% example html %}
-<label class="c-radio-sm">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-radio-lg">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
-
-<label class="c-radio-xl">
-    <input type="radio" name="radio" checked>
-    <i class="c-bg-primary"></i>
-</label>
+<div class="c-radio">
+  <input type="radio" id="radio1" name="check">
+  <label for="radio1">Default with Label</label>
+</div>
 {% endexample %}
+
+
+
+**Adding disabled to the input.**
+{% example html %}
+<div class="c-radio">
+  <input type="radio" id="radio2" name="check" disabled>
+  <label for="radio2">This is still a normal label</label>
+</div>
+{% endexample %}
+
+
+**Adding disabled to the input and label.**
+{% example html %}
+<div class="c-radio" disabled>
+  <input type="radio" id="radio3" name="radio" disabled>
+  <label for="radio3">This label is disabled</label>
+</div>
+{% endexample %}
+
+
+**Adding disabled to a toggled input.**
+{% example html %}
+<div class="c-radio">
+  <input type="radio" id="radio4" name="radio" checked="checked" disabled>
+  <label for="radio4">This is still a normal label</label>
+</div>
+{% endexample %}
+
+
+**Adding disabled to a toggled input and label.**
+{% example html %}
+<div class="c-radio" disabled="">
+  <input type="radio" id="radio5" name="radio4" checked="checked" disabled="">
+  <label for="radio5">This label is disabled</label>
+</div>
+{% endexample %}
+
 
 </div>
 <!-- End Cupcake Code Tab -->

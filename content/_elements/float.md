@@ -23,7 +23,9 @@ directions:
 
 These utility classes float an element to the left or right, or disable floating, based on the current viewport size using the [CSS `float` property](https://developer.mozilla.org/en-US/docs/Web/CSS/float). `!important` is included to avoid specificity issues. These use the same viewport breakpoints as our grid system.
 
-## Classes
+<br>
+
+#### Classes
 
 Toggle a float with a class:
 
@@ -33,7 +35,7 @@ Toggle a float with a class:
 <div class="c-pull-none docs- c-p-sm c-bg-primary c-text-white c-m-top-lg">Don't float on all viewport sizes</div>
 {% endexample %}
 
-## Responsive
+#### Responsive
 
 Responsive variations also exist for each `float` value.
 

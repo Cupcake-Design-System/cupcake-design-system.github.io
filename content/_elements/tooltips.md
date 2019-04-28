@@ -1,53 +1,81 @@
 ---
 title: Tooltips
-description: Tooltips are used to add information or context to an item or element. Typically, tooltips help users understand the meaning of icons or errors, expand on truncated text, and for displaying other short bits of contextual information. 
-colors:
-- primary
-- secondary
-- success
-- danger
-sizes:
-- xs
-- sm
-- lg
-- xl
+description: Tooltips are used to add information or context to an item or element. Typically, tooltips help users understand the meaning of icons or errors, expand on truncated text, and for displaying other short bits of contextual information.
 tabs:
-- Code 
-- Angular
+- Code
 - Guidelines
 ---
 
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-# Cupcake 2.0 updates coming soon...
 
-## Base
-Base popovers have no color but multiple direction options.
-
-{% example html %}
-<div class="c-popover c-popover-{DIRECTION}">
-    <div class="c-popover-arrow"></div>
-    <div class="c-popover-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus.
-    </div>
-</div>    
-{% endexample %}
-
-## Color Examples
-It uses for-loop over the colors array in the head of the markdown file. You can easily add or remove colors there to show whats supported.
+### Base
+These popovers are CSS only. The base have no color but multiple direction options.
 
 {% example html %}
-<div class="c-popover c-popover-{DIRECTION} c-popover-{COLOR}">
-    <div class="c-popover-arrow"></div>
-    <div class="c-popover-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus.
-    </div>
-</div>     
+<span data-tooltip="Tooltip Text" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Default
+</span>
+<span data-tooltip="Tooltip Text" data-tooltip-conf="bottom" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Down
+</span>
+<span data-tooltip="Tooltip Text" data-tooltip-conf="right" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Right
+</span>
+<span data-tooltip="Tooltip Text" data-tooltip-conf="shadow left" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Left
+</span>
 {% endexample %}
 
 
+<hr>
+<br>
 
+#### Colors
+{% example html %}
+<span data-tooltip="Tooltip Text" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Default
+</span>
+<span data-tooltip="Tooltip Text" data-tooltip-conf="invert shadow" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Invert
+</span>
+<span data-tooltip="Tooltip Text" data-tooltip-conf="primary" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Primary
+</span>
+<span data-tooltip="Tooltip Text" data-tooltip-conf="success" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Success
+</span>
+<span data-tooltip="Tooltip Text" data-tooltip-conf="warning" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Warning
+</span>
+<span data-tooltip="Tooltip Text" data-tooltip-conf="danger" class="c-btn c-btn-secondary c-m-horizontal-md">
+  Danger
+</span>
+{% endexample %}
+
+
+<hr>
+<br>
+
+#### Additional Options
+{% example html %}
+  <span data-tooltip="A pure CSS Tooltip. Super easy to use, No JavaScript required." data-tooltip-conf="primary multiline" class="c-btn c-btn-secondary c-m-horizontal-md">
+    Multiline
+  </span>
+  <span data-tooltip="Tooltip Text" data-tooltip-conf="no-fade" class="c-btn c-btn-secondary c-m-horizontal-md">
+    No Fade
+  </span>
+  <span data-tooltip="Tooltip Text" data-tooltip-conf="shadow" class="c-btn c-btn-secondary c-m-horizontal-md">
+    Shadow
+  </span>
+  <span data-tooltip="Tooltip Text" data-tooltip-conf="no-arrow" class="c-btn c-btn-secondary c-m-horizontal-md">
+    No Arrow
+  </span>
+  <span data-tooltip="Tooltip Text" data-tooltip-conf="square" class="c-btn c-btn-secondary c-m-horizontal-md">
+    Square
+  </span>   
+{% endexample %}
 
 
 </div>

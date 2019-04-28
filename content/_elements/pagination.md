@@ -1,67 +1,46 @@
 ---
 title: Pagination
 description: Pagination affords navigation between pages of content, and it highlights which page is currently in view.
-colors:
-- primary
-- secondary
-- success
-- danger
-sizes:
-- xs
-- sm
-- lg
-- xl
 tabs:
 - Code
-- Angular
 - Guidelines
 ---
 
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
-## Base
+### Base
+
 Use pagination to allow navigation between pages that represent an ordered collection of items.
 
 {% example html %}
 <ul class="c-pagination">
-  <li><a href="" class="c-pagination-previous c-pagination-link"> </a></li>
-  <li><a href="" class="c-pagination-link">1</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-current">2</a></li>
-  <li><a href="" class="c-pagination-link">3</a></li>
-  <li><a href="" class="c-pagination-link">4</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-ellipsis"></a></li>
-  <li><a href="" class="c-pagination-link">12</a></li>
-  <li><a href="" class="c-pagination-link">13</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-next"></a></li>
-</ul>
-{% endexample %}
-
-## Size Examples
-
-{% example html %}
-<ul class="c-pagination c-pagination-sm">
-  <li><a href="" class="c-pagination-previous c-pagination-link"> </a></li>
-  <li><a href="" class="c-pagination-link">1</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-current">2</a></li>
-  <li><a href="" class="c-pagination-link">3</a></li>
-  <li><a href="" class="c-pagination-link">4</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-ellipsis"></a></li>
-  <li><a href="" class="c-pagination-link">12</a></li>
-  <li><a href="" class="c-pagination-link">13</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-next"></a></li>
-</ul>
-
-<ul class="c-pagination c-pagination-xl">
-  <li><a href="" class="c-pagination-previous c-pagination-link"> </a></li>
-  <li><a href="" class="c-pagination-link">1</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-current">2</a></li>
-  <li><a href="" class="c-pagination-link">3</a></li>
-  <li><a href="" class="c-pagination-link">4</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-ellipsis"></a></li>
-  <li><a href="" class="c-pagination-link">12</a></li>
-  <li><a href="" class="c-pagination-link">13</a></li>
-  <li><a href="" class="c-pagination-link c-pagination-next"></a></li>
+	<li>
+		<a href="#" class="c-pagination-previous c-pagination-link"> Previous</a>
+	</li>
+	<li>
+		<a href="#" class="c-pagination-link">1</a>
+	</li>
+	<li>
+		<a href="#" class="c-pagination-link c-pagination-current">2</a>
+	</li>
+	<li>
+		<a href="#" class="c-pagination-link">3</a>
+	</li>
+	<li><a href="#" class="c-pagination-link">4</a>
+	</li>
+	<li>
+		<a href="#" class="c-pagination-link">...</a>
+	</li>
+	<li>
+		<a href="#" class="c-pagination-link">12</a>
+	</li>
+	<li>
+		<a href="#" class="c-pagination-link">13</a>
+	</li>
+	<li>
+		<a href="#" class="c-pagination-link c-pagination-next">Next </a>
+	</li>
 </ul>
 {% endexample %}
 

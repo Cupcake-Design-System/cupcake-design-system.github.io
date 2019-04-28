@@ -42,8 +42,11 @@ You can use the vertical shortcut for both top and bottom and horizontal for bot
 
 Use the xs through xxl scale to choose the size needed.
 
+<br>
+<hr>
+<br>
 
-## Syntax
+#### Syntax
 
 Spacing utilities that apply to all breakpoints, from `xs` to `xl`, have no breakpoint abbreviation in them. 
 
@@ -53,12 +56,15 @@ The classes are named using the format `{property}{sides}-{size}` for `xs` and `
 * `c-m` - for classes that set `margin`
 * `c-p` - for classes that set `padding`
 
+<br>
+<hr>
+<br>
 
 
-## Padding
+#### Padding
 
 
-### All
+**All Sides**
 <div class="docs-spacing padding">
   <div>
   {% for size in page.sizes %}
@@ -67,7 +73,7 @@ The classes are named using the format `{property}{sides}-{size}` for `xs` and `
   </div>
 </div>
 
-### Top
+**Top**
 <div class="docs-spacing padding">
   <div>
   {% for size in page.sizes %}
@@ -76,7 +82,7 @@ The classes are named using the format `{property}{sides}-{size}` for `xs` and `
   </div>
 </div>
 
-### Right
+**Right**
 <div class="docs-spacing padding">
   <div>
   {% for size in page.sizes %}
@@ -86,7 +92,7 @@ The classes are named using the format `{property}{sides}-{size}` for `xs` and `
 </div>
 
 
-### Bottom
+**Bottom**
 <div class="docs-spacing padding">
   <div>
   {% for size in page.sizes %}
@@ -96,7 +102,7 @@ The classes are named using the format `{property}{sides}-{size}` for `xs` and `
 </div>
 
 
-### Left
+**Left**
 <div class="docs-spacing padding">
   <div>
   {% for size in page.sizes %}
@@ -106,7 +112,7 @@ The classes are named using the format `{property}{sides}-{size}` for `xs` and `
 </div>
 
 
-### Horizontal
+**Horizontal**
 <div class="docs-spacing padding">
   <div>
   {% for size in page.sizes %}
@@ -116,7 +122,7 @@ The classes are named using the format `{property}{sides}-{size}` for `xs` and `
 </div>
 
 
-### Vertical
+**Vertical**
 <div class="docs-spacing padding">
   <div>
   {% for size in page.sizes %}
