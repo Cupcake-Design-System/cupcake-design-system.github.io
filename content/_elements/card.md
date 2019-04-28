@@ -351,7 +351,7 @@ Cards can be grouped together.
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-#Overview
+## Overview
 
 #### Structure
 

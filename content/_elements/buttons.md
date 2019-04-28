@@ -205,7 +205,7 @@ This is an example of available sizes for the Button Group element.
 <hr>
   
   <!-- Start General Do's and Don'ts Row -->
-  <div class="c-header-md">General Do's and Dont's</div>
+#### General Do's and Dont's
 
   <!-- Start Button Wording Row -->
   <div class="c-header-xs">Button wording</div>
@@ -332,11 +332,11 @@ This is an example of available sizes for the Button Group element.
 <hr>
 
   <!-- Start Primary Button Row -->
-  <div class="c-header-md">Primary button</div>
+#### Primary button
   Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
 
   <!-- Start Primary Button Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  **Do's and Dont's**
 
  <!-- Start Primary Button Usage Row -->
   <div class="c-header-xs">Primary button usage</div>
@@ -450,11 +450,11 @@ This is an example of available sizes for the Button Group element.
 <hr>
 
   <!-- Start Action Button Row -->
-  <div class="c-header-md">Action button</div>
+#### Action button
 Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
 
   <!-- Start Action Button Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  **Do's and Dont's**
 
  <!-- Start Action Button Usage Row -->
   <div class="c-header-xs">Action button combinations</div>
@@ -532,13 +532,13 @@ Action buttons represent and draw attention to an action where something is crea
 <hr>
 
 <!-- Start Danger Button Row -->
-<div class="c-header-md">Danger button</div>
+#### Danger button
 Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
 
 *A destructive action button can share the screen with an additive action button and/or a primary action button.
 
   <!-- Start Danger Button Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  **Do's and Dont's**
 
  <!-- Start Danger Button Usage Row -->
   <div class="c-header-xs">Danger button combinations</div>
@@ -610,11 +610,11 @@ Danger buttons represent and draw attention to a destructive action where someth
   <hr>
 
 <!-- Start Secondary Button Row -->
-<div class="c-header-md">Secondary button</div>
+#### Secondary button
 Secondary buttons are the standard button for general use. Secondary buttons are often used in combination with a primary button, to represent an opposing action.
 
   <!-- Start Secondary Button Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  **Do's and Dont's**
 
  <!-- Start Secondary Button Usage Row -->
   <div class="c-header-xs">Secondary button usage</div>
@@ -696,7 +696,7 @@ Secondary buttons are the standard button for general use. Secondary buttons are
   <!-- End Secondary Button Section -->
 
  <!-- Start Link Only Button Row -->
-<div class="c-header-md">Link-only button</div>
+#### Link-only button
 Link-only buttons are used under the following circumstances:
 
 - Primary and Secondary buttons have been used but an additional button is needed to highlight a less critical action or supporting link.
@@ -704,7 +704,7 @@ Link-only buttons are used under the following circumstances:
 - To represent less important or supporting actions.
 
 <!-- Start Link-only Button Do's and Don'ts Section -->
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+**Do's and Dont's**
 
  <!-- Start Link-only Button Usage Row -->
   <div class="c-header-xs">Link-only button usage</div>
@@ -806,11 +806,11 @@ Link-only buttons are used under the following circumstances:
 <hr>
 
  <!-- Start Icon Button Row -->
-<div class="c-header-md">Icon button</div>
+#### Icon button
 Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.
 
 <!-- Start Icon Button Do's and Don'ts Section -->
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+**Do's and Dont's**
 
  <!-- Start Icon Button Usage Row -->
   <div class="c-header-xs">Icon button usage</div>
@@ -852,11 +852,11 @@ Icon buttons are best used in combinations with other buttons, typically in tool
 <hr>
 
  <!-- Start Icon-only Button Row -->
-<div class="c-header-md">Icon-only button</div>
+#### Icon-only button
 Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.
 
 <!-- Start Icon-only Button Do's and Don'ts Section -->
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+**Do's and Dont's**
 
  <!-- Start Icon-only Button Usage Row -->
   <div class="c-header-xs">Icon-only button usage</div>

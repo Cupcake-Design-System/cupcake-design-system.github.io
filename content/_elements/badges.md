@@ -251,7 +251,7 @@ A badge with no content can be used to add visual attention to an element.
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Overview
+## Overview
 
 **Types of badges available:**
 
@@ -260,15 +260,17 @@ A badge with no content can be used to add visual attention to an element.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/Badges_Types.png" width="500px;">
 
+<hr>
+
 #### Badge Colors
 Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color
 
-###### Light Color Set
+**Light Color Set**
 - Only use values 3-5 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="500px;">
 
-###### Dark Color Set
+**Dark Color Set**
 - Only use values 6-9 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="500px;">
@@ -276,10 +278,10 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
 <hr>
   
   <!-- Start Status Badges Row -->
-  <div class="c-header-md">Status Badges</div>
-   - Status badges are used to indicate the status of an entity.
+#### Status Badges
+  - Status badges are used to indicate the status of an entity.
   <!-- Start Status Badges Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+  **Do's and Dont's**
 
   <!-- Start Status Badge Color Use Row -->
   <div class="c-header-xs">Status Badge Color Use</div>
@@ -441,11 +443,11 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
 <hr>
 
   <!-- Start Numeric Badges Row -->
-  <div class="c-header-md">Numeric Badges</div>
+#### Numeric Badges
    - Numeric badges are used to indicate a running tally/count of an entity. 
 
   <!-- Start Numeric Badges Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+**Do's and Dont's**
 
  <!-- Start Light vs Dark Color Sets Row -->
   <div class="c-header-xs">Numeric Badges Light vs Dark Color Set</div>
