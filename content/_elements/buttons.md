@@ -205,10 +205,11 @@ This is an example of available sizes for the Button Group element.
 <hr>
   
   <!-- Start General Do's and Don'ts Row -->
-#### General Do's and Dont's
+### General Do's and Dont's
 
   <!-- Start Button Wording Row -->
-  <div class="c-header-xs">Button wording</div>
+##### Button wording
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/general/general-wording-best@2x'%} 
@@ -281,7 +282,8 @@ This is an example of available sizes for the Button Group element.
   <!-- End Button Wording Row -->
 
  <!-- Start Buttons + Icons Row -->
-  <div class="c-header-xs">Buttons + icons</div>
+##### Buttons + icons
+
   <div class="c-row">
     <div class="c-col">
       {% include guide-img.html img='elements/buttons/general/general-button-icon-do@2x'%} 
@@ -332,14 +334,17 @@ This is an example of available sizes for the Button Group element.
 <hr>
 
   <!-- Start Primary Button Row -->
-#### Primary button
+### Primary button
   Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
 
+  <br>
+
+
   <!-- Start Primary Button Do's and Don'ts Section -->
-  **Do's and Dont's**
+#### Do's and Dont's - Primary Buttons
 
  <!-- Start Primary Button Usage Row -->
-  <div class="c-header-xs">Primary button usage</div>
+##### Primary button usage
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/primary-button/primary-button-usage-do@2x'%} 
@@ -375,7 +380,7 @@ This is an example of available sizes for the Button Group element.
  <!-- End Primary Button Usage Row -->
 
   <!-- Start Grouping Primary Buttons Row -->
-  <div class="c-header-xs">Grouping Primary Buttons</div>
+##### Grouping Primary Buttons
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/primary-button/primary-button-combo-do@2x'%}
@@ -411,7 +416,8 @@ This is an example of available sizes for the Button Group element.
   <!-- End Grouping Primary Buttons Row -->
 
   <!-- Start Grouping and Button Order Row -->
-  <div class="c-header-xs">Grouping and button order</div>
+##### Grouping and button order
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/primary-button/primary-button-order-do@2x'%}
@@ -450,14 +456,17 @@ This is an example of available sizes for the Button Group element.
 <hr>
 
   <!-- Start Action Button Row -->
-#### Action button
+### Action button
 Action buttons represent and draw attention to an action where something is created or introduced into the workflow.
 
+<br>
+
   <!-- Start Action Button Do's and Don'ts Section -->
-  **Do's and Dont's**
+#### Do's and Dont's - Action buttons
 
  <!-- Start Action Button Usage Row -->
-  <div class="c-header-xs">Action button combinations</div>
+##### Action button combinations
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/action-button/action-button-combo-do@2x'%} 
@@ -493,7 +502,8 @@ Action buttons represent and draw attention to an action where something is crea
  <!-- End Action Button Combinations Row -->
 
   <!-- Start Action Button Usage Row -->
-  <div class="c-header-xs">Action button usage</div>
+##### Action button usage
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/action-button/action-button-usage-do@2x'%}
@@ -537,11 +547,13 @@ Danger buttons represent and draw attention to a destructive action where someth
 
 *A destructive action button can share the screen with an additive action button and/or a primary action button.
 
+<br>
+
   <!-- Start Danger Button Do's and Don'ts Section -->
-  **Do's and Dont's**
+#### Do's and Dont's - Danger buttons
 
  <!-- Start Danger Button Usage Row -->
-  <div class="c-header-xs">Danger button combinations</div>
+##### Danger button combinations
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/danger-button/danger-button-combo-do@2x'%} 
@@ -577,7 +589,8 @@ Danger buttons represent and draw attention to a destructive action where someth
  <!-- End Danger Button Combinations Row -->
 
   <!-- Start Danger Button Usage Row -->
-  <div class="c-header-xs">Danger button usage</div>
+##### Danger button usage
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/danger-button/danger-button-usage-do@2x'%} 
@@ -610,14 +623,16 @@ Danger buttons represent and draw attention to a destructive action where someth
   <hr>
 
 <!-- Start Secondary Button Row -->
-#### Secondary button
+### Secondary button
 Secondary buttons are the standard button for general use. Secondary buttons are often used in combination with a primary button, to represent an opposing action.
 
+<br>
+
   <!-- Start Secondary Button Do's and Don'ts Section -->
-  **Do's and Dont's**
+#### Do's and Dont's - Secondary buttons
 
  <!-- Start Secondary Button Usage Row -->
-  <div class="c-header-xs">Secondary button usage</div>
+##### Secondary button usage
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/secondary-button/secondary-button-usage-do@2x'%} 
@@ -665,7 +680,8 @@ Secondary buttons are the standard button for general use. Secondary buttons are
  <!-- End Secondary Button Usage Row -->
 
   <!-- Start Secondary Button Repeitive Use in Tables Row -->
-  <div class="c-header-xs">Repetitive use of secondary button use in tables</div>
+##### Repetitive use of secondary button use in tables
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/secondary-button/secondary-button-repeat-do@2x'%}
@@ -695,19 +711,23 @@ Secondary buttons are the standard button for general use. Secondary buttons are
   <!-- Start Secondary Button Repeitive Use in Tables Row -->
   <!-- End Secondary Button Section -->
 
+<hr>
+
  <!-- Start Link Only Button Row -->
-#### Link-only button
+### Link-only button
 Link-only buttons are used under the following circumstances:
 
 - Primary and Secondary buttons have been used but an additional button is needed to highlight a less critical action or supporting link.
 - To add additional buttons to an already button heavy page
 - To represent less important or supporting actions.
 
+<br>
+
 <!-- Start Link-only Button Do's and Don'ts Section -->
-**Do's and Dont's**
+#### Do's and Dont's - Link-only buttons
 
  <!-- Start Link-only Button Usage Row -->
-  <div class="c-header-xs">Link-only button usage</div>
+##### Link-only button usage
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/link-only-button/link-button-usage-do@2x'%} 
@@ -737,7 +757,7 @@ Link-only buttons are used under the following circumstances:
  <!-- End Link-only Button Usage Row -->
 
   <!-- Start Link-only Button Combinations Row -->
-  <div class="c-header-xs">Link-only button combinations</div>
+##### Link-only button combinations
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/link-only-button/link-button-combo-do@2x'%} 
@@ -767,7 +787,7 @@ Link-only buttons are used under the following circumstances:
   <!-- End Link-only Button Combinations Row -->
 
   <!-- Start Button link vs text link Row -->
-  <div class="c-header-xs">Button link vs text link</div>
+##### Button link vs text link
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/link-only-button/link-button-vs-do@2x'%} 
@@ -806,14 +826,17 @@ Link-only buttons are used under the following circumstances:
 <hr>
 
  <!-- Start Icon Button Row -->
-#### Icon button
+### Icon button
 Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.
 
+<br>
+
 <!-- Start Icon Button Do's and Don'ts Section -->
-**Do's and Dont's**
+#### Do's and Dont's - Icon buttons
 
  <!-- Start Icon Button Usage Row -->
-  <div class="c-header-xs">Icon button usage</div>
+##### Icon button usage
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/icon-button/icon-button-combinations-do@2x'%} 
@@ -852,14 +875,17 @@ Icon buttons are best used in combinations with other buttons, typically in tool
 <hr>
 
  <!-- Start Icon-only Button Row -->
-#### Icon-only button
+### Icon-only button
 Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.
 
+<br>
+
 <!-- Start Icon-only Button Do's and Don'ts Section -->
-**Do's and Dont's**
+#### Do's and Dont's
 
  <!-- Start Icon-only Button Usage Row -->
-  <div class="c-header-xs">Icon-only button usage</div>
+##### Icon-only button usage
+
   <div class="c-row">
     <div class="c-col">
       {% include guide-img.html img='elements/buttons/icon-only-button/icon-only-button-combo-do@2x'%} 
@@ -889,7 +915,8 @@ Icon-only buttons are best used for common or repetitive actions, typically wher
  <!-- End Icon-only Button Usage Row -->
 
  <!-- Start Icon-only Button in Forms Row -->
-  <div class="c-header-xs">Icon-only button in forms</div>
+##### Icon-only button in forms
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/buttons/icon-only-button/icon-only-button-forms-do@2x'%} 
