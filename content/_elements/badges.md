@@ -15,6 +15,7 @@ tabs:
 - Guidelines
 ---
 
+<!-- Start Cupcake Code -->
 <div id="code" class="docs-tabs-content" markdown="1">
 
 ### Base
@@ -237,7 +238,7 @@ A badge with no content can be used to add visual attention to an element.
 
 
 </div>
-<!-- End Code Tab -->
+<!-- End Cupcake Code Tab -->
 
 <!-- Start Angular Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
@@ -263,7 +264,8 @@ A badge with no content can be used to add visual attention to an element.
 <hr>
 
 #### Badge Colors
-Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color
+
+[Cupcake Color Palette](https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color)
 
 **Light Color Set**
 - Only use values 3-5 
@@ -278,13 +280,14 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
 <hr>
   
   <!-- Start Status Badges Row -->
-#### Status Badges
+### Status Badges
   - Status badges are used to indicate the status of an entity.
   <!-- Start Status Badges Do's and Don'ts Section -->
-  **Do's and Dont's**
+
+#### Do's and Don'ts
 
   <!-- Start Status Badge Color Use Row -->
-  <div class="c-header-xs">Status Badge Color Use</div>
+##### Status Badge Color Use
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/badges/StatusBadge_ColorUse_Do'%} 
@@ -314,7 +317,8 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
   <!-- End Status Badge Color Use Row -->
 
  <!-- Start Status Badge Light vs Dark Color Sets Row -->
-  <div class="c-header-xs">Status Badge Colors</div>
+##### Status Badge Colors
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/badges/StatusBadges_LightVSDarkColors_Do'%} 
@@ -344,7 +348,8 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
  <!-- End Status Badge Light vs Dark Color Sets Row -->
 
   <!-- Start Status Badge Use Row -->
-  <div class="c-header-xs">Status Badge Use</div>
+##### Status Badage Use
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/badges/StatusBadges_BadgeUse_Do'%} 
@@ -374,7 +379,8 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
   <!-- End Badge Use Row -->
 
   <!-- Start Status Badge Content Row -->
-  <div class="c-header-xs">Status Badge Content</div>
+##### Status Badge Content
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/badges/StatusBadges_Content_Do'%} 
@@ -404,7 +410,8 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
   <!-- End Status Badge Content Row -->
 
   <!-- Start Scaling in Table Cells Row -->
-  <div class="c-header-xs">Scaling Status Badges in Table Cells</div>
+##### Scaling Status Badges in Table Cells
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/badges/StatusBadges_TableScaling_Do'%} 
@@ -443,14 +450,15 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
 <hr>
 
   <!-- Start Numeric Badges Row -->
-#### Numeric Badges
+### Numeric Badges
    - Numeric badges are used to indicate a running tally/count of an entity. 
 
   <!-- Start Numeric Badges Do's and Don'ts Section -->
-**Do's and Dont's**
+#### Do's and Dont's
 
  <!-- Start Light vs Dark Color Sets Row -->
-  <div class="c-header-xs">Numeric Badges Light vs Dark Color Set</div>
+##### Numeric Badges Light vs Dark Color Set
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/badges/NumericBadges_LightVSDarkColors_Do'%} 
@@ -480,7 +488,8 @@ Cupcake Color Palette: https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/
  <!-- End Light vs Dark Color Sets Row -->
 
   <!-- Start Numeric Badge Content Row -->
-  <div class="c-header-xs">Numeric Badge Content</div>
+##### Numeric Badge Content
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/badges/NumericBadges_Content_Do'%} 
