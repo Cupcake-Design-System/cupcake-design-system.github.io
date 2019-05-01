@@ -106,18 +106,48 @@ Cupcake tooltips should be used in place of standard browser tooltips when the i
 - Tooltip Writing
 - Tooltips Placement
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/nameoffile.png" width="500px;">
+### Examples of use
+
+<br>
+
+**Icon tooltip used to clarify the action or name of an icon button**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltip-example-clarify-action-or-name.png" width="500px;">
+
+<br>
+
+**Tooltip used to display keyboard shortcuts**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltip-display-keyboard-shortcuts.png" width="500px;">
+
+<br>
+
+**User inputted information should show user input exactly as the user typed it**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltips-user-input.png" width="500px;">
+
+<br>
+
+**Definition tooltip used to provide contextual information to a word, request, action, or element**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltips-contextual-information.png" width="500px;">
+
+<br>
+
+**Interactive tooltips span from simple buttons or hyperlinks to more complex modules**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltips-interactive.png" width="500px;">
 
 <hr>
   
   <!-- Start Tooltip Design Section -->
-  <div class="c-header-md">Tooltip Design</div>
-    Tooltips should have a consistent look and styling across the product. 
-
-    Tooltips should either be light or dark, never contain an icon, and follow the standard conventions outlined in this document. 
+### Tooltip Design
+  - Tooltips should have a consistent look and styling across the product. 
+  - Tooltips should either be light or dark, never contain an icon, and follow the standard conventions outlined in this document. 
 
   <!-- Start General Do/Dont Row -->
-  <div class="c-header-xs">General Do's and Dont's</div>
+#### General Do's and Dont's
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/tooltips/file name'%} 
@@ -192,8 +222,9 @@ Cupcake tooltips should be used in place of standard browser tooltips when the i
   <hr>
 
   <!-- Start Tooltip Use Section -->
-  <div class="c-header-md">Tooltip Use</div>
-  Tooltips should provided additional context or information. 
+### Tooltip use
+
+  Tooltips should provide additional context or information. 
 
   **The following tooltip usages are highly discouraged to users**
   - Hiding vital information
@@ -203,13 +234,14 @@ Cupcake tooltips should be used in place of standard browser tooltips when the i
   **Note:** 
   For detailed rules around error & validation tooltips please see the Errors & Validations documentation
 
-  **Hiding Vital Information**
-  Don't use tooltips to hide information or to present a "cleaner" design. 
-
-When in doubt ask yourself, "Is this information necessary for a user to complete a task?" If the answer is yes, don't use a tooltip. 
+<br>
 
   <!-- Start Hiding Vital Information Row -->
-  <div class="c-header-xs">Hiding vital information</div>
+### Hiding vital information
+
+  - Don't use tooltips to hide information or to present a "cleaner" design. 
+  - When in doubt ask yourself, "Is this information necessary for a user to complete a task?" If the answer is yes, don't use a tooltip. 
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -251,7 +283,7 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
   <!-- End Hiding Vital Information Row -->
 
    <!-- Start Using Redundant Tooltips Row -->
-  <div class="c-header-xs">Using redundant tooltips</div>
+##### Using redundant tooltips
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -281,7 +313,7 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
    <!-- END Using Redundant Tooltips Row -->
 
 <!-- Start Duplicate Elements Row -->
-  <div class="c-header-xs">Duplicate elements</div>
+##### Duplicate elements
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -314,12 +346,14 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
 <hr>
 
   <!-- Start Tooltip Writing Section -->
-  <div class="c-header-md">Tooltip Writing</div>
-  Tooltips should be written as short and concise as possible. When you require more than a few words—or other non-text objects such as "status badges"—consider using "popovers" or other patterns and approaches to communicate complexity to the user.
+### Tooltip Writing
+  - Tooltips should be written as short and concise as possible. 
+  - When you require more than a few words—or other non-text objects such as "status badges"—consider using "popovers" or other patterns and approaches to communicate complexity to the user.
 
   <!-- Start Tooltip Writing General Row -->
-  <div class="c-header-xs">Tooltip writing general</div>
+##### Tooltip writing general
   Tooltips should use sentence case with no punctuation unless absolutely required for clarity.
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -361,11 +395,21 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
   <!-- End Tooltip Writing General Row -->
 
   <!-- Start Keyboard Shortcuts Row -->
-  <div class="c-header-xs">Keyboard Shortcuts</div>
- Often tooltips will be used to display contextual information as well as reinforce shortcut keys. Shortcuts should be formatted in a very specific and uniform manner.
+##### Keyboard Shortcuts
+ - Often tooltips will be used to display contextual information as well as reinforce shortcut keys. 
+ - Shortcuts should be formatted in a very specific and uniform manner.
 
- <div class="c-text-danger"> Add table with shortcut keys here...</div>
- 
+ **(key + key + key)**
+
+| **Command**   | **Command Abbreviation** |   
+| Control       | ctrl                     |
+| Shift         | shift                    |
+| Alt           | alt                      | 
+| Windows       | win                      |
+| Command (mac) | cmd                      | 
+
+<br>
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -419,9 +463,14 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
   <!-- End Keyboard Shortcuts Row -->
 
   <!-- Start Exceptions Row -->
-  <div class="c-header-sm c-text-danger">EXCEPTIONS</div>
-  <div class="c-header-xs">User input</div>
-  In instances where tooltips are used to display **user inputted information** case rules do not apply. Tooltips should mirror user input exactly.
+### EXCEPTIONS
+
+<hr>
+
+##### User Input
+- In instances where tooltips are used to display **user inputted information** case rules do not apply. 
+- Tooltips should mirror user input exactly.
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -455,15 +504,20 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
 <hr>
 
   <!-- Start Tooltip Placement Section -->
-  <div class="c-header-md">Tooltip Placement</div>
-  Tooltip placement will change depending on the application, component container, browser edge position, and the element(s) being highlighted.
+### Tooltip Placement
+  - Tooltip placement will change depending on the application, component container, browser edge position, and the element(s) being highlighted.
 
-  **Above the element is the preferred placement for a tooltip** but the edge of the container, and the proximity of other elements should factor into the decision to use other placements.
+  - **Above the element is the preferred placement for a tooltip** but the edge of the container, and the proximity of other elements should factor into the decision to use other placements.
 
-  Top, bottom, left, and right placements are all acceptable depending on the context. Try to remain consistent in tooltip placement and **designer discretion is advised.**
+  - Top, bottom, left, and right placements are all acceptable depending on the context. Try to remain consistent in tooltip placement and **designer discretion is advised.**
+
+  [External Reference for advanced tooltip placement behavior - Popper JS ](https://popper.js.org/index.html)
+
+  <br>
 
   <!-- Start Overflow Tooltip Placement Row -->
-  <div class="c-header-xs">Overflow Tooltip Placement</div>
+##### Overflow Tooltip Placement
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -493,7 +547,7 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
   <!-- End Overflow Tooltip Placement Row -->
 
   <!-- Start Consistent Tooltip Placement Row -->
-  <div class="c-header-xs">Consistent Tooltip Placement</div>
+##### Consistent Tooltip Placement
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -529,7 +583,8 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
   <!-- End Consistent Tooltip Placement Row -->
 
   <!-- Start Tooltip Carets Row -->
-  <div class="c-header-xs">Tooltip Carets</div>
+##### Tooltip Carets
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/file name'%} 
@@ -558,7 +613,7 @@ When in doubt ask yourself, "Is this information necessary for a user to complet
     </div>
   <!-- End Tooltip Carets Row -->
 
-  External Reference for advanced tooltip placement behavior : Popper.js.org - Library
+
 
   <!-- END Tooltip Placement Section -->
 
