@@ -231,7 +231,8 @@ You can also add text to the large switch size. Again, use carefully - anything 
 **Types of switches available:**
 
 - Standard version
-- Mobile version
+- Mobile version*
+
 *The mobile version has a bigger hit area and larger text for better performance on smaller mobile screens.*
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/switches-versions.png" width="">
@@ -239,10 +240,11 @@ You can also add text to the large switch size. Again, use carefully - anything 
 <hr>
   
   <!-- Start Switch Hygiene Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+### Do's and Don'ts
 
   <!-- Start Switch Hygiene Badge Row -->
-  <div class="c-header-xs">Basic Switch Hyigene</div>
+##### Basic Switch Hyigene
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-general/all-switches-body-do'%} 
@@ -279,21 +281,24 @@ You can also add text to the large switch size. Again, use carefully - anything 
 - As a control used with tables, data visualisations, etc.
 - As a control used in tables
 
-Current Cupcake documentation: https://pages.code.ipreo.com/Ipreo/cupcake-docs/content/elements/switches/
-
 <hr>
 
  <!-- Start Controls Used in Settings Pages Row -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Controls used in Settings pages</div>
-  <div class="c-header-xs">Examples of use</div>
+### Controls used in Settings pages
+
+<br>
+#### Examples of use
 
   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/switch-settings/switches-settings-example.png" width="500px;">
+
+  <br>
  <!-- END Controls Used in Settings Pages Row -->
 
   <!-- Start Dos and Donts - Controls used in Settings Pages Row -->
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+#### Do's and Dont's
 <!-- Start Placement Relative to Labels Row -->
-  <div class="c-header-xs">Placement relative to labels</div>
+##### Placement relative to labels
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-settings/switches-settings-placement-do'%}
@@ -323,7 +328,8 @@ Current Cupcake documentation: https://pages.code.ipreo.com/Ipreo/cupcake-docs/c
 <!-- End Placement Relative to Labels Row -->
 
   <!-- Start Label alignment Relative to Switches Row -->
-  <div class="c-header-xs">Label alignment relative to switches</div>
+##### Label alignment relative to switches
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-settings/switches-settings-align-do'%} 
@@ -365,7 +371,8 @@ Current Cupcake documentation: https://pages.code.ipreo.com/Ipreo/cupcake-docs/c
   <!-- Start Label alignment Relative to Switches Row -->
 
   <!-- Start Settings vs Forms Row -->
-  <div class="c-header-xs">Settings vs Forms</div>
+##### Settings vs Forms
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-settings/switches-settings-forms-do'%} 
@@ -398,19 +405,22 @@ Current Cupcake documentation: https://pages.code.ipreo.com/Ipreo/cupcake-docs/c
 <hr>
 
 
-  <!-- START Controls used with Tables, Data Viz, etc Section-->
-
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Controls used with Tables, Data Viz, etc</div>
-
+<!-- START Controls used with Tables, Data Viz, etc Section-->
+### Controls used with Tables, Data Viz, etc
 Switches are often used as controls with tables and data visualisations to affect the information the user can view and interact with.
 
-<div class="c-header-xs">Example of use</div>
+<br>
+
+#### Example of use
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/switch-controls/switches-controls-example.png" width="500px;">
 
-<div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+<br>
+
+#### Do's and Don'ts
 <!-- Start Placement as Table Control Row -->
-  <div class="c-header-xs">Placement as table control</div>
+##### Placement as table control
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-controls/switches-controls-placement-do'%}
@@ -446,7 +456,8 @@ Switches are often used as controls with tables and data visualisations to affec
 <!-- END Placement as Table Control Row -->
 
   <!-- Start Placement of Label Relative to Switch Row -->
-  <div class="c-header-xs">Placement of label relative to swtich</div>
+##### Placement of label relative to swtich
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-controls/switches-controls-label-do'%} 
@@ -476,7 +487,8 @@ Switches are often used as controls with tables and data visualisations to affec
   <!-- END Placement of Label Relative to Switch Row -->
 
   <!-- Start Vertical Alignment of Text Relative to Swtich Row -->
-  <div class="c-header-xs">Vertical alignment of text relative to switch</div>
+##### Vertical alignment of text relative to switch
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-controls/switches-controls-label-align-do'%}
@@ -518,7 +530,8 @@ Switches are often used as controls with tables and data visualisations to affec
 <!-- ENDVertical Alignment of Text Relative to Swtich Row -->
 
  <!-- Start Label Language Row -->
-  <div class="c-header-xs">Vertical alignment of text relative to switch</div>
+##### Vertical alignment of text relative to switch
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-controls/switches-controls-label-language-do'%}
@@ -554,7 +567,8 @@ Switches are often used as controls with tables and data visualisations to affec
  <!-- END Label Language Row -->
 
  <!-- Start Label Length Row -->
-  <div class="c-header-xs">Label length</div>
+##### Label length
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-controls/switches-controls-label-length-do'%}
@@ -590,7 +604,8 @@ Switches are often used as controls with tables and data visualisations to affec
  <!-- END Label Length Row -->
 
  <!-- Start Table Control vs Form Control Row -->
-  <div class="c-header-xs">Table controls vs Form controls</div>
+##### Table controls vs Form controls
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-controls/switches-controls-forms-do'%}
@@ -623,16 +638,22 @@ Switches are often used as controls with tables and data visualisations to affec
 <hr>
 
   <!-- Start Controls Used Inside a Table Row -->
- <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Controls used inside a table pages</div>
-  <div class="c-header-xs">Example of use</div>
+### Controls used inside a table pages
+
+<br>
+
+#### Examples of use
 
   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/switch-tables/switches-table-example.png" width="500px;">
 
+  <br>
+
   <!-- Start Controls Used Inside a Table Do's and Don'ts Section -->
-  <div class="c-header-sm c-m-top-sm c-m-bottom-sm">Do's and Dont's</div>
+#### Do's and Dont's
 
  <!-- Start Alignment Inside a Table Cell Row -->
-  <div class="c-header-xs">Alignment inside a table cell</div>
+##### Alignment inside a table cell
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-tables/switches-tables-align-do'%} 
@@ -668,7 +689,8 @@ Switches are often used as controls with tables and data visualisations to affec
  <!-- Start Alignment Inside a Table Cell Row -->
 
   <!-- Start Tables vs Forms Row -->
-  <div class="c-header-xs">Tables vs Forms</div>
+##### Tables vs Forms
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/switches/switch-tables/switches-tables-forms-do'%} 
