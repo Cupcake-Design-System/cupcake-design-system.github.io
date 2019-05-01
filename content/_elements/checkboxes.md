@@ -110,12 +110,15 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
 <hr>
   
   <!-- Start Multiple Selection Controls in Forms Section -->
-  <div class="c-header-md">Multiple selection controls in forms</div>
+### Multiple selection controls in forms
 
-  <div class="c-header-sm c-m-top-md">Do's and Dont's</div>
+<br>
+
+#### Do's and Dont's
 
   <!-- Start Vertical list vs. horizontal list Row -->
-  <div class="c-header-xs">Vertical list vs. horizontal list</div>
+##### Vertical list vs. horizontal list
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-vert-vs-horiz-do@2x'%} 
@@ -145,7 +148,8 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
   <!-- End Vertical list vs. horizontal list Row -->
 
    <!-- Start Label Length Row -->
-  <div class="c-header-xs">Label length</div>
+##### Label length
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-length-do@2x'%} 
@@ -175,7 +179,8 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
    <!-- End Label Length Row -->
 
   <!-- Start Capitalizing Labels Row -->
-  <div class="c-header-xs">Capitalizing Labels</div>
+##### Capitalizing Labels
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-capitalise-do@2x'%}  
@@ -205,7 +210,8 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
   <!-- End Capitalizing Labels Row -->
 
    <!-- Start Label Format Row -->
-  <div class="c-header-xs">Label format</div>
+##### Label format
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-format-do@2x'%} 
@@ -235,7 +241,8 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
    <!-- End Label Format Row -->
 
   <!-- Start Checkbox to label placement Row -->
-  <div class="c-header-xs">Checkbox to label placement</div>
+##### Checkbox to label placement
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-placement-do@2x'%} 
@@ -265,7 +272,8 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
    <!-- End Checkbox to label placement Row -->
 
   <!-- Start Number of Items Row -->
-  <div class="c-header-xs">Number of items</div>
+##### Number of items
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-items-do@2x'%} 
@@ -295,7 +303,8 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
    <!-- End Number of Items Row -->
 
   <!-- Start List Item Spacing Row -->
-  <div class="c-header-xs">List item spacing</div>
+##### List item spacing
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-spacing-do@2x'%} 
@@ -340,12 +349,15 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
   <hr>
 
   <!-- Start Standalone Checkboxes Section -->
-  <div class="c-header-md">Standalone checkboxes</div>
+### Standalone checkboxes
 
-  <div class="c-header-sm c-m-top-md">Do's and Dont's</div>
+  <br>
+
+#### Do's and Dont's
 
   <!-- Start Label Length Row -->
-  <div class="c-header-xs">Label length</div>
+##### Label length
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-length-do@2x'%} 
@@ -381,7 +393,8 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
   <!-- End Label Length Row -->
 
    <!-- Start Forms vs Settings Row -->
-  <div class="c-header-xs">Forms vs Settings</div>
+##### Forms vs Settings
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-form-vs-settings-do@2x'%}
@@ -412,16 +425,20 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
   <!-- END Standalone Checkboxes Section -->
 
 <hr>
-  <!-- Start Bulk action selectors in a table Section -->
-  <div class="c-header-md">Bulk action selectors in a table</div>
+
+<!-- Start Bulk action selectors in a table Section -->
+### Bulk action selectors in a table
   Checkboxes are used in tables to select which rows to apply bulk actions to.
 
   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/bulk-action-selectors/bulk-selectors-example@2x.png" width="500px;">
 
-  <div class="c-header-sm c-m-top-xl">Do's and Dont's</div>
+  <br>
+
+#### Do's and Dont's
 
   <!-- Start Visual Indicators Row -->
-  <div class="c-header-xs">Visual indicators</div>
+##### Visual indicators
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/checkboxes/bulk-action-selectors/bulk-support-indicators-do@2x'%} 
