@@ -87,11 +87,12 @@ The default radio requires the `<label></label>` tag even if no text is provided
 </div>
 <!-- End Angular Tab -->
 
+<!-- Start Design Guidelines Section -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
 # Overview
 
-**Radio buttons allow users to select a single option from a list of predefined options.**
+Radio buttons allow users to select a single option from a list of predefined options.
 
 **Radio buttons are recommended for use when:**
 
@@ -107,13 +108,14 @@ The default radio requires the `<label></label>` tag even if no text is provided
 - active (disabled)
 - inactive (disabled)
 
-<hr>
+<br>
 
 <!-- Start General Dos and Donts  -->
-<div class="c-header-sm">General Do's and Dont's</div>
+#### General Do's and Dont's
 
  <!-- Start Label length Row -->
-  <div class="c-header-xs">Label length</div>
+##### Label length
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/general/radio-general-label-do@2x'%} 
@@ -143,7 +145,8 @@ The default radio requires the `<label></label>` tag even if no text is provided
   <!-- End Label length Row -->
 
    <!-- Start Capitalizing labels Row -->
-  <div class="c-header-xs">Capitalizing labels</div>
+##### Capitalizing labels
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/general/radio-general-capitalise-do@2x'%} 
@@ -173,7 +176,8 @@ The default radio requires the `<label></label>` tag even if no text is provided
   <!-- End Capitalizing Labels Row -->
 
 <!-- Start Label Format Row -->
-  <div class="c-header-xs">Label format</div>
+##### Label format
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/general/radio-general-punctuation-do@2x'%} 
@@ -203,7 +207,8 @@ The default radio requires the `<label></label>` tag even if no text is provided
   <!-- End Label Format Row -->
 
   <!-- Start Radio button to label placement Row -->
-  <div class="c-header-xs">Radio button to label placement</div>
+##### Radio button to label placement
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/general/radio-general-placement-do@2x'%} 
@@ -233,7 +238,8 @@ The default radio requires the `<label></label>` tag even if no text is provided
   <!-- End Radio button to label placement Row -->
 
 <!-- Start Default selected values Row -->
-  <div class="c-header-xs">Default selected values</div>
+##### Default selected values
+
   <div class="c-row">
     <div class="c-col">
      {% include guide-img.html img='elements/radio-buttons/general/radio-general-default-do@2x'%} 
@@ -272,25 +278,31 @@ The default radio requires the `<label></label>` tag even if no text is provided
 <hr>
 
  <!-- Start Radio Buttons in Forms Section -->
-  <div class="c-header-md">Radio Buttons in Forms</div>
+### Radio Buttons in Forms
 
-Radio buttons are typically used in forms as:
+**Radio buttons are typically used in forms as:**
 
 - Horizontal list groups
 - Vertical list groups
 
+<br>
 
 <!-- Start Horizontal List Groups Section -->
-<div class="c-header-md c-m-top-lg">Horizontal List Groups</div>
+### Horizontal List Groups
 Typically used in forms where up to 3 listed options are displayed. Used where space is restricted. Labels should be short and concise.
+
+<br>
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/horizontal/radio-horizontal-list-example@2x.png" width="400px;">
 
+<br>
+
 <!-- Start Horizontal List Groups - Dos and Donts  -->
-<div class="c-header-sm c-m-bottom-md c-m-top-lg">Do's and Dont's</div>
+#### Do's and Dont's
 
 <!-- Start Dos and Donts - Number of Items Row -->
-<div class="c-header-xs">Number of items</div>
+##### Number of items
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-limit-do@2x'%} 
@@ -320,7 +332,8 @@ Typically used in forms where up to 3 listed options are displayed. Used where s
     <!-- End Dos and Donts - Number of Items Row -->
 
 <!-- Start Dos and Donts - Label vs Radio Placement Row -->
-<div class="c-header-xs">Label vs radio placement</div>
+##### Label vs radio placement
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-placement-do@2x'%} 
@@ -350,7 +363,8 @@ Typically used in forms where up to 3 listed options are displayed. Used where s
     <!-- End Dos and Donts - Label vs Radio Placement Row -->
 
 <!-- Start Dos and Donts - List Item Spacing Row -->
-<div class="c-header-xs">List item spacing</div>
+##### List item spacing
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-spacing-do@2x'%} 
@@ -392,7 +406,7 @@ Typically used in forms where up to 3 listed options are displayed. Used where s
 <!-- End Dos and Donts - List Item Spacing Row -->
 
 <!-- Start Dos and Donts - Provide and Escape Hatch Row -->
-<div class="c-header-xs">Provide an escape hatch</div>
+##### Provide an escape hatch
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-other-do@2x'%} 
@@ -444,17 +458,21 @@ Typically used in forms where up to 3 listed options are displayed. Used where s
 <hr>
 
 <!-- Start Vertical List Groups Section -->
-<div class="c-header-md">Vertical List Groups</div>
+### Vertical list groups
 The most common way to display a radio list group in a form.
 
+<br>
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/vertical/radio-vertical-list-example@2x.png" width="150px;">
 
+<br>
+
 <!-- Start Vertical Groups - Dos and Donts  -->
-<div class="c-header-sm c-m-bottom-md c-m-top-lg">Do's and Dont's</div>
+#### Do's and Dont's
 
 <!-- Start Dos and Donts - Number of Items Row -->
-<div class="c-header-xs">Number of items</div>
+##### Number of items
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-limit-do@2x'%} 
@@ -484,7 +502,8 @@ The most common way to display a radio list group in a form.
     <!-- End Dos and Donts - Number of Items Row -->
 
 <!-- Start Dos and Donts - List Item Spacing Row -->
-<div class="c-header-xs">List item spacing</div>
+##### List item spacing
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-spacing-do@2x'%} 
@@ -514,7 +533,8 @@ The most common way to display a radio list group in a form.
 <!-- End Dos and Donts - List Item Spacing Row -->
 
 <!-- Start Dos and Donts - Provide and Escape Hatch Row -->
-<div class="c-header-xs">Provide an escape hatch</div>
+##### Provide an escape hatch
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-other-do@2x'%} 
