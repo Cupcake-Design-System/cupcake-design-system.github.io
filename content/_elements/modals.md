@@ -198,17 +198,18 @@ The default modal contains a header, body, and footer section.
 </div>
 <!-- End Angular Code Section -->
 
+<!-- Start Design Guidelines Section  -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
 # Overview
 
-Modals generally conform to the following criteria:
+**Modals generally conform to the following criteria:**
 
 - Modals appear on a layer above of the main content
 - Modals require user interaction
 - Modals disable the main content until the user explicitly interacts with the dialog
 
-Currently the following modals are in use:
+**Currently the following modals are in use:**
 
 - Standard modals
 - Modal dialogs
@@ -216,42 +217,55 @@ Currently the following modals are in use:
 <hr>
 
  <!-- Start Standard Modals Section -->
-  <div class="c-header-md">Standard Modals</div>
+## Standard Modals
  Standard modals are used to deliver content or additional functionality that supports the underlying page or task.
 
-  <div class="c-header-sm">Structure</div>
-Standard modals are typically made up of the following:
+### Structure
+**Standard modals are typically made up of the following:**
 
-Heading
-Close button 
-Content area
-A 1 button or a 2 button combination (depending on the use case)
+- Heading
+- Close button 
+- Content area
+- A 1 button or a 2 button combination (depending on the use case)
 
-  <div class="c-header-sm">Types of Standard Modals</div>
-Standard modals are typically made up of the following:
+<br>
 
-Fixed width standard modals
-Flexible width standard modals (variation)
-Full screen modals (variation)
+#### Types of Standard Modals
+**Standard modals are typically made up of the following:**
+
+- Fixed width standard modals
+- Flexible width standard modals (variation)
+- Full screen modals (variation)
+
+<br>
 
 <!-- Start Standard Modals -Examples of Use -->
-  <div class="c-header-sm c-m-bottom-md">Examples of Use</div>
+#### Examples of use
 
-  <div class="c-header-xs">Fixed Width Modal</div>
+<br>
+
+##### Fixed Width Modal
   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fixed_Width.png" width="500px;">
 
-  <div class="c-header-xs">Flexible Width Modal</div>
+<br>
+
+##### Flexible Width Modal
   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Flexible_Width.png" width="500px;">
 
-   <div class="c-header-xs">Full Screen Modal</div>
+<br>
+
+##### Full Screen Modal
   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fullscreen.png" width="500px;">
 <!-- End Standard Modals -Examples of Use -->
 
+<br>
+
 <!-- Start Standard Modals - General Dos and Donts  -->
-<div class="c-header-sm">General Do's and Dont's</div>
+#### General Do's and Dont's
 
  <!-- Start Titles Row -->
-  <div class="c-header-xs">Titles</div>
+##### Titles
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/Modals_Titles_Do'%} 
@@ -281,7 +295,8 @@ Full screen modals (variation)
   <!-- End Titles Row -->
 
    <!-- Start Button Usage Row -->
-  <div class="c-header-xs">Button Usage</div>
+##### Button Usage
+  
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/Modals_ButtonUse_Do'%} 
@@ -311,7 +326,8 @@ Full screen modals (variation)
   <!-- End Button Usage Row -->
 
 <!-- Start Button Sizing Row -->
-  <div class="c-header-xs">Button Sizing</div>
+##### Button Sizing
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/Modals_ButtonSize_Do'%} 
@@ -341,7 +357,8 @@ Full screen modals (variation)
   <!-- End Button Sizing Row -->
 
   <!-- Start Button Placement Row -->
-  <div class="c-header-xs">Button Placement</div>
+##### Button Placement
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/Modals_ButtonPlace_Do'%} 
@@ -375,12 +392,15 @@ Full screen modals (variation)
 <hr>
 
  <!-- Start Fixed Width Modals Section -->
-  <div class="c-header-md">Fixed Width Modals</div>
+### Fixed Width Modals
  The default version of standard modals.
 
+<br>
+
 <!-- Start Behavior Row -->
-  <div class="c-header-xs c-m-bottom-sm">Behavior</div>
-   <div class="c-row">
+#### Behavior
+
+   <div class="c-row c-m-top-lg">
     <div class="c-col c-text-bold">
     Default
     </div>
@@ -393,7 +413,7 @@ Full screen modals (variation)
     {% include guide-img.html img='elements/modals/Modals_FXD_DefaultBehaviour'%} 
     </div>
     <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FXD_OverflowBehaviour'%} 
+    {% include guide-img.html img='elements/modals/Modals_FXD_OverflowBehaviour'%}
     </div>
   </div>
   <div class="c-row c-m-top-md c-m-bottom-xl">
@@ -441,7 +461,8 @@ Full screen modals (variation)
   <!-- End Behavior Row -->
 
 <!-- Start Fixed Width Modals - Dos and Donts  -->
-<div class="c-header-sm">Do's and Dont's</div>
+#### Do's and Dont's
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/Modals_FXD_Content_Do'%} 
@@ -480,12 +501,15 @@ Full screen modals (variation)
 <hr>
 
  <!-- Start Flexible Width Modals Section -->
-  <div class="c-header-md">Flexible Width Modals</div>
+### Flexible Width Modals
 A variation of the standard modal, the width of this modal can be adjusted to suit content too wide for the fixed width version.
 
+<br>
+
 <!-- Start Behavior Row -->
-  <div class="c-header-xs c-m-bottom-sm">Behavior</div>
-   <div class="c-row">
+#### Behavior
+
+   <div class="c-row c-m-top-lg">
     <div class="c-col c-text-bold">
     Default
     </div>
@@ -553,7 +577,8 @@ A variation of the standard modal, the width of this modal can be adjusted to su
   <!-- End Behavior Row -->
 
 <!-- Start Flexible Width Modals - Dos and Donts  -->
-<div class="c-header-sm">Do's and Dont's</div>
+#### Do's and Dont's
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/Modals_FW_Content_Do'%} 
@@ -598,12 +623,15 @@ A variation of the standard modal, the width of this modal can be adjusted to su
 <hr>
 
  <!-- Start Full Screen Modals Section -->
-  <div class="c-header-md">Full Screen Modals</div>
+### Full Screen Modals
 Another variation of the standard modal, this version is used to display large tables and grids.
 
+<br>
+
 <!-- Start Behavior Row -->
-  <div class="c-header-xs c-m-bottom-sm">Behavior</div>
-   <div class="c-row">
+#### Behavior
+
+   <div class="c-row c-m-top-lg">
     <div class="c-col c-text-bold">
     Default
     </div>
@@ -647,7 +675,8 @@ Another variation of the standard modal, this version is used to display large t
   <!-- End Behavior Row -->
 
 <!-- Start Full Screen Modals - Dos and Donts  -->
-<div class="c-header-sm">Do's and Dont's</div>
+#### Do's and Dont's
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/Modals_FW_Content_Do'%} 
@@ -692,23 +721,29 @@ Another variation of the standard modal, this version is used to display large t
 <hr>
 
  <!-- Start Modal Dialogs Section -->
-  <div class="c-header-md">Modal Dialogs</div>
-Modal Dialogs are used to communicate important information, and require a user response.
+### Modal Dialogs
 
-Structure
-Heading  
-Supportive copy
-An confirmation checkbox (optional) 
-A one button or two button combination (depending on the use case)
-Types
-Modal dialogs requiring acknowledgement
-Modal dialogs requiring a decision
+**Modal Dialogs are used to communicate important information, and require a user response.**
+
+- Structure
+- Heading  
+- Supportive copy
+- An confirmation checkbox (optional) 
+- A one button or two button combination (depending on the use case)
+
+**Types of Modal Dialogs:**
+
+- Modal dialogs requiring acknowledgement
+- Modal dialogs requiring a decision
+
+<br>
 
 <!-- Start Modal Dialogs -General Dos and Don'ts -->
-<div class="c-header-sm c-m-bottom-sm">General Do's and Dont's</div>
+#### General Do's and Dont's
 
 <!-- Start Icon Usage Row -->
-<div class="c-header-xs">Icon Usage (optional)</div>
+##### Icon Usage (optional)
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_Icon_Do'%} 
@@ -738,7 +773,8 @@ Modal dialogs requiring a decision
 <!-- End Icon Usage Row -->
 
 <!-- Start Icon Placement Row -->
-<div class="c-header-xs">Icon Placement</div>
+##### Icon Placement
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_IconPlacement_Do'%} 
@@ -768,7 +804,8 @@ Modal dialogs requiring a decision
 <!-- End Icon Placement Row -->
 
 <!-- Start Headings Row -->
-<div class="c-header-xs">Headings</div>
+##### Headings
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_Headings_Do'%} 
@@ -798,7 +835,8 @@ Modal dialogs requiring a decision
 <!-- End Headings Row -->
 
 <!-- Start Supportive Copy Row -->
-<div class="c-header-xs">Supportive Copy</div>
+##### Supportive Copy
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_Copy_Do'%} 
@@ -834,7 +872,8 @@ Modal dialogs requiring a decision
 <!-- End Supportive Copy Row -->
 
 <!-- Start Button Sizing Row -->
-<div class="c-header-xs">Button Sizing</div>
+##### Button Sizing
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_ButtonSize_Do'%} 
@@ -864,7 +903,8 @@ Modal dialogs requiring a decision
 <!-- End Button Sizing Row -->
 
 <!-- Start Button Placement Row -->
-<div class="c-header-xs">Button Placement</div>
+##### Button Placement
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_ButtonPlace_Do'%} 
@@ -894,7 +934,8 @@ Modal dialogs requiring a decision
 <!-- End Button Placement Row -->
 
 <!-- Start Positioning Row -->
-<div class="c-header-xs">Positioning</div>
+##### Positioning 
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_Position_Do'%} 
@@ -924,27 +965,33 @@ Modal dialogs requiring a decision
 <!-- End Positioning Row -->
 <!-- End Modal Dialog General Dos and Donts -->
 
-<!-- Start Modal Dialog Requiring and Acknowledgement Section-->
-  <div class="c-header-sm c-m-bottom-md">Modal Dialog requiring an acknowledgement</div>
+<hr>
 
-  <div class="c-header-xs">Examples of Use</div>
+<!-- Start Modal Dialog Requiring and Acknowledgement Section-->
+### Modal Dialog requiring an acknowledgement
+
+<br>
+
+#### Examples of Use
   
    This modal dialog requires the user to acknowledge important information, but not to make any specific decisions.
 
   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDA_Example1.png" width="500px;">
 
-  This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue. 
+  <br>
+
+  This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue. This version contains a checkbox that, if checked, will make it a once-off acknowledgement.
 
    <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDA_Example2.png" width="500px;">
-
-   This version contains a checkbox that, if checked, will make it a once-off acknowledgement.
 <!-- END Modal Dialog Requiring and Acknowledgement Section-->
 
-<div class="c-header-sm c-m-bottom-md">Dos and Dont's</div>
+<br>
 
+#### Do's and Dont's
 
 <!-- Start Modal Dialog Requiring Acknowledgement - Button Usage Row -->
-<div class="c-header-xs">Button Usage</div>
+##### Button Usage
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_MDA_Button_Do'%} 
@@ -973,24 +1020,30 @@ Modal dialogs requiring a decision
     </div>
 <!-- End Modal Dialog Requiring Acknowledgement - Button Usage Row -->
 
-<!-- Start Modal Dialog Requiring Decision Section-->
-  <div class="c-header-sm c-m-bottom-md">Modal Dialog requiring an decision</div>
+<hr>
 
-  <div class="c-header-xs">Examples of Use</div>
-  
-    This modal dialog requires the user to view important information, and to make a decision on wether to continue or not.
+<!-- Start Modal Dialog Requiring Decision Section-->
+### Modal Dialog requiring a decision
+
+<br>
+
+#### Examples of use  
+
+  - This modal dialog requires the user to view important information, and to make a decision on wether to continue or not.
+  - A delete warning, featuring a danger button, let's the user understand the potential impact of their decision.
 
   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDD_Example.png" width="500px;">
 
-  A delete warning, featuring a danger button, let's the user understand the potential impact of their decision.
 
 <!-- END Modal Dialog Requiring Decision Section-->
 
-<div class="c-header-sm c-m-bottom-md">Dos and Dont's</div>
+<br>
 
+#### Do's and Dont's
 
 <!-- Start Modal Dialog Requiring Decision - Button Usage Row -->
-<div class="c-header-xs">Button Usage</div>
+##### Button Usage
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/modals/ModalDialogs_MDD_Button_Do'%} 
