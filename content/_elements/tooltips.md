@@ -106,7 +106,37 @@ Cupcake tooltips should be used in place of standard browser tooltips when the i
 - Tooltip Writing
 - Tooltips Placement
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/nameoffile.png" width="500px;">
+### Examples of use
+
+<br>
+
+**Icon tooltip used to clarify the action or name of an icon button**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltip-example-clarify-action-or-name.png" width="500px;">
+
+<br>
+
+**Tooltip used to display keyboard shortcuts**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltip-display-keyboard-shortcuts.png" width="500px;">
+
+<br>
+
+**User inputted information should show user input exactly as the user typed it**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltips-user-input.png" width="500px;">
+
+<br>
+
+**Definition tooltip used to provide contextual information to a word, request, action, or element**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltips-contextual-information.png" width="500px;">
+
+<br>
+
+**Interactive tooltips span from simple buttons or hyperlinks to more complex modules**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tooltips/tooltips-interactive.png" width="500px;">
 
 <hr>
   
