@@ -158,10 +158,11 @@ Avatars can also be grouped.
 <hr>
   
   <!-- Start Do's and Don'ts Section -->
-  <div class="c-header-md">Do's and Dont's</div>
+### Do's and Dont's
 
   <!-- Start Usage Row -->
-  <div class="c-header-xs">Usage</div>
+##### Usage
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/avatars/Avatars_Usage_Do'%} 
@@ -191,7 +192,8 @@ Avatars can also be grouped.
   <!-- End Usage Row -->
 
  <!-- Start Colors Row -->
-  <div class="c-header-xs">Colors</div>
+##### Colors
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/avatars/Avatars_Colors_Do'%} 
@@ -221,7 +223,8 @@ Avatars can also be grouped.
   <!-- End Colors Row -->
 
   <!-- Start Avatars in Headers Row -->
-  <div class="c-header-xs">Avatars in Headers</div>
+##### Avatars in Headers
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/avatars/Avatars_Header_Do'%} 
@@ -251,7 +254,8 @@ Avatars can also be grouped.
   <!-- End Avatars in Headers Row -->
 
   <!-- Start Avatars in Headers-Account Names Row -->
-  <div class="c-header-xs">Avatars in Headers - Account Names</div>
+##### Avatars in Headers - Account Names
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/avatars/Avatars_AccountName_Do'%} 
@@ -281,7 +285,8 @@ Avatars can also be grouped.
   <!-- End Avatars in Headers - Account Names Row -->
 
   <!-- Start Avatar Sizes in Table Cells Row -->
-  <div class="c-header-xs">Avatar Sizes in Table Cells</div>
+##### Avatar Sizes in Table Cell
+
   <div class="c-row">
     <div class="c-col">
     {% include guide-img.html img='elements/avatars/Avatars_Tables_Do'%} 
