@@ -282,8 +282,11 @@ A badge with no content can be used to add visual attention to an element.
   <!-- Start Status Badges Row -->
 ### Status Badges
   - Status badges are used to indicate the status of an entity.
-  <!-- Start Status Badges Do's and Don'ts Section -->
 
+  <br>
+  
+  
+<!-- Start Status Badges Do's and Don'ts Section -->
 #### Do's and Don'ts
 
   <!-- Start Status Badge Color Use Row -->
@@ -452,6 +455,8 @@ A badge with no content can be used to add visual attention to an element.
   <!-- Start Numeric Badges Row -->
 ### Numeric Badges
    - Numeric badges are used to indicate a running tally/count of an entity. 
+
+<br>
 
   <!-- Start Numeric Badges Do's and Don'ts Section -->
 #### Do's and Dont's
