@@ -8,20 +8,27 @@
 <title>Cupcake · Developers</title>
 
 
-<!-- Documentation extras -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
+<script>
+    var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
+    var themeName = themeSettings.themeName || '';
+    if (themeName) {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/' + themeName + '.css">');
+    }
+    else {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">');
+    }
+</script>
 
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/experimental.css">
 
 <!-- Documentation extras -->
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body id="docs-app">
       <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
@@ -86,7 +93,7 @@
       </a>
     </div>
     <div class="c-header-item c-hidden-xs">
-        <a class="c-header-item-link" href="https://cupcake-design-system.github.io/examples">
+        <a class="c-header-item-link" href="https://cupcake-design-system.github.io/release-notes">
           Resources
         </a>
       </div>
@@ -96,7 +103,7 @@
       </button>
     </div>
     <div class="c-header-item c-hidden-xs">
-      <a class="c-header-item-link" href="https://code.ipreo.com/Ipreo/cupcake">
+      <a class="c-header-item-link" href="https://github.com/Cupcake-Design-System/Cupcake">
         <span class="fab fa-github" aria-hidden="true"></span>
       </a>
     </div>
@@ -128,6 +135,25 @@
           Patterns
         </a>
       </div>
+
+      <div class="doc-sidenav-menu-title c-m-top-xl">
+        Change Flavors
+      </div>
+
+      <div id="customize-menu" class="docs-flavor-switch c-dropdown c-d-block">
+        <input type="hidden" class="docs-flavor-switch-input" value="default">
+        <span class="docs-flavor-button docs-flavor-switch-current">
+            Select a flavor
+          </span>
+        <ul id="styleOptions" class="c-dropdown-list c-dropdown-list-below" style="min-width: 100%;">
+          <li class="docs-flavor-list-item" data-dropdown-value="default">
+            <a href="#" class="c-dropdown-item flavor c-dropdown-item-selected" data-theme="cupcake">Default</a>
+          </li>
+          <li class="docs-flavor-list-item" data-dropdown-value="mint">
+            <a href="#" class="c-dropdown-item flavor" data-theme="cupcake-mint">Mint</a>
+          </li>
+        </ul>
+      </div>
     
       <li class="doc-sidenav-menu-item  doc-sidenav-menu-item-active">
           
@@ -144,11 +170,6 @@
               </a>
               </li><li>
               <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/getting-started/principles/">
-                Principles
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/getting-started/designers/">
                 Designers
               </a>
@@ -159,6 +180,16 @@
               </a>
               </li><li>
               <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/getting-started/customization/">
+                Customization
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/getting-started/angular/">
+                Angular
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/getting-started/adoption/">
                 Adoption
               </a>
@@ -166,11 +197,6 @@
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/getting-started/faq/">
                 FAQ
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/getting-started/contribute/">
-                Contribute
               </a>
               </li></ul>
 
@@ -198,13 +224,13 @@
               </a>
               </li><li>
               <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/getting-started/extended-colors/">
-                Extended Colors
+                href="https://cupcake-design-system.github.io/getting-started/primary-colors/">
+                Primary Colors
               </a>
               </li><li>
               <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/getting-started/primary-colors/">
-                Primary Colors
+                href="https://cupcake-design-system.github.io/getting-started/extended-colors/">
+                Extended Colors
               </a>
               </li><li>
               <a class="doc-sidenav-menu-link"
@@ -224,7 +250,7 @@
       
         
     <main class="main-container" role="main">
-      <div class="docs-bg-img">
+      <div class="docs-bg-img c-bg-primary">
   <h1 class="docs-title" id="content">Developers</h1>
   <p class="docs-lead">The Cupcake Component Library provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build user interfaces.</p>
 </div>
@@ -236,9 +262,9 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h3 id="getting-started">Getting Started</h3>
+            <h4 id="installation">Installation</h4>
 
-<h4 id="1-installation">1. Installation</h4>
+<p>There are multiple ways to get started with Cupcake. You can install manually, from a CDN or use package managers.</p>
 
 <p>The suggested way to use Cupcake is with a package manager.</p>
 
@@ -246,26 +272,31 @@
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">npm <span class="nb">install</span> @cupcake-ds/cupcake  <span class="nt">--save</span></code></pre></figure>
 
+<p><br /></p>
+
 <p>This will pull down the latest version into your local node_modules folder and save it into your project’s dependencies in package.json.</p>
 
 <hr />
 
-<h4 id="2-using-the-library">2. Using the Library</h4>
+<h4 id="install-manually">Install manually</h4>
 
-<p>To use the css at the page level - simply include default.min.css in your HTML file:</p>
+<p>Download the compiled and minified CSS file:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"path/to/node_modules/@cupcake-ds/cupcake/cupcake.min.css"</span><span class="nt">&gt;</span></code></pre></figure>
+<p><a href="https://github.com/Cupcake-Design-System/Cupcake/releases" class="c-btn c-btn-primary" target="_blank">Download CSS</a></p>
 
-<p>For more advanced useage you can import the scss:</p>
+<p>Include cupcake.css located in /dist in your application. You can also add experimental.css for using experimental features.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s1">'node_modules/@cupcake-ds/cupcake/scss'</span><span class="p">;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"cupcake.min.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"experimental.min.css"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <hr />
 
-<h4 id="3-write-your-html">3. Write your HTML</h4>
-<p>Using the Cupcake CSS class names and markup</p>
+<h4 id="install-from-cdn">Install from CDN</h4>
+<p>Alternatively, you can use the unpkg CDN to load the compiled files.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span> Button <span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<p>To use the css at the page level - simply include default.min.css in your HTML file:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <hr />
 
@@ -292,13 +323,13 @@
     </div>
     <div class="c-footer-right">
       <div class="c-footer-link">
-        <a href="https://ipreo.slack.com/messages/C0T3KNMK7/" class="c-a" target="_blank">
-            <span class="fab fa-slack-hash" aria-hidden="true"></span>
-            Slack
+        <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
+            <span class="fas fa-users" aria-hidden="true"></span>
+            Teams
         </a>
       </div>
       <div class="c-footer-link">
-        <a href="https://code.ipreo.com/Ipreo/cupcake" class="c-a" target="_blank">
+        <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
             <span class="fab fa-github" aria-hidden="true"></span>
             Github
         </a>

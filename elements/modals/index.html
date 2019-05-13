@@ -8,20 +8,27 @@
 <title>Cupcake · Modals</title>
 
 
-<!-- Documentation extras -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
+<script>
+    var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
+    var themeName = themeSettings.themeName || '';
+    if (themeName) {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/' + themeName + '.css">');
+    }
+    else {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">');
+    }
+</script>
 
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/experimental.css">
 
 <!-- Documentation extras -->
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body id="docs-app">
       <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
@@ -86,7 +93,7 @@
       </a>
     </div>
     <div class="c-header-item c-hidden-xs">
-        <a class="c-header-item-link" href="https://cupcake-design-system.github.io/examples">
+        <a class="c-header-item-link" href="https://cupcake-design-system.github.io/release-notes">
           Resources
         </a>
       </div>
@@ -96,7 +103,7 @@
       </button>
     </div>
     <div class="c-header-item c-hidden-xs">
-      <a class="c-header-item-link" href="https://code.ipreo.com/Ipreo/cupcake">
+      <a class="c-header-item-link" href="https://github.com/Cupcake-Design-System/Cupcake">
         <span class="fab fa-github" aria-hidden="true"></span>
       </a>
     </div>
@@ -127,6 +134,25 @@
           href="https://cupcake-design-system.github.io/patterns/overview">
           Patterns
         </a>
+      </div>
+
+      <div class="doc-sidenav-menu-title c-m-top-xl">
+        Change Flavors
+      </div>
+
+      <div id="customize-menu" class="docs-flavor-switch c-dropdown c-d-block">
+        <input type="hidden" class="docs-flavor-switch-input" value="default">
+        <span class="docs-flavor-button docs-flavor-switch-current">
+            Select a flavor
+          </span>
+        <ul id="styleOptions" class="c-dropdown-list c-dropdown-list-below" style="min-width: 100%;">
+          <li class="docs-flavor-list-item" data-dropdown-value="default">
+            <a href="#" class="c-dropdown-item flavor c-dropdown-item-selected" data-theme="cupcake">Default</a>
+          </li>
+          <li class="docs-flavor-list-item" data-dropdown-value="mint">
+            <a href="#" class="c-dropdown-item flavor" data-theme="cupcake-mint">Mint</a>
+          </li>
+        </ul>
       </div>
     
       <li class="doc-sidenav-menu-item  doc-sidenav-menu-item-active">
@@ -323,7 +349,7 @@
       
         
     <main class="main-container" role="main">
-      <div class="docs-bg-img">
+      <div class="docs-bg-img c-bg-primary">
   <h1 class="docs-title" id="content">Modals</h1>
   <p class="docs-lead">Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task.</p>
 </div>
@@ -1592,13 +1618,13 @@
     </div>
     <div class="c-footer-right">
       <div class="c-footer-link">
-        <a href="https://ipreo.slack.com/messages/C0T3KNMK7/" class="c-a" target="_blank">
-            <span class="fab fa-slack-hash" aria-hidden="true"></span>
-            Slack
+        <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
+            <span class="fas fa-users" aria-hidden="true"></span>
+            Teams
         </a>
       </div>
       <div class="c-footer-link">
-        <a href="https://code.ipreo.com/Ipreo/cupcake" class="c-a" target="_blank">
+        <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
             <span class="fab fa-github" aria-hidden="true"></span>
             Github
         </a>

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Current status of elements, components, and patterns.">
+<meta name="description" content="The Cupcake Component Library provides front-end developers &engineers a collection of reusable HTML and SCSS partials to build user interfaces.">
 
-<title>Cupcake · Component Status</title>
+<title>Cupcake · Developers</title>
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -178,7 +178,7 @@
                 href="https://cupcake-design-system.github.io/getting-started/developers/">
                 Developers
               </a>
-              </li><li>
+              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/getting-started/customization/">
                 Customization
@@ -251,8 +251,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img c-bg-primary">
-  <h1 class="docs-title" id="content">Component Status</h1>
-  <p class="docs-lead">Current status of elements, components, and patterns.</p>
+  <h1 class="docs-title" id="content">Developers</h1>
+  <p class="docs-lead">The Cupcake Component Library provides front-end developers &engineers a collection of reusable HTML and SCSS partials to build user interfaces.</p>
 </div>
 
       
@@ -262,42 +262,50 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <p>The Cupcake team is building a robust library of components as quickly as possible. Check back often for updates.</p>
+            <h4 id="customization">Customization</h4>
 
-<p><span class="c-text-gray-7 c-text-bold"> Legend: </span>
-<i class="c-text-gray-6 fal fa-star c-m-left-md"></i> In queue
-<i class="c-text-warning fal fa-star-half c-m-left-md"></i> In progress
-<i class="c-text-success fas fa-star c-m-left-md"></i> Done
-<i class="c-text-success c-m-left-md">- -</i> N/A</p>
+<p>You may need to add, remove, or extend the core of Cupcake.</p>
 
-<table class="c-table c-table-bordered">
-  <thead>
-    <tr>
-      <th>Item</th>
-      <th class="c-text-center">
-        UX
-      </th>
-      <th class="c-text-center">
-        UI
-      </th>
-      <th class="c-text-center">
-        HTML/CSS
-      </th>
-      <th class="c-text-center">
-        Docs
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th class="c-text-lg">Page Layouts</th>
-      <td><i class="c-text-gray-6 fal fa-2x fa-star"></i></td>
-      <td><i class="c-text-warning fal fa-2x fa-star-half"></i></td>
-      <td><i class="c-text-success fas fa-2x fa-star"></i></td>
-      <td><i class="c-text-lg">- - N/A</i></td>
-    </tr>
-  </tbody>
-</table>
+<p>You can customize your version by editing and recompiling the scss files in the /src directory.</p>
+
+<div class="docs-callout docs-callout-warning">
+<h4 id="autoprefixer-make-sure-your-build-process-uses-autoprefixer-to-ensure-vendor-prefixes-are-automatically-added-to-your-output-css">Autoprefixer: Make sure your build process uses autoprefixer to ensure vendor prefixes are automatically added to your output CSS.</h4>
+</div>
+
+<p><strong>Importing Sass</strong></p>
+
+<p>Any customization of Cupcake should be done by importing the scss source files. In this way, you can keep Cupcake up to date without conflicts, use the establish variables to stay in line with the Design Language, and keep your application code seperated from the Cupcake core.</p>
+
+<p><br /></p>
+
+<p><strong>1.) First, install Cupcake via NPM or other package managers.</strong></p>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">npm <span class="nb">install</span> @cupcake-ds/cupcake  <span class="nt">--save</span></code></pre></figure>
+
+<p><br /></p>
+
+<p><strong>2.) Create your scss file to define your variables.</strong></p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/* import cupcake support files */</span>
+<span class="k">@import</span> <span class="s2">"cupcake/scss/support"</span><span class="p">;</span>
+
+<span class="cm">/* -------begin customization-------- */</span>
+
+<span class="c1">// Define variables to override default ones</span>
+<span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#fc7800</span><span class="p">;</span>
+<span class="nv">$dark-color</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
+
+<span class="cm">/* -------end customization-------- */</span>
+
+<span class="cm">/* finally, import Cupcake core file to set the changes! */</span>
+<span class="k">@import</span> <span class="s2">"cupcake"</span><span class="p">;</span></code></pre></figure>
+
+<p><br />
+<br /></p>
+
+<div class="docs-callout docs-callout-info">
+<h4 id="more-advanced-styling-instructions-for-maps-loops-mixins-and-functions-coming-soon">More advanced styling instructions for maps, loops, mixins, and functions coming soon</h4>
+</div>
 
 
 

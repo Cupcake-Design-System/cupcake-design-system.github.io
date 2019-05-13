@@ -269,11 +269,11 @@ body {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
-  color: #33475b; }
+  color: #495057; }
 
 p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 8px; }
 
@@ -315,6 +315,11 @@ a {
   color: #1b6ec2; }
   a:hover {
     color: #1e7bd8; }
+
+a.c-btn.c-btn-primary:hover {
+  color: white; }
+  a.c-btn.c-btn-primary:hover a:hover {
+    color: white; }
 
 .main-demo-content h1, .main-demo-content h2,
 .main-content h1,
@@ -464,6 +469,9 @@ a {
   flex-direction: column;
   min-height: 100vh;
   margin-top: 48px; }
+  @media (max-width: 991px) {
+    .main-container {
+      margin-top: 0; } }
 
 .main-content {
   flex: 1 0 auto;
@@ -506,6 +514,9 @@ a {
   .doc-sidenav ul {
     padding: 0;
     margin: 0; }
+  @media (max-width: 991px) {
+    .doc-sidenav {
+      top: 0; } }
   .doc-sidenav-body {
     flex: 1 1 0%;
     overflow-y: auto;
@@ -614,6 +625,57 @@ a {
     height: 35px;
     padding: 0;
     margin-right: 8px; }
+
+.docs-flavor-switch {
+  position: relative; }
+
+.docs-flavor-list-item a {
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  overflow: hidden;
+  line-height: 20px;
+  margin: 8px;
+  padding: 8px;
+  white-space: nowrap;
+  color: #343a40;
+  text-overflow: ellipsis;
+  transition: background-color 0.25s linear; }
+  .docs-flavor-list-item a:hover {
+    background-color: #f1f3f5;
+    color: #343a40; }
+
+.docs-flavor-button {
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+  min-height: 32px;
+  line-height: 20px;
+  color: #343a40;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #f1f3f5;
+  border: 1px solid #ced4da;
+  transition: background-color 0.2s linear;
+  padding: 4px 34px 4px 8px; }
+  .docs-flavor-button:hover {
+    background-color: #f8f9fa; }
+  .docs-flavor-button::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #343a40; }
+
+.is-open > .docs-flavor-list {
+  opacity: 1;
+  visibility: visible; }
+.is-open > .c-dropdown-list {
+  display: block; }
 
 .docs-tabs {
   height: 48px;
@@ -1112,3 +1174,8 @@ iframe {
   height: 48px;
   padding: 0 16px;
   font-size: 15px; }
+
+.docs-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }

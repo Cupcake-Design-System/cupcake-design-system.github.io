@@ -8,20 +8,27 @@
 <title>Cupcake · Updates & Release Notes</title>
 
 
-<!-- Documentation extras -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- <link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/cupcake/default.css"> -->
+<script>
+    var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
+    var themeName = themeSettings.themeName || '';
+    if (themeName) {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/' + themeName + '.css">');
+    }
+    else {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">');
+    }
+</script>
 
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/experimental.css">
 
 <!-- Documentation extras -->
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body id="docs-app">
       <header class="c-header c-header-inverse c-header-fixed docs-nav">
 
   <div class="c-header-left">
@@ -86,7 +93,7 @@
       </a>
     </div>
     <div class="c-header-item c-hidden-xs">
-        <a class="c-header-item-link" href="https://cupcake-design-system.github.io/examples">
+        <a class="c-header-item-link" href="https://cupcake-design-system.github.io/release-notes">
           Resources
         </a>
       </div>
@@ -96,7 +103,7 @@
       </button>
     </div>
     <div class="c-header-item c-hidden-xs">
-      <a class="c-header-item-link" href="https://code.ipreo.com/Ipreo/cupcake">
+      <a class="c-header-item-link" href="https://github.com/Cupcake-Design-System/Cupcake">
         <span class="fab fa-github" aria-hidden="true"></span>
       </a>
     </div>
@@ -139,7 +146,12 @@
               </span>
             </a>
         
-              <ul class="doc-sidenav-menu-submenu"><li>
+              <ul class="doc-sidenav-menu-submenu"><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+                  <a class="doc-sidenav-menu-link"
+                    href="https://cupcake-design-system.github.io/release-notes/">
+                    Release Notes
+                  </a>
+                  </li><li>
                   <a class="doc-sidenav-menu-link"
                     href="https://cupcake-design-system.github.io/examples/">
                     Examples
@@ -148,11 +160,6 @@
                   <a class="doc-sidenav-menu-link"
                     href="https://cupcake-design-system.github.io/prototypes/">
                     Prototypes
-                  </a>
-                  </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
-                  <a class="doc-sidenav-menu-link"
-                    href="https://cupcake-design-system.github.io/release-notes/">
-                    Release Notes
                   </a>
                   </li><li>
                   <a class="doc-sidenav-menu-link"
@@ -170,7 +177,7 @@
       
         
     <main class="main-container" role="main">
-      <div class="docs-bg-img">
+      <div class="docs-bg-img c-bg-primary">
   <h1 class="docs-title" id="content">Updates & Release Notes</h1>
   <p class="docs-lead">Latest News and Updates</p>
 </div>
@@ -187,78 +194,24 @@
   <div class="c-col-12 c-col-lg-4 c-m-bottom-lg">
     <div class="c-card">
       <header class="c-card-header">
-        <a class="docs-article-image" href="https://cupcake-design-system.github.io/posts/2018/06/14/1.4.x/" style="background-color: #7950f2">
+        <a class="docs-article-image" href="https://cupcake-design-system.github.io/posts/2019/05/10/2.0-release/" style="background-color: #007778">
           <span class="docs-article-overlay"></span>
           <span class="docs-article-icon">
             <span class="icon">
-              <i class="fal fa-shipping-fast"></i>
+              <i class="fas fa-rocket"></i>
             </span>
           </span>
           <strong class="docs-article-title">
-            New Release!
+            2.0 Release!
           </strong>
         </a>
       </header>
       <div class="c-card-content">
         <div class="c-card-content-title">
-          <a class="c-a" href="https://cupcake-design-system.github.io/posts/2018/06/14/1.4.x/">1.4.x Release</a>
+          <a class="c-a" href="https://cupcake-design-system.github.io/posts/2019/05/10/2.0-release/">2.0 Released</a>
         </div>
         <div class="c-card-content-body">
-          <p>A couple of bug fixes and some new helpers</p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="c-col-12 c-col-lg-4 c-m-bottom-lg">
-    <div class="c-card">
-      <header class="c-card-header">
-        <a class="docs-article-image" href="https://cupcake-design-system.github.io/posts/2017/09/15/new-helpers/" style="background-color: #0ca678">
-          <span class="docs-article-overlay"></span>
-          <span class="docs-article-icon">
-            <span class="icon">
-              <i class="fal fa-ship"></i>
-            </span>
-          </span>
-          <strong class="docs-article-title">
-            Updates!
-          </strong>
-        </a>
-      </header>
-      <div class="c-card-content">
-        <div class="c-card-content-title">
-          <a class="c-a" href="https://cupcake-design-system.github.io/posts/2017/09/15/new-helpers/">1.1.0 Released</a>
-        </div>
-        <div class="c-card-content-body">
-          <p>A couple of bug fixes and some new helpers</p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="c-col-12 c-col-lg-4 c-m-bottom-lg">
-    <div class="c-card">
-      <header class="c-card-header">
-        <a class="docs-article-image" href="https://cupcake-design-system.github.io/posts/2017/08/17/1.0-release/" style="background-color: #868e96">
-          <span class="docs-article-overlay"></span>
-          <span class="docs-article-icon">
-            <span class="icon">
-              <i class="fal fa-rocket"></i>
-            </span>
-          </span>
-          <strong class="docs-article-title">
-            Launch!
-          </strong>
-        </a>
-      </header>
-      <div class="c-card-content">
-        <div class="c-card-content-title">
-          <a class="c-a" href="https://cupcake-design-system.github.io/posts/2017/08/17/1.0-release/">Cupcake 1.0</a>
-        </div>
-        <div class="c-card-content-body">
-          <p>First post on the newly launched blog!</p>
+          <p>2.0 release notes and changelog!</p>
 
         </div>
       </div>
@@ -280,13 +233,13 @@
     </div>
     <div class="c-footer-right">
       <div class="c-footer-link">
-        <a href="https://ipreo.slack.com/messages/C0T3KNMK7/" class="c-a" target="_blank">
-            <span class="fab fa-slack-hash" aria-hidden="true"></span>
-            Slack
+        <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
+            <span class="fas fa-users" aria-hidden="true"></span>
+            Teams
         </a>
       </div>
       <div class="c-footer-link">
-        <a href="https://code.ipreo.com/Ipreo/cupcake" class="c-a" target="_blank">
+        <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
             <span class="fab fa-github" aria-hidden="true"></span>
             Github
         </a>
