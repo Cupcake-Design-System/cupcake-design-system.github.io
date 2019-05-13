@@ -4,11 +4,11 @@ description: The Cupcake Design System includes the resources to create user int
 ---
 
 # Goals
-Rather than focusing on pixels, developers can focus on application logic, while designers can focus on user experience, interactions, and flows.
+Rather than focusing on pixels, developers can focus on application logic,while designers can focus on user experience, interactions, and flows.
 
-These elements, components, and patterns provide a unified language and consistent look and feel when designing apps and products within the Ipreo ecosystem.
+These elements, components, and patterns provide a unified language and consistent look and feel when designing apps and products within the IHS Markit ecosystem.
 
-For developers we’ve also created a powerful set of atomic/helpers classes that can be chained together to create just about any layout without writing a single line of new CSS. Further, these atomic classes can be used as modifiers of pre-existing components.
+For developers we’ve also created a powerful set of helper classes that can be chained together to create just about any layout without writing a single line of new CSS. These helper classes can also be used as modifiers of pre-existing components.
 
 --- 
 
@@ -19,7 +19,7 @@ In order to use Cupcake, let’s consider the design you’d like to implement.
 Identify if the design you’re implementing uses any existing components. Great, it does? Grab the markup from that component’s example page and paste that into your view, use the classes provided to build the ui, or install one of the existing components built with Cupcake!
 
 ### If your design uses existing components but has some special cases.
-E.G. background colors, borders, etc. This is the most common use - you have a bunch of elements but need to implement them or combine them together on a page. Cupcake provides tons of atomic or helper classes to make this easy. Practically, this will likely just be adding something like an .c-m-bottom-lg class to a button, or hiding something temporarily with .c-d-none. These classes still adhere to the UX design standards - so using these classes to compose your pages - will be fast and stay in line with the ultimate vision.
+E.G. background colors, borders, etc. This is the most common use - you have a bunch of elements but need to implement them or combine them together on a page. Cupcake provides helper classes to make this easy. Practically, this will likely just be adding something like an .c-m-bottom-lg class to a button, or hiding something temporarily with .c-d-none. These classes still adhere to the UX design standards - so using these classes to compose your pages - will be fast and stay in line with the ultimate vision.
 
 
 ### If your design uses a new pattern that doesn’t have a component yet or isn't easily created with provided classes.

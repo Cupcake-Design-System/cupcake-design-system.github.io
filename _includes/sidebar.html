@@ -27,6 +27,25 @@
         </a>
       </div>
 
+      <div class="doc-sidenav-menu-title c-m-top-xl">
+        Change Flavors
+      </div>
+
+      <div id="customize-menu" class="docs-flavor-switch c-dropdown c-d-block">
+        <input type="hidden" class="docs-flavor-switch-input" value="default">
+        <span class="docs-flavor-button docs-flavor-switch-current">
+            Select a flavor
+          </span>
+        <ul id="styleOptions" class="c-dropdown-list c-dropdown-list-below" style="min-width: 100%;">
+          <li class="docs-flavor-list-item" data-dropdown-value="default">
+            <a href="#" class="c-dropdown-item flavor c-dropdown-item-selected" data-theme="cupcake">Default</a>
+          </li>
+          <li class="docs-flavor-list-item" data-dropdown-value="mint">
+            <a href="#" class="c-dropdown-item flavor" data-theme="cupcake-mint">Mint</a>
+          </li>
+        </ul>
+      </div>
+      
       {%- assign page_slug = page.url | split: '/' | last -%}
       {%- for group in items -%}
       {%- assign link = group.pages | first -%}

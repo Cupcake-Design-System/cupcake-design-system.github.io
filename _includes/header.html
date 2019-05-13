@@ -11,14 +11,21 @@
 </title>
 
 
-<!-- Documentation extras -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/cupcake/default.css"> -->
+<script>
+    var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
+    var themeName = themeSettings.themeName || '';
+    if (themeName) {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/' + themeName + '.css">');
+    }
+    else {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">');
+    }
+</script>
 
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/cupcake-shim.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake@2.0.0-beta.5/dist/experimental.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/experimental.css">
 
 <!-- Documentation extras -->
 <link href="{{ site.url }}{{ site.baseurl }}/assets/scss/documentation.css" rel="stylesheet">

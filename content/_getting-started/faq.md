@@ -60,11 +60,8 @@ If you have a pressing bug or change it is best to make PR for the issue yoursel
 If you still have questions or can't find the answer you are looking for feel free to reach out in one of the following ways:
 
 General inquiries
-- Email: [teamcupcake@ipreo.com](teamcupcake@ipreo.com) 
-- For design questions: [#UX slack](https://ipreo.slack.com/messages/C521XQF4J)
-- For development questions: [#cupcake slack](https://ipreo.slack.com/messages/G37P0EKR9/)
+- Email: [teamcupcake@ipreo.com](teamcupcake@ihs-markit.com) 
+- Teams: [Cupcake Design System Channel](https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10)
 
 ---
-
-{% include continue.html page='getting-started/contribute' content="Contribute" %}
 
