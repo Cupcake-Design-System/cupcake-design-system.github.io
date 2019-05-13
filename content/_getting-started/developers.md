@@ -4,11 +4,12 @@ description: The Cupcake Component Library provides front-end developers & engin
 ---
 
 
-### Getting Started
+#### Installation
 
-#### 1. Installation
+There are multiple ways to get started with Cupcake. You can install manually, from a CDN or use package managers.
 
 The suggested way to use Cupcake is with a package manager.
+
 
 **Using npm:**
 
@@ -16,38 +17,38 @@ The suggested way to use Cupcake is with a package manager.
 npm install @cupcake-ds/cupcake  --save
 {% endhighlight %}
 
-This will pull down the latest version into your local node_modules folder and save it into your project's dependencies in package.json.
+<br>
 
+This will pull down the latest version into your local node_modules folder and save it into your project's dependencies in package.json.
 
 --- 
 
 
-#### 2. Using the Library
+#### Install manually
+
+Download the compiled and minified CSS file:
+
+<a href="https://github.com/Cupcake-Design-System/Cupcake/releases" class="c-btn c-btn-primary" target="_blank">Download CSS</a>
+
+Include cupcake.css located in /dist in your application. You can also add experimental.css for using experimental features.
+
+{% highlight html %}
+<link rel="stylesheet" href="cupcake.min.css">
+<link rel="stylesheet" href="experimental.min.css">
+{% endhighlight %}
+
+---
+
+#### Install from CDN
+Alternatively, you can use the unpkg CDN to load the compiled files.
 
 To use the css at the page level - simply include default.min.css in your HTML file:
 
 {% highlight html %}
-<link rel="stylesheet" href="path/to/node_modules/@cupcake-ds/cupcake/cupcake.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">
 {% endhighlight %}
 
-
-For more advanced useage you can import the scss:
-{% highlight scss %}
-@import 'node_modules/@cupcake-ds/cupcake/scss';
-{% endhighlight %}
-
---- 
-
-
-#### 3. Write your HTML
-Using the Cupcake CSS class names and markup
-
-{% highlight html %}
-<button class="c-btn c-btn-primary"> Button </button>
-{% endhighlight %}
-
-
---- 
+---
 
 
 ### Angular Support

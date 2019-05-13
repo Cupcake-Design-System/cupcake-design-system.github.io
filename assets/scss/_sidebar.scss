@@ -20,6 +20,10 @@
   background-color: $sidebar-bg-color;
   border-right: $sidebar-border-right;
 
+  @include media-breakpoint-down(md) {
+    top: 0;
+  }
+
   &-body {
     flex: 1 1 0%;
     overflow-y: auto;
