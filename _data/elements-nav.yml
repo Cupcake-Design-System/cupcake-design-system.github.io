@@ -2,6 +2,7 @@
   pages:
     - title: Overview
     - title: Alerts
+    - title: Action Panel
     - title: Avatars 
     - title: Badges
     - title: Buttons
