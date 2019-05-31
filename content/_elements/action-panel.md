@@ -465,5 +465,21 @@ Additionally we can add a footer with multiple alignment options.
 <div class="c-action-panel-backdrop" id="backdrop-dark" style="display: none; z-index: 1601;"></div>
 
 <hr>
+
+
+### Internal
+The same action panel can be used within the UI and not offscreen. This **requires** the parent class `.c-wrapper` to enclose all of your content and `.c-action-panel-push` to control the panel.
+
 <br>
 
+You can also use `c-action-panel-left` in this scenario.
+
+<br>
+
+
+
+Play with a demo example <a class="c-text-underline" href="{{site.url}}{{site.baseurl}}/content/resources/examples/layout-demos">here</a>. 
+
+
+<hr>
+<br>
