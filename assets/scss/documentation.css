@@ -179,7 +179,6 @@ body {
 .docs-article-image {
   background-color: #1b6ec2;
   display: block;
-  margin: 0 -32px 40px -32px;
   height: 200px;
   position: relative;
   text-align: center;
@@ -196,27 +195,24 @@ body {
     background-color: #f59f00; }
   .docs-article-image.is-danger {
     background-color: #f03e3e; }
-  .c-card-header .docs-article-image {
+  .docs-article-image .docs-article-image {
     margin: 0;
     height: 150px; }
-  @media (max-width: 991px) {
-    .docs-article-image {
-      margin: -16px -16px 40px -16px; } }
 
-.c-card-header:hover .docs-article-overlay {
+.docs-article-image:hover .docs-article-overlay {
   opacity: 0.25; }
   @media (max-width: 767px) {
-    .c-card-header:hover .docs-article-overlay {
+    .docs-article-image:hover .docs-article-overlay {
       opacity: 0; } }
-.c-card-header:hover .docs-article-icon {
+.docs-article-image:hover .docs-article-icon {
   transform: scale(1.1); }
   @media (max-width: 767px) {
-    .c-card-header:hover .docs-article-icon {
+    .docs-article-image:hover .docs-article-icon {
       transform: none; } }
-.c-card-header:hover .docs-article-title {
+.docs-article-image:hover .docs-article-title {
   transform: scale(0.9); }
   @media (max-width: 767px) {
-    .c-card-header:hover .docs-article-title {
+    .docs-article-image:hover .docs-article-title {
       transform: none; } }
 
 .docs-article-overlay {
@@ -782,7 +778,7 @@ a.c-btn.c-btn-primary:hover {
 .docs-clipboard {
   position: absolute;
   left: 70px;
-  padding: 3px 0; }
+  padding: 8px 0; }
   .docs-clipboard + .highlight {
     margin-top: 0; }
 
@@ -1098,7 +1094,7 @@ a.c-btn.c-btn-primary:hover {
   border-bottom: none;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
   .highlight pre {
-    padding: 1rem;
+    padding: .75rem;
     margin-top: 0;
     margin-bottom: 0;
     border: 0;

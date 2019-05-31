@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="An Action Panel is used to display content that complements the primary content.">
+
+<title>Cupcake · Action Panel</title>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<script>
+    var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
+    var themeName = themeSettings.themeName || '';
+    if (themeName) {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/' + themeName + '.css">');
+    }
+    else {
+      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">');
+    }
+</script>
+
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake-shim.css">
+<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/experimental.css">
+
+<!-- Documentation extras -->
+<link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
+
+  </head>
+  <body id="docs-app">
+      <header class="c-header c-header-inverse c-header-fixed docs-nav">
+
+  <div class="c-header-left">
+    <div class="c-header-item">
+      <a class="c-header-item-link c-header-item-link-logo" href="https://cupcake-design-system.github.io/getting-started/overview">
+        <svg width="77px" height="86px" viewBox="0 0 77 86" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <linearGradient x1="10.8997675%" y1="-3.72942074%" x2="114.31576%" y2="119.749188%" id="linearGradient-1">
+              <stop stop-color="#0082DE" offset="0%"></stop>
+              <stop stop-color="#004E92" offset="100%"></stop>
+            </linearGradient>
+            <path d="M63.3607333,28.84934 L74.6434414,16.3060637 C66.9284682,7.11082335 55.4001793,1.27254046 42.5194983,1.27254046 C19.2912225,1.27254046 0.460984352,20.2588885 0.460984352,43.6797357 C0.460984352,67.1005826 19.2912225,86.086931 42.5194983,86.086931 C55.8647518,86.086931 67.758299,79.8199101 75.4632204,70.0454788 L63.277379,57.5818973 C58.9813792,63.6154317 52.0592824,67.5310258 44.2516796,67.5310258 C34.555459,67.5310258 26.2249563,61.4919954 22.5940602,52.8571201 C21.2891137,49.8381114 20.5640197,46.4958875 20.5640197,42.9796686 C20.5640197,29.5254902 31.1799181,18.6187237 44.2752922,18.6187237 C55.3901737,18.6187237 60.8241913,25.1300833 62.5933202,27.8168755 C62.8577613,28.1537189 63.1136788,28.4979905 63.3607333,28.84934 Z"
+              id="path-2"></path>
+            <linearGradient x1="6.99466701%" y1="-3.72942074%" x2="120.739238%" y2="119.749188%" id="linearGradient-4">
+              <stop stop-color="#0082DE" offset="0%"></stop>
+              <stop stop-color="#004E92" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Group-4" transform="translate(0.000000, -58.000000)">
+              <g id="c-copy" transform="translate(0.500000, 57.000000)">
+                <path d="M63.3607333,28.84934 L74.6434414,16.3060637 C66.9284682,7.11082335 55.4001793,1.27254046 42.5194983,1.27254046 C19.2912225,1.27254046 0.460984352,20.2588885 0.460984352,43.6797357 C0.460984352,67.1005826 19.2912225,86.086931 42.5194983,86.086931 C55.8647518,86.086931 67.758299,79.8199101 75.4632204,70.0454788 L63.277379,57.5818973 C58.9813792,63.6154317 52.0592824,67.5310258 44.2516796,67.5310258 C34.555459,67.5310258 26.2249563,61.4919954 22.5940602,52.8571201 C21.2891137,49.8381114 20.5640197,46.4958875 20.5640197,42.9796686 C20.5640197,29.5254902 31.1799181,18.6187237 44.2752922,18.6187237 C55.3901737,18.6187237 60.8241913,25.1300833 62.5933202,27.8168755 C62.8577613,28.1537189 63.1136788,28.4979905 63.3607333,28.84934 Z"
+                  id="path-2" stroke="url(#linearGradient-1)" stroke-width="0.5"></path>
+                <g id="path-2" fill="#329AF0" fill-rule="nonzero">
+                  <path d="M63.3607333,28.84934 L74.6434414,16.3060637 C66.9284682,7.11082335 55.4001793,1.27254046 42.5194983,1.27254046 C19.2912225,1.27254046 0.460984352,20.2588885 0.460984352,43.6797357 C0.460984352,67.1005826 19.2912225,86.086931 42.5194983,86.086931 C55.8647518,86.086931 67.758299,79.8199101 75.4632204,70.0454788 L63.277379,57.5818973 C58.9813792,63.6154317 52.0592824,67.5310258 44.2516796,67.5310258 C34.555459,67.5310258 26.2249563,61.4919954 22.5940602,52.8571201 C21.2891137,49.8381114 20.5640197,46.4958875 20.5640197,42.9796686 C20.5640197,29.5254902 31.1799181,18.6187237 44.2752922,18.6187237 C55.3901737,18.6187237 60.8241913,25.1300833 62.5933202,27.8168755 C62.8577613,28.1537189 63.1136788,28.4979905 63.3607333,28.84934 Z"></path>
+                </g>
+                <g id="Combined-Shape-Clipped">
+                  <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                  </mask>
+                  <g id="path-2"></g>
+                  <path d="M63.2399885,57.6194183 C57.9551108,68.7166803 47.1695308,77.0451341 34.7233222,77.0451341 C17.06117,77.0451341 1.37649339,66.9355489 0.829824068,43.4375946 C0.283154743,19.93964 17.06117,9.28359087 34.7233222,9.28359087 C47.5090997,9.28359087 58.5423993,17.499952 63.6601882,28.7346746 C59.3706344,22.5744585 52.354309,18.5604705 44.4267028,18.5604705 C31.3687868,18.5604705 20.7832544,29.4507657 20.7832544,42.8846257 C20.7832544,56.3184857 31.3687868,67.2087812 44.4267028,67.2087812 C52.1005753,67.2087812 58.9205668,63.4476275 63.2399885,57.6194183 Z"
+                    id="Combined-Shape" stroke="url(#linearGradient-4)" stroke-width="0.5" fill="url(#linearGradient-4)"
+                    fill-rule="nonzero" mask="url(#mask-3)"></path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+        Cupcake Design System
+      </a>
+    </div>
+  </div>
+
+  <div class="c-header-center"></div>
+
+  <div class="c-header-right">
+    <div class="c-header-item c-hidden-xs">
+      <a class="c-header-item-link" href="https://cupcake-design-system.github.io/getting-started/overview">
+        Getting Started
+      </a>
+    </div>
+    <div class="c-header-item c-hidden-xs">
+      <a class="c-header-item-link" href="https://cupcake-design-system.github.io/elements/overview">
+        Elements
+      </a>
+    </div>
+    <div class="c-header-item c-hidden-xs">
+      <a class="c-header-item-link" href="https://cupcake-design-system.github.io/patterns/overview">
+        Patterns
+      </a>
+    </div>
+    <div class="c-header-item c-hidden-xs">
+        <a class="c-header-item-link" href="https://cupcake-design-system.github.io/release-notes">
+          Resources
+        </a>
+      </div>
+    <div class="c-header-item">
+      <button class="c-header-item-link c-md-d-none" type="button" id="docs-menu-toggle">
+          <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="c-header-item c-hidden-xs">
+      <a class="c-header-item-link" href="https://github.com/Cupcake-Design-System/Cupcake">
+        <span class="fab fa-github" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  
+</header>
+
+
+      
+        
+
+
+<aside class="doc-sidenav">
+<nav class="doc-sidenav-body" data-simplebar="">
+
+    <ul class="doc-sidenav-menu">
+
+      <div class="doc-sidenav-navbar">
+        <a class="doc-sidenav-navbar-link "
+          href="https://cupcake-design-system.github.io/getting-started/overview">
+          Getting Started
+        </a>
+        <a class="doc-sidenav-navbar-link doc-sidenav-navbar-link-active"
+          href="https://cupcake-design-system.github.io/elements/overview">
+          Elements
+        </a>
+        <a class="doc-sidenav-navbar-link "
+          href="https://cupcake-design-system.github.io/patterns/overview">
+          Patterns
+        </a>
+      </div>
+
+      <div class="doc-sidenav-menu-title c-m-top-xl">
+        Change Flavors
+      </div>
+
+      <div id="customize-menu" class="docs-flavor-switch c-dropdown c-d-block">
+        <input type="hidden" class="docs-flavor-switch-input" value="default">
+        <span class="docs-flavor-button docs-flavor-switch-current">
+            Select a flavor
+          </span>
+        <ul id="styleOptions" class="c-dropdown-list c-dropdown-list-below" style="min-width: 100%;">
+          <li class="docs-flavor-list-item" data-dropdown-value="default">
+            <a href="#" class="c-dropdown-item flavor c-dropdown-item-selected" data-theme="cupcake">Default</a>
+          </li>
+          <li class="docs-flavor-list-item" data-dropdown-value="mint">
+            <a href="#" class="c-dropdown-item flavor" data-theme="cupcake-mint">Mint</a>
+          </li>
+        </ul>
+      </div>
+    
+      <li class="doc-sidenav-menu-item  doc-sidenav-menu-item-active">
+          
+        <a class="doc-sidenav-menu-link">
+          <span class="doc-sidenav-menu-title">
+            Elements
+          </span>
+        </a>
+    
+          <ul class="doc-sidenav-menu-submenu"><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/overview/">
+                Overview
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/alerts/">
+                Alerts
+              </a>
+              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/action-panel/">
+                Action Panel
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/avatars/">
+                Avatars
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/badges/">
+                Badges
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/buttons/">
+                Buttons
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/card/">
+                Card
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/checkboxes/">
+                Checkboxes
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/dropdown/">
+                Dropdown
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/forms/">
+                Forms
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/loaders/">
+                Loaders
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/media-object/">
+                Media Object
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/modals/">
+                Modals
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/pagination/">
+                Pagination
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/progress/">
+                Progress
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/radio-buttons/">
+                Radio Buttons
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/switches/">
+                Switches
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/table/">
+                Table
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/tabs/">
+                Tabs
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/tooltips/">
+                Tooltips
+              </a>
+              </li></ul>
+
+      </li>
+   
+    
+    
+      <li class="doc-sidenav-menu-item ">
+          
+        <a class="doc-sidenav-menu-link">
+          <span class="doc-sidenav-menu-title">
+            CSS Utilities
+          </span>
+        </a>
+    
+          <ul class="doc-sidenav-menu-submenu"><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/utility-overview/">
+                Utility Overview
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/borders/">
+                Borders
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/display/">
+                Display
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/flex/">
+                Flex
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/float/">
+                Float
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/space/">
+                Space
+              </a>
+              </li></ul>
+
+      </li>
+   
+    
+    
+      <li class="doc-sidenav-menu-item ">
+          
+        <a class="doc-sidenav-menu-link">
+          <span class="doc-sidenav-menu-title">
+            Data Visualization
+          </span>
+        </a>
+    
+          <ul class="doc-sidenav-menu-submenu"><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/data-overview/">
+                Data Overview
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/data-comparison/">
+                Data Comparison
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/data-distribution/">
+                Data Distribution
+              </a>
+              </li><li>
+              <a class="doc-sidenav-menu-link"
+                href="https://cupcake-design-system.github.io/elements/data-relationship/">
+                Data Relationship
+              </a>
+              </li></ul>
+
+      </li>
+   
+    </ul>
+
+  </nav>
+</aside>
+      
+
+      
+        
+    <main class="main-container" role="main">
+      <div class="docs-bg-img c-bg-primary">
+  <h1 class="docs-title" id="content">Action Panel</h1>
+  <p class="docs-lead">An Action Panel is used to display content that complements the primary content.</p>
+</div>
+
+      
+      
+      
+      <div class="main-demo-content">
+        <div class="c-row">
+          <div class="c-col-12 c-p-vertical-md">
+
+            <h3 id="base">Base</h3>
+
+<p>The default Action Panel is anchored to the left, spans the height of the screen, and not visible by default.</p>
+
+<div id="actionPanelDefault" class="c-action-panel"></div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>Visibility can be toggled with with the class <code class="highlighter-rouge">.c-action-panel-visible</code></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel c-action-panel-visible"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></figure>
+
+<p><br /></p>
+
+<p><button class="c-btn c-btn-secondary" id="actionPanelDefault-trigger">Toggle Default Example</button></p>
+
+<hr />
+
+<h3 id="adding-content">Adding Content</h3>
+
+<p>There a various supported layouts for adding a content to the action panel.</p>
+
+<p><strong>Adding the header and body section</strong></p>
+
+<div class="docs-example">
+<button class="c-btn c-btn-secondary" id="actionPanelHeader-trigger">Toggle Header Example</button>
+
+<div class="c-action-panel">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Simple Header
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-close"></a>
+    </div>
+  </header>
+
+  <div class="c-action-panel-body">
+  </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span> <span class="na">id=</span><span class="s">"actionPanelHeader-trigger"</span><span class="nt">&gt;</span>Toggle Header Example<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-action-panel-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-title"</span><span class="nt">&gt;</span>
+      Simple Header
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-body"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<div id="actionPanelHeader" class="c-action-panel">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Simple Header
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-close"></a>
+    </div>
+  </header>
+  <div class="c-action-panel-body c-p-md">
+  Any content can go here
+  </div>
+</div>
+
+<p><strong>Complex header and tabs in body</strong></p>
+
+<p>Additionally we can have a more complex header and add tab actions to the body.</p>
+
+<div class="docs-example">
+<button class="c-btn c-btn-secondary" id="actionPanelHeaderComplex-trigger">Toggle Complex Header Example</button>
+
+<div class="c-action-panel">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Action Panel Title
+    </div>
+    <div class="c-action-panel-header-subtitle">
+      Action Panel Subtitle
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-header-menu-icon" href="#">
+        <i class="fa fa-expand" aria-hidden="true"></i>
+      </a>
+      <a class="c-action-panel-header-menu-icon" href="#">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="c-action-panel-body">
+    <ul class="c-tabs c-tabs-fullwidth c-bg-white">
+      <li class="c-tab-item">
+        <a class="c-tab-item-link" href="#">Tab A</a>
+      </li>
+      <li class="c-tab-item">
+        <a class="c-tab-item-link c-tab-item-link-active" href="#">Tab B</a>
+      </li>
+      <li class="c-tab-item">
+        <a class="c-tab-item-link" href="#">Tab C</a>
+      </li>
+      <li class="c-tab-item">
+        <a class="c-tab-item-link c-tab-item-link-disabled" href="#">Tab D</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span> <span class="na">id=</span><span class="s">"actionPanelHeaderComplex-trigger"</span><span class="nt">&gt;</span>Toggle Complex Header Example<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-action-panel-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-title"</span><span class="nt">&gt;</span>
+      Action Panel Title
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-subtitle"</span><span class="nt">&gt;</span>
+      Action Panel Subtitle
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu-icon"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-expand"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu-icon"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c-tabs c-tabs-fullwidth c-bg-white"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-tab-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-tab-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab A<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-tab-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-tab-item-link c-tab-item-link-active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab B<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-tab-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-tab-item-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab C<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"c-tab-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-tab-item-link c-tab-item-link-disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab D<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<div id="actionPanelHeaderComplex" class="c-action-panel">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Action Panel Title
+    </div>
+    <div class="c-action-panel-header-subtitle">
+      Action Panel Subtitle
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-header-menu-icon" href="#">
+        <i class="fa fa-expand" aria-hidden="true"></i>
+      </a>
+      <a class="c-action-panel-header-menu-icon" href="#">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+
+  <div class="c-action-panel-body">
+      <ul class="c-tabs c-tabs-fullwidth c-bg-white">
+          <li class="c-tab-item">
+            <a class="c-tab-item-link" href="#">Tab A</a>
+          </li>
+          <li class="c-tab-item">
+            <a class="c-tab-item-link c-tab-item-link-active" href="#">Tab B</a>
+          </li>
+          <li class="c-tab-item">
+            <a class="c-tab-item-link" href="#">Tab C</a>
+          </li>
+          <li class="c-tab-item">
+            <a class="c-tab-item-link c-tab-item-link-disabled" href="#">Tab D</a>
+          </li>
+        </ul>
+  </div>
+
+</div>
+
+<p><strong>Footer</strong></p>
+
+<p>Additionally we can add a footer with multiple alignment options.</p>
+
+<div class="docs-example">
+<button class="c-btn c-btn-secondary" id="actionPanelFooter-trigger">Toggle Footer Example</button>
+
+<div class="c-action-panel">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Action Panel Large Title
+    </div>
+    <div class="c-action-panel-header-subtitle">
+      Action Panel Large Subtitle
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-header-menu-icon" href="#">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
+      <div class="c-action-panel-header-menu-icon">
+        <a class="c-action-panel-close"></a>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="c-action-panel-body">
+
+  </div>
+
+  <footer class="c-action-panel-footer">
+    <div class="c-action-panel-footer-item c-action-panel-footer-item-left">
+      <button class="c-btn c-btn-primary">Button</button>
+    </div>
+    <a class="c-action-panel-footer-item c-action-panel-footer-link c-action-panel-footer-item-center" href="#">
+      Footer Link
+    </a>
+    <div class="c-action-panel-footer-item c-action-panel-footer-item-right">
+      <button class="c-btn c-btn-primary">Button</button>
+    </div>
+  </footer>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span> <span class="na">id=</span><span class="s">"actionPanelFooter-trigger"</span><span class="nt">&gt;</span>Toggle Footer Example<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-action-panel-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-title"</span><span class="nt">&gt;</span>
+      Action Panel Large Title
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-subtitle"</span><span class="nt">&gt;</span>
+      Action Panel Large Subtitle
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu-icon"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;/header&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-body"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"c-action-panel-footer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-footer-item c-action-panel-footer-item-left"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-footer-item c-action-panel-footer-link c-action-panel-footer-item-center"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      Footer Link
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-footer-item c-action-panel-footer-item-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<div id="actionPanelFooter" class="c-action-panel">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Action Panel Large Title
+    </div>
+    <div class="c-action-panel-header-subtitle">
+      Action Panel Large Subtitle
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-header-menu-icon" href="#">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
+      <div class="c-action-panel-header-menu-icon">
+        <a class="c-action-panel-close"></a>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="c-action-panel-body">
+
+  </div>
+
+  <footer class="c-action-panel-footer">
+    <div class="c-action-panel-footer-item c-action-panel-footer-item-left">
+      <button class="c-btn c-btn-primary">Button</button>
+    </div>
+    <a class="c-action-panel-footer-item c-action-panel-footer-link c-action-panel-footer-item-center" href="#">
+      Footer Link
+    </a>
+    <div class="c-action-panel-footer-item c-action-panel-footer-item-right">
+      <button class="c-btn c-btn-primary">Button</button>
+    </div>
+  </footer>
+</div>
+
+<p><strong>Larger Size</strong></p>
+
+<div class="docs-example">
+<button class="c-btn c-btn-secondary" id="actionPanelLarge-trigger">Toggle Large</button>
+
+<div class="c-action-panel c-action-panel-lg">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Action Panel Large Title
+    </div>
+    <div class="c-action-panel-header-subtitle">
+      Action Panel Large Subtitle
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-header-menu-icon" href="#">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
+      <div class="c-action-panel-header-menu-icon">
+        <a class="c-action-panel-close"></a>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="c-action-panel-body">
+
+  </div>
+
+  <footer class="c-action-panel-footer">
+    <div class="c-action-panel-footer-item c-action-panel-footer-item-left">
+      <button class="c-btn c-btn-primary">Button</button>
+    </div>
+    <a class="c-action-panel-footer-item c-action-panel-footer-link c-action-panel-footer-item-center" href="#">
+      Footer Link
+    </a>
+    <div class="c-action-panel-footer-item c-action-panel-footer-item-right">
+      <button class="c-btn c-btn-primary">Button</button>
+    </div>
+  </footer>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span> <span class="na">id=</span><span class="s">"actionPanelLarge-trigger"</span><span class="nt">&gt;</span>Toggle Large<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel c-action-panel-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-action-panel-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-title"</span><span class="nt">&gt;</span>
+      Action Panel Large Title
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-subtitle"</span><span class="nt">&gt;</span>
+      Action Panel Large Subtitle
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu-icon"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;/header&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-body"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"c-action-panel-footer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-footer-item c-action-panel-footer-item-left"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-action-panel-footer-item c-action-panel-footer-link c-action-panel-footer-item-center"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      Footer Link
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-footer-item c-action-panel-footer-item-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<div id="actionPanelLarge" class="c-action-panel c-action-panel-lg">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Action Panel Large Title
+    </div>
+    <div class="c-action-panel-header-subtitle">
+      Action Panel Large Subtitle
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-header-menu-icon" href="#">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
+      <div class="c-action-panel-header-menu-icon">
+        <a class="c-action-panel-close"></a>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="c-action-panel-body">
+
+  </div>
+
+  <footer class="c-action-panel-footer">
+    <div class="c-action-panel-footer-item c-action-panel-footer-item-left">
+      <button class="c-btn c-btn-primary">Button</button>
+    </div>
+    <a class="c-action-panel-footer-item c-action-panel-footer-link c-action-panel-footer-item-center" href="#">
+      Footer Link
+    </a>
+    <div class="c-action-panel-footer-item c-action-panel-footer-item-right">
+      <button class="c-btn c-btn-primary">Button</button>
+    </div>
+  </footer>
+</div>
+
+<p><strong>Notifications Example</strong></p>
+
+<div class="docs-example">
+<button class="c-btn c-btn-secondary" id="actionPanelNotifications-trigger">Toggle Notifications</button>
+
+<div class="c-action-panel c-notifications">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Notifications
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-btn c-btn-icon-secondary c-btn-icon" href="#">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="c-action-panel-body">
+    <div class="c-media-list c-media-list-hover">
+      <div class="c-media c-media-middle">
+        <div class="c-avatar c-avatar-lg c-avatar-cyan">
+          <i class="fab fa-dropbox"></i>
+        </div>
+        <div class="c-media-body">
+          <div class="c-text-md">Notification Content</div>
+          <div class="c-text-sm c-text-bold">Name/App</div>
+        </div>
+      </div>
+      <div class="c-media c-media-middle">
+        <div class="c-avatar c-avatar-lg c-avatar-lime">
+          <i class="fab fa-apple"></i>
+        </div>
+        <div class="c-media-body">
+          <div class="c-text-md">Notification Content</div>
+          <div class="c-text-sm c-text-bold">Name/App</div>
+        </div>
+      </div>
+      <div class="c-media c-media-middle c-media-read">
+        <div class="c-avatar c-avatar-lg c-avatar-orange">
+          <i class="fab fa-amazon"></i>
+        </div>
+        <div class="c-media-body">
+          <div class="c-text-md">This Notification is read</div>
+          <div class="c-text-sm c-text-bold">Name/App</div>
+        </div>
+      </div>
+      <div class="c-media c-media-middle">
+        <div class="c-avatar c-avatar-lg c-avatar-grape">
+          <i class="fab fa-xbox"></i>
+        </div>
+        <div class="c-media-body">
+          <div class="c-text-md">Notification Content</div>
+          <div class="c-text-sm c-text-bold">Name/App</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-btn c-btn-secondary"</span> <span class="na">id=</span><span class="s">"actionPanelNotifications-trigger"</span><span class="nt">&gt;</span>Toggle Notifications<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel c-notifications"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"c-action-panel-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-title"</span><span class="nt">&gt;</span>
+      Notifications
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-header-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"c-btn c-btn-icon-secondary c-btn-icon"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-action-panel-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-list c-media-list-hover"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-lg c-avatar-cyan"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-dropbox"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md"</span><span class="nt">&gt;</span>Notification Content<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold"</span><span class="nt">&gt;</span>Name/App<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-lg c-avatar-lime"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-apple"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md"</span><span class="nt">&gt;</span>Notification Content<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold"</span><span class="nt">&gt;</span>Name/App<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle c-media-read"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-lg c-avatar-orange"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-amazon"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md"</span><span class="nt">&gt;</span>This Notification is read<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold"</span><span class="nt">&gt;</span>Name/App<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media c-media-middle"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-lg c-avatar-grape"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-xbox"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-media-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-md"</span><span class="nt">&gt;</span>Notification Content<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-text-sm c-text-bold"</span><span class="nt">&gt;</span>Name/App<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+
+<div id="actionPanelNotifications" class="c-action-panel c-notifications">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Notifications
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-btn c-btn-icon-secondary c-btn-icon" href="#">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="c-action-panel-body">
+    <div class="c-media-list c-media-list-hover">
+      <div class="c-media c-media-middle">
+        <div class="c-avatar c-avatar-lg c-avatar-cyan">
+          <i class="fab fa-dropbox"></i>
+        </div>
+        <div class="c-media-body">
+          <div class="c-text-md">Notification Content</div>
+          <div class="c-text-sm c-text-bold">Name/App</div>
+        </div>
+      </div>
+      <div class="c-media c-media-middle">
+        <div class="c-avatar c-avatar-lg c-avatar-lime">
+          <i class="fab fa-apple"></i>
+        </div>
+        <div class="c-media-body">
+          <div class="c-text-md">Notification Content</div>
+          <div class="c-text-sm c-text-bold">Name/App</div>
+        </div>
+      </div>
+      <div class="c-media c-media-middle c-media-read">
+        <div class="c-avatar c-avatar-lg c-avatar-orange">
+          <i class="fab fa-amazon"></i>
+        </div>
+        <div class="c-media-body">
+          <div class="c-text-md">This Notification is read</div>
+          <div class="c-text-sm c-text-bold">Name/App</div>
+        </div>
+      </div>
+      <div class="c-media c-media-middle">
+        <div class="c-avatar c-avatar-lg c-avatar-grape">
+          <i class="fab fa-xbox"></i>
+        </div>
+        <div class="c-media-body">
+          <div class="c-text-md">Notification Content</div>
+          <div class="c-text-sm c-text-bold">Name/App</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p><strong>With Backdrop</strong></p>
+
+<p><button class="c-btn c-btn-secondary" id="qv-backdrop-dark-trigger">Toggle Default Dark Backdrop</button></p>
+
+<div id="qv-backdrop-dark" class="c-action-panel">
+  <header class="c-action-panel-header">
+    <div class="c-action-panel-header-title">
+      Action Panel Header
+    </div>
+    <div class="c-action-panel-header-menu">
+      <a class="c-action-panel-close"></a>
+    </div>
+  </header>
+
+  <div class="c-action-panel-body">
+
+  </div>
+
+  <footer class="c-action-panel-footer">
+    <button class="c-btn c-btn-primary c-m-right-sm">Submit</button>
+    <button class="c-btn c-btn-secondary">Cancel</button>
+  </footer>
+</div>
+
+<div class="c-action-panel-backdrop" id="backdrop-dark" style="display: none; z-index: 1601;"></div>
+
+<hr />
+
+<h3 id="internal">Internal</h3>
+<p>The same action panel can be used within the UI and not offscreen. This <strong>requires</strong> the parent class <code class="highlighter-rouge">.c-wrapper</code> to enclose all of your content and <code class="highlighter-rouge">.c-action-panel-push</code> to control the panel.</p>
+
+<p><br /></p>
+
+<p>You can also use <code class="highlighter-rouge">c-action-panel-left</code> in this scenario.</p>
+
+<p><br /></p>
+
+<p>Play with a demo example <a class="c-text-underline" href="https://cupcake-design-system.github.io/content/resources/examples/layout-demos">here</a>.</p>
+
+<hr />
+
+<p><br /></p>
+
+
+          </div>
+        </div>
+      </div>
+     
+    <div class="c-footer">
+    <div class="c-footer-left">
+      © 2018 Ipreo. All Rights Reserved.
+    </div>
+    <div class="c-footer-right">
+      <div class="c-footer-link">
+        <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
+            <span class="fas fa-users" aria-hidden="true"></span>
+            Teams
+        </a>
+      </div>
+      <div class="c-footer-link">
+        <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
+            <span class="fab fa-github" aria-hidden="true"></span>
+            Github
+        </a>
+      </div>
+      <div class="c-footer-link">
+          <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
+            <span class="fas fa-info-circle" aria-hidden="true"></span>
+              Release Notes
+          </a>
+      </div>
+    </div>
+  </div>
+
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
+  </body>
+</html>

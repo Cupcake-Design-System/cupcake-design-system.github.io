@@ -53,6 +53,52 @@ $(document).ready(function($) {
     })
 });
 
+
+/************************************************
+* Action Panel Demo stuff
+*************************************************/
+
+$(document).ready(function () {
+  $(".c-action-panel-close").on("click", function () {
+    $(this).closest(".c-action-panel").toggleClass("c-action-panel-visible")
+  }), 
+
+  $("#actionPanelDefault-trigger").on("click", function () {
+    $("#actionPanelDefault").toggleClass("c-action-panel-visible")
+  }), 
+
+  $("#actionPanelHeader-trigger").on("click", function () {
+    $("#actionPanelHeader").toggleClass("c-action-panel-visible")
+  }), 
+
+  $("#actionPanelHeaderComplex-trigger").on("click", function () {
+    $("#actionPanelHeaderComplex").toggleClass("c-action-panel-visible")
+  }),
+
+  $("#actionPanelFooter-trigger").on("click", function () {
+    $("#actionPanelFooter").toggleClass("c-action-panel-visible")
+  }), 
+
+  
+  $("#actionPanelLarge-trigger").on("click", function () {
+    $("#actionPanelLarge").toggleClass("c-action-panel-visible")
+  }), 
+  
+  $("#actionPanelNotifications-trigger").on("click", function () {
+    $("#actionPanelNotifications").toggleClass("c-action-panel-visible")
+  }),
+
+  
+  $("#qv-backdrop-dark-trigger").on("click", function () {
+    $("#qv-backdrop-dark").toggleClass("c-action-panel-visible"), $("#backdrop-dark").toggle()
+  }), 
+  
+  $("#backdrop-dark").on("click", function () {
+    $("#backdrop-dark").toggle(), $("#qv-backdrop-dark").toggleClass("c-action-panel-visible")
+  })
+});
+
+
 /************************************************
 * Disable empty links in docs examples
 *************************************************/
@@ -62,6 +108,10 @@ $('.main-demo-content [href="#"]').click(function (e) {
  
 $('[href=""]').click(function (e) {
   e.preventDefault()
+})
+
+$('a[href="#"]').click(function(e) {
+  e.preventDefault ? e.preventDefault() : e.returnValue = !1
 })
  
 $('a[href="#"]').click(function(e) {
