@@ -2,6 +2,7 @@
   background-color: $primary;
   display: block;
   height: 200px;
+  margin: 0 -32px 40px -32px;
   position: relative;
   text-align: center;
   flex-grow: 1;
@@ -30,13 +31,13 @@
     background-color: $danger;
   }
 
-  .docs-article-image & {
+  .c-card & {
     margin: 0;
     height: 150px;
   }
 
   @include media-breakpoint-down(md) {
-    // margin: -16px -16px 40px -16px;
+    margin: -16px -16px 40px -16px;
   }
 }
 

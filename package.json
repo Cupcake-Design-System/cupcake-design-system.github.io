@@ -15,15 +15,10 @@
     "dev": "gulp"
   },
   "devDependencies": {
-    "browser-sync": "2.26.3",
-    "gulp": "3.9.1",
-    "gulp-autoprefixer": "6.0.0",
-    "git-directory-deploy": "1.5.1",
-    "gulp-clean-css": "3.10.0",
-    "gulp-concat": "2.6.1",
-    "gulp-gh-pages": "0.5.4",
-    "gulp-notify": "3.2.0",
-    "gulp-sass": "4.0.1",
-    "gulp-uglify": "3.0.1"
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "@cupcake-ds/cupcake": "^2.0.0"
   }
 }
