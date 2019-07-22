@@ -94,379 +94,64 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
 
 # Overview
 
-**Checkboxes have 4 different states:**
+### States
+**Checkboxes have 4 potential states:**
 
-- Active
-- Inactive
-- Active (disabled)
-- Inactive (disabled)
+- active
+- inactive
+- active (disabled)
+- inactive (disabled)
 
-**Checkboxes are typically used as:**
+### Usage
+- multiple selection controls in forms
+- standalone checkboxes
+- bulk action selectors in tables
 
-- Multiple selection controls in forms
-- Standalone checkboxes
-- Bulk action selectors in tables
+### Combined with labels
+Checkboxes should be combined with accompanying text or a label.
 
-<hr>
-  
-  <!-- Start Multiple Selection Controls in Forms Section -->
-### Multiple selection controls in forms
+**Label best practices:**
+
+- Keep label text short and concise
+- Always place the label on the right
+- Use sentence style capitalisation for label text
+- Don't add additional characters or punctuation at the end of each label
+- Labels should be vertically centred relative to the checkbox (see example)
 
 <br>
 
-#### Do's and Dont's
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="100%;">
 
-  <!-- Start Vertical list vs. horizontal list Row -->
-##### Vertical list vs. horizontal list
+### Best Practices
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-vert-vs-horiz-do@2x'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-vert-vs-horiz-dont@2x'%}  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use multiple selection lists in a vertical format</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use multiple selection lists in a horizontal format</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Vertical list vs. horizontal list Row -->
-
-   <!-- Start Label Length Row -->
-##### Label length
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-length-do@2x'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-length-dont@2x'%}  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep checkbox text short and concise</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use a sentence to describe something if it can be summed up in three or less words</span>
-        </div>
-      </div>
-      </div>
-    </div>
-   <!-- End Label Length Row -->
-
-  <!-- Start Capitalizing Labels Row -->
-##### Capitalizing Labels
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-capitalise-do@2x'%}  
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-capitalise-dont@2x'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use sentence style capitalization</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't start the label as lowercase</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Capitalizing Labels Row -->
-
-   <!-- Start Label Format Row -->
-##### Label format
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-format-do@2x'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-format-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do list radio list items without any additional characters or punctuation at the end of the label</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't add in any special characters or punctuation at the end of the label</span>
-        </div>
-      </div>
-      </div>
-    </div>
-   <!-- End Label Format Row -->
-
-  <!-- Start Checkbox to label placement Row -->
-##### Checkbox to label placement
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-placement-do@2x'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-label-placement-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do vertically center the label so there is an equal amount of space top and bottom in relation to the button</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't position the label so there is an unequal amount of space at the top and bottom in relation to the button</span>
-        </div>
-      </div>
-      </div>
-    </div>
-   <!-- End Checkbox to label placement Row -->
-
-  <!-- Start Number of Items Row -->
-##### Number of items
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-items-do@2x'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-items-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep vertical list groups to 6 items or less</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't add more than 6 items in a vertical list group</span>
-        </div>
-      </div>
-      </div>
-    </div>
-   <!-- End Number of Items Row -->
-
-  <!-- Start List Item Spacing Row -->
-##### List item spacing
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-spacing-do@2x'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/multiple-selection-controls/multiple-spacing-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep spacing at a just-right ratio</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use consistent spacing between list items</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use too-tight or too-loose spacing</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't allow inconsistent spacing between list items in order to conform to a specific list height</span>
-        </div>
-      </div>
-      </div>
-    </div>
-   <!-- End List Item Spacing Row -->
-  <!-- END Multiple Selection Controls in Forms Section -->
-
-  <hr>
-
-  <!-- Start Standalone Checkboxes Section -->
-### Standalone checkboxes
-
-  <br>
-
-#### Do's and Dont's
-
-  <!-- Start Label Length Row -->
-##### Label length
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-length-do@2x'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-length-dont@2x'%}  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do limit standalone checkbox text to two short sentences and to one paragraph</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do link to any supporting text or documentation</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than two short sentences or more than one paragraph; rather hyperlink to the supporting text or documentation</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Label Length Row -->
-
-   <!-- Start Forms vs Settings Row -->
-##### Forms vs Settings
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-form-vs-settings-do@2x'%}
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/standalone-checkbox/standalone-form-vs-settings-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use standalone checkboxes in forms to record user compliance or agreement</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use checkboxes to apply settings; use a switch instead</span>
-        </div>
-      </div>
-      </div>
-    </div>
-   <!-- End Forms vs Settings Row -->
-  <!-- END Standalone Checkboxes Section -->
+- Use switches in combination with accompanying text or a label
+- Preference should be given to vertical checkbox lists, as it reads better
+- Try and keep checkbox lists to 8 or less items
 
 <hr>
 
-<!-- Start Bulk action selectors in a table Section -->
-### Bulk action selectors in a table
-  Checkboxes are used in tables to select which rows to apply bulk actions to.
+## Examples
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/bulk-action-selectors/bulk-selectors-example@2x.png" width="500px;">
+**A multiple selection list in a form**
 
-  <br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-multiple-selection-example@2x.png" width="100%;">
 
-#### Do's and Dont's
+<br>
 
-  <!-- Start Visual Indicators Row -->
-##### Visual indicators
+**A used as a standalone checkbox on forms**
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/checkboxes/bulk-action-selectors/bulk-support-indicators-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/checkboxes/bulk-action-selectors/bulk-support-indicators-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do support a bulk action selector with an additional visual indicator</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use a checkbox in isolation when indicating bulk actions</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Visual Indicators Row -->
-  <!-- END Bulk action selectors in a table Section -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-standalone-example@2x.png" width="100%;">
+
+<br>
+
+**As selector handle for enabling bulk actions in tables**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-bulk-selection-example@2x.png" width="100%;">
+
+
+
+
+
 
 
 </div>
