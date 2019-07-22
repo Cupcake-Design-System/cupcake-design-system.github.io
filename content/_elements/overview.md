@@ -19,7 +19,7 @@ weight: 1
 
 Elements are the foundational building blocks that comprise all user interfaces. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-diagram.png" width="800px;">
+<!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-diagram.png" width="800px;"> -->
 
 
 #### Element Design Process
@@ -30,7 +30,7 @@ A new element is added to the Cupcake library after it is cycled through the fol
 - Designers will discuss guidelines and best practices on how and when to use the element
 - Developers will create the element in code and deploy to the Cupcake code package 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-design-process-diagram.png" width="300px;">
+<!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-design-process-diagram.png" width="300px;"> -->
 
 #### Custom Elements
 
