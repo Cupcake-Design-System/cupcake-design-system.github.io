@@ -1,5 +1,5 @@
 ---
-title: Table
+title: Tables
 description: Data Tables are used to display data in a tabular format.
 tabs:
 - Code
@@ -758,7 +758,81 @@ Multiple classes can be added for more complexity.
 <!-- Start Design Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Design Guidelines coming soon...
+# Overview
+
+### Usage
+- In Cupcake, we differentiate between basic data tables and 3rd party grid frameworks.
+- Visit the Patterns section for more guidelines on recommended table patterns.
+- Visit Grid Tables in Patterns for more info on 3rd party grid frameworks.
+
+### Modes
+Tables have 2 potential modes:
+
+- default
+- edit 
+
+*Edit mode includes cell editing and row editing (incl. bulk actions)*
+
+### Structure
+- Basic tables consist of columns and rows, built from column header and body cells. Additional components and functionality are added to as required.
+
+- Tables can be fixed width, horizontally scrollable or responsive depending on the use case and requirements.
+
+- Table cells come in small and large sizes. Large is the default for general use whereas small is the default for large data tables.
+
+### States
+Both table cells and rows have the following potential states:
+
+- default
+- hover
+- selected
+- validations (error, warning and success states)
+- edit
+
+Visit Form Validations in Patterns for more info on error, warning and success states.
+
+### Cell content alignment
+The default alignment for table cells is left. The exception is numeric values, which should be right aligned. Column headers should follow the same alignment as the cell content.
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-content-alignment@2x.png" width="100%;">
+
+<br>
+
+### Combined with...
+Tables can be combined with various components depending on the use case and requirements.
+
+### Best practices
+- Use zebra striping to improve readability on table rows when cell borders are absent
+- Keep column header text short and concise and plan for truncation
+- Avoid centre aligning content in cells
+- Plan for cell content truncation or wrapping (if required)
+- Show empty cells as empty. Avoid repetitive placeholder info.
+- For interactive tables always show a row hover state
+- Always combine a cell background style change with an appropriate icon for validations
+- Use the recommended compatible sizes when including components, such as buttons, in table cells
+
+<hr>
+
+## Examples
+
+**Bulk action edit mode is enabled**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-bulk-actions@2x.png" width="100%;">
+
+<br>
+
+**Table validation errors combine with a box alert to highlight incomplete required fields**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-validations@2x.png" width="100%;">
+
+<br>
+
+**A table combined with the pagination component**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-pagination@2x.png" width="100%;">
+
 
 
 </div>
