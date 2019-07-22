@@ -1,7 +1,13 @@
 ---
 title: Action Panel
-description: An Action Panel is used to display content that complements the primary content.
+description: Action panels are semi-interruptive panels that provide additional functionality or display supplementary content in the context of the user's current screen.
+tabs:
+- Code
+- Guidelines
 ---
+
+<!-- Start Cupcake Code Tab -->
+<div id="code" class="docs-tabs-content" markdown="1">
 
 ### Base
 
@@ -24,7 +30,6 @@ Visibility can be toggled with with the class `.c-action-panel-visible`
 <br>
 
 <button class="c-btn c-btn-secondary" id="actionPanelDefault-trigger">Toggle Default Example</button>
-
 
 <hr>
 
@@ -233,10 +238,6 @@ Additionally we can add a footer with multiple alignment options.
   </footer>
 </div>
 
-
-
-
-
 **Larger Size**
 
 {% example html %}
@@ -435,10 +436,7 @@ Additionally we can add a footer with multiple alignment options.
 
 </div>
 
-
-
 **With Backdrop**
-
 
 <button class="c-btn c-btn-secondary" id="qv-backdrop-dark-trigger">Toggle Default Dark Backdrop</button>
 
@@ -466,7 +464,6 @@ Additionally we can add a footer with multiple alignment options.
 
 <hr>
 
-
 ### Internal
 The same action panel can be used within the UI and not offscreen. This **requires** the parent class `.c-wrapper` to enclose all of your content and `.c-action-panel-push` to control the panel.
 
@@ -476,10 +473,146 @@ You can also use `c-action-panel-left` in this scenario.
 
 <br>
 
-
-
 Play with a demo example <a class="c-text-underline" href="{{site.url}}{{site.baseurl}}/content/resources/examples/layout-demos">here</a>. 
 
 
-<hr>
+
+</div>
+<!-- End Cupcake Code Tab -->
+
+<!-- Start Angular Code Tab -->
+<div id="angular" class="docs-tabs-content" markdown="1">
+
+### Storybook iframe
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+
+</div>
+<!-- End Angular Code Tab -->
+
+<!-- Start Design Tab -->
+<div id="guidelines" class="docs-tabs-content" markdown="1">
+
+# Overview
+
+### Usage
+Action panels can be implemented where users need to access additional functionality or information without interrupting their current workflow.
+
+### Structure
+An action panel is composed of a:
+
+- open control
+- panel (container)
+- close button (close control)
+- Behaviour
+- Action panels slide in from the left or right edge of the browser when triggered via an open control, and closed via a close button.
+
+**The action panel can exist on two planes:**
+
+- a layer above the screen content ie. sliding over and obscuring a part of the content. This is the default option.
+- the same layer as the screen content ie. it will push the content to the side to make space on the screen
+
 <br>
+
+
+<table class="c-table c-table-transparent c-table-border-full c-table-hover">
+<thead>
+    <tr>
+      <th width="125">Type</th>
+      <th width="150">Plane</th>
+      <th width="">Focus</th>
+      <th width="">Defining Behavior</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Default</td>
+      <td>Above screen</td>
+      <td>Supplementary</td>
+      <td>Open using trigger and close using close button. Can interact with content on screen.</td>
+    </tr>
+    <tr>
+      <td>Elastic</td>
+      <td>Same as screen</td>
+      <td>Supplementary</td>
+      <td>Open using trigger and close using close button. Can interact with content on screen.</td>
+    </tr>
+    <tr>
+      <td>Overlay</td>
+      <td>Above screen</td>
+      <td>Primary</td>
+      <td>Open using trigger and close using close button or clicking on the screen overlay. Cannot interact with content on screen.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+**Default Action Panel**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/default-action-panel@2x.png" width="100%;">
+
+<br>
+
+**Elastic Action Panel**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/elastic-action-panel@2x.png" width="100%;">
+
+<br>
+
+**Overlay Action Panel**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/overlay-action-panel@2x.png" width="100%;">
+
+
+### Structure
+All action panels will have a header, close button and content area. Additional options are:
+
+- Additional controls in the header
+- Tabs
+- Footer with controls
+
+### States
+The action panel has two states:
+
+- open
+- closed
+
+### Combined with...
+Action panels can be combined with various controls and components depending on the use case and requirements.
+
+### Best practices
+- An action panel should not overlap controls or information required in the workflow that it supports
+- The controls and information in an action panel should be immediately relevant and supportive of the visible screen and active workflow of the user
+- The action panel should ideally take up as little screen real estate as is possible to get the job done
+- Action panels are by default supplementary and contents should be designed with this in mind. In the case of the overlay action panel it is the primary focus.
+
+
+<hr>
+
+## Examples
+
+**The overlay action panel is used to access contact details**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/contacts-panel-example@2x.png" width="100%;">
+
+<br>
+
+**The default action panel is used as a Notifications panel**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/notifications-panel-example@2x.png" width="100%;">
+
+<br>
+
+**The elastic action panel is used as a Deal Summary panel on the Sales Platform**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/deal-summary-example@2x.png" width="100%;">
+
+
+
+
+
+
+
+</div>
+<!-- End Design Tab -->
+

@@ -1,5 +1,5 @@
 ---
-title: Tables
+title: Table
 description: Data Tables are used to display data in a tabular format.
 tabs:
 - Code
