@@ -53,6 +53,52 @@ $(document).ready(function($) {
     })
 });
 
+
+/************************************************
+* Action Panel Demo stuff
+*************************************************/
+
+$(document).ready(function () {
+  $(".c-action-panel-close").on("click", function () {
+    $(this).closest(".c-action-panel").toggleClass("c-action-panel-visible")
+  }), 
+
+  $("#actionPanelDefault-trigger").on("click", function () {
+    $("#actionPanelDefault").toggleClass("c-action-panel-visible")
+  }), 
+
+  $("#actionPanelHeader-trigger").on("click", function () {
+    $("#actionPanelHeader").toggleClass("c-action-panel-visible")
+  }), 
+
+  $("#actionPanelHeaderComplex-trigger").on("click", function () {
+    $("#actionPanelHeaderComplex").toggleClass("c-action-panel-visible")
+  }),
+
+  $("#actionPanelFooter-trigger").on("click", function () {
+    $("#actionPanelFooter").toggleClass("c-action-panel-visible")
+  }), 
+
+  
+  $("#actionPanelLarge-trigger").on("click", function () {
+    $("#actionPanelLarge").toggleClass("c-action-panel-visible")
+  }), 
+  
+  $("#actionPanelNotifications-trigger").on("click", function () {
+    $("#actionPanelNotifications").toggleClass("c-action-panel-visible")
+  }),
+
+  
+  $("#qv-backdrop-dark-trigger").on("click", function () {
+    $("#qv-backdrop-dark").toggleClass("c-action-panel-visible"), $("#backdrop-dark").toggle()
+  }), 
+  
+  $("#backdrop-dark").on("click", function () {
+    $("#backdrop-dark").toggle(), $("#qv-backdrop-dark").toggleClass("c-action-panel-visible")
+  })
+});
+
+
 /************************************************
 * Disable empty links in docs examples
 *************************************************/
@@ -62,6 +108,10 @@ $('.main-demo-content [href="#"]').click(function (e) {
  
 $('[href=""]').click(function (e) {
   e.preventDefault()
+})
+
+$('a[href="#"]').click(function(e) {
+  e.preventDefault ? e.preventDefault() : e.returnValue = !1
 })
  
 $('a[href="#"]').click(function(e) {
@@ -137,3 +187,108 @@ clipboard.on('success', function (e) {
 
 }(jQuery));
 
+$(function () {
+  /************************************************
+  * Flavor Switch
+  *************************************************/
+  
+  var $html = $('html');
+  
+  $html.on('click.ui.dropdown', '.docs-flavor-switch', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('is-open');
+  });
+  
+  $html.on('click.ui.dropdown', '.docs-flavor-switch [data-dropdown-value]', function(e) {
+    e.preventDefault();
+    var $item = $(this);
+    var $dropdown = $item.parents('.docs-flavor-switch');
+    $dropdown.find('.docs-flavor-switch-input').val($item.data('dropdown-value'));
+    $dropdown.find('.docs-flavor-switch-current').text($item.text());
+  });
+  
+  $html.on('click.ui.dropdown', function(e) {
+    var $target = $(e.target);
+    if (!$target.parents().hasClass('docs-flavor-switch')) {
+      $('.docs-flavor-switch').removeClass('is-open');
+    }
+  });
+  
+  
+  // Local storage settings
+  var themeSettings = getThemeSettings();
+  
+  // Elements
+  var $app = $('#docs-app');
+  var $styleLink = $('#theme-style');
+  var $customizeMenu = $('#customize-menu');
+  var $customizeMenuDropdown = $customizeMenu.find('.flavor');
+  
+  
+  // Initial State
+  setThemeSettings();
+  
+  
+  // Set theme type
+  $customizeMenuDropdown.on('click', function () {
+    themeSettings.themeName = $(this).data('theme');
+    setThemeSettings();
+  });
+  
+  function setThemeSettings() {
+    setThemeState()
+      .delay(50)
+      .queue(function (next) {
+  
+        setThemeControlsState();
+        saveThemeSettings();
+  
+        $(document).trigger("themechange");
+  
+      next();
+    });
+  }
+  
+  
+  
+  // Update theme based on options
+  function setThemeState() {
+    // set theme type
+    if (themeSettings.themeName) {
+      $styleLink.attr('href', 'https://unpkg.com/@cupcake-ds/cupcake/dist/' + themeSettings.themeName + '.css');
+    } else {
+      $styleLink.attr('href', 'https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css');
+    }
+  
+    return $app;
+  }
+  
+  
+  // Update theme controls based on options
+  function setThemeControlsState() {
+    // set color switcher
+    $customizeMenuDropdown.each(function () {
+      if ($(this).data('theme') === themeSettings.themeName) {
+        $(this).addClass('c-dropdown-item-selected');
+      } else {
+        $(this).removeClass('c-dropdown-item-selected');
+      }
+    });
+  }
+
+  
+  
+  // Storage Functions
+  function getThemeSettings() {
+    var settings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
+  
+    return settings;
+  }
+  
+  function saveThemeSettings() {
+    localStorage.setItem('themeSettings', JSON.stringify(themeSettings));
+  }
+  
+  }(jQuery));
+  
+  

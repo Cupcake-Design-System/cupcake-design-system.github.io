@@ -96,22 +96,9 @@ The Design System is adopted per product across gradual steps in priority order.
 </div>
 
 
-# Planning
-
-## Approaches
-
-Product teams tend to adopt a design system’s UI Component library using one of two approaches:
-
-- **Big Bang**: Across several sprints, a product team stops all other work to remove an old system and install the Cupcake Design System. This concentrated period slows a product’s work on new features, defects, and optimizations,but it cleanly and quickly applies the Design System so that a product can move forward confident that adoption is complete.
-
-- **Incremental**: Due to existing commitments and competing priorities, a product team may choose to adopt Cupcake over a longer period of time. As such, the team may fold in tasks of replacing existing product features with Cupcake features
-alongside other work. Adoption steps tied to specific dates or sprints can provide a helpful barometer of intermediate goals and also help teams understand in what order Cupcake features should be adopted.
-
 ## Working With the Cupcake Team
 
-When considering adoption, contact the Cupcake team to schedule time to discuss your objectives and approach. This collaborative conversation will help you identify the following for your product’s adoption:
-
-- **Approach**: Will it be a “Big Bang” or “Incremental” adoption of the System?
+Please consider contacting the Cupcake team to discuss your objectives and approach. A collaborative conversation will help you identify the following for your product’s adoption:
 
 - **Timing**: When might you start design and engineering work (potentially need more support) and complete the adoption process?
 
@@ -123,6 +110,4 @@ When considering adoption, contact the Cupcake team to schedule time to discuss 
 
 ---
 
-<a class="c-btn-link c-pull-right" href="{{ site.url }}{{ site.baseurl }}/content/getting-started/developers/">
- Continue to Developers <i class="fa fa-arrow-right"></i>
-</a>
+<small> This adoption plan is adapted from Nathan Curtis' excellent work <a href="https://medium.com/eightshapes-llc/adopting-design-systems-71e599ff660a" target="_blank">here!</a></small>

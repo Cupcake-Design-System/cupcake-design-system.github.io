@@ -1,5 +1,9 @@
-- name: Starter Template
-  screenshot: card-screens.png
-  url: grid
-  description: Super template
+# - name: Starter Template
+#   screenshot: card-screens.png
+#   url: grid
+#   description: Super template
 
+- name: Layout Demos
+  screenshot: layout-demo.png
+  url: layout-demos
+  description: Demo page to explore full page layout options.

@@ -1,11 +1,11 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
-  color: #33475b;
+  color: #495057;
 }
 
 p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 8px;
 }
@@ -56,6 +56,13 @@ a {
 
   &:hover {
     color: lighten($primary, 5);
+  }
+}
+
+a.c-btn.c-btn-primary:hover {
+  color: white;
+  a:hover {
+    color: white;
   }
 }
 
@@ -221,6 +228,9 @@ a {
   flex-direction: column;
   min-height: 100vh;
   margin-top: 48px;
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+  }
 }
 
 .main-content {

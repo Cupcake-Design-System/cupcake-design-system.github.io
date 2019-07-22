@@ -8,6 +8,11 @@ colors:
 - success
 - warning
 - danger
+weight:
+- light
+- normal
+- bold
+- heavy
 sizes:
 - xs
 - sm
@@ -17,77 +22,89 @@ sizes:
 - xxl
 ---
 
-## Typeface: Arial
+### Font Stack
 
-Arial, is arguably the best universal multi-purpose font. Arial is 98% web safe - meaning almost every platform has it installed out of the box. This is the default font. This should be used unless otherwise directed by a UX Designer.
-
+Cupcake uses a font stack that adapts to the operating system it runs on, like Windows, iOS, or Android. <br>
 It renders consistently across various operating systems and browsers. And users behind a firewall do not need info-sec or IT to download and install an additional font.
 
-#### Default sans-serif font stacks
 
-```font-family:  Arial, Helvetica, sans-serif;```
+For example:
+- Apple devices will display San Francisco
+- Android devices will display Roboto
+- Devices running Windows will display Segoe UI
+- Machines running Linux will display the default sans-serif font for any running distribution
+
+<br>
+
+The following font-stack ensures all browsers can load platform-specific fonts:
+
+{% highlight css %}
+-apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif
+{% endhighlight %}
 
 ---
 
-## Typeface: Source Sans
-
-Source® Sans Pro, Adobe's first open source typeface family, was designed by Paul D. Hunt. It is a sans serif typeface intended to work well in user interfaces.
-
-This is the default for the BD Flavor.
-
-#### BD Flavor sans-serif font stacks
-
-```font-family:  'Source Sans Pro', Arial, Helvetica, sans-serif;```
 
 
-## Typescale
+### Typescale
 
-Too many type sizes and styles at once can wreck any layout. Cupcake provides a constrained, purposeful set of typographic styles. These styles map as much as possible to functional roles so you know when each can be used.
-
-The basic set of styles are based on a typographic scale of 10, 12, 14, 18, 20, and 34.
+Cupcake provides a purposeful set of typographic styles.
 
 By consistently tying typographic styles to appropriate functions in the interface, we create a clear visual pattern.
 
+**Body**
 
-### Body
+To establish a consistent base you may wish to add the class .c-body-text to the body element on the page. This will give you a default font-size, color, line-height, and font-family for any element inheriting styles that are not already specified in an elements class.
 
 {% example html %}
 {% for size in page.sizes %}
 <div class="c-text-{{ size }}">This is {{ size }} text</div>{% endfor %}
 {% endexample %}
 
-### Header
+**Header**
 
-Heading should be used for titles of top-level sections of a screen or section.
+Heading should be used for titles of top-level sections of a screen or section. May also be used as a component header.
 
 {% example html %}
 {% for size in page.sizes %}
 <div class="c-header-{{ size }}">This is the {{ size }} header</div>{% endfor %}
 {% endexample %}
 
+---
 
-## Emphasis
+### Emphasis
 
-To communicate content hierarchy, use the core typographic scale first. Once the main hierarchy is established, if two pieces of text of the same style have different positions in the content hierarchy, additional styles may be used to emphasize or de-emphasize one of them. 
+To communicate content hierarchy, use the core typographic scale first. Once the main hierarchy is established, if two pieces of text of the same style have different positions in the content hierarchy, additional styles may be used to emphasize OR de-emphasize one of them. 
 
+<br>
 
-### Muted
+**Muted**
 Muted content isn’t unimportant or superfluous, but rather makes room for the eye to orient itself and focus on core content.
 
 {% example html %}
 <div class="c-header-lg">I'm a Header <span class="c-text-muted"> I am muted</span></div>
 {% endexample %}
 
-In general, avoid using muted on its own, when not contrasting with other text from the same part of the type scale. There are exceptions: muted may be used for standalone content when it represents a non-actionable or otherwise unimportant state of something, i.e. when the normal content is absent.
+
+{% callout warning %}
+**Try to avoid using muted on its own, when not contrasting with other text. There are exceptions: muted may be used for standalone content when it represents a non-actionable or otherwise unimportant state of something, i.e. when the normal content is absent.**
+{% endcallout %}
 
 
-### Bold
 
-Default text styles have a normal font weight. You can add emphasis in context by adding a bold style.
+<br>
+
+**Font Weights**
+
+Default text styles have a normal font weight. You can add emphasis in context by adding a variant font weight.
+
 
 {% example html %}
-<div class="c-text-lg">This is normal text<span class="c-text-bold"> This text is bold.</span></div>
+{% for weight in page.weight %}
+<div class="c-text-lg c-text-{{ weight }}">This is {{ weight }} text</div>
+{% endfor %}
 {% endexample %}
+
 
 
 ### Additional Styles
@@ -102,9 +119,9 @@ Additional text helpers also available.
 </div>
 {% endexample %}
 
-### Text Styles
+**Text Colors**
 
-Additional text colors can also be used (sparingly). **Please use care when adding a text color and ensure it creates suitable contrast.**
+Additional text colors can also be used (sparingly).
 
 <section>
   {% for color in page.colors %}
@@ -117,3 +134,8 @@ Additional text colors can also be used (sparingly). **Please use care when addi
   </div>
   {% endfor %}
 </section>
+
+
+{% callout warning %}
+**Please use care when adding a text color and ensure it creates suitable contrast!**
+{% endcallout %}

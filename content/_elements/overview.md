@@ -32,11 +32,6 @@ A new element is added to the Cupcake library after it is cycled through the fol
 
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-design-process-diagram.png" width="300px;"> -->
 
-#### Custom Elements
-
-- When to reach out for a custom element
-- Expectations for a custom element
-- Etc...
 
 #### Contributing to the Element library
 

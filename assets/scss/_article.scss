@@ -1,7 +1,6 @@
 .docs-article-image {
   background-color: $primary;
   display: block;
-  margin: 0 -32px 40px -32px;
   height: 200px;
   position: relative;
   text-align: center;
@@ -31,17 +30,17 @@
     background-color: $danger;
   }
 
-  .c-card-header & {
+  .docs-article-image & {
     margin: 0;
     height: 150px;
   }
 
   @include media-breakpoint-down(md) {
-    margin: -16px -16px 40px -16px;
+    // margin: -16px -16px 40px -16px;
   }
 }
 
-.c-card-header:hover {
+.docs-article-image:hover {
   .docs-article-overlay {
     opacity: 0.25;
     @include media-breakpoint-down(sm) {
