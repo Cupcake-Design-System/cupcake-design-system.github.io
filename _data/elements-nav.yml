@@ -5,9 +5,7 @@
     - title: Action Panel
     - title: Avatars 
     - title: Badges
-    - title: Banner Alerts
     - title: Buttons
-    - title: Box Alerts
     - title: Card
     - title: Checkboxes
     # - title: Drag and Drop
@@ -23,7 +21,6 @@
     - title: Switches
     - title: Table
     - title: Tabs
-    - title: Toast Alerts
     - title: Tooltips
 
 - title: CSS Utilities
