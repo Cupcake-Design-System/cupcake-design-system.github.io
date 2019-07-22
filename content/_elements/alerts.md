@@ -143,6 +143,8 @@ Designed to sit flush vertically and horizontally within a container. In most ca
 
 <!-- Start Banner Alert Section -->
 ## Banner Alerts
+Banner alerts communicate critical system status information that could affect the user.
+
 
 ### Placement & Behaviour
 - Banner alerts slide in from the top of the browser, pushing down the content in the browser and remains there until the issue is resolved or it is dismissed.
@@ -185,6 +187,7 @@ Banner Alerts should be used sparingly to communicate informational, warning or 
 
 <!-- Start Box Alert Section -->
 ## Box Alerts
+Boxed alerts communicate the status of a page or component, sometimes in response to user actions.
 
 ### Placement & Behaviour
 - Box alerts fade in at the top of the page or component it relates to, pushing down the content and remains there until the issue is resolved or it is dismissed.
@@ -227,6 +230,7 @@ Box alerts must sit in the container of the page or component it relates to
 
 <!-- Start Toast Alerts Section -->
 ## Toast Alerts
+Toast alerts serve as a feedback & confirmation mechanism after the user performs an action.
 
 ### Placement & Behaviour
 - Toast alerts slide in from the top right corner of the browser, overlaying the content.  It's position is fixed ie. is not affected by scrolling.
