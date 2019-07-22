@@ -237,11 +237,15 @@ You can also add text to the large switch size. Again, use carefully - anything 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switch-types.png" width="400">
 
-**Usage**
+<br>
+
+## Usage
 
 - As a selection control in Settings pages
 - As a selection control combined with tables, data visualisations, etc.
 - As a selection control in tables
+
+<br>
 
 **Combined with labels**
 
@@ -255,6 +259,8 @@ Switches should be combined with accompanying text or a label.
 - Don't add additional characters or punctuation at the end of each label
 - Labels should be vertically centred relative to the switch (see example)
 
+<br>
+
 **Best Practices**
 
 - Always use switches in combination with accompanying text or a label
@@ -264,17 +270,23 @@ Switches should be combined with accompanying text or a label.
 
 ## Examples
 
+<br>
+
 **A selection control in Settings pages**
 
- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-settings-example.png" width="">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-settings-example.png" width="500px;">
+
+ <br>
 
  **A selection control combined with tables, data visualisations, etc.**
 
- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-controls-example.png" width="">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-controls-example.png" width="500px;">
+
+ <br>
 
  **A selection control in tables**
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-table-example.png" width="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-table-example.png" width="500px;">
 
  <hr>
   
