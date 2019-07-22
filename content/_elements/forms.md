@@ -1,6 +1,6 @@
 ---
 title: Forms
-description: Forms gather information from users via inputs, such as text boxes, text areas, selects, checkboxes, and radio buttons.
+description: Forms allow users to enter data into an application, or to configure options.
 colors:
 - primary
 - success
@@ -362,14 +362,79 @@ Some basic styling for file upload areas.
 
 # Overview
 
-##### Language
+### Types
+Forms can be made up of, but are not restricted to, the following form elements:
 
-{% include guide-img.html img='elements/forms/language'%}
+- input
+- textarea
+- select
+- radio
+- checkbox
+- file upload
+
+### States
+Form elements generally have the following states:
+
+- default
+- active
+- disabled
+- error
+
+### Sizes
+Form elements come in 3 sizes:
+
+- small (use in table cells)
+- default (general use)
+- large (mobile)
+
+### Combined with labels
+Form elements can generally be combined with labels in the following 2 layouts:
+
+- vertical stacked (recommended for longer forms)
+- horizontal line up (short forms)
+- Required fields are indicated by adding a colour coded asterisk * to the end of the label.
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/label-helper-text@2x.png" width="100%;">
+
+<br>
 
 
-##### Visual
+### Combined with helper text
+Form elements can be combined with helper text, for the following (but not restricted to) scenarios:
 
-{% include guide-img.html img='elements/forms/visual'%}
+- validation errors
+- guidance
+- confirmations
+
+### Input field modifications
+Input fields can be modified for various requirements:
+- Input add-ons
+- Icons inside input field (validations)
+- Combined with buttons
+- Combined with dropdown buttons
+
+### Validations
+Validation requires form elements to change state and display additional helper text and alerts. See Form Validations under Patterns for more guidance.
+
+### Form Layout
+Form layout will depend on the form requirements and where it is embedded. See Form Layout under Patterns for more guidance.
+
+<hr>
+
+## Examples
+
+**A large form with a combination of form elements**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/large-form-example@2x.png" width="100%;">
+
+<br>
+
+**A Login form**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/small-form-example@2x.png" width="100%;">
+
 
 </div>
 <!-- End Design Guidelines Tab -->
