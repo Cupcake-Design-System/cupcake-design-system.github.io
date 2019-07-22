@@ -58,35 +58,77 @@ tabs:
 
 # Overview
 
-## Application loader
+### Placement & Behaviour
+All loaders sit vertically and horizontally centered in a container. The animation repeats indeterminately until the relevant content is loaded, at which point it is replaced.
 
-The application loader is only used on initial application load ie. when a user signs into their account or a page is shared with an external party.
+### Best Practices
+- Do not scale the animation icon
+- Always centre the icon in the container
+- Use loader icons only on white or light grey backgrounds
+- Do not combine the loader icon with text
 
+### Types & Usage 
 
-**Do's and Dont's**
+<table class="c-table c-table-transparent c-table-border-full c-table-hover">
+<thead>
+    <tr>
+      <th width="150">Type</th>
+      <th width="400">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Application loader</td>
+      <td>
+      Used on initial application load ie. when a user signs into their account or a page is shared with an external party
+      </td>
+    </tr>
+     <tr>
+      <td>Content Loader</td>
+      <td>
+      Used when loading all content within the content area of a page or a container, usually when navigating within the same application
+      </td>
+    </tr>
+    <tr>
+      <td>Skeleton Loader</td>
+      <td>
+      Used when loading smaller repeat pieces of content, like lists or table data
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-{% include guide-img.html img='elements/loaders/logo'%}
+<hr>
 
----
+## Examples
 
-## Content Loader
+**An application loader displays while an application loads**
 
-The page content loader is used when loading all content within the content area of a page, usually when navigating within the same application. 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/application-loader-example@2x.png" width="100%">
 
+<br>
 
-**Do's and Dont's**
+**A content loader displays while the contents of a container loads**
 
-{% include guide-img.html img='elements/loaders/page'%}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/content-loader-example-single@2x.png" width="100%">
 
----
+<br>
 
-## Skeleton Loaders
+**Multiple content loaders display in cards while each cards's content loads in isolation**
 
-The basic skeleton loader is used to represent any smaller piece of text based data. When the data or container shape differs dramatically in visual appearance from the basic skeleton loader, a custom skeleton loader will be a better idea.
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/content-loader-example-multiple@2x.png" width="100%">
 
-**Do's and Dont's**
+<br>
 
-{% include guide-img.html img='elements/loaders/skeleton'%}
+**Use of a skeleton loader indicates that list-based information will load into this card**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/skeleton-loader-example-1@2x.png" width="100%">
+
+<br>
+
+**A skeleton loader is recommended for use as a loader that precludes table content**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/skeleton-loader-example-2@2x.png" width="100%">
 
 </div>
 <!-- End Design Guidelines Tab -->
