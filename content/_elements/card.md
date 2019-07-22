@@ -1,6 +1,6 @@
 ---
 title: Card
-description: Cards provide a flexible and extensible content container with multiple options and variants.
+description: Cards provide a flexible and extensible content container with multiple options and variants. Cards can also have specialist functionality when used in a specific context.
 tabs:
 - Code
 - Angular
@@ -351,30 +351,43 @@ Cards can be grouped together.
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-## Overview
+# Overview
 
-#### Structure
+### States
+Cards have 3 potential states:
 
-{% include guide-img.html img='elements/card/card-structure'%}
+- default
+- hover
+- edit
 
-Dashboard cards generally conform to the following criteria:
+### Usage
+Cards are used wherever content needs to be grouped in a flexible container.
 
-- the cards are stacked in a card deck
-- the cards display in fixed width and height
-- the card heading is a modified link
-- the card is drag-and-drop enabled
-- the card has a settings icon and overlay
+Currently the only specialist cards are:
+
+- Dashboard Cards (see example)
+
+### Structure
+Cards can include headers, footers, a wide variety of content and card-specific styles.
+
+### Best practices
+- Keep card titles short and descriptive (avoid wrapping or truncation)
+- Use cards in combination with a grid based layout 
+- Avoid scrolling in cards
+
+<hr>
+
+## Examples
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-1.png" width="100%;">
+
+<br>
+
+**A dashboard card can contain content that is important to the user, for instance data tables and graphs**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-2.png" width="100%;">
 
 
-#### Titles
-{% include guide-img.html img='elements/card/card-dont'%}
-
-#### Size
-{% include guide-img.html img='elements/card/card-size'%}
-
-
-#### Content
-{% include guide-img.html img='elements/card/card-content'%}
 
 </div>
 <!-- End Design Guidelines Tab -->
