@@ -1,6 +1,6 @@
 ---
 title: Switches
-description: Switches are a quick way to to toggle between two states. Changing a state is immediate and continuous.
+description: Switches are a type of selection control, offering a quick way to toggle between two states. Changing a state is immediate and continuous.
 colors:
 - primary
 - success
@@ -231,13 +231,52 @@ You can also add text to the large switch size. Again, use carefully - anything 
 **Types of switches available:**
 
 - Standard version
-- Mobile version*
+- Mobile version *The mobile version has a bigger hit area and larger text for better performance on smaller mobile screens.*
 
-*The mobile version has a bigger hit area and larger text for better performance on smaller mobile screens.*
+<br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/switches-versions.png" width="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switch-types.png" width="400">
+
+**Usage**
+
+- As a selection control in Settings pages
+- As a selection control combined with tables, data visualisations, etc.
+- As a selection control in tables
+
+**Combined with labels**
+
+Switches should be combined with accompanying text or a label.
+
+**Label best practices:**
+
+- Keep label text short and concise
+- Always place the label on the right
+- Use sentence style capitalisation for label text
+- Don't add additional characters or punctuation at the end of each label
+- Labels should be vertically centred relative to the switch (see example)
+
+**Best Practices**
+
+- Always use switches in combination with accompanying text or a label
+- Avoid using switches in forms where the settings need to be saved or applied before taking effect
 
 <hr>
+
+## Examples
+
+**A selection control in Settings pages**
+
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-settings-example.png" width="">
+
+ **A selection control combined with tables, data visualisations, etc.**
+
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-controls-example.png" width="">
+
+ **A selection control in tables**
+
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-table-example.png" width="">
+
+ <hr>
   
   <!-- Start Switch Hygiene Do's and Don'ts Section -->
 ### Do's and Don'ts
