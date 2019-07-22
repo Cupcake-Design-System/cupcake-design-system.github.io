@@ -1,6 +1,6 @@
 ---
-title: Dropdown
-description: Dropdown description here...
+title: Dropdowns
+description: Dropdown menus allow users to select an action, single option or selection of options from a set of choices.
 tabs:
 - Code
 - Guidelines
@@ -258,8 +258,112 @@ With simple list items below the toggle
 <!-- Start Design Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Design Guidelines coming soon...
+# Overview
 
+### Usage
+Use dropdown menus wherever users need to make a selection outside of a form. For selections in a form refer to the Select element in Form Elements.
+
+### Structure
+A dropdown menu is composed of a:
+
+- control
+- trigger indicator (optional)
+- dropdown menu
+
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/dropdown-breakdown@2x.png" width="100%;">
+
+<br>
+
+### Behaviour
+When the control is triggered, a dropdown menu slides out to reveal a set of choices. The dropdown menu can slide up, down, left or right. This is either pre-determined or influenced by proximity to the browser frame.
+
+Dropdown menus are by default not scrollable, but can be made to scroll for long lists such as filters.
+
+Dropdown menus can be closed by:
+
+- selecting an item
+- clicking the dropdown control
+- clicking anywhere on the page
+
+### States
+Dropdown buttons generally have the following states:
+
+- default
+- hover
+- active
+- disabled
+
+### Labels
+Limit wording on dropdown labels to two to three words max. Try and use wording and terms that need no additional explanation.
+
+### Menu items
+Dropdown menu items have different configurations depending on the requirements.
+
+Some options and application examples:
+
+- text only (select an action eg. export)
+- icon + text (standard menu item eg. sign out)
+- checkbox + text (multiple selections eg. select filters)
+- text + badge (new menu item)
+
+### Grouping and dividers
+Relevant menu items can be grouped under a non selectable heading. Dividers can separate grouped menu items.
+
+### Selected & pre-selected items
+Selected and pre-selected items should be visible with a selected class applied to the menu item.
+
+### Combined with a dropdown button
+Dropdown menus are typically combined with a dropdown button, but can also be triggered by other controls.
+
+### Combined with other controls
+Dropdown menus can also be triggered by specific controls:
+
+- icon buttons (for instance the More menu)
+- avatars (account menu)
+- Text link as dropdown control (table filters and column selectors)
+
+### Best practices
+- Use dropdown menus only where it is the most suitable selection control for the job
+- Dropdown menu use on mobile devices need additional considerations
+- Always indicate if an item is selected or pre-selected
+- Always disable or remove items that are not otherwise available or selectable
+- Keep all wording short and concise
+- Truncate menu items that extend beyond the container border
+- Only vertical scrolling (for an appropriate use case) is recommended. Avoid horizontal scrolling.
+
+
+<hr>
+
+## Examples
+
+**A dropdown with a list that extends beyond its max height can be configured to scroll**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/scroll-example@2x.png" width="100%;">
+
+<br>
+
+**A header groups export options and dividers seperate or group relevant links**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/grouping-example@2x.png" width="100%;">
+
+<br>
+
+**A selected state indicates that a selection is currently active**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/selected-example@2x.png" width="100%;">
+
+<br>
+
+**A button icon triggers a "more" menu and a badge indicates that a link has recently been added**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/icon-button-combination-example@2x.png" width="100%;">
+
+<br>
+
+**An account avatar triggers a dropdown with account and user related options**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/avatar-combination-example@2x.png" width="100%;">
 
 </div>
 <!-- End Design Tab -->
