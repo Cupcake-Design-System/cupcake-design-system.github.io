@@ -92,499 +92,63 @@ The default radio requires the `<label></label>` tag even if no text is provided
 
 # Overview
 
-Radio buttons allow users to select a single option from a list of predefined options.
-
-**Radio buttons are recommended for use when:**
-
-- A limited number of options are available
-- There is a recommended default value
-- Users need to see and compare options
-- One value is required to proceed
-
-**Radio buttons have 4 different states:**
+### States
+Radio buttons have 4 potential states:
 
 - active
 - inactive
 - active (disabled)
 - inactive (disabled)
 
+### Usage
+Radio buttons are used primarily in forms:
+
+- where a single option must be selected
+- where there is a recommended or default value
+
+### Combined with labels
+Radio buttons should be combined with accompanying text or a label.
+
+**Label best practices:**
+
+- Keep label text short and concise
+- Always place the label on the right
+- Use sentence style capitalisation for label text
+- Don't add additional characters or punctuation at the end of each label
+- Labels should be vertically centred relative to the checkbox (see example)
+
 <br>
 
-<!-- Start General Dos and Donts  -->
-#### General Do's and Dont's
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-label-placement@2x.png" width="100%;">
 
- <!-- Start Label length Row -->
-##### Label length
+<br>
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/general/radio-general-label-do@2x'%} 
-    </div>
-    <div class="c-col">
-      {% include guide-img.html img='elements/radio-buttons/general/radio-general-label-dont@2x'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep radio button text short and concise</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use a sentence to describe something if it can be summed up in three or less words</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Label length Row -->
-
-   <!-- Start Capitalizing labels Row -->
-##### Capitalizing labels
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/general/radio-general-capitalise-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/general/radio-general-capitalise-dont@2x'%}  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use sentence style capitalization</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't start the label as lowercase</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Capitalizing Labels Row -->
-
-<!-- Start Label Format Row -->
-##### Label format
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/general/radio-general-punctuation-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/general/radio-general-punctuation-dont@2x'%}  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do list radio list items without any additional characters or punctuation at the end of the label</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't add in any special characters or punctuation at the end of the label</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Label Format Row -->
-
-  <!-- Start Radio button to label placement Row -->
-##### Radio button to label placement
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/general/radio-general-placement-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/general/radio-general-placement-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do vertically center the label so there is an equal amount of space top and bottom in relation to the button</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't position the label so there is an unequal amount of space at the top and bottom in relation to the button</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Radio button to label placement Row -->
-
-<!-- Start Default selected values Row -->
-##### Default selected values
-
-  <div class="c-row">
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/general/radio-general-default-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/general/radio-general-default-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do list the default value first, unless it is part of a sequential order</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do help speed up the decision time by providing default values</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't list the default selected value in a random position on the list, unless it is part of a sequential order</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Default selected values Row -->
-  <!-- End General Dos and Donts  -->
+### Best practices
+- Use radio buttons in combination with accompanying text or a label
+- Preference should be given to vertical radio button lists, as it reads better
+- Horizontal list groups should be limited and not allowed to wrap
+- Try and keep radio button lists to 8 or less items
+- Show default or recommended values as pre-selected
 
 <hr>
 
- <!-- Start Radio Buttons in Forms Section -->
-### Radio Buttons in Forms
+## Examples
 
-**Radio buttons are typically used in forms as:**
+**A radio group used in a vertical list format in a form**
 
-- Horizontal list groups
-- Vertical list groups
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-vertical-group-example@2x.png" width="100%;">
 
 <br>
 
-<!-- Start Horizontal List Groups Section -->
-### Horizontal List Groups
-Typically used in forms where up to 3 listed options are displayed. Used where space is restricted. Labels should be short and concise.
+**A radio group with a recommended value selected by default**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-default-value-example@2x.png" width="100%;">
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/horizontal/radio-horizontal-list-example@2x.png" width="400px;">
+**A radio group used in a horizontal list format in a form**
 
-<br>
-
-<!-- Start Horizontal List Groups - Dos and Donts  -->
-#### Do's and Dont's
-
-<!-- Start Dos and Donts - Number of Items Row -->
-##### Number of items
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-limit-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-limit-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep horizontal list groups to 3 items or less</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't add more than 3 items in a horizontal list group; use a vertical list instead</span>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- End Dos and Donts - Number of Items Row -->
-
-<!-- Start Dos and Donts - Label vs Radio Placement Row -->
-##### Label vs radio placement
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-placement-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-placement-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do always follow the radio button with the label</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't ever place the label in front of the radio button</span>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- End Dos and Donts - Label vs Radio Placement Row -->
-
-<!-- Start Dos and Donts - List Item Spacing Row -->
-##### List item spacing
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-spacing-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-spacing-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep spacing at a just-right ratio</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use consistent spacing between list items</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use too-tight or too-loose spacing</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't allow inconsistent spacing between list items in order to conform to a specific width</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Dos and Donts - List Item Spacing Row -->
-
-<!-- Start Dos and Donts - Provide and Escape Hatch Row -->
-##### Provide an escape hatch
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-other-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/horizontal/radio-horisontal-other-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do open the list to user input when more than 3 items are required or if there is the risk that not all values are covered</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use the label "Other" and let the user define the additional values</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do rather use a vertical list group if more values need to be listed</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't list more than 3 items in a horizontal list; use a vertical list instead</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't make it impossible for the user to proceed if none of the listings apply</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Dos and Donts - Provide and Escape Hatch Row -->
-<!-- END Horizontal List Groups - Dos and Donts  -->
-<!-- END Horizontal List Groups Section -->
-
-<hr>
-
-<!-- Start Vertical List Groups Section -->
-### Vertical list groups
-The most common way to display a radio list group in a form.
-
-<br>
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/vertical/radio-vertical-list-example@2x.png" width="150px;">
-
-<br>
-
-<!-- Start Vertical Groups - Dos and Donts  -->
-#### Do's and Dont's
-
-<!-- Start Dos and Donts - Number of Items Row -->
-##### Number of items
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-limit-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-limit-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep vertical radio button lists to 6 or less items</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't add more than 6 radio list items; use "Other" to let user define additional values or use a dropdown</span>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- End Dos and Donts - Number of Items Row -->
-
-<!-- Start Dos and Donts - List Item Spacing Row -->
-##### List item spacing
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-spacing-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-spacing-do@2x'%}  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep spacing between list items at a just-right ratio</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use too-tight or too-loose spacing</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Dos and Donts - List Item Spacing Row -->
-
-<!-- Start Dos and Donts - Provide and Escape Hatch Row -->
-##### Provide an escape hatch
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-other-do@2x'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/radio-buttons/vertical/radio-vertical-other-dont@2x'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do open the list to user input when more than 6 items are required or if there is the risk that not all values are covered</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use the label "Other" and let the user define the additional values</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do rather use a dropdown menu if more values need to be listed</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't list more than 6 items in a horizontal list; use a dropdown menu instead</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't make it impossible for the user to proceed if none of the listings apply</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Dos and Donts - Provide and Escape Hatch Row -->
-<!-- END Vertical List Groups - Dos and Donts  -->
-<!-- END Vertical List Groups Section -->
-
- <!-- END Radio Buttons in Forms Section -->
-
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-horisontal-group-example@2x.png" width="100%;">
 
 </div>
 <!-- End Design Section -->
