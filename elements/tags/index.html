@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Badges are used to highlight the status of an entity.">
+<meta name="description" content="Tags are used to visually highlight an entity.">
 
-<title>Cupcake · Badges</title>
+<title>Cupcake · Tags</title>
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -183,7 +183,7 @@
                 href="https://cupcake-design-system.github.io/elements/avatars/">
                 Avatars
               </a>
-              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+              </li><li>
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/badges/">
                 Badges
@@ -258,7 +258,7 @@
                 href="https://cupcake-design-system.github.io/elements/tabs/">
                 Tabs
               </a>
-              </li><li>
+              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
               <a class="doc-sidenav-menu-link"
                 href="https://cupcake-design-system.github.io/elements/tags/">
                 Tags
@@ -360,8 +360,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img c-bg-primary">
-  <h1 class="docs-title" id="content">Badges</h1>
-  <p class="docs-lead">Badges are used to highlight the status of an entity.</p>
+  <h1 class="docs-title" id="content">Tags</h1>
+  <p class="docs-lead">Tags are used to visually highlight an entity.</p>
 </div>
 
       
@@ -380,27 +380,29 @@
           <div class="c-col-12 c-p-vertical-md">
 
             <!-- Start Cupcake Code -->
-<div id="code" class="docs-tabs-content">
+<!-- <div id="code" class="docs-tabs-content" markdown="1">
 
-  <h3 id="base">Base</h3>
-  <p>Badges are typically used to inform the user of status, information, or of an action that’s been taken.</p>
+### Base
+Badges are typically used to inform the user of status, information, or of an action that’s been taken.
 
-  <div class="docs-example">
+
+<div class="docs-example">
 <div class="c-badge">v.1.0.5</div>
 <div class="c-badge c-badge-square">v.1.0.5</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge"</span><span class="nt">&gt;</span>v.1.0.5<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-square"</span><span class="nt">&gt;</span>v.1.0.5<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge"</span><span class="nt">&gt;</span>v.1.0.5<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-square"</span><span class="nt">&gt;</span>v.1.0.5<span class="nt">&lt;/div&gt;</span></code></pre></div> <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <hr />
 
-  <p><br /></p>
 
-  <h3 id="color-examples">Color Examples</h3>
-  <p>Below are the available theme colors for the Badges element.</p>
+<hr>
+<br>
 
-  <div class="docs-example">
+
+### Color Examples
+Below are the available theme colors for the Badges element.
+
+
+<div class="docs-example">
 <div class="c-badge c-badge-primary">Badge</div>
   
 <div class="c-badge c-badge-secondary">Badge</div>
@@ -410,8 +412,7 @@
 <div class="c-badge c-badge-warning">Badge</div>
   
 <div class="c-badge c-badge-danger">Badge</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-primary"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-primary"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
   
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
   
@@ -419,13 +420,15 @@
   
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-warning"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
   
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-danger"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-danger"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span></code></pre></div> <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <h3 id="extended-palette">Extended Palette</h3>
-  <p>Badges are also available with the extended color palette.</p>
 
-  <div class="docs-example">
+
+### Extended Palette
+Badges are also available with the extended color palette.
+
+
+<div class="docs-example">
 <div class="c-badge c-badge-dark">Badge</div>
   
 <div class="c-badge c-badge-cyan">Badge</div>
@@ -467,8 +470,7 @@
 <div class="c-badge c-badge-teal-light">Badge</div>
   
 <div class="c-badge c-badge-violet-light">Badge</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-dark"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-dark"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
   
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-cyan"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
   
@@ -508,34 +510,37 @@
   
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-teal-light"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
   
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-violet-light"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-violet-light"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span></code></pre></div> <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <hr />
 
-  <p><br /></p>
 
-  <h3 id="size-examples">Size Examples</h3>
-  <p>In addition to the default size, badges are also available in small and large.</p>
+<hr>
+<br>
 
-  <div class="docs-example">
+
+### Size Examples
+In addition to the default size, badges are also available in small and large.
+
+
+<div class="docs-example">
 <div class="c-badge c-badge-sm">Badge</div>
   
 <div class="c-badge c-badge-lg">Badge</div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-sm"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-sm"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span>
   
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-lg"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-lg"</span><span class="nt">&gt;</span>Badge<span class="nt">&lt;/div&gt;</span></code></pre></div> <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <hr />
 
-  <p><br /></p>
 
-  <h3 id="dismissable">Dismissable</h3>
-  <p>Badges can also be made dismissable.</p>
+<hr>
+<br>
 
-  <div class="docs-example">
+
+### Dismissable
+Badges can also be made dismissable.
+
+
+<div class="docs-example">
 <div class="c-badge c-badge-sm c-badge-indigo">
   Value <a href="#" class="c-badge-close"></a>
 </div>
@@ -557,8 +562,7 @@
 <div class="c-badge c-badge-square c-badge-lg c-badge-teal">
   Value <a href="#" class="c-badge-close"></a>
 </div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-sm c-badge-indigo"</span><span class="nt">&gt;</span>
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-sm c-badge-indigo"</span><span class="nt">&gt;</span>
   Value <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-badge-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-square c-badge-sm c-badge-indigo"</span><span class="nt">&gt;</span>
@@ -578,20 +582,22 @@
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-square c-badge-lg c-badge-teal"</span><span class="nt">&gt;</span>
   Value <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-badge-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div> <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <hr />
 
-  <p><br /></p>
 
-  <h4 id="multiple-modifiers">Multiple Modifiers</h4>
+<hr>
+<br>
 
-  <div class="docs-example">
+
+#### Multiple Modifiers
+
+
+<div class="docs-example">
 <div class="c-badge-group">
 <div class="c-badge c-badge-primary">
   <div class="c-avatar c-avatar-success" data-text="AB">
-    <img src="https://unsplash.it/200?image=433" />
+    <img src="https://unsplash.it/200?image=433">
   </div>
   Primary Bear
   <a href="#" class="c-badge-close"></a>
@@ -599,7 +605,7 @@
 
 <div class="c-badge c-badge-square c-badge-primary">
   <div class="c-avatar c-avatar-success" data-text="AB">
-    <img src="https://unsplash.it/200?image=433" />
+    <img src="https://unsplash.it/200?image=433">
   </div>
   Primary Bear
   <a href="#" class="c-badge-close"></a>
@@ -607,7 +613,7 @@
 
 <div class="c-badge c-badge-lg c-badge-primary">
   <div class="c-avatar c-avatar-success" data-text="AB">
-    <img src="https://unsplash.it/200?image=433" />
+    <img src="https://unsplash.it/200?image=433">
   </div>
   Primary Bear
   <a href="#" class="c-badge-close"></a>
@@ -615,7 +621,7 @@
 
 <div class="c-badge c-badge-square c-badge-lg c-badge-primary">
   <div class="c-avatar c-avatar-success" data-text="AB">
-    <img src="https://unsplash.it/200?image=433" />
+    <img src="https://unsplash.it/200?image=433">
   </div>
   Primary Bear
   <a href="#" class="c-badge-close"></a>
@@ -623,7 +629,7 @@
 
 <div class="c-badge c-badge-success">
   <div class="c-avatar c-avatar-success" data-text="AB">
-    <img src="https://unsplash.it/200?image=433" />
+    <img src="https://unsplash.it/200?image=433">
   </div>
   Success Bear
   <a href="#" class="c-badge-close"></a>
@@ -631,7 +637,7 @@
 
 <div class="c-badge c-badge-square c-badge-success">
   <div class="c-avatar c-avatar-success" data-text="AB">
-    <img src="https://unsplash.it/200?image=433" />
+    <img src="https://unsplash.it/200?image=433">
   </div>
   Success Bear
   <a href="#" class="c-badge-close"></a>
@@ -639,7 +645,7 @@
 
 <div class="c-badge c-badge-lg c-badge-success">
   <div class="c-avatar c-avatar-success" data-text="AB">
-    <img src="https://unsplash.it/200?image=433" />
+    <img src="https://unsplash.it/200?image=433">
   </div>
   Success Bear
   <a href="#" class="c-badge-close"></a>
@@ -648,14 +654,14 @@
 
 <div class="c-badge c-badge-square c-badge-lg c-badge-success">
   <div class="c-avatar c-avatar-success" data-text="AB">
-    <img src="https://unsplash.it/200?image=433" />
+    <img src="https://unsplash.it/200?image=433">
   </div>
   Success Bear
   <a href="#" class="c-badge-close"></a>
 </div>
 
-<br />
-<br />
+<br>
+<br>
 
 <div class="c-badge c-badge-lg c-badge-orange-light">
     <div class="c-avatar c-avatar-orange">
@@ -675,7 +681,7 @@
 
 <div class="c-badge c-badge-square c-badge-lg c-badge-pink">
   <div class="c-avatar c-avatar-success" data-text="AB">
-      <img src="https://unsplash.it/200?image=433" />
+      <img src="https://unsplash.it/200?image=433">
   </div>
   Pink Bear Large Square - with long title
   <a href="#" class="c-badge-close"></a>
@@ -683,14 +689,13 @@
 
 <div class="c-badge c-badge-square c-badge-lg c-badge-teal">
   <div class="c-avatar c-avatar-success" data-text="AB">
-      <img src="https://unsplash.it/200?image=433" />
+      <img src="https://unsplash.it/200?image=433">
   </div>
   Teal Bear Large Square - with long title
   <a href="#" class="c-badge-close"></a>
 </div>
 </div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge-group"</span><span class="nt">&gt;</span>
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge-group"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-primary"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-avatar c-avatar-success"</span> <span class="na">data-text=</span><span class="s">"AB"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://unsplash.it/200?image=433"</span><span class="nt">&gt;</span>
@@ -790,35 +795,36 @@
   Teal Bear Large Square - with long title
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c-badge-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div> <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <hr />
 
-  <p><br /></p>
 
-  <h4 id="inline-status">Inline Status</h4>
+<hr>
+<br>
 
-  <div class="docs-example">
+#### Inline Status
+
+
+<div class="docs-example">
 <div class="c-body-text-xl"> 
   Information 
   <span class="c-badge c-badge-sm c-badge-primary c-badge-top">8</span>
 </div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-body-text-xl"</span><span class="nt">&gt;</span> 
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-body-text-xl"</span><span class="nt">&gt;</span> 
   Information 
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"c-badge c-badge-sm c-badge-primary c-badge-top"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div> <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-  <hr />
 
-  <p><br /></p>
+<hr>
+<br>
 
-  <h4 id="empty-status-badges">Empty Status Badges</h4>
-  <p>A badge with no content can be used to add visual attention to an element.</p>
 
-  <div class="docs-example">
+#### Empty Status Badges
+A badge with no content can be used to add visual attention to an element. 
+
+
+<div class="docs-example">
 <div class="c-badge c-badge-primary"></div>
   
 <div class="c-badge c-badge-secondary"></div>
@@ -871,8 +877,7 @@
 <div class="c-badge c-badge-teal-light"></div>
   
 <div class="c-badge c-badge-violet-light"></div>
-</div>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-primary"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-primary"</span><span class="nt">&gt;&lt;/div&gt;</span>
   
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-secondary"</span><span class="nt">&gt;&lt;/div&gt;</span>
   
@@ -923,10 +928,11 @@
   
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-teal-light"</span><span class="nt">&gt;&lt;/div&gt;</span>
   
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-violet-light"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div>
-  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-badge c-badge-violet-light"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div> <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-1" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
 
-</div>
+
+
+</div> -->
 <!-- End Cupcake Code Tab -->
 
 <!-- Start Angular Tab -->
@@ -941,117 +947,77 @@
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content">
 
-  <h2 id="overview">Overview</h2>
+  <h1 id="overview">Overview</h1>
 
-  <h3 id="types-of-badges-available">Types of badges available:</h3>
-
-  <p><strong>1. Status Badges</strong></p>
-
-  <p><br /></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/badges/new format/StatusBadges.png" width="25%;" /></p>
-
-  <p><br /></p>
-
-  <p><strong>2. Numeric Badges</strong></p>
-
-  <p><br /></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/badges/new format/Numeric Badges.png" width="5%;" /></p>
-
-  <hr />
-
-  <h2 id="usage">Usage</h2>
   <ul>
-    <li>
-      <p>For status information</p>
-    </li>
-    <li>
-      <p>For counts/indication of a running tally</p>
-    </li>
+    <li>Tags are used to visually highlight an entity.</li>
+    <li>To highlight status information and/or counts of an entity, use badges.</li>
   </ul>
 
+  <h3 id="types">Types</h3>
+
+  <p><br /></p>
+
+  <p><strong>1. Standard Tags</strong></p>
+
+  <p><br /></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tags/ContactTags.png" width="50%" /></p>
+
+  <p><br /></p>
+
+  <p><strong>2. Contact Tags</strong></p>
+
+  <p><br /></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tags/StandardTags.png" width="50%;" /></p>
+
   <hr />
 
-  <h4 id="badge-colors">Badge Colors</h4>
+  <h3 id="tag-colors">Tag Colors</h3>
 
   <p><a href="https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color">Cupcake Color Palette</a></p>
 
-  <p><br /></p>
-
-  <h4 id="light-color-set">Light Color Set</h4>
+  <p><strong>Light Color Set</strong></p>
   <ul>
     <li>Only use values 3-5</li>
   </ul>
 
   <p><img src="https://cupcake-design-system.github.io/assets/img/elements/badges/LightColorSet.png" width="500px;" /></p>
 
-  <h4 id="dark-color-set">Dark Color Set**</h4>
+  <p><strong>Dark Color Set</strong></p>
   <ul>
     <li>Only use values 6-9</li>
   </ul>
 
   <p><img src="https://cupcake-design-system.github.io/assets/img/elements/badges/DarkColorSet.png" width="500px;" /></p>
 
-  <hr />
-
-  <h2 id="general-best-practices">General best practices</h2>
+  <h3 id="usage">Usage</h3>
   <ul>
-    <li>
-      <p>Always use colors that are not used in brand colors, button colors, and common action colors</p>
-    </li>
-    <li>
-      <p>Always use badges in conjunction with a single item so that there is no ambiguity around which item is indicated</p>
-    </li>
-    <li>
-      <p>Always use either the light color set or dark color set for badges and stick to it</p>
-    </li>
-    <li>
-      <p>Always use either the rounded or squared badges and stick to it</p>
-    </li>
+    <li>Standard Tags can be used as an identifier or reference to an object, such as filters</li>
+    <li>Contact Tags can be used for adding or removing contacts</li>
   </ul>
 
-  <h3 id="best-practices-with-status-badges">Best practices with Status Badges</h3>
+  <h3 id="best-practices">Best practices</h3>
   <ul>
-    <li>
-      <p>Use 1 to 2 word status indicators for status badges</p>
-    </li>
-    <li>
-      <p>Use appropriate size status badge for a specific requirement</p>
-    </li>
-    <li>
-      <p>Try to use a different shape or color value/set to visually differentiate badges from similar visual elements such as tags</p>
-    </li>
+    <li>Use colors that are not used in brand colors, button colors, and common action colors</li>
+    <li>Use either the light color set or dark color set and stick to it for all tags</li>
+    <li>Use either the rounded or squared tags and stick to it</li>
+    <li>Only use up to 30 characters in tags and the rest will be truncated</li>
+    <li>Try to use a different shape or color value/set to visually differentiate tags from similar visual elements such as badges</li>
   </ul>
-
-  <h3 id="best-practices-with-numeric-badges">Best practices with Numeric Badges</h3>
-
-  <ul>
-    <li>Use only numbers in numeric badges</li>
-  </ul>
-
-  <hr />
 
   <h2 id="examples">Examples</h2>
 
-  <p><br /></p>
+  <p><strong>Tags as filters</strong></p>
 
-  <p><strong>Status Badges in tables</strong></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/badges/new format/BadgesInTables.png" width="50%;" /></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tags/TagsFilters.png" width="50%;" /></p>
 
   <p><br /></p>
 
-  <p><strong>Status Badges in cards</strong></p>
+  <p><strong>Tags in a table</strong></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/badges/new format/BadgesInCards.png" width="50%;" /></p>
-
-  <p><br /></p>
-
-  <p>  
-<strong>Numeric Badges in media list items</strong></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/badges/new format/NumericBadgesMediaLists.png" width="50%;" /></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tags/TagsInTables.png" width="50%;" /></p>
 
 </div>
 <!-- End Design Tab -->
