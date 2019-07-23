@@ -1,6 +1,6 @@
 ---
 title: Avatars
-description: Avatars are used to represent the user’s identity onscreen with simple visuals/designs or to provide a placeholder identity for users who haven’t uploaded their own personal representation.
+description: Avatars are used to represent the user’s identity onscreen with simple visuals.
 colors:
 - primary
 - secondary
@@ -136,186 +136,108 @@ Avatars can also be grouped.
 
 # Overview
 
-**Types of avatars available:**
+Avatars are used to represent the user’s identity onscreen with simple visuals.
 
-- People Version the user version is circular and should only be used for personal users.
-- Company Version - The company version is square and should only be used for company users.
+## Usage
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/Types-of-Avatars.png" width="500px;">
+- As a user profile icon in the header
 
-**There are different ways an avatar can be displayed within people  and company versions:**
+- As an icon in a table
 
-- First + last name or company initials - The default avatar 
-- Placeholder user icon - The default avatar if the user does not provide name
-- Image (with and without border) - The avatar displays an image of the user's choice if uploaded
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/Avatars-MoreTypes.png" width="500px;">
-
-**For the companies that have more than 3 initials, the avatars will appear as the following:**
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/Company3+Initials.png" width="500px;">
+- As contact thumbnails
 
 <hr>
-  
-  <!-- Start Do's and Don'ts Section -->
-### Do's and Dont's
 
-  <!-- Start Usage Row -->
-##### Usage
+## Versions
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_Usage_Do'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_Usage_Dont'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use a circular avatar for a personal user and a square avatar for a company user </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use a square avatar for a personal user or a circular avatar for a company user</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Usage Row -->
+#### People Version 
+The user version is circular and should only be used for individual users.
 
- <!-- Start Colors Row -->
-##### Colors
+<br>
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_Colors_Do'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_Colors_Dont'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use the light colored avatars on dark backgrounds and the dark colored avatars on light backgrounds</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use the dark colored avatars on dark backgrounds or light colored avatars on light backgrounds</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Colors Row -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarPeopleVersion.png" width="15%;">
 
-  <!-- Start Avatars in Headers Row -->
-##### Avatars in Headers
+<br>
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_Header_Do'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_Header_Dont'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use the avatar with an account name</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use an avatar without an account name or vice versa</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Avatars in Headers Row -->
+#### Company Version 
+The company version is square and should only be used for company users
 
-  <!-- Start Avatars in Headers-Account Names Row -->
-##### Avatars in Headers - Account Names
+<br>
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_AccountName_Do'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_AccountName_Dont'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use the avatar on the left-hand side of the account name</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use an avatar on the right-hand side of the account name</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Avatars in Headers - Account Names Row -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarCoVersion.png" width="15%;">
 
-  <!-- Start Avatar Sizes in Table Cells Row -->
-##### Avatar Sizes in Table Cell
+<hr>
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_Tables_Do'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/avatars/Avatars_Tables_Dont'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use "XS" avatars in compact table cells, "SM" avatars in cosy table cells, and default avatars in comfortable table cells</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use any other sizes for avatars in table cells except for "XS" avatars in compact table cells, "SM" avatars in cosy table cells, and default avatars in comfortable table cells</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Avatar Sizes in Table Cells Row -->
+## Types
 
-  <!-- End Do's and Don'ts Section -->
+#### Default Avatars 
+
+<br>
+
+**First and last name or company initials**
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarDefault.png" width="25%;">
+
+<br>
+
+**Company initials can vary and will appear as the following:**
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarInitials.png" width="50%;">
+
+<br>
+
+#### Placeholder 
+User icon for when the user does not provide name
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarPlaceholder.png" width="25%;">
+
+<br>
+
+#### User Supplied Image 
+Image of user's choice if uploaded
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarUserImg.png" width="25%;">
+
+<hr>
+
+## Best practices
+
+- Always use a circular avatar for a personal user and a square avatar for a company user
+
+- Always use light colored avatars on dark backgrounds and the dark colored avatars on light backgrounds
+
+- Always use colors that do not conflict with danger, information, and success colors
+
+<hr>
+
+
+## Examples
+
+<br>
+
+**A user profile icon in the header**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarHeaderEX.png" width="50%;">
+
+<br>
+
+**Avatar icons in a table**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarTableEX.png" width="50%;">
+
+<br>
+
+**Contact thumbnails**
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarContactsEX.png" width="50%;">
+
+Example: 
+
 
 
 </div>
