@@ -63,8 +63,11 @@ All loaders sit vertically and horizontally centered in a container. The animati
 
 ### Best Practices
 - Do not scale the animation icon
+
 - Always centre the icon in the container
+
 - Use loader icons only on white or light grey backgrounds
+
 - Do not combine the loader icon with text
 
 ### Types & Usage 
@@ -104,31 +107,31 @@ All loaders sit vertically and horizontally centered in a container. The animati
 
 **An application loader displays while an application loads**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/application-loader-example@2x.png" width="100%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/application-loader-example@2x.png" width="50%">
 
 <br>
 
 **A content loader displays while the contents of a container loads**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/content-loader-example-single@2x.png" width="100%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/content-loader-example-single@2x.png" width="50%">
 
 <br>
 
 **Multiple content loaders display in cards while each cards's content loads in isolation**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/content-loader-example-multiple@2x.png" width="100%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/content-loader-example-multiple@2x.png" width="50%">
 
 <br>
 
 **Use of a skeleton loader indicates that list-based information will load into this card**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/skeleton-loader-example-1@2x.png" width="100%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/skeleton-loader-example-1@2x.png" width="50%">
 
 <br>
 
 **A skeleton loader is recommended for use as a loader that precludes table content**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/skeleton-loader-example-2@2x.png" width="100%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/loaders/new-format/skeleton-loader-example-2@2x.png" width="50%">
 
 </div>
 <!-- End Design Guidelines Tab -->
