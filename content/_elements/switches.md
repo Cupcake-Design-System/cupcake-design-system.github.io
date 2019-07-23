@@ -224,8 +224,11 @@ You can also add text to the large switch size. Again, use carefully - anything 
 **Switches have 4 different states:**
 
 - Active
+
 - Inactive
+
 - Active (disabled)
+
 - Inactive (disabled)
 
 **Types of switches available:**
@@ -242,7 +245,9 @@ You can also add text to the large switch size. Again, use carefully - anything 
 ## Usage
 
 - As a selection control in Settings pages
+
 - As a selection control combined with tables, data visualisations, etc.
+
 - As a selection control in tables
 
 <br>
@@ -256,9 +261,13 @@ Switches should be combined with accompanying text or a label.
 **Label best practices:**
 
 - Keep label text short and concise
+
 - Always place the label on the right
+
 - Use sentence style capitalisation for label text
+
 - Don't add additional characters or punctuation at the end of each label
+
 - Labels should be vertically centred relative to the switch (see example)
 
 <br>
@@ -266,6 +275,7 @@ Switches should be combined with accompanying text or a label.
 **Best Practices**
 
 - Always use switches in combination with accompanying text or a label
+
 - Avoid using switches in forms where the settings need to be saved or applied before taking effect
 
 <hr>
@@ -276,19 +286,19 @@ Switches should be combined with accompanying text or a label.
 
 **A selection control in Settings pages**
 
- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-settings-example.png" width="500px;">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-settings-example.png" width="50%;">
 
  <br>
 
  **A selection control combined with tables, data visualisations, etc.**
 
- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-controls-example.png" width="500px;">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-controls-example.png" width="50%;">
 
  <br>
 
  **A selection control in tables**
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-table-example.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-table-example.png" width="50%;">
 
 
 
