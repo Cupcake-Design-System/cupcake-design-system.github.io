@@ -250,9 +250,6 @@ Image of user's choice if uploaded
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarContactsEX.png" width="50%;">
 
-Example: 
-
-
 
 </div>
 <!-- End Design Tab -->
