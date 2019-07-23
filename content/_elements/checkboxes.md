@@ -98,13 +98,18 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
 **Checkboxes have 4 potential states:**
 
 - active
+
 - inactive
+
 - active (disabled)
+
 - inactive (disabled)
 
 ### Usage
 - multiple selection controls in forms
+
 - standalone checkboxes
+
 - bulk action selectors in tables
 
 ### Combined with labels
@@ -113,19 +118,25 @@ Checkboxes should be combined with accompanying text or a label.
 **Label best practices:**
 
 - Keep label text short and concise
+
 - Always place the label on the right
+
 - Use sentence style capitalisation for label text
+
 - Don't add additional characters or punctuation at the end of each label
+
 - Labels should be vertically centred relative to the checkbox (see example)
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="75%;">
 
 ### Best Practices
 
 - Use switches in combination with accompanying text or a label
+
 - Preference should be given to vertical checkbox lists, as it reads better
+
 - Try and keep checkbox lists to 8 or less items
 
 <hr>
@@ -134,19 +145,19 @@ Checkboxes should be combined with accompanying text or a label.
 
 **A multiple selection list in a form**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-multiple-selection-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-multiple-selection-example@2x.png" width="50%;">
 
 <br>
 
 **A used as a standalone checkbox on forms**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-standalone-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-standalone-example@2x.png" width="50%;">
 
 <br>
 
 **As selector handle for enabling bulk actions in tables**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-bulk-selection-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-bulk-selection-example@2x.png" width="50%;">
 
 
 
