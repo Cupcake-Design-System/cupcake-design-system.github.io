@@ -675,770 +675,126 @@
 
   <h1 id="overview">Overview</h1>
 
-  <p><strong>All buttons have the following features:</strong></p>
+  <h3 id="types--usage">Types &amp; Usage</h3>
+
+  <table class="c-table c-table-transparent c-table-border-full c-table-hover">
+<thead>
+    <tr>
+      <th width="150">Type</th>
+      <th width="400">Decription</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primary Button</td>
+      <td>
+      Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.
+      </td>
+    </tr>
+     <tr>
+      <td>Action Button</td>
+      <td>
+      Action buttons represent and draw attention to an action where an entity is created or introduced into the workflow.
+      </td>
+    </tr>
+    <tr>
+      <td>Danger Button</td>
+      <td>
+      Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.
+      </td>
+    </tr>
+     <tr>
+      <td>Secondary Button</td>
+      <td>
+      Secondary buttons are the standard button for general use. Secondary buttons are often used in combination with a primary button, to represent an opposing action.
+      </td>
+    </tr>
+     <tr>
+        <td>Link Button</td>
+        <td>
+        Link buttons are used in combination with Primary and Secondary buttons to highlight less critical actions or supporting links.
+        </td>
+    </tr>
+      <tr>
+        <td>Icon Button</td>
+        <td>
+        Icon-only buttons are used for frequently used actions, typically where space is restricted.
+        </td>
+    </tr>
+     <tr>
+        <td>Button Group</td>
+        <td>
+        Button groups are used to group frequently used, related actions.
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+  <h3 id="states">States</h3>
+  <p><strong>All buttons have 4 potential states:</strong></p>
 
   <ul>
-    <li>A hover and a click state</li>
-    <li>Can be either active or disabled</li>
-    <li>Come in 4 different sizes (primarily for use in grids, components and mobile apps)</li>
+    <li>hover</li>
+    <li>active</li>
+    <li>inactive</li>
+    <li>disabled</li>
   </ul>
 
-  <p><strong>Buttons display in the following variations:</strong></p>
+  <h3 id="labels">Labels</h3>
+  <p>Limit wording on button labels to two to three words max. Try and use wording and terms that need no additional explanation.</p>
 
+  <h3 id="combined-with-icons">Combined with icons</h3>
+  <p>All buttons can be combined with icons to add additional visual emphasis and to identify common repetitive actions.</p>
+
+  <h3 id="combined-with-tooltips">Combined with tooltips</h3>
+  <p>Icon buttons should always be combined with a Tooltip to make it clear what action the button will perform.</p>
+
+  <h3 id="best-practices">Best Practices</h3>
   <ul>
-    <li>Primary button</li>
-    <li>Secondary button</li>
-    <li>Action button</li>
-    <li>Danger button</li>
-    <li>Link-only button</li>
-    <li>Icon button</li>
-    <li>Icon-only button</li>
+    <li>Use one Primary, Action or Danger button on a page or screen area</li>
+    <li>Keep buttons to a minimum on a page or screen area</li>
+    <li>Use clear button labels limited to less than three words</li>
+    <li>Try and create context with the design, so buttons text can be simple and to the point</li>
+    <li>Use icons that are clear in meaning and combine with tooltips where needed</li>
   </ul>
 
   <hr />
 
-  <p><!-- Start General Do's and Don'ts Row --></p>
-  <h3 id="general-dos-and-donts">General Do’s and Dont’s</h3>
+  <h2 id="examples">Examples</h2>
 
-  <p><!-- Start Button Wording Row --></p>
-  <h5 id="button-wording">Button wording</h5>
+  <p><strong>A primary button used in combination with a secondary button</strong></p>
 
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/general/general-wording-best@2x.png" /> 
-    </div>
-    <div class="c-col">
-   <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/general/general-wording-better2x.png" />  
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/general/general-wording-no@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep primary buttons short and to the point</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use this approach when the context for the button is 100% clear</span>
-        </div>
-      </div>
-    </div>
-    <!-- Better -->
-     <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do try limit button wording to two words (3 words max. if needed)</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use wording and terms that need no additional explanation</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Create context with the design</span>
-        </div>
-      </div>
-    </div>
-    <!-- End Better Col -->
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use ambiguous or lengthy wording in buttons</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than two words (3 words max. in exceptions)</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use wording that require additional explanations or context</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Button Wording Row --></p>
-
-  <p><!-- Start Buttons + Icons Row --></p>
-  <h5 id="buttons--icons">Buttons + icons</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-      <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/general/general-button-icon-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/general/general-button-icon-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use generic icons with an accepted meaning associated with it</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use that icon linked to one button or type of action only</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use icons which are ambiguous in meaning or not universally accepted for a specific purpose</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use icons which need an explanation</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use icons which might already be associated with other buttons or actions</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Buttons + Icons Row -->
-  <!-- End General Do's and Don'ts Section --></p>
-
-  <hr />
-
-  <p><!-- Start Primary Button Row --></p>
-  <h3 id="primary-button">Primary button</h3>
-  <p>Primary buttons draw attention to the primary action within a screen, component or interaction. Not all screens will require a primary button.</p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/new format/primary-button-combo-example@2x.png" width="400" /></p>
 
   <p><br /></p>
 
-  <p><!-- Start Primary Button Do's and Don'ts Section --></p>
-  <h4 id="dos-and-donts---primary-buttons">Do’s and Dont’s - Primary Buttons</h4>
+  <p><strong>An action button used in combination with a primary/secondary button combination</strong></p>
 
-  <p><!-- Start Primary Button Usage Row --></p>
-  <h5 id="primary-button-usage">Primary button usage</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/primary-button/primary-button-usage-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/primary-button/primary-button-usage-dont@2x.png" />  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use only one visible primary button per screen*</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class=""></span>
-        <div class="c-media-body">
-          <span class="c-text-md">* Exception: Primary buttons hidden in interactions do not apply</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than one visible primary button per screen*</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Primary Button Usage Row --></p>
-
-  <p><!-- Start Grouping Primary Buttons Row --></p>
-  <h5 id="grouping-primary-buttons">Grouping Primary Buttons</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/primary-button/primary-button-combo-do@2x.png" />
-    </div>
-    <div class="c-col">
-  <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/primary-button/primary-button-combo-dont@2x.png" />  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do combine primary buttons with secondary buttons</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do combine a primary button with a secondary button representing an opposing action</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't combine two or more primary buttons</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Grouping Primary Buttons Row --></p>
-
-  <p><!-- Start Grouping and Button Order Row --></p>
-  <h5 id="grouping-and-button-order">Grouping and button order</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/primary-button/primary-button-order-do@2x.png" />
-    </div>
-    <div class="c-col">
-  <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/primary-button/primary-button-order-dont@2x.png" />  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do place the button representing the opposing secondary action first</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't place the primary action button first</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't combine two or more primary buttons</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Grouping and Button Order Row -->
-  <!-- End Primary Button Section --></p>
-
-  <hr />
-
-  <p><!-- Start Action Button Row --></p>
-  <h3 id="action-button">Action button</h3>
-  <p>Action buttons represent and draw attention to an action where something is created or introduced into the workflow.</p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/new format/action-button-combo-example@2x.png" width="400" /></p>
 
   <p><br /></p>
 
-  <p><!-- Start Action Button Do's and Don'ts Section --></p>
-  <h4 id="dos-and-donts---action-buttons">Do’s and Dont’s - Action buttons</h4>
+  <p><strong>A danger button used to signal a destructive action (presented in a modal)</strong></p>
 
-  <p><!-- Start Action Button Usage Row --></p>
-  <h5 id="action-button-combinations">Action button combinations</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/action-button/action-button-combo-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/action-button/action-button-combo-dont@2x.png" />   
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use an action button on the same screen with a primary action button</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do try to place the positive action button in the topmost area of the page or component as it represents the start of an interaction</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't combine multiple visible primary action buttons on a screen</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Action Button Combinations Row --></p>
-
-  <p><!-- Start Action Button Usage Row --></p>
-  <h5 id="action-button-usage">Action button usage</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/action-button/action-button-usage-do@2x.png" />
-    </div>
-    <div class="c-col">
-  <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/primary-button/primary-button-usage-dont@2x.png" />  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use the action button instead of a primary button.</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use only one instance of an action button per page, whether visible or hidden</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't combine multiple action buttons on a screen, whether visible or hidden</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Action Button Usage Row -->
-  <!-- End Action Button Section --></p>
-
-  <hr />
-
-  <!-- Start Danger Button Row -->
-  <h4 id="danger-button">Danger button</h4>
-  <p>Danger buttons represent and draw attention to a destructive action where something is discarded or deleted.</p>
-
-  <p>*A destructive action button can share the screen with an additive action button and/or a primary action button.</p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/new format/danger-button-combo-example@2x.png" width="400" /></p>
 
   <p><br /></p>
 
-  <p><!-- Start Danger Button Do's and Don'ts Section --></p>
-  <h4 id="dos-and-donts---danger-buttons">Do’s and Dont’s - Danger buttons</h4>
+  <p><strong>How secondary buttons could compliment a primary button</strong></p>
 
-  <p><!-- Start Danger Button Usage Row --></p>
-  <h5 id="danger-button-combinations">Danger button combinations</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/danger-button/danger-button-combo-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/danger-button/danger-button-combo-dont@2x.png" />   
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do combine a danger button with a secondary action button so the user has the option to opt out</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use only one instance of a danger button visible on the screen at a time</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use a danger button without offering the user a way to opt out (destructive action buttons can be permanent)</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Danger Button Combinations Row --></p>
-
-  <p><!-- Start Danger Button Usage Row --></p>
-  <h5 id="danger-button-usage">Danger button usage</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/danger-button/danger-button-usage-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-  <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/danger-button/danger-button-usage-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do make the danger button the final decision before a destructive action is taken</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't give the user additional decisions after the danger button is clicked</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Danger Button Usage Row -->
-  <!-- End Danger Button Section --></p>
-
-  <hr />
-
-  <!-- Start Secondary Button Row -->
-  <h3 id="secondary-button">Secondary button</h3>
-  <p>Secondary buttons are the standard button for general use. Secondary buttons are often used in combination with a primary button, to represent an opposing action.</p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/new format/secondary-button-example@2x.png" width="400" /></p>
 
   <p><br /></p>
 
-  <p><!-- Start Secondary Button Do's and Don'ts Section --></p>
-  <h4 id="dos-and-donts---secondary-buttons">Do’s and Dont’s - Secondary buttons</h4>
+  <p><strong>Link buttons used in combination with secondary buttons</strong></p>
 
-  <p><!-- Start Secondary Button Usage Row --></p>
-  <h5 id="secondary-button-usage">Secondary button usage</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/secondary-button/secondary-button-usage-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/secondary-button/secondary-button-usage-dont@2x.png" />   
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do try to keep visible secondary button usage to a minimum</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do try to hide additional secondary button usage in interactions</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do hide additional options in a dropdown button if possible</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't clutter the screen with multiple secondary button clusters</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't be lazy - analyse your workflow to find solutions</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Secondary Button Usage Row --></p>
-
-  <p><!-- Start Secondary Button Repeitive Use in Tables Row --></p>
-  <h5 id="repetitive-use-of-secondary-button-use-in-tables">Repetitive use of secondary button use in tables</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/secondary-button/secondary-button-repeat-do@2x.png" />
-    </div>
-    <div class="c-col">
-   <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/secondary-button/secondary-button-repeat-dont@2x.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do reveal repetitive button options on hover</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't clutter a table with repetitive buttons esp. if each button represents the same action. </span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- Start Secondary Button Repeitive Use in Tables Row -->
-  <!-- End Secondary Button Section --></p>
-
-  <hr />
-
-  <p><!-- Start Link Only Button Row --></p>
-  <h3 id="link-only-button">Link-only button</h3>
-  <p>Link-only buttons are used under the following circumstances:</p>
-
-  <ul>
-    <li>Primary and Secondary buttons have been used but an additional button is needed to highlight a less critical action or supporting link.</li>
-    <li>To add additional buttons to an already button heavy page</li>
-    <li>To represent less important or supporting actions.</li>
-  </ul>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/new format/link-button-example@2x.png" width="400" /></p>
 
   <p><br /></p>
 
-  <!-- Start Link-only Button Do's and Don'ts Section -->
-  <h4 id="dos-and-donts---link-only-buttons">Do’s and Dont’s - Link-only buttons</h4>
+  <p><strong>Icon buttons used with a table</strong></p>
 
-  <p><!-- Start Link-only Button Usage Row --></p>
-  <h5 id="link-only-button-usage">Link-only button usage</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/link-only-button/link-button-usage-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/link-only-button/link-button-usage-dont@2x.png" />    
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use link-only buttons to highlight less critical actions or supporting links, thereby reducing overall button use on a page</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't crowd a page with button heavy layouts</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Link-only Button Usage Row --></p>
-
-  <p><!-- Start Link-only Button Combinations Row --></p>
-  <h5 id="link-only-button-combinations">Link-only button combinations</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/link-only-button/link-button-combo-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-   <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/link-only-button/link-button-combo-dont@2x.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do present a link-only button as an additional non-critical action or link in combination with critical choice buttons</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't present a link-only button as a counter action to a primary or secondary button </span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Link-only Button Combinations Row --></p>
-
-  <p><!-- Start Button link vs text link Row --></p>
-  <h5 id="button-link-vs-text-link">Button link vs text link</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/link-only-button/link-button-vs-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-   <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/link-only-button/link-button-vs-dont@2x.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use text links instead of button-only links where appropriate</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use button-only links to highlight more important actions over text links</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use button-only links where text links will be more appropriate</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Button link vs text link Row -->
-  <!-- End Link Only Button Section --></p>
-
-  <hr />
-
-  <p><!-- Start Icon Button Row --></p>
-  <h3 id="icon-button-1">Icon button</h3>
-  <p>Icon buttons are best used in combinations with other buttons, typically in toolbars or in headers.</p>
-
-  <p><br /></p>
-
-  <!-- Start Icon Button Do's and Don'ts Section -->
-  <h4 id="dos-and-donts---icon-buttons">Do’s and Dont’s - Icon buttons</h4>
-
-  <p><!-- Start Icon Button Usage Row --></p>
-  <h5 id="icon-button-usage">Icon button usage</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/icon-button/icon-button-combinations-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/icon-button/icon-button-combinations-dont@2x.png" />     
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use icon buttons in combination with other buttons</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use icon buttons in locations where borderless icon buttons will not be noticed or expected</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use use borderless icon buttons when a standard icon button will be more effective</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Icon Button Usage Row -->
-  <!-- End Icon Button Section --></p>
-
-  <hr />
-
-  <p><!-- Start Icon-only Button Row --></p>
-  <h3 id="icon-only-button">Icon-only button</h3>
-  <p>Icon-only buttons are best used for common or repetitive actions, typically where space is restricted in tables and forms.</p>
-
-  <p><br /></p>
-
-  <!-- Start Icon-only Button Do's and Don'ts Section -->
-  <h4 id="dos-and-donts">Do’s and Dont’s</h4>
-
-  <p><!-- Start Icon-only Button Usage Row --></p>
-  <h5 id="icon-only-button-usage">Icon-only button usage</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-      <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/icon-only-button/icon-only-button-combo-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/icon-only-button/icon-only-button-combo-dont@2x.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use icon-only buttons for common or repetitive actions in forms  </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use icon buttons in tables</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Icon-only Button Usage Row --></p>
-
-  <p><!-- Start Icon-only Button in Forms Row --></p>
-  <h5 id="icon-only-button-in-forms">Icon-only button in forms</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/icon-only-button/icon-only-button-forms-do@2x.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/icon-only-button/icon-only-button-forms-dont@2x.png" />     
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use icon-only buttons to represent critical action or danger button functions in tables and forms</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't modify icon buttons to conform to behave like primary or secondary buttons</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Icon-only Button in Forms Row -->
-  <!-- End Icon-only Button Section --></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/buttons/new format/icon-only-button-example@2x.png" width="400" /></p>
 
 </div>
 <!-- End Design Tab -->

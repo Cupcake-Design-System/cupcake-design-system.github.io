@@ -688,7 +688,7 @@
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content">
 
-  <h2 id="overview">Overview</h2>
+  <h1 id="overview">Overview</h1>
 
   <p><strong>Types of alerts available:</strong></p>
 
@@ -696,493 +696,158 @@
     <li>Banner alert</li>
     <li>Box alert</li>
     <li>Toast alert</li>
-    <li>Icon alert</li>
-    <li>Modal alert (see Modal Dialogue)</li>
   </ul>
 
   <hr />
 
-  <p><!-- Start Banner Alert Row --></p>
-  <h4 id="banner-alerts">Banner Alerts</h4>
+  <!-- Start Banner Alert Section -->
+  <h2 id="banner-alerts">Banner Alerts</h2>
+  <p>Banner alerts communicate critical system status information that could affect the user.</p>
 
-  <p>Banner alerts are used to communicate critical status information that is being communicated by the system.</p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/banner-alert/banner-alert-4.png" width="100%;" /></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/banner-alert/banner-alert-3.png" width="100%;" /></p>
-
+  <h3 id="placement--behaviour">Placement &amp; Behaviour</h3>
   <ul>
     <li>
-      <p>Banner alerts slide in from the top of the browser and remain there until the condition (for it’s activation) clears or it is dismissed.</p>
+      <p>Banner alerts slide in from the top of the browser, pushing down the content in the browser and remains there until the issue is resolved or it is dismissed.</p>
     </li>
     <li>
-      <p>Banner alerts can be persistent or dismissible.</p>
+      <p>Banner alerts can be persistent or dismissible, depending on how serious the issue is that it is communicating.</p>
     </li>
     <li>
-      <p>Persistent banner alerts can be hidden. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for it’s activation) is still valid.</p>
+      <p><b>Note</b>: Persistent banner alerts can also be hidden by clicking on the hide button. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for it’s activation) is still valid.</p>
     </li>
   </ul>
 
-  <p><br /></p>
-  <hr />
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/banner-alert-new-format/banner-alert-example@2x.png" width="100%;" /></p>
 
-  <h4 id="banner-alert-placement">Banner Alert Placement</h4>
+  <h3 id="variations">Variations</h3>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/banner-alert/banner-alert-1.png" width="50%;" /></p>
+  <p>Banner Alerts should be used sparingly to communicate informational, warning or danger messages.</p>
 
-  <p><br /></p>
-  <hr />
-
-  <h4 id="banner-alert-communication">Banner Alert Communication</h4>
-
-  <p><strong>What banner alerts communicate:</strong></p>
+  <h3 id="best-practices">Best Practices</h3>
   <ul>
-    <li>System unavailable</li>
-    <li>Upcoming system maintenance or upgrade</li>
-    <li>Browser related issues</li>
+    <li>Only show one Banner Alert at a time</li>
+    <li>Only use Banner Alerts to communicate system information and warnings</li>
+    <li>Allow users to hide or dismiss Banner Alerts that communicate non-critical system information</li>
+    <li>Keep copy on all alerts short and to the point</li>
+    <li>If available, do include links for the user to either rectify the situation or find out more information</li>
   </ul>
 
-  <p><strong>What banner alerts must not communicate:</strong></p>
-  <ul>
-    <li>Feedback on actions the user has performed</li>
-    <li>Alerts relating to specific pages or components</li>
-  </ul>
-
-  <p><br /></p>
   <hr />
 
-  <h4 id="banner-alert-color-options">Banner Alert Color Options</h4>
+  <h2 id="examples">Examples</h2>
 
-  <p>Page status alerts fall into three categories:</p>
+  <p><strong>An dismissible informational Banner alert with a link to more information</strong></p>
 
-  <ul class="c-ul-unstyled">
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-primary c-avatar-square"></div>
-    <strong class="c-p-left-md">Info: </strong>
-    Information that is helpful or of interest to the user
-  </li>
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-warning c-avatar-square"></div>
-    <strong class="c-p-left-md">Warning: </strong>
-    Information that <strong>can critically affect</strong> user's productivity
-  </li>
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-danger c-avatar-square"></div>
-    <strong class="c-p-left-md">Warning: </strong>
-    Information that is <strong>already having a critical impact</strong> on the user's productivity
-  </li>
-</ul>
-
-  <p><br /></p>
-  <hr />
-
-  <!-- Start Dos and Donts - Banner Alerts -->
-  <h4 id="dos-and-donts">Do’s and Dont’s</h4>
-  <!-- Start Multiple Banner Alers Row -->
-  <p><strong>Multiple banner alerts</strong></p>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/banner-alert/banner-alert-do.png" />
-    </div>
-    <div class="c-col">
-   <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/banner-alert/banner-alert-dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do show the most relevant banner alert only</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't stack multiple banner alerts</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Multiple Banner Alerts Row -->
-  <!-- END Banner Alert Row -->
-
-  <hr />
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/banner-alert-new-format/info-banner-alert-example@2x.png" width="100%;" /></p>
 
   <p><br /></p>
 
-  <p><!-- Start Box Alert Row --></p>
-  <div class="c-header-md c-m-top-sm c-m-bottom-sm">Box Alerts</div>
-  <p>Box alerts communicate the status of a page or component.</p>
+  <p><strong>A persistent danger Banner alert</strong></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alert/page-alert-4.png" width="100%;" /></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/banner-alert-new-format/danger-banner-alert-example@2x.png" width="100%;" />
+<!-- End Banner Alert Section --></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alert/page-alert-2.png" width="100%;" /></p>
+  <hr />
 
+  <!-- Start Box Alert Section -->
+  <h2 id="box-alerts">Box Alerts</h2>
+  <p>Boxed alerts communicate the status of a page or component, sometimes in response to user actions.</p>
+
+  <h3 id="placement--behaviour-1">Placement &amp; Behaviour</h3>
   <ul>
     <li>
-      <p>Box alerts can be either persistent or dismissible.</p>
+      <p>Box alerts fade in at the top of the page or component it relates to, pushing down the content and remains there until the issue is resolved or it is dismissed.</p>
     </li>
     <li>
-      <p>Box alerts appear in the topmost position of the content area of a page or component. This alert inserts itself into the content area and pushes the content down the page, remaining in that position until the condition (for it’s activation) clears or it is dismissed.</p>
+      <p>Box alerts can be persistent or dismissible, depending on how serious the issue is that it is communicating.</p>
     </li>
   </ul>
 
-  <hr />
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alerts-new-format/box-alert-example-1@2x.png" width="100%;" /></p>
 
-  <p><br /></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alerts-new-format/box-alert-example-2@2x.png" width="100%;" /></p>
 
-  <div class="c-row">
-  <div class="c-col">
-    <div class="c-header-md c-m-bottom-sm">Box alert placement</div>
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alert/page-alert-1.png" />
-  </div>
+  <h3 id="variations-1">Variations</h3>
 
-  <div class="c-col">
-    <div class="c-header-md c-m-bottom-sm">Box alert placement in content area of page</div>
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alert/component-alert-1.png" />
-  </div>
-</div>
+  <p>Box Alerts should be used to communicate informational, warning or danger messages.</p>
 
-  <hr />
-
-  <p><br /></p>
-
-  <h4 id="box-alert-communication">Box Alert Communication</h4>
-
-  <p><strong>What box alerts communicate:</strong></p>
+  <h3 id="best-practices-1">Best Practices</h3>
   <ul>
-    <li>Page or component status</li>
-    <li>Validation status</li>
-  </ul>
-
-  <p><strong>What box alerts must not communicate:</strong></p>
-  <ul>
-    <li>System status or maintenance</li>
-    <li>Feedback on actions the user has performed</li>
+    <li>Try to show only one Box alert at a time. Two at the most in extreme cases</li>
+    <li>If two Box alerts are shown at the same time, the latest one will appear at the top
+Box alerts must sit in the container of the page or component it relates to</li>
+    <li>Allow users to hide or dismiss Box alerts that communicate non-critical system information</li>
+    <li>Keep copy on all alerts short and to the point</li>
+    <li>If available, do include links for the user to either rectify the situation or find out more information</li>
   </ul>
 
   <hr />
 
-  <p><br /></p>
+  <h2 id="examples-1">Examples</h2>
 
-  <h4 id="box-alert-color-options">Box Alert Color Options</h4>
+  <p><strong>A persistent danger Box alert</strong></p>
 
-  <p>Page status alerts fall into three categories:</p>
-
-  <ul class="c-ul-unstyled">
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-primary c-avatar-square"></div>
-    <strong class="c-p-left-md">Info: </strong>
-    Information that is helpful or of interest to the user
-  </li>
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-warning c-avatar-square"></div>
-    <strong class="c-p-left-md">Warning: </strong>
-    Information that <strong>can critically affect</strong> user's productivity
-  </li>
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-danger c-avatar-square"></div>
-    <strong class="c-p-left-md">Warning: </strong>
-    Information that is <strong>already having a critical impact</strong> on the user's productivity
-  </li>
-</ul>
-
-  <hr />
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alerts-new-format/danger-box-alert-example@2x.png" width="100%;" /></p>
 
   <p><br /></p>
 
-  <!-- Start Dos and Donts - Box Alerts -->
-  <h4 id="dos-and-donts-1">Do’s and Dont’s</h4>
-  <!-- Start Box Alerts - Dos and Donts Row -->
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alert/page-alert-multiple-do.png" />
-    </div>
-    <div class="c-col">
-   <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alert/page-alert-multiple-dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do limit box alerts to two per page or component</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do remember that users have a limited capacity to process alert messaging. Too many alerts will affect the user experience negatively and mess up the UI.</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't stack more than two banners on any page</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Box Alerts - Dos and Donts Row -->
+  <p><strong>An dismissible informational Box alert with a link to more information</strong></p>
 
-  <!-- Start Stacking order - Dos and Donts Row -->
-  <div class="c-header-xs">Stacking Order</div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alert/page-alert-order-do.png" />
-    </div>
-    <div class="c-col">
-   <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alert/page-alert-order-dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do stack alerts in order of newest at the top, irrespective of priority</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't stack the newest alert under the alert already present</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Stacking Order - Dos and Donts Row -->
-  <!-- END Box Alert Row -->
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/box-alerts-new-format/info-banner-alert-example@2x.png" width="100%;" />
+<!-- End Box Alert Section --></p>
 
   <hr />
 
-  <p><!-- Start Toast Alert Row --></p>
-  <h4 id="toast-alerts">Toast alerts</h4>
+  <!-- Start Toast Alerts Section -->
+  <h2 id="toast-alerts">Toast Alerts</h2>
   <p>Toast alerts serve as a feedback &amp; confirmation mechanism after the user performs an action.</p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert/toast-alert-3.png" width="50%;" /></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert/toast-alert-4.png" width="50%;" /></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert/toast-alert-2.png" width="50%;" /></p>
-
+  <h3 id="placement--behaviour-2">Placement &amp; Behaviour</h3>
   <ul>
     <li>
-      <p>Toast alerts slide in from the top right corner of the browser, overlaying the content. It’s position is fixed ie. is not affected by scrolling.</p>
+      <p>Toast alerts slide in from the top right corner of the browser, overlaying the content.  It’s position is fixed ie. is not affected by scrolling.</p>
     </li>
     <li>
-      <p>Toast alerts are both dismissible and will auto-clear when its time duration has ended.</p>
+      <p>Banner alerts auto-clear after a period of time but can also be dismissed by the user.</p>
     </li>
   </ul>
 
-  <p><strong>Toast alert placement</strong></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert-new-format/toast-alert-example@2x.png" width="100%;" /></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert/toast-alert-1.png" width="50%;" /></p>
+  <h3 id="variations-2">Variations</h3>
+
+  <p>Toast Alerts should be used to communicate informational, warning, danger or success messages in response to user actions.</p>
+
+  <h3 id="best-practices-2">Best Practices</h3>
+  <ul>
+    <li>Always animate Toast alerts in from the top right corner</li>
+    <li>Toast alerts should appear in order of the latest at the top</li>
+    <li>Toast alerts must appear immediately in response to a user action</li>
+    <li>Keep copy on all alerts short and to the point</li>
+    <li>If available, do include links for the user to either rectify the situation or find out more information</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="examples-2">Examples</h2>
+
+  <p><strong>An informational Toast alert</strong></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert-new-format/info-toast-alert-example@2x.png" width="100%;" /></p>
 
   <p><br /></p>
-  <hr />
 
-  <h4 id="toast-alert-color-options">Toast Alert Color Options</h4>
-  <p>Toast alerts fall into three categories:</p>
+  <p><strong>A success Toast alert</strong></p>
 
-  <ul class="c-ul-unstyled">
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-primary c-avatar-square"></div>
-    <strong class="c-p-left-md">Info: </strong>
-    Information that is helpful or of interest to the user
-  </li>
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-warning c-avatar-square"></div>
-    <strong class="c-p-left-md">Warning: </strong>
-    Information that <strong>can critically affect</strong> user's productivity
-  </li>
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-danger c-avatar-square"></div>
-    <strong class="c-p-left-md">Warning: </strong>
-    Information that is <strong>already having a critical impact</strong> on the user's productivity
-  </li>
-</ul>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert-new-format/success-toast-alert-example@2x.png" width="100%;" /></p>
 
   <p><br /></p>
-  <hr />
 
-  <h4 id="toast-alert-communication">Toast Alert Communication</h4>
+  <p><strong>A danger Toast alert</strong></p>
 
-  <p><strong>What toast alerts must communicate:</strong></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert-new-format/danger-toast-alert-example@2x.png" width="100%;" /></p>
 
-  <ul>
-    <li>Informational - when a user completes an action, but there is some additional info to be aware of</li>
-    <li>Success - when a user completes an action</li>
-    <li>Errors - when a user completes an action but system-related issues prevent that action from being executed</li>
-  </ul>
-
-  <p><strong>What toast alerts must not communicate:</strong></p>
-
-  <ul>
-    <li>Issues related to system status or maintenance</li>
-    <li>Alerts relating to specific pages or components</li>
-  </ul>
-
-  <p><br /></p>
-  <hr />
-
-  <!-- Start Dos and Donts - Toast Alerts -->
-  <h4 id="dos-and-donts-2">Do’s and Dont’s</h4>
-  <!-- Start Toast Alerts Placement - Dos and Donts Row -->
-  <p><strong>Toast alert placement</strong></p>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert/toast-alert-multiple-do.png" />
-    </div>
-    <div class="c-col">
-   <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert/toast-alert-multiple-dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do make sure the toast alert displays in the top right corner</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't move toast alert placement to any position other than the default placement (top right corner)</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Toast Alerts Placement - Dos and Donts Row -->
-
-  <!-- Start Toast Alert Stacking order - Dos and Donts Row -->
-  <p><strong>Stacking Order</strong></p>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert/toast-alert-order-do.png" />
-    </div>
-    <div class="c-col">
-      <img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/toast-alert/toast-alert-order-dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do stack alerts in order of newest at the top, irrespective of priority</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do make sure that toast fade from the bottom up, oldest to newest</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't stack the newest toast under the toast already present</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't change the fade order other than from the default (bottom up, oldest to newest)</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Toast Alert Stacking Order - Dos and Donts Row -->
-  <!-- END Toast Alert Row -->
-
-  <hr />
-
-  <p><!-- Start Icon Alert Row --></p>
-  <h4 id="icon-alert">Icon alert</h4>
-
-  <div class="c-text-danger c-text-italic c-text-md">
-Please note: Icon alerts are primarily used in form validations but can be used as a standalone alert. The following info relate only to the Icon alert as a standalone replacement for the Box alert. For more info on Icon alerts used in form validations refer to...
-</div>
-
-  <p>The icon alert can be used as a standalone alert under special conditions. The icon alert should be used only if space or conditions don’t allow for a box alert.</p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/icon-alert/icon-alert-1@2x.png" width="25%;" /></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/icon-alert/icon-alert-2@2x.png" width="25%;" /></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/alerts/icon-alert/icon-alert-3@2x.png" width="25%;" /></p>
-
-  <ul>
-    <li>
-      <p>The icon alert is persistent and cannot be dismissed.</p>
-    </li>
-    <li>
-      <p>The icon alert is triggered by an action or specific condition and remains in position until the condition (for it’s activation) is resolved.</p>
-    </li>
-  </ul>
-
-  <p><br /></p>
-  <hr />
-
-  <h4 id="icon-alert-communication">Icon Alert Communication</h4>
-
-  <p><strong>What icon alerts communicate:</strong></p>
-
-  <ul>
-    <li>Page or component status</li>
-    <li>Validation status</li>
-  </ul>
-
-  <p><strong>What icon alerts must not communicate:</strong></p>
-  <ul>
-    <li>System status or maintenance</li>
-    <li>Feedback on actions the user has performed
-<!-- END Icon Alert Row --></li>
-  </ul>
-
-  <hr />
-
-  <h4 id="icon-alert-color-options">Icon Alert Color Options</h4>
-  <p>Icon alerts fall into three categories:</p>
-
-  <ul class="c-ul-unstyled">
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-primary c-avatar-square"></div>
-    <strong class="c-p-left-md">Info: </strong>
-    Information that is helpful or of interest to the user
-  </li>
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-warning c-avatar-square"></div>
-    <strong class="c-p-left-md">Warning: </strong>
-    Information that <strong>can critically affect</strong> user's productivity
-  </li>
-  <li class="c-m-bottom-md">
-    <div class="c-avatar c-avatar-danger c-avatar-square"></div>
-    <strong class="c-p-left-md">Warning: </strong>
-    Information that is <strong>already having a critical impact</strong> on the user's productivity
-  </li>
-</ul>
-
-  <p><!-- Start Modal Alert Row --></p>
-  <div class="c-header-md c-m-top-sm c-m-bottom-sm">Modal alert</div>
-  <div class="c-text-danger c-text-italic c-text-md">
-See Modal Dialogue (to be linked...)
-</div>
-  <!-- END Modal Alert Row -->
+  <!-- End Toast Alerts Section -->
 
 </div>
 <!-- End Design Tab -->

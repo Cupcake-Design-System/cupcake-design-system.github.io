@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Dropdown description here...">
+<meta name="description" content="Dropdown menus allow users to select an action, single option or selection of options from a set of choices.">
 
-<title>Cupcake · Dropdown</title>
+<title>Cupcake · Dropdowns</title>
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -355,8 +355,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img c-bg-primary">
-  <h1 class="docs-title" id="content">Dropdown</h1>
-  <p class="docs-lead">Dropdown description here...</p>
+  <h1 class="docs-title" id="content">Dropdowns</h1>
+  <p class="docs-lead">Dropdown menus allow users to select an action, single option or selection of options from a set of choices.</p>
 </div>
 
       
@@ -805,7 +805,122 @@
 <!-- Start Design Tab -->
 <div id="guidelines" class="docs-tabs-content">
 
-  <h1 id="design-guidelines-coming-soon">Design Guidelines coming soon…</h1>
+  <h1 id="overview">Overview</h1>
+
+  <h3 id="usage">Usage</h3>
+  <p>Use dropdown menus wherever users need to make a selection outside of a form. For selections in a form refer to the Select element in Form Elements.</p>
+
+  <h3 id="structure">Structure</h3>
+  <p>A dropdown menu is composed of a:</p>
+
+  <ul>
+    <li>control</li>
+    <li>trigger indicator (optional)</li>
+    <li>dropdown menu</li>
+  </ul>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/dropdowns/dropdown-breakdown@2x.png" width="100%;" /></p>
+
+  <p><br /></p>
+
+  <h3 id="behaviour">Behaviour</h3>
+  <p>When the control is triggered, a dropdown menu slides out to reveal a set of choices. The dropdown menu can slide up, down, left or right. This is either pre-determined or influenced by proximity to the browser frame.</p>
+
+  <p>Dropdown menus are by default not scrollable, but can be made to scroll for long lists such as filters.</p>
+
+  <p>Dropdown menus can be closed by:</p>
+
+  <ul>
+    <li>selecting an item</li>
+    <li>clicking the dropdown control</li>
+    <li>clicking anywhere on the page</li>
+  </ul>
+
+  <h3 id="states">States</h3>
+  <p>Dropdown buttons generally have the following states:</p>
+
+  <ul>
+    <li>default</li>
+    <li>hover</li>
+    <li>active</li>
+    <li>disabled</li>
+  </ul>
+
+  <h3 id="labels">Labels</h3>
+  <p>Limit wording on dropdown labels to two to three words max. Try and use wording and terms that need no additional explanation.</p>
+
+  <h3 id="menu-items">Menu items</h3>
+  <p>Dropdown menu items have different configurations depending on the requirements.</p>
+
+  <p>Some options and application examples:</p>
+
+  <ul>
+    <li>text only (select an action eg. export)</li>
+    <li>icon + text (standard menu item eg. sign out)</li>
+    <li>checkbox + text (multiple selections eg. select filters)</li>
+    <li>text + badge (new menu item)</li>
+  </ul>
+
+  <h3 id="grouping-and-dividers">Grouping and dividers</h3>
+  <p>Relevant menu items can be grouped under a non selectable heading. Dividers can separate grouped menu items.</p>
+
+  <h3 id="selected--pre-selected-items">Selected &amp; pre-selected items</h3>
+  <p>Selected and pre-selected items should be visible with a selected class applied to the menu item.</p>
+
+  <h3 id="combined-with-a-dropdown-button">Combined with a dropdown button</h3>
+  <p>Dropdown menus are typically combined with a dropdown button, but can also be triggered by other controls.</p>
+
+  <h3 id="combined-with-other-controls">Combined with other controls</h3>
+  <p>Dropdown menus can also be triggered by specific controls:</p>
+
+  <ul>
+    <li>icon buttons (for instance the More menu)</li>
+    <li>avatars (account menu)</li>
+    <li>Text link as dropdown control (table filters and column selectors)</li>
+  </ul>
+
+  <h3 id="best-practices">Best practices</h3>
+  <ul>
+    <li>Use dropdown menus only where it is the most suitable selection control for the job</li>
+    <li>Dropdown menu use on mobile devices need additional considerations</li>
+    <li>Always indicate if an item is selected or pre-selected</li>
+    <li>Always disable or remove items that are not otherwise available or selectable</li>
+    <li>Keep all wording short and concise</li>
+    <li>Truncate menu items that extend beyond the container border</li>
+    <li>Only vertical scrolling (for an appropriate use case) is recommended. Avoid horizontal scrolling.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="examples">Examples</h2>
+
+  <p><strong>A dropdown with a list that extends beyond its max height can be configured to scroll</strong></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/dropdowns/scroll-example@2x.png" width="100%;" /></p>
+
+  <p><br /></p>
+
+  <p><strong>A header groups export options and dividers seperate or group relevant links</strong></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/dropdowns/grouping-example@2x.png" width="100%;" /></p>
+
+  <p><br /></p>
+
+  <p><strong>A selected state indicates that a selection is currently active</strong></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/dropdowns/selected-example@2x.png" width="100%;" /></p>
+
+  <p><br /></p>
+
+  <p><strong>A button icon triggers a “more” menu and a badge indicates that a link has recently been added</strong></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/dropdowns/icon-button-combination-example@2x.png" width="100%;" /></p>
+
+  <p><br /></p>
+
+  <p><strong>An account avatar triggers a dropdown with account and user related options</strong></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/dropdowns/avatar-combination-example@2x.png" width="100%;" /></p>
 
 </div>
 <!-- End Design Tab -->
@@ -846,6 +961,6 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
-<script src="https://cupcake-design-system.github.io/assets/js/script.js"></script><script src="https://cupcake-design-system.github.io/assets/js/dropdown.js"></script>
+<script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
   </body>
 </html>

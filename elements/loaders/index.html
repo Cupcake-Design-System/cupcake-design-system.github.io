@@ -442,33 +442,79 @@
 
   <h1 id="overview">Overview</h1>
 
-  <h2 id="application-loader-1">Application loader</h2>
+  <h3 id="placement--behaviour">Placement &amp; Behaviour</h3>
+  <p>All loaders sit vertically and horizontally centered in a container. The animation repeats indeterminately until the relevant content is loaded, at which point it is replaced.</p>
 
-  <p>The application loader is only used on initial application load ie. when a user signs into their account or a page is shared with an external party.</p>
+  <h3 id="best-practices">Best Practices</h3>
+  <ul>
+    <li>Do not scale the animation icon</li>
+    <li>Always centre the icon in the container</li>
+    <li>Use loader icons only on white or light grey backgrounds</li>
+    <li>Do not combine the loader icon with text</li>
+  </ul>
 
-  <p><strong>Do’s and Dont’s</strong></p>
+  <h3 id="types--usage">Types &amp; Usage</h3>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/loaders/logo.png" /></p>
+  <table class="c-table c-table-transparent c-table-border-full c-table-hover">
+<thead>
+    <tr>
+      <th width="150">Type</th>
+      <th width="400">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Application loader</td>
+      <td>
+      Used on initial application load ie. when a user signs into their account or a page is shared with an external party
+      </td>
+    </tr>
+     <tr>
+      <td>Content Loader</td>
+      <td>
+      Used when loading all content within the content area of a page or a container, usually when navigating within the same application
+      </td>
+    </tr>
+    <tr>
+      <td>Skeleton Loader</td>
+      <td>
+      Used when loading smaller repeat pieces of content, like lists or table data
+      </td>
+    </tr>
+  </tbody>
+</table>
 
   <hr />
 
-  <h2 id="content-loader-1">Content Loader</h2>
+  <h2 id="examples">Examples</h2>
 
-  <p>The page content loader is used when loading all content within the content area of a page, usually when navigating within the same application.</p>
+  <p><strong>An application loader displays while an application loads</strong></p>
 
-  <p><strong>Do’s and Dont’s</strong></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/loaders/new-format/application-loader-example@2x.png" width="100%" /></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/loaders/page.png" /></p>
+  <p><br /></p>
 
-  <hr />
+  <p><strong>A content loader displays while the contents of a container loads</strong></p>
 
-  <h2 id="skeleton-loaders-1">Skeleton Loaders</h2>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/loaders/new-format/content-loader-example-single@2x.png" width="100%" /></p>
 
-  <p>The basic skeleton loader is used to represent any smaller piece of text based data. When the data or container shape differs dramatically in visual appearance from the basic skeleton loader, a custom skeleton loader will be a better idea.</p>
+  <p><br /></p>
 
-  <p><strong>Do’s and Dont’s</strong></p>
+  <p><strong>Multiple content loaders display in cards while each cards’s content loads in isolation</strong></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/loaders/skeleton.png" /></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/loaders/new-format/content-loader-example-multiple@2x.png" width="100%" /></p>
+
+  <p><br /></p>
+
+  <p><strong>Use of a skeleton loader indicates that list-based information will load into this card</strong></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/loaders/new-format/skeleton-loader-example-1@2x.png" width="100%" /></p>
+
+  <p><br /></p>
+
+  <p><strong>A skeleton loader is recommended for use as a loader that precludes table content</strong></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/loaders/new-format/skeleton-loader-example-2@2x.png" width="100%" /></p>
 
 </div>
 <!-- End Design Guidelines Tab -->
