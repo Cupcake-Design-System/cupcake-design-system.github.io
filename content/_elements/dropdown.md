@@ -267,11 +267,13 @@ Use dropdown menus wherever users need to make a selection outside of a form. Fo
 A dropdown menu is composed of a:
 
 - control
+
 - trigger indicator (optional)
+
 - dropdown menu
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/dropdown-breakdown@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/dropdown-breakdown@2x.png" width="50%;">
 
 <br>
 
@@ -283,15 +285,20 @@ Dropdown menus are by default not scrollable, but can be made to scroll for long
 Dropdown menus can be closed by:
 
 - selecting an item
+
 - clicking the dropdown control
+
 - clicking anywhere on the page
 
 ### States
 Dropdown buttons generally have the following states:
 
 - default
+
 - hover
+
 - active
+
 - disabled
 
 ### Labels
@@ -303,8 +310,11 @@ Dropdown menu items have different configurations depending on the requirements.
 Some options and application examples:
 
 - text only (select an action eg. export)
+
 - icon + text (standard menu item eg. sign out)
+
 - checkbox + text (multiple selections eg. select filters)
+
 - text + badge (new menu item)
 
 ### Grouping and dividers
@@ -320,16 +330,24 @@ Dropdown menus are typically combined with a dropdown button, but can also be tr
 Dropdown menus can also be triggered by specific controls:
 
 - icon buttons (for instance the More menu)
+
 - avatars (account menu)
+
 - Text link as dropdown control (table filters and column selectors)
 
 ### Best practices
 - Use dropdown menus only where it is the most suitable selection control for the job
+
 - Dropdown menu use on mobile devices need additional considerations
+
 - Always indicate if an item is selected or pre-selected
+
 - Always disable or remove items that are not otherwise available or selectable
+
 - Keep all wording short and concise
+
 - Truncate menu items that extend beyond the container border
+
 - Only vertical scrolling (for an appropriate use case) is recommended. Avoid horizontal scrolling.
 
 
@@ -339,31 +357,31 @@ Dropdown menus can also be triggered by specific controls:
 
 **A dropdown with a list that extends beyond its max height can be configured to scroll**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/scroll-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/scroll-example@2x.png" width="25%;">
 
 <br>
 
 **A header groups export options and dividers seperate or group relevant links**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/grouping-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/grouping-example@2x.png" width="25%;">
 
 <br>
 
 **A selected state indicates that a selection is currently active**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/selected-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/selected-example@2x.png" width="25%;">
 
 <br>
 
 **A button icon triggers a "more" menu and a badge indicates that a link has recently been added**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/icon-button-combination-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/icon-button-combination-example@2x.png" width="25%;">
 
 <br>
 
 **An account avatar triggers a dropdown with account and user related options**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/avatar-combination-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/avatar-combination-example@2x.png" width="25%;">
 
 </div>
 <!-- End Design Tab -->
