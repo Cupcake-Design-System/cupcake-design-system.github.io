@@ -47,8 +47,13 @@ tabs:
 <!-- Start Angular Code Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+### Basic Loader
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-loaders--basic&nav=0"></iframe>
+
+<br>
+
+### IHS Markit Loader
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-loaders--ihs-markit&nav=0"></iframe>
 
 </div>
 <!-- End Angular Code Tab -->

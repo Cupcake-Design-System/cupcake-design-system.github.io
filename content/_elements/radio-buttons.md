@@ -82,7 +82,7 @@ The default radio requires the `<label></label>` tag even if no text is provided
 <div id="angular" class="docs-tabs-content" markdown="1">
 
 ### Radio Button
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--radio-button&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-forms--radio-button&nav=0"></iframe>
 
 </div>
 <!-- End Angular Tab -->

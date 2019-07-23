@@ -3,6 +3,7 @@ title: Dropdowns
 description: Dropdown menus allow users to select an action, single option or selection of options from a set of choices.
 tabs:
 - Code
+- Angular
 - Guidelines
 ---
 
@@ -248,8 +249,8 @@ With simple list items below the toggle
 <!-- Start Angular Code Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-#### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+#### Sectioned Dropdown
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-dropdowns--sectioned&nav=0"></iframe>
 
 </div>
 <!-- End Angular Code Tab -->

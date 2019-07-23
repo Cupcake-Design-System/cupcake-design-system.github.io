@@ -83,8 +83,18 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
 <!-- Start Angular Code Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+### Standard Checkbox
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-forms--checkbox&nav=0"></iframe>
+
+<br>
+
+### Multi Select
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-selectors--searchselectpanel&nav=0"></iframe>
+
+<br>
+
+### Complex Multi Select
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-selectors--richmultiselectpanel&nav=0"></iframe>
 
 </div>
 <!-- End Angular Code Tab -->

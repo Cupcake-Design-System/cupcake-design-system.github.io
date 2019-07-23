@@ -210,8 +210,8 @@ You can also add text to the large switch size. Again, use carefully - anything 
 <!-- Start Angular Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Switches
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components--switch&nav=0"></iframe>
+### Standard Switch
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-switches--switch&nav=0"></iframe>
 
 </div>
 <!-- End Angular Tab -->
