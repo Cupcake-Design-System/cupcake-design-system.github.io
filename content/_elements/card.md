@@ -357,7 +357,9 @@ Cards can be grouped together.
 Cards have 3 potential states:
 
 - default
+
 - hover
+
 - edit
 
 ### Usage
@@ -365,27 +367,29 @@ Cards are used wherever content needs to be grouped in a flexible container.
 
 Currently the only specialist cards are:
 
-- Dashboard Cards (see example)
+- Dashboard Cards (see example below)
 
 ### Structure
 Cards can include headers, footers, a wide variety of content and card-specific styles.
 
 ### Best practices
 - Keep card titles short and descriptive (avoid wrapping or truncation)
+
 - Use cards in combination with a grid based layout 
+
 - Avoid scrolling in cards
 
 <hr>
 
 ## Examples
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-1.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-1.png" width="50%;">
 
 <br>
 
 **A dashboard card can contain content that is important to the user, for instance data tables and graphs**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-2.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-2.png" width="50%;">
 
 
 
