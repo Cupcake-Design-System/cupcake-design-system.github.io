@@ -96,14 +96,18 @@ The default radio requires the `<label></label>` tag even if no text is provided
 Radio buttons have 4 potential states:
 
 - active
+
 - inactive
+
 - active (disabled)
+
 - inactive (disabled)
 
 ### Usage
 Radio buttons are used primarily in forms:
 
 - where a single option must be selected
+
 - where there is a recommended or default value
 
 ### Combined with labels
@@ -112,22 +116,30 @@ Radio buttons should be combined with accompanying text or a label.
 **Label best practices:**
 
 - Keep label text short and concise
+
 - Always place the label on the right
+
 - Use sentence style capitalisation for label text
+
 - Don't add additional characters or punctuation at the end of each label
+
 - Labels should be vertically centred relative to the checkbox (see example)
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-label-placement@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-label-placement@2x.png" width="50%;">
 
 <br>
 
 ### Best practices
 - Use radio buttons in combination with accompanying text or a label
+
 - Preference should be given to vertical radio button lists, as it reads better
+
 - Horizontal list groups should be limited and not allowed to wrap
+
 - Try and keep radio button lists to 8 or less items
+
 - Show default or recommended values as pre-selected
 
 <hr>
@@ -136,19 +148,19 @@ Radio buttons should be combined with accompanying text or a label.
 
 **A radio group used in a vertical list format in a form**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-vertical-group-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-vertical-group-example@2x.png" width="50%;">
 
 <br>
 
 **A radio group with a recommended value selected by default**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-default-value-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-default-value-example@2x.png" width="50%;">
 
 <br>
 
 **A radio group used in a horizontal list format in a form**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-horisontal-group-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-horisontal-group-example@2x.png" width="50%;">
 
 </div>
 <!-- End Design Section -->
