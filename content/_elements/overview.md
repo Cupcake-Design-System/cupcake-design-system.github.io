@@ -21,6 +21,7 @@ Elements are the foundational building blocks that comprise all user interfaces.
 
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-diagram.png" width="800px;"> -->
 
+<br>
 
 #### Element Design Process
 
@@ -32,6 +33,7 @@ A new element is added to the Cupcake library after it is cycled through the fol
 
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-design-process-diagram.png" width="300px;"> -->
 
+<br>
 
 #### Contributing to the Element library
 
