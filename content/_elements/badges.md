@@ -1,6 +1,6 @@
 ---
 title: Badges
-description: Badges are used to provide emphasis on a characteristic of an element, such as updated content and/or the number of unread messages,and generally cannot be interacted with.
+description: Badges are used to highlight the status of an entity.
 colors:
 - primary
 - secondary
@@ -254,12 +254,28 @@ A badge with no content can be used to add visual attention to an element.
 
 ## Overview
 
-**Types of badges available:**
+### Types of badges available:
 
-- Status Badges
-- Numeric Badges
+**1. Status Badges**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/Badges_Types.png" width="500px;">
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/StatusBadges.png" width="25%;">
+
+<br>
+
+**2. Numeric Badges**
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/Numeric Badges.png" width="5%;">
+
+<hr>
+
+## Usage 
+- For status information 
+
+- For counts/indication of a running tally 
 
 <hr>
 
@@ -267,262 +283,65 @@ A badge with no content can be used to add visual attention to an element.
 
 [Cupcake Color Palette](https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color)
 
-**Light Color Set**
+<br>
+
+#### Light Color Set
 - Only use values 3-5 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="500px;">
 
-**Dark Color Set**
+#### Dark Color Set**
 - Only use values 6-9 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="500px;">
 
 <hr>
   
-  <!-- Start Status Badges Row -->
-### Status Badges
-  - Status badges are used to indicate the status of an entity.
 
-  <br>
-  
-  
-<!-- Start Status Badges Do's and Don'ts Section -->
-#### Do's and Don'ts
+## General best practices 
+- Always use colors that are not used in brand colors, button colors, and common action colors 
 
-  <!-- Start Status Badge Color Use Row -->
-##### Status Badge Color Use
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/StatusBadge_ColorUse_Do'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/StatusBadge_ColorUse_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use colors that are not used in brand colors, button colors, and common action colors</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use brand colors, button colors, and common action colors (danger, warning, etc.)</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Status Badge Color Use Row -->
+- Always use badges in conjunction with a single item so that there is no ambiguity around which item is indicated 
 
- <!-- Start Status Badge Light vs Dark Color Sets Row -->
-##### Status Badge Colors
+- Always use either the light color set or dark color set for badges and stick to it
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/StatusBadges_LightVSDarkColors_Do'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/StatusBadges_LightVSDarkColors_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use either the light color set or dark color set for badges and stick to it </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't mix-and-match light and dark color sets</span>
-        </div>
-      </div>
-      </div>
-    </div>
- <!-- End Status Badge Light vs Dark Color Sets Row -->
+- Always use either the rounded or squared badges and stick to it 
 
-  <!-- Start Status Badge Use Row -->
-##### Status Badage Use
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/StatusBadges_BadgeUse_Do'%} 
-    </div>
-    <div class="c-col">
-   {% include guide-img.html img='elements/badges/StatusBadges_BadgeUse_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use either the rounded or squared badges and stick to it</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't mix-and-match rounded and squared badges</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Badge Use Row -->
+### Best practices with Status Badges 
+- Use 1 to 2 word status indicators for status badges 
 
-  <!-- Start Status Badge Content Row -->
-##### Status Badge Content
+- Use appropriate size status badge for a specific requirement 
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/StatusBadges_Content_Do'%} 
-    </div>
-    <div class="c-col">
-   {% include guide-img.html img='elements/badges/StatusBadges_Content_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use 1 to 2 word status indicators for status badges</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than 2 words</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Status Badge Content Row -->
+- Try to use a different shape or color value/set to visually differentiate badges from similar visual elements such as tags 
 
-  <!-- Start Scaling in Table Cells Row -->
-##### Scaling Status Badges in Table Cells
+### Best practices with Numeric Badges 
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/StatusBadges_TableScaling_Do'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/StatusBadges_TableScaling_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use only small and default status badges in table cells</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use large status badges in table cells</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use badges that are larger than the height of the table cell because it will affect the height of the table cell</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Scaling in Table Cells Row -->
-  <!-- End Status Badges Do's and Don'ts Section -->
+- Use only numbers in numeric badges 
+
 
 <hr>
 
-  <!-- Start Numeric Badges Row -->
-### Numeric Badges
-   - Numeric badges are used to indicate a running tally/count of an entity. 
+## Examples 
 
 <br>
 
-  <!-- Start Numeric Badges Do's and Don'ts Section -->
-#### Do's and Dont's
+**Status Badges in tables**
 
- <!-- Start Light vs Dark Color Sets Row -->
-##### Numeric Badges Light vs Dark Color Set
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/BadgesInTables.png" width="50%;">
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/NumericBadges_LightVSDarkColors_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/badges/NumericBadges_LightVSDarkColors_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use either the light color set or dark color set to combine with either light set or dark set of status badges and stick to it </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't mix-and-match light and dark color sets</span>
-        </div>
-      </div>
-      </div>
-    </div>
- <!-- End Light vs Dark Color Sets Row -->
+<br>
 
-  <!-- Start Numeric Badge Content Row -->
-##### Numeric Badge Content
+**Status Badges in cards** 
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/badges/NumericBadges_Content_Do'%} 
-    </div>
-    <div class="c-col">
-   {% include guide-img.html img='elements/badges/NumericBadges_Content_Dont'%}  
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Use only numbers in numeric badges</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use text in numeric badges</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Numeric Badge Content Row -->
-  <!-- End Numeric Badges Do's and Don'ts Section -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/BadgesInCards.png" width="50%;">
+
+<br>
+
+   
+**Numeric Badges in media list items** 
+ 
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/NumericBadgesMediaLists.png" width="50%;">
 
 </div>
 <!-- End Design Tab -->
