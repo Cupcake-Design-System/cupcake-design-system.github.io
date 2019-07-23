@@ -498,23 +498,27 @@ Play with a demo example <a class="c-text-underline" href="{{site.url}}{{site.ba
 Action panels can be implemented where users need to access additional functionality or information without interrupting their current workflow.
 
 ### Structure
-An action panel is composed of a:
+**An action panel is composed of a:**
 
 - open control
+
 - panel (container)
+
 - close button (close control)
+
 - Behaviour
+
 - Action panels slide in from the left or right edge of the browser when triggered via an open control, and closed via a close button.
 
 **The action panel can exist on two planes:**
 
-- a layer above the screen content ie. sliding over and obscuring a part of the content. This is the default option.
-- the same layer as the screen content ie. it will push the content to the side to make space on the screen
+- A layer above the screen content ie. sliding over and obscuring a part of the content. This is the default option.
+
+- The same layer as the screen content ie. it will push the content to the side to make space on the screen
 
 <br>
 
-
-<table class="c-table c-table-transparent c-table-border-full c-table-hover">
+<table class="c-table c-table-transparent c-table-border-full">
 <thead>
     <tr>
       <th width="125">Type</th>
@@ -549,32 +553,34 @@ An action panel is composed of a:
 
 **Default Action Panel**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/default-action-panel@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/default-action-panel@2x.png" width="75%;">
 
 <br>
 
 **Elastic Action Panel**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/elastic-action-panel@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/elastic-action-panel@2x.png" width="75%;">
 
 <br>
 
 **Overlay Action Panel**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/overlay-action-panel@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/overlay-action-panel@2x.png" width="75%;">
 
 
 ### Structure
 All action panels will have a header, close button and content area. Additional options are:
 
 - Additional controls in the header
+
 - Tabs
+
 - Footer with controls
 
 ### States
 The action panel has two states:
-
 - open
+
 - closed
 
 ### Combined with...
@@ -582,10 +588,12 @@ Action panels can be combined with various controls and components depending on 
 
 ### Best practices
 - An action panel should not overlap controls or information required in the workflow that it supports
-- The controls and information in an action panel should be immediately relevant and supportive of the visible screen and active workflow of the user
-- The action panel should ideally take up as little screen real estate as is possible to get the job done
-- Action panels are by default supplementary and contents should be designed with this in mind. In the case of the overlay action panel it is the primary focus.
 
+- The controls and information in an action panel should be immediately relevant and supportive of the visible screen and active workflow of the user
+
+- The action panel should ideally take up as little screen real estate as is possible to get the job done
+
+- Action panels are by default supplementary and contents should be designed with this in mind. In the case of the overlay action panel it is the primary focus.
 
 <hr>
 
@@ -593,19 +601,19 @@ Action panels can be combined with various controls and components depending on 
 
 **The overlay action panel is used to access contact details**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/contacts-panel-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/contacts-panel-example@2x.png" width="75%;">
 
 <br>
 
 **The default action panel is used as a Notifications panel**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/notifications-panel-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/notifications-panel-example@2x.png" width="75%;">
 
 <br>
 
 **The elastic action panel is used as a Deal Summary panel on the Sales Platform**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/deal-summary-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/deal-summary-example@2x.png" width="75%;">
 
 
 
