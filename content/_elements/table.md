@@ -762,13 +762,16 @@ Multiple classes can be added for more complexity.
 
 ### Usage
 - In Cupcake, we differentiate between basic data tables and 3rd party grid frameworks.
+
 - Visit the Patterns section for more guidelines on recommended table patterns.
+
 - Visit Grid Tables in Patterns for more info on 3rd party grid frameworks.
 
 ### Modes
 Tables have 2 potential modes:
 
 - default
+
 - edit 
 
 *Edit mode includes cell editing and row editing (incl. bulk actions)*
@@ -784,9 +787,13 @@ Tables have 2 potential modes:
 Both table cells and rows have the following potential states:
 
 - default
+
 - hover
+
 - selected
+
 - validations (error, warning and success states)
+
 - edit
 
 Visit Form Validations in Patterns for more info on error, warning and success states.
@@ -794,23 +801,27 @@ Visit Form Validations in Patterns for more info on error, warning and success s
 ### Cell content alignment
 The default alignment for table cells is left. The exception is numeric values, which should be right aligned. Column headers should follow the same alignment as the cell content.
 
-<br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-content-alignment@2x.png" width="50%;">
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-content-alignment@2x.png" width="100%;">
-
-<br>
 
 ### Combined with...
 Tables can be combined with various components depending on the use case and requirements.
 
 ### Best practices
 - Use zebra striping to improve readability on table rows when cell borders are absent
+
 - Keep column header text short and concise and plan for truncation
+
 - Avoid centre aligning content in cells
+
 - Plan for cell content truncation or wrapping (if required)
+
 - Show empty cells as empty. Avoid repetitive placeholder info.
+
 - For interactive tables always show a row hover state
+
 - Always combine a cell background style change with an appropriate icon for validations
+
 - Use the recommended compatible sizes when including components, such as buttons, in table cells
 
 <hr>
@@ -819,19 +830,19 @@ Tables can be combined with various components depending on the use case and req
 
 **Bulk action edit mode is enabled**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-bulk-actions@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-bulk-actions@2x.png" width="50%;">
 
 <br>
 
 **Table validation errors combine with a box alert to highlight incomplete required fields**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-validations@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-validations@2x.png" width="50%;">
 
 <br>
 
 **A table combined with the pagination component**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-pagination@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tables/example-pagination@2x.png" width="50%;">
 
 
 
