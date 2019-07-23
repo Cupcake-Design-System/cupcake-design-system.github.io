@@ -12,6 +12,7 @@ sizes:
 - lg
 tabs:
 - Code
+- Angular
 - Guidelines
 ---
 
@@ -240,14 +241,25 @@ A badge with no content can be used to add visual attention to an element.
 </div>
 <!-- End Cupcake Code Tab -->
 
-<!-- Start Angular Tab -->
+
+
+<!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Standard Button
-<iframe title="storybook" width="100%" height="500px" src=""></iframe>
+##### Default Badge
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-badges--default&nav=0"></iframe>
+
+<br>
+
+##### Icon Badge
+<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-badges--icon&nav=0"></iframe>
+
 
 </div>
-<!-- End Angular Tab -->
+<!-- End Angular Code Section -->
+
+
+
 
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
