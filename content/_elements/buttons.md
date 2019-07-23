@@ -188,7 +188,9 @@ This is an example of available sizes for the Button Group element.
 
 ### Types & Usage
 
-<table class="c-table c-table-transparent c-table-border-full c-table-hover">
+<br>
+
+<table class="c-table c-table-transparent c-table-border-full">
 <thead>
     <tr>
       <th width="150">Type</th>
@@ -246,8 +248,11 @@ This is an example of available sizes for the Button Group element.
 **All buttons have 4 potential states:**
 
 - hover
+
 - active
+
 - inactive
+
 - disabled
 
 
@@ -265,9 +270,13 @@ Icon buttons should always be combined with a Tooltip to make it clear what acti
 
 ### Best Practices
 - Use one Primary, Action or Danger button on a page or screen area
+
 - Keep buttons to a minimum on a page or screen area
+
 - Use clear button labels limited to less than three words
+
 - Try and create context with the design, so buttons text can be simple and to the point
+
 - Use icons that are clear in meaning and combine with tooltips where needed
 
 <hr>
@@ -276,37 +285,37 @@ Icon buttons should always be combined with a Tooltip to make it clear what acti
 
 **A primary button used in combination with a secondary button**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/primary-button-combo-example@2x.png" width="400">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/primary-button-combo-example@2x.png" width="75%">
 
 <br>
 
 **An action button used in combination with a primary/secondary button combination**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/action-button-combo-example@2x.png" width="400">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/action-button-combo-example@2x.png" width="75%">
 
 <br>
 
 **A danger button used to signal a destructive action (presented in a modal)**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/danger-button-combo-example@2x.png" width="400">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/danger-button-combo-example@2x.png" width="75%">
 
 <br>
 
 **How secondary buttons could compliment a primary button**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/secondary-button-example@2x.png" width="400">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/secondary-button-example@2x.png" width="75%">
 
 <br>
 
 **Link buttons used in combination with secondary buttons**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/link-button-example@2x.png" width="400">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/link-button-example@2x.png" width="75%">
 
 <br>
 
 **Icon buttons used with a table**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/icon-only-button-example@2x.png" width="400">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/icon-only-button-example@2x.png" width="75%">
 
 </div>
 <!-- End Design Tab -->
