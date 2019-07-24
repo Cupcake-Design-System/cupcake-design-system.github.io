@@ -26,7 +26,9 @@ Elements are the foundational building blocks that comprise all user interfaces.
 A new element is added to the Cupcake library after it is cycled through the following design process:
 
 - There is a clear, repeatable need for the element across multiple products
+
 - Designers will discuss guidelines and best practices on how and when to use the element
+
 - Developers will create the element in code and deploy to the Cupcake code package 
 
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/element-overview/element-overview-design-process-diagram.png" width="300px;"> -->
