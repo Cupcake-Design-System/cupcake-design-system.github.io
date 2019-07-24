@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Pattern Overview
 description: Components and options for laying out your Cupcake project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.
 weight: 1
 ---
