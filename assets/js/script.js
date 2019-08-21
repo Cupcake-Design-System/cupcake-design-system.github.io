@@ -292,3 +292,18 @@ $(function () {
   }(jQuery));
   
   
+  (function () {
+    'use strict'
+  
+    if (!window.docsearch) {
+      return
+    }
+  
+    window.docsearch({
+      apiKey: '5990ad008512000bba2cf951ccf0332f',
+      indexName: 'bootstrap',
+      inputSelector: '#search-box',
+      // Set debug to `true` if you want to inspect the dropdown
+      debug: false
+    })
+  })()

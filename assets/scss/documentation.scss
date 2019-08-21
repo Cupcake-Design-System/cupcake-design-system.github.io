@@ -65,20 +65,43 @@ iframe {
   outline: none;
 }
 
-.c-header-inverse.docs-nav {
-  background: $dark;
-  height: 48px;
-}
-
-.c-header-item-link {
-  height: 48px;
-  padding: 0 16px;
-  font-size: 15px;
-}
-
 
 .docs-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+
+.c-header {
+  &-inverse.docs-nav {
+    background: $dark;
+    height: 48px;
+  }
+
+  &-item {
+
+    &-link {
+      height: 48px;
+      padding: 0 16px;
+      font-size: 15px;
+    }
+
+    .c-header-search-container form label {
+      width: 0;
+    }
+  
+    .c-header-search-box:focus {
+      padding-left: 8px;
+      width: 182px;
+    }
+  
+    .c-header-search-icon {
+      cursor: pointer;
+      transition: none;
+      position: relative;
+      left: -24px;
+      top: 24%;
+    }
+  }
 }
