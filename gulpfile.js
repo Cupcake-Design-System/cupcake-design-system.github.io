@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var cssnano = require('cssnano');
 var autoprefixer = require('autoprefixer');
 var postcss = require('gulp-postcss');
 var cp = require('child_process');
@@ -21,6 +20,11 @@ var paths = {
 function jekyllBuild() {
   return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
 }
+
+function jekyllBuildProd() {
+  return cp.spawn( jekyll , ['build',  "--config", "_config.yml,_config.prod.yml"], {stdio: 'inherit'})
+}
+
 
 function style() {
   return gulp.src(paths.styles.src)
@@ -55,6 +59,10 @@ function browserSyncReload(done) {
   done();
 }
 
+function ghPages() {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+}
+
 function watch() {
   gulp.watch(paths.styles.src, style)
   gulp.watch(paths.scripts.src, js)
@@ -75,3 +83,8 @@ function watch() {
 }
 
 gulp.task('default', gulp.parallel(jekyllBuild, browserSyncServe, watch))
+
+gulp.task('prod', gulp.parallel(jekyllBuildProd))
+
+gulp.task('deploy', gulp.series(jekyllBuildProd, ghPages))
+
