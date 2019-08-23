@@ -6,7 +6,7 @@
   }
   
   left: 0;
-  top: 48px;
+  top: $navbar-height;
   bottom: 0;
   height: 100%;
   z-index: 1000;
@@ -56,7 +56,7 @@
     }
 
     &-title {
-      margin-top: 48px;
+      margin-top: $navbar-height;
       margin-bottom: 16px;
       padding: 0 8px;
       color: #adb5bd;
@@ -173,57 +173,60 @@
 }
 
 
-.docs-flavor-switch {
-  position: relative;
-}
+.docs-flavor {
 
-.docs-flavor-list-item a {
-  display: flex;
-  cursor: pointer;
-  font-size: 14px;
-  text-align: left;
-  overflow: hidden;
-  line-height: 20px;
-  margin: 8px;
-  padding: 8px;
-  white-space: nowrap;
-  color: #343a40;
-  text-overflow: ellipsis;
-  transition: background-color 0.25s linear;
+  &-switch {
+    position: relative;
+  }
 
-  &:hover {
-    background-color: #f1f3f5;
+  &-list-item a {
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden;
+    line-height: 20px;
+    margin: 8px;
+    padding: 8px;
+    white-space: nowrap;
     color: #343a40;
-  }
-}
+    text-overflow: ellipsis;
+    transition: background-color 0.25s linear;
 
-.docs-flavor-button {
-  width: 100%;
-  font-size: 14px;
-  cursor: pointer;
-  min-height: 32px;
-  line-height: 20px;
-  color: #343a40;
-  display: inline-block;
-  border-radius: 2px;
-  background-color: #f1f3f5;
-  border: 1px solid #ced4da;
-  transition: background-color 0.2s linear;
-  padding: 4px 34px 4px 8px;
-
-  &:hover {
-    background-color: #f8f9fa;
+    &:hover {
+      background-color: #f1f3f5;
+      color: #343a40;
+    }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: 15px;
-    width: 0;
-    height: 0;
-    border: 5px solid transparent;
-    border-top-color: #343a40;
+  &-button {
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    min-height: 32px;
+    line-height: 20px;
+    color: #343a40;
+    display: inline-block;
+    border-radius: 2px;
+    background-color: #f1f3f5;
+    border: 1px solid #ced4da;
+    transition: background-color 0.2s linear;
+    padding: 4px 34px 4px 8px;
+
+    &:hover {
+      background-color: #f8f9fa;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      right: 15px;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-top-color: #343a40;
+    }
   }
 }
 

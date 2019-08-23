@@ -67,6 +67,13 @@ cdn:
 
 collections_dir: content
 
+plugins:
+- jekyll-autoprefixer
+
+autoprefixer:
+  browsers:
+  - last 2 versions
+
 defaults:
   -
     scope:
