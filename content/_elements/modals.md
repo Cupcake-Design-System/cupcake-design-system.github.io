@@ -245,17 +245,17 @@ The default modal contains a header, body, and footer section.
 <br>
 
 ##### Fixed Width Modal
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fixed_Width.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fixed_Width.png" width="50%;">
 
 <br>
 
 ##### Flexible Width Modal
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Flexible_Width.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Flexible_Width.png" width="50%;">
 
 <br>
 
 ##### Full Screen Modal
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fullscreen.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fullscreen.png" width="50%;">
 <!-- End Standard Modals -Examples of Use -->
 
 <br>

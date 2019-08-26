@@ -192,7 +192,7 @@ The company version is square and should only be used for company users
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarDefault.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarDefault.png" width="50%;">
 
 <br>
 
@@ -206,7 +206,7 @@ The company version is square and should only be used for company users
 #### Placeholder 
 User icon for when the user does not provide name
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarPlaceholder.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarPlaceholder.png" width="50%;">
 
 <br>
 
@@ -215,7 +215,7 @@ Image of user's choice if uploaded
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarUserImg.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarUserImg.png" width="50%;">
 
 <hr>
 

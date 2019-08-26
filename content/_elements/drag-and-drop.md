@@ -43,7 +43,7 @@ tabs:
   <!-- Start Examples of Use Row -->
   <div class="c-header-sm">Examples of Use</div>
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%">
   <!-- End Examples of Use Row -->
   <!-- END Drag and Drop with Cards Section -->
 
@@ -56,7 +56,7 @@ tabs:
   <!-- Start Examples of Use Row -->
   <div class="c-header-sm">Examples of Use</div>
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%;">
   <!-- End Examples of Use Row -->
   <!-- END Drag and Drop with List Items Section -->
 
@@ -69,7 +69,7 @@ tabs:
   <!-- Start Examples of Use Row -->
   <div class="c-header-sm">Examples of Use</div>
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%;">
   <!-- End Examples of Use Row -->
   <!-- END Drag and Drop with Widgets Section -->
 

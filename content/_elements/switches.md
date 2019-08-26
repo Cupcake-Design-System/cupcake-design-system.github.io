@@ -238,7 +238,7 @@ You can also add text to the large switch size. Again, use carefully - anything 
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switch-types.png" width="400">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switch-types.png" width="50%;">
 
 <br>
 

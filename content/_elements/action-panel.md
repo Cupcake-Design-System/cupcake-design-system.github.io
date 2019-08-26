@@ -601,19 +601,19 @@ Action panels can be combined with various controls and components depending on 
 
 **The overlay action panel is used to access contact details**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/contacts-panel-example@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/contacts-panel-example@2x.png" width="50%;">
 
 <br>
 
 **The default action panel is used as a Notifications panel**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/notifications-panel-example@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/notifications-panel-example@2x.png" width="50%;">
 
 <br>
 
 **The elastic action panel is used as a Deal Summary panel on the Sales Platform**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/deal-summary-example@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/deal-summary-example@2x.png" width="50%;">
 
 
 

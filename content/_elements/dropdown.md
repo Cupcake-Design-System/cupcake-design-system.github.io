@@ -358,31 +358,31 @@ Dropdown menus can also be triggered by specific controls:
 
 **A dropdown with a list that extends beyond its max height can be configured to scroll**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/scroll-example@2x.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/scroll-example@2x.png" width="50%;">
 
 <br>
 
 **A header groups export options and dividers seperate or group relevant links**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/grouping-example@2x.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/grouping-example@2x.png" width="50%;">
 
 <br>
 
 **A selected state indicates that a selection is currently active**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/selected-example@2x.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/selected-example@2x.png" width="50%;">
 
 <br>
 
 **A button icon triggers a "more" menu and a badge indicates that a link has recently been added**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/icon-button-combination-example@2x.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/icon-button-combination-example@2x.png" width="50%;">
 
 <br>
 
 **An account avatar triggers a dropdown with account and user related options**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/avatar-combination-example@2x.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/dropdowns/avatar-combination-example@2x.png" width="50%;">
 
 </div>
 <!-- End Design Tab -->

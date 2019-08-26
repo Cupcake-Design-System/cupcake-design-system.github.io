@@ -179,13 +179,13 @@ Banner Alerts should be used sparingly to communicate informational, warning or 
 
 **An dismissible informational Banner alert with a link to more information**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/info-banner-alert-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/info-banner-alert-example@2x.png" width="50%;">
 
 <br>
 
 **A persistent danger Banner alert**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/danger-banner-alert-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/danger-banner-alert-example@2x.png" width="50%;">
 <!-- End Banner Alert Section -->
 
 <hr>
@@ -226,13 +226,13 @@ Box alerts must sit in the container of the page or component it relates to
 
 **A persistent danger Box alert**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/danger-box-alert-example@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/danger-box-alert-example@2x.png" width="50%;">
 
 <br>
 
 **An dismissible informational Box alert with a link to more information**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/info-banner-alert-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/info-banner-alert-example@2x.png" width="50%;">
 <!-- End Box Alert Section -->
 
 <hr>

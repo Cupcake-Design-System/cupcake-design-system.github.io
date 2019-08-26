@@ -272,7 +272,7 @@ A badge with no content can be used to add visual attention to an element.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/StatusBadges.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/StatusBadges.png" width="50%;">
 
 <br>
 
@@ -300,12 +300,12 @@ A badge with no content can be used to add visual attention to an element.
 #### Light Color Set
 - Only use values 3-5 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="500px;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="50%;">
 
 #### Dark Color Set**
 - Only use values 6-9 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="500px;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="50%;">
 
 <hr>
   
