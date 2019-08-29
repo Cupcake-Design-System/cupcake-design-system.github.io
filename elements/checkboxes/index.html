@@ -9,6 +9,7 @@
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
 
 <script>
     var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
@@ -72,9 +73,21 @@
         Cupcake Design System
       </a>
     </div>
+
+    <div class="c-header-item">
+        <a class="c-header-item-link c-header-search-container">
+          <form role="search">
+            <input class="c-input c-header-search-box" id="search-box" type="search" name="" placeholder="Search...">
+            <label for="search-box">
+              <span class="c-header-search-icon fa fa-search" aria-hidden="true"></span>
+            </label>
+          </form>
+        </a>
+      </div>
   </div>
 
-  <div class="c-header-center"></div>
+  <div class="c-header-center">
+  </div>
 
   <div class="c-header-right">
     <div class="c-header-item c-hidden-xs">
@@ -117,7 +130,7 @@
 
 
 <aside class="doc-sidenav">
-<nav class="doc-sidenav-body" data-simplebar="">
+  <nav class="doc-sidenav-body" data-simplebar="">
 
     <ul class="doc-sidenav-menu">
 
@@ -143,8 +156,8 @@
       <div id="customize-menu" class="docs-flavor-switch c-dropdown c-d-block">
         <input type="hidden" class="docs-flavor-switch-input" value="default">
         <span class="docs-flavor-button docs-flavor-switch-current">
-            Select a flavor
-          </span>
+          Select a flavor
+        </span>
         <ul id="styleOptions" class="c-dropdown-list c-dropdown-list-below" style="min-width: 100%;">
           <li class="docs-flavor-list-item" data-dropdown-value="default">
             <a href="#" class="c-dropdown-item flavor c-dropdown-item-selected" data-theme="cupcake">Default</a>
@@ -154,202 +167,202 @@
           </li>
         </ul>
       </div>
-    
+
       <li class="doc-sidenav-menu-item  doc-sidenav-menu-item-active">
-          
+
         <a class="doc-sidenav-menu-link">
           <span class="doc-sidenav-menu-title">
             Elements
           </span>
         </a>
-    
-          <ul class="doc-sidenav-menu-submenu"><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/overview/">
-                Overview
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/alerts/">
-                Alerts
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/action-panel/">
-                Action Panel
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/avatars/">
-                Avatars
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/badges/">
-                Badges
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/buttons/">
-                Buttons
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/card/">
-                Card
-              </a>
-              </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/checkboxes/">
-                Checkboxes
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/dropdown/">
-                Dropdown
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/forms/">
-                Forms
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/loaders/">
-                Loaders
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/media-object/">
-                Media Object
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/modals/">
-                Modals
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/pagination/">
-                Pagination
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/progress/">
-                Progress
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/radio-buttons/">
-                Radio Buttons
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/switches/">
-                Switches
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/table/">
-                Table
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/tabs/">
-                Tabs
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/tags/">
-                Tags
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/tooltips/">
-                Tooltips
-              </a>
-              </li></ul>
+
+        <ul class="doc-sidenav-menu-submenu"><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/overview/">
+              Overview
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/alerts/">
+              Alerts
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/action-panel/">
+              Action Panel
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/avatars/">
+              Avatars
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/badges/">
+              Badges
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/buttons/">
+              Buttons
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/card/">
+              Card
+            </a>
+          </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/checkboxes/">
+              Checkboxes
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/dropdown/">
+              Dropdown
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/forms/">
+              Forms
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/loaders/">
+              Loaders
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/media-object/">
+              Media Object
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/modals/">
+              Modals
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/pagination/">
+              Pagination
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/progress/">
+              Progress
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/radio-buttons/">
+              Radio Buttons
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/switches/">
+              Switches
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/table/">
+              Table
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/tabs/">
+              Tabs
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/tags/">
+              Tags
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/tooltips/">
+              Tooltips
+            </a>
+          </li></ul>
 
       </li>
-   
+
     
-    
+
       <li class="doc-sidenav-menu-item ">
-          
+
         <a class="doc-sidenav-menu-link">
           <span class="doc-sidenav-menu-title">
             CSS Utilities
           </span>
         </a>
-    
-          <ul class="doc-sidenav-menu-submenu"><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/utility-overview/">
-                Utility Overview
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/borders/">
-                Borders
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/display/">
-                Display
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/flex/">
-                Flex
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/float/">
-                Float
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/space/">
-                Space
-              </a>
-              </li></ul>
+
+        <ul class="doc-sidenav-menu-submenu"><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/utility-overview/">
+              Utility Overview
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/borders/">
+              Borders
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/display/">
+              Display
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/flex/">
+              Flex
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/float/">
+              Float
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/space/">
+              Space
+            </a>
+          </li></ul>
 
       </li>
-   
+
     
-    
+
       <li class="doc-sidenav-menu-item ">
-          
+
         <a class="doc-sidenav-menu-link">
           <span class="doc-sidenav-menu-title">
             Data Visualization
           </span>
         </a>
-    
-          <ul class="doc-sidenav-menu-submenu"><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/data-overview/">
-                Data Overview
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/data-comparison/">
-                Data Comparison
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/data-distribution/">
-                Data Distribution
-              </a>
-              </li><li>
-              <a class="doc-sidenav-menu-link"
-                href="https://cupcake-design-system.github.io/elements/data-relationship/">
-                Data Relationship
-              </a>
-              </li></ul>
+
+        <ul class="doc-sidenav-menu-submenu"><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/data-overview/">
+              Data Overview
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/data-comparison/">
+              Data Comparison
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/data-distribution/">
+              Data Distribution
+            </a>
+          </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/elements/data-relationship/">
+              Data Relationship
+            </a>
+          </li></ul>
 
       </li>
-   
+
     </ul>
 
   </nav>
@@ -566,7 +579,7 @@
 
   <p><br /></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="50%;" /></p>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="75%;" /></p>
 
   <h3 id="best-practices">Best Practices</h3>
 
@@ -612,34 +625,35 @@
       </div>
      
     <div class="c-footer">
-    <div class="c-footer-left">
-      © 2018 Ipreo. All Rights Reserved.
+  <div class="c-footer-left">
+    © 2018 Ipreo. All Rights Reserved.
+  </div>
+  <div class="c-footer-right">
+    <div class="c-footer-link">
+      <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
+        <span class="fas fa-users" aria-hidden="true"></span>
+        Teams
+      </a>
     </div>
-    <div class="c-footer-right">
-      <div class="c-footer-link">
-        <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
-            <span class="fas fa-users" aria-hidden="true"></span>
-            Teams
-        </a>
-      </div>
-      <div class="c-footer-link">
-        <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
-            <span class="fab fa-github" aria-hidden="true"></span>
-            Github
-        </a>
-      </div>
-      <div class="c-footer-link">
-          <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
-            <span class="fas fa-info-circle" aria-hidden="true"></span>
-              Release Notes
-          </a>
-      </div>
+    <div class="c-footer-link">
+      <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
+        <span class="fab fa-github" aria-hidden="true"></span>
+        Github
+      </a>
+    </div>
+    <div class="c-footer-link">
+      <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
+        <span class="fas fa-info-circle" aria-hidden="true"></span>
+        Release Notes
+      </a>
     </div>
   </div>
+</div>
 
     </main>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
   </body>

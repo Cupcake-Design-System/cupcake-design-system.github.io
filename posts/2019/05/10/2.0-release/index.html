@@ -10,6 +10,7 @@
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
 
 <script>
     var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
@@ -75,9 +76,21 @@
         Cupcake Design System
       </a>
     </div>
+
+    <div class="c-header-item">
+        <a class="c-header-item-link c-header-search-container">
+          <form role="search">
+            <input class="c-input c-header-search-box" id="search-box" type="search" name="" placeholder="Search...">
+            <label for="search-box">
+              <span class="c-header-search-icon fa fa-search" aria-hidden="true"></span>
+            </label>
+          </form>
+        </a>
+      </div>
   </div>
 
-  <div class="c-header-center"></div>
+  <div class="c-header-center">
+  </div>
 
   <div class="c-header-right">
     <div class="c-header-item c-hidden-xs">
@@ -143,25 +156,24 @@
 </aside>
 
 
-
   <main class="main-container" role="main">
-        <div class="main-content">            
-            <div class="docs-article-image" style="background-color:#007778">
-              <span class="docs-article-overlay"></span>
-              
-              <span class="docs-article-icon">
-                <span class="icon">
-                  <i class="fa fa-rocket"></i>
-                </span>
-              </span>
+    <div class="docs-article-image" style="background-color:#007778">
+      <span class="docs-article-overlay"></span>
 
-              <strong class="docs-article-title">
-                  2.0 Released
-                </strong>
-            </div>
-            
-            
-              <h2 id="release-200">Release <a href="https://github.com/Cupcake-Design-System/Cupcake">2.0.0</a></h2>
+      <span class="docs-article-icon">
+        <span class="icon">
+          <i class="fa fa-rocket"></i>
+        </span>
+      </span>
+
+      <strong class="docs-article-title">
+        2.0 Released
+      </strong>
+    </div>
+
+      <div class="main-content">
+
+        <h2 id="release-200">Release <a href="https://github.com/Cupcake-Design-System/Cupcake">2.0.0</a></h2>
 
 <h3 id="overview">Overview</h3>
 
@@ -683,56 +695,47 @@
 <hr />
 
 
-              <a class="c-btn-link c-pull-left" href="https://cupcake-design-system.github.io/release-notes/">
-                <i class="fa fa-arrow-left"></i> Back to all release notes
-              </a>
-            
+        <a class="c-btn-link c-pull-left" href="https://cupcake-design-system.github.io/release-notes/">
+          <i class="fa fa-arrow-left"></i> Back to all release notes
+        </a>
 
-        </div>
+      </div>
 
-        <div class="c-footer">
-    <div class="c-footer-left">
-      © 2018 Ipreo. All Rights Reserved.
+    <div class="c-footer">
+  <div class="c-footer-left">
+    © 2018 Ipreo. All Rights Reserved.
+  </div>
+  <div class="c-footer-right">
+    <div class="c-footer-link">
+      <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
+        <span class="fas fa-users" aria-hidden="true"></span>
+        Teams
+      </a>
     </div>
-    <div class="c-footer-right">
-      <div class="c-footer-link">
-        <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
-            <span class="fas fa-users" aria-hidden="true"></span>
-            Teams
-        </a>
-      </div>
-      <div class="c-footer-link">
-        <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
-            <span class="fab fa-github" aria-hidden="true"></span>
-            Github
-        </a>
-      </div>
-      <div class="c-footer-link">
-          <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
-            <span class="fas fa-info-circle" aria-hidden="true"></span>
-              Release Notes
-          </a>
-      </div>
+    <div class="c-footer-link">
+      <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
+        <span class="fab fa-github" aria-hidden="true"></span>
+        Github
+      </a>
+    </div>
+    <div class="c-footer-link">
+      <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
+        <span class="fas fa-info-circle" aria-hidden="true"></span>
+        Release Notes
+      </a>
     </div>
   </div>
+</div>
  
-      </main>
+  </main>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
 

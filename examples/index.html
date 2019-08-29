@@ -9,6 +9,7 @@
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
 
 <script>
     var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
@@ -72,9 +73,21 @@
         Cupcake Design System
       </a>
     </div>
+
+    <div class="c-header-item">
+        <a class="c-header-item-link c-header-search-container">
+          <form role="search">
+            <input class="c-input c-header-search-box" id="search-box" type="search" name="" placeholder="Search...">
+            <label for="search-box">
+              <span class="c-header-search-icon fa fa-search" aria-hidden="true"></span>
+            </label>
+          </form>
+        </a>
+      </div>
   </div>
 
-  <div class="c-header-center"></div>
+  <div class="c-header-center">
+  </div>
 
   <div class="c-header-right">
     <div class="c-header-item c-hidden-xs">
@@ -117,63 +130,62 @@
       
       
 
-
 <aside class="doc-sidenav">
-    <nav class="doc-sidenav-body" data-simplebar="">
-    
-        <ul class="doc-sidenav-menu">
-    
-          <div class="doc-sidenav-navbar">
-            <a class="doc-sidenav-navbar-link "
-              href="https://cupcake-design-system.github.io/getting-started/overview">
-              Getting Started
+  <nav class="doc-sidenav-body" data-simplebar="">
+
+    <ul class="doc-sidenav-menu">
+
+      <div class="doc-sidenav-navbar">
+        <a class="doc-sidenav-navbar-link "
+          href="https://cupcake-design-system.github.io/getting-started/overview">
+          Getting Started
+        </a>
+        <a class="doc-sidenav-navbar-link "
+          href="https://cupcake-design-system.github.io/elements/overview">
+          Elements
+        </a>
+        <a class="doc-sidenav-navbar-link "
+          href="https://cupcake-design-system.github.io/patterns/overview">
+          Patterns
+        </a>
+      </div>
+
+      <li class="doc-sidenav-menu-item  doc-sidenav-menu-item-active">
+
+        <a class="doc-sidenav-menu-link">
+          <span class="doc-sidenav-menu-title">
+            Resources
+          </span>
+        </a>
+
+        <ul class="doc-sidenav-menu-submenu"><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/release-notes/">
+              Release Notes
             </a>
-            <a class="doc-sidenav-navbar-link "
-              href="https://cupcake-design-system.github.io/elements/overview">
-              Elements
+      </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/examples/">
+              Examples
             </a>
-            <a class="doc-sidenav-navbar-link "
-              href="https://cupcake-design-system.github.io/patterns/overview">
-              Patterns
+      </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/prototypes/">
+              Prototypes
             </a>
-          </div>
-        
-          <li class="doc-sidenav-menu-item  doc-sidenav-menu-item-active">
-              
-            <a class="doc-sidenav-menu-link">
-              <span class="doc-sidenav-menu-title">
-                Resources
-              </span>
+      </li><li>
+            <a class="doc-sidenav-menu-link"
+              href="https://cupcake-design-system.github.io/extensions/">
+              Extensions
             </a>
-        
-              <ul class="doc-sidenav-menu-submenu"><li>
-                  <a class="doc-sidenav-menu-link"
-                    href="https://cupcake-design-system.github.io/release-notes/">
-                    Release Notes
-                  </a>
-                  </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
-                  <a class="doc-sidenav-menu-link"
-                    href="https://cupcake-design-system.github.io/examples/">
-                    Examples
-                  </a>
-                  </li><li>
-                  <a class="doc-sidenav-menu-link"
-                    href="https://cupcake-design-system.github.io/prototypes/">
-                    Prototypes
-                  </a>
-                  </li><li>
-                  <a class="doc-sidenav-menu-link"
-                    href="https://cupcake-design-system.github.io/extensions/">
-                    Extensions
-                  </a>
-                  </li></ul>
-    
-          </li>
-       
-        </ul>
-    
-      </nav>
-    </aside>
+      </li></ul>
+
+    </li>
+
+    </ul>
+
+  </nav>
+</aside>
       
         
     <main class="main-container" role="main">
@@ -214,34 +226,35 @@
       </div>
      
     <div class="c-footer">
-    <div class="c-footer-left">
-      © 2018 Ipreo. All Rights Reserved.
+  <div class="c-footer-left">
+    © 2018 Ipreo. All Rights Reserved.
+  </div>
+  <div class="c-footer-right">
+    <div class="c-footer-link">
+      <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
+        <span class="fas fa-users" aria-hidden="true"></span>
+        Teams
+      </a>
     </div>
-    <div class="c-footer-right">
-      <div class="c-footer-link">
-        <a href="https://teams.microsoft.com/l/team/19%3a1de29f8829c74f39bdaadd12f428f888%40thread.skype/conversations?groupId=5d20d953-9e8f-4c39-9a21-610f537ea457&tenantId=c1156c2f-a3bb-4fc4-ac07-3eab96da8d10" class="c-a" target="_blank">
-            <span class="fas fa-users" aria-hidden="true"></span>
-            Teams
-        </a>
-      </div>
-      <div class="c-footer-link">
-        <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
-            <span class="fab fa-github" aria-hidden="true"></span>
-            Github
-        </a>
-      </div>
-      <div class="c-footer-link">
-          <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
-            <span class="fas fa-info-circle" aria-hidden="true"></span>
-              Release Notes
-          </a>
-      </div>
+    <div class="c-footer-link">
+      <a href="https://github.com/Cupcake-Design-System/Cupcake" class="c-a" target="_blank">
+        <span class="fab fa-github" aria-hidden="true"></span>
+        Github
+      </a>
+    </div>
+    <div class="c-footer-link">
+      <a href="https://cupcake-design-system.github.io/release-notes/" class="c-a">
+        <span class="fas fa-info-circle" aria-hidden="true"></span>
+        Release Notes
+      </a>
     </div>
   </div>
+</div>
 
     </main>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/plugins.js"></script>
 <script src="https://cupcake-design-system.github.io/assets/js/script.js"></script>
   </body>
