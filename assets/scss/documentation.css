@@ -161,7 +161,7 @@ a.c-btn.c-btn-primary:hover a:hover { color: white; }
 
 @media (min-width: 576px) { .docs-lead { max-width: 85%; margin: 0; font-size: 1.25rem; } }
 
-.docs-bg-img { background-image: url("https://pages.code.ipreo.com/Ipreo/cupcake-docs/assets/img/general-colorful.png"); z-index: 2; position: relative; background-size: cover; background-position: center center; background-color: #1b6ec2; padding: 2rem; color: white; }
+.docs-bg-img { background-image: url("../img/general-colorful.png"); z-index: 2; position: relative; background-size: cover; background-position: center center; background-color: #1b6ec2; padding: 2rem; color: white; }
 
 .docs-spacing > div { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
