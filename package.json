@@ -1,8 +1,8 @@
 {
   "name": "cupcake-docs",
-  "description": "css-framework",
+  "description": "css-design-system",
   "private": true,
-  "version": "0.0.7",
+  "version": "1.0.0",
   "scripts": {
     "git-deploy": "git-directory-deploy --directory dist --branch master",
     "deploy": "npm run compile && npm run git-deploy",

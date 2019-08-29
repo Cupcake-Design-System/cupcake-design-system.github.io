@@ -1,0 +1,8 @@
+{
+  "files.exclude": {
+    ".jekyll-cache": true,
+    ".sass-cache": true,
+    "Gemfile.lock": true,
+    "package-lock.json": true
+  }
+}

@@ -295,13 +295,9 @@ $(function () {
   (function () {
     'use strict'
   
-    if (!window.docsearch) {
-      return
-    }
-  
     window.docsearch({
-      apiKey: '5990ad008512000bba2cf951ccf0332f',
-      indexName: 'bootstrap',
+      apiKey: '601cfe833209c1f0a240a16f31be5451',
+      indexName: 'cupcake-design-system',
       inputSelector: '#search-box',
       // Set debug to `true` if you want to inspect the dropdown
       debug: false
