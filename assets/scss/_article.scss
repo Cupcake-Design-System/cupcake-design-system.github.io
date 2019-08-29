@@ -1,118 +1,119 @@
-.docs-article-image {
-  background-color: $primary;
-  display: block;
-  height: 200px;
-  position: relative;
-  text-align: center;
-  flex-grow: 1;
+.docs-article {
 
-  &.is-black {
-    background-color: $color-gray-7;
-  }
-
-  &.is-primary {
+  &-image {
     background-color: $primary;
+    display: block;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    flex-grow: 1;
+
+    &:hover {
+      .docs-article-overlay {
+        opacity: 0.25;
+        @include media-breakpoint-down(sm) {
+          opacity: 0;
+        }
+      }
+    
+      .docs-article-icon {
+        transform: scale(1.1);
+        @include media-breakpoint-down(sm) {
+          transform: none;
+        }
+      }
+    
+      .docs-article-title {
+        transform: scale(0.9);
+        @include media-breakpoint-down(sm) {
+          transform: none;
+        }
+      }
+    }
+
+    &.is-black {
+      background-color: $color-gray-7;
+    }
+
+    &.is-primary {
+      background-color: $primary;
+    }
+
+    &.is-info {
+      background-color: $info;
+    }
+
+    &.is-success {
+      background-color: $success;
+    }
+
+    &.is-warning {
+      background-color: $warning;
+    }
+
+    &.is-danger {
+      background-color: $danger;
+    }
+
+    .docs-article-image & {
+      margin: 0;
+      height: 150px;
+    }
+
+    @include media-breakpoint-down(md) {
+      // margin: -16px -16px 40px -16px;
+    }
   }
 
-  &.is-info {
-    background-color: $info;
+  &-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: black;
+    transition-duration: 86ms;
+    transition-property: opacity;
+    transition-timing-function: ease-out;
   }
 
-  &.is-success {
-    background-color: $success;
-  }
-
-  &.is-warning {
-    background-color: $warning;
-  }
-
-  &.is-danger {
-    background-color: $danger;
-  }
-
-  .docs-article-image & {
-    margin: 0;
-    height: 150px;
-  }
-
-  @include media-breakpoint-down(md) {
-    // margin: -16px -16px 40px -16px;
-  }
-}
-
-.docs-article-image:hover {
-  .docs-article-overlay {
+  &-icon {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: black;
     opacity: 0.25;
-    @include media-breakpoint-down(sm) {
-      opacity: 0;
+    display: flex;
+    font-size: 56px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 86ms;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+
+  &-title {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 86ms;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  
+    @include media-breakpoint-down(md) {
+      font-size: 1.75rem;
     }
   }
-
-  .docs-article-icon {
-    transform: scale(1.1);
-    @include media-breakpoint-down(sm) {
-      transform: none;
-    }
-  }
-
-  .docs-article-title {
-    transform: scale(0.9);
-    @include media-breakpoint-down(sm) {
-      transform: none;
-    }
-  }
 }
-
-
-.docs-article-overlay {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: black;
-  opacity: 0;
-  transition-duration: 86ms;
-  transition-property: opacity;
-  transition-timing-function: ease-out;
-}
-
-.docs-article-icon {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  transition-duration: 86ms;
-  transition-property: transform;
-  transition-timing-function: ease-out;
-  color: black;
-  opacity: 0.25;
-  font-size: 56px;
-}
-
-.docs-article-title {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  transition-duration: 86ms;
-  transition-property: transform;
-  transition-timing-function: ease-out;
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.25;
-
-  @include media-breakpoint-down(md) {
-    font-size: 1.75rem;
-  }
-}
-

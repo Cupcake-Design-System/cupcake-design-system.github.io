@@ -61,6 +61,7 @@ typings/
 .next
 
 .sass-cache/
+.jekyll-cache/
 dist/
 .DS_Store
 _includes/.DS_Store

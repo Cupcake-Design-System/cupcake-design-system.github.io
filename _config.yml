@@ -34,10 +34,16 @@ exclude:
   - .sass-cache/
   - js/
   - vendor/
-  - node_modules
-  - README.md
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
   - package.json
   - package-lock.json
   - template.hbs
@@ -60,6 +66,13 @@ cdn:
 
 
 collections_dir: content
+
+plugins:
+- jekyll-autoprefixer
+
+autoprefixer:
+  browsers:
+  - last 2 versions
 
 defaults:
   -

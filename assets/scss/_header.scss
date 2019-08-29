@@ -1,0 +1,33 @@
+
+.c-header {
+  &-inverse.docs-nav {
+    background: $dark;
+    height: $navbar-height;
+  }
+
+  &-item {
+
+    &-link {
+      height: $navbar-height;
+      padding: 0 16px;
+      font-size: 15px;
+    }
+
+    .c-header-search-container form label {
+      width: 0;
+    }
+  
+    .c-header-search-box:focus {
+      padding-left: 8px;
+      width: 182px;
+    }
+  
+    .c-header-search-icon {
+      cursor: pointer;
+      transition: none;
+      position: relative;
+      left: -24px;
+      top: 24%;
+    }
+  }
+}

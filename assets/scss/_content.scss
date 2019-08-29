@@ -1,6 +1,6 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
-  color: #495057;
+  font-family: $font-family;
+  color: $color-gray-7;
 }
 
 p {
@@ -227,7 +227,8 @@ a.c-btn.c-btn-primary:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin-top: 48px;
+  margin-top: $navbar-height;
+  
   @include media-breakpoint-down(md) {
     margin-top: 0;
   }

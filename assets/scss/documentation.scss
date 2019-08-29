@@ -1,10 +1,11 @@
 ---
 ---
 
-@import "mixins";
+@import "../../node_modules/@cupcake-ds/cupcake/src/scss/support/support.scss";
 
 // Load docs components  
 @import "variables";
+@import "header";
 @import "landing";
 @import "article";
 @import "content";
@@ -65,20 +66,10 @@ iframe {
   outline: none;
 }
 
-.c-header-inverse.docs-nav {
-  background: $dark;
-  height: 48px;
-}
-
-.c-header-item-link {
-  height: 48px;
-  padding: 0 16px;
-  font-size: 15px;
-}
-
 
 .docs-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+

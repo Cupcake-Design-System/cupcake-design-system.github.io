@@ -292,3 +292,14 @@ $(function () {
   }(jQuery));
   
   
+  (function () {
+    'use strict'
+  
+    window.docsearch({
+      apiKey: '601cfe833209c1f0a240a16f31be5451',
+      indexName: 'cupcake-design-system',
+      inputSelector: '#search-box',
+      // Set debug to `true` if you want to inspect the dropdown
+      debug: false
+    })
+  })()

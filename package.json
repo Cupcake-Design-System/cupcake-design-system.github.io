@@ -1,8 +1,8 @@
 {
   "name": "cupcake-docs",
-  "description": "css-framework",
+  "description": "css-design-system",
   "private": true,
-  "version": "0.0.7",
+  "version": "1.0.0",
   "scripts": {
     "git-deploy": "git-directory-deploy --directory dist --branch master",
     "deploy": "npm run compile && npm run git-deploy",
@@ -10,20 +10,11 @@
     "deploy-surge": "npm run compile-demo && npm run surge",
     "compile": "bundle exec jekyll build --config _config.yml,_config.prod.yml",
     "compile-demo": "bundle exec jekyll build --config _config.yml,_config.demo.yml",
-    "start-2": "bundle exec jekyll serve --config _config.yml",
-    "start": "gulp",
+    "start": "bundle exec jekyll serve --livereload --config _config.yml",
     "dev": "gulp"
   },
-  "devDependencies": {
-    "browser-sync": "2.26.3",
-    "gulp": "3.9.1",
-    "gulp-autoprefixer": "6.0.0",
+  "dependencies": {
     "git-directory-deploy": "1.5.1",
-    "gulp-clean-css": "3.10.0",
-    "gulp-concat": "2.6.1",
-    "gulp-gh-pages": "0.5.4",
-    "gulp-notify": "3.2.0",
-    "gulp-sass": "4.0.1",
-    "gulp-uglify": "3.0.1"
+    "@cupcake-ds/cupcake": "^2.0.1"
   }
 }
