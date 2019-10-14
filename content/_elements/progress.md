@@ -1,5 +1,5 @@
 ---
-title: Progress
+title: Progress Bar
 description: The progress bar component is used to visually represent the completion of a task or operation.
 colors:
 - primary
