@@ -9,56 +9,47 @@ sizes:
 - xl
 ---
 
-# Style Guide/Usage
+## Context of use
+Drag and Drop is used when an item, or group of items, needs to be moved to a pre-defined area.
 
-## Structure
+## Where used
 
-##### Drag and Drop must haves:
+The Drag and Drop interaction is typically combined with, but not limited to, the following:
 
- * All components that the user is able to drag and drop must have **grips on the left side** to indicate 
- * All components that the user is able to drag and drop must have **50% opacity** applied when the user is dragging it to the drop zone
- * All drop zones should have some sort of **indication** (blue box or list indication)
- 
-## Types of Drag and Drop
+- Drag and drop with cards
+- Drag and drop with list items
+- Drag and drop with widgets
 
- * Drag and drop with cards
- * Drag and drop with list items
- * Drag and drop with widgets
+<hr>
 
- <hr>
+## Best Practices
+- All components that the user is able to drag and drop must have **grips on the left side** to indicate 
+- All components that the user is able to drag and drop must have **50% opacity** applied when the user is dragging it to the drop zone
+- All drop zones should have some sort of **indication** (blue box or list indication)
 
-## Drag and Drop with Cards
-Drag and drop can be used to easily reorder movable cards to the user's liking. 
+<hr>
 
-##### Example of Use
+## Examples
 
 {% include guide-img.html img='patterns/drag-and-drop/cards-draganddrop' %}
 
 {% include guide-img.html img='patterns/drag-and-drop/drag-and-drop-confluence-example' %}
 
+**Example:** drag and drop used to reorder cards on a dashboard
 
-<hr>
-
-## Drag and Drop with List Items
-Drag and drop can be used to easily reorder list items to the user's liking. 
-
-##### Example of Use
+<br>
 
 {% include guide-img.html img='patterns/drag-and-drop/drag-and-drop-list-items-example' %}
 
-<hr>
+**Example:** drag and drop used to reorder list items
 
-## Drag and Drop with Widgets
-Drag and drop can be used to easily perform a function with a widget, such as a file upload. 
+<br>
 
-##### Example of Use
 
 {% include guide-img.html img='patterns/drag-and-drop/drag-and-drop-widgets-example' %}
 
+**Example:** drag and drop used to assist uploading a file via a file upload widget
 
-# Layouts/Examples
+<br>
 
 <img src="/assets/img/patterns/drag-and-drop/drag-and-drop-gif.gif" alt="Drag and Drop Gif">
-
-
-<a href="https://pages.code.ipreo.com/adam-jarvis/issuelaunch/dist/reorder.html" target="_blank">Issue Launch Tranche Drag & Drop</a>
