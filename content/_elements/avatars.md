@@ -169,7 +169,7 @@ The user version is circular and should only be used for individual users.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarPeopleVersion.png" width="15%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarPeopleVersion.png">
 
 <br>
 
@@ -178,7 +178,7 @@ The company version is square and should only be used for company users
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarCoVersion.png" width="15%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarCoVersion.png">
 
 <hr>
 
@@ -192,21 +192,21 @@ The company version is square and should only be used for company users
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarDefault.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarDefault.png">
 
 <br>
 
 **Company initials can vary and will appear as the following:**
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarInitials.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarInitials.png">
 
 <br>
 
 #### Placeholder 
 User icon for when the user does not provide name
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarPlaceholder.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarPlaceholder.png">
 
 <br>
 
@@ -215,7 +215,7 @@ Image of user's choice if uploaded
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarUserImg.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/avatars/new format/AvatarUserImg.png">
 
 <hr>
 
