@@ -1,8 +1,9 @@
 ---
 title: Media Object
-description: The famous media object prevalent in social media interfaces, but useful in any context.
+description: Media objects provide an easy way to combine elements and data into a new component, typically for use in repetitive lists.
 tabs:
 - Code
+- Angular
 - Guidelines
 ---
 
@@ -875,7 +876,61 @@ Group multiple objects inside a list class. This becomes a powerful option for r
 <!-- Start Design Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Design Guidelines coming soon...
+## Usage
+
+Media objects can be stacked, nested, and aligned in various ways. This flexibility allows for various use cases across both desktop and mobile applications. 
+
+**Common use cases include but are not limited to:**
+
+- Avatar + Comments
+- Social Media Posts
+- RSS Feeds
+- Message & Contact Lists
+- Content + Tags
+- Content + Pills
+- Content + Icons
+- Content + Controls
+- Content + Buttons
+
+<hr>
+
+## Anatomy
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+
+At their most basic level a media object must contain at least 1 object and some other form of content next to it. The exact layout can vary to support the specific use case and type of content being used. 
+
+
+<hr>
+
+## Variations
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Stacked Media Objects
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Nested Media Objects
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Tiled Media Objects
+
+<hr>
+
+## Examples
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Title + Content Preview + Image
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Avatar + Contact Name
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Icons + Description + Menu
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Icon + Title + Subtitle + Numeric Badge
+
+
 
 
 </div>
