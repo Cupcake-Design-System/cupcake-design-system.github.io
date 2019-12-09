@@ -272,7 +272,7 @@ A badge with no content can be used to add visual attention to an element.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/StatusBadges.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/StatusBadges.png">
 
 <br>
 
@@ -280,7 +280,7 @@ A badge with no content can be used to add visual attention to an element.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/Numeric Badges.png" width="5%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/Numeric Badges.png" >
 
 <hr>
 
@@ -328,7 +328,6 @@ A badge with no content can be used to add visual attention to an element.
 - Try to use a different shape or color value/set to visually differentiate badges from similar visual elements such as tags 
 
 ### Best practices with Numeric Badges 
-
 - Use only numbers in numeric badges 
 
 
@@ -346,14 +345,14 @@ A badge with no content can be used to add visual attention to an element.
 
 **Status Badges in cards** 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/BadgesInCards.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/BadgesInCards.png">
 
 <br>
 
    
 **Numeric Badges in media list items** 
  
- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/NumericBadgesMediaLists.png" width="50%;">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/NumericBadgesMediaLists.png" width="35%;">
 
 </div>
 <!-- End Design Tab -->
