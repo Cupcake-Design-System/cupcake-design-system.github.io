@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Tooltips are used to add information or context to an item or element. Typically, tooltips help users understand the meaning of icons or errors, expand on truncated text, and for displaying other short bits of contextual information.">
+<meta name="description" content="A tooltip presents a concise piece of contextual information on an element on the screen, in response to a user action (hover, focus or click). Tooltips should always play a supplementary or enhancement role and never contain critical information.">
 
 <title>Cupcake · Tooltips</title>
 
@@ -374,7 +374,7 @@
     <main class="main-container" role="main">
       <div class="docs-bg-img c-bg-primary">
   <h1 class="docs-title" id="content">Tooltips</h1>
-  <p class="docs-lead">Tooltips are used to add information or context to an item or element. Typically, tooltips help users understand the meaning of icons or errors, expand on truncated text, and for displaying other short bits of contextual information.</p>
+  <p class="docs-lead">A tooltip presents a concise piece of contextual information on an element on the screen, in response to a user action (hover, focus or click). Tooltips should always play a supplementary or enhancement role and never contain critical information.</p>
 </div>
 
       
@@ -527,570 +527,82 @@
 <!-- Start Design Tab -->
 <div id="guidelines" class="docs-tabs-content">
 
-  <h1 id="overview">Overview</h1>
-
-  <p><strong>Don’t use tooltips to hide/provide information that is vital to complete a task.</strong></p>
-
-  <p>Cupcake tooltips should be used in place of standard browser tooltips when the item it highlights requires emphasis or explanation.</p>
-
-  <p><strong>Tooltips are deceptively complex. Below are guidelines to help make them uniform across applications.</strong></p>
-
-  <ul>
-    <li>Design</li>
-    <li>Tooltip Use</li>
-    <li>Tooltip Writing</li>
-    <li>Tooltips Placement</li>
-  </ul>
-
-  <h3 id="examples-of-use">Examples of use</h3>
+  <h2 id="types--usage">Types &amp; Usage</h2>
 
   <p><br /></p>
 
-  <p><strong>Icon tooltip used to clarify the action or name of an icon button</strong></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltip-example-clarify-action-or-name.png" width="50%;" /></p>
-
-  <p><br /></p>
-
-  <p><strong>Tooltip used to display keyboard shortcuts</strong></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltip-display-keyboard-shortcuts.png" width="50%;" /></p>
-
-  <p><br /></p>
-
-  <p><strong>User inputted information should show user input exactly as the user typed it</strong></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltips-user-input.png" width="50%;" /></p>
-
-  <p><br /></p>
-
-  <p><strong>Definition tooltip used to provide contextual information to a word, request, action, or element</strong></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltips-contextual-information.png" width="50%;" /></p>
-
-  <p><br /></p>
-
-  <p><strong>Interactive tooltips span from simple buttons or hyperlinks to more complex modules</strong></p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltips-interactive.png" width="50%;" /></p>
-
-  <hr />
-
-  <p><!-- Start Tooltip Design Section --></p>
-  <h3 id="tooltip-design">Tooltip Design</h3>
-  <ul>
-    <li>Tooltips should have a consistent look and styling across the product.</li>
-    <li>Tooltips should either be light or dark, never contain an icon, and follow the standard conventions outlined in this document.</li>
-  </ul>
-
-  <p><!-- Start General Do/Dont Row --></p>
-  <h4 id="general-dos-and-donts">General Do’s and Dont’s</h4>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use standard colors</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use standard fonts, sizes, and weights</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use sentence case</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do center text</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do wrap text when necessary </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use non-standard colors</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use non-standard fonts, sizes, and weights</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use icons in tooltips</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't left align wrapped text </span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End General Do's and Dont's Row -->
-  <!-- END Tooltip Design Section --></p>
-
-  <hr />
-
-  <p><!-- Start Tooltip Use Section --></p>
-  <h3 id="tooltip-use">Tooltip use</h3>
-
-  <p>Tooltips should provide additional context or information.</p>
-
-  <p><strong>The following tooltip usages are highly discouraged to users</strong></p>
-  <ul>
-    <li>Hiding vital information</li>
-    <li>Using redundant tooltips</li>
-    <li>Using tooltips to distinguish the functions of two similar elements</li>
-  </ul>
-
-  <p><strong>Note:</strong> 
-  For detailed rules around error &amp; validation tooltips please see the Errors &amp; Validations documentation</p>
+  <table class="c-table c-table-transparent c-table-border-both c-table-hover">
+<thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Icon / Button Tooltip</td>
+      <td>These Tooltips are used to provide context or details around icons and buttons</td>
+    </tr>
+    <tr>
+      <td>Definition Tooltip</td>
+      <td>Definition Tooltips provide contextual information to a word, request, action, or element</td>
+    </tr>
+    <tr>
+      <td>Interactive Tooltip</td>
+      <td>TInteractive Tooltips are tooltips which contain interactive elements such as buttons or links. These tooltips remain visible until intentionally dismissed.</td>
+    </tr>
+  </tbody>
+</table>
 
   <p><br /></p>
 
-  <p><!-- Start Hiding Vital Information Row --></p>
-  <h3 id="hiding-vital-information">Hiding vital information</h3>
+  <h2 id="states">States</h2>
+  <p>Tooltips should appear on hover, focus or click.</p>
 
+  <h2 id="labels">Labels</h2>
+  <p>Tooltips should be written as short and concise as possible. When you require more than a few words consider using popovers or other patterns more suitable to communicating complexity to the user.</p>
+
+  <h2 id="best-practices">Best Practices</h2>
   <ul>
-    <li>Don’t use tooltips to hide information or to present a “cleaner” design.</li>
-    <li>When in doubt ask yourself, “Is this information necessary for a user to complete a task?” If the answer is yes, don’t use a tooltip.</li>
+    <li>Tooltips should always play a supplementary or enhancement role and never contain critical information.</li>
+    <li>Use sentence case with no punctuation unless absolutely required for clarity</li>
+    <li>Tooltips used to display shortcut keys should use a uniform format (key + key + key)</li>
+    <li>In instances where tooltips are used to display user inputted information, case rules do not apply. Tooltips should mirror user input exactly.</li>
+    <li>Do try to keep tooltips above the items or elements being highlighted</li>
+    <li>Do keep the position of the tooltips consistent when edge or component overflow does not affect placement</li>
   </ul>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do surface vital information</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Consider a different approach or pattern when necessary</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use tooltips to hide information vital to task completion</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use tooltips as a crutch to display information </span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Hiding Vital Information Row --></p>
-
-  <p><!-- Start Using Redundant Tooltips Row --></p>
-  <h5 id="using-redundant-tooltips">Using redundant tooltips</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use tooltips to provide clarity and help users understand elements</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use tooltips to display redundant information</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- END Using Redundant Tooltips Row --></p>
-
-  <!-- Start Duplicate Elements Row -->
-  <h5 id="duplicate-elements">Duplicate elements</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use the native patterns related to elements in order to distinguish their function(s)</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use tooltips to distinguish functions between duplicate elements</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- END Duplicate Elements Row -->
-  <!-- END Tooltip Use Section --></p>
-
-  <hr />
-
-  <p><!-- Start Tooltip Writing Section --></p>
-  <h3 id="tooltip-writing">Tooltip Writing</h3>
-  <ul>
-    <li>Tooltips should be written as short and concise as possible.</li>
-    <li>When you require more than a few words—or other non-text objects such as “status badges”—consider using “popovers” or other patterns and approaches to communicate complexity to the user.</li>
-  </ul>
-
-  <p><!-- Start Tooltip Writing General Row --></p>
-  <h5 id="tooltip-writing-general">Tooltip writing general</h5>
-  <p>Tooltips should use sentence case with no punctuation unless absolutely required for clarity.</p>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep descriptions short and concise</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use sentence case with no punctuation</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use all caps or capitalize each word</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use punctuation unless required for clarity.</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Tooltip Writing General Row --></p>
-
-  <p><!-- Start Keyboard Shortcuts Row --></p>
-  <h5 id="keyboard-shortcuts">Keyboard Shortcuts</h5>
-  <ul>
-    <li>Often tooltips will be used to display contextual information as well as reinforce shortcut keys.</li>
-    <li>Shortcuts should be formatted in a very specific and uniform manner.</li>
-  </ul>
-
-  <p><strong>(key + key + key)</strong></p>
-
-  <table>
-    <tbody>
-      <tr>
-        <td><strong>Command</strong></td>
-        <td><strong>Command Abbreviation</strong></td>
-      </tr>
-      <tr>
-        <td>Control</td>
-        <td>ctrl</td>
-      </tr>
-      <tr>
-        <td>Shift</td>
-        <td>shift</td>
-      </tr>
-      <tr>
-        <td>Alt</td>
-        <td>alt</td>
-      </tr>
-      <tr>
-        <td>Windows</td>
-        <td>win</td>
-      </tr>
-      <tr>
-        <td>Command (mac)</td>
-        <td>cmd</td>
-      </tr>
-    </tbody>
-  </table>
 
   <p><br /></p>
 
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do explain the action the shortcut will perform</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do abbreviate modifier keys and capitalize the letter key</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use parentheses to contain the shortcut</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't forget to explain the action the shortcut will perform</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't spell out modifier keys and lower case the letter key</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use punctuation other than the plus sign to show key sequence</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Keyboard Shortcuts Row --></p>
+  <h2 id="examples">Examples</h2>
 
-  <p><!-- Start Exceptions Row --></p>
-  <h3 id="exceptions">EXCEPTIONS</h3>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltip-example-clarify-action-or-name.png" width="" /></p>
 
-  <hr />
-
-  <h5 id="user-input">User Input</h5>
-  <ul>
-    <li>In instances where tooltips are used to display <strong>user inputted information</strong> case rules do not apply.</li>
-    <li>
-      <p>Tooltips should mirror user input exactly.</p>
-
-      <div class="c-row">
-  <div class="c-col">
-  <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-  </div>
-  <div class="c-col">
-  <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-  </div>
-</div>
-      <div class="c-row c-m-top-md c-m-bottom-xl">
-  <div class="c-col">
-    <div class="c-media c-p-sm">
-      <span class="fas fa-check c-text-success"></span>
-      <div class="c-media-body">
-        <span class="c-text-md">Do keep descriptions short and concise</span>
-      </div>
-    </div>
-  </div>
-  <div class="c-col">
-    <div class="c-media c-p-sm">
-      <span class="fas fa-times c-text-danger"></span>
-      <div class="c-media-body">
-        <span class="c-text-md">Don't overwrite or format the user's input to be in-line with other tooltip rules</span>
-      </div>
-    </div>
-    </div>
-  </div>
-      <!-- End Exceptions General Row -->
-      <!-- END Tooltip Writing Section -->
-    </li>
-  </ul>
-
-  <hr />
-
-  <p><!-- Start Tooltip Placement Section --></p>
-  <h3 id="tooltip-placement">Tooltip Placement</h3>
-  <ul>
-    <li>
-      <p>Tooltip placement will change depending on the application, component container, browser edge position, and the element(s) being highlighted.</p>
-    </li>
-    <li>
-      <p><strong>Above the element is the preferred placement for a tooltip</strong> but the edge of the container, and the proximity of other elements should factor into the decision to use other placements.</p>
-    </li>
-    <li>
-      <p>Top, bottom, left, and right placements are all acceptable depending on the context. Try to remain consistent in tooltip placement and <strong>designer discretion is advised.</strong></p>
-    </li>
-  </ul>
-
-  <p><a href="https://popper.js.org/index.html">External Reference for advanced tooltip placement behavior - Popper JS </a></p>
+  <p><strong>Example:</strong> Icon tooltip used to clarify the action or name of an icon button</p>
 
   <p><br /></p>
 
-  <p><!-- Start Overflow Tooltip Placement Row --></p>
-  <h5 id="overflow-tooltip-placement">Overflow Tooltip Placement</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltip-display-keyboard-shortcuts.png" width="" /></p>
 
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do change the position of the tooltip relative to the browser edge or component container in order to precent overflow</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't wrap text inside the tooltip in order to prevent overflow</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Overflow Tooltip Placement Row --></p>
+  <p><strong>Example:</strong> Tooltip used to display keyboard shortcuts</p>
 
-  <p><!-- Start Consistent Tooltip Placement Row --></p>
-  <h5 id="consistent-tooltip-placement">Consistent Tooltip Placement</h5>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do try to keep tooltips above the items or elements being highlighted </span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep the position of the tooltips consistent when edge or component overflow does not pose a challenge </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't be inconsistent and arbitrary with tooltip placement</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Consistent Tooltip Placement Row --></p>
+  <p><br /></p>
 
-  <p><!-- Start Tooltip Carets Row --></p>
-  <h5 id="tooltip-carets">Tooltip Carets</h5>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltips-user-input.png" width="" /></p>
 
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/checkboxes/file name.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do align the caret of the tooltip with the center of the element being emphasized</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Off center tooltips can lead to confusion about what element the tooltip is referencing </span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Tooltip Carets Row --></p>
+  <p><strong>Example:</strong> User inputted information should show user input exactly as the user typed it</p>
 
-  <p><!-- END Tooltip Placement Section --></p>
+  <p><br /></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltips-contextual-information.png" width="" /></p>
+
+  <p><strong>Example:</strong> Definition tooltip used to provide contextual information to a word, request, action, or element</p>
+
+  <p><br /></p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/tooltips/tooltips-interactive.png" width="" /></p>
+
+  <p><strong>Example:</strong> Interactive tooltips span from simple buttons or hyperlinks to more complex modules</p>
 
 </div>
 <!-- End Design Tab -->
