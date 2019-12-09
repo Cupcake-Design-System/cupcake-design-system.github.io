@@ -271,7 +271,7 @@ A badge with no content can be used to add visual attention to an element.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tags/ContactTags.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tags/ContactTags.png" width="">
 
 <br>
 
@@ -279,7 +279,7 @@ A badge with no content can be used to add visual attention to an element.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tags/StandardTags.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tags/StandardTags.png" width="">
 
 <hr>
 
