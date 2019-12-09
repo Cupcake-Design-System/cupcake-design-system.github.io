@@ -60,8 +60,64 @@ Use pagination to allow navigation between pages that represent an ordered colle
 <!-- Start Design Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Design Guidelines coming soon...
+## Types & Usage
 
+**Stepper Pagination**
+
+Stepper pagination offers finite control and is recommended when the number of pages is low.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+
+<br>
+
+**Manual Pagination**
+
+Manual pagination provides users with a way to jump to any page in the range. This is particularly helpful when a large number of pages exist.  
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+
+<br>
+
+**Items Per Page Filter**
+
+Pagination becomes a powerful tool for sorting and navigating data when combined with a basic "items per page filter." 
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+
+<br>
+
+**Truncation**
+
+When the number of pages in either direction exceeds 5, use ellipses to truncate results. 
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Double ellipses is used when 5 page numbers can be displayed between the first and last page. 
+
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Single ellipses is used when the beginning or end page is included in the "5" rule. 
+
+<hr>
+
+
+## Best Practices
+- Always clearly identify which page the user is on. 
+
+- Provide users with various ways to navigate. Previous & Next arrows allow for incremental navigation, while manual entry and hyperlinks provide larger step options. 
+
+- Where possible include the items per page filter. Giving the user control over this variable makes navigating data faster and more productive. 
+
+- Whatever type of pagination you chose to use (stepper or manual), remain consistent across the entire application.
+
+<hr>
+
+## Examples
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Selected Page Indicator
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Use of ellipses to display hidden page results. 
 
 </div>
 <!-- End Design Tab -->
