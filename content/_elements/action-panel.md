@@ -553,19 +553,19 @@ Action panels can be implemented where users need to access additional functiona
 
 **Default Action Panel**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/default-action-panel@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/default-action-panel@2x.png" width="50%;">
 
 <br>
 
 **Elastic Action Panel**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/elastic-action-panel@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/elastic-action-panel@2x.png" width="50%;">
 
 <br>
 
 **Overlay Action Panel**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/overlay-action-panel@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/action-panel/overlay-action-panel@2x.png" width="50%;">
 
 
 ### Structure
