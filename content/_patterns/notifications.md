@@ -33,18 +33,18 @@ Notifications can be configured to send the user email summaries and reminders.
 
 **Email summaries examples:**
 
-[Account link](https://ipreo.invisionapp.com/d/main#/console/18141293/380756505/preview)
+<a href="https://ipreo.invisionapp.com/d/main#/console/18141293/380756505/preview" target="_blank">Account Link</a>
 
-[Public link](https://ipreo.invisionapp.com/share/KXT8JYXV7JQ#/380756505_section-Cover-Summary)
+<a href="https://ipreo.invisionapp.com/share/KXT8JYXV7JQ#/380756505_section-Cover-Summary" target="_blank">Public Link</a>
 
 <br>
 
 **Email reminder examples:**
 
-[Account link](https://ipreo.invisionapp.com/d/main#/console/18141293/380756899/preview)
+<a href="https://ipreo.invisionapp.com/d/main#/console/18141293/380756899/preview" target="_blank">Account Link</a>
 
-[Public link](https://ipreo.invisionapp.com/share/KXT8JYXV7JQ#/380756899_section-Cover-Types)
+<a href="https://ipreo.invisionapp.com/share/KXT8JYXV7JQ#/380756899_section-Cover-Types" target="_blank">Public Link</a>
 
 ## Behaviour
-An clickable prototype that demonstrates the basic interactions is available in 
-[Invision](https://ipreo.invisionapp.com/d/main#/console/18141293/376520046/preview) 
+An clickable prototype that demonstrates the basic interactions is available in <a href="https://ipreo.invisionapp.com/d/main#/console/18141293/376520046/preview" target="_blank">Invision</a>
+
