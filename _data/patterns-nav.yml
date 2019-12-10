@@ -10,3 +10,7 @@
   pages:
     - title: Drag and Drop
     - title: Error Pages
+    - title: Date Picker
+    - title: Standard Form Validations
+    - title: Noficications
+    - title: AG Grid Validations

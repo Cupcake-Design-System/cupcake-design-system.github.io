@@ -33,7 +33,7 @@ The Drag and Drop interaction is typically combined with, but not limited to, th
 
 {% include guide-img.html img='patterns/drag-and-drop/cards-draganddrop' %}
 
-{% include guide-img.html img='patterns/drag-and-drop/drag-and-drop-confluence-example' %}
+<!-- {% include guide-img.html img='patterns/drag-and-drop/drag-and-drop-confluence-example' %} -->
 
 **Example:** drag and drop used to reorder cards on a dashboard
 
