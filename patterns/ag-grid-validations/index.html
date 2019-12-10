@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.">
+<meta name="description" content="In order to post the data contained in an AG Grid based table, a validation check has to be performed. The validation check is performed inline on each cell as it is completed, or on the table data as a whole when the form is posted.">
 
-<title>Cupcake · Error Page</title>
+<title>Cupcake · AG Grid Validations</title>
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -220,7 +220,7 @@
               href="https://cupcake-design-system.github.io/patterns/drag-and-drop/">
               Drag and Drop
             </a>
-          </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+          </li><li>
             <a class="doc-sidenav-menu-link"
               href="https://cupcake-design-system.github.io/patterns/error-pages/">
               Error Pages
@@ -240,7 +240,7 @@
               href="https://cupcake-design-system.github.io/patterns/notifications/">
               Notifications
             </a>
-          </li><li>
+          </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
             <a class="doc-sidenav-menu-link"
               href="https://cupcake-design-system.github.io/patterns/ag-grid-validations/">
               AG Grid Validations
@@ -259,8 +259,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img c-bg-primary">
-  <h1 class="docs-title" id="content">Error Page</h1>
-  <p class="docs-lead">Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.</p>
+  <h1 class="docs-title" id="content">AG Grid Validations</h1>
+  <p class="docs-lead">In order to post the data contained in an AG Grid based table, a validation check has to be performed. The validation check is performed inline on each cell as it is completed, or on the table data as a whole when the form is posted.</p>
 </div>
 
       
@@ -270,88 +270,98 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h3 id="structure">Structure</h3>
-
-<h5 id="our-error-pages-are-made-up-of-the-following">Our error pages are made up of the following:</h5>
+            <h2 id="types-of-ag-grid-validations">Types of AG Grid validations</h2>
 
 <ul>
-  <li>Icon</li>
-  <li>Reason/Explanation</li>
-  <li>Error Code</li>
-  <li>Contact Link/Button</li>
+  <li>inline validation flow</li>
+  <li>form post validation flow</li>
 </ul>
 
-<h3 id="types-of-error-pages">Types of Error Pages</h3>
+<p>To ensure proper identification of the type of errors, location of errors and the resultant restrictions as a result of the errors, we use three distinct layers of validation error indicators:</p>
 
 <ul>
-  <li><strong>Error 401</strong> - Authentication required to view page</li>
-  <li><strong>Error 403</strong> - Not authorized to view page</li>
-  <li><strong>Error 404</strong> - Page not found</li>
-  <li><strong>Error 500</strong> - Internal server error</li>
-  <li><strong>Error 503</strong> - Service unavailable</li>
+  <li><strong>At cell level</strong> - this identifies the cells/form fields where the errors are occurring, and what the errors are</li>
+  <li><strong>At row level</strong> - this identifies the row where the errors are located, and which cells/fields are missing</li>
+  <li><strong>At form level</strong> - this identifies that the form contains validation errors and subsequently cannot post</li>
 </ul>
+
+<p><strong>Disclaimer:</strong> These flows are an ideal user experience to work towards from a UX point of view and have not been cleared by Product for implementation.</p>
 
 <hr />
 
-<h4 id="error-401">Error 401</h4>
+<h2 id="inline-validation-flow-using-keyboard">Inline validation flow (using keyboard)</h2>
+<p>The inline validation flow communicate validation errors at cell and at row level.</p>
+
+<p>The example patterns offer two proposed flows based on either:</p>
 
 <ul>
-  <li>Error 401 requires the user to  sign in in order to view the page.</li>
-  <li>This error appears outside of an application because the user has not signed in yet.</li>
+  <li>highlighting the form fields</li>
+  <li>highlighting the cells that contain the form fields</li>
 </ul>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-401-example.png" /></p>
+<p><a href="https://ipreo.invisionapp.com/d/main#/console/18061142/375725792/preview" target="_blank">Account Link</a></p>
 
-<hr />
+<p><a href=" https://ipreo.invisionapp.com/share/6BTHZVEDMGV#/375725792_cover" target="_blank">Public Link</a></p>
 
-<h4 id="error-403">Error 403</h4>
+<h2 id="form-post-validation-flow">Form post validation flow</h2>
+<p>The form post validation flow communicate validation errors at form level, as well as on submit.</p>
+
+<p>Feedback on whether the form can be posted, is communicated:</p>
 
 <ul>
-  <li>Error 403 informs the user that they are not authorized to view the page that they are trying to access.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
+  <li>pre-submit - via the submit bar in response to cell and row level validation errors</li>
+  <li>post-submit - via toast alert</li>
 </ul>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-403-example.png" /></p>
+<p><a href="https://ipreo.invisionapp.com/d/main#/console/18528467/385224855/preview" target="_blank">Invision wireframes with notes</a></p>
 
-<hr />
-
-<h4 id="error-404">Error 404</h4>
+<h2 id="overview">Overview</h2>
+<p>The types of notifications depends on your requirements, but typically include the following:</p>
 
 <ul>
-  <li>Error 404 informs the user that the page they are trying to access cannot be found.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
+  <li>Actions performed by other users eg. comments on a shared workflow</li>
+  <li>Actions performed by users in another system eg. updates to a shared resource</li>
+  <li>Actions performed by the system eg. unavailability of a shared resource</li>
 </ul>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-404-example.png" /></p>
+<p><strong>Note:</strong> Messages that are delivered by the Alerts component (Banner, Box and Toast Alerts) should not be included as notifications. This will lead to confusion and duplication.</p>
 
-<hr />
+<h2 id="structure">Structure</h2>
 
-<h4 id="error-500">Error 500</h4>
+<p>Notifications should be non-invasive and non-interruptive, therefore are limited to:</p>
 
 <ul>
-  <li>Error 500 informs the user that they have run into a general error that doesn’t have much description around it.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
+  <li>a counter and panel trigger in the header</li>
+  <li>a panel where the notifications are read, managed and settings applied</li>
 </ul>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-500-example.png" /></p>
+<p>Specific controls are available on hover that allow notifications to be marked as read or removed.</p>
 
-<hr />
+<h2 id="settings">Settings</h2>
+<p>Notifications can be configured via a Settings panel. Settings should be kept simple by sticking to on/off switches.</p>
 
-<h4 id="error-503">Error 503</h4>
+<p><br /></p>
 
-<ul>
-  <li>Error 503 informs the user that the server can not handle the request.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
+<h2 id="email-integration">Email Integration</h2>
+<p>Notifications can be configured to send the user email summaries and reminders.</p>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-503-example-1.png" /></p>
+<p><strong>Email summaries examples:</strong></p>
 
-<p><img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-503-example-2.png" /></p>
+<p><a href="https://ipreo.invisionapp.com/d/main#/console/18141293/380756505/preview" target="_blank">Account Link</a></p>
+
+<p><a href="https://ipreo.invisionapp.com/share/KXT8JYXV7JQ#/380756505_section-Cover-Summary" target="_blank">Public Link</a></p>
+
+<p><br /></p>
+
+<p><strong>Email reminder examples:</strong></p>
+
+<p><a href="https://ipreo.invisionapp.com/d/main#/console/18141293/380756899/preview" target="_blank">Account Link</a></p>
+
+<p><a href="https://ipreo.invisionapp.com/share/KXT8JYXV7JQ#/380756899_section-Cover-Types" target="_blank">Public Link</a></p>
+
+<h2 id="behaviour">Behaviour</h2>
+<p>An clickable prototype that demonstrates the basic interactions is available in <a href="https://ipreo.invisionapp.com/d/main#/console/18141293/376520046/preview" target="_blank">Invision</a></p>
+
 
 
           </div>

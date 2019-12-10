@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.">
+<meta name="description" content="A widget that empowers the user to view an up-to-date calendar in order to see what dates are available and then select one or more consecutive dates.Time selection is optional depending on requirements.">
 
-<title>Cupcake · Error Page</title>
+<title>Cupcake · Date Picker</title>
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -220,12 +220,12 @@
               href="https://cupcake-design-system.github.io/patterns/drag-and-drop/">
               Drag and Drop
             </a>
-          </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+          </li><li>
             <a class="doc-sidenav-menu-link"
               href="https://cupcake-design-system.github.io/patterns/error-pages/">
               Error Pages
             </a>
-          </li><li>
+          </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
             <a class="doc-sidenav-menu-link"
               href="https://cupcake-design-system.github.io/patterns/date-picker/">
               Date Picker
@@ -259,8 +259,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img c-bg-primary">
-  <h1 class="docs-title" id="content">Error Page</h1>
-  <p class="docs-lead">Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.</p>
+  <h1 class="docs-title" id="content">Date Picker</h1>
+  <p class="docs-lead">A widget that empowers the user to view an up-to-date calendar in order to see what dates are available and then select one or more consecutive dates.Time selection is optional depending on requirements.</p>
 </div>
 
       
@@ -270,88 +270,34 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h3 id="structure">Structure</h3>
+            <h2 id="context-of-use">Context of use</h2>
+<p>The date picker should be available where dates and/or times need to be selected in order to accomplish a task.</p>
 
-<h5 id="our-error-pages-are-made-up-of-the-following">Our error pages are made up of the following:</h5>
+<h2 id="where-used">Where used</h2>
 
-<ul>
-  <li>Icon</li>
-  <li>Reason/Explanation</li>
-  <li>Error Code</li>
-  <li>Contact Link/Button</li>
-</ul>
-
-<h3 id="types-of-error-pages">Types of Error Pages</h3>
+<p>The date picker is typically used, but not restricted to, for the following:</p>
 
 <ul>
-  <li><strong>Error 401</strong> - Authentication required to view page</li>
-  <li><strong>Error 403</strong> - Not authorized to view page</li>
-  <li><strong>Error 404</strong> - Page not found</li>
-  <li><strong>Error 500</strong> - Internal server error</li>
-  <li><strong>Error 503</strong> - Service unavailable</li>
+  <li>to post a form</li>
+  <li>to book an event</li>
+  <li>to log an action</li>
 </ul>
 
-<hr />
+<h2 id="how-it-works">How it works</h2>
 
-<h4 id="error-401">Error 401</h4>
+<p>Date pickers will have different features depending on the requirements:</p>
 
 <ul>
-  <li>Error 401 requires the user to  sign in in order to view the page.</li>
-  <li>This error appears outside of an application because the user has not signed in yet.</li>
+  <li>single month + day + year selection</li>
+  <li>date range (month + day + year) selection</li>
+  <li>date &amp; time (month + day + year + time) selection</li>
+  <li>date + time range (month + day + year + time) selection</li>
+  <li>ability to change year easily (not a three screen fiasco like Bootstrap)</li>
+  <li>ability to add a date or date range without the aid of a mouse</li>
+  <li>text entry must parse multiple text formats (“Aug 15” / “August 15” / “15-aug” / “8/15”)</li>
+  <li>Optional suggesters (Last 7 days, Last 30 Days, Last 60 Days, Last 90 Days) will be useful</li>
 </ul>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-401-example.png" /></p>
-
-<hr />
-
-<h4 id="error-403">Error 403</h4>
-
-<ul>
-  <li>Error 403 informs the user that they are not authorized to view the page that they are trying to access.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
-
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-403-example.png" /></p>
-
-<hr />
-
-<h4 id="error-404">Error 404</h4>
-
-<ul>
-  <li>Error 404 informs the user that the page they are trying to access cannot be found.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
-
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-404-example.png" /></p>
-
-<hr />
-
-<h4 id="error-500">Error 500</h4>
-
-<ul>
-  <li>Error 500 informs the user that they have run into a general error that doesn’t have much description around it.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
-
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-500-example.png" /></p>
-
-<hr />
-
-<h4 id="error-503">Error 503</h4>
-
-<ul>
-  <li>Error 503 informs the user that the server can not handle the request.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
-
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-503-example-1.png" /></p>
-
-<p><img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-503-example-2.png" /></p>
 
 
           </div>

@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.">
+<meta name="description" content="The Notifications module surfaces activities related to your workflow, and can be configured via a Settings panel.">
 
-<title>Cupcake · Error Page</title>
+<title>Cupcake · Notifications</title>
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -220,7 +220,7 @@
               href="https://cupcake-design-system.github.io/patterns/drag-and-drop/">
               Drag and Drop
             </a>
-          </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
+          </li><li>
             <a class="doc-sidenav-menu-link"
               href="https://cupcake-design-system.github.io/patterns/error-pages/">
               Error Pages
@@ -235,7 +235,7 @@
               href="https://cupcake-design-system.github.io/patterns/standard-form-validations/">
               Standard Form Validations
             </a>
-          </li><li>
+          </li><li class="doc-sidenav-menu-item doc-sidenav-menu-item-active" >
             <a class="doc-sidenav-menu-link"
               href="https://cupcake-design-system.github.io/patterns/notifications/">
               Notifications
@@ -259,8 +259,8 @@
         
     <main class="main-container" role="main">
       <div class="docs-bg-img c-bg-primary">
-  <h1 class="docs-title" id="content">Error Page</h1>
-  <p class="docs-lead">Error pages identify what kind of error the user has encountered, include basic information about that particular error, and provide a solution/way out for the user.</p>
+  <h1 class="docs-title" id="content">Notifications</h1>
+  <p class="docs-lead">The Notifications module surfaces activities related to your workflow, and can be configured via a Settings panel.</p>
 </div>
 
       
@@ -270,88 +270,53 @@
         <div class="c-row">
           <div class="c-col-12 c-p-vertical-md">
 
-            <h3 id="structure">Structure</h3>
-
-<h5 id="our-error-pages-are-made-up-of-the-following">Our error pages are made up of the following:</h5>
-
-<ul>
-  <li>Icon</li>
-  <li>Reason/Explanation</li>
-  <li>Error Code</li>
-  <li>Contact Link/Button</li>
-</ul>
-
-<h3 id="types-of-error-pages">Types of Error Pages</h3>
+            <h2 id="overview">Overview</h2>
+<p>The types of notifications depends on your requirements, but typically include the following:</p>
 
 <ul>
-  <li><strong>Error 401</strong> - Authentication required to view page</li>
-  <li><strong>Error 403</strong> - Not authorized to view page</li>
-  <li><strong>Error 404</strong> - Page not found</li>
-  <li><strong>Error 500</strong> - Internal server error</li>
-  <li><strong>Error 503</strong> - Service unavailable</li>
+  <li>Actions performed by other users eg. comments on a shared workflow</li>
+  <li>Actions performed by users in another system eg. updates to a shared resource</li>
+  <li>Actions performed by the system eg. unavailability of a shared resource</li>
 </ul>
 
-<hr />
+<p><strong>Note:</strong> Messages that are delivered by the Alerts component (Banner, Box and Toast Alerts) should not be included as notifications. This will lead to confusion and duplication.</p>
 
-<h4 id="error-401">Error 401</h4>
+<h2 id="structure">Structure</h2>
+
+<p>Notifications should be non-invasive and non-interruptive, therefore are limited to:</p>
 
 <ul>
-  <li>Error 401 requires the user to  sign in in order to view the page.</li>
-  <li>This error appears outside of an application because the user has not signed in yet.</li>
+  <li>a counter and panel trigger in the header</li>
+  <li>a panel where the notifications are read, managed and settings applied</li>
 </ul>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-401-example.png" /></p>
+<p>Specific controls are available on hover that allow notifications to be marked as read or removed.</p>
 
-<hr />
+<h2 id="settings">Settings</h2>
+<p>Notifications can be configured via a Settings panel. Settings should be kept simple by sticking to on/off switches.</p>
 
-<h4 id="error-403">Error 403</h4>
+<p><br /></p>
 
-<ul>
-  <li>Error 403 informs the user that they are not authorized to view the page that they are trying to access.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
+<h2 id="email-integration">Email Integration</h2>
+<p>Notifications can be configured to send the user email summaries and reminders.</p>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-403-example.png" /></p>
+<p><strong>Email summaries examples:</strong></p>
 
-<hr />
+<p><a href="https://ipreo.invisionapp.com/d/main#/console/18141293/380756505/preview" target="_blank">Account Link</a></p>
 
-<h4 id="error-404">Error 404</h4>
+<p><a href="https://ipreo.invisionapp.com/share/KXT8JYXV7JQ#/380756505_section-Cover-Summary" target="_blank">Public Link</a></p>
 
-<ul>
-  <li>Error 404 informs the user that the page they are trying to access cannot be found.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
+<p><br /></p>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-404-example.png" /></p>
+<p><strong>Email reminder examples:</strong></p>
 
-<hr />
+<p><a href="https://ipreo.invisionapp.com/d/main#/console/18141293/380756899/preview" target="_blank">Account Link</a></p>
 
-<h4 id="error-500">Error 500</h4>
+<p><a href="https://ipreo.invisionapp.com/share/KXT8JYXV7JQ#/380756899_section-Cover-Types" target="_blank">Public Link</a></p>
 
-<ul>
-  <li>Error 500 informs the user that they have run into a general error that doesn’t have much description around it.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
+<h2 id="behaviour">Behaviour</h2>
+<p>An clickable prototype that demonstrates the basic interactions is available in <a href="https://ipreo.invisionapp.com/d/main#/console/18141293/376520046/preview" target="_blank">Invision</a></p>
 
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-500-example.png" /></p>
-
-<hr />
-
-<h4 id="error-503">Error 503</h4>
-
-<ul>
-  <li>Error 503 informs the user that the server can not handle the request.</li>
-  <li>This error appears inside of an application when the user is signed in.</li>
-</ul>
-
-<p><strong>Example of Use</strong>
-<img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-503-example-1.png" /></p>
-
-<p><img src="https://cupcake-design-system.github.io/assets/img/patterns/error-pages/error-503-example-2.png" /></p>
 
 
           </div>
