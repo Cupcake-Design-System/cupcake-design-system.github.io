@@ -10,8 +10,7 @@
     "deploy-surge": "npm run compile-demo && npm run surge",
     "compile": "bundle exec jekyll build --config _config.yml,_config.prod.yml",
     "compile-demo": "bundle exec jekyll build --config _config.yml,_config.demo.yml",
-    "start": "bundle exec jekyll serve --livereload --config _config.yml",
-    "dev": "gulp"
+    "start": "bundle exec jekyll serve --livereload --config _config.yml"
   },
   "dependencies": {
     "git-directory-deploy": "1.5.1",
