@@ -283,8 +283,6 @@ Primary modals are used to deliver content or additional functionality that supp
 
 ## Examples
 
-**Example:** a user profile icon in the header
-
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fixed_Width.png" width="50%">
 
 <br>
