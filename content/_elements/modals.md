@@ -1,6 +1,6 @@
 ---
 title: Modals
-description: Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task.
+description: Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task. Modals should be used sparingly as they interrupt the user's workflow.
 tabs:
 - Code
 - Guidelines
@@ -201,7 +201,46 @@ The default modal contains a header, body, and footer section.
 <!-- Start Design Guidelines Section  -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Overview
+## Types of primary modals
+
+- [Fixed Width Modal](#fixed-width-modal)   
+- [Flexible Width Modal](#flexible-width-modal) <a name="flexible-width-modal"></a>
+- [Full Screen Modal](#full-screen-modal) <a name="full-screen-modal"></a>
+
+
+## Usage
+Standard modals are used to deliver content or additional functionality that supports the underlying page or task
+
+## General best practices
+- Always keep titles short and descriptive
+- Always use either a single or two button combination for the modal dialogs 
+- Always stick to default button sizing
+- Always make sure buttons are the last element users interact with in a modal
+
+<hr>
+
+## Fixed Width Modal <a name="fixed-width-modal"></a>
+
+#### Behavior
+
+- Positioned a fixed distance from the top of the browser
+- Width is fixed
+- As content height increases modal grows in height
+- Grows in height until content starts overflowing
+- Tool bar at the bottom then become fixed and a scroll bar appears
+- Distance from bottom of modal to bottom edge of browser is equal to distance from the top of the browser
+
+#### Best Practices
+- Use content that fits inside the modal
+- Use content that works with vertical expansion
+
+
+
+
+
+
+
+
 
 **Modals generally conform to the following criteria:**
 
