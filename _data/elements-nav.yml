@@ -8,20 +8,17 @@
     - title: Buttons
     - title: Card
     - title: Checkboxes
-    # - title: Drag and Drop
     - title: Dropdown
-    # - title: Error Pages
     - title: Forms
     - title: Loaders
     - title: Media Object
     - title: Modals
     - title: Pagination
-    - title: Progress
+    - title: Progress Bar
     - title: Radio Buttons
     - title: Switches
     - title: Table
     - title: Tabs
-    - title: Tags
     - title: Tooltips
 
 - title: CSS Utilities

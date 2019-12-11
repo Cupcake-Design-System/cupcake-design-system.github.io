@@ -29,7 +29,8 @@ category: Pages
 * This error appears outside of an application because the user has not signed in yet.
 
 **Example of Use**
-{% include guide-img.html img='patterns/error-pages/error-401-example' %}
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-401-example.png" width="50%">
 
 <hr>
 
@@ -39,7 +40,8 @@ category: Pages
 * This error appears inside of an application when the user is signed in.
 
 **Example of Use**
-{% include guide-img.html img='patterns/error-pages/error-403-example' %}
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-403-example.png" width="50%">
 
 <hr>
 
@@ -49,7 +51,8 @@ category: Pages
 * This error appears inside of an application when the user is signed in.
 
 **Example of Use**
-{% include guide-img.html img='patterns/error-pages/error-404-example' %}
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-404-example.png" width="50%">
 
 <hr>
 
@@ -59,7 +62,8 @@ category: Pages
 * This error appears inside of an application when the user is signed in.
 
 **Example of Use**
-{% include guide-img.html img='patterns/error-pages/error-500-example' %}
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-500-example.png" width="50%">
 
 <hr>
 
@@ -69,6 +73,8 @@ category: Pages
 * This error appears inside of an application when the user is signed in.
 
 **Example of Use**
-{% include guide-img.html img='patterns/error-pages/error-503-example-1' %}
 
-{% include guide-img.html img='patterns/error-pages/error-503-example-2' %}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-503-example-1.png" width="50%">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-503-example-2.png" width="50%">
+

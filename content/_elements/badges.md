@@ -272,7 +272,7 @@ A badge with no content can be used to add visual attention to an element.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/StatusBadges.png" width="25%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/StatusBadges.png">
 
 <br>
 
@@ -280,7 +280,7 @@ A badge with no content can be used to add visual attention to an element.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/Numeric Badges.png" width="5%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/Numeric Badges.png" >
 
 <hr>
 
@@ -293,19 +293,19 @@ A badge with no content can be used to add visual attention to an element.
 
 #### Badge Colors
 
-[Cupcake Color Palette](https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color)
+<a href="https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color" target="_blank">Cupcake Color Palette</a>
 
 <br>
 
 #### Light Color Set
 - Only use values 3-5 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="500px;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/LightColorSet.png" width="50%;">
 
 #### Dark Color Set**
 - Only use values 6-9 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="500px;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/DarkColorSet.png" width="50%;">
 
 <hr>
   
@@ -328,7 +328,6 @@ A badge with no content can be used to add visual attention to an element.
 - Try to use a different shape or color value/set to visually differentiate badges from similar visual elements such as tags 
 
 ### Best practices with Numeric Badges 
-
 - Use only numbers in numeric badges 
 
 
@@ -346,14 +345,14 @@ A badge with no content can be used to add visual attention to an element.
 
 **Status Badges in cards** 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/BadgesInCards.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/BadgesInCards.png">
 
 <br>
 
    
 **Numeric Badges in media list items** 
  
- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/NumericBadgesMediaLists.png" width="50%;">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/badges/new format/NumericBadgesMediaLists.png" width="35%;">
 
 </div>
 <!-- End Design Tab -->

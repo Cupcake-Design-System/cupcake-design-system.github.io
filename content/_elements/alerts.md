@@ -131,7 +131,7 @@ Designed to sit flush vertically and horizontally within a container. In most ca
 <!-- Start Design Guidelines Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Overview
+# Overview <a name="back-to-top"></a>
 
 ### Types of alerts available:
 - [Banner alert](#banner-alert)
@@ -154,7 +154,7 @@ Banner alerts communicate critical system status information that could affect t
 
 - <b>Note</b>: Persistent banner alerts can also be hidden by clicking on the hide button. When a banner is hidden it will not show for the duration of a user session, but will reappear when the user logs in again, provided the condition (for it's activation) is still valid.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/banner-alert-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/banner-alert-example@2x.png" width="25%;">
 
 
 ### Variations
@@ -177,31 +177,31 @@ Banner Alerts should be used sparingly to communicate informational, warning or 
 
 ### Examples
 
-**An dismissible informational Banner alert with a link to more information**
+An dismissible informational Banner alert with a link to more information
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/info-banner-alert-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/info-banner-alert-example@2x.png" width="50%;">
 
 <br>
 
-**A persistent danger Banner alert**
+A persistent danger Banner alert
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/danger-banner-alert-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/banner-alert-new-format/danger-banner-alert-example@2x.png" width="50%;">
 <!-- End Banner Alert Section -->
 
 <hr>
 
 <!-- Start Box Alert Section -->
 ## Box Alerts <a name="box-alert"></a>
-Boxed alerts communicate the status of a page or component, sometimes in response to user actions.
+Box alerts communicate the status of a page or component, sometimes in response to user actions.
 
 ### Placement & Behaviour
 - Box alerts fade in at the top of the page or component it relates to, pushing down the content and remains there until the issue is resolved or it is dismissed.
 
 - Box alerts can be persistent or dismissible, depending on how serious the issue is that it is communicating.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/box-alert-example-1@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/box-alert-example-1@2x.png" width="25%;">
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/box-alert-example-2@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/box-alert-example-2@2x.png" width="25%;">
 
 
 ### Variations
@@ -210,29 +210,25 @@ Box Alerts should be used to communicate informational, warning or danger messag
 
 ### Best Practices
 - Try to show only one Box alert at a time. Two at the most in extreme cases
-
 - If two Box alerts are shown at the same time, the latest one will appear at the top
-
-Box alerts must sit in the container of the page or component it relates to
+- Box alerts must sit in the container of the page or component it relates to
 - Allow users to hide or dismiss Box alerts that communicate non-critical system information
-
 - Keep copy on all alerts short and to the point
-
 - If available, do include links for the user to either rectify the situation or find out more information
 
 <hr>
 
 ## Examples
 
-**A persistent danger Box alert**
+A persistent danger Box alert
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/danger-box-alert-example@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/danger-box-alert-example@2x.png" width="25%;">
 
 <br>
 
-**An dismissible informational Box alert with a link to more information**
+An dismissible informational Box alert with a link to more information
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/info-banner-alert-example@2x.png" width="100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/box-alerts-new-format/info-banner-alert-example@2x.png" width="50%;">
 <!-- End Box Alert Section -->
 
 <hr>
@@ -246,7 +242,7 @@ Toast alerts serve as a feedback & confirmation mechanism after the user perform
 
 - Banner alerts auto-clear after a period of time but can also be dismissed by the user.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert-new-format/toast-alert-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert-new-format/toast-alert-example@2x.png" width="25%;">
 
 ### Variations
 
@@ -267,24 +263,26 @@ Toast Alerts should be used to communicate informational, warning, danger or suc
 
 ## Examples
 
-**An informational Toast alert**
+An informational Toast alert
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert-new-format/info-toast-alert-example@2x.png" width="50%;">
 
 <br>
 
-**A success Toast alert**
+A success Toast alert
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert-new-format/success-toast-alert-example@2x.png" width="50%;">
 
 <br>
 
-**A danger Toast alert**
+A danger Toast alert
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/alerts/toast-alert-new-format/danger-toast-alert-example@2x.png" width="50%;">
 
 <!-- End Toast Alerts Section -->
 
+
+[Back to Top](#back-to-top)
 
 
 </div>

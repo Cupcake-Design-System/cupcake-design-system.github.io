@@ -139,7 +139,7 @@ Checkboxes should be combined with accompanying text or a label.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="75%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="50%;">
 
 ### Best Practices
 

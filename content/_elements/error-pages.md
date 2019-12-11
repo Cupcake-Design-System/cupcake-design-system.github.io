@@ -71,7 +71,7 @@ This error appears outside of an application because the user has not signed in 
   <!-- Start Examples of Use Row -->
   <div class="c-header-sm">Examples of Use</div>
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="50%;">
   <!-- End Examples of Use Row -->
   <!-- END Error 401 Section -->
 
@@ -86,7 +86,7 @@ This error appears inside of an application when the user is signed in.
   <!-- Start Examples of Use Row -->
   <div class="c-header-sm">Examples of Use</div>
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="50%;">
   <!-- End Examples of Use Row -->
   <!-- END Error 403 Section -->
 
@@ -101,7 +101,7 @@ This error appears inside of an application when the user is signed in.
   <!-- Start Examples of Use Row -->
   <div class="c-header-sm">Examples of Use</div>
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="50%;">
   <!-- End Examples of Use Row -->
   <!-- END Error 404 Section -->
 
@@ -116,7 +116,7 @@ This error appears inside of an application when the user is signed in.
   <!-- Start Examples of Use Row -->
   <div class="c-header-sm">Examples of Use</div>
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="50%;">
 <!-- End Examples of Use Row -->
 <!-- END Error 500 Section -->
 
@@ -131,9 +131,9 @@ This error appears inside of an application when the user is signed in.
   <!-- Start Examples of Use Row -->
   <div class="c-header-sm">Examples of Use</div>
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="50%;">
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="500px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/error-pages/nameoffile.png" width="50%;">
 <!-- End Examples of Use Row -->
 <!-- END Error 503 Section -->
 

@@ -1,6 +1,6 @@
 ---
 title: Tabs
-description: Tabs keep related content in a single container
+description: Tabs are a secondary navigation element used to organise content, allowing users to quickly navigate between different views or types of information in a single container. 
 sizes:
 - xs
 - sm
@@ -8,6 +8,7 @@ sizes:
 - xl
 tabs:
 - Code
+- Angular
 - Guidelines
 ---
 
@@ -213,7 +214,41 @@ By default tabs are left aligned. Additional classes provide center and right al
 <!-- Start Design Tab -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-# Design Guidelines coming soon...
+## Types & Usage
+
+#### Standard tabs
+Use the standard tabs for a full page or full panel content change.
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+
+#### Bordered tabs
+Use the bordered tabs when a specific area or space needs to be visually defined.
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+
+#### Labels
+Tab labels should clearly state the content on each tab using as few words as possible.
+
+<hr>
+
+## Best Practices
+- Text labels are always more effective than icons. While icons may be used to provide added context they should not be used in place of text. 
+- Avoid using dropdown menus in tabs. If a tab requires additional sub-items consider using a different navigational approach. 
+- Overflow patterns should be used only to provide responsive flexibility when the screen size can not support all the tabs. 
+
+<hr>
+
+## Examples
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Icons can provide content to a tab but should always be used with text a label
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+Example: Overflow Tab Menu
+
+
+
+
+
+
 
 
 </div>
