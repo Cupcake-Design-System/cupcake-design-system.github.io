@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task.">
+<meta name="description" content="Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task. Modals should be used sparingly as they interrupt the user's workflow.">
 
 <title>Cupcake · Modals</title>
 
@@ -273,11 +273,6 @@
             </a>
           </li><li>
             <a class="doc-sidenav-menu-link"
-              href="https://cupcake-design-system.github.io/elements/tags/">
-              Tags
-            </a>
-          </li><li>
-            <a class="doc-sidenav-menu-link"
               href="https://cupcake-design-system.github.io/elements/tooltips/">
               Tooltips
             </a>
@@ -374,7 +369,7 @@
     <main class="main-container" role="main">
       <div class="docs-bg-img c-bg-primary">
   <h1 class="docs-title" id="content">Modals</h1>
-  <p class="docs-lead">Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task.</p>
+  <p class="docs-lead">Modals deliver content, communicate information or require interaction while allowing the user to maintain the context of a particular task. Modals should be used sparingly as they interrupt the user's workflow.</p>
 </div>
 
       
@@ -740,891 +735,169 @@
 <!-- Start Design Guidelines Section  -->
 <div id="guidelines" class="docs-tabs-content">
 
-  <h1 id="overview">Overview</h1>
+  <h2 id="overview-">Overview <a name="back-to-top"></a></h2>
 
-  <p><strong>Modals generally conform to the following criteria:</strong></p>
-
+  <p><strong>There are two types of modals:</strong></p>
   <ul>
-    <li>Modals appear on a layer above of the main content</li>
-    <li>Modals require user interaction</li>
-    <li>Modals disable the main content until the user explicitly interacts with the dialog</li>
-  </ul>
-
-  <p><strong>Currently the following modals are in use:</strong></p>
-
-  <ul>
-    <li>Standard modals</li>
-    <li>Modal dialogs</li>
+    <li><a href="#primary-modal">Primary Modal</a></li>
+    <li><a href="#modal-dialog">Modal Dialog</a></li>
   </ul>
 
   <hr />
 
-  <p><!-- Start Standard Modals Section --></p>
-  <h2 id="standard-modals">Standard Modals</h2>
-  <p>Standard modals are used to deliver content or additional functionality that supports the underlying page or task.</p>
+  <h2 id="primary-modals-">Primary Modals <a name="primary-modal"></a></h2>
 
-  <h3 id="structure">Structure</h3>
-  <p><strong>Standard modals are typically made up of the following:</strong></p>
+  <h3 id="types-of-primary-modals">Types of primary modals</h3>
 
   <ul>
-    <li>Heading</li>
-    <li>Close button</li>
-    <li>Content area</li>
-    <li>A 1 button or a 2 button combination (depending on the use case)</li>
+    <li><a href="#fixed-width-modal">Fixed Width Modal</a> <a name="fixed-width-modal"></a></li>
+    <li><a href="#flexible-width-modal">Flexible Width Modal</a> <a name="flexible-width-modal"></a></li>
+    <li><a href="#full-screen-modal">Full Screen Modal</a> <a name="full-screen-modal"></a></li>
   </ul>
 
-  <p><br /></p>
+  <h2 id="usage">Usage</h2>
+  <p>Primary modals are used to deliver content or additional functionality that supports the underlying page or task</p>
 
-  <h4 id="types-of-standard-modals">Types of Standard Modals</h4>
-  <p><strong>Standard modals are typically made up of the following:</strong></p>
-
+  <h2 id="general-best-practices">General best practices</h2>
   <ul>
-    <li>Fixed width standard modals</li>
-    <li>Flexible width standard modals (variation)</li>
-    <li>Full screen modals (variation)</li>
+    <li>Always keep titles short and descriptive</li>
+    <li>Always use either a single or two button combination for the modal dialogs</li>
+    <li>Always stick to default button sizing</li>
+    <li>Always make sure buttons are the last element users interact with in a modal</li>
   </ul>
-
-  <p><br /></p>
-
-  <!-- Start Standard Modals -Examples of Use -->
-  <h4 id="examples-of-use">Examples of use</h4>
-
-  <p><br /></p>
-
-  <h5 id="fixed-width-modal">Fixed Width Modal</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Fixed_Width.png" width="50%;" /></p>
-
-  <p><br /></p>
-
-  <h5 id="flexible-width-modal">Flexible Width Modal</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Flexible_Width.png" width="50%;" /></p>
-
-  <p><br /></p>
-
-  <h5 id="full-screen-modal">Full Screen Modal</h5>
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Fullscreen.png" width="50%;" />
-<!-- End Standard Modals -Examples of Use --></p>
-
-  <p><br /></p>
-
-  <!-- Start Standard Modals - General Dos and Donts  -->
-  <h4 id="general-dos-and-donts">General Do’s and Dont’s</h4>
-
-  <p><!-- Start Titles Row --></p>
-  <h5 id="titles">Titles</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_Titles_Do.png" /> 
-    </div>
-    <div class="c-col">
-      <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_Titles_Dont.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep titles short and descriptive</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use long wordy titles or sentences</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Titles Row --></p>
-
-  <p><!-- Start Button Usage Row --></p>
-  <h5 id="button-usage">Button Usage</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_ButtonUse_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_ButtonUse_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use either a single or two button combination for the modal dialogs </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than two buttons</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Button Usage Row --></p>
-
-  <!-- Start Button Sizing Row -->
-  <h5 id="button-sizing">Button Sizing</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_ButtonSize_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_ButtonSize_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do stick to default button sizing</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't force button width or height outside of what Cupcake allows for</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Button Sizing Row --></p>
-
-  <p><!-- Start Button Placement Row --></p>
-  <h5 id="button-placement">Button Placement</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_ButtonPlace_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_ButtonPlace_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do make sure buttons are the last element users interact with in a modal</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't place any text or interactions underneath a button</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <p><!-- End Button Placement Row -->
-  <!-- End Standard Modals - General Dos and Donts  -->
-  <!-- End Standard Modals Section --></p>
 
   <hr />
 
-  <p><!-- Start Fixed Width Modals Section --></p>
-  <h3 id="fixed-width-modals">Fixed Width Modals</h3>
-  <p>The default version of standard modals.</p>
+  <h2 id="fixed-width-modal-">Fixed Width Modal <a name="fixed-width-modal"></a></h2>
 
-  <p><br /></p>
-
-  <!-- Start Behavior Row -->
   <h4 id="behavior">Behavior</h4>
 
-  <div class="c-row c-m-top-lg">
-    <div class="c-col c-text-bold">
-    Default
-    </div>
-    <div class="c-col c-text-bold">
-    Overflow
-    </div>
-  </div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FXD_DefaultBehaviour.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FXD_OverflowBehaviour.png" />
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Positioned a fixed distance from the top of the browser</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Width is fixed</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">As content height increases modal grows in height</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Grows in height until content starts overflowing</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Tool bar at the bottom then become fixed and a scroll bar appears</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Distance from bottom of modal to bottom edge of browser is equal to distance from the top of the browser</span>
-        </div>
-      </div>
-    </div>
-    </div>
-  <p><!-- End Behavior Row --></p>
+  <ul>
+    <li>Positioned a fixed distance from the top of the browser</li>
+    <li>Width is fixed</li>
+    <li>As content height increases modal grows in height</li>
+    <li>Grows in height until content starts overflowing</li>
+    <li>Tool bar at the bottom then become fixed and a scroll bar appears</li>
+    <li>Distance from bottom of modal to bottom edge of browser is equal to distance from the top of the browser</li>
+  </ul>
 
-  <!-- Start Fixed Width Modals - Dos and Donts  -->
-  <h4 id="dos-and-donts">Do’s and Dont’s</h4>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FXD_Content_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FXD_Content_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that fits inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that works with vertical expansion</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that won't fit inside the modal</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- END Fixed Width Modals - Dos and Donts  --&gt; &lt;!-- End Fixed Width Modals Section --&gt;
-</code></pre></div>  </div>
+  <h4 id="best-practices">Best Practices</h4>
+  <ul>
+    <li>Use content that fits inside the modal</li>
+    <li>Use content that works with vertical expansion</li>
+  </ul>
 
   <hr />
 
-  <p><!-- Start Flexible Width Modals Section --></p>
-  <h3 id="flexible-width-modals">Flexible Width Modals</h3>
-  <p>A variation of the standard modal, the width of this modal can be adjusted to suit content too wide for the fixed width version.</p>
+  <h2 id="flexible-width-modal-">Flexible Width Modal <a name="flexible-width-modal"></a></h2>
 
-  <p><br /></p>
-
-  <!-- Start Behavior Row -->
   <h4 id="behavior-1">Behavior</h4>
 
-  <div class="c-row c-m-top-lg">
-    <div class="c-col c-text-bold">
-    Default
-    </div>
-    <div class="c-col c-text-bold">
-    Overflow
-    </div>
-  </div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FW_DefaultBehaviour.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FW_OverflowBehaviour.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">In this variation, the default width is overridden as needed to suit content</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Positioned a fixed distance from the top of the browser</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">As content height increases, modal grows in height</span>
-        </div>
-      </div>
-    </div>
-    <!-- Start Overflow Behavior-->
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Width can grow until distance between the modal edge and the browser edge is equal to the distance from the top of the browser</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Grows in height until content starts overflowing</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Tool bar at the bottom then become fixed and a scroll bar appears</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Distance from bottom of modal to bottom edge of browser is equal to distance from the top of the browser</span>
-        </div>
-      </div>
-    </div>
-    </div>
-  <p><!-- End Behavior Row --></p>
+  <ul>
+    <li>In this variation, the default width is overridden as needed to suit content</li>
+    <li>Positioned a fixed distance from the top of the browser</li>
+    <li>As content height increases, modal grows in height</li>
+    <li>Width can grow until distance between the modal edge and the browser edge is equal to the distance from the top of the browser</li>
+    <li>Grows in height until content starts overflowing</li>
+    <li>Tool bar at the bottom then become fixed and a scroll bar appears</li>
+    <li>Distance from bottom of modal to bottom edge of browser is equal to distance from the top of the browser</li>
+  </ul>
 
-  <!-- Start Flexible Width Modals - Dos and Donts  -->
-  <h4 id="dos-and-donts-1">Do’s and Dont’s</h4>
+  <h4 id="best-practices-1">Best practices</h4>
 
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FW_Content_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FW_Content_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that fits inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that works with vertical expansion</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that won't fit inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that would require a horizontal scroll bar</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- END Flexible Width Modals - Dos and Donts  --&gt; &lt;!-- End Flexible Width Modals Section --&gt;
-</code></pre></div>  </div>
+  <ul>
+    <li>Use content that fits inside the modal</li>
+    <li>Use content that works with vertical expansion</li>
+  </ul>
 
   <hr />
 
-  <p><!-- Start Full Screen Modals Section --></p>
-  <h3 id="full-screen-modals">Full Screen Modals</h3>
-  <p>Another variation of the standard modal, this version is used to display large tables and grids.</p>
+  <h2 id="full-screen-modal-">Full Screen Modal <a name="full-screen-modal"></a></h2>
 
-  <p><br /></p>
-
-  <!-- Start Behavior Row -->
   <h4 id="behavior-2">Behavior</h4>
+  <ul>
+    <li>In this variation the modal edges are a set and equal distance away from the edge of the browser on all sides</li>
+    <li>The modal occupies the maximum screen area independent of content</li>
+    <li>When the width or height of content overflows, the tool bar at the bottom become fixed and a horizontal and/or vertical scroll bar appears</li>
+  </ul>
 
-  <div class="c-row c-m-top-lg">
-    <div class="c-col c-text-bold">
-    Default
-    </div>
-    <div class="c-col c-text-bold">
-    Overflow
-    </div>
-  </div>
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FULL_DefaultBehaviour.png" /> 
-    </div>
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FULL_OverflowBehaviour.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">In this variation the modal edges are a set and equal distance away from the edge of the browser on all sides</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">The modal occupies the maximum screen area independent of content</span>
-        </div>
-      </div>
-    </div>
-    <!-- Start Overflow Behavior-->
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">When the width or height of content overflows, the tool bar at the bottom become fixed and a horizontal  and/or vertical scroll bar appears</span>
-        </div>
-      </div>
-    </div>
-    </div>
-  <p><!-- End Behavior Row --></p>
-
-  <!-- Start Full Screen Modals - Dos and Donts  -->
-  <h4 id="dos-and-donts-2">Do’s and Dont’s</h4>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FW_Content_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Modals_FW_Content_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that fits inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that works with vertical expansion</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that won't fit inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that would require a horizontal scroll bar</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- END Full Screen Modals - Dos and Donts  --&gt; &lt;!-- End Full Screen Modals Section --&gt;
-</code></pre></div>  </div>
+  <h4 id="best-practices-2">Best practices</h4>
+  <ul>
+    <li>Use tables and grids in the full screen modals</li>
+  </ul>
 
   <hr />
 
-  <p><!-- Start Modal Dialogs Section --></p>
-  <h3 id="modal-dialogs">Modal Dialogs</h3>
+  <h2 id="examples">Examples</h2>
 
-  <p><strong>Modal Dialogs are used to communicate important information, and require a user response.</strong></p>
+  <p><strong>Example:</strong> a user profile icon in the header</p>
 
-  <ul>
-    <li>Structure</li>
-    <li>Heading</li>
-    <li>Supportive copy</li>
-    <li>An confirmation checkbox (optional)</li>
-    <li>A one button or two button combination (depending on the use case)</li>
-  </ul>
-
-  <p><strong>Types of Modal Dialogs:</strong></p>
-
-  <ul>
-    <li>Modal dialogs requiring acknowledgement</li>
-    <li>Modal dialogs requiring a decision</li>
-  </ul>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Fixed_Width.png" width="50%" /></p>
 
   <p><br /></p>
 
-  <!-- Start Modal Dialogs -General Dos and Don'ts -->
-  <h4 id="general-dos-and-donts-1">General Do’s and Dont’s</h4>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/Flexible_Width.png" width="50%" /></p>
 
-  <!-- Start Icon Usage Row -->
-  <h5 id="icon-usage-optional">Icon Usage (optional)</h5>
+  <p><br /></p>
 
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_Icon_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_Icon_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use the following icons for Modal Dialogs</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use floating icons, custom icons, or icons that don't add clarity to the messaging</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Icon Usage Row -->
-
-  <!-- Start Icon Placement Row -->
-  <h5 id="icon-placement">Icon Placement</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_IconPlacement_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_IconPlacement_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep the icon to the left of and aligned with the title</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do change the default placement of the icon in the modal dialogs</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Icon Placement Row -->
-
-  <!-- Start Headings Row -->
-  <h5 id="headings">Headings</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_Headings_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_Headings_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep headings short and descriptive</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use long wordy titles or sentences that might wrap</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Headings Row -->
-
-  <!-- Start Supportive Copy Row -->
-  <h5 id="supportive-copy">Supportive Copy</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_Copy_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_Copy_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep text short and descriptive</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep longer descriptions under 2 lines</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't have more than two lines of text</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Supportive Copy Row -->
-
-  <!-- Start Button Sizing Row -->
-  <h5 id="button-sizing-1">Button Sizing</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_ButtonSize_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_ButtonSize_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md"> Do stick to default button sizing</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't force button width or height outside of what Cupcake allows for</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Button Sizing Row -->
-
-  <!-- Start Button Placement Row -->
-  <h5 id="button-placement-1">Button Placement</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_ButtonPlace_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_ButtonPlace_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do make sure buttons are the last element users interact with in a modal</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't place any text or interactions underneath a button</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Button Placement Row -->
-
-  <!-- Start Positioning Row -->
-  <h5 id="positioning">Positioning</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_Position_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_Position_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do stick to the default positioning of the modal dialogs </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't adjust the margins or padding around the modal dialogs in any way</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Positioning Row -->
-  <!-- End Modal Dialog General Dos and Donts -->
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/FULLSCREEN.png" width="50%" /></p>
 
   <hr />
 
-  <!-- Start Modal Dialog Requiring and Acknowledgement Section-->
-  <h3 id="modal-dialog-requiring-an-acknowledgement">Modal Dialog requiring an acknowledgement</h3>
+  <h2 id="modal-dialog-">Modal Dialog <a name="modal-dialog"></a></h2>
 
-  <p><br /></p>
+  <h3 id="types-of-modal-dialogs">Types of Modal Dialogs</h3>
+  <ul>
+    <li><a href="#modal-dialog-requiring-acknowledgement">Modal dialogs requiring acknowledgement</a></li>
+    <li><a href="#modal-dialog-requiring-a-decision">Modal dialogs requiring a decision</a></li>
+  </ul>
 
-  <h4 id="examples-of-use-1">Examples of Use</h4>
+  <h3 id="usage-1">Usage</h3>
+  <p>Modal Dialogs are used to communicate important information, and require a user response.</p>
 
-  <p>This modal dialog requires the user to acknowledge important information, but not to make any specific decisions.</p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/MDA_Example1.png" width="500px;" /></p>
-
-  <p><br /></p>
-
-  <p>This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue. This version contains a checkbox that, if checked, will make it a once-off acknowledgement.</p>
-
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/MDA_Example2.png" width="500px;" />
-<!-- END Modal Dialog Requiring and Acknowledgement Section--></p>
-
-  <p><br /></p>
-
-  <h4 id="dos-and-donts-3">Do’s and Dont’s</h4>
-
-  <!-- Start Modal Dialog Requiring Acknowledgement - Button Usage Row -->
-  <h5 id="button-usage-1">Button Usage</h5>
-
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_MDA_Button_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_MDA_Button_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use a single button for acknowledgement </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use two buttons or more for acknowledgement</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Modal Dialog Requiring Acknowledgement - Button Usage Row -->
+  <h3 id="general-best-practices-1">General best practices</h3>
+  <ul>
+    <li>Always keep the icon to the left of and aligned with the title</li>
+    <li>Always keep headings short and descriptive</li>
+    <li>Always keep text short and descriptive</li>
+    <li>Always stick to default button sizing</li>
+    <li>Always make sure buttons are the last element users interact with in a modal</li>
+    <li>Always stick to the default positioning of the modal dialogs</li>
+  </ul>
 
   <hr />
 
-  <!-- Start Modal Dialog Requiring Decision Section-->
-  <h3 id="modal-dialog-requiring-a-decision">Modal Dialog requiring a decision</h3>
+  <h2 id="modal-dialog-requiring-acknowledgement-">Modal Dialog Requiring Acknowledgement <a name="modal-dialog-requiring-acknowledgement"></a></h2>
+
+  <h3 id="best-practices-3">Best Practices</h3>
+  <p>Use a single button for acknowledgement</p>
+
+  <h3 id="examples-1">Examples</h3>
+
+  <p>This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue.</p>
+
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/MDA_Example1.png" width="50%" /></p>
 
   <p><br /></p>
 
-  <h4 id="examples-of-use-2">Examples of use</h4>
+  <p>This version contains a checkbox that, if checked, will make it a once-off acknowledgement.</p>
 
-  <ul>
-    <li>This modal dialog requires the user to view important information, and to make a decision on wether to continue or not.</li>
-    <li>A delete warning, featuring a danger button, let’s the user understand the potential impact of their decision.</li>
-  </ul>
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/MDA_Example2.png" width="50%" /></p>
 
-  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/MDD_Example.png" width="500px;" /></p>
+  <hr />
 
-  <!-- END Modal Dialog Requiring Decision Section-->
+  <h2 id="modal-dialog-requiring-a-decision-">Modal Dialog Requiring a Decision <a name="modal-dialog-requiring-a-decision"></a></h2>
 
-  <p><br /></p>
+  <h3 id="best-practices-4">Best Practices</h3>
+  <p>Use a two buttons</p>
 
-  <h4 id="dos-and-donts-4">Do’s and Dont’s</h4>
+  <h3 id="examples-2">Examples</h3>
 
-  <!-- Start Modal Dialog Requiring Decision - Button Usage Row -->
-  <h5 id="button-usage-2">Button Usage</h5>
+  <p>A delete warning, featuring a danger button, let’s the user understand the potential impact of their decision.</p>
 
-  <div class="c-row">
-    <div class="c-col">
-    <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_MDD_Button_Do.png" /> 
-    </div>
-    <div class="c-col">
-     <img src="https://cupcake-design-system.github.io/assets/img/elements/modals/ModalDialogs_MDD_Button_Dont.png" /> 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use two buttons</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than two buttons</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Modal Dialog Requiring Decision - Button Usage Row -->
+  <p><img src="https://cupcake-design-system.github.io/assets/img/elements/modals/MDD_Example.png" width="50%" /></p>
 
-  <!-- End Modal Dialogs Section -->
+  <p><a href="#back-to-top">Back to Top</a></p>
 
 </div>
 <!-- End Design Section -->
