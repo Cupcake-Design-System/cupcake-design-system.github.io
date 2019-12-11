@@ -293,7 +293,7 @@ A badge with no content can be used to add visual attention to an element.
 
 #### Badge Colors
 
-[Cupcake Color Palette](https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color)
+<a href="https://ipreo.invisionapp.com/share/P5NNPMKHTR6#/screens/315781489_Color" target="_blank">Cupcake Color Palette</a>
 
 <br>
 
