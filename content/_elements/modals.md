@@ -201,15 +201,25 @@ The default modal contains a header, body, and footer section.
 <!-- Start Design Guidelines Section  -->
 <div id="guidelines" class="docs-tabs-content" markdown="1">
 
-## Types of primary modals
+## Overview <a name="back-to-top"></a>
 
-- [Fixed Width Modal](#fixed-width-modal)   
+**There are two types of modals:**
+- [Primary Modal](#primary-modal) 
+- [Modal Dialog](#modal-dialog) 
+
+<hr>
+
+## Primary Modals <a name="primary-modal"></a> 
+
+### Types of primary modals 
+
+- [Fixed Width Modal](#fixed-width-modal) <a name="fixed-width-modal"></a> 
 - [Flexible Width Modal](#flexible-width-modal) <a name="flexible-width-modal"></a>
 - [Full Screen Modal](#full-screen-modal) <a name="full-screen-modal"></a>
 
 
 ## Usage
-Standard modals are used to deliver content or additional functionality that supports the underlying page or task
+Primary modals are used to deliver content or additional functionality that supports the underlying page or task
 
 ## General best practices
 - Always keep titles short and descriptive
@@ -235,890 +245,110 @@ Standard modals are used to deliver content or additional functionality that sup
 - Use content that works with vertical expansion
 
 
-
-
-
-
-
-
-
-**Modals generally conform to the following criteria:**
-
-- Modals appear on a layer above of the main content
-- Modals require user interaction
-- Modals disable the main content until the user explicitly interacts with the dialog
-
-**Currently the following modals are in use:**
-
-- Standard modals
-- Modal dialogs
-
 <hr>
 
- <!-- Start Standard Modals Section -->
-## Standard Modals
- Standard modals are used to deliver content or additional functionality that supports the underlying page or task.
+## Flexible Width Modal <a name="flexible-width-modal"></a>
 
-### Structure
-**Standard modals are typically made up of the following:**
-
-- Heading
-- Close button 
-- Content area
-- A 1 button or a 2 button combination (depending on the use case)
-
-<br>
-
-#### Types of Standard Modals
-**Standard modals are typically made up of the following:**
-
-- Fixed width standard modals
-- Flexible width standard modals (variation)
-- Full screen modals (variation)
-
-<br>
-
-<!-- Start Standard Modals -Examples of Use -->
-#### Examples of use
-
-<br>
-
-##### Fixed Width Modal
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fixed_Width.png" width="50%;">
-
-<br>
-
-##### Flexible Width Modal
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Flexible_Width.png" width="50%;">
-
-<br>
-
-##### Full Screen Modal
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fullscreen.png" width="50%;">
-<!-- End Standard Modals -Examples of Use -->
-
-<br>
-
-<!-- Start Standard Modals - General Dos and Donts  -->
-#### General Do's and Dont's
-
- <!-- Start Titles Row -->
-##### Titles
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_Titles_Do'%} 
-    </div>
-    <div class="c-col">
-      {% include guide-img.html img='elements/modals/Modals_Titles_Dont'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep titles short and descriptive</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use long wordy titles or sentences</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Titles Row -->
-
-   <!-- Start Button Usage Row -->
-##### Button Usage
-  
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_ButtonUse_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/Modals_ButtonUse_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use either a single or two button combination for the modal dialogs </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than two buttons</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Button Usage Row -->
-
-<!-- Start Button Sizing Row -->
-##### Button Sizing
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_ButtonSize_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/Modals_ButtonSize_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do stick to default button sizing</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't force button width or height outside of what Cupcake allows for</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Button Sizing Row -->
-
-  <!-- Start Button Placement Row -->
-##### Button Placement
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_ButtonPlace_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/Modals_ButtonPlace_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do make sure buttons are the last element users interact with in a modal</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't place any text or interactions underneath a button</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  <!-- End Button Placement Row -->
-  <!-- End Standard Modals - General Dos and Donts  -->
-  <!-- End Standard Modals Section -->
-
-<hr>
-
- <!-- Start Fixed Width Modals Section -->
-### Fixed Width Modals
- The default version of standard modals.
-
-<br>
-
-<!-- Start Behavior Row -->
 #### Behavior
 
-   <div class="c-row c-m-top-lg">
-    <div class="c-col c-text-bold">
-    Default
-    </div>
-    <div class="c-col c-text-bold">
-    Overflow
-    </div>
-  </div>
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FXD_DefaultBehaviour'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FXD_OverflowBehaviour'%}
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Positioned a fixed distance from the top of the browser</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Width is fixed</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">As content height increases modal grows in height</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Grows in height until content starts overflowing</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Tool bar at the bottom then become fixed and a scroll bar appears</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Distance from bottom of modal to bottom edge of browser is equal to distance from the top of the browser</span>
-        </div>
-      </div>
-    </div>
-    </div>
-  <!-- End Behavior Row -->
+- In this variation, the default width is overridden as needed to suit content
+- Positioned a fixed distance from the top of the browser
+- As content height increases, modal grows in height
+- Width can grow until distance between the modal edge and the browser edge is equal to the distance from the top of the browser
+- Grows in height until content starts overflowing
+- Tool bar at the bottom then become fixed and a scroll bar appears
+- Distance from bottom of modal to bottom edge of browser is equal to distance from the top of the browser
 
-<!-- Start Fixed Width Modals - Dos and Donts  -->
-#### Do's and Dont's
 
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FXD_Content_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/Modals_FXD_Content_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that fits inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that works with vertical expansion</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that won't fit inside the modal</span>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- END Fixed Width Modals - Dos and Donts  -->
-<!-- End Fixed Width Modals Section -->
+#### Best practices
+
+- Use content that fits inside the modal
+- Use content that works with vertical expansion 
 
 <hr>
 
- <!-- Start Flexible Width Modals Section -->
-### Flexible Width Modals
-A variation of the standard modal, the width of this modal can be adjusted to suit content too wide for the fixed width version.
 
-<br>
+## Full Screen Modal <a name="full-screen-modal"></a>
 
-<!-- Start Behavior Row -->
 #### Behavior
+- In this variation the modal edges are a set and equal distance away from the edge of the browser on all sides
+- The modal occupies the maximum screen area independent of content
+- When the width or height of content overflows, the tool bar at the bottom become fixed and a horizontal and/or vertical scroll bar appears
 
-   <div class="c-row c-m-top-lg">
-    <div class="c-col c-text-bold">
-    Default
-    </div>
-    <div class="c-col c-text-bold">
-    Overflow
-    </div>
-  </div>
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FW_DefaultBehaviour'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FW_OverflowBehaviour'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">In this variation, the default width is overridden as needed to suit content</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Positioned a fixed distance from the top of the browser</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">As content height increases, modal grows in height</span>
-        </div>
-      </div>
-    </div>
-    <!-- Start Overflow Behavior-->
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Width can grow until distance between the modal edge and the browser edge is equal to the distance from the top of the browser</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Grows in height until content starts overflowing</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Tool bar at the bottom then become fixed and a scroll bar appears</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Distance from bottom of modal to bottom edge of browser is equal to distance from the top of the browser</span>
-        </div>
-      </div>
-    </div>
-    </div>
-  <!-- End Behavior Row -->
 
-<!-- Start Flexible Width Modals - Dos and Donts  -->
-#### Do's and Dont's
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FW_Content_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/Modals_FW_Content_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that fits inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that works with vertical expansion</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that won't fit inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that would require a horizontal scroll bar</span>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- END Flexible Width Modals - Dos and Donts  -->
-<!-- End Flexible Width Modals Section -->
+#### Best practices
+- Use tables and grids in the full screen modals
 
 <hr>
 
- <!-- Start Full Screen Modals Section -->
-### Full Screen Modals
-Another variation of the standard modal, this version is used to display large tables and grids.
+## Examples
+
+**Example:** a user profile icon in the header
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Fixed_Width.png" width="50%">
 
 <br>
 
-<!-- Start Behavior Row -->
-#### Behavior
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/Flexible_Width.png" width="50%">
 
-   <div class="c-row c-m-top-lg">
-    <div class="c-col c-text-bold">
-    Default
-    </div>
-    <div class="c-col c-text-bold">
-    Overflow
-    </div>
-  </div>
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FULL_DefaultBehaviour'%} 
-    </div>
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FULL_OverflowBehaviour'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">In this variation the modal edges are a set and equal distance away from the edge of the browser on all sides</span>
-        </div>
-      </div>
-        <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">The modal occupies the maximum screen area independent of content</span>
-        </div>
-      </div>
-    </div>
-    <!-- Start Overflow Behavior-->
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">When the width or height of content overflows, the tool bar at the bottom become fixed and a horizontal  and/or vertical scroll bar appears</span>
-        </div>
-      </div>
-    </div>
-    </div>
-  <!-- End Behavior Row -->
+<br>
 
-<!-- Start Full Screen Modals - Dos and Donts  -->
-#### Do's and Dont's
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/Modals_FW_Content_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/Modals_FW_Content_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that fits inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use content that works with vertical expansion</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that won't fit inside the modal</span>
-        </div>
-      </div>
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use content that would require a horizontal scroll bar</span>
-        </div>
-      </div>
-      </div>
-    </div>
-    <!-- END Full Screen Modals - Dos and Donts  -->
-<!-- End Full Screen Modals Section -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/FULLSCREEN.png" width="50%">
 
 <hr>
 
- <!-- Start Modal Dialogs Section -->
-### Modal Dialogs
+## Modal Dialog <a name="modal-dialog"></a> 
 
-**Modal Dialogs are used to communicate important information, and require a user response.**
+### Types of Modal Dialogs
+- [Modal dialogs requiring acknowledgement](#modal-dialog-requiring-acknowledgement) 
+- [Modal dialogs requiring a decision](#modal-dialog-requiring-a-decision)
 
-- Structure
-- Heading  
-- Supportive copy
-- An confirmation checkbox (optional) 
-- A one button or two button combination (depending on the use case)
 
-**Types of Modal Dialogs:**
+### Usage
+Modal Dialogs are used to communicate important information, and require a user response.
 
-- Modal dialogs requiring acknowledgement
-- Modal dialogs requiring a decision
-
-<br>
-
-<!-- Start Modal Dialogs -General Dos and Don'ts -->
-#### General Do's and Dont's
-
-<!-- Start Icon Usage Row -->
-##### Icon Usage (optional)
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_Icon_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_Icon_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use the following icons for Modal Dialogs</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use floating icons, custom icons, or icons that don't add clarity to the messaging</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Icon Usage Row -->
-
-<!-- Start Icon Placement Row -->
-##### Icon Placement
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_IconPlacement_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_IconPlacement_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep the icon to the left of and aligned with the title</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do change the default placement of the icon in the modal dialogs</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Icon Placement Row -->
-
-<!-- Start Headings Row -->
-##### Headings
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_Headings_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_Headings_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep headings short and descriptive</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use long wordy titles or sentences that might wrap</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Headings Row -->
-
-<!-- Start Supportive Copy Row -->
-##### Supportive Copy
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_Copy_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_Copy_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep text short and descriptive</span>
-        </div>
-      </div>
-       <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do keep longer descriptions under 2 lines</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't have more than two lines of text</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Supportive Copy Row -->
-
-<!-- Start Button Sizing Row -->
-##### Button Sizing
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_ButtonSize_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_ButtonSize_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md"> Do stick to default button sizing</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't force button width or height outside of what Cupcake allows for</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Button Sizing Row -->
-
-<!-- Start Button Placement Row -->
-##### Button Placement
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_ButtonPlace_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_ButtonPlace_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do make sure buttons are the last element users interact with in a modal</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't place any text or interactions underneath a button</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Button Placement Row -->
-
-<!-- Start Positioning Row -->
-##### Positioning 
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_Position_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_Position_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do stick to the default positioning of the modal dialogs </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't adjust the margins or padding around the modal dialogs in any way</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Positioning Row -->
-<!-- End Modal Dialog General Dos and Donts -->
+### General best practices
+- Always keep the icon to the left of and aligned with the title
+- Always keep headings short and descriptive
+- Always keep text short and descriptive
+- Always stick to default button sizing
+- Always make sure buttons are the last element users interact with in a modal
+- Always stick to the default positioning of the modal dialogs
 
 <hr>
 
-<!-- Start Modal Dialog Requiring and Acknowledgement Section-->
-### Modal Dialog requiring an acknowledgement
+## Modal Dialog Requiring Acknowledgement <a name="modal-dialog-requiring-acknowledgement"></a> 
+
+### Best Practices
+Use a single button for acknowledgement
+
+### Examples
+
+This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue. 
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDA_Example1.png" width="50%">
 
 <br>
 
-#### Examples of Use
-  
-   This modal dialog requires the user to acknowledge important information, but not to make any specific decisions.
+This version contains a checkbox that, if checked, will make it a once-off acknowledgement.
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDA_Example1.png" width="500px;">
-
-  <br>
-
-  This modal could persist every time a specific event is triggered, requiring it to be acknowledged before the user can continue. This version contains a checkbox that, if checked, will make it a once-off acknowledgement.
-
-   <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDA_Example2.png" width="500px;">
-<!-- END Modal Dialog Requiring and Acknowledgement Section-->
-
-<br>
-
-#### Do's and Dont's
-
-<!-- Start Modal Dialog Requiring Acknowledgement - Button Usage Row -->
-##### Button Usage
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_MDA_Button_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_MDA_Button_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use a single button for acknowledgement </span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use two buttons or more for acknowledgement</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Modal Dialog Requiring Acknowledgement - Button Usage Row -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDA_Example2.png" width="50%">
 
 <hr>
 
-<!-- Start Modal Dialog Requiring Decision Section-->
-### Modal Dialog requiring a decision
+## Modal Dialog Requiring a Decision <a name="modal-dialog-requiring-a-decision"></a> 
 
-<br>
+### Best Practices
+Use a two buttons
 
-#### Examples of use  
+### Examples
 
-  - This modal dialog requires the user to view important information, and to make a decision on wether to continue or not.
-  - A delete warning, featuring a danger button, let's the user understand the potential impact of their decision.
+A delete warning, featuring a danger button, let's the user understand the potential impact of their decision.
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDD_Example.png" width="500px;">
-
-
-<!-- END Modal Dialog Requiring Decision Section-->
-
-<br>
-
-#### Do's and Dont's
-
-<!-- Start Modal Dialog Requiring Decision - Button Usage Row -->
-##### Button Usage
-
-  <div class="c-row">
-    <div class="c-col">
-    {% include guide-img.html img='elements/modals/ModalDialogs_MDD_Button_Do'%} 
-    </div>
-    <div class="c-col">
-     {% include guide-img.html img='elements/modals/ModalDialogs_MDD_Button_Dont'%} 
-    </div>
-  </div>
-  <div class="c-row c-m-top-md c-m-bottom-xl">
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-check c-text-success"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Do use two buttons</span>
-        </div>
-      </div>
-    </div>
-    <div class="c-col">
-      <div class="c-media c-p-sm">
-        <span class="fas fa-times c-text-danger"></span>
-        <div class="c-media-body">
-          <span class="c-text-md">Don't use more than two buttons</span>
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- End Modal Dialog Requiring Decision - Button Usage Row -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/modals/MDD_Example.png" width="50%">
 
 
-
-
-
-
-<!-- End Modal Dialogs Section -->
-
-
+[Back to Top](#back-to-top)
 
 </div>
 <!-- End Design Section -->
