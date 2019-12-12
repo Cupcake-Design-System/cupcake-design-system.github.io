@@ -210,6 +210,15 @@ You can also add text to the large switch size. Again, use carefully - anything 
 <!-- Start Angular Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
+<div class="c-alert c-alert-warning">
+  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+    <div class="c-alert-content"><strong>
+    Users must be permissioned to IHS Markit GitLab in order to view angular components.  
+    <a href="https://confluence.ihsmarkit.com/pages/viewpage.action?spaceKey=DT&title=GitLab+-+Access">Gain access here</a>
+      </strong>
+    </div>
+</div>
+
 ### Standard Switch
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-switches--switch&nav=0"></iframe>
 

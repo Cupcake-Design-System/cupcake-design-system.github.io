@@ -133,8 +133,6 @@ Avatars can also be grouped.
     <div class="c-alert-content"><strong>
     Users must be permissioned to IHS Markit GitLab in order to view angular components.  
     <a href="https://confluence.ihsmarkit.com/pages/viewpage.action?spaceKey=DT&title=GitLab+-+Access">Gain access here</a>
-
-    
       </strong>
     </div>
 </div>
