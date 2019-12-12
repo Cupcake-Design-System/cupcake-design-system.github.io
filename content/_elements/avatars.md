@@ -131,7 +131,10 @@ Avatars can also be grouped.
 <div class="c-alert c-alert-warning">
   <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
     <div class="c-alert-content"><strong>
-    Users must be permissioned to IHSMarkit gitlab in order to view angular components.
+    Users must be permissioned to IHS Markit GitLab in order to view angular components.  
+    <a href="https://confluence.ihsmarkit.com/pages/viewpage.action?spaceKey=DT&title=GitLab+-+Access">Gain access here</a>
+
+    
       </strong>
     </div>
 </div>
