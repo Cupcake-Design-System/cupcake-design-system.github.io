@@ -128,6 +128,14 @@ Avatars can also be grouped.
 <!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
+<div class="c-alert c-alert-warning">
+  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
+    <div class="c-alert-content"><strong>
+    Users must be permissioned to IHSMarkit gitlab in order to view angular components.
+      </strong>
+    </div>
+</div>
+
 ##### Avatar Icon
 <iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-avatar--icon&nav=0"></iframe>
 
