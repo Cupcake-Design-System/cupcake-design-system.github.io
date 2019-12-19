@@ -20,13 +20,33 @@ Notifications should be non-invasive and non-interruptive, therefore are limited
 - a counter and panel trigger in the header
 - a panel where the notifications are read, managed and settings applied
 
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/notifications/notifications-structure-example@2x.png" width="520px;">
+
+<br>
+
 Specific controls are available on hover that allow notifications to be marked as read or removed.
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/notifications/unread-notification-example@2x.png" width="520px;">
+
+**Example showing unread notification**
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/notifications/read-notification-example@2x.png" width="520px;">
+
+**Example showing limited available controls on read notifications**
 
 
 ## Settings
 Notifications can be configured via a Settings panel. Settings should be kept simple by sticking to on/off switches.
 
 <br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/notifications/notifications-settings-example@2x.png" width="520px;">
 
 ## Email Integration
 Notifications can be configured to send the user email summaries and reminders.

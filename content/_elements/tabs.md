@@ -227,7 +227,7 @@ By default tabs are left aligned. Additional classes provide center and right al
 
 #### Standard tabs
 Use the standard tabs for a full page or full panel content change.
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tabs/Tab-Test-1.png" width="520px;">
 
 #### Bordered tabs
 Use the bordered tabs when a specific area or space needs to be visually defined.
