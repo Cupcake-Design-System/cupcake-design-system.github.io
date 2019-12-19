@@ -22,6 +22,8 @@ To ensure proper identification of the type of errors, location of errors and th
 ## Inline validation flow (using keyboard)
 The inline validation flow communicate validation errors at cell and at row level.
 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/ag-grid-validations/inline-validations-cover@2x.png" width="520px;">
+
 The example patterns offer two proposed flows based on either:
 
 - highlighting the form fields
@@ -33,6 +35,8 @@ The example patterns offer two proposed flows based on either:
 
 ## Form post validation flow
 The form post validation flow communicate validation errors at form level, as well as on submit.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/ag-grid-validations/form-post-validations-cover@2x.png" width="520px;">
 
 Feedback on whether the form can be posted, is communicated:
 
