@@ -136,7 +136,7 @@ Radio buttons should be combined with accompanying text or a label.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-label-placement@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-label-placement@2x.png" width="520px">
 
 <br>
 
@@ -157,19 +157,19 @@ Radio buttons should be combined with accompanying text or a label.
 
 **A radio group used in a vertical list format in a form**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-vertical-group-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-vertical-group-example@2x.png" width="520px">
 
 <br>
 
 **A radio group with a recommended value selected by default**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-default-value-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-default-value-example@2x.png" width="520px">
 
 <br>
 
 **A radio group used in a horizontal list format in a form**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-horisontal-group-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/radio-buttons/new-format/radio-horisontal-group-example@2x.png" width="520px">
 
 </div>
 <!-- End Design Section -->

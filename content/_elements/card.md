@@ -392,13 +392,13 @@ Cards can include headers, footers, a wide variety of content and card-specific 
 
 ## Examples
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-1.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-1.png" width="520px">
 
 <br>
 
 **A dashboard card can contain content that is important to the user, for instance data tables and graphs**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-2.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/card/new-format/dashboard-card-example-2.png" width="520px">
 
 
 

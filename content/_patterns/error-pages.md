@@ -30,7 +30,7 @@ category: Pages
 
 **Example of Use**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-401-example.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-401-example.png" width="620px">
 
 <hr>
 
@@ -41,7 +41,7 @@ category: Pages
 
 **Example of Use**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-403-example.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-403-example.png" width="620px">
 
 <hr>
 
@@ -52,7 +52,7 @@ category: Pages
 
 **Example of Use**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-404-example.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-404-example.png" width="620px">
 
 <hr>
 
@@ -63,7 +63,7 @@ category: Pages
 
 **Example of Use**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-500-example.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-500-example.png" width="620px">
 
 <hr>
 
@@ -74,7 +74,7 @@ category: Pages
 
 **Example of Use**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-503-example-1.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-503-example-1.png" width="620px">
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-503-example-2.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/error-pages/error-503-example-2.png" width="620px">
 

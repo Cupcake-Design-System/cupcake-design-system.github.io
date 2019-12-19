@@ -247,7 +247,7 @@ You can also add text to the large switch size. Again, use carefully - anything 
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switch-types.png" width="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switch-types.png" width="520px">
 
 <br>
 
@@ -295,19 +295,19 @@ Switches should be combined with accompanying text or a label.
 
 **A selection control in Settings pages**
 
- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-settings-example.png" width="50%;">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-settings-example.png" width="300px">
 
  <br>
 
  **A selection control combined with tables, data visualisations, etc.**
 
- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-controls-example.png" width="50%;">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-controls-example.png" width="520px">
 
  <br>
 
  **A selection control in tables**
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-table-example.png" width="50%;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/switches/new format/switches-table-example.png" width="520px">
 
 
 

@@ -417,7 +417,7 @@ Form elements can generally be combined with labels in the following 2 layouts:
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/label-helper-text@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/label-helper-text@2x.png" width="520px">
 
 <br>
 
@@ -453,13 +453,13 @@ Form layout will depend on the form requirements and where it is embedded. See F
 
 **A large form with a combination of form elements**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/large-form-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/large-form-example@2x.png" width="520px">
 
 <br>
 
 **A Login form**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/small-form-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/forms/new-format/small-form-example@2x.png" width="520px">
 
 
 </div>

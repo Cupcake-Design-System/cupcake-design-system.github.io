@@ -148,7 +148,7 @@ Checkboxes should be combined with accompanying text or a label.
 
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-label-placement@2x.png" width="520px">
 
 ### Best Practices
 
@@ -164,19 +164,19 @@ Checkboxes should be combined with accompanying text or a label.
 
 **A multiple selection list in a form**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-multiple-selection-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-multiple-selection-example@2x.png" width="520px">
 
 <br>
 
 **A used as a standalone checkbox on forms**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-standalone-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-standalone-example@2x.png" width="520px">
 
 <br>
 
 **As selector handle for enabling bulk actions in tables**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-bulk-selection-example@2x.png" width="50%;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/checkboxes/new format/checkbox-bulk-selection-example@2x.png" width="520px">
 
 
 
