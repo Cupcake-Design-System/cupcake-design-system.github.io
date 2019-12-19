@@ -227,11 +227,11 @@ By default tabs are left aligned. Additional classes provide center and right al
 
 #### Standard tabs
 Use the standard tabs for a full page or full panel content change.
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tabs/Tab-Test-1.png" width="520px;">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tabs/Tabs Example 1.png" width="520px;">
 
 #### Bordered tabs
 Use the bordered tabs when a specific area or space needs to be visually defined.
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tabs/Tabs Example 2.png" width="520px">
 
 #### Labels
 Tab labels should clearly state the content on each tab using as few words as possible.
@@ -247,11 +247,24 @@ Tab labels should clearly state the content on each tab using as few words as po
 
 ## Examples
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
-Example: Icons can provide content to a tab but should always be used with text a label
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tabs/Tabs Example 6.png" width="520px">
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
-Example: Overflow Tab Menu
+
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tabs/Tabs Example 6.png" width="520px">
+
+**Example:** Icons can provide content to a tab but should always be used with text a label
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tabs/Tabs Example 3.png" width="520px">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/tabs/Tabs Example 4.png" width="520px">
+
+
+
+
+**Example:** Overflow Tab Menu
 
 
 
