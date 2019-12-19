@@ -300,37 +300,37 @@ Icon buttons should always be combined with a Tooltip to make it clear what acti
 
 **A primary button used in combination with a secondary button**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/primary-button-combo-example@2x.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/primary-button-combo-example@2x.png" width="520px">
 
 <br>
 
 **An action button used in combination with a primary/secondary button combination**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/action-button-combo-example@2x.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/action-button-combo-example@2x.png" width="520px">
 
 <br>
 
 **A danger button used to signal a destructive action (presented in a modal)**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/danger-button-combo-example@2x.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/danger-button-combo-example@2x.png" width="520px">
 
 <br>
 
 **How secondary buttons could compliment a primary button**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/secondary-button-example@2x.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/secondary-button-example@2x.png" width="520px">
 
 <br>
 
 **Link buttons used in combination with secondary buttons**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/link-button-example@2x.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/link-button-example@2x.png" width="520px">
 
 <br>
 
 **Icon buttons used with a table**
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/icon-only-button-example@2x.png" width="50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/buttons/new format/icon-only-button-example@2x.png" width="520px">
 
 </div>
 <!-- End Design Tab -->
