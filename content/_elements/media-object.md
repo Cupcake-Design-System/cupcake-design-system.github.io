@@ -905,7 +905,7 @@ Media objects can be stacked, nested, and aligned in various ways. This flexibil
 
 ## Anatomy
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/media-objects/Anatomy.png" width="520px">
 
 At their most basic level a media object must contain at least 1 object and some other form of content next to it. The exact layout can vary to support the specific use case and type of content being used. 
 
@@ -914,30 +914,43 @@ At their most basic level a media object must contain at least 1 object and some
 
 ## Variations
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
-Example: Stacked Media Objects
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/media-objects/Stacked.png" width="520px">
+
+**Example:** Stacked Media Objects
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/media-objects/Nested.png" width="520px">
+
+**Example:** Nested Media Objects
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
-Example: Nested Media Objects
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
-Example: Tiled Media Objects
+**Example:** Tiled Media Objects
 
 <hr>
 
 ## Examples
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
-Example: Title + Content Preview + Image
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/media-objects/Example - Title - content - Image.png" width="520px">
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
-Example: Avatar + Contact Name
+**Example:** Title + Content Preview + Image
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
-Example: Icons + Description + Menu
+<br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
-Example: Icon + Title + Subtitle + Numeric Badge
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/media-objects/Example - Avatar -  Name.png" width="520px">
+
+**Example:** Avatar + Contact Name
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/media-objects/Example - Icons - Description - Menu.png" width="520px">
+
+**Example:** Icons + Description + Menu
+
+<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/media-objects/Example - Icon - Title - subtitle - Numeric Badge.png" width="520px">
+
+**Example:** Icon + Title + Subtitle + Numeric Badge
 
 
 
