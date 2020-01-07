@@ -75,7 +75,7 @@ Use pagination to allow navigation between pages that represent an ordered colle
 
 Stepper pagination offers finite control and is recommended when the number of pages is low.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/pagination/Pagination Stepper 1.png" width="700px;">
 
 <br>
 
@@ -83,28 +83,26 @@ Stepper pagination offers finite control and is recommended when the number of p
 
 Manual pagination provides users with a way to jump to any page in the range. This is particularly helpful when a large number of pages exist.  
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
-
-<br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/pagination/Mannual Pagination 1.png" width="700px;">
 
 **Items Per Page Filter**
 
 Pagination becomes a powerful tool for sorting and navigating data when combined with a basic "items per page filter." 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
-
-<br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/pagination/Items Per Page Filter.png" width="700px;">
 
 **Truncation**
 
 When the number of pages in either direction exceeds 5, use ellipses to truncate results. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
-Double ellipses is used when 5 page numbers can be displayed between the first and last page. 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/pagination/Truncation 1.png" width="700px;">
+
+**Double ellipses is used when 5 page numbers can be displayed between the first and last page.**
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
-Single ellipses is used when the beginning or end page is included in the "5" rule. 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/pagination/Truncation 2.png" width="700px;">
+
+**Single ellipses is used when the beginning or end page is included in the "5" rule.**
 
 <hr>
 
@@ -118,15 +116,13 @@ Single ellipses is used when the beginning or end page is included in the "5" ru
 
 - Whatever type of pagination you chose to use (stepper or manual), remain consistent across the entire application.
 
-<hr>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/pagination/Best Practice 1.png" width="">
 
-## Examples
+**Example:** Selected Page Indicator
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
-Example: Selected Page Indicator
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/pagination/Best Practice 2.png" width="">
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="">
-Example: Use of ellipses to display hidden page results. 
+**Example:** Use of ellipses to display hidden page results. 
 
 </div>
 <!-- End Design Tab -->
