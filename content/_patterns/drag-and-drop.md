@@ -31,22 +31,19 @@ The Drag and Drop interaction is typically combined with, but not limited to, th
 
 ## Examples
 
-{% include guide-img.html img='patterns/drag-and-drop/cards-draganddrop' %}
-
-<!-- {% include guide-img.html img='patterns/drag-and-drop/drag-and-drop-confluence-example' %} -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/drag-and-drop/cards-draganddrop.png" width="1520px">
 
 **Example:** drag and drop used to reorder cards on a dashboard
 
 <br>
 
-{% include guide-img.html img='patterns/drag-and-drop/drag-and-drop-list-items-example' %}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/drag-and-drop/drag-and-drop-list-items-example.PNG" width="920px">
 
 **Example:** drag and drop used to reorder list items
 
 <br>
 
-
-{% include guide-img.html img='patterns/drag-and-drop/drag-and-drop-widgets-example' %}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/patterns/drag-and-drop/drag-and-drop-widgets-example.PNG" width="320px">
 
 **Example:** drag and drop used to assist uploading a file via a file upload widget
 
