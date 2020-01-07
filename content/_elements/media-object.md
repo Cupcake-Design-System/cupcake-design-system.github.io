@@ -922,7 +922,7 @@ At their most basic level a media object must contain at least 1 object and some
 
 **Example:** Nested Media Objects
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/" width="520px">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/media-objects/Tiled Media Objects.png" width="520px">
 
 **Example:** Tiled Media Objects
 
