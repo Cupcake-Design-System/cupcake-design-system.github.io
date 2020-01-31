@@ -255,14 +255,7 @@ A badge with no content can be used to add visual attention to an element.
     </div>
 </div>
 
-##### Default Badge
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-badges--default&nav=0"></iframe>
-
-<br>
-
-##### Icon Badge
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-badges--icon&nav=0"></iframe>
-
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
 
 </div>
 <!-- End Angular Code Section -->

@@ -137,18 +137,8 @@ Avatars can also be grouped.
     </div>
 </div>
 
-##### Avatar Icon
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-avatar--icon&nav=0"></iframe>
 
-<br>
-
-##### Avatar Initials
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-avatar--initials&nav=0"></iframe>
-
-<br>
-
-##### Avatar Image
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-avatar--image&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
 
 
 </div>

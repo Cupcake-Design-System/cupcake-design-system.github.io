@@ -92,18 +92,9 @@ The default checkbox requires the `<label></label>` tag even if no text is provi
     </div>
 </div>
 
-### Standard Checkbox
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-forms--checkbox&nav=0"></iframe>
 
-<br>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
 
-### Multi Select
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-selectors--searchselectpanel&nav=0"></iframe>
-
-<br>
-
-### Complex Multi Select
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-selectors--richmultiselectpanel&nav=0"></iframe>
 
 </div>
 <!-- End Angular Code Tab -->

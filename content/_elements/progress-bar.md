@@ -97,8 +97,7 @@ This shows how much of the task has been completed and how much is still left.
     </div>
 </div>
 
-### Storybook iframe
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/josh-easter/storybook-demo/?path=/story/basic-elements--avatar&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
 
 </div>
 <!-- End Angular Code Tab -->

@@ -56,13 +56,7 @@ tabs:
     </div>
 </div>
 
-### Basic Loader
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-loaders--basic&nav=0"></iframe>
-
-<br>
-
-### IHS Markit Loader
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-loaders--ihs-markit&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
 
 </div>
 <!-- End Angular Code Tab -->

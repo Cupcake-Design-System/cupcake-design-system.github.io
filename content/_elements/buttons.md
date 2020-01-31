@@ -173,8 +173,7 @@ This is an example of available sizes for the Button Group element.
     </div>
 </div>
 
-##### Standard Button
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--standard&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
 
 <br>
 

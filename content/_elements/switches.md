@@ -219,8 +219,7 @@ You can also add text to the large switch size. Again, use carefully - anything 
     </div>
 </div>
 
-### Standard Switch
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-switches--switch&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
 
 </div>
 <!-- End Angular Tab -->
