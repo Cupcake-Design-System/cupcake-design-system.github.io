@@ -131,7 +131,7 @@ Designed to sit flush vertically and horizontally within a container. In most ca
     </div>
 </div>
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-avatar--icon&nav=0"></iframe>
 
 </div>
 <!-- End Angular Tab -->
