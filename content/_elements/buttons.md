@@ -164,32 +164,34 @@ This is an example of available sizes for the Button Group element.
 <!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-<div class="c-alert c-alert-warning">
-  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
-    <div class="c-alert-content"><strong>
-    Users must be permissioned to IHS Markit GitLab in order to view angular components.  
-    <a href="https://confluence.ihsmarkit.com/pages/viewpage.action?spaceKey=DT&title=GitLab+-+Access">Gain access here</a>
-      </strong>
-    </div>
-</div>
+### Standard Button
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-buttons--standard&nav=0"></iframe>
 
 <br>
 
-##### Submit Button
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--submit&nav=0"></iframe>
+### Outline Button
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-buttons--outline&nav=0"></iframe>
 
 <br>
 
-##### Button Link
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--link&nav=0"></iframe>
+### Submit Button
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-buttons--submit&nav=0"></iframe>
 
 <br>
 
+### Link Button
 
-##### Icon Button
-<iframe title="storybook" width="100%" height="500px" src="https://pages.code.ipreo.com/ipreo/sprinkles/?path=/story/components-buttons--icon&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-buttons--link&nav=0"></iframe>
+
+<br>
+
+### Icon Button
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-buttons--icon&nav=0"></iframe>
+
 
 </div>
 <!-- End Angular Code Section -->

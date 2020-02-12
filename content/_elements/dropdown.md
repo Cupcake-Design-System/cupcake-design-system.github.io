@@ -249,16 +249,9 @@ With simple list items below the toggle
 <!-- Start Angular Code Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-<div class="c-alert c-alert-warning">
-  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
-    <div class="c-alert-content"><strong>
-    Users must be permissioned to IHS Markit GitLab in order to view angular components.  
-    <a href="https://confluence.ihsmarkit.com/pages/viewpage.action?spaceKey=DT&title=GitLab+-+Access">Gain access here</a>
-      </strong>
-    </div>
-</div>
+### Sectioned Dropdown
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-dropdowns--sectioned&nav=0"></iframe>
 
 </div>
 <!-- End Angular Code Tab -->

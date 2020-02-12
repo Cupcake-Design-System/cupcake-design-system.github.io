@@ -13,7 +13,6 @@ sizes:
 - xl
 tabs:
 - Code
-- Angular
 - Guidelines
 ---
 

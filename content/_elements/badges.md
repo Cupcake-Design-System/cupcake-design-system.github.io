@@ -246,16 +246,48 @@ A badge with no content can be used to add visual attention to an element.
 <!-- Start Angular Code Section -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-<div class="c-alert c-alert-warning">
-  <i class="fa fa-exclamation-circle c-alert-icon" aria-hidden="true"></i>
-    <div class="c-alert-content"><strong>
-    Users must be permissioned to IHS Markit GitLab in order to view angular components.  
-    <a href="https://confluence.ihsmarkit.com/pages/viewpage.action?spaceKey=DT&title=GitLab+-+Access">Gain access here</a>
-      </strong>
-    </div>
-</div>
+### Default Badge
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh/"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-badges--default&nav=0"></iframe>
+
+<br>
+
+### Badge with Icon
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-badges--with-icon&nav=0"></iframe>
+
+<br>
+
+### Empty Badge
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-badges--empty&nav=0"></iframe>
+
+<br>
+
+### Removeable Badge
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-badges-v2-options--removable&nav=0"></iframe>
+
+<br>
+
+### Badge with Avatar
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-badges-v2-options--with-avatar&nav=0"></iframe>
+
+<br>
+
+### Badge with Icon
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-badges-v2-options--with-icon&nav=0"></iframe>
+
+<br>
+
+### Pill Block
+
+<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-pills--pillblock&nav=0"></iframe>
+
+
+
 
 </div>
 <!-- End Angular Code Section -->
