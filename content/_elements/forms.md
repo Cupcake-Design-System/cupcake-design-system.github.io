@@ -11,7 +11,6 @@ sizes:
 - lg
 tabs:
 - Code
-- Angular
 - Guidelines
 ---
 
