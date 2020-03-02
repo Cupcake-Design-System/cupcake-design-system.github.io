@@ -12,72 +12,10 @@ sizes:
 - lg
 - xl
 tabs:
-- Design
 - Code 
 - Angular
+- Design
 ---
-
-<!-- Start Design Tab -->
-<div id="design" class="docs-tabs-content" markdown="1">
-
-# Overview
-
-**Types of drag and drop:**
-
-- Drag and drop with cards
-- Drag and drop with list items
-- Drag and drop with widgets
-
-**Drag and drop must haves:**
-
-- All components that the user is able to drag and drop must have grips on the left side to indicate 
-- All components that the user is able to drag and drop must have 50% opacity applied when the user is dragging it to the drop zone
-- All drop zones should have some sort of indication (blue box or list indication)
-
-<hr>
-  
-  <!-- Start Drag and Drop with Cards Section -->
-  <div class="c-header-md">Drag and Drop with cards</div>
-  Drag and drop can be used to easily reorder movable cards to the user's liking. 
-
-  <!-- Start Examples of Use Row -->
-  <div class="c-header-sm">Examples of Use</div>
-
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%">
-  <!-- End Examples of Use Row -->
-  <!-- END Drag and Drop with Cards Section -->
-
-  <hr>
-
-   <!-- Start Drag and Drop with List Items Section -->
-  <div class="c-header-md">Drag and Drop with list items</div>
-  Drag and drop can be used to easily reorder list items to the user's liking. 
-
-  <!-- Start Examples of Use Row -->
-  <div class="c-header-sm">Examples of Use</div>
-
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%;">
-  <!-- End Examples of Use Row -->
-  <!-- END Drag and Drop with List Items Section -->
-
-<hr>
-
-  <!-- Start Drag and Drop with Widgets Section -->
-  <div class="c-header-md">Drag and Drop with widgets</div>
-  Drag and drop can be used to easily perform a function with a widget, such as a file upload. 
-
-  <!-- Start Examples of Use Row -->
-  <div class="c-header-sm">Examples of Use</div>
-
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%;">
-  <!-- End Examples of Use Row -->
-  <!-- END Drag and Drop with Widgets Section -->
-
-
-
-
-</div>
-<!-- End Design Tab -->
 
 <!-- Start Cupcake Code Tab -->
 <div id="code" class="docs-tabs-content" markdown="1">
@@ -215,5 +153,66 @@ Use radio buttons to present each item in a list of options where users must mak
 
 </div>
 <!-- End Angular Code Tab -->
+
+
+<!-- Start Design Tab -->
+<div id="design" class="docs-tabs-content" markdown="1">
+
+# Overview
+
+**Types of drag and drop:**
+
+- Drag and drop with cards
+- Drag and drop with list items
+- Drag and drop with widgets
+
+**Drag and drop must haves:**
+
+- All components that the user is able to drag and drop must have grips on the left side to indicate 
+- All components that the user is able to drag and drop must have 50% opacity applied when the user is dragging it to the drop zone
+- All drop zones should have some sort of indication (blue box or list indication)
+
+<hr>
+  
+  <!-- Start Drag and Drop with Cards Section -->
+  <div class="c-header-md">Drag and Drop with cards</div>
+  Drag and drop can be used to easily reorder movable cards to the user's liking. 
+
+  <!-- Start Examples of Use Row -->
+  <div class="c-header-sm">Examples of Use</div>
+
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%">
+  <!-- End Examples of Use Row -->
+  <!-- END Drag and Drop with Cards Section -->
+
+  <hr>
+
+   <!-- Start Drag and Drop with List Items Section -->
+  <div class="c-header-md">Drag and Drop with list items</div>
+  Drag and drop can be used to easily reorder list items to the user's liking. 
+
+  <!-- Start Examples of Use Row -->
+  <div class="c-header-sm">Examples of Use</div>
+
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%;">
+  <!-- End Examples of Use Row -->
+  <!-- END Drag and Drop with List Items Section -->
+
+<hr>
+
+  <!-- Start Drag and Drop with Widgets Section -->
+  <div class="c-header-md">Drag and Drop with widgets</div>
+  Drag and drop can be used to easily perform a function with a widget, such as a file upload. 
+
+  <!-- Start Examples of Use Row -->
+  <div class="c-header-sm">Examples of Use</div>
+
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/img/elements/drag-and-drop/nameoffile.png" width="50%;">
+  <!-- End Examples of Use Row -->
+  <!-- END Drag and Drop with Widgets Section -->
+
+
+</div>
+<!-- End Design Tab -->
 
 

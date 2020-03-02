@@ -752,7 +752,7 @@ Multiple classes can be added for more complexity.
 
 ### Multivalue Table
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-data--multivalue-table&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-data--multivalue-table&nav=0"></iframe>
 
 
 </div>

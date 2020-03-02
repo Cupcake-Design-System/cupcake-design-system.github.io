@@ -212,13 +212,13 @@ You can also add text to the large switch size. Again, use carefully - anything 
 
 ### Switch
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-forms--switch&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-forms--switch&nav=0"></iframe>
 
 <br>
 
 ### Switch 2.0
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-forms--switch-2-0&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-forms--switch-2-0&nav=0"></iframe>
 
 </div>
 <!-- End Angular Tab -->

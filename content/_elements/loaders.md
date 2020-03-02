@@ -49,13 +49,13 @@ tabs:
 
 ### Basic Loader
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-loaders--basic&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-loaders--basic&nav=0"></iframe>
 
 <br>
 
 ### IHS Markit Loader
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-loaders--ihs-markit&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-loaders--ihs-markit&nav=0"></iframe>
 
 </div>
 <!-- End Angular Code Tab -->

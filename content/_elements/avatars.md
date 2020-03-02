@@ -130,20 +130,20 @@ Avatars can also be grouped.
 
 ### Avatar with Icon
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-avatar--icon&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-avatar--icon&nav=0"></iframe>
 
 <br>
 
 ### Avatar with Initials
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-avatar--initials&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-avatar--initials&nav=0"></iframe>
 
 
 <br>
 
 ### Avatar with Image
 
-<iframe title="storybook" width="100%" height="500px" src="http://cupcake-sprinkles.surge.sh?path=/story/components-avatar--image&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-avatar--image&nav=0"></iframe>
 
 
 
