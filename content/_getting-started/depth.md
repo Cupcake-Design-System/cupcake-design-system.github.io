@@ -6,7 +6,6 @@ sizes:
 - xs
 - sm
 - lg
-- xl
 ---
 
 <div class="c-row c-row-wrap c-p-md c-p-top-lg c-bg-gray-1">
