@@ -11,6 +11,7 @@ sizes:
 - lg
 tabs:
 - Code
+- Angular
 - Guidelines
 ---
 
@@ -351,9 +352,51 @@ Some basic styling for file upload areas.
 <!-- Start Angular Code Tab -->
 <div id="angular" class="docs-tabs-content" markdown="1">
 
-### Checkbox
+### Base Input
 
-<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh?path=/story/components-forms--checkbox&nav=0"></iframe>
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form--base-input&nav=0"></iframe>
+
+### Input Colors
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form--input-colors&nav=0"></iframe>
+
+### Input Groups with Addons
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form-input-groups--addons&nav=0"></iframe>
+
+### Input Groups with Addon Button
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form-input-groups--addon-buttons&nav=0"></iframe>
+
+### Label and Hint Text
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form--label-hint-text&nav=0"></iframe>
+
+### Character Limit
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form--character-limit&nav=0"></iframe>
+
+### Validation / Layout Demo
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form--validation-layout-demo&nav=0"></iframe>
+
+### Text Area - Base
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form-textarea--base&nav=0"></iframe>
+
+### Text Area - Group
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form-textarea--group&nav=0"></iframe>
+
+### Text Area - Character Limit
+
+<iframe title="storybook" width="100%" height="500px" src="https://cupcake-sprinkles.surge.sh/?path=/story/components-form-textarea--character-limit&nav=0"></iframe>
+
+
+
+
+
+
 
 <br>
 
