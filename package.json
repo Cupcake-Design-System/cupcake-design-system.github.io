@@ -14,6 +14,6 @@
   },
   "dependencies": {
     "git-directory-deploy": "1.5.1",
-    "@cupcake-ds/cupcake": "^2.0.1"
+    "@cupcake-ds/cupcake": "^2.0.3"
   }
 }
