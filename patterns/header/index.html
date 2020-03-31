@@ -15,15 +15,15 @@
     var themeSettings =  (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
     var themeName = themeSettings.themeName || '';
     if (themeName) {
-      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/' + themeName + '.css">');
+      document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/assets/css/' + themeName + '.css">');
     }
     else {
-      document.write('<link rel="stylesheet" id="theme-style" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake.css">');
+      document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/assets/css/cupcake.css">');
     }
 </script>
 
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/cupcake-shim.css">
-<link rel="stylesheet" href="https://unpkg.com/@cupcake-ds/cupcake/dist/experimental.css">
+<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/css/cupcake-shim.css">
+<link rel="stylesheet" href="https://cupcake-design-system.github.io/assets/css/experimental.css">
 
 <!-- Documentation extras -->
 <link href="https://cupcake-design-system.github.io/assets/scss/documentation.css" rel="stylesheet">
