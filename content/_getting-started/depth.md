@@ -5,6 +5,7 @@ sizes:
 - 0
 - xs
 - sm
+- md
 - lg
 ---
 
